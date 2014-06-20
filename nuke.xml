@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+
+<Keys>
+  <elem>
+    <graph>M1:2:Q2:1:</graph>
+    <NPointOps>
+      <elem>
+        <t_slice>-1</t_slice>
+        <orig_npt>2</orig_npt>
+        <smearedP>true</smearedP>
+        <Ops>
+          <elem>
+            <name>omegal_rhoxD0_J0__J1_T1</name>
+            <smear></smear>
+            <type>M</type>
+            <Cconj>false</Cconj>
+            <twoI_z>0</twoI_z>
+            <row>3</row>
+            <mom>0 0 0</mom>
+            <Lines>
+              <elem>
+                <This>
+                  <conj>true</conj>
+                  <flavor>l</flavor>
+                  <hadron_num>2</hadron_num>
+                  <slot_num>1</slot_num>
+                  <quark_num>3</quark_num>
+                </This>
+                <Neighbor>
+                  <conj>false</conj>
+                  <flavor>l</flavor>
+                  <hadron_num>2</hadron_num>
+                  <slot_num>2</slot_num>
+                  <quark_num>4</quark_num>
+                </Neighbor>
+              </elem>
+              <elem>
+                <This>
+                  <conj>false</conj>
+                  <flavor>l</flavor>
+                  <hadron_num>2</hadron_num>
+                  <slot_num>2</slot_num>
+                  <quark_num>4</quark_num>
+                </This>
+                <Neighbor>
+                  <conj>true</conj>
+                  <flavor>l</flavor>
+                  <hadron_num>2</hadron_num>
+                  <slot_num>1</slot_num>
+                  <quark_num>3</quark_num>
+                </Neighbor>
+              </elem>
+            </Lines>
+            <hadron_num>2</hadron_num>
+            <creation_op>true</creation_op>
+          </elem>
+        </Ops>
+      </elem>
+    </NPointOps>
+    <ensemble>szscl3_16_128_b1p50_t_x4p300_um0p0743_n1p265_per</ensemble>
+  </elem>
+</Keys>

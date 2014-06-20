@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<ProjectedOps>
+  <elem>
+    <Key>
+      <name>pion_proj1_p100_H0D4A2</name> 
+      <smear/>
+      <mom_type>1 0 0</mom_type>
+    </Key>
+    <Val>
+      <elem>
+        <Key>
+          <Operators>
+            <elem>
+              <name>pion_pionxD0_J0__J0_H0D4A2</name>
+              <smear/>
+              <mom_type>1 0 0</mom_type>
+            </elem>
+          </Operators>
+          <CGs/>
+        </Key>
+        <Val>1.0</Val>
+      </elem>
+      <elem>
+        <Key>
+          <Operators>
+            <elem>
+              <name>pion_pionxD2_J0__J0_H0D4A2</name>
+              <smear/>
+              <mom_type>1 0 0</mom_type>
+            </elem>
+          </Operators>
+          <CGs/>
+        </Key>
+        <Val>0</Val>
+      </elem>
+    </Val>
+  </elem>
+  <elem>
+    <Key>
+      <name>pion_proj1_p110_H0D2A2</name> 
+      <smear/>
+      <mom_type>1 1 0</mom_type>
+    </Key>
+    <Val>
+      <elem>
+        <Key>
+          <Operators>
+            <elem>
+              <name>pion_pionxD0_J0__J0_H0D2A2</name>
+              <smear/>
+              <mom_type>1 1 0</mom_type>
+            </elem>
+          </Operators>
+          <CGs/>
+        </Key>
+        <Val>1.0</Val>
+      </elem>
+      <elem>
+        <Key>
+          <Operators>
+            <elem>
+              <name>pion_pionxD2_J0__J0_H0D2A2</name>
+              <smear/>
+              <mom_type>1 1 0</mom_type>
+            </elem>
+          </Operators>
+          <CGs/>
+        </Key>
+        <Val>0</Val>
+      </elem>
+    </Val>
+  </elem>
+</ProjectedOps>

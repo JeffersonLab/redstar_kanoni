@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<RedstarNPt>
+<Param> 
+  <version>3</version>
+  <diagnostic_level>1</diagnostic_level>
+
+  <Nt_corr>16</Nt_corr>
+  <convertUDtoL>true</convertUDtoL>
+
+  <Layout>
+    <lattSize>4 4 4 16</lattSize>
+    <decayDir>3</decayDir>
+  </Layout>
+
+  <NPointList>
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>1 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>rho_a0xD1_J1__J1_H1D4E2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>1 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>rho_a0xD1_J1__J1_H1D4E2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>1 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>2</row>
+            <Operators>
+              <elem>
+                <name>rho_a0xD1_J1__J1_H1D4E2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>1 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>2</row>
+            <Operators>
+              <elem>
+                <name>rho_a0xD1_J1__J1_H1D4E2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>1 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>rho_a0xD1_J1__J1_H0D4A1</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>1 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>rho_a0xD1_J1__J1_H0D4A1</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+  </NPointList>
+</Param>
+<DBFiles>
+  <proj_op_xmls></proj_op_xmls>
+  <hadron_node_xml>hadron_node.xml</hadron_node_xml>
+  <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
+  <hadron_node_dbs><elem>hadron_node.sdb1</elem></hadron_node_dbs>
+  <output_db>output.npt.sdb1</output_db>
+</DBFiles>	
+</RedstarNPt>
