@@ -30,11 +30,11 @@
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
             <mom>0 0 0</mom>
-            <twoI_z>0</twoI_z>
+            <twoI_z>+2</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <name>rho_a0xD1_J1__J1_T1</name>
+                <name>rho_rhoxD0_J0__J1_T1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -51,11 +51,11 @@
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
             <mom>0 0 0</mom>
-            <twoI_z>0</twoI_z>
+            <twoI_z>+2</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <name>rho_a0xD1_J1__J1_T1</name>
+                <name>rho_rhoxD0_J0__J1_T1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -78,10 +78,10 @@
             <creation_op>false</creation_op>
             <mom>0 0 0</mom>
             <twoI_z>0</twoI_z>
-            <row>2</row>
+            <row>1</row>
             <Operators>
               <elem>
-                <name>rho_a0xD1_J1__J1_T1</name>
+                <name>rho_rhoxD0_J0__J1_T1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -99,10 +99,10 @@
             <creation_op>true</creation_op>
             <mom>0 0 0</mom>
             <twoI_z>0</twoI_z>
-            <row>2</row>
+            <row>1</row>
             <Operators>
               <elem>
-                <name>rho_a0xD1_J1__J1_T1</name>
+                <name>rho_rhoxD0_J0__J1_T1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -124,11 +124,11 @@
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
             <mom>0 0 0</mom>
-            <twoI_z>0</twoI_z>
-            <row>3</row>
+            <twoI_z>-2</twoI_z>
+            <row>1</row>
             <Operators>
               <elem>
-                <name>rho_a0xD1_J1__J1_T1</name>
+                <name>rho_rhoxD0_J0__J1_T1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -145,11 +145,11 @@
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
             <mom>0 0 0</mom>
-            <twoI_z>0</twoI_z>
-            <row>3</row>
+            <twoI_z>-2</twoI_z>
+            <row>1</row>
             <Operators>
               <elem>
-                <name>rho_a0xD1_J1__J1_T1</name>
+                <name>rho_rhoxD0_J0__J1_T1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
