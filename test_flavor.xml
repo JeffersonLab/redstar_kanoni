@@ -566,7 +566,7 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                <name>Dbarneg_pionxD0_J0__J0_A1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -587,7 +587,7 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>Dneg_pionxD0_J0__J0_A1</name>
+                <name>Dbarneg_pionxD0_J0__J0_A1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -613,7 +613,7 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                <name>Dbarneg_pionxD0_J0__J0_A1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -634,7 +634,7 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>Dneg_pionxD0_J0__J0_A1</name>
+                <name>Dbarneg_pionxD0_J0__J0_A1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -688,6 +688,55 @@
             <Operators>
               <elem>
                 <name>Dsneg_pionxD0_J0__J0_A1</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+
+    <annotation>Dsbarneg</annotation>
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_pionxD0_J0__J0_A1</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_pionxD0_J0__J0_A1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
