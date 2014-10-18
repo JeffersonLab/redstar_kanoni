@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+<ProjectedOpWeights>
+<version>2</version>
 <ProjectedOps>
 <elem>
     <Key>
@@ -2579,3 +2581,4 @@
     </Val>
   </elem>
 </ProjectedOps>
+</ProjectedOpWeights>
