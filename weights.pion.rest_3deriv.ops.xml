@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<ProjectedOpWeights>
+
+  <version>2</version>
+
+  <ProjectedOps>
+    <elem>
+      <Key>
+        <name>pion_proj0_p000_A1</name> 
+        <smear/>
+        <mom_type>0 0 0</mom_type>
+      </Key>
+      <Val>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pionxD0_J0__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>0.0612767</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pion_2xD0_J0__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>-0.364778</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_b1xD1_J1__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>-0.116344</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pionxD2_J0__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>0.00317763</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pion_2xD2_J0__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>-0.118152</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_rhoxD2_J1__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>0.248601</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_rho_2xD2_J1__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>0.178402</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_a0xD3_J131_J0__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>0.151767</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_a1xD3_J131_J1__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>-0.0716937</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_b1xD3_J130_J1__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>-0.0355444</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_b1xD3_J132_J1__J0_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>0.0366056</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_b1xD3_J132_J3__J4_A1</name>
+                <smear/>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs/>
+          </Key>
+          <Val>0.0114058</Val>
+        </elem>
+      </Val>
+    </elem>
+  </ProjectedOps>
+</ProjectedOpWeights>
