@@ -23,15 +23,21 @@ set g=${f:r}
 
 /bin/rm -f hadron_node.xml
 
+<<<<<<< HEAD
 set exe_red=/Users/edwards/Documents/qcd/git/devel/redstar/build/src
 set exe_col=/Users/edwards/Documents/qcd/git/devel/colorvec/build/src
 set exe_har=/Users/edwards/Documents/qcd/git/devel/harom/scalar-Nd3/mainprogs/main
+=======
+#set exe_red=/Users/edwards/Documents/qcd/git/devel/redstar/build/src
+#set exe_col=/Users/edwards/Documents/qcd/git/devel/colorvec/build/src
+#set exe_har=/Users/edwards/Documents/qcd/git/devel/harom/scalar-Nd3/mainprogs/main
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
 
-##set exe_red=/home/edwards/qcd/git/devel/redstar/build/src
-##set exe_col=/home/edwards/qcd/git/devel/colorvec/build/src
-##set exe_har=/home/edwards/qcd/git/devel/harom/scalar-Nd3/mainprogs/main
+set exe_red=/home/edwards/qcd/git/devel/redstar/build/src
+set exe_col=/home/edwards/qcd/git/devel/colorvec/build/src
+set exe_har=/home/edwards/qcd/git/devel/harom/scalar-Nd3/mainprogs/main
 
-setenv OMP_NUM_THREADS 1
+setenv OMP_NUM_THREADS 4
 
 $exe_red/redstar_gen_graph $f out.xml >&! ${g}.gen.out
 if ($status != 0) then
@@ -39,7 +45,8 @@ if ($status != 0) then
   exit 1
 endif
 
-$exe_col/hadron_node ${t} out.xml >&! had.${f}.out
+##$exe_col/hadron_node ${t} out.xml >&! had.${f}.out
+$exe_col/hadron_node_new_omp ${t} out.xml >&! had.${f}.out
 if ($status != 0) then
   echo "hadron_node failed"
   exit 1

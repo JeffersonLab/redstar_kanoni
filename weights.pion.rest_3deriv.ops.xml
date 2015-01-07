@@ -22,7 +22,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>0.0471766</Val>
+=======
+          <Val>0.0612767</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -35,7 +39,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>-0.200023</Val>
+=======
+          <Val>-0.364778</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -48,7 +56,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>-0.0840153</Val>
+=======
+          <Val>-0.116344</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -61,7 +73,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>0.00509371</Val>
+=======
+          <Val>0.00317763</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -74,7 +90,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>-0.0688366</Val>
+=======
+          <Val>-0.118152</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -87,7 +107,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>0.159463</Val>
+=======
+          <Val>0.248601</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -100,7 +124,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>0.0934575</Val>
+=======
+          <Val>0.178402</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -113,7 +141,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>0.0346691</Val>
+=======
+          <Val>0.151767</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -126,7 +158,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>-0.0266441</Val>
+=======
+          <Val>-0.0716937</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -139,7 +175,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>-0.0262201</Val>
+=======
+          <Val>-0.0355444</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -152,7 +192,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>0.01741</Val>
+=======
+          <Val>0.0366056</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
         <elem>
           <Key>
@@ -165,7 +209,11 @@
             </Operators>
             <CGs/>
           </Key>
+<<<<<<< HEAD
           <Val>0.00357953</Val>
+=======
+          <Val>0.0114058</Val>
+>>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
         </elem>
       </Val>
     </elem>
