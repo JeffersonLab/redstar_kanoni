@@ -1,11 +1,18 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>3</version>
-  <diagnostic_level>5</diagnostic_level>
+  <version>8</version>
+  <diagnostic_level>10</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
+  <t_origin>0</t_origin>
+  <bc_spec>+1</bc_spec>
+
   <convertUDtoL>true</convertUDtoL>
+  <convertUDtoS>false</convertUDtoS>
+
+  <average_1pt_diagrams>true</average_1pt_diagrams>
+  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
 
   <Layout>
     <lattSize>4 4 4 16</lattSize>
@@ -160,6 +167,7 @@
     <!-- elem>weights.pion.xml</elem -->
     <elem>new.weights.proj.xml</elem>
   </proj_op_xmls>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
   <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
   <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
@@ -168,5 +176,5 @@
     <elem>smeared_hadron_node.sdb1</elem>
   </hadron_node_dbs>
   <output_db>output.npt.sdb1</output_db>
-</DBFiles>	
+</DBFiles>      
 </RedstarNPt>

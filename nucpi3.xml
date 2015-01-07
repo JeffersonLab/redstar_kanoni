@@ -1,13 +1,18 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>5</version>
-  <diagnostic_level>2</diagnostic_level>
+  <version>8</version>
+  <diagnostic_level>1</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
+  <t_origin>0</t_origin>
+  <bc_spec>+1</bc_spec>
+
   <convertUDtoL>true</convertUDtoL>
   <convertUDtoS>false</convertUDtoS>
+
   <average_1pt_diagrams>true</average_1pt_diagrams>
+  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
 
   <Layout>
     <lattSize>4 4 4 16</lattSize>
@@ -83,6 +88,7 @@
 </Param>
 <DBFiles>
   <proj_op_xmls></proj_op_xmls>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
   <noneval_graph_xml>noneval.xml</noneval_graph_xml>
   <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
   <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>

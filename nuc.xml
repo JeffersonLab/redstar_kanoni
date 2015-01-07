@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>7</version>
-  <diagnostic_level>5</diagnostic_level>
+  <version>8</version>
+  <diagnostic_level>6</diagnostic_level>
 
-  <Nt_corr>16</Nt_corr>
+  <Nt_corr>2</Nt_corr>
   <convertUDtoL>true</convertUDtoL>
   <convertUDtoS>false</convertUDtoS>
   <average_1pt_diagrams>true</average_1pt_diagrams>
   <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
 
-  <t_origin>1</t_origin>
+  <t_origin>0</t_origin>
   <bc_spec>-1</bc_spec>
 
   <Layout>
@@ -33,8 +33,7 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                <!-- name>NucleonMG1g1MxD2J1M_J1o2_G1g1</name -->
+                <name>NucleonMG1g1MxD1J1M_J1o2_G1u1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -46,7 +45,7 @@
 
         <annotation>Source</annotation>
         <elem>
-          <t_slice>3</t_slice>
+          <t_slice>0</t_slice>
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
@@ -55,8 +54,7 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                <!-- name>NucleonMG1g1MxD2J1M_J1o2_G1g1</name -->
+                <name>NucleonMG1g1MxD1J1M_J1o2_G1u1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -71,6 +69,7 @@
 </Param>
 <DBFiles>
   <proj_op_xmls></proj_op_xmls>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
   <noneval_graph_xml>noneval.xml</noneval_graph_xml>
   <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
   <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>

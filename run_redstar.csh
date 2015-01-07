@@ -23,8 +23,8 @@ set g=${f:r}
 
 /bin/rm -f hadron_node.xml
 
-set exe_red=/Users/edwards/Documents/qcd/git/redstar/build/src
-set exe_col=/Users/edwards/Documents/qcd/git/colorvec/build/src
+set exe_red=/Users/edwards/Documents/qcd/git/devel/redstar/build/src
+set exe_col=/Users/edwards/Documents/qcd/git/devel/colorvec/build/src
 set exe_har=/Users/edwards/Documents/qcd/git/devel/harom/scalar-Nd3/mainprogs/main
 
 ##set exe_red=/home/edwards/qcd/git/devel/redstar/build/src

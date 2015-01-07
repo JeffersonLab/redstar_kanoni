@@ -1,11 +1,18 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>3</version>
-  <diagnostic_level>4</diagnostic_level>
+  <version>8</version>
+  <diagnostic_level>6</diagnostic_level>
 
-  <Nt_corr>16</Nt_corr>
+  <Nt_corr>2</Nt_corr>
+  <t_origin>0</t_origin>
+  <bc_spec>+1</bc_spec>
+
   <convertUDtoL>true</convertUDtoL>
+  <convertUDtoS>false</convertUDtoS>
+
+  <average_1pt_diagrams>true</average_1pt_diagrams>
+  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
 
   <Layout>
     <lattSize>4 4 4 16</lattSize>
@@ -13,84 +20,7 @@
   </Layout>
 
   <NPointList>
-    <elem>
-      <ensemble>fred</ensemble>
-      <NPoint>
-        <annotation>Sink</annotation>
-        <elem>
-          <t_slice>-2</t_slice>
-          <Irrep>
-            <smearedP>true</smearedP>
-            <creation_op>false</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1m</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Irrep>
-        </elem>
 
-        <annotation>Source</annotation>
-        <elem>
-          <t_slice>0</t_slice>
-          <Irrep>
-            <smearedP>true</smearedP>
-            <creation_op>true</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1m</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Irrep>
-        </elem>
-      </NPoint>
-    </elem>
     <elem>
       <ensemble>fred</ensemble>
       <NPoint>
@@ -105,14 +35,14 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <name>Dneg_rhoxD0_J0__J1_T1</name>
                 <smear></smear>
-                <mom_type>1 0 0</mom_type>
+                <mom_type>0 0 0</mom_type>
               </elem>
               <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <name>Dneg_pionxD0_J0__J0_A1</name>
                 <smear></smear>
-                <mom_type>1 0 0</mom_type>
+                <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
@@ -121,9 +51,9 @@
                 <right>2</right>
                 <target>
                   <slot>12</slot>
-                  <irrep>T1m</irrep>
+                  <irrep>T1p</irrep>
                   <embed>1</embed>
-                  <twoI>2</twoI>
+                  <twoI>0</twoI>
                   <mom_type>0 0 0</mom_type>
                 </target>
               </elem>
@@ -142,33 +72,18 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <name>tetra2I0S0p_rhoxF1xC3bar_pionbarxF3xC3__F3_2I0_Sm0_G0__J1_T1p</name>
                 <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
+                <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1m</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
             </CGs>
           </Irrep>
         </elem>
       </NPoint>
     </elem>
+
     <elem>
       <ensemble>fred</ensemble>
       <NPoint>
@@ -179,18 +94,18 @@
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
             <mom>0 0 0</mom>
-            <twoI_z>-2</twoI_z>
+            <twoI_z>0</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <name>Dneg_rhoxD0_J0__J1_T1</name>
                 <smear></smear>
-                <mom_type>1 0 0</mom_type>
+                <mom_type>0 0 0</mom_type>
               </elem>
               <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <name>Dneg_pionxD0_J0__J0_A1</name>
                 <smear></smear>
-                <mom_type>1 0 0</mom_type>
+                <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
@@ -199,9 +114,9 @@
                 <right>2</right>
                 <target>
                   <slot>12</slot>
-                  <irrep>T1m</irrep>
+                  <irrep>T1p</irrep>
                   <embed>1</embed>
-                  <twoI>2</twoI>
+                  <twoI>0</twoI>
                   <mom_type>0 0 0</mom_type>
                 </target>
               </elem>
@@ -216,18 +131,45 @@
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
             <mom>0 0 0</mom>
-            <twoI_z>-2</twoI_z>
+            <twoI_z>0</twoI_z>
+            <row>2</row>
+            <Operators>
+              <elem>
+                <name>tetra2I0S0p_rhoxF1xC3bar_pionbarxF3xC3__F3_2I0_Sm0_G0__J1_T1p</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <name>Dneg_rhoxD0_J0__J1_T1</name>
                 <smear></smear>
-                <mom_type>1 0 0</mom_type>
+                <mom_type>0 0 0</mom_type>
               </elem>
               <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <name>Dneg_pionxD0_J0__J0_A1</name>
                 <smear></smear>
-                <mom_type>1 0 0</mom_type>
+                <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
@@ -236,24 +178,114 @@
                 <right>2</right>
                 <target>
                   <slot>12</slot>
-                  <irrep>T1m</irrep>
+                  <irrep>T1p</irrep>
                   <embed>1</embed>
-                  <twoI>2</twoI>
+                  <twoI>0</twoI>
                   <mom_type>0 0 0</mom_type>
                 </target>
               </elem>
             </CGs>
           </Irrep>
         </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>3</row>
+            <Operators>
+              <elem>
+                <name>tetra2I0S0p_rhoxF1xC3bar_pionbarxF3xC3__F3_2I0_Sm0_G0__J1_T1p</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
       </NPoint>
     </elem>
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>3</row>
+            <Operators>
+              <elem>
+                <name>Dneg_rhoxD0_J0__J1_T1</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+              <elem>
+                <name>Dneg_pionxD0_J0__J0_A1</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <irrep>T1p</irrep>
+                  <embed>1</embed>
+                  <twoI>0</twoI>
+                  <mom_type>0 0 0</mom_type>
+                </target>
+              </elem>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I0S0p_rhoxF1xC3bar_pionbarxF3xC3__F3_2I0_Sm0_G0__J1_T1p</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
   </NPointList>
 </Param>
 <DBFiles>
   <proj_op_xmls></proj_op_xmls>
-  <hadron_node_xml>hadron_node.xml</hadron_node_xml>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
+  <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
+  <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
+  <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
   <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
-  <hadron_node_dbs><elem>hadron_node.sdb1</elem></hadron_node_dbs>
+  <hadron_node_dbs>
+    <elem>smeared_hadron_node.sdb1</elem>
+  </hadron_node_dbs>
   <output_db>output.npt.sdb1</output_db>
 </DBFiles>	
 </RedstarNPt>

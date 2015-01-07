@@ -1,11 +1,18 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>3</version>
-  <diagnostic_level>4</diagnostic_level>
+  <version>8</version>
+  <diagnostic_level>1</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
+  <t_origin>0</t_origin>
+  <bc_spec>+1</bc_spec>
+
   <convertUDtoL>true</convertUDtoL>
+  <convertUDtoS>true</convertUDtoS>
+
+  <average_1pt_diagrams>true</average_1pt_diagrams>
+  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
 
   <Layout>
     <lattSize>4 4 4 16</lattSize>
@@ -22,33 +29,17 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
-            <mom>0 1 0</mom>
+            <mom>0 0 0</mom>
             <twoI_z>0</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <name>Kneg_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                <name>tetra2I0S0pP_rhoxF6xC3bar_rhobarxF6barxC3__F1_2I0_S0_Gp__J0_A1pP</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>D4A1P</irrep>
-                  <embed>1</embed>
-                  <twoI>0</twoI>
-                  <mom_type>1 0 0</mom_type>
-                </target>
-              </elem>
             </CGs>
           </Irrep>
         </elem>
@@ -59,14 +50,14 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
-            <mom>0 1 0</mom>
+            <mom>0 0 0</mom>
             <twoI_z>0</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <name>fl_a0xD0_J0__J0_H0D4A1</name>
+                <name>fl_a0xD0_J0__J0_A1</name>
                 <smear></smear>
-                <mom_type>1 0 0</mom_type>
+                <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
@@ -86,33 +77,17 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
-            <mom>0 1 0</mom>
+            <mom>0 0 0</mom>
             <twoI_z>0</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <name>Kneg_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                <name>tetra2I0S0pP_rhoxF6xC3bar_rhobarxF6barxC3__F1_2I0_S0_Gp__J0_A1pP</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>D4A1P</irrep>
-                  <embed>1</embed>
-                  <twoI>0</twoI>
-                  <mom_type>1 0 0</mom_type>
-                </target>
-              </elem>
             </CGs>
           </Irrep>
         </elem>
@@ -123,33 +98,17 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
-            <mom>0 1 0</mom>
+            <mom>0 0 0</mom>
             <twoI_z>0</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <name>Kneg_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                <name>tetra2I0S0pP_rhoxF6xC3bar_rhobarxF6barxC3__F1_2I0_S0_Gp__J0_A1pP</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>D4A1P</irrep>
-                  <embed>1</embed>
-                  <twoI>0</twoI>
-                  <mom_type>1 0 0</mom_type>
-                </target>
-              </elem>
             </CGs>
           </Irrep>
         </elem>
@@ -159,9 +118,14 @@
 </Param>
 <DBFiles>
   <proj_op_xmls></proj_op_xmls>
-  <hadron_node_xml>hadron_node.xml</hadron_node_xml>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
+  <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
+  <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
+  <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
   <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
-  <hadron_node_dbs><elem>hadron_node.sdb1</elem></hadron_node_dbs>
+  <hadron_node_dbs>
+    <elem>smeared_hadron_node.sdb1</elem>
+  </hadron_node_dbs>
   <output_db>output.npt.sdb1</output_db>
 </DBFiles>	
 </RedstarNPt>

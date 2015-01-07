@@ -3,7 +3,7 @@
 <Param> 
   <version>5</version>
   <num_vecs>10</num_vecs>
-  <!-- use_derivP>false</use_derivP -->
+  <!-- num_vecs>10</num_vecs -->
   <use_derivP>true</use_derivP>
 
   <FlavorToMass>
@@ -38,12 +38,16 @@
   <hadron_node_xmls>
     <elem>smeared_hadron_node.xml</elem>
   </hadron_node_xmls>
-  <prop_dbs><elem>prop.sdb</elem></prop_dbs>
+  <prop_dbs>
+    <elem>prop.sdb</elem>
+  </prop_dbs>
   <baryon_dbs><elem>baryon.sdb</elem></baryon_dbs>
-  <!-- meson_dbs> <elem>meson.disp.sdb</elem> </meson_dbs -->
-  <meson_dbs> <elem>meson.deriv.sdb</elem> </meson_dbs>
+  <meson_dbs> 
+    <elem>meson.deriv.mom3_4.sdb</elem> 
+    <elem>meson.deriv.sdb</elem> 
+  </meson_dbs>
   <glue_dbs><elem>glue.sdb</elem></glue_dbs>
-  <tetra_dbs><elem>tetraquark.sdb</elem></tetra_dbs>
+  <tetra_dbs><elem>tetra.sdb</elem></tetra_dbs>
   <output_db>smeared_hadron_node.sdb1</output_db>
 </DBFiles>	
 </ColorVecHadron>

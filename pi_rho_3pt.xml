@@ -1,8 +1,7 @@
-<?xml version="1.0"?>
-<RedstarNPt>
+<?xml version="1.0"?> <RedstarNPt>
 <Param> 
-  <version>7</version>
-  <diagnostic_level>10</diagnostic_level>
+  <version>8</version>
+  <diagnostic_level>0</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
   <t_origin>0</t_origin>
@@ -29,14 +28,14 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
-            <mom>0 0 1</mom>
+            <mom>0 0 0</mom>
             <twoI_z>2</twoI_z>
-            <row>2</row>
+            <row>1</row>
             <Operators>
               <elem>
-                <name>rho_rhoxD0_J0__J1_H1D4E2</name>
+                <name>pion_pionxD0_J0__J0_A1</name>
                 <smear></smear>
-                <mom_type>1 0 0</mom_type>
+                <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
@@ -48,17 +47,17 @@
         <elem>
           <t_slice>-3</t_slice>
           <Irrep>
-            <smearedP>true</smearedP>
+            <smearedP>false</smearedP>
             <creation_op>true</creation_op>
-            <mom>0 -1 1</mom>
+            <mom>1 0 0</mom>
             <twoI_z>0</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <!-- name>b_b0xD0_J0__J0_A1</name-->
-                <name>hl_b0xD0_J0__J0_A1</name>
+                <!-- name>b_b0xD0_J0__J0_H0D4A1</name -->
+                <name>hl_b0xD0_J0__J0_H0D4A1</name>
                 <smear></smear>
-                <mom_type>1 1 0</mom_type>
+                <mom_type>1 0 0</mom_type>
               </elem>
             </Operators>
             <CGs>
@@ -72,12 +71,12 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
-            <mom>0 1 0</mom>
+            <mom>-1 0 0</mom>
             <twoI_z>2</twoI_z>
             <row>1</row>
             <Operators>
               <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <name>rho_rhoxD0_J0__J1_H1D4E2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
@@ -92,12 +91,14 @@
 </Param>
 <DBFiles>
   <proj_op_xmls></proj_op_xmls>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
   <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
   <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
   <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
   <hadron_node_dbs>
     <elem>smeared_hadron_node.sdb1</elem>
+    <elem>unsmeared_hadron_node.sdb1</elem>
   </hadron_node_dbs>
   <output_db>output.npt.sdb1</output_db>
 </DBFiles>      

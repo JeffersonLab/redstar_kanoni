@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>7</version>
+  <version>8</version>
   <diagnostic_level>10</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
