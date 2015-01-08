@@ -2,7 +2,7 @@
 <ColorVecHadron>
 <Param> 
   <version>5</version>
-  <num_vecs>10</num_vecs>
+  <num_vecs>3</num_vecs>
   <!-- num_vecs>10</num_vecs -->
   <use_derivP>true</use_derivP>
 
