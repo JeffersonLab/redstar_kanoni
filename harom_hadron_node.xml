@@ -11,8 +11,8 @@
       <Frequency>1</Frequency>
       <Param>
         <version>2</version>
-        <num_vecs>3</num_vecs>
-        <!-- num_vecs>10</num_vecs -->
+        <!-- num_vecs>3</num_vecs -->
+        <num_vecs>10</num_vecs>
         <displacement_length>1</displacement_length>
 
         <FlavorToMass>

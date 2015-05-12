@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>7</version>
+  <version>8</version>
   <diagnostic_level>15</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
@@ -34,7 +34,7 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>tetra2I0S0mP_a0xF1xC6_pionbarxF1xC6bar__F1_2I0_S0_Gp__J0_A1mP</name>
+                <name>tetra2I0S0mP_a0xF3barxC3bar_pionbarxF3xC3__F1_2I0_S0_Gp__J0_A1mP</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -55,7 +55,54 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>tetra2I0S0mP_a0xF1xC6_pionbarxF1xC6bar__F1_2I0_S0_Gp__J0_A1mP</name>
+                <name>tetra2I0S0mP_a0xF3barxC3bar_pionbarxF3xC3__F1_2I0_S0_Gp__J0_A1mP</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I0S0mM_a0xF3barxC3bar_pionbarxF3xC3__F1_2I0_S0_Gm__J0_A1mM</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I0S0mM_a0xF3barxC3bar_pionbarxF3xC3__F1_2I0_S0_Gm__J0_A1mM</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -70,6 +117,7 @@
 </Param>
 <DBFiles>
   <proj_op_xmls></proj_op_xmls>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
   <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
   <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
