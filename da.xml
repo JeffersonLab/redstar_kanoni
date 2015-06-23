@@ -29,6 +29,194 @@
           <Irrep>
             <smearedP>false</smearedP>
             <creation_op>false</creation_op>
+            <mom>0 0 1</mom>
+            <twoI_z>2</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_H0D4A2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 1</mom>
+            <twoI_z>2</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>false</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 1</mom>
+            <twoI_z>2</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_H0D4A2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 1</mom>
+            <twoI_z>2</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>false</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 2</mom>
+            <twoI_z>2</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_H0D4A2</name>
+                <smear>using disp=2</smear>
+                <mom_type>2 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 2</mom>
+            <twoI_z>2</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                <smear></smear>
+                <mom_type>2 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+    <!-- elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>false</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>2</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>pion_pionxDA_J0__J0_A1mM</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>2</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>pion_pionxD0_J0__J0_A1</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem -->
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>false</smearedP>
+            <creation_op>false</creation_op>
             <mom>0 0 0</mom>
             <twoI_z>2</twoI_z>
             <row>65</row>
