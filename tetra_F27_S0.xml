@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<RedstarNPt>
+<Param> 
+  <version>8</version>
+  <diagnostic_level>0</diagnostic_level>
+
+  <Nt_corr>16</Nt_corr>
+  <t_origin>0</t_origin>
+  <bc_spec>+1</bc_spec>
+
+  <convertUDtoL>true</convertUDtoL>
+  <convertUDtoS>false</convertUDtoS>
+
+  <average_1pt_diagrams>true</average_1pt_diagrams>
+  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+
+  <Layout>
+    <lattSize>4 4 4 16</lattSize>
+    <decayDir>3</decayDir>
+  </Layout>
+
+  <NPointList>
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>4</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I4S0pM_pion2xF6xC6_pionbarxF6barxC6bar__F27_2I4_S0_Gm__J0_A1pM</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>4</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I4S0pM_pion2xF6xC6_pionbarxF6barxC6bar__F27_2I4_S0_Gm__J0_A1pM</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>4</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I4S0pP_pion2xF6xC6_pionbarxF6barxC6bar__F27_2I4_S0_Gp__J0_A1pP</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>4</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I4S0pP_pion2xF6xC6_pionbarxF6barxC6bar__F27_2I4_S0_Gp__J0_A1pP</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>4</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I4S0mM_a1xF6xC6_pionbarxF6barxC6bar__F27_2I4_S0_Gm__J1_T1mM</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>4</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I4S0mM_a1xF6xC6_pionbarxF6barxC6bar__F27_2I4_S0_Gm__J1_T1mM</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>4</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I4S0mP_a1xF6xC6_pionbarxF6barxC6bar__F27_2I4_S0_Gp__J1_T1mP</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>4</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>tetra2I4S0mP_a1xF6xC6_pionbarxF6barxC6bar__F27_2I4_S0_Gp__J1_T1mP</name>
+                <smear></smear>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+  </NPointList>
+</Param>
+<DBFiles>
+  <proj_op_xmls></proj_op_xmls>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
+  <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
+  <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
+  <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
+  <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
+  <hadron_node_dbs>
+    <elem>smeared_hadron_node.sdb1</elem>
+  </hadron_node_dbs>
+  <output_db>output.npt.sdb1</output_db>
+</DBFiles>      
+</RedstarNPt>
