@@ -130,6 +130,122 @@
         </elem>
       </NPoint>
     </elem>
+
+
+
+    <elem>
+      <ensemble>fred</ensemble>
+      <NPoint>
+        <annotation>Sink</annotation>
+        <elem>
+          <t_slice>-2</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>false</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+              <elem>
+                <name>pion_proj0_p110_H0D2A2</name>
+                <smear></smear>
+                <mom_type>1 1 0</mom_type>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <irrep>D4E2P</irrep>
+                  <embed>1</embed>
+                  <twoI>2</twoI>
+                  <mom_type>1 0 0</mom_type>
+                </target>
+              </elem>
+              <elem>
+                <left>12</left>
+                <right>3</right>
+                <target>
+                  <slot>123</slot>
+                  <irrep>T1m</irrep>
+                  <embed>1</embed>
+                  <twoI>0</twoI>
+                  <mom_type>0 0 0</mom_type>
+                </target>
+              </elem>
+            </CGs>
+          </Irrep>
+        </elem>
+
+        <annotation>Source</annotation>
+        <elem>
+          <t_slice>0</t_slice>
+          <Irrep>
+            <smearedP>true</smearedP>
+            <creation_op>true</creation_op>
+            <mom>0 0 0</mom>
+            <twoI_z>0</twoI_z>
+            <row>1</row>
+            <Operators>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+              <elem>
+                <name>pion_proj0_p110_H0D2A2</name>
+                <smear></smear>
+                <mom_type>1 1 0</mom_type>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <smear></smear>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <irrep>D4E2P</irrep>
+                  <embed>1</embed>
+                  <twoI>2</twoI>
+                  <mom_type>1 0 0</mom_type>
+                </target>
+              </elem>
+              <elem>
+                <left>12</left>
+                <right>3</right>
+                <target>
+                  <slot>123</slot>
+                  <irrep>T1m</irrep>
+                  <embed>1</embed>
+                  <twoI>0</twoI>
+                  <mom_type>0 0 0</mom_type>
+                </target>
+              </elem>
+            </CGs>
+          </Irrep>
+        </elem>
+      </NPoint>
+    </elem>
+
+
+
   </NPointList>
 </Param>
 <DBFiles>
@@ -153,5 +269,5 @@
     <elem>smeared_hadron_node.sdb1</elem>
   </hadron_node_dbs>
   <output_db>output.npt.sdb1</output_db>
-</DBFiles>      
+</DBFiles>
 </RedstarNPt>

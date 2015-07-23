@@ -100,7 +100,6 @@
     </elem>
 
 
-<annotation>
     <elem>
       <ensemble>fred</ensemble>
       <NPoint>
@@ -179,8 +178,6 @@
         </elem>
       </NPoint>
     </elem>
-</annotation>
-
 
   </NPointList>
 </Param>
