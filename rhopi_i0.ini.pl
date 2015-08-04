@@ -9,15 +9,15 @@ sub params
   $spin_1 = "1";
   $parity_1 = -1;
 #  $gparity_1 = -1;
-  $opname_1 = "proj0";
-#  $opname_1 = "rhoxD0_J0__J1";
+#  $opname_1 = "proj0";
+  $opname_1 = "rhoxD0_J0__J1";
   
   $flav_2 = "pion";
   $spin_2 = "0";
   $parity_2 = -1;
 #  $gparity_2 = -1;
-  $opname_2 = "proj0";
-#  $opname_2 = "pionxD0_J0__J0";
+#  $opname_2 = "proj0";
+  $opname_2 = "pionxD0_J0__J0";
   
   $smearedP = "true";
   $creation_op = "false";
@@ -28,7 +28,7 @@ sub params
   @target_moms = ("0 0 0", "1 0 0", "1 1 0", "1 1 1");
   $one_order = "false";
 
-  $mom2_max = 3;
+  $mom2_max = 2;
   
   $op_prefix = "I0,iz0,";
   $op_suffix = "";

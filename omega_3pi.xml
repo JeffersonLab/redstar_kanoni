@@ -34,17 +34,17 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
+                <name>pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
               <elem>
-                <name>pion_proj0_p110_H0D2A2</name>
+                <name>pionxD0_J0__J0_H0D2A2</name>
                 <smear></smear>
                 <mom_type>1 1 0</mom_type>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pionxD0_J0__J0_A1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -87,17 +87,17 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
+                <name>pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
               <elem>
-                <name>pion_proj0_p110_H0D2A2</name>
+                <name>pionxD0_J0__J0_H0D2A2</name>
                 <smear></smear>
                 <mom_type>1 1 0</mom_type>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pionxD0_J0__J0_A1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -147,17 +147,17 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
+                <name>pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
               <elem>
-                <name>pion_proj0_p110_H0D2A2</name>
+                <name>pionxD0_J0__J0_H0D2A2</name>
                 <smear></smear>
                 <mom_type>1 1 0</mom_type>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
+                <name>pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
@@ -200,17 +200,17 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
+                <name>pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
               <elem>
-                <name>pion_proj0_p110_H0D2A2</name>
+                <name>pionxD0_J0__J0_H0D2A2</name>
                 <smear></smear>
                 <mom_type>1 1 0</mom_type>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
+                <name>pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
