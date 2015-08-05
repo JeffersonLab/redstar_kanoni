@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RedstarNPt>
 <Param> 
-  <version>8</version>
-<<<<<<< HEAD
-  <diagnostic_level>100</diagnostic_level>
-=======
-  <diagnostic_level>5</diagnostic_level>
->>>>>>> 36090e66a51ae2bb269a6f6cb6852b1154abe924
+  <version>9</version>
+  <diagnostic_level>0</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
   <t_origin>0</t_origin>
@@ -171,7 +167,7 @@
 </Param>
 <DBFiles>
   <proj_op_xmls></proj_op_xmls>
-  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
+  <corr_graph_xml>corr_graph.xml</corr_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
   <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
   <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>

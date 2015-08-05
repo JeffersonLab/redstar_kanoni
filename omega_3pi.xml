@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>8</version>
+  <version>9</version>
   <diagnostic_level>0</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
@@ -34,17 +34,17 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pionxD0_J0__J0_H0D4A2</name>
+                <name>pion_pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
               <elem>
-                <name>pionxD0_J0__J0_H0D2A2</name>
+                <name>pion_pionxD0_J0__J0_H0D2A2</name>
                 <smear></smear>
                 <mom_type>1 1 0</mom_type>
               </elem>
               <elem>
-                <name>pionxD0_J0__J0_A1</name>
+                <name>pion_pionxD0_J0__J0_A1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -87,17 +87,17 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pionxD0_J0__J0_H0D4A2</name>
+                <name>pion_pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
               <elem>
-                <name>pionxD0_J0__J0_H0D2A2</name>
+                <name>pion_pionxD0_J0__J0_H0D2A2</name>
                 <smear></smear>
                 <mom_type>1 1 0</mom_type>
               </elem>
               <elem>
-                <name>pionxD0_J0__J0_A1</name>
+                <name>pion_pionxD0_J0__J0_A1</name>
                 <smear></smear>
                 <mom_type>0 0 0</mom_type>
               </elem>
@@ -147,17 +147,17 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pionxD0_J0__J0_H0D4A2</name>
+                <name>pion_pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
               <elem>
-                <name>pionxD0_J0__J0_H0D2A2</name>
+                <name>pion_pionxD0_J0__J0_H0D2A2</name>
                 <smear></smear>
                 <mom_type>1 1 0</mom_type>
               </elem>
               <elem>
-                <name>pionxD0_J0__J0_H0D4A2</name>
+                <name>pion_pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
@@ -200,17 +200,17 @@
             <row>1</row>
             <Operators>
               <elem>
-                <name>pionxD0_J0__J0_H0D4A2</name>
+                <name>pion_pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
               <elem>
-                <name>pionxD0_J0__J0_H0D2A2</name>
+                <name>pion_pionxD0_J0__J0_H0D2A2</name>
                 <smear></smear>
                 <mom_type>1 1 0</mom_type>
               </elem>
               <elem>
-                <name>pionxD0_J0__J0_H0D4A2</name>
+                <name>pion_pionxD0_J0__J0_H0D4A2</name>
                 <smear></smear>
                 <mom_type>1 0 0</mom_type>
               </elem>
@@ -260,7 +260,7 @@
     <elem>./weights.Kbar.rest_3deriv.ops.xml</elem>
     <elem>./weights.rho.xml</elem>
   </proj_op_xmls>
-  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
+  <corr_graph_xml>corr_graph.xml</corr_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
   <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
   <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
