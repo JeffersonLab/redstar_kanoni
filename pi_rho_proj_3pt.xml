@@ -1,6 +1,6 @@
 <?xml version="1.0"?> <RedstarNPt>
 <Param> 
-  <version>8</version>
+  <version>9</version>
   <diagnostic_level>9</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
@@ -101,7 +101,7 @@
     <elem>./weights.Kbar.flight_2deriv.ops.xml</elem>
     <elem>./weights.Kbar.rest_3deriv.ops.xml</elem>
   </proj_op_xmls>
-  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
+  <corr_graph_xml>corr_graph.xml</corr_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
   <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
   <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
