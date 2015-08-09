@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>9</version>
-  <diagnostic_level>0</diagnostic_level>
+  <version>10</version>
+  <diagnostic_level>100</diagnostic_level>
 
   <Nt_corr>2</Nt_corr>
   <t_origin>0</t_origin>
@@ -14,6 +14,8 @@
   <average_1pt_diagrams>true</average_1pt_diagrams>
   <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
 
+  <ensemble>fred</ensemble>
+
   <Layout>
     <lattSize>4 4 4 16</lattSize>
     <decayDir>3</decayDir>
@@ -21,7 +23,6 @@
 
   <NPointList>
     <elem>
-      <ensemble>fred</ensemble>
       <NPoint>
         <annotation>Sink</annotation>
         <elem>
@@ -29,18 +30,18 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_A1</name>
-                <smear></smear>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>0</twoI_z></flavor>
+            <Op>
+              <Operators>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_A1</name>
+                  <mom_type>0 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
 
@@ -50,18 +51,18 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_A1</name>
-                <smear></smear>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>0</twoI_z></flavor>
+            <Op>
+              <Operators>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_A1</name>
+                  <mom_type>0 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
       </NPoint>
