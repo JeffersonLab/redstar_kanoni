@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>9</version>
+  <version>10</version>
   <diagnostic_level>0</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
@@ -14,6 +14,8 @@
   <average_1pt_diagrams>true</average_1pt_diagrams>
   <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
 
+  <ensemble>fred</ensemble>
+
   <Layout>
     <lattSize>4 4 4 16</lattSize>
     <decayDir>3</decayDir>
@@ -21,7 +23,6 @@
 
   <NPointList>
     <elem>
-      <ensemble>fred</ensemble>
       <NPoint>
         <annotation>Sink</annotation>
         <elem>
@@ -29,18 +30,18 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>rho_rhoxD0_J0__J1_T1</name>
-                <smear></smear>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>2</twoI_z></flavor>
+            <Op>
+              <Operators>
+                <elem>
+                  <name>rho_rhoxD0_J0__J1_T1</name>
+                  <mom_type>0 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
 
@@ -50,34 +51,32 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1mP</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>2</twoI_z></flavor>
+            <Op>
+              <Operators>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+                <elem>
+                  <left>1</left>
+                  <right>2</right>
+                  <target>
+                    <slot>12</slot>
+                    <irrep>T1mP,1</irrep>
+                    <F>3</F>
+                    <mom_type>0 0 0</mom_type>
+                  </target>
+                </elem>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
       </NPoint>
@@ -85,7 +84,6 @@
 
 
     <elem>
-      <ensemble>fred</ensemble>
       <NPoint>
         <annotation>Sink</annotation>
         <elem>
@@ -93,34 +91,32 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1mP</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>2</twoI_z></flavor>
+            <Op>
+              <Operators>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+                <elem>
+                  <left>1</left>
+                  <right>2</right>
+                  <target>
+                    <slot>12</slot>
+                    <irrep>T1mP,1</irrep>
+                    <F>3</F>
+                    <mom_type>0 0 0</mom_type>
+                  </target>
+                </elem>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
 
@@ -130,40 +126,37 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1mP</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>2</twoI_z></flavor>
+            <Op>
+              <Operators>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+                <elem>
+                  <left>1</left>
+                  <right>2</right>
+                  <target>
+                    <slot>12</slot>
+                    <irrep>T1mP,1</irrep>
+                    <F>3</F>
+                    <mom_type>0 0 0</mom_type>
+                  </target>
+                </elem>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
       </NPoint>
     </elem>
     <elem>
-      <ensemble>fred</ensemble>
       <NPoint>
         <annotation>Sink</annotation>
         <elem>
@@ -171,34 +164,32 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>0</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1mP</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>0</twoI_z></flavor>
+            <Op>
+              <Operators>
+               <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+                <elem>
+                  <left>1</left>
+                  <right>2</right>
+                  <target>
+                    <slot>12</slot>
+                    <irrep>T1mP,1</irrep>
+                    <F>3</F>
+                    <mom_type>0 0 0</mom_type>
+                  </target>
+                </elem>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
 
@@ -208,40 +199,38 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>0</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1mP</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>0</twoI_z></flavor>
+            <Op>
+              <Operators>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+                <elem>
+                  <left>1</left>
+                  <right>2</right>
+                  <target>
+                    <slot>12</slot>
+                    <irrep>T1mP,1</irrep>
+                    <F>3</F>
+                    <mom_type>0 0 0</mom_type>
+                  </target>
+                </elem>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
       </NPoint>
     </elem>
+    
     <elem>
-      <ensemble>fred</ensemble>
       <NPoint>
         <annotation>Sink</annotation>
         <elem>
@@ -249,34 +238,32 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>false</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>-2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1mP</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>-2</twoI_z></flavor>
+            <Op>
+              <Operators>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+                <elem>
+                  <left>1</left>
+                  <right>2</right>
+                  <target>
+                    <slot>12</slot>
+                    <irrep>T1mP,1</irrep>
+                    <F>3</F>
+                    <mom_type>0 0 0</mom_type>
+                  </target>
+                </elem>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
 
@@ -286,34 +273,32 @@
           <Irrep>
             <smearedP>true</smearedP>
             <creation_op>true</creation_op>
-            <mom>0 0 0</mom>
-            <twoI_z>-2</twoI_z>
-            <row>1</row>
-            <Operators>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                <smear></smear>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <irrep>T1mP</irrep>
-                  <embed>1</embed>
-                  <twoI>2</twoI>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
+            <irmom><row>1</row><mom>0 0 0</mom></irmom>
+            <flavor><threeY>0</threeY> <twoI>2</twoI> <twoI_z>-2</twoI_z></flavor>
+            <Op>
+              <Operators>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+                <elem>
+                  <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                  <mom_type>1 0 0</mom_type>
+                </elem>
+              </Operators>
+              <CGs>
+                <elem>
+                  <left>1</left>
+                  <right>2</right>
+                  <target>
+                    <slot>12</slot>
+                    <irrep>T1mP,1</irrep>
+                    <F>3</F>
+                    <mom_type>0 0 0</mom_type>
+                  </target>
+                </elem>
+              </CGs>
+            </Op>
           </Irrep>
         </elem>
       </NPoint>
