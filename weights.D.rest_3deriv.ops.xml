@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
+
+
 <ProjectedOpWeights>
-
-  <version>2</version>
-
+  <version>3</version>
   <ProjectedOps>
     <elem>
       <Key>
-        <name>Dneg_proj0_p000_A1</name> 
-        <smear/>
+        <name>Dneg_proj0_p000_A1</name>
         <mom_type>0 0 0</mom_type>
       </Key>
       <Val>
@@ -15,25 +14,12 @@
           <Key>
             <Operators>
               <elem>
-                <name>Dneg_pionxD0_J0__J0_A1</name>
-                <smear/>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs/>
-          </Key>
-          <Val>-0.146059</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>Dneg_pion_2xD0_J0__J0_A1</name>
-                <smear/>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
-            <CGs/>
+            <CGs>
+            </CGs>
           </Key>
           <Val>0.258228</Val>
         </elem>
@@ -41,90 +27,12 @@
           <Key>
             <Operators>
               <elem>
-                <name>Dneg_a1xD1_J1__J0_A1</name>
-                <smear/>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs/>
-          </Key>
-          <Val>0.182565</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Dneg_b0xD3_J131_J0__J0_A1</name>
-                <smear/>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs/>
-          </Key>
-          <Val>0.0665152</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Dneg_a1xD3_J130_J1__J0_A1</name>
-                <smear/>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs/>
-          </Key>
-          <Val>-0.0230459</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Dneg_a1xD3_J132_J1__J0_A1</name>
-                <smear/>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs/>
-          </Key>
-          <Val>0.101189</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Dneg_b1xD3_J131_J1__J0_A1</name>
-                <smear/>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs/>
-          </Key>
-          <Val>-0.00967136</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Dneg_b1xD1_J1__J0_A1</name>
-                <smear/>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs/>
-          </Key>
-          <Val>0.302817</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>Dneg_pionxD2_J0__J0_A1</name>
-                <smear/>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
-            <CGs/>
+            <CGs>
+            </CGs>
           </Key>
           <Val>-0.00649692</Val>
         </elem>
@@ -132,12 +40,25 @@
           <Key>
             <Operators>
               <elem>
-                <name>Dneg_pion_2xD2_J0__J0_A1</name>
-                <smear/>
+                <name>Dneg_a1xD3_J132_J3__J4_A1</name>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
-            <CGs/>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00558475</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dneg_pion_2xD2_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
           </Key>
           <Val>0.10872</Val>
         </elem>
@@ -145,12 +66,38 @@
           <Key>
             <Operators>
               <elem>
-                <name>Dneg_rhoxD2_J1__J0_A1</name>
-                <smear/>
+                <name>Dneg_b1xD3_J130_J1__J0_A1</name>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
-            <CGs/>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0100564</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dneg_a1xD1_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.182565</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dneg_rhoxD2_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
           </Key>
           <Val>-0.0463958</Val>
         </elem>
@@ -159,11 +106,11 @@
             <Operators>
               <elem>
                 <name>Dneg_rho_2xD2_J1__J0_A1</name>
-                <smear/>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
-            <CGs/>
+            <CGs>
+            </CGs>
           </Key>
           <Val>-0.0220053</Val>
         </elem>
@@ -171,12 +118,51 @@
           <Key>
             <Operators>
               <elem>
-                <name>Dneg_a0xD3_J131_J0__J0_A1</name>
-                <smear/>
+                <name>Dneg_b1xD3_J132_J3__J4_A1</name>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
-            <CGs/>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00912345</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dneg_pionxD0_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.146059</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dneg_a1xD3_J132_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.101189</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dneg_a0xD3_J131_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
           </Key>
           <Val>-0.0206608</Val>
         </elem>
@@ -184,12 +170,25 @@
           <Key>
             <Operators>
               <elem>
-                <name>Dneg_a1xD3_J131_J1__J0_A1</name>
-                <smear/>
+                <name>Dneg_b0xD3_J131_J0__J0_A1</name>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
-            <CGs/>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0665152</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dneg_a1xD3_J131_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
           </Key>
           <Val>0.150207</Val>
         </elem>
@@ -197,53 +196,53 @@
           <Key>
             <Operators>
               <elem>
-                <name>Dneg_b1xD3_J130_J1__J0_A1</name>
-                <smear/>
+                <name>Dneg_a1xD3_J130_J1__J0_A1</name>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
-            <CGs/>
+            <CGs>
+            </CGs>
           </Key>
-          <Val>-0.0100564</Val>
+          <Val>-0.0230459</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dneg_b1xD3_J131_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00967136</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dneg_b1xD1_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.302817</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>Dneg_b1xD3_J132_J1__J0_A1</name>
-                <smear/>
                 <mom_type>0 0 0</mom_type>
               </elem>
             </Operators>
-            <CGs/>
+            <CGs>
+            </CGs>
           </Key>
           <Val>0.0915328</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Dneg_a1xD3_J132_J3__J4_A1</name>
-                <smear/>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs/>
-          </Key>
-          <Val>-0.00558475</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Dneg_b1xD3_J132_J3__J4_A1</name>
-                <smear/>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs/>
-          </Key>
-          <Val>0.00912345</Val>
         </elem>
       </Val>
     </elem>
