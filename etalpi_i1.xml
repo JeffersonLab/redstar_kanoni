@@ -49,7 +49,7 @@
                 </CGs>
                 <Operators>
                   <elem>
-                    <name>eta8_pionxD0_J0__J0_A1</name>
+                    <name>etal_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                   <elem>
@@ -89,7 +89,7 @@
                 </CGs>
                 <Operators>
                   <elem>
-                    <name>eta8_pionxD0_J0__J0_A1</name>
+                    <name>etal_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                   <elem>
