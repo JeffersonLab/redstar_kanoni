@@ -80,7 +80,7 @@
     <proj_op_xmls>
     </proj_op_xmls>
     <corr_graph_xml>eval_graph.xml</corr_graph_xml>
-    <noneval_graph_xml>noneval.xml</noneval_graph_xml>
+    <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
     <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
     <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
     <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
