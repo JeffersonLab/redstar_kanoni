@@ -4,7 +4,7 @@
 <RedstarNPt>
   <Param>
     <version>10</version>
-    <diagnostic_level>3</diagnostic_level>
+    <diagnostic_level>0</diagnostic_level>
     <Nt_corr>2</Nt_corr>
     <t_origin>0</t_origin>
     <bc_spec>1</bc_spec>
@@ -74,7 +74,64 @@
           </elem>
         </NPoint>
       </elem>
-    </NPointList>
+
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>-2</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>f8_a0xD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>tetraF8pP_a0xF3barxC3bar_a0barxF3xC3__F8_Gp__J0_A1pP</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+</NPointList>
   </Param>
   <DBFiles>
     <proj_op_xmls>
