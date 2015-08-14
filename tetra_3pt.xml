@@ -112,6 +112,7 @@
     <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
     <hadron_node_dbs>
       <elem>smeared_hadron_node.sdb1</elem>
+      <elem>unsmeared_hadron_node.sdb1</elem>
     </hadron_node_dbs>
     <output_db>output.npt.sdb1</output_db>
   </DBFiles>

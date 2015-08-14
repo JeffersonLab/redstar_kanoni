@@ -190,7 +190,7 @@
   </Param>
   <DBFiles>
     <proj_op_xmls>
-      <elem>new.weights.proj.xml</elem>
+      <elem>weights.pion.rest_3deriv.ops.xml</elem>
     </proj_op_xmls>
     <corr_graph_xml>eval_graph.xml</corr_graph_xml>
     <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
