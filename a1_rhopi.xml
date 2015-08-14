@@ -35,14 +35,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>a_a1xD0_J0__J1_T1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -61,6 +61,16 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
+                <Operators>
+                  <elem>
+                    <name>rho_proj0_p000_T1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>pion_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
                 <CGs>
                   <elem>
                     <left>1</left>
@@ -73,16 +83,6 @@
                     </target>
                   </elem>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>rho_proj0_p000_T1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>

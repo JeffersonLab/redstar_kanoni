@@ -35,14 +35,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>Kneg_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -61,14 +61,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>Kneg_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -91,14 +91,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>Kneg_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -117,70 +117,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>Kneg_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
-              </Op>
-            </Irrep>
-          </elem>
-        </NPoint>
-      </elem>
-      <elem>
-        <NPoint>
-          <elem>
-            <t_slice>-2</t_slice>
-            <Irrep>
-              <creation_op>false</creation_op>
-              <smearedP>true</smearedP>
-              <flavor>
-                <twoI>1</twoI>
-                <threeY>-3</threeY>
-                <twoI_z>1</twoI_z>
-              </flavor>
-              <irmom>
-                <row>1</row>
-                <mom>0 0 0</mom>
-              </irmom>
-              <Op>
                 <CGs>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
-              </Op>
-            </Irrep>
-          </elem>
-          <elem>
-            <t_slice>0</t_slice>
-            <Irrep>
-              <creation_op>true</creation_op>
-              <smearedP>true</smearedP>
-              <flavor>
-                <twoI>1</twoI>
-                <threeY>3</threeY>
-                <twoI_z>1</twoI_z>
-              </flavor>
-              <irmom>
-                <row>1</row>
-                <mom>0 0 0</mom>
-              </irmom>
-              <Op>
-                <CGs>
-                </CGs>
-                <Operators>
-                  <elem>
-                    <name>Kneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>
@@ -196,6 +140,62 @@
               <flavor>
                 <twoI>1</twoI>
                 <threeY>-3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>Kneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>-2</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>-3</threeY>
                 <twoI_z>-1</twoI_z>
               </flavor>
               <irmom>
@@ -203,14 +203,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>Kbarneg_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -229,14 +229,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>Kneg_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>

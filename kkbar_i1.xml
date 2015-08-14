@@ -35,6 +35,16 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
+                <Operators>
+                  <elem>
+                    <name>Kneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
                 <CGs>
                   <elem>
                     <left>1</left>
@@ -47,16 +57,6 @@
                     </target>
                   </elem>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>Kneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>
@@ -75,6 +75,16 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
+                <Operators>
+                  <elem>
+                    <name>Kneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
                 <CGs>
                   <elem>
                     <left>1</left>
@@ -87,16 +97,6 @@
                     </target>
                   </elem>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>Kneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>
@@ -119,6 +119,16 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
+                <Operators>
+                  <elem>
+                    <name>Kneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
                 <CGs>
                   <elem>
                     <left>1</left>
@@ -131,16 +141,6 @@
                     </target>
                   </elem>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>Kneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>
@@ -159,6 +159,16 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
+                <Operators>
+                  <elem>
+                    <name>Kneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
                 <CGs>
                   <elem>
                     <left>1</left>
@@ -171,16 +181,6 @@
                     </target>
                   </elem>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>Kneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>
@@ -203,6 +203,16 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
+                <Operators>
+                  <elem>
+                    <name>Kneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
                 <CGs>
                   <elem>
                     <left>1</left>
@@ -215,16 +225,6 @@
                     </target>
                   </elem>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>Kneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>
@@ -243,6 +243,16 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
+                <Operators>
+                  <elem>
+                    <name>Kneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
                 <CGs>
                   <elem>
                     <left>1</left>
@@ -255,16 +265,6 @@
                     </target>
                   </elem>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>Kneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>Kbarneg_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>

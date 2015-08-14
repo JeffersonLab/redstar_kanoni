@@ -35,14 +35,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -61,14 +61,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -91,14 +91,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -117,14 +117,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -147,14 +147,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -173,70 +173,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
-              </Op>
-            </Irrep>
-          </elem>
-        </NPoint>
-      </elem>
-      <elem>
-        <NPoint>
-          <elem>
-            <t_slice>-2</t_slice>
-            <Irrep>
-              <creation_op>false</creation_op>
-              <smearedP>true</smearedP>
-              <flavor>
-                <twoI>0</twoI>
-                <threeY>0</threeY>
-                <twoI_z>0</twoI_z>
-              </flavor>
-              <irmom>
-                <row>1</row>
-                <mom>0 0 0</mom>
-              </irmom>
-              <Op>
                 <CGs>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
-              </Op>
-            </Irrep>
-          </elem>
-          <elem>
-            <t_slice>0</t_slice>
-            <Irrep>
-              <creation_op>true</creation_op>
-              <smearedP>true</smearedP>
-              <flavor>
-                <twoI>0</twoI>
-                <threeY>0</threeY>
-                <twoI_z>0</twoI_z>
-              </flavor>
-              <irmom>
-                <row>2</row>
-                <mom>0 0 0</mom>
-              </irmom>
-              <Op>
-                <CGs>
-                </CGs>
-                <Operators>
-                  <elem>
-                    <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>
@@ -259,14 +203,70 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>2</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>-2</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -285,14 +285,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -315,14 +315,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -341,14 +341,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -371,14 +371,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -397,14 +397,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -427,14 +427,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -453,14 +453,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -483,14 +483,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -509,14 +509,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>tetra2I0S0p_pionxF1xC6_rhobarxF3xC6bar__F3_2I0_Sm0_G0__J1_T1p</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>

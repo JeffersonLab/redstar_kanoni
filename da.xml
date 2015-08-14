@@ -35,14 +35,14 @@
                 <mom>0 0 1</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>a_rhoxD1_J1__J1_H0D4A2</name>
                     <mom_type>1 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -61,14 +61,14 @@
                 <mom>0 0 1</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D4A2</name>
                     <mom_type>1 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -91,14 +91,14 @@
                 <mom>0 0 1</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>a_rho_2xD1_J1__J1_H0D4A2</name>
                     <mom_type>1 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -117,14 +117,14 @@
                 <mom>0 0 1</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D4A2</name>
                     <mom_type>1 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -147,8 +147,6 @@
                 <mom>0 0 2</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>a_rho_2xD1_J1__J1_H0D4A2</name>
@@ -156,6 +154,8 @@
                     <mom_type>2 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -174,14 +174,14 @@
                 <mom>0 0 2</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D4A2</name>
                     <mom_type>2 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -204,14 +204,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>pion_pionxDA_J0__J0_A1mM</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -230,14 +230,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -260,14 +260,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>pion_pionxDA_J0__J0_A1mM</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -286,14 +286,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>

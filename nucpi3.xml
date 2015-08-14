@@ -35,14 +35,14 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
-                <CGs>
-                </CGs>
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD1J1M_J1o2_G1u1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
+                <CGs>
+                </CGs>
               </Op>
             </Irrep>
           </elem>
@@ -61,6 +61,16 @@
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>pion_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
                 <CGs>
                   <elem>
                     <left>1</left>
@@ -73,16 +83,6 @@
                     </target>
                   </elem>
                 </CGs>
-                <Operators>
-                  <elem>
-                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
               </Op>
             </Irrep>
           </elem>
