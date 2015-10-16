@@ -2,7 +2,7 @@
 <RedstarNPt>
 <Param> 
   <version>10</version>
-  <diagnostic_level>100</diagnostic_level>
+  <diagnostic_level>0</diagnostic_level>
 
   <Nt_corr>16</Nt_corr>
   <t_origin>0</t_origin>
@@ -55,7 +55,8 @@
                     <right>2</right>
                     <target>
                       <slot>12</slot>
-                      <F>8,1</F>
+                      <!-- F>8,1</F -->
+                      <F>8,2</F>
                       <irrep>A1p,1</irrep>
                       <mom_type>0 0 0</mom_type>
                     </target>
@@ -95,7 +96,8 @@
                     <right>2</right>
                     <target>
                       <slot>12</slot>
-                      <F>8,1</F>
+                      <!-- F>8,1</F -->
+                      <F>8,2</F>
                       <irrep>A1p,1</irrep>
                       <mom_type>0 0 0</mom_type>
                     </target>
