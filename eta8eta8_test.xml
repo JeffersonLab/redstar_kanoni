@@ -56,6 +56,7 @@
                     <target>
                       <slot>12</slot>
                       <F>8,1</F>
+                      <!-- F>8,2</F -->
                       <irrep>A1p,1</irrep>
                       <mom_type>0 0 0</mom_type>
                     </target>
@@ -96,6 +97,7 @@
                     <target>
                       <slot>12</slot>
                       <F>8,1</F>
+                      <!-- F>8,2</F -->
                       <irrep>A1p,1</irrep>
                       <mom_type>0 0 0</mom_type>
                     </target>
