@@ -23,6 +23,19 @@
           </Key>
           <Val>0.0812767</Val>
         </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>NucleonMG1g1MxD2J1M_J1o2_G1g1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.87654</Val>
+        </elem>
       </Val>
     </elem>
   </ProjectedOps>
