@@ -303,13 +303,13 @@
                 <twoI_z>0</twoI_z>
               </flavor>
               <irmom>
-                <row>1</row>
+                <row>2</row>
                 <mom>0 0 0</mom>
               </irmom>
               <Op>
                 <Operators>
                   <elem>
-                    <name>etal_pion_2xD0_J0__J0_A1</name>
+                    <name>a_a1xD0_J0__J1_T1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
