@@ -24,11 +24,7 @@
       <mass>U0.2</mass>
     </elem>
     <elem>
-      <flavor>x</flavor>
-      <mass>U0.05</mass>
-    </elem>
-    <elem>
-      <flavor>y</flavor>
+      <flavor>g</flavor>
       <mass>U0.05</mass>
     </elem>
   </FlavorToMass>
