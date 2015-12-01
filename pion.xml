@@ -3,13 +3,14 @@
 
 <RedstarNPt>
   <Param>
-    <version>10</version>
+    <version>11</version>
     <diagnostic_level>10</diagnostic_level>
     <Nt_corr>16</Nt_corr>
     <t_origin>0</t_origin>
     <bc_spec>1</bc_spec>
     <convertUDtoL>true</convertUDtoL>
     <convertUDtoS>false</convertUDtoS>
+    <autoIrrepCG>false</autoIrrepCG>
     <average_1pt_diagrams>true</average_1pt_diagrams>
     <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
     <ensemble></ensemble>
