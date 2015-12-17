@@ -5,7 +5,7 @@
   <Param>
     <version>10</version>
     <diagnostic_level>5</diagnostic_level>
-    <Nt_corr>16</Nt_corr>
+    <Nt_corr>6</Nt_corr>
     <t_origin>1</t_origin>
     <bc_spec>-1</bc_spec>
     <convertUDtoL>true</convertUDtoL>
@@ -63,6 +63,7 @@
               <Op>
                 <Operators>
                   <elem>
+		    <annotation>isovector  gamma_0</annotation>
                     <name>b_b0xD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
@@ -145,6 +146,7 @@
               <Op>
                 <Operators>
                   <elem>
+		    <annotation>isoscalar (1/sqrt(2)*(ubar*u + dbar*d) gamma_0</annotation>
                     <name>hl_b0xD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
@@ -227,6 +229,7 @@
               <Op>
                 <Operators>
                   <elem>
+		    <annotation>isovector gamma_0*gamma_5</annotation>
                     <name>pion_pion_2xD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
@@ -309,7 +312,424 @@
               <Op>
                 <Operators>
                   <elem>
+		    <annotation>isovector gamma_z*gamma_5 because of row=2 of T1</annotation>
                     <name>a_a1xD0_J0__J1_T1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>6</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>-3</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>false</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>2</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+		    <annotation>light-quark isoscalar gamma_z*gamma_5 because of row=2 of T1</annotation>
+                    <name>fl_a1xD0_J0__J1_T1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>6</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>-3</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>false</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+		    <annotation>light-quark isoscalar   1</annotation>
+                    <name>fl_a0xD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>6</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>-3</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>false</smearedP>
+              <flavor>
+                <twoI>2</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+		    <annotation>isovector  1</annotation>
+                    <name>a_a0xD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>6</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>-3</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>false</smearedP>
+              <flavor>
+                <twoI>2</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>2</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+		    <annotation>isovector  gamma_0*gamma_z because of row=2 of T1</annotation>
+                    <name>rho_rho_2xD0_J0__J1_T1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>6</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>-3</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>false</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>2</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+		    <annotation>light-quark isoscalar  gamma_0*gamma_z because of row=2 of T1</annotation>
+                    <name>omegal_rho_2xD0_J0__J1_T1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
