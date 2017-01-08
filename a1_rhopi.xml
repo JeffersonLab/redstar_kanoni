@@ -95,7 +95,7 @@
       <elem>weights.pion.xml</elem>
       <elem>weights.rho.xml</elem>
     </proj_op_xmls>
-    <corr_graph_xml>eval_graph.xml</corr_graph_xml>
+    <corr_graph_db>eval_graph.sdb1</corr_graph_db>
     <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
     <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
     <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
