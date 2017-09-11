@@ -4,10 +4,10 @@
 <RedstarNPt>
   <Param>
     <version>10</version>
-    <diagnostic_level>0</diagnostic_level>
+    <diagnostic_level>2</diagnostic_level>
     <Nt_corr>16</Nt_corr>
     <t_origin>0</t_origin>
-    <bc_spec>-1</bc_spec>
+    <bc_spec>1</bc_spec>
     <convertUDtoL>true</convertUDtoL>
     <convertUDtoS>false</convertUDtoS>
     <average_1pt_diagrams>true</average_1pt_diagrams>
@@ -21,7 +21,7 @@
       <elem>
         <NPoint>
           <elem>
-            <t_slice>-2</t_slice>
+            <t_slice>6</t_slice>
             <Irrep>
               <creation_op>false</creation_op>
               <smearedP>true</smearedP>
@@ -32,30 +32,43 @@
               </flavor>
               <irmom>
                 <row>1</row>
-                <mom>1 1 0</mom>
+                <mom>0 0 0</mom>
               </irmom>
               <Op>
                 <Operators>
-                  <elem> 
-                    <name>pion_proj0_p000_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
                   <elem>
-                    <name>pion_proj0_p110_H0D2A2</name>
-                    <mom_type>1 1 0</mom_type>
+                    <name>etal_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
                 <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>-3</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>false</smearedP>
+              <flavor>
+                <twoI>2</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>1 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
                   <elem>
-                    <left>1</left>
-                    <right>2</right>
-                    <target>
-                      <slot>12</slot>
-                      <F>1</F>
-                      <irrep>D2A1P,1</irrep>
-                      <mom_type>1 1 0</mom_type>
-                    </target>
+                    <name>b_b0xD0_J0__J0_H0D4A1</name>
+                    <!-- name>hl_b0xD0_J0__J0_H0D4A1</name -->
+                    <mom_type>1 0 0</mom_type>
                   </elem>
+                </Operators>
+                <CGs>
                 </CGs>
               </Op>
             </Irrep>
@@ -66,36 +79,22 @@
               <creation_op>true</creation_op>
               <smearedP>true</smearedP>
               <flavor>
-                <twoI>0</twoI>
+                <twoI>2</twoI>
                 <threeY>0</threeY>
                 <twoI_z>0</twoI_z>
               </flavor>
               <irmom>
                 <row>1</row>
-                <mom>1 1 0</mom>
+                <mom>-1 0 0</mom>
               </irmom>
               <Op>
                 <Operators>
-                  <elem> 
-                    <name>pion_proj0_p000_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
                   <elem>
-                    <name>pion_proj0_p110_H0D2A2</name>
-                    <mom_type>1 1 0</mom_type>
+                    <name>rho_rhoxD0_J0__J1_H1D4E2</name>
+                    <mom_type>1 0 0</mom_type>
                   </elem>
                 </Operators>
                 <CGs>
-                  <elem>
-                    <left>1</left>
-                    <right>2</right>
-                    <target>
-                      <slot>12</slot>
-                      <F>1</F>
-                      <irrep>D2A1P,1</irrep>
-                      <mom_type>1 1 0</mom_type>
-                    </target>
-                  </elem>
                 </CGs>
               </Op>
             </Irrep>
@@ -106,22 +105,15 @@
   </Param>
   <DBFiles>
     <proj_op_xmls>
-      <elem>./weights.eta.proj0.xml</elem>
-      <elem>./weights.eta.proj1.xml</elem>
-      <elem>./weights.pion.flight_2deriv.ops.xml</elem>
-      <elem>./weights.pion.rest_3deriv.ops.xml</elem>
-      <elem>./weights.kaon.flight_2deriv.ops.xml</elem>
-      <elem>./weights.kaon.rest_3deriv.ops.xml</elem>
-      <elem>./weights.Kbar.flight_2deriv.ops.xml</elem>
-      <elem>./weights.Kbar.rest_3deriv.ops.xml</elem>
     </proj_op_xmls>
-    <corr_graph_xml>eval_graph.xml</corr_graph_xml>
+    <corr_graph_db>eval_graph.sdb1</corr_graph_db>
     <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
     <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
     <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
     <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
     <hadron_node_dbs>
       <elem>smeared_hadron_node.sdb1</elem>
+      <elem>unsmeared_hadron_node.sdb1</elem>
     </hadron_node_dbs>
     <output_db>output.npt.sdb1</output_db>
   </DBFiles>

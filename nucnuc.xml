@@ -3,7 +3,7 @@
 
 <RedstarNPt>
   <Param>
-    <version>10</version>
+    <version>11</version>
     <diagnostic_level>0</diagnostic_level>
     <Nt_corr>16</Nt_corr>
     <t_origin>0</t_origin>
@@ -12,6 +12,7 @@
     <convertUDtoS>false</convertUDtoS>
     <average_1pt_diagrams>true</average_1pt_diagrams>
     <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+    <autoIrrepCG>true</autoIrrepCG>
     <ensemble></ensemble>
     <Layout>
       <decayDir>3</decayDir>
@@ -102,12 +103,96 @@
           </elem>
         </NPoint>
       </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>-2</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>6</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_H1o2D4E1</name>
+                    <mom_type>1 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_H1o2D4E1</name>
+                    <mom_type>1 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                  <elem>
+                    <left>1</left>
+                    <right>2</right>
+                    <target>
+                      <slot>12</slot>
+                      <F>1</F>
+                      <irrep>T1p,1</irrep>
+                      <mom_type>0 0 0</mom_type>
+                    </target>
+                  </elem>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>6</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_H1o2D4E1</name>
+                    <mom_type>1 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_H1o2D4E1</name>
+                    <mom_type>1 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                  <elem>
+                    <left>1</left>
+                    <right>2</right>
+                    <target>
+                      <slot>12</slot>
+                      <F>1</F>
+                      <irrep>T1p,1</irrep>
+                      <mom_type>0 0 0</mom_type>
+                    </target>
+                  </elem>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
     </NPointList>
   </Param>
   <DBFiles>
     <proj_op_xmls>
     </proj_op_xmls>
-    <corr_graph_xml>eval_graph.xml</corr_graph_xml>
+    <corr_graph_db>eval_graph.sdb1</corr_graph_db>
     <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
     <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
     <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
