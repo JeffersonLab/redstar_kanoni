@@ -5,7 +5,7 @@
   <Param>
     <version>10</version>
     <diagnostic_level>0</diagnostic_level>
-    <Nt_corr>16</Nt_corr>
+    <Nt_corr>7</Nt_corr>
     <t_origin>0</t_origin>
     <bc_spec>1</bc_spec>
     <convertUDtoL>true</convertUDtoL>
