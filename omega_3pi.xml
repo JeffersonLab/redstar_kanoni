@@ -24,119 +24,7 @@
             <t_slice>-2</t_slice>
             <Irrep>
               <creation_op>false</creation_op>
-              <smearedP>true</smearedP>
-              <flavor>
-                <twoI>0</twoI>
-                <threeY>0</threeY>
-                <twoI_z>0</twoI_z>
-              </flavor>
-              <irmom>
-                <row>1</row>
-                <mom>1 0 0</mom>
-              </irmom>
-              <Op>
-                <Operators>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                    <mom_type>1 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_H0D2A2</name>
-                    <mom_type>1 1 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
-                <CGs>
-                  <elem>
-                    <left>1</left>
-                    <right>2</right>
-                    <target>
-                      <slot>12</slot>
-                      <F>3</F>
-                      <irrep>D4E2P,1</irrep>
-                      <mom_type>1 0 0</mom_type>
-                    </target>
-                  </elem>
-                  <elem>
-                    <left>12</left>
-                    <right>3</right>
-                    <target>
-                      <slot>123</slot>
-                      <F>1</F>
-                      <irrep>D4E2M,1</irrep>
-                      <mom_type>1 0 0</mom_type>
-                    </target>
-                  </elem>
-                </CGs>
-              </Op>
-            </Irrep>
-          </elem>
-          <elem>
-            <t_slice>0</t_slice>
-            <Irrep>
-              <creation_op>true</creation_op>
-              <smearedP>true</smearedP>
-              <flavor>
-                <twoI>0</twoI>
-                <threeY>0</threeY>
-                <twoI_z>0</twoI_z>
-              </flavor>
-              <irmom>
-                <row>1</row>
-                <mom>1 0 0</mom>
-              </irmom>
-              <Op>
-                <Operators>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                    <mom_type>1 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_H0D2A2</name>
-                    <mom_type>1 1 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
-                <CGs>
-                  <elem>
-                    <left>1</left>
-                    <right>2</right>
-                    <target>
-                      <slot>12</slot>
-                      <F>3</F>
-                      <irrep>D4E2P,1</irrep>
-                      <mom_type>1 0 0</mom_type>
-                    </target>
-                  </elem>
-                  <elem>
-                    <left>12</left>
-                    <right>3</right>
-                    <target>
-                      <slot>123</slot>
-                      <F>1</F>
-                      <irrep>D4E2M,1</irrep>
-                      <mom_type>1 0 0</mom_type>
-                    </target>
-                  </elem>
-                </CGs>
-              </Op>
-            </Irrep>
-          </elem>
-        </NPoint>
-      </elem>
-      <elem>
-        <NPoint>
-          <elem>
-            <t_slice>-2</t_slice>
-            <Irrep>
-              <creation_op>false</creation_op>
-              <smearedP>true</smearedP>
+              <smearedP>false</smearedP>
               <flavor>
                 <twoI>0</twoI>
                 <threeY>0</threeY>
@@ -149,40 +37,11 @@
               <Op>
                 <Operators>
                   <elem>
-                    <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                    <mom_type>1 0 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_H0D2A2</name>
-                    <mom_type>1 1 0</mom_type>
-                  </elem>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                    <mom_type>1 0 0</mom_type>
+                    <name>omegal_rhoxD0_J0__J1_T1</name>
+                    <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
-                <CGs>
-                  <elem>
-                    <left>1</left>
-                    <right>2</right>
-                    <target>
-                      <slot>12</slot>
-                      <F>3</F>
-                      <irrep>D4E2P,1</irrep>
-                      <mom_type>1 0 0</mom_type>
-                    </target>
-                  </elem>
-                  <elem>
-                    <left>12</left>
-                    <right>3</right>
-                    <target>
-                      <slot>123</slot>
-                      <F>1</F>
-                      <irrep>T1m,1</irrep>
-                      <mom_type>0 0 0</mom_type>
-                    </target>
-                  </elem>
-                </CGs>
+                <CGs/>
               </Op>
             </Irrep>
           </elem>
@@ -207,12 +66,12 @@
                     <mom_type>1 0 0</mom_type>
                   </elem>
                   <elem>
-                    <name>pion_pionxD0_J0__J0_H0D2A2</name>
-                    <mom_type>1 1 0</mom_type>
-                  </elem>
-                  <elem>
                     <name>pion_pionxD0_J0__J0_H0D4A2</name>
                     <mom_type>1 0 0</mom_type>
+                  </elem>
+                  <elem>
+                    <name>pion_pionxD0_J0__J0_H0D2A2</name>
+                    <mom_type>1 1 0</mom_type>
                   </elem>
                 </Operators>
                 <CGs>
@@ -222,8 +81,8 @@
                     <target>
                       <slot>12</slot>
                       <F>3</F>
-                      <irrep>D4E2P,1</irrep>
-                      <mom_type>1 0 0</mom_type>
+                      <irrep>D2B1P,1</irrep>
+                      <mom_type>1 1 0</mom_type>
                     </target>
                   </elem>
                   <elem>
@@ -232,7 +91,7 @@
                     <target>
                       <slot>123</slot>
                       <F>1</F>
-                      <irrep>T1m,1</irrep>
+                      <irrep>T1mM,1</irrep>
                       <mom_type>0 0 0</mom_type>
                     </target>
                   </elem>
@@ -263,6 +122,7 @@
     <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
     <hadron_node_dbs>
       <elem>smeared_hadron_node.sdb1</elem>
+      <elem>unsmeared_hadron_node.sdb1</elem>
     </hadron_node_dbs>
     <output_db>output.npt.sdb1</output_db>
   </DBFiles>
