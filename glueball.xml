@@ -130,6 +130,62 @@
           </elem>
         </NPoint>
       </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>-2</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>gluemP_NoBxD3_J131_J0__J0_A1mp</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>gluemP_NoBxD3_J131_J0__J0_A1mp</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
     </NPointList>
   </Param>
   <DBFiles>
