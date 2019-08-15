@@ -4,8 +4,8 @@
 <RedstarNPt>
   <Param>
     <version>10</version>
-    <diagnostic_level>6</diagnostic_level>
-    <Nt_corr>2</Nt_corr>
+    <diagnostic_level>5</diagnostic_level>
+    <Nt_corr>16</Nt_corr>
     <t_origin>0</t_origin>
     <bc_spec>-1</bc_spec>
     <convertUDtoL>true</convertUDtoL>
@@ -37,7 +37,7 @@
               <Op>
                 <Operators>
                   <elem>
-                    <name>NucleonMG1g1MxD1J1M_J1o2_G1u1</name>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
@@ -63,7 +63,175 @@
               <Op>
                 <Operators>
                   <elem>
-                    <name>NucleonMG1g1MxD1J1M_J1o2_G1u1</name>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>-2</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>2</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>2</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>-2</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>-1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>-1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>-2</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>-1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>2</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>1</twoI>
+                <threeY>3</threeY>
+                <twoI_z>-1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>2</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>

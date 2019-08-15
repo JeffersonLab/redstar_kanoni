@@ -27,9 +27,9 @@
               <creation_op>false</creation_op>
               <smearedP>false</smearedP>
               <flavor>
-                <twoI>2</twoI>
+                <twoI>0</twoI>
                 <threeY>0</threeY>
-                <twoI_z>2</twoI_z>
+                <twoI_z>0</twoI_z>
               </flavor>
               <irmom>
                 <row>1</row>
@@ -38,7 +38,7 @@
               <Op>
                 <Operators>
                   <elem>
-                    <name>rho_rhoxD0_J0__J1_T1</name>
+                    <name>omegal_rhoxD0_J0__J1_T1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
