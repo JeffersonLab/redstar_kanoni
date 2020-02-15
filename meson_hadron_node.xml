@@ -39,10 +39,9 @@
   </prop_dbs>
   <baryon_dbs><elem>baryon.sdb</elem></baryon_dbs>
   <meson_dbs> 
-    <elem>meson.deriv.mom3_4.sdb</elem> 
-    <elem>meson.deriv.sdb</elem> 
+    <elem>../meson.deriv.sdb</elem> 
   </meson_dbs>
-  <glue_dbs><elem>glue.sdb</elem></glue_dbs>
+  <glue_dbs><elem>glue.deriv.sdb</elem></glue_dbs>
   <tetra_dbs><elem>tetra.sdb</elem></tetra_dbs>
   <output_db>smeared_hadron_node.sdb1</output_db>
 </DBFiles>	
