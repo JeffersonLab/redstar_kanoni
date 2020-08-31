@@ -5,13 +5,7 @@ if ($#argv != 1) then
   exit 1
 endif
 
-set t="meson_hadron_node.xml"
 set f=$1
-
-if (! -f $t) then
-  echo "meson_hadron_node template file does not exist: $t"
-  exit 1
-endif
 
 if (! -f $f) then
   echo "redstar input file does not exist: $f"
@@ -22,6 +16,7 @@ set g=${f:r}
 
 
 /bin/rm -f hadron_node.xml
+
 
 #set exe_red=/Users/edwards/Documents/qcd/git/devel/redstar-pdf/build/src
 #set exe_col=/Users/edwards/Documents/qcd/git/devel/colorvec-pdf/build/src
@@ -43,7 +38,7 @@ if ($status != 0) then
   exit 1
 endif
 
-$exe_col/hadron_node ${t} out.xml >&! had.${f}.out
+$exe_col/hadron_node ./meson_hadron_node.xml out.xml >&! had.${f}.out
 if ($status != 0) then
   echo "hadron_node failed"
   exit 1
@@ -55,7 +50,7 @@ if ($status != 0) then
   exit 1
 endif
 
-$exe_red/redstar_npt $f out.xml >&! ${g}.out
+env NPT_BATCH_SIZE=1 $exe_red/redstar_npt $f out.xml >&! ${g}.out
 if ($status != 0) then
   echo "redstar_npt failed"
   exit 1
