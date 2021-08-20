@@ -5,13 +5,7 @@ if ($#argv != 1) then
   exit 1
 endif
 
-set t="meson_hadron_node.xml"
 set f=$1
-
-if (! -f $t) then
-  echo "meson_hadron_node template file does not exist: $t"
-  exit 1
-endif
 
 if (! -f $f) then
   echo "redstar input file does not exist: $f"
@@ -38,13 +32,19 @@ set exe_col=/Users/edwards/Documents/qcd/git/devel/colorvec/build/src
 
 setenv OMP_NUM_THREADS 1
 
-$exe_red/redstar_gen_graph $f out.xml >&! ${g}.gen.out
+$exe_red/redstar_corr_graph $f out.xml >&! ${g}.corr.out
 if ($status != 0) then
-  echo "redstar_gen_graph failed"
+  echo "redstar_corr_graph failed"
   exit 1
 endif
 
-$exe_col/hadron_node ${t} out.xml >&! had.${f}.out
+$exe_red/redstar_hadron_node $f out.xml >&! ${g}.node.out
+if ($status != 0) then
+  echo "redstar_hadron_node failed"
+  exit 1
+endif
+
+$exe_col/hadron_node ./meson_hadron_node.xml out.xml >&! smeared.${f}.out
 if ($status != 0) then
   echo "hadron_node failed"
   exit 1

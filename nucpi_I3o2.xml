@@ -3,7 +3,7 @@
 
 <RedstarNPt>
   <Param>
-    <version>10</version>
+    <version>11</version>
     <diagnostic_level>0</diagnostic_level>
     <Nt_corr>16</Nt_corr>
     <t_origin>3</t_origin>
@@ -12,6 +12,8 @@
     <convertUDtoS>false</convertUDtoS>
     <average_1pt_diagrams>true</average_1pt_diagrams>
     <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+    <autoIrrepCG>true</autoIrrepCG>
+    <rephaseIrrepCG>true</rephaseIrrepCG>
     <ensemble></ensemble>
     <Layout>
       <decayDir>3</decayDir>
