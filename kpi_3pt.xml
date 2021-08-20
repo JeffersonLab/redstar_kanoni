@@ -3,13 +3,15 @@
 
 <RedstarNPt>
   <Param>
-    <version>10</version>
+    <version>11</version>
     <diagnostic_level>0</diagnostic_level>
     <Nt_corr>7</Nt_corr>
     <t_origin>0</t_origin>
     <bc_spec>-1</bc_spec>
     <convertUDtoL>true</convertUDtoL>
     <convertUDtoS>false</convertUDtoS>
+    <autoIrrepCG>false</autoIrrepCG>
+    <rephaseIrrepCG>false</rephaseIrrepCG>
     <average_1pt_diagrams>true</average_1pt_diagrams>
     <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
     <ensemble></ensemble>
@@ -52,7 +54,7 @@
               <creation_op>true</creation_op>
               <smearedP>false</smearedP>
               <flavor>
-                <twoI>0</twoI>
+                <twoI>2</twoI>
                 <threeY>0</threeY>
                 <twoI_z>0</twoI_z>
               </flavor>
@@ -63,7 +65,7 @@
               <Op>
                 <Operators>
                   <elem>
-                    <name>hl_b0xD0_J0__J0_H0D4A1</name>
+                    <name>b_b0xD0_J0__J0_H0D4A1</name>
                     <mom_type>1 0 0</mom_type>
                   </elem>
                 </Operators>
@@ -86,7 +88,7 @@
                 <row>2</row>
                 <mom>1 0 0</mom>
               </irmom>
-              <Op>
+              <!-- Op>
                 <Operators>
                   <elem>
                     <name>Kneg_rhoxD0_J0__J1_H1D4E2</name>
@@ -95,8 +97,8 @@
                 </Operators>
                 <CGs>
                 </CGs>
-              </Op>
-              <!-- Op>
+              </Op -->
+              <Op>
                 <Operators>
                   <elem>
                     <name>Kneg_pionxD0_J0__J0_H0D4A2</name>
@@ -119,7 +121,7 @@
                     </target>
                   </elem>
                 </CGs>
-              </Op -->
+              </Op>
             </Irrep>
           </elem>
         </NPoint>
@@ -333,7 +335,9 @@
       <elem>weights.pion.xml</elem>
       <elem>weights.rho.xml</elem>
     </proj_op_xmls>
-    <corr_graph_db>eval_graph.sdb1</corr_graph_db>
+    <corr_graph_db>corr_graph.sdb1</corr_graph_db>
+    <corr_graph_xml>corr_graph.xml</corr_graph_xml>
+    <eval_graph_xml>eval_graph.xml</eval_graph_xml>
     <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
     <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
     <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>

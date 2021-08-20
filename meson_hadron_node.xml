@@ -36,7 +36,6 @@
   </hadron_node_xmls>
   <prop_dbs>
     <elem>prop.sdb</elem>
-    <!-- elem>../peram.only0.sdb</elem -->
   </prop_dbs>
   <baryon_dbs><elem>baryon.sdb</elem></baryon_dbs>
   <meson_dbs> 
