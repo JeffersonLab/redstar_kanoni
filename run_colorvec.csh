@@ -1,17 +1,13 @@
 #!/bin/tcsh -x
 
+#source /dist/intel/parallel_studio_xe_2016.3.067/psxevars.sh intel64
+
 if ($#argv != 1) then
   echo "Usage: $0  <redstar xml input file>"
   exit 1
 endif
 
-set t="meson_hadron_node.xml"
 set f=$1
-
-if (! -f $t) then
-  echo "meson_hadron_node template file does not exist: $t"
-  exit 1
-endif
 
 if (! -f $f) then
   echo "redstar input file does not exist: $f"
@@ -20,48 +16,13 @@ endif
 
 set g=${f:r}
 
+set exe_red=/Users/edwards/Documents/qcd/git/devel/redstar-colorvec.rge/build/src
 
-/bin/rm -f hadron_node.xml
+setenv NPT_NUM_VECT 10
 
-#set exe_red=/Users/edwards/Documents/qcd/git/devel/redstar-pdf/build/src
-#set exe_col=/Users/edwards/Documents/qcd/git/devel/colorvec-pdf/build/src
-#set exe_har=/Users/edwards/Documents/qcd/git/devel/harom-pdf/scalar-Nd3/mainprogs/main
-
-set exe_red=/Users/edwards/Documents/qcd/git/devel/redstar/build/src
-set exe_col=/Users/edwards/Documents/qcd/git/devel/colorvec/build/src
-set exe_har=/Users/edwards/Documents/qcd/git/devel/harom/scalar-Nd3/mainprogs/main
-
-#set exe_red=/Users/edwards/Documents/qcd/git/devel/tmp/redstar/build/src
-#set exe_col=/Users/edwards/Documents/qcd/git/devel/tmp/colorvec/build/src
-#set exe_har=/Users/edwards/Documents/qcd/git/devel/harom/scalar-Nd3/mainprogs/main
-
-#set exe_red=/home/edwards/qcd/git/devel/redstar/build/src
-#set exe_col=/home/edwards/qcd/git/devel/colorvec/build/src
-#set exe_har=/home/edwards/qcd/git/devel/harom/scalar-Nd3/mainprogs/main
-
-setenv OMP_NUM_THREADS 4
-
-$exe_red/redstar_gen_graph $f out.xml >&! ${g}.gen.out
+$exe_red/redstar_corr_graph $f out.xml >&! ${g}.corr.out
 if ($status != 0) then
-  echo "redstar_gen_graph failed"
-  exit 1
-endif
-
-$exe_col/hadron_node ${t} out.xml >&! had.${f}.out
-if ($status != 0) then
-  echo "hadron_node failed"
-  exit 1
-endif
-
-#$exe_har/harom -i ./harom_hadron_node.xml -o out.xml >&! harom.${f}.out
-#if ($status != 0) then
-#  echo "harom failed"
-#  exit 1
-#endif
-
-$exe_col/unsmeared_hadron_node ./unsmeared_meson_node.xml out.xml >&! unsmeared.${f}.out
-if ($status != 0) then
-  echo "colorvec failed"
+  echo "redstar_corr_graph failed"
   exit 1
 endif
 
