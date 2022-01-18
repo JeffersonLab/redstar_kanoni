@@ -18,8 +18,6 @@ set g=${f:r}
 
 set exe_red=/Users/edwards/Documents/qcd/git/devel/redstar-colorvec.rge/build/src
 
-setenv NPT_NUM_VECT 10
-
 $exe_red/redstar_corr_graph $f out.xml >&! ${g}.corr.out
 if ($status != 0) then
   echo "redstar_corr_graph failed"
