@@ -214,8 +214,7 @@
   <num_vecs>10</num_vecs>
   <use_derivP>false</use_derivP>
   <use_genprop4>true</use_genprop4>
-  <!-- fake_data_modeP>false</fake_data_modeP -->
-  <fake_data_modeP>true</fake_data_modeP>
+  <fake_data_modeP>false</fake_data_modeP>
   <ensemble>fred</ensemble>
 
   <FlavorToMass>
