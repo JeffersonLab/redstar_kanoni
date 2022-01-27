@@ -1,24 +1,30 @@
 <?xml version="1.0"?>
-
-
 <RedstarNPt>
-  <Param>
-    <version>11</version>
-    <diagnostic_level>10</diagnostic_level>
-    <Nt_corr>7</Nt_corr>
-    <t_origin>0</t_origin>
-    <bc_spec>1</bc_spec>
-    <convertUDtoL>true</convertUDtoL>
-    <convertUDtoS>false</convertUDtoS>
-    <autoIrrepCG>true</autoIrrepCG>
-    <rephaseIrrepCG>true</rephaseIrrepCG>
-    <average_1pt_diagrams>true</average_1pt_diagrams>
-    <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
-    <ensemble></ensemble>
-    <Layout>
-      <decayDir>3</decayDir>
-      <lattSize>4 4 4 16</lattSize>
-    </Layout>
+<Param> 
+  <version>11</version>
+  <diagnostic_level>0</diagnostic_level>
+
+  <autoIrrepCG>false</autoIrrepCG>
+  <rephaseIrrepCG>false</rephaseIrrepCG>
+
+  <Nt_corr>16</Nt_corr>
+  <t_origin>0</t_origin>
+  <bc_spec>-1</bc_spec>
+
+  <convertUDtoL>true</convertUDtoL>
+  <convertUDtoS>true</convertUDtoS>
+
+  <average_1pt_diagrams>true</average_1pt_diagrams>
+  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+
+  <ensemble>fred</ensemble>
+
+  <Layout>
+    <lattSize>4 4 4 16</lattSize>
+    <decayDir>3</decayDir>
+  </Layout>
+
+
     <NPointList>
       <elem>
         <NPoint>
@@ -189,19 +195,21 @@
         </NPoint>
       </elem>
     </NPointList>
-  </Param>
-  <DBFiles>
-    <proj_op_xmls>
-    </proj_op_xmls>
-    <corr_graph_db>eval_graph.sdb1</corr_graph_db>
-    <corr_graph_xml>eval_graph.xml</corr_graph_xml>
-    <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
-    <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
-    <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
-    <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
-    <hadron_node_dbs>
-      <elem>smeared_hadron_node.sdb1</elem>
-    </hadron_node_dbs>
-    <output_db>output.npt.sdb1</output_db>
-  </DBFiles>
+
+</Param>
+<DBFiles>
+  <proj_op_xmls>
+  </proj_op_xmls>
+  <corr_graph_xml>eval_graph.xml</corr_graph_xml>
+  <corr_graph_db>eval_graph.sdb1</corr_graph_db>
+  <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
+  <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
+  <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
+  <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
+  <hadron_node_dbs>
+    <elem>smeared_hadron_node.sdb1</elem>
+    <elem>unsmeared_hadron_node.sdb1</elem>
+  </hadron_node_dbs>
+  <output_db>output.npt.sdb1</output_db>
+</DBFiles>      
 </RedstarNPt>
