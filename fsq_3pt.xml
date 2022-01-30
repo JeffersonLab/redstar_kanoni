@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<RedstarNPt>
+<Param> 
+  <version>11</version>
+  <diagnostic_level>0</diagnostic_level>
+
+  <autoIrrepCG>false</autoIrrepCG>
+  <rephaseIrrepCG>false</rephaseIrrepCG>
+
+  <Nt_corr>16</Nt_corr>
+  <t_origin>0</t_origin>
+  <bc_spec>-1</bc_spec>
+
+  <convertUDtoL>true</convertUDtoL>
+  <convertUDtoS>true</convertUDtoS>
+
+  <average_1pt_diagrams>true</average_1pt_diagrams>
+  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+
+  <ensemble>fred</ensemble>
+
+  <Layout>
+    <lattSize>4 4 4 16</lattSize>
+    <decayDir>3</decayDir>
+  </Layout>
+
+
+    <NPointList>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>6</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>2</twoI>
+                <threeY>0</threeY>
+                <twoI_z>2</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>pion_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>-3</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>FSq_EE_J0__J0A1pP</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>2</twoI>
+                <threeY>0</threeY>
+                <twoI_z>2</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>pion_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
+    </NPointList>
+
+</Param>
+<DBFiles>
+  <proj_op_xmls></proj_op_xmls>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
+  <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
+  <corr_graph_db>corr_graph.sdb</corr_graph_db>
+  <corr_graph_xml>corr_graph.xml</corr_graph_xml>
+  <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
+  <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
+  <output_db>output.npt.sdb1</output_db>
+</DBFiles>      
+
+<ColorVec>
+<Param> 
+  <version>1</version>
+  <!-- num_vecs>3</num_vecs -->
+  <num_vecs>10</num_vecs>
+  <use_derivP>false</use_derivP>
+  <use_genprop4>false</use_genprop4>
+  <fake_data_modeP>false</fake_data_modeP>
+  <ensemble>fred</ensemble>
+
+  <FlavorToMass>
+    <elem>
+      <flavor>l</flavor>
+      <mass>U0.05</mass>
+    </elem>
+    <elem>
+      <flavor>s</flavor>
+      <mass>U0.1</mass>
+    </elem>
+    <elem>
+      <flavor>c</flavor>
+      <mass>U0.2</mass>
+    </elem>
+    <elem>
+      <flavor>e</flavor>
+      <mass>U0.2</mass>
+    </elem>
+    <elem>
+      <flavor>g</flavor>
+      <mass>U0.05</mass>
+    </elem>
+  </FlavorToMass>
+
+</Param>
+<DBFiles>
+  <prop_dbs>
+    <elem>../prop.sdb</elem>
+  </prop_dbs>
+  <smeared_baryon_dbs>
+    <elem>../baryon.sdb</elem>
+  </smeared_baryon_dbs>
+  <smeared_meson_dbs> 
+    <elem>../meson.deriv.sdb</elem> 
+  </smeared_meson_dbs>
+  <smeared_glue_dbs><elem>../glue.deriv.sdb</elem></smeared_glue_dbs>
+  <smeared_tetra_dbs><elem>../tetra.sdb</elem></smeared_tetra_dbs>
+  <unsmeared_meson_dbs> 
+    <elem>../unsmeared_meson.sdb</elem> 
+  </unsmeared_meson_dbs>
+  <unsmeared_genprop4_dbs> 
+    <elem>../unsmeared_genprop4.sdb</elem> 
+  </unsmeared_genprop4_dbs>
+  <discoblock_dbs> 
+    <elem>../disco.sdb</elem> 
+  </discoblock_dbs>
+</DBFiles>	
+</ColorVec>
+
+</RedstarNPt>
