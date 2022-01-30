@@ -108,6 +108,88 @@
           </elem>
         </NPoint>
       </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>6</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>2</twoI>
+                <threeY>0</threeY>
+                <twoI_z>2</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>pion_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>-3</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>0</twoI>
+                <threeY>0</threeY>
+                <twoI_z>0</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>FSq_BE_J2__J2EmP</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>2</twoI>
+                <threeY>0</threeY>
+                <twoI_z>2</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>pion_pionxD0_J0__J0_A1</name>
+                    <mom_type>0 0 0</mom_type>
+                  </elem>
+                </Operators>
+                <CGs>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
     </NPointList>
 
 </Param>
