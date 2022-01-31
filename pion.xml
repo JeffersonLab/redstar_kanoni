@@ -203,6 +203,7 @@
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
   <corr_graph_db>corr_graph.sdb</corr_graph_db>
   <corr_graph_xml>corr_graph.xml</corr_graph_xml>
+  <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
   <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
   <output_db>output.npt.sdb1</output_db>
 </DBFiles>      
@@ -214,6 +215,7 @@
   <num_vecs>10</num_vecs>
   <use_derivP>false</use_derivP>
   <use_genprop4>true</use_genprop4>
+  <use_FSq>false</use_FSq>
   <fake_data_modeP>false</fake_data_modeP>
   <ensemble>fred</ensemble>
 
@@ -259,9 +261,14 @@
   <unsmeared_genprop4_dbs> 
     <elem>../unsmeared_genprop4.sdb</elem> 
   </unsmeared_genprop4_dbs>
-  <discoblock_dbs> 
+  <twoquark_discoblock_dbs> 
     <elem>../disco.sdb</elem> 
-  </discoblock_dbs>
+  </twoquark_discoblock_dbs>
+  <hadron2pt_discoblock_dbs> 
+    <elem>../gpdf_2_0.00.sdb</elem> 
+  </hadron2pt_discoblock_dbs>
+  <fsq_discoblock_dbs> 
+  </fsq_discoblock_dbs>
 </DBFiles>	
 </ColorVec>
 
