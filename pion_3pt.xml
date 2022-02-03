@@ -15,7 +15,7 @@
   <convertUDtoS>true</convertUDtoS>
 
   <average_1pt_diagrams>true</average_1pt_diagrams>
-  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+  <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
 
   <ensemble>fred</ensemble>
 
@@ -57,8 +57,8 @@
           <elem>
             <t_slice>-3</t_slice>
             <Irrep>
-              <creation_op>false</creation_op>
-              <smearedP>true</smearedP>
+              <creation_op>true</creation_op>
+              <smearedP>false</smearedP>
               <flavor>
                 <twoI>2</twoI>
                 <threeY>0</threeY>
@@ -112,11 +112,11 @@
 
 </Param>
 <DBFiles>
-  <proj_op_xmls>
-  </proj_op_xmls>
-  <corr_graph_xml>eval_graph.xml</corr_graph_xml>
-  <corr_graph_db>eval_graph.sdb1</corr_graph_db>
+  <proj_op_xmls></proj_op_xmls>
+  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
+  <corr_graph_db>corr_graph.sdb</corr_graph_db>
+  <corr_graph_xml>corr_graph.xml</corr_graph_xml>
   <smeared_hadron_node_xml>smeared_hadron_node.xml</smeared_hadron_node_xml>
   <unsmeared_hadron_node_xml>unsmeared_hadron_node.xml</unsmeared_hadron_node_xml>
   <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
@@ -126,5 +126,5 @@
   </hadron_node_dbs>
   <output_db>output.npt.sdb1</output_db>
 </DBFiles>      
-</RedstarNPt>
 
+</RedstarNPt>

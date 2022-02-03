@@ -5,7 +5,7 @@
   <!-- num_vecs>3</num_vecs -->
   <num_vecs>10</num_vecs>
   <use_derivP>false</use_derivP>
-  <use_genprop4>true</use_genprop4>
+  <use_genprop4>false</use_genprop4>
 
   <FlavorToMass>
     <elem>
