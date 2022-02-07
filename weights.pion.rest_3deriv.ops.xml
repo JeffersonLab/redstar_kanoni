@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+
+
+<ProjectedOpWeights>
+  <version>3</version>
+  <ProjectedOps>
+    <elem>
+      <Key>
+        <name>pion_proj0_p000_A1</name>
+        <mom_type>0 0 0</mom_type>
+      </Key>
+      <Val>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_b1xD3_J132_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.01741</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pion_2xD2_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0688366</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_b1xD1_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0840153</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pionxD2_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00509371</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_a1xD3_J131_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0266441</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_rhoxD2_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.159463</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_rho_2xD2_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0934575</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pion_2xD0_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.200023</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pionxD0_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0471766</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_b1xD3_J130_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0262201</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_a0xD3_J131_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0346691</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_b1xD3_J132_J3__J4_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00357953</Val>
+        </elem>
+      </Val>
+    </elem>
+  </ProjectedOps>
+</ProjectedOpWeights>
