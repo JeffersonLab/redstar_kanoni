@@ -34808,14 +34808,14 @@
   
   <DBFiles>
     <proj_op_xmls>
-      <elem>./weights.eta.proj0.xml</elem>
-      <elem>./weights.eta.proj1.xml</elem>
-      <elem>./weights.pion.flight_2deriv.ops.xml</elem>
-      <elem>./weights.pion.rest_3deriv.ops.xml</elem>
-      <elem>./weights.kaon.flight_2deriv.ops.xml</elem>
-      <elem>./weights.kaon.rest_3deriv.ops.xml</elem>
-      <elem>./weights.Kbar.flight_2deriv.ops.xml</elem>
-      <elem>./weights.Kbar.rest_3deriv.ops.xml</elem>
+      <elem>./weights/weights.eta.proj0.xml</elem>
+      <elem>./weights/weights.eta.proj1.xml</elem>
+      <elem>./weights/weights.pion.flight_2deriv.ops.xml</elem>
+      <elem>./weights/weights.pion.rest_3deriv.ops.xml</elem>
+      <elem>./weights/weights.kaon.flight_2deriv.ops.xml</elem>
+      <elem>./weights/weights.kaon.rest_3deriv.ops.xml</elem>
+      <elem>./weights/weights.Kbar.flight_2deriv.ops.xml</elem>
+      <elem>./weights/weights.Kbar.rest_3deriv.ops.xml</elem>
     </proj_op_xmls>
     <eval_graph_xml>eval_graph.xml</eval_graph_xml>
     <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
