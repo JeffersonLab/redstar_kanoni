@@ -6,8 +6,8 @@
     <version>11</version>
     <diagnostic_level>0</diagnostic_level>
 
-    <autoIrrepCG>false</autoIrrepCG>
-    <rephaseIrrepCG>false</rephaseIrrepCG>
+    <autoIrrepCG>true</autoIrrepCG>
+    <rephaseIrrepCG>true</rephaseIrrepCG>
     
     <Nt_corr>4</Nt_corr>
     <t_origin>3</t_origin>
@@ -139146,11 +139146,11 @@
       <elem>./weights/weights.Kbar.flight_2deriv.ops.xml</elem>
       <elem>./weights/weights.Kbar.rest_3deriv.ops.xml</elem>
     </proj_op_xmls>
-    <eval_graph_xml>eval_graph.xml</eval_graph_xml>
-    <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
+    <!-- eval_graph_xml>eval_graph.xml</eval_graph_xml -->
+    <!-- noneval_graph_xml>noneval_graph.xml</noneval_graph_xml -->
     <corr_graph_db>corr_graph.sdb</corr_graph_db>
-    <corr_graph_xml>corr_graph.xml</corr_graph_xml>
-    <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
+    <!-- corr_graph_xml>corr_graph.xml</corr_graph_xml -->
+    <!-- vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml -->
     <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
     <output_db>output.npt.sdb1</output_db>
   </DBFiles>

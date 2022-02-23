@@ -4,8 +4,8 @@
   <version>11</version>
   <diagnostic_level>0</diagnostic_level>
 
-  <autoIrrepCG>false</autoIrrepCG>
-  <rephaseIrrepCG>false</rephaseIrrepCG>
+  <autoIrrepCG>true</autoIrrepCG>
+  <rephaseIrrepCG>true</rephaseIrrepCG>
 
   <Nt_corr>16</Nt_corr>
   <t_origin>0</t_origin>
