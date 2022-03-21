@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>11</version>
+  <version>12</version>
   <diagnostic_level>0</diagnostic_level>
 
   <autoIrrepCG>false</autoIrrepCG>
   <rephaseIrrepCG>false</rephaseIrrepCG>
 
-  <Nt_corr>16</Nt_corr>
+  <Nt_corr>7</Nt_corr>
   <t_origin>0</t_origin>
   <bc_spec>-1</bc_spec>
 
@@ -115,7 +115,7 @@
   <proj_op_xmls></proj_op_xmls>
   <eval_graph_xml>eval_graph.xml</eval_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
-  <corr_graph_db>corr_graph.sdb</corr_graph_db>
+  <corr_graph_bin>corr_graph.bin</corr_graph_bin>
   <corr_graph_xml>corr_graph.xml</corr_graph_xml>
   <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
   <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
