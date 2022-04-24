@@ -5,15 +5,22 @@
   <Param>
     <version>12</version>
     <diagnostic_level>5</diagnostic_level>
+
+    <autoIrrepCG>false</autoIrrepCG>    
+    <rephaseIrrepCG>false</rephaseIrrepCG>
+    
     <Nt_corr>16</Nt_corr>
     <t_origin>0</t_origin>
     <bc_spec>-1</bc_spec>
+    
     <convertUDtoL>true</convertUDtoL>
     <convertUDtoS>false</convertUDtoS>
-    <autoIrrepCG>false</autoIrrepCG>
+
     <average_1pt_diagrams>true</average_1pt_diagrams>
     <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
+    
     <ensemble></ensemble>
+    
     <Layout>
       <decayDir>3</decayDir>
       <lattSize>4 4 4 16</lattSize>
@@ -140,4 +147,70 @@
     <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
     <output_db>output.npt.sdb1</output_db>
   </DBFiles>
+
+<ColorVec>
+<Param> 
+  <version>1</version>
+  <!-- num_vecs>3</num_vecs -->
+  <num_vecs>10</num_vecs>
+  <use_derivP>false</use_derivP>
+  <use_genprop4>true</use_genprop4>
+  <use_FSq>false</use_FSq>
+  <fake_data_modeP>false</fake_data_modeP>
+  <ensemble>fred</ensemble>
+
+  <FlavorToMass>
+    <elem>
+      <flavor>l</flavor>
+      <mass>U0.05</mass>
+    </elem>
+    <elem>
+      <flavor>s</flavor>
+      <mass>U0.1</mass>
+    </elem>
+    <elem>
+      <flavor>c</flavor>
+      <mass>U0.2</mass>
+    </elem>
+    <elem>
+      <flavor>e</flavor>
+      <mass>U0.2</mass>
+    </elem>
+    <elem>
+      <flavor>g</flavor>
+      <mass>U0.05</mass>
+    </elem>
+  </FlavorToMass>
+
+</Param>
+<DBFiles>
+  <annotation>Need to provide "elem" entries for those elementals actually needed</annotation>
+  <prop_dbs>
+    <elem>./prop.sdb</elem>
+  </prop_dbs>
+  <smeared_baryon_dbs>
+    <elem>./baryon.sdb</elem>
+  </smeared_baryon_dbs>
+  <smeared_meson_dbs> 
+    <elem>./meson.deriv.sdb</elem> 
+  </smeared_meson_dbs>
+  <smeared_glue_dbs><elem>./glue.deriv.sdb</elem></smeared_glue_dbs>
+  <smeared_tetra_dbs><elem>./tetra.sdb</elem></smeared_tetra_dbs>
+  <unsmeared_meson_dbs> 
+    <!-- elem>./unsmeared_meson.sdb</elem --> 
+  </unsmeared_meson_dbs>
+  <unsmeared_genprop4_dbs> 
+    <!-- elem>./unsmeared_genprop4.sdb</elem --> 
+  </unsmeared_genprop4_dbs>
+  <twoquark_discoblock_dbs> 
+    <!-- elem>./disco.sdb</elem --> 
+  </twoquark_discoblock_dbs>
+  <hadron2pt_discoblock_dbs> 
+    <!-- elem>./gpdf_2_0.00.sdb</elem --> 
+  </hadron2pt_discoblock_dbs>
+  <fsq_discoblock_dbs> 
+  </fsq_discoblock_dbs>
+</DBFiles>	
+</ColorVec>
+  
 </RedstarNPt>

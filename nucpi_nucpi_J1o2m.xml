@@ -5,20 +5,26 @@
   <Param>
     <version>12</version>
     <diagnostic_level>0</diagnostic_level>
+
+    <autoIrrepCG>true</autoIrrepCG>
+    <rephaseIrrepCG>true</rephaseIrrepCG>
+    
     <Nt_corr>16</Nt_corr>
     <t_origin>3</t_origin>
     <bc_spec>-1</bc_spec>
+    
     <convertUDtoL>true</convertUDtoL>
     <convertUDtoS>false</convertUDtoS>
+    
     <average_1pt_diagrams>true</average_1pt_diagrams>
     <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
-    <autoIrrepCG>true</autoIrrepCG>
-    <rephaseIrrepCG>true</rephaseIrrepCG>
-    <ensemble></ensemble>
+
+    <ensemble>fred</ensemble>
     <Layout>
       <decayDir>3</decayDir>
       <lattSize>4 4 4 16</lattSize>
     </Layout>
+    
   <NPointList>
       <elem>
         <NPoint>
@@ -110,11 +116,7 @@
 
 <DBFiles>
   <proj_op_xmls></proj_op_xmls>
-  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
-  <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
   <corr_graph_bin>corr_graph.bin</corr_graph_bin>
-  <corr_graph_xml>corr_graph.xml</corr_graph_xml>
-  <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
   <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
   <output_db>output.npt.sdb1</output_db>
 </DBFiles>      

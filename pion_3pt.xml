@@ -159,27 +159,27 @@
 </Param>
 <DBFiles>
   <prop_dbs>
-    <elem>../prop.sdb</elem>
+    <elem>./prop.sdb</elem>
   </prop_dbs>
   <smeared_baryon_dbs>
-    <elem>../baryon.sdb</elem>
+    <elem>./baryon.sdb</elem>
   </smeared_baryon_dbs>
   <smeared_meson_dbs> 
-    <elem>../meson.deriv.sdb</elem> 
+    <elem>./meson.deriv.sdb</elem> 
   </smeared_meson_dbs>
-  <smeared_glue_dbs><elem>../glue.deriv.sdb</elem></smeared_glue_dbs>
-  <smeared_tetra_dbs><elem>../tetra.sdb</elem></smeared_tetra_dbs>
+  <smeared_glue_dbs><elem>./glue.deriv.sdb</elem></smeared_glue_dbs>
+  <smeared_tetra_dbs><elem>./tetra.sdb</elem></smeared_tetra_dbs>
   <unsmeared_meson_dbs> 
-    <elem>../unsmeared_meson.sdb</elem> 
+    <elem>./unsmeared_meson.sdb</elem> 
   </unsmeared_meson_dbs>
   <unsmeared_genprop4_dbs> 
-    <elem>../unsmeared_genprop4.sdb</elem> 
+    <elem>./unsmeared_genprop4.sdb</elem> 
   </unsmeared_genprop4_dbs>
   <twoquark_discoblock_dbs> 
-    <elem>../disco.sdb</elem> 
+    <elem>./disco.sdb</elem> 
   </twoquark_discoblock_dbs>
   <hadron2pt_discoblock_dbs> 
-    <elem>../gpdf_2_0.00.sdb</elem> 
+    <elem>./gpdf_2_0.00.sdb</elem> 
   </hadron2pt_discoblock_dbs>
   <fsq_discoblock_dbs> 
   </fsq_discoblock_dbs>
