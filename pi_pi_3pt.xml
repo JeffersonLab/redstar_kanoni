@@ -4,7 +4,7 @@
 <RedstarNPt>
   <Param>
     <version>12</version>
-    <diagnostic_level>0</diagnostic_level>
+    <diagnostic_level>5</diagnostic_level>
     
     <autoIrrepCG>false</autoIrrepCG>
     <rephaseIrrepCG>false</rephaseIrrepCG>

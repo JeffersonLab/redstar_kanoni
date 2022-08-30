@@ -2,7 +2,7 @@
 <RedstarNPt>
 <Param> 
   <version>12</version>
-  <diagnostic_level>0</diagnostic_level>
+  <diagnostic_level>20</diagnostic_level>
 
   <autoIrrepCG>false</autoIrrepCG>
   <rephaseIrrepCG>false</rephaseIrrepCG>
@@ -71,7 +71,7 @@
               <Op>
                 <Operators>
                   <elem>
-                    <name>FSq_EE_J0__J0A1pP</name>
+                    <name>FSq_EE_J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
@@ -153,7 +153,7 @@
               <Op>
                 <Operators>
                   <elem>
-                    <name>FSq_BE_J2__J2EmP</name>
+                    <name>FSq_BE_J2_E</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
@@ -198,6 +198,8 @@
   <eval_graph_xml>eval_graph.xml</eval_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
   <corr_graph_bin>corr_graph.bin</corr_graph_bin>
+  <corr_graph_xml>corr_graph.xml</corr_graph_xml>
+  <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
   <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
   <output_db>output.npt.sdb1</output_db>
 </DBFiles>      
