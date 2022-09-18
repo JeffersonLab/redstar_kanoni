@@ -13,7 +13,7 @@
     <autoIrrepCG>true</autoIrrepCG>
     <rephaseIrrepCG>true</rephaseIrrepCG>
     <average_1pt_diagrams>true</average_1pt_diagrams>
-    <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+    <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
     <ensemble></ensemble>
     <Layout>
       <decayDir>3</decayDir>
@@ -60,14 +60,14 @@
               </flavor>
               <irmom>
                 <row>1</row>
-                <mom>1 0 0</mom>
+                <mom>0 0 0</mom>
               </irmom>
               <Op>
                 <Operators>
                   <elem>
-                    <name>b_b0xD0_J0__J0_H0D4A1</name>
+                    <name>b_b0xD0_J0__J0_A1</name>
                     <!-- name>hl_b0xD0_J0__J0_H0D4A1</name -->
-                    <mom_type>1 0 0</mom_type>
+                    <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
                 <CGs>
@@ -106,12 +106,12 @@
     </NPointList>
   </Param>
   <DBFiles>
-    <proj_op_xmls>
-    </proj_op_xmls>
-    <corr_graph_bin>corr_graph.bin</corr_graph_bin>
+    <proj_op_xmls></proj_op_xmls>
     <eval_graph_xml>eval_graph.xml</eval_graph_xml>
     <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
-    <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
+    <corr_graph_bin>corr_graph.bin</corr_graph_bin>
+    <corr_graph_xml>corr_graph.xml</corr_graph_xml>
+    <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
     <output_db>output.npt.sdb1</output_db>
   </DBFiles>
 
