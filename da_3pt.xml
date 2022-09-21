@@ -12,7 +12,7 @@
   <bc_spec>-1</bc_spec>
 
   <convertUDtoL>true</convertUDtoL>
-  <convertUDtoS>true</convertUDtoS>
+  <convertUDtoS>false</convertUDtoS>
 
   <average_1pt_diagrams>true</average_1pt_diagrams>
   <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
@@ -40,13 +40,13 @@
               </flavor>
               <irmom>
                 <row>1</row>
-                <mom>0 0 0</mom>
+                <mom>1 0 0</mom>
               </irmom>
               <Op>
                 <Operators>
                   <elem>
-                    <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <name>pion_pionxD0_J0__J0_H0D4A2</name>
+                    <mom_type>1 0 0</mom_type>
                   </elem>
                 </Operators>
                 <CGs>
@@ -62,11 +62,11 @@
               <flavor>
                 <twoI>2</twoI>
                 <threeY>0</threeY>
-                <twoI_z>2</twoI_z>
+                <twoI_z>0</twoI_z>
               </flavor>
               <irmom>
                 <row>1</row>
-                <mom>0 0 1</mom>
+                <mom>1 0 0</mom>
               </irmom>
               <Op>
                 <Operators>
