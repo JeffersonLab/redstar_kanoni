@@ -2,12 +2,12 @@
 <RedstarNPt>
 <Param> 
   <version>12</version>
-  <diagnostic_level>20</diagnostic_level>
+ <diagnostic_level>5</diagnostic_level>
 
   <autoIrrepCG>false</autoIrrepCG>
   <rephaseIrrepCG>false</rephaseIrrepCG>
 
-  <Nt_corr>16</Nt_corr>
+  <Nt_corr>7</Nt_corr>
   <t_origin>0</t_origin>
   <bc_spec>-1</bc_spec>
 
@@ -15,7 +15,7 @@
   <convertUDtoS>false</convertUDtoS>
 
   <average_1pt_diagrams>true</average_1pt_diagrams>
-  <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
+  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
 
   <ensemble>fred</ensemble>
 
@@ -65,96 +65,14 @@
                 <twoI_z>0</twoI_z>
               </flavor>
               <irmom>
-                <row>1</row>
-                <mom>1 0 0</mom>
+                <row>3</row>
+                <mom>0 0 1</mom>
               </irmom>
               <Op>
                 <Operators>
                   <elem>
-                    <name>rho_rhoxDA__J1_H1D4E2</name>
+                    <name>rho_rhoxDQ__J1_T1</name>
                     <mom_type>1 0 0</mom_type>
-                  </elem>
-                </Operators>
-                <CGs>
-                </CGs>
-              </Op>
-            </Irrep>
-          </elem>
-          <elem>
-            <t_slice>0</t_slice>
-            <Irrep>
-              <creation_op>true</creation_op>
-              <smearedP>true</smearedP>
-              <flavor>
-                <twoI>2</twoI>
-                <threeY>0</threeY>
-                <twoI_z>2</twoI_z>
-              </flavor>
-              <irmom>
-                <row>1</row>
-                <mom>0 0 0</mom>
-              </irmom>
-              <Op>
-                <Operators>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
-                <CGs>
-                </CGs>
-              </Op>
-            </Irrep>
-          </elem>
-        </NPoint>
-      </elem>
-      <elem>
-        <NPoint>
-          <elem>
-            <t_slice>6</t_slice>
-            <Irrep>
-              <creation_op>false</creation_op>
-              <smearedP>true</smearedP>
-              <flavor>
-                <twoI>2</twoI>
-                <threeY>0</threeY>
-                <twoI_z>2</twoI_z>
-              </flavor>
-              <irmom>
-                <row>1</row>
-                <mom>0 0 0</mom>
-              </irmom>
-              <Op>
-                <Operators>
-                  <elem>
-                    <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
-                  </elem>
-                </Operators>
-                <CGs>
-                </CGs>
-              </Op>
-            </Irrep>
-          </elem>
-          <elem>
-            <t_slice>-3</t_slice>
-            <Irrep>
-              <creation_op>true</creation_op>
-              <smearedP>false</smearedP>
-              <flavor>
-                <twoI>0</twoI>
-                <threeY>0</threeY>
-                <twoI_z>0</twoI_z>
-              </flavor>
-              <irmom>
-                <row>1</row>
-                <mom>0 0 0</mom>
-              </irmom>
-              <Op>
-                <Operators>
-                  <elem>
-                    <name>FSq_BE_J2_E</name>
-                    <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
                 <CGs>

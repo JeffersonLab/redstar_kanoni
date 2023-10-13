@@ -2,7 +2,7 @@
 <RedstarNPt>
 <Param> 
   <version>12</version>
-  <diagnostic_level>0</diagnostic_level>
+  <diagnostic_level>10</diagnostic_level>
 
   <autoIrrepCG>false</autoIrrepCG>
   <rephaseIrrepCG>false</rephaseIrrepCG>
@@ -12,7 +12,7 @@
   <bc_spec>-1</bc_spec>
 
   <convertUDtoL>true</convertUDtoL>
-  <convertUDtoS>true</convertUDtoS>
+  <convertUDtoS>false</convertUDtoS>
 
   <average_1pt_diagrams>true</average_1pt_diagrams>
   <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
@@ -125,10 +125,10 @@
 <ColorVec>
 <Param> 
   <version>1</version>
-  <!-- num_vecs>3</num_vecs -->
-  <num_vecs>10</num_vecs>
+  <num_vecs>2</num_vecs>
+  <!-- num_vecs>10</num_vecs -->
   <use_derivP>false</use_derivP>
-  <use_genprop4>false</use_genprop4>
+  <use_genprop4>true</use_genprop4>
   <use_FSq>false</use_FSq>
   <fake_data_modeP>false</fake_data_modeP>
   <ensemble>fred</ensemble>
