@@ -61,7 +61,7 @@
               <creation_op>true</creation_op>
               <smearedP>false</smearedP>
               <flavor>
-                <twoI>2</twoI>
+                <twoI>0</twoI>
                 <threeY>0</threeY>
                 <twoI_z>0</twoI_z>
               </flavor>
@@ -72,7 +72,7 @@
               <Op>
                 <Operators>
                   <elem>
-                    <name>b_b0xD0_J0__J0_A1</name>
+                    <name>hl_b0xD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
@@ -430,7 +430,8 @@
     <elem>./unsmeared_genprop4.sdb</elem> 
   </unsmeared_genprop4_dbs>
   <twoquark_discoblock_dbs> 
-    <elem>../disco0.sdb</elem> 
+    <elem>../disco-U0.05.sdb</elem> 
+    <elem>../disco-U0.1.sdb</elem> 
   </twoquark_discoblock_dbs>
   <hadron2pt_discoblock_dbs> 
     <elem>./gpdf_2_0.00.sdb</elem> 
