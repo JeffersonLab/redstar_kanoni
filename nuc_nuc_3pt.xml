@@ -9,8 +9,8 @@
     <autoIrrepCG>true</autoIrrepCG>
     <rephaseIrrepCG>true</rephaseIrrepCG>
     
-    <Nt_corr>8</Nt_corr>
-    <t_origin>13</t_origin>
+    <Nt_corr>7</Nt_corr>
+    <t_origin>0</t_origin>
     <bc_spec>-1</bc_spec>
     
     <convertUDtoL>true</convertUDtoL>
@@ -61,7 +61,7 @@
               <creation_op>true</creation_op>
               <smearedP>false</smearedP>
               <flavor>
-                <twoI>0</twoI>
+                <twoI>2</twoI>
                 <threeY>0</threeY>
                 <twoI_z>0</twoI_z>
               </flavor>
@@ -72,7 +72,7 @@
               <Op>
                 <Operators>
                   <elem>
-                    <name>hl_b0xD0_J0__J0_A1</name>
+                    <name>b_b0xD0_J0__J0_A1</name>
                     <mom_type>0 0 0</mom_type>
                   </elem>
                 </Operators>
@@ -382,7 +382,7 @@
   <!-- num_vecs>3</num_vecs -->
   <num_vecs>10</num_vecs>
   <use_derivP>false</use_derivP>
-  <use_genprop4>false</use_genprop4>
+  <use_genprop4>true</use_genprop4>
   <use_FSq>false</use_FSq>
   <fake_data_modeP>false</fake_data_modeP>
   <ensemble>fred</ensemble>
@@ -430,7 +430,7 @@
     <elem>./unsmeared_genprop4.sdb</elem> 
   </unsmeared_genprop4_dbs>
   <twoquark_discoblock_dbs> 
-    <elem>./disco.sdb</elem> 
+    <elem>../disco0.sdb</elem> 
   </twoquark_discoblock_dbs>
   <hadron2pt_discoblock_dbs> 
     <elem>./gpdf_2_0.00.sdb</elem> 
