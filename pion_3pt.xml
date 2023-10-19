@@ -112,14 +112,21 @@
 
 </Param>
 <DBFiles>
-  <proj_op_xmls></proj_op_xmls>
-  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
-  <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
-  <corr_graph_bin>corr_graph.bin</corr_graph_bin>
-  <corr_graph_xml>corr_graph.xml</corr_graph_xml>
-  <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
-  <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
-  <output_db>output.npt.sdb1</output_db>
+<annotation>
+    <!-- Each of these are optional tags -->
+    <eval_graph_xml>eval_graph.xml</eval_graph_xml>
+    <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
+    <corr_graph_xml>corr_graph.xml</corr_graph_xml>
+    <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
+    <initial_graph_dbs><elem>graph.sdb1</elem></initial_graph_dbs>
+    <final_eval_graph_db>eval_graph.sdb1</final_eval_graph_db>
+    <final_noneval_graph_db>noneval_graph.sdb1</final_noneval_graph_db>
+</annotation>
+
+    <!-- Required tags -->
+    <proj_op_xmls></proj_op_xmls>
+    <corr_graph_bin>corr_graph.bin</corr_graph_bin>
+    <output_db>output.npt.sdb1</output_db>
 </DBFiles>      
 
 <ColorVec>
