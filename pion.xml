@@ -1,11 +1,14 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>12</version>
+  <version>13</version>
   <diagnostic_level>5</diagnostic_level>
 
-  <autoIrrepCG>true</autoIrrepCG>
-  <rephaseIrrepCG>true</rephaseIrrepCG>
+  <cgc_options>
+    <autoIrrepCG>true</autoIrrepCG>
+    <rephaseIrrepCG>true</rephaseIrrepCG>
+    <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
+  </cgc_options>
 
   <Nt_corr>16</Nt_corr>
   <t_origin>0</t_origin>
@@ -23,7 +26,7 @@
     <lattSize>4 4 4 16</lattSize>
     <decayDir>3</decayDir>
   </Layout>
-
+</Param>
 
     <NPointList>
       <elem>
@@ -46,7 +49,7 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -72,7 +75,7 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -102,7 +105,7 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -128,7 +131,7 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -158,7 +161,7 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -184,7 +187,7 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -196,7 +199,6 @@
       </elem>
     </NPointList>
 
-</Param>
 <DBFiles>
 <annotation>
     <!-- Each of these are optional tags -->
