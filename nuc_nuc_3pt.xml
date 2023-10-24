@@ -3,12 +3,15 @@
 
 <RedstarNPt>
   <Param>
-    <version>12</version>
+    <version>13</version>
     <diagnostic_level>2</diagnostic_level>
 
-    <autoIrrepCG>true</autoIrrepCG>
-    <rephaseIrrepCG>true</rephaseIrrepCG>
-    
+    <cgc_options>
+      <autoIrrepCG>true</autoIrrepCG>
+      <rephaseIrrepCG>true</rephaseIrrepCG>
+      <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
+    </cgc_options>
+
     <Nt_corr>7</Nt_corr>
     <t_origin>0</t_origin>
     <bc_spec>-1</bc_spec>
@@ -25,6 +28,7 @@
       <decayDir>3</decayDir>
       <lattSize>4 4 4 16</lattSize>
     </Layout>
+  </Param>
     
     <NPointList>
       <elem>
@@ -47,7 +51,7 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -73,7 +77,7 @@
                 <Operators>
                   <elem>
                     <name>hl_b0xD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -99,7 +103,7 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -130,7 +134,7 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -156,7 +160,7 @@
                 <Operators>
                   <elem>
                     <name>b_b0xD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -182,7 +186,7 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -212,7 +216,7 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -238,7 +242,7 @@
                 <Operators>
                   <elem>
                     <name>b_b0xD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -264,7 +268,7 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -294,7 +298,7 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -320,7 +324,7 @@
                 <Operators>
                   <elem>
                     <name>b_b0xD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -346,7 +350,7 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -358,7 +362,6 @@
       </elem>
 </annotation>
     </NPointList>
-  </Param>
   
   <DBFiles>
     <!-- Optional tags -->
