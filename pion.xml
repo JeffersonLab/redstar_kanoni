@@ -12,7 +12,7 @@
   <bc_spec>-1</bc_spec>
 
   <convertUDtoL>true</convertUDtoL>
-  <convertUDtoS>true</convertUDtoS>
+  <convertUDtoS>false</convertUDtoS>
 
   <average_1pt_diagrams>true</average_1pt_diagrams>
   <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
