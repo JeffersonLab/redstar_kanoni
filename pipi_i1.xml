@@ -58,7 +58,7 @@
                   </elem>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D3A2</name>
-                    <mom_class>1 -1 1</mom_class>
+                    <mom_class>1 1 1</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -69,7 +69,7 @@
                       <slot>12</slot>
                       <F>3</F>
                       <irrep>D3A1,1</irrep>
-                      <mom_class>1 -1 1</mom_class>
+                      <mom_class>1 1 1</mom_class>
                     </target>
                   </elem>
                 </CGs>
@@ -94,7 +94,7 @@
                 <Operators>
                   <elem>
                     <name>rho_rhoxD0_J0__J1_H0D3A1</name>
-                    <mom_class>1 -1 1</mom_class>
+                    <mom_class>1 1 1</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
