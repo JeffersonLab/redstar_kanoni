@@ -109,20 +109,20 @@
   
   <DBFiles>
     <proj_op_xmls>
-      <!-- elem>./weights/weights.eta.proj0.xml</elem>
+      <elem>./weights/weights.eta.proj0.xml</elem>
       <elem>./weights/weights.eta.proj1.xml</elem>
       <elem>./weights/weights.pion.flight_2deriv.ops.xml</elem>
       <elem>./weights/weights.pion.rest_3deriv.ops.xml</elem>
       <elem>./weights/weights.kaon.flight_2deriv.ops.xml</elem>
       <elem>./weights/weights.kaon.rest_3deriv.ops.xml</elem>
       <elem>./weights/weights.Kbar.flight_2deriv.ops.xml</elem>
-      <elem>./weights/weights.Kbar.rest_3deriv.ops.xml</elem -->
+      <elem>./weights/weights.Kbar.rest_3deriv.ops.xml</elem>
     </proj_op_xmls>
     <!-- eval_graph_xml>eval_graph.xml</eval_graph_xml -->
     <!-- noneval_graph_xml>noneval_graph.xml</noneval_graph_xml -->
     <corr_graph_bin>corr_graph.bin</corr_graph_bin>
     <corr_graph_xml>corr_graph.xml</corr_graph_xml>
-    <!-- vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml -->
+    <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
     <!-- contraction queue storage db file name -->
     <contraction_info_db></contraction_info_db>
     <!-- xml filename for exporting the DAG -->
