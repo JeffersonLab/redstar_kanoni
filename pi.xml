@@ -103,7 +103,8 @@
 
     <!-- Required tags -->
     <proj_op_xmls>
-      <!-- elem>weights/weights.pion.xml</elem -->
+      <elem>weights/weights.pion.xml</elem>
+      <elem>weights/weights.eta.xml</elem>
     </proj_op_xmls>
     <corr_graph_bin>corr_graph.bin</corr_graph_bin>
     <output_db>output.npt.sdb1</output_db>
