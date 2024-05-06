@@ -16,7 +16,7 @@ endif
 
 set g=${f:r}
 
-#set exe_red=/Users/edwards/Documents/qcd/git/devel/redstar.rge.devel-momclass/build/src
+#set exe_red=/Users/edwards/Downloads/redstar.rge.devel-momclass/build/src
 set exe_red=/opt/homebrew/Cellar/redstar/devel-momclass/bin
 
 $exe_red/redstar_corr_graph $f out.xml >&! ${g}.corr.out
