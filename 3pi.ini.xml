@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<GenerateXML>
+  <version>1</version>
+
+  <Masses>
+    <elem><Key>pion_proj0_J0</Key><Val>0.06906</Val></elem>
+  </Masses>
+
+  <Operators>
+    <elem>
+      <First>pion_proj0_J0</First><Second>pion_proj0_J0</Second><Third>pion_proj0_J0</Third>
+      <sub12_F>3</sub12_F><sub12_G_parity>+1</sub12_G_parity>
+    </elem>
+    <elem>
+      <First>pion_proj0_J0</First><Second>pion_proj0_J0</Second><Third>pion_proj0_J0</Third>
+      <sub12_F>5</sub12_F><sub12_G_parity>+1</sub12_G_parity>
+    </elem>
+  </Operators>
+
+  <E_cm_max>0.4</E_cm_max>
+  <xi>3.444</xi>
+  <L>20</L>
+
+  <find_lin_indep_ops>true</find_lin_indep_ops>
+  <annotation>
+    <!-- Options for testing/debugging purposes -->
+    <order_12_mom2>-1</order_12_mom2>
+    <order_23_mom2>-1</order_23_mom2>
+    <order_13_mom2>-1</order_13_mom2>
+  </annotation>
+  <target_sub12_sym>+1</target_sub12_sym>
+  <target_sub23_sym>+1</target_sub23_sym>
+  <target_sub13_sym>+1</target_sub13_sym>
+  <target_F>5</target_F>
+  <target_G_parity>-1</target_G_parity>
+  <rel2_max>3</rel2_max>
+  <mom2_min>0</mom2_min>
+  <mom2_max>3</mom2_max>
+</GenerateXML>
