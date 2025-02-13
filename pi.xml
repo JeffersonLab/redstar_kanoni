@@ -21,7 +21,7 @@
     <convertUDtoS>false</convertUDtoS>
     
     <average_1pt_diagrams>true</average_1pt_diagrams>
-    <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+    <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
     
     <ensemble>fred</ensemble>
     
@@ -53,7 +53,6 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <smear>fred</smear>
                     <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
@@ -80,7 +79,6 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <smear>george</smear>
                     <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
@@ -160,12 +158,6 @@
   <smeared_meson_dbs> 
     <elem>./meson.deriv.sdb</elem> 
   </smeared_meson_dbs>
-
-  <smeared_meson_boosted_dbs> 
-    <elem><First>fred</First><Second><elem>./meson.fred.deriv.sdb</elem><elem>./meson.fred3.noderiv.sdb</elem></Second></elem> 
-    <elem><First>george</First><Second>./meson.george.deriv.sdb</Second></elem> 
-  </smeared_meson_boosted_dbs>
-
   <smeared_glue_dbs><elem>./glue.deriv.sdb</elem></smeared_glue_dbs>
   <smeared_tetra_dbs><elem>./tetra.sdb</elem></smeared_tetra_dbs>
   <unsmeared_meson_dbs> 
