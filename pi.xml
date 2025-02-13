@@ -1,31 +1,34 @@
 <?xml version="1.0"?>
+
 <RedstarNPt>
-<Param> 
-  <version>13</version>
-  <diagnostic_level>20</diagnostic_level>
+  <Param>
+    <version>14</version>
+    <diagnostic_level>10</diagnostic_level>
 
-  <cgc_options>
-    <autoIrrepCG>true</autoIrrepCG>
-    <rephaseIrrepCG>true</rephaseIrrepCG>
-    <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
-  </cgc_options>
+    <cgc_options>
+      <autoIrrepCG>true</autoIrrepCG>
+      <rephaseIrrepCG>true</rephaseIrrepCG>
+      <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
+      <autoCGVersion>1</autoCGVersion>
+    </cgc_options>
 
-  <Nt_corr>16</Nt_corr>
-  <t_origin>0</t_origin>
-  <bc_spec>-1</bc_spec>
-
-  <convertUDtoL>true</convertUDtoL>
-  <convertUDtoS>true</convertUDtoS>
-
-  <average_1pt_diagrams>true</average_1pt_diagrams>
-  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
-
-  <ensemble>fred</ensemble>
-
-  <Layout>
-    <lattSize>4 4 4 16</lattSize>
-    <decayDir>3</decayDir>
-  </Layout>
+    
+    <Nt_corr>16</Nt_corr>
+    <t_origin>3</t_origin>
+    <bc_spec>-1</bc_spec>
+    
+    <convertUDtoL>true</convertUDtoL>
+    <convertUDtoS>false</convertUDtoS>
+    
+    <average_1pt_diagrams>true</average_1pt_diagrams>
+    <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+    
+    <ensemble>fred</ensemble>
+    
+    <Layout>
+      <decayDir>3</decayDir>
+      <lattSize>4 4 4 16</lattSize>
+    </Layout>
 
 </Param>
 
