@@ -109,9 +109,9 @@
   
   <DBFiles>
     <proj_op_xmls>
-      <elem>./weights/weights.pion.xml</elem>
+      <!-- elem>./weights/weights.pion.xml</elem>
       <elem>./weights/weights.rho.xml</elem>
-      <!-- elem>./weights/weights.eta.proj1.xml</elem>
+      <elem>./weights/weights.eta.proj1.xml</elem>
       <elem>./weights/weights.eta.proj0.xml</elem>
       <elem>./weights/weights.pion.flight_2deriv.ops.xml</elem>
       <elem>./weights/weights.pion.rest_3deriv.ops.xml</elem>
