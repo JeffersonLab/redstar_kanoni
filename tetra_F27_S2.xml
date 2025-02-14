@@ -12,7 +12,6 @@
       <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
       <autoCGVersion>2</autoCGVersion>
     </cgc_options>
-
     
     <Nt_corr>16</Nt_corr>
     <t_origin>3</t_origin>

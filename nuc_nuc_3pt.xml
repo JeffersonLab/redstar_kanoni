@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 
-
 <RedstarNPt>
   <Param>
-    <version>13</version>
+    <version>14</version>
     <diagnostic_level>2</diagnostic_level>
 
     <cgc_options>
       <autoIrrepCG>true</autoIrrepCG>
       <rephaseIrrepCG>true</rephaseIrrepCG>
       <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
+      <autoCGVersion>2</autoCGVersion>
     </cgc_options>
 
     <Nt_corr>7</Nt_corr>
