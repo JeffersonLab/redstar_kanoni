@@ -118,6 +118,90 @@
           </elem>
         </NPoint>
       </elem>
+      <elem>
+        <NPoint>
+          <elem>
+            <t_slice>-2</t_slice>
+            <Irrep>
+              <creation_op>false</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>3</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_class>0 0 0</mom_class>
+                  </elem>
+                  <elem>
+                    <name>pion_pionxD0_J0__J0_A1</name>
+                    <mom_class>0 0 0</mom_class>
+                  </elem>
+                </Operators>
+                <CGs>
+                  <elem>
+                    <left>1</left>
+                    <right>2</right>
+                    <target>
+                      <slot>12</slot>
+                      <F>4</F>
+                      <irrep>G1u,1</irrep>
+                      <mom_class>0 0 0</mom_class>
+                    </target>
+                  </elem>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+          <elem>
+            <t_slice>0</t_slice>
+            <Irrep>
+              <creation_op>true</creation_op>
+              <smearedP>true</smearedP>
+              <flavor>
+                <twoI>3</twoI>
+                <threeY>3</threeY>
+                <twoI_z>1</twoI_z>
+              </flavor>
+              <irmom>
+                <row>1</row>
+                <mom>0 0 0</mom>
+              </irmom>
+              <Op>
+                <Operators>
+                  <elem>
+                    <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                    <mom_class>0 0 0</mom_class>
+                  </elem>
+                  <elem>
+                    <name>pion_pionxD0_J0__J0_A1</name>
+                    <mom_class>0 0 0</mom_class>
+                  </elem>
+                </Operators>
+                <CGs>
+                  <elem>
+                    <left>1</left>
+                    <right>2</right>
+                    <target>
+                      <slot>12</slot>
+                      <F>4</F>
+                      <irrep>G1u,1</irrep>
+                      <mom_class>0 0 0</mom_class>
+                    </target>
+                  </elem>
+                </CGs>
+              </Op>
+            </Irrep>
+          </elem>
+        </NPoint>
+      </elem>
     </NPointList>
 <DBFiles>
     <!-- Each of these are optional tags -->
