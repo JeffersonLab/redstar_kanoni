@@ -3,16 +3,17 @@
   <version>1</version>
 
   <Masses>
-    <elem><Key>pion_proj0_J0</Key><Val>0.06906</Val></elem>
+    <elem><Key>pion_pionxD0_J0__J0</Key><Val>0.06906</Val></elem>
   </Masses>
 
   <Operators>
     <elem>
-      <First>pion_proj0_J0</First><Second>pion_proj0_J0</Second><Third>pion_proj0_J0</Third>
+      <!-- First>pion_pionxD0_J0__J0</First><Second>pion_pionxD0_J0__J0</Second><Third>pion_pionxD0_J0__J0</Third -->
+      <First>pion_pionxD0_J0__J0</First><Second>pion_pionxD0_J0__J0</Second><Third>pion_pionxD0_J0__J0</Third>
       <sub12_F>3</sub12_F><sub12_G_parity>+1</sub12_G_parity>
     </elem>
     <elem>
-      <First>pion_proj0_J0</First><Second>pion_proj0_J0</Second><Third>pion_proj0_J0</Third>
+      <First>pion_pionxD0_J0__J0</First><Second>pion_pionxD0_J0__J0</Second><Third>pion_pionxD0_J0__J0</Third>
       <sub12_F>5</sub12_F><sub12_G_parity>+1</sub12_G_parity>
     </elem>
   </Operators>

@@ -3,19 +3,19 @@
 
 <OpsList>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D2A2__110__F3,1_D2B1P,1__011XXpion_proj0_H0D2A2__0-1-1__F5,1_EmM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D2B1P,1__011XXpion_pionxD0_J0__J0_H0D2A2__0-1-1__F5,1_EmM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
       </Operators>
@@ -44,19 +44,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D2A2__110__F3,1_D2B1P,1__011XXpion_proj0_H0D2A2__0-1-1__F5,1_T1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D2B1P,1__011XXpion_pionxD0_J0__J0_H0D2A2__0-1-1__F5,1_T1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
       </Operators>
@@ -85,19 +85,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D2A2__110__F3,1_D2B1P,1__011XXpion_proj0_H0D2A2__0-1-1__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D2B1P,1__011XXpion_pionxD0_J0__J0_H0D2A2__0-1-1__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
       </Operators>
@@ -126,19 +126,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D2A2__110__F3,1_D2B1P,1__011XXpion_proj0_H0D2A2__0-1-1__F5,1_T2pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D2B1P,1__011XXpion_pionxD0_J0__J0_H0D2A2__0-1-1__F5,1_T2pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
       </Operators>
@@ -167,19 +167,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D2A2__110__F3,1_D2B2P,1__011XXpion_proj0_H0D2A2__0-1-1__F5,1_EpM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D2B2P,1__011XXpion_pionxD0_J0__J0_H0D2A2__0-1-1__F5,1_EpM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
       </Operators>
@@ -208,19 +208,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D2A2__110__F3,1_D2B2P,1__011XXpion_proj0_H0D2A2__0-1-1__F5,1_T2mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D2B2P,1__011XXpion_pionxD0_J0__J0_H0D2A2__0-1-1__F5,1_T2mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
       </Operators>
@@ -249,19 +249,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4A1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_A1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4A1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_A1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -290,19 +290,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4A1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_EmM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4A1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_EmM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -331,19 +331,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4A1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4A1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -372,19 +372,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4B1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_A2mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4B1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_A2mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -413,19 +413,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4B1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_EmM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4B1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_EmM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -454,19 +454,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4B1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T2pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4B1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T2pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -495,19 +495,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -536,19 +536,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -577,19 +577,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -618,19 +618,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__-101xxpion_proj0_H0D4A2__100__F3,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T2pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__-101xxpion_pionxD0_J0__J0_H0D4A2__100__F3,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T2pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>-1 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>1 0 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -659,19 +659,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__011xxpion_proj0_H0D2A2__0-1-1__F3,1_T1mP,1__000XXpion_proj0_A1__000__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__011xxpion_pionxD0_J0__J0_H0D2A2__0-1-1__F3,1_T1mP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -700,19 +700,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__011xxpion_proj0_H0D2A2__0-1-1__F3,1_T2mP,1__000XXpion_proj0_A1__000__F5,1_T2pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__011xxpion_pionxD0_J0__J0_H0D2A2__0-1-1__F3,1_T2mP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_T2pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -741,19 +741,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__011xxpion_proj0_H0D2A2__0-1-1__F5,1_A1pP,1__000XXpion_proj0_A1__000__F5,1_A1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__011xxpion_pionxD0_J0__J0_H0D2A2__0-1-1__F5,1_A1pP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_A1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -782,19 +782,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__011xxpion_proj0_H0D2A2__0-1-1__F5,1_EpP,1__000XXpion_proj0_A1__000__F5,1_EmM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__011xxpion_pionxD0_J0__J0_H0D2A2__0-1-1__F5,1_EpP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_EmM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -823,19 +823,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D2A2__011xxpion_proj0_H0D2A2__0-1-1__F5,1_T2pP,1__000XXpion_proj0_A1__000__F5,1_T2mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D2A2__011xxpion_pionxD0_J0__J0_H0D2A2__0-1-1__F5,1_T2pP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_T2mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>0 -1 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -864,19 +864,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4A1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_A1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4A1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_A1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -905,19 +905,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4A1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_EmM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4A1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_EmM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -946,19 +946,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4A1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4A1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -987,19 +987,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4B2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_A2pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4B2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_A2pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1028,19 +1028,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4B2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_EpM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4B2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_EpM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1069,19 +1069,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4B2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4B2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1110,19 +1110,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1151,19 +1151,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1192,19 +1192,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1233,19 +1233,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F3,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T2pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F3,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T2pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1274,19 +1274,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4A1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_A1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4A1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_A1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1315,19 +1315,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4A1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_EmM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4A1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_EmM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1356,19 +1356,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4A1P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4A1P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1397,19 +1397,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4B2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_A2pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4B2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_A2pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1438,19 +1438,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4B2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_EpM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4B2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_EpM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1479,19 +1479,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4B2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4B2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1520,19 +1520,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1561,19 +1561,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1602,19 +1602,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T2mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1643,19 +1643,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__-1-11xxpion_proj0_H0D2A2__110__F5,1_D4E2P,1__001XXpion_proj0_H0D4A2__00-1__F5,1_T2pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__-1-11xxpion_pionxD0_J0__J0_H0D2A2__110__F5,1_D4E2P,1__001XXpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_T2pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D2A2</name>
+          <name>pion_pionxD0_J0__J0_H0D2A2</name>
           <mom_class>1 1 0</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
       </Operators>
@@ -1684,19 +1684,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__111xxpion_proj0_H0D3A2__-1-1-1__F3,1_A2mP,1__000XXpion_proj0_A1__000__F5,1_A2pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__111xxpion_pionxD0_J0__J0_H0D3A2__-1-1-1__F3,1_A2mP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_A2pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>1 1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -1725,19 +1725,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__111xxpion_proj0_H0D3A2__-1-1-1__F3,1_T1mP,1__000XXpion_proj0_A1__000__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__111xxpion_pionxD0_J0__J0_H0D3A2__-1-1-1__F3,1_T1mP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>1 1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -1766,19 +1766,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__111xxpion_proj0_H0D3A2__-1-1-1__F5,1_A1pP,1__000XXpion_proj0_A1__000__F5,1_A1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__111xxpion_pionxD0_J0__J0_H0D3A2__-1-1-1__F5,1_A1pP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_A1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>1 1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -1807,19 +1807,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D3A2__111xxpion_proj0_H0D3A2__-1-1-1__F5,1_T2pP,1__000XXpion_proj0_A1__000__F5,1_T2mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D3A2__111xxpion_pionxD0_J0__J0_H0D3A2__-1-1-1__F5,1_T2pP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_T2mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>1 1 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D3A2</name>
+          <name>pion_pionxD0_J0__J0_H0D3A2</name>
           <mom_class>-1 -1 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -1848,19 +1848,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D4A2__001xxpion_proj0_H0D4A2__00-1__F3,1_T1mP,1__000XXpion_proj0_A1__000__F5,1_T1pM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D4A2__001xxpion_pionxD0_J0__J0_H0D4A2__00-1__F3,1_T1mP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_T1pM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -1889,19 +1889,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D4A2__001xxpion_proj0_H0D4A2__00-1__F5,1_A1pP,1__000XXpion_proj0_A1__000__F5,1_A1mM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D4A2__001xxpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_A1pP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_A1mM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
@@ -1930,19 +1930,19 @@
     </Val>
   </elem>
   <elem>
-    <Key>XXpion_proj0_H0D4A2__001xxpion_proj0_H0D4A2__00-1__F5,1_EpP,1__000XXpion_proj0_A1__000__F5,1_EmM,1__000</Key>
+    <Key>XXpion_pionxD0_J0__J0_H0D4A2__001xxpion_pionxD0_J0__J0_H0D4A2__00-1__F5,1_EpP,1__000XXpion_pionxD0_J0__J0_A1__000__F5,1_EmM,1__000</Key>
     <Val>
       <Operators>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_H0D4A2</name>
+          <name>pion_pionxD0_J0__J0_H0D4A2</name>
           <mom_class>0 0 -1</mom_class>
         </elem>
         <elem>
-          <name>pion_proj0_A1</name>
+          <name>pion_pionxD0_J0__J0_A1</name>
           <mom_class>0 0 0</mom_class>
         </elem>
       </Operators>
