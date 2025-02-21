@@ -9,7 +9,7 @@
       <autoIrrepCG>true</autoIrrepCG>
       <rephaseIrrepCG>true</rephaseIrrepCG>
       <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
-      <autoCGVersion>2</autoCGVersion>
+      <autoCGVersion>1</autoCGVersion>
     </cgc_options>
     
     <Nt_corr>16</Nt_corr>
