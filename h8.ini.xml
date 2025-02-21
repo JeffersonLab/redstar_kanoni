@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<GenerateXML>
+  <version>1</version>
+
+  <Masses>
+    <elem><Key>h8_b1xD0_J0__J1</Key><Val>0.3269</Val></elem>
+    <elem><Key>omega8_rhoxD0_J0__J1</Key><Val>0.2153</Val></elem>
+    <elem><Key>f8_a0xD0_J0__J0</Key><Val>0.2950</Val></elem>
+    <elem><Key>f8_a1xD0_J0__J1</Key><Val>0.3212</Val></elem>
+    <elem><Key>eta8_pionxD0_J0__J0</Key><Val>0.1478</Val></elem>
+  </Masses>
+
+  <E_cm_max>0.59</E_cm_max>
+  <xi>3.4534</xi>
+  <L>24</L>
+
+  <target_F>8</target_F>
+  <target_G_parity>-1</target_G_parity>
+  <target_S>0</target_S>
+  <target_c>0</target_c>
+  <target_B>0</target_B>
+  <rel2_max>1</rel2_max>
+  <mom2_min>0</mom2_min>
+  <mom2_max>1</mom2_max>
+
+</GenerateXML>
