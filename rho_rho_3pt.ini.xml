@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<GenerateXML>
+
+  <runmode>default</runmode>
+
+  <source>
+    <include_all_rows>true</include_all_rows>
+    <default_row>1</default_row>
+    <ops_list>rho.ops.list</ops_list>
+    <timeslices>0</timeslices>
+    <flavor><twoI>2</twoI> <threeY>0</threeY> <twoI_z>2</twoI_z></flavor>
+    <creation_op>true</creation_op>
+    <smeared>true</smeared>
+  </source>
+
+  <insertion>
+    <include_all_rows>true</include_all_rows>
+    <default_row>1</default_row>
+    <ops_list>insertion.ops.list</ops_list>
+    <timeslices>-3</timeslices>
+    <flavor><twoI>2</twoI> <threeY>0</threeY> <twoI_z>0</twoI_z></flavor>
+    <creation_op>true</creation_op>
+    <smeared>false</smeared>
+  </insertion>
+
+  <sink>
+    <include_all_rows>true</include_all_rows>
+    <default_row>1</default_row>
+    <ops_list>rho.ops.list</ops_list>
+    <timeslices>31</timeslices>
+    <flavor><twoI>2</twoI> <threeY>0</threeY> <twoI_z>2</twoI_z></flavor>
+    <creation_op>false</creation_op>
+    <smeared>true</smeared>
+  </sink>
+
+  <source_moms>
+    <elem>0 0 0</elem>
+    <elem>1 0 0</elem>
+    <elem>1 1 0</elem>
+    <elem>1 1 1</elem>
+    <elem>2 0 0</elem>
+    <elem>2 1 0</elem>
+    <elem>2 1 1</elem>
+  </source_moms>
+
+  <insertion_moms>
+    <elem>0 0 0</elem>
+  </insertion_moms>
+
+  <sink_moms>
+    <elem>0 0 0</elem>
+    <elem>1 0 0</elem>
+    <elem>1 1 0</elem>
+    <elem>1 1 1</elem>
+    <elem>2 0 0</elem>
+    <elem>2 1 0</elem>
+    <elem>2 1 1</elem>
+  </sink_moms>
+
+  <ops_xmls>
+    <elem>rho.ops.xml</elem>
+    <elem>insertion.ops.xml</elem>
+  </ops_xmls>
+
+</GenerateXML>
