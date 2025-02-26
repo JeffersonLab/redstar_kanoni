@@ -3,7 +3,7 @@
 <RedstarNPt>
   <Param>
     <version>14</version>
-    <diagnostic_level>10</diagnostic_level>
+    <diagnostic_level>2</diagnostic_level>
 
     <cgc_options>
       <autoIrrepCG>true</autoIrrepCG>
