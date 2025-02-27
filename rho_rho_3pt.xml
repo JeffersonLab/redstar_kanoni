@@ -34,7 +34,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -116,7 +116,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -198,7 +198,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -280,7 +280,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -362,7 +362,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -444,7 +444,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -526,7 +526,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -608,7 +608,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -690,7 +690,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -772,7 +772,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -854,7 +854,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -936,7 +936,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -1018,7 +1018,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -1100,7 +1100,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -1182,7 +1182,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -1264,7 +1264,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -1346,7 +1346,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -1428,7 +1428,7 @@
   <elem>
     <NPoint>
       <elem>
-        <t_slice>31</t_slice>
+        <t_slice>6</t_slice>
         <Irrep>
           <creation_op>false</creation_op>
           <smearedP>true</smearedP>
@@ -1521,8 +1521,8 @@
 
     <!-- Required tags -->
     <proj_op_xmls>
-       <elem>./weights/weights.pion.xml</elem>
-       <elem>./weights/weights.rho.xml</elem>
+       <elem>./weights_v4/weights.pion.xml</elem>
+       <elem>./weights_v4/weights.rho.xml</elem>
     </proj_op_xmls>
     <corr_graph_bin>corr_graph.bin</corr_graph_bin>
     <output_db>output.npt.sdb1</output_db>
