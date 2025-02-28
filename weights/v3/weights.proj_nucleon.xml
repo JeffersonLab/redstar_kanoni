@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+
+<ProjectedOpWeights>
+  <version>3</version>
+  <ProjectedOps>
+    <elem>
+      <Key>
+        <name>Nucleon_proj0_p000_G1g</name>
+        <mom_type>0 0 0</mom_type>
+      </Key>
+      <Val>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>1.0</Val>
+        </elem>
+      </Val>
+    </elem>
+    <elem>
+      <Key>
+        <name>Nucleon_proj0_p100_H1o2D4E1</name>
+        <mom_type>1 0 0</mom_type>
+      </Key>
+      <Val>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>NucleonMG1g1MxD0J0S_J1o2_H1o2D4E1</name>
+                <mom_type>1 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>1.0</Val>
+        </elem>
+      </Val>
+    </elem>
+  </ProjectedOps>
+</ProjectedOpWeights>
