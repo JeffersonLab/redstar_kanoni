@@ -3,15 +3,20 @@
 
 <RedstarNPt>
   <Param>
-    <version>12</version>
-    <diagnostic_level>10</diagnostic_level>
+    <version>14</version>
+    <diagnostic_level>20</diagnostic_level>
+
+    <cgc_options>
+      <autoIrrepCG>true</autoIrrepCG>
+      <rephaseIrrepCG>true</rephaseIrrepCG>
+      <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
+      <autoCGVersion>1</autoCGVersion>
+    </cgc_options>
+    
     <Nt_corr>16</Nt_corr>
     <t_origin>3</t_origin>
     <bc_spec>-1</bc_spec>
-
-    <autoIrrepCG>true</autoIrrepCG>
-    <rephaseIrrepCG>true</rephaseIrrepCG>
-
+    
     <convertUDtoL>true</convertUDtoL>
     <convertUDtoS>false</convertUDtoS>
     <average_1pt_diagrams>true</average_1pt_diagrams>
@@ -21,6 +26,7 @@
       <decayDir>3</decayDir>
       <lattSize>4 4 4 16</lattSize>
     </Layout>
+  </Param>
     <NPointList>
       <elem>
         <NPoint>
@@ -42,11 +48,11 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_G1g1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -57,7 +63,7 @@
                       <slot>12</slot>
                       <F>2</F>
                       <irrep>G1u,1</irrep>
-                      <mom_type>0 0 0</mom_type>
+                      <mom_class>0 0 0</mom_class>
                     </target>
                   </elem>
                 </CGs>
@@ -82,7 +88,7 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD1J1M_J1o2_G1u1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -93,7 +99,6 @@
         </NPoint>
       </elem>
     </NPointList>
-  </Param>
   <DBFiles>
     <proj_op_xmls>
     </proj_op_xmls>
