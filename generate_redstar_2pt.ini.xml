@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<GenerateXML>
+  <runmode>default</runmode>
+  <include_all_rows>false</include_all_rows>
+  <default_row>1</default_row>
+  <moms>
+      <elem>0 0 0</elem>
+      <!-- elem>1 0 0</elem -->
+  </moms>
+  <!-- <flavor><twoI>2</twoI> <threeY>0</threeY> <twoI_z>2</twoI_z></flavor> -->
+  <t_sources>0</t_sources>
+  <sink_ops_list>orthog.list</sink_ops_list>
+  <source_ops_list>orthog.list</source_ops_list>
+  <ops_xmls>
+    <elem>3pi.ops.xml</elem>
+    <elem>h8.ops.xml</elem>
+    <!-- elem>pion.ops.xml</elem -->
+  </ops_xmls>
+</GenerateXML>

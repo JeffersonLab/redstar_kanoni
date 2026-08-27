@@ -2,12 +2,12 @@
 
 
 <ProjectedOpWeights>
-  <version>3</version>
+  <version>4</version>
   <ProjectedOps>
     <elem>
       <Key>
-        <name>eta_proj1_p200_H0D4A2</name>
-        <mom_type>2 0 0</mom_type>
+        <name>eta_proj1_H0D4A2</name>
+        <mom_class>0 0 2</mom_class>
       </Key>
       <Val>
         <elem>
@@ -15,7 +15,7 @@
             <Operators>
               <elem>
                 <name>fs_b0xD2_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -27,34 +27,47 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_pion_2xD0_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>fs_a1xD0_J0__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.151865323395435</Val>
+          <Val>-0.0437585960469483</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>fs_a1xD2_J2__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>etal_rhoxD2_J1__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0158625264223578</Val>
+          <Val>-0.0116751956276629</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pion_2xD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0356815981281668</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>etal_rho_2xD2_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -66,47 +79,21 @@
           <Key>
             <Operators>
               <elem>
-                <name>fs_rhoxD1_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>etal_rhoxD2_J1__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0508487557419058</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pionxD2_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0352554955818238</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pion_2xD2_J2__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0162238579875441</Val>
+          <Val>0.0156448789551086</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>fs_a1xD2_J0__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -118,8 +105,21 @@
           <Key>
             <Operators>
               <elem>
+                <name>etas_pion_2xD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0410639535252026</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>fl_a1xD0_J0__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -131,21 +131,47 @@
           <Key>
             <Operators>
               <elem>
-                <name>etas_pionxD2_J2__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>etal_pion_2xD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00396008081735714</Val>
+          <Val>0.0162238579875441</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_rhoxD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0508487557419058</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_a1xD2_J0__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.031219895760236</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>fs_a1xD2_J2__J3_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -157,8 +183,164 @@
           <Key>
             <Operators>
               <elem>
+                <name>etal_pion_2xD0_J0__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.151865323395435</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pionxD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00396008081735714</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pionxD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0528831019513795</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_b1xD1_J1__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00695098693828438</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_rho_2xD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0189097323852031</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0352554955818238</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD0_J0__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0504309970555808</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD2_J2__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0158625264223578</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_b1xD1_J1__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.017576553259954</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_rhoxD2_J1__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00102434458171164</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_rho_2xD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0132423139603998</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_a1xD2_J2__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0527300840439308</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_pion_2xD0_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -171,7 +353,7 @@
             <Operators>
               <elem>
                 <name>fs_b1xD2_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -183,21 +365,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_pion_2xD2_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0356815981281668</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etas_rho_2xD2_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -209,34 +378,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_b1xD1_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00506664636137159</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_rhoxD2_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00102434458171164</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etal_b1xD1_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -248,99 +391,34 @@
           <Key>
             <Operators>
               <elem>
-                <name>etas_pionxD2_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>etal_rho_2xD2_J1__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0528831019513795</Val>
+          <Val>-0.0115672062800401</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>fs_rho_2xD1_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>etal_b1xD1_J1__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0189097323852031</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rhoxD2_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0116751956276629</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pionxD0_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0504309970555808</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_b1xD1_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00695098693828438</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_b1xD1_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.017576553259954</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD2_J2__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0527300840439308</Val>
+          <Val>0.00506664636137159</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>etal_pionxD2_J2__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -353,7 +431,7 @@
             <Operators>
               <elem>
                 <name>etas_rhoxD2_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -365,21 +443,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etas_pion_2xD2_J2__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0410639535252026</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>fl_b0xD2_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -392,7 +457,7 @@
             <Operators>
               <elem>
                 <name>etas_rho_2xD2_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -404,34 +469,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_rho_2xD2_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0115672062800401</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rhoxD2_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0156448789551086</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etas_pionxD0_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -444,7 +483,7 @@
             <Operators>
               <elem>
                 <name>etas_pion_2xD2_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -457,7 +496,7 @@
             <Operators>
               <elem>
                 <name>fl_b1xD2_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -469,34 +508,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>fl_a1xD2_J0__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.031219895760236</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD0_J0__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0437585960469483</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>fl_a1xD2_J2__J3_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -509,7 +522,7 @@
             <Operators>
               <elem>
                 <name>fl_rhoxD1_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -517,587 +530,33 @@
           </Key>
           <Val>-0.0224620954325281</Val>
         </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_rho_2xD1_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0132423139603998</Val>
-        </elem>
       </Val>
     </elem>
     <elem>
       <Key>
-        <name>eta_proj1_p111_H0D3A2</name>
-        <mom_type>1 1 1</mom_type>
+        <name>eta_proj1_H0D4A2</name>
+        <mom_class>0 0 1</mom_class>
       </Key>
       <Val>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>etal_pion_2xD2_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>etal_rhoxD2_J1__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0521970669522723</Val>
+          <Val>-0.0156031596550186</Val>
         </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_b1xD1_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.101338725503038</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_b1xD2_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00532399080331663</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_rho_2xD1_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0337089116300126</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pion_2xD2_J2__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0322497260763561</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD2_J0__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0751388636251574</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD2_J0__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0703261534510455</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pion_2xD0_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.134435565503255</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD2_J2__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00389625735928724</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD0_J0__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0621333314415057</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pionxD0_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0380178789332072</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rhoxD2_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0595068540134664</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rho_2xD2_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0244043763390913</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_b1xD1_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0209635947418376</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_b1xD1_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0178688712032965</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_rho_2xD2_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0111769116210964</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pion_2xD2_J2__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0411813332508796</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pion_2xD2_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.060090641372014</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pionxD2_J2__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0111847887906388</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pionxD2_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0164488593653177</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD2_J2__J3_H3D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00355796333303198</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pion_2xD0_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.126600115260927</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pionxD2_J2__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00649542632343713</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD2_J2__J3_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0088042431010962</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rho_2xD2_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.022770111146413</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_rhoxD2_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0146334334152994</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_rho_2xD2_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0292449465203819</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pionxD2_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.044739918837879</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_b1xD1_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0380863268696261</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rhoxD2_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0136182260674142</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_rhoxD1_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.134313518872822</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pionxD0_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0412135773201017</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_rhoxD2_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0624330032953726</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD2_J2__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00243804761298872</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD2_J2__J3_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00520275027461438</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_b0xD2_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0416214365114901</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_b1xD2_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0236522975666213</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_rho_2xD1_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0474776948732771</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD0_J0__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0485247785948581</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_rhoxD1_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.127937395605507</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD2_J2__J3_H3D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00277166059235253</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_b0xD2_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0359586425650357</Val>
-        </elem>
-      </Val>
-    </elem>
-    <elem>
-      <Key>
-        <name>eta_proj1_p100_H0D4A2</name>
-        <mom_type>1 0 0</mom_type>
-      </Key>
-      <Val>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>etal_pion_2xD0_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1109,34 +568,47 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_b1xD1_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>etal_b1xD1_J1__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.000148089373183899</Val>
+          <Val>-0.000567119437501484</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>etal_rhoxD2_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>fs_b1xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00252036898445446</Val>
+          <Val>-0.0158598394165893</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_rho_2xD2_J1__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00938663038821706</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>fs_a1xD2_J2__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1149,7 +621,7 @@
             <Operators>
               <elem>
                 <name>fs_rho_2xD1_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1161,8 +633,21 @@
           <Key>
             <Operators>
               <elem>
+                <name>fs_b0xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0114630070247645</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_pionxD0_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1174,47 +659,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_pionxD2_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00647434039922215</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rhoxD2_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0156031596550186</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pion_2xD2_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0464185903364159</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>fs_rhoxD1_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1226,164 +672,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_b1xD1_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.000567119437501484</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pionxD2_J2__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00523676211078945</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_b1xD1_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00105008044011971</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD2_J2__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0151459444103034</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD2_J2__J3_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00129253462746651</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pion_2xD2_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0558013316373364</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pion_2xD2_J2__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0009172773013315</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pion_2xD0_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.125399447946472</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pionxD0_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0246986741814212</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rho_2xD2_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00938663038821706</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD2_J2__J3_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00164863360247206</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pion_2xD2_J2__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.000484809379744245</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etal_rho_2xD2_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1395,8 +685,112 @@
           <Key>
             <Operators>
               <elem>
+                <name>etal_pion_2xD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0009172773013315</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pionxD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00511915611094251</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_b1xD1_J1__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00105008044011971</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00647434039922215</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_b1xD1_J1__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.000148089373183899</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD2_J2__J3_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00129253462746651</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00523676211078945</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_a1xD2_J2__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0151459444103034</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_rhoxD2_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1408,8 +802,99 @@
           <Key>
             <Operators>
               <elem>
+                <name>etal_pionxD0_J0__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0246986741814212</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pion_2xD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0464185903364159</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pion_2xD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.000484809379744245</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pion_2xD0_J0__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.125399447946472</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pion_2xD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0558013316373364</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_a1xD2_J2__J3_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00164863360247206</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_rhoxD2_J1__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00252036898445446</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_pionxD2_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1422,7 +907,7 @@
             <Operators>
               <elem>
                 <name>etas_rhoxD2_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1434,8 +919,21 @@
           <Key>
             <Operators>
               <elem>
+                <name>fs_a1xD0_J0__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0191017825869734</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>fl_a1xD2_J0__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1447,8 +945,34 @@
           <Key>
             <Operators>
               <elem>
+                <name>etas_rho_2xD2_J1__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00305562053354143</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD2_J0__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0150823047999966</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_b1xD1_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1461,7 +985,7 @@
             <Operators>
               <elem>
                 <name>etas_rho_2xD2_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1473,60 +997,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etas_pionxD2_J2__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00511915611094251</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD0_J0__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0191017825869734</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_rho_2xD2_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00305562053354143</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_b0xD2_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0114630070247645</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>fl_a1xD0_J0__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1538,47 +1010,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>fl_rhoxD1_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0221857581024404</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_b1xD2_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0158598394165893</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_b0xD2_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0150955984074829</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>fl_b1xD2_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1590,21 +1023,34 @@
           <Key>
             <Operators>
               <elem>
-                <name>fs_a1xD2_J0__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>fl_rhoxD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0150823047999966</Val>
+          <Val>-0.0221857581024404</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_b0xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0150955984074829</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>fl_rho_2xD1_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1616,81 +1062,570 @@
     </elem>
     <elem>
       <Key>
-        <name>eta_proj1_p110_H0D2A2</name>
-        <mom_type>1 1 0</mom_type>
+        <name>eta_proj1_H0D3A2</name>
+        <mom_class>1 1 1</mom_class>
       </Key>
       <Val>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>fl_rho_2xD1_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>fl_a1xD2_J0__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0123026256167454</Val>
+          <Val>0.0751388636251574</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>etal_b1xD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>etas_b1xD1_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0207902121590906</Val>
+          <Val>-0.0178688712032965</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>fs_a1xD0_J0__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>etal_pionxD2_J2__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0435972342794815</Val>
+          <Val>-0.0111847887906388</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>etal_pionxD0_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>etas_pionxD0_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0870043982561801</Val>
+          <Val>-0.0412135773201017</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>etal_b1xD1_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>fl_b0xD2_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0195391988418154</Val>
+          <Val>-0.0416214365114901</Val>
         </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pion_2xD2_J2__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0322497260763561</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_b1xD1_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.101338725503038</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_b1xD2_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00532399080331663</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pion_2xD2_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0521970669522723</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD2_J0__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0703261534510455</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_rho_2xD2_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.022770111146413</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_a1xD0_J0__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0621333314415057</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_rhoxD2_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0595068540134664</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD0_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0380178789332072</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD2_J2__J3_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0088042431010962</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_b1xD2_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0236522975666213</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_rho_2xD2_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0111769116210964</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pion_2xD2_J2__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0411813332508796</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pionxD2_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0164488593653177</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD0_J0__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0485247785948581</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_a1xD2_J2__J3_H3D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00355796333303198</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pion_2xD2_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.060090641372014</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_rho_2xD1_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0337089116300126</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pion_2xD0_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.126600115260927</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_b1xD1_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0209635947418376</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD2_J2__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00389625735928724</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pion_2xD0_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.134435565503255</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pionxD2_J2__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00649542632343713</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_rho_2xD2_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0244043763390913</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_rhoxD2_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0146334334152994</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_rho_2xD2_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0292449465203819</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_a1xD2_J2__J3_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00520275027461438</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD2_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.044739918837879</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_b1xD1_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0380863268696261</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_rhoxD2_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0136182260674142</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_b0xD2_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0359586425650357</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_rhoxD1_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.134313518872822</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_rhoxD2_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0624330032953726</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_rhoxD1_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.127937395605507</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_a1xD2_J2__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00243804761298872</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_rho_2xD1_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0474776948732771</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD2_J2__J3_H3D3A2</name>
+                <mom_class>1 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00277166059235253</Val>
+        </elem>
+      </Val>
+    </elem>
+    <elem>
+      <Key>
+        <name>eta_proj1_H0D2A2</name>
+        <mom_class>0 1 1</mom_class>
+      </Key>
+      <Val>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>etal_rho_2xD2_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1702,8 +1637,73 @@
           <Key>
             <Operators>
               <elem>
+                <name>etas_pionxD0_J0__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0694001264104036</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD2_J0__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0324880210616159</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD0_J0__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0870043982561801</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_rho_2xD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.024853530566501</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD0_J0__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0435972342794815</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_rhoxD2_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1715,60 +1715,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_pion_2xD2_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0218889146756983</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rhoxD2_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0158092105710564</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_rho_2xD1_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.061985121860169</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD2_J2__J3_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00321125473608059</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etal_pionxD2_J2__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1780,8 +1728,86 @@
           <Key>
             <Operators>
               <elem>
+                <name>etal_pion_2xD2_J0__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0218889146756983</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a1xD2_J2__J3_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00199419668643793</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_rhoxD2_J1__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0158092105710564</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pion_2xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.000715118301017391</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_rho_2xD1_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.061985121860169</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_rho_2xD2_J1__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0233171289523389</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_b1xD1_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1793,34 +1819,21 @@
           <Key>
             <Operators>
               <elem>
-                <name>fl_a0xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>etas_b1xD1_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0142146847794807</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rhoxD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0134455647335841</Val>
+          <Val>-0.0169940386936125</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>fl_b1xD2_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1832,21 +1845,99 @@
           <Key>
             <Operators>
               <elem>
-                <name>fs_b1xD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>fs_a1xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00390266374672479</Val>
+          <Val>0.00641582024201115</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pion_2xD2_J2__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00918250280262413</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_rho_2xD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0268581782911649</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_b1xD1_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0207902121590906</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fs_a0xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0167763912263633</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_rhoxD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0134455647335841</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pion_2xD2_J2__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0112172025654884</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>fs_b1xD2_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1858,8 +1949,73 @@
           <Key>
             <Operators>
               <elem>
+                <name>fs_b1xD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00390266374672479</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_rhoxD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0225832935348235</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_a0xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0142146847794807</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_b1xD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00205564426572304</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00817036429816933</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etal_pion_2xD0_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1872,7 +2028,7 @@
             <Operators>
               <elem>
                 <name>fs_rhoxD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1884,138 +2040,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etas_b1xD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0169940386936125</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pion_2xD2_J2__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0112172025654884</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_rho_2xD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0284044794002636</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fl_a1xD2_J2__J3_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00410986017574808</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pionxD2_J2__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0148400500167621</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD2_J2__J3_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00199419668643793</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pionxD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00547258222231517</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_rho_2xD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.024853530566501</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pion_2xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.000715118301017391</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>fs_a1xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00641582024201115</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>fl_a1xD2_J2__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2027,21 +2053,34 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_pion_2xD2_J2__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>fl_a1xD2_J2__J3_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00918250280262413</Val>
+          <Val>-0.00321125473608059</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>fl_rho_2xD1_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0123026256167454</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>fs_b0xD2_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2053,8 +2092,21 @@
           <Key>
             <Operators>
               <elem>
+                <name>fl_a1xD2_J2__J3_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00410986017574808</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etal_pion_2xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2066,47 +2118,47 @@
           <Key>
             <Operators>
               <elem>
-                <name>etas_pionxD0_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>etas_pionxD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0694001264104036</Val>
+          <Val>-0.00547258222231517</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>etas_pionxD2_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>fl_rho_2xD1_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0145320343028772</Val>
+          <Val>0.0284044794002636</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>fl_b1xD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>etas_pionxD2_J2__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00205564426572304</Val>
+          <Val>-0.0148400500167621</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>fs_a1xD2_J2__J3_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2118,8 +2170,21 @@
           <Key>
             <Operators>
               <elem>
+                <name>etal_rho_2xD2_J1__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00138640163845547</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etal_b1xD1_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2131,8 +2196,21 @@
           <Key>
             <Operators>
               <elem>
+                <name>fl_a1xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00844972804528051</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>fl_rhoxD1_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2144,8 +2222,21 @@
           <Key>
             <Operators>
               <elem>
+                <name>etal_b1xD1_J1__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0195391988418154</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_rho_2xD2_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2157,8 +2248,21 @@
           <Key>
             <Operators>
               <elem>
+                <name>etas_pionxD2_J0__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0145320343028772</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_pion_2xD0_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2171,7 +2275,7 @@
             <Operators>
               <elem>
                 <name>etal_rhoxD2_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2183,21 +2287,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etas_rho_2xD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0268581782911649</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etas_pion_2xD2_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2209,21 +2300,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_rho_2xD2_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00138640163845547</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etas_rhoxD2_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2235,34 +2313,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etas_rho_2xD2_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0233171289523389</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pionxD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00817036429816933</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etas_b1xD1_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2274,34 +2326,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etas_rhoxD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0225832935348235</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_pionxD2_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0324880210616159</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>fl_a1xD0_J0__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2313,21 +2339,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>fs_a0xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0167763912263633</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>fl_a1xD2_J0__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2339,21 +2352,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>fl_a1xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00844972804528051</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>fl_b0xD2_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2366,7 +2366,7 @@
             <Operators>
               <elem>
                 <name>fl_rhoxD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2379,7 +2379,7 @@
             <Operators>
               <elem>
                 <name>fs_a1xD2_J0__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2392,7 +2392,7 @@
             <Operators>
               <elem>
                 <name>fs_a1xD2_J2__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2405,7 +2405,7 @@
             <Operators>
               <elem>
                 <name>fs_rho_2xD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2418,7 +2418,7 @@
             <Operators>
               <elem>
                 <name>fs_rhoxD1_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2430,55 +2430,16 @@
     </elem>
     <elem>
       <Key>
-        <name>eta_proj1_p000_A1</name>
-        <mom_type>0 0 0</mom_type>
+        <name>eta_proj1_A1</name>
+        <mom_class>0 0 0</mom_class>
       </Key>
       <Val>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>etal_a0xD3_J131_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00587826352481751</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_rho_2xD2_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00359931493759576</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etal_a1xD3_J131_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0301678622911866</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etal_pion_2xD2_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2491,7 +2452,7 @@
             <Operators>
               <elem>
                 <name>etas_pionxD2_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2504,7 +2465,7 @@
             <Operators>
               <elem>
                 <name>etal_b1xD3_J132_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2516,34 +2477,21 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_b1xD1_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>etal_rho_2xD2_J1__J0_A1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0583503101621577</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_b1xD3_J132_J3__J4_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.000751078923481414</Val>
+          <Val>0.00992393254696947</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
                 <name>etal_pion_2xD0_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2556,7 +2504,7 @@
             <Operators>
               <elem>
                 <name>etal_pionxD2_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2568,8 +2516,47 @@
           <Key>
             <Operators>
               <elem>
+                <name>etal_b1xD1_J1__J0_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0583503101621577</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_pionxD0_J0__J0_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0527517215114351</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_a1xD3_J131_J1__J0_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0286485726611292</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_pion_2xD2_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2582,7 +2569,7 @@
             <Operators>
               <elem>
                 <name>etal_b1xD3_J132_J3__J4_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2594,21 +2581,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_b1xD3_J130_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00683927820899253</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etas_b1xD3_J130_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2621,7 +2595,7 @@
             <Operators>
               <elem>
                 <name>etas_b1xD1_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2633,21 +2607,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_pionxD0_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0527517215114351</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etal_rhoxD2_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2659,8 +2620,60 @@
           <Key>
             <Operators>
               <elem>
+                <name>etal_a1xD3_J131_J1__J0_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0301678622911866</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_a0xD3_J131_J0__J0_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00587826352481751</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_pion_2xD0_J0__J0_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.116891397733879</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etas_b1xD3_J132_J3__J4_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.000751078923481414</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_a0xD3_J131_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2672,8 +2685,34 @@
           <Key>
             <Operators>
               <elem>
+                <name>etas_rho_2xD2_J1__J0_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00359931493759576</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>etal_b1xD3_J130_J1__J0_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.00683927820899253</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
                 <name>etas_rhoxD2_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2685,21 +2724,8 @@
           <Key>
             <Operators>
               <elem>
-                <name>etal_rho_2xD2_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00992393254696947</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
                 <name>etas_b1xD3_J132_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2712,39 +2738,13 @@
             <Operators>
               <elem>
                 <name>etas_pionxD0_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
           <Val>0.0480189144035973</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_pion_2xD0_J0__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.116891397733879</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>etas_a1xD3_J131_J1__J0_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0286485726611292</Val>
         </elem>
       </Val>
     </elem>

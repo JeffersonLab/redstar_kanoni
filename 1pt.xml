@@ -7,20 +7,24 @@ diagonal case of a potential 2pt corr func. Use the corr funcs from these to bui
 a vacuum subtracted 2pt func.
 </annotation>
   <Param>
-    <version>12</version>
+    <version>14</version>
     <diagnostic_level>10</diagnostic_level>
 
+    <cgc_options>
+      <autoIrrepCG>true</autoIrrepCG>
+      <rephaseIrrepCG>true</rephaseIrrepCG>
+      <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
+      <autoCGVersion>1</autoCGVersion>
+    </cgc_options>
 
-    <autoIrrepCG>true</autoIrrepCG>
-    <rephaseIrrepCG>true</rephaseIrrepCG>
-
+    
     <Nt_corr>16</Nt_corr>
-    <t_origin>2</t_origin>
+    <t_origin>3</t_origin>
     <bc_spec>-1</bc_spec>
-  
+    
     <convertUDtoL>true</convertUDtoL>
-    <convertUDtoS>true</convertUDtoS>
-
+    <convertUDtoS>false</convertUDtoS>
+    
     <average_1pt_diagrams>true</average_1pt_diagrams>
     <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
     
@@ -31,7 +35,7 @@ a vacuum subtracted 2pt func.
       <lattSize>4 4 4 16</lattSize>
     </Layout>
     
-
+  </Param>
     <NPointList>
       <elem>
         <NPoint>
@@ -53,11 +57,11 @@ a vacuum subtracted 2pt func.
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D3A2</name>
-                    <mom_type>1 1 1</mom_type>
+                    <mom_class>1 1 1</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -68,7 +72,7 @@ a vacuum subtracted 2pt func.
                       <slot>12</slot>
                       <F>1</F>
                       <irrep>D3A1,1</irrep>
-                      <mom_type>1 1 1</mom_type>
+                      <mom_class>1 1 1</mom_class>
                     </target>
                   </elem>
                 </CGs>
@@ -93,11 +97,11 @@ a vacuum subtracted 2pt func.
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D3A2</name>
-                    <mom_type>1 1 1</mom_type>
+                    <mom_class>1 1 1</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -108,7 +112,7 @@ a vacuum subtracted 2pt func.
                       <slot>12</slot>
                       <F>1</F>
                       <irrep>D3A1,1</irrep>
-                      <mom_type>1 1 1</mom_type>
+                      <mom_class>1 1 1</mom_class>
                     </target>
                   </elem>
                 </CGs>
@@ -138,11 +142,11 @@ a vacuum subtracted 2pt func.
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D3A2</name>
-                    <mom_type>1 1 1</mom_type>
+                    <mom_class>1 1 1</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -153,7 +157,7 @@ a vacuum subtracted 2pt func.
                       <slot>12</slot>
                       <F>1</F>
                       <irrep>D3A1,1</irrep>
-                      <mom_type>1 1 1</mom_type>
+                      <mom_class>1 1 1</mom_class>
                     </target>
                   </elem>
                 </CGs>
@@ -182,11 +186,11 @@ a vacuum subtracted 2pt func.
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D3A2</name>
-                    <mom_type>1 1 1</mom_type>
+                    <mom_class>1 1 1</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -197,7 +201,7 @@ a vacuum subtracted 2pt func.
                       <slot>12</slot>
                       <F>1</F>
                       <irrep>D3A1,1</irrep>
-                      <mom_type>1 1 1</mom_type>
+                      <mom_class>1 1 1</mom_class>
                     </target>
                   </elem>
                 </CGs>
@@ -208,13 +212,11 @@ a vacuum subtracted 2pt func.
       </elem>
     </NPointList>
 
-  </Param>
-  
   <DBFiles>
     <proj_op_xmls>
-      <elem>./weights/weights.pion.xml</elem>
+      <!-- elem>./weights/weights.pion.xml</elem>
       <elem>./weights/weights.rho.xml</elem>
-      <!-- elem>./weights/weights.eta.proj1.xml</elem>
+      <elem>./weights/weights.eta.proj1.xml</elem>
       <elem>./weights/weights.eta.proj0.xml</elem>
       <elem>./weights/weights.pion.flight_2deriv.ops.xml</elem>
       <elem>./weights/weights.pion.rest_3deriv.ops.xml</elem>

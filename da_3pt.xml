@@ -1,28 +1,35 @@
 <?xml version="1.0"?>
 <RedstarNPt>
-<Param> 
-  <version>12</version>
- <diagnostic_level>5</diagnostic_level>
+  <Param>
+    <version>14</version>
+    <diagnostic_level>20</diagnostic_level>
 
-  <autoIrrepCG>false</autoIrrepCG>
-  <rephaseIrrepCG>false</rephaseIrrepCG>
+    <cgc_options>
+      <autoIrrepCG>true</autoIrrepCG>
+      <rephaseIrrepCG>true</rephaseIrrepCG>
+      <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
+      <autoCGVersion>2</autoCGVersion>
+    </cgc_options>
 
-  <Nt_corr>7</Nt_corr>
-  <t_origin>0</t_origin>
-  <bc_spec>-1</bc_spec>
+    
+    <Nt_corr>7</Nt_corr>
+    <t_origin>0</t_origin>
+    <bc_spec>-1</bc_spec>
+    
+    <convertUDtoL>true</convertUDtoL>
+    <convertUDtoS>false</convertUDtoS>
+    
+    <average_1pt_diagrams>true</average_1pt_diagrams>
+    <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
+    
+    <ensemble>fred</ensemble>
+    
+    <Layout>
+      <decayDir>3</decayDir>
+      <lattSize>4 4 4 16</lattSize>
+    </Layout>
 
-  <convertUDtoL>true</convertUDtoL>
-  <convertUDtoS>false</convertUDtoS>
-
-  <average_1pt_diagrams>true</average_1pt_diagrams>
-  <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
-
-  <ensemble>fred</ensemble>
-
-  <Layout>
-    <lattSize>4 4 4 16</lattSize>
-    <decayDir>3</decayDir>
-  </Layout>
+</Param>
 
 
     <NPointList>
@@ -46,7 +53,7 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                    <mom_type>1 0 0</mom_type>
+                    <mom_class>1 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -72,7 +79,8 @@
                 <Operators>
                   <elem>
                     <name>rho_rhoxDQ__J1_T1</name>
-                    <mom_type>1 0 0</mom_type>
+                    <disp_list>3</disp_list>
+                    <mom_class>1 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -98,7 +106,7 @@
                 <Operators>
                   <elem>
                     <name>pion_pionxD0_J0__J0_A1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -109,27 +117,35 @@
         </NPoint>
       </elem>
     </NPointList>
-
-</Param>
 <DBFiles>
-  <proj_op_xmls></proj_op_xmls>
-  <eval_graph_xml>eval_graph.xml</eval_graph_xml>
-  <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
-  <corr_graph_bin>corr_graph.bin</corr_graph_bin>
-  <corr_graph_xml>corr_graph.xml</corr_graph_xml>
-  <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
-  <hadron_npt_graph_db>graph.sdb1</hadron_npt_graph_db>
-  <output_db>output.npt.sdb1</output_db>
+    <!-- Each of these are optional tags -->
+    <eval_graph_xml>eval_graph.xml</eval_graph_xml>
+    <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
+    <corr_graph_xml>corr_graph.xml</corr_graph_xml>
+    <vertex_coeff_xml>vertex_coeff.xml</vertex_coeff_xml>
+    <initial_graph_dbs><elem>graph.sdb1</elem></initial_graph_dbs>
+    <final_eval_graph_db>eval_graph.sdb1</final_eval_graph_db>
+    <final_noneval_graph_db>noneval_graph.sdb1</final_noneval_graph_db>
+
+    <!-- Required tags -->
+    <proj_op_xmls>
+      <!-- elem>weights/weights.pion.xml</elem>
+      <elem>weights/weights.eta.xml</elem -->
+    </proj_op_xmls>
+    <corr_graph_bin>corr_graph.bin</corr_graph_bin>
+    <output_db>output.npt.sdb1</output_db>
+  
 </DBFiles>      
 
 <ColorVec>
 <Param> 
   <version>1</version>
+  <!-- num_vecs>3</num_vecs -->
   <num_vecs>10</num_vecs>
   <use_derivP>false</use_derivP>
-  <use_genprop4>true</use_genprop4>
-  <fake_data_modeP>false</fake_data_modeP>
+  <use_genprop4>false</use_genprop4>
   <use_FSq>false</use_FSq>
+  <fake_data_modeP>false</fake_data_modeP>
   <ensemble>fred</ensemble>
 
   <FlavorToMass>
@@ -157,6 +173,7 @@
 
 </Param>
 <DBFiles>
+  <annotation>Need to provide "elem" entries for those elementals actually needed</annotation>
   <prop_dbs>
     <elem>./prop.sdb</elem>
   </prop_dbs>

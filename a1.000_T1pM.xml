@@ -3,22 +3,35 @@
 
 <RedstarNPt>
   <Param>
-    <version>12</version>
-    <diagnostic_level>0</diagnostic_level>
-    <Nt_corr>4</Nt_corr>
-    <t_origin>0</t_origin>
+    <version>14</version>
+    <diagnostic_level>20</diagnostic_level>
+
+    <cgc_options>
+      <autoIrrepCG>true</autoIrrepCG>
+      <rephaseIrrepCG>true</rephaseIrrepCG>
+      <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
+      <autoCGVersion>2</autoCGVersion>
+    </cgc_options>
+    
+    <Nt_corr>16</Nt_corr>
+    <t_origin>3</t_origin>
     <bc_spec>-1</bc_spec>
+    
     <convertUDtoL>true</convertUDtoL>
     <convertUDtoS>false</convertUDtoS>
-    <rephaseIrrepCG>true</rephaseIrrepCG>
-    <autoIrrepCG>true</autoIrrepCG>
+    
     <average_1pt_diagrams>true</average_1pt_diagrams>
-    <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
-    <ensemble></ensemble>
+    <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
+    
+    <ensemble>fred</ensemble>
+    
     <Layout>
       <decayDir>3</decayDir>
       <lattSize>4 4 4 16</lattSize>
     </Layout>
+
+</Param>
+
 <NPointList>
   <elem>
     <NPoint>
@@ -40,11 +53,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -55,7 +68,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -80,11 +93,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -95,7 +108,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -124,11 +137,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -139,7 +152,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -164,11 +177,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -179,7 +192,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -208,11 +221,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -223,7 +236,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -248,11 +261,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -263,7 +276,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -292,11 +305,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -307,7 +320,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -332,77 +345,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -432,11 +375,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -447,7 +390,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -471,8 +414,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -502,11 +445,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -517,7 +460,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -541,8 +484,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -572,11 +515,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -587,7 +530,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -611,8 +554,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -642,11 +585,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -657,7 +600,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -681,8 +624,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -712,11 +655,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -727,7 +670,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -751,8 +694,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -782,11 +725,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -797,749 +740,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -1564,7 +765,77 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>rho_proj0_p000_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p000_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1594,11 +865,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1609,77 +880,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
-                </target>
-              </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-              <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-              <elem>
-                <left>1</left>
-                <right>2</right>
-                <target>
-                  <slot>12</slot>
-                  <F>3,1</F>
-                  <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -1704,11 +905,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1719,7 +920,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -1747,12 +948,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1763,7 +964,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -1788,11 +989,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1803,7 +1004,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -1831,12 +1032,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1847,7 +1048,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -1872,11 +1073,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1887,7 +1088,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -1915,12 +1116,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1931,7 +1132,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -1956,7 +1157,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1985,12 +1186,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2001,7 +1202,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -2026,7 +1227,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2055,12 +1256,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2071,7 +1272,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -2096,7 +1297,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2125,12 +1326,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2141,7 +1342,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -2166,7 +1367,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2195,12 +1396,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2211,7 +1412,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -2236,7 +1437,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2265,12 +1466,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2281,7 +1482,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -2306,7 +1507,7 @@
             <Operators>
               <elem>
                 <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2335,12 +1536,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2351,7 +1552,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -2376,7 +1577,77 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2406,11 +1677,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2421,65 +1692,9 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
             </CGs>
           </Op>
         </Irrep>
@@ -2502,11 +1717,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2517,7 +1732,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -2545,11 +1760,25 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
             </CGs>
           </Op>
         </Irrep>
@@ -2572,11 +1801,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2587,7 +1816,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -2615,11 +1844,25 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
             </CGs>
           </Op>
         </Irrep>
@@ -2642,11 +1885,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2657,7 +1900,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -2685,11 +1928,25 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
             </CGs>
           </Op>
         </Irrep>
@@ -2712,7 +1969,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2741,11 +1998,25 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
             </CGs>
           </Op>
         </Irrep>
@@ -2768,7 +2039,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2797,11 +2068,25 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
             </CGs>
           </Op>
         </Irrep>
@@ -2824,7 +2109,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2853,11 +2138,25 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
             </CGs>
           </Op>
         </Irrep>
@@ -2880,7 +2179,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2909,11 +2208,25 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
             </CGs>
           </Op>
         </Irrep>
@@ -2936,7 +2249,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2965,11 +2278,25 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
             </CGs>
           </Op>
         </Irrep>
@@ -2992,7 +2319,7 @@
             <Operators>
               <elem>
                 <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3021,11 +2348,25 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
             </CGs>
           </Op>
         </Irrep>
@@ -3048,7 +2389,77 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3078,63 +2489,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3160,11 +2515,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3175,7 +2530,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -3203,8 +2558,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3230,11 +2585,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3245,7 +2600,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -3273,8 +2628,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3300,11 +2655,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3315,7 +2670,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -3343,8 +2698,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3370,7 +2725,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3399,8 +2754,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3426,7 +2781,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3455,8 +2810,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3482,7 +2837,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3511,8 +2866,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3538,7 +2893,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3567,8 +2922,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3594,7 +2949,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3623,8 +2978,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3650,7 +3005,7 @@
             <Operators>
               <elem>
                 <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3679,8 +3034,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3706,7 +3061,63 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3736,63 +3147,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3818,11 +3173,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3833,7 +3188,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -3861,8 +3216,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3888,11 +3243,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3903,7 +3258,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -3931,8 +3286,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3958,11 +3313,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3973,7 +3328,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -4001,8 +3356,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4028,7 +3383,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4057,8 +3412,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4084,7 +3439,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4113,8 +3468,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4140,7 +3495,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4169,8 +3524,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4196,7 +3551,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4225,8 +3580,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4252,7 +3607,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4281,8 +3636,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4308,7 +3663,7 @@
             <Operators>
               <elem>
                 <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4337,8 +3692,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4364,7 +3719,63 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4394,63 +3805,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4476,11 +3831,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4491,7 +3846,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -4519,8 +3874,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4546,11 +3901,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4561,7 +3916,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -4589,8 +3944,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4616,11 +3971,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4631,7 +3986,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -4659,8 +4014,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4686,7 +4041,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4715,8 +4070,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4742,7 +4097,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4771,8 +4126,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4798,7 +4153,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4827,8 +4182,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4854,7 +4209,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4883,8 +4238,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4910,7 +4265,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4939,8 +4294,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4966,7 +4321,7 @@
             <Operators>
               <elem>
                 <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4995,8 +4350,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5022,7 +4377,63 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5052,63 +4463,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5134,11 +4489,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5149,7 +4504,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -5177,8 +4532,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5204,11 +4559,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5219,7 +4574,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -5247,8 +4602,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5274,11 +4629,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5289,7 +4644,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -5317,8 +4672,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5344,7 +4699,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5373,8 +4728,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5400,7 +4755,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5429,8 +4784,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5456,7 +4811,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5485,8 +4840,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5512,7 +4867,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5541,8 +4896,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5568,7 +4923,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5597,8 +4952,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5624,7 +4979,7 @@
             <Operators>
               <elem>
                 <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5653,8 +5008,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5680,7 +5035,63 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5710,63 +5121,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5792,11 +5147,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5807,7 +5162,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -5835,8 +5190,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5862,11 +5217,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5877,7 +5232,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -5905,8 +5260,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5932,11 +5287,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5947,7 +5302,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -5975,8 +5330,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6002,7 +5357,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6031,8 +5386,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6058,7 +5413,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6087,8 +5442,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6114,7 +5469,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6143,8 +5498,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6170,7 +5525,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6199,8 +5554,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6226,7 +5581,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6255,8 +5610,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6282,7 +5637,7 @@
             <Operators>
               <elem>
                 <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6311,8 +5666,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6338,7 +5693,7 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6367,8 +5722,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6394,7 +5749,7 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6423,8 +5778,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6450,11 +5805,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6465,7 +5820,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -6493,8 +5848,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6520,11 +5875,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6535,7 +5890,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -6563,8 +5918,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6590,11 +5945,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6605,7 +5960,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -6633,8 +5988,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6660,7 +6015,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6689,8 +6044,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6716,7 +6071,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6745,8 +6100,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6772,7 +6127,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6801,8 +6156,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6828,7 +6183,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6857,8 +6212,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6884,7 +6239,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6913,8 +6268,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6940,7 +6295,7 @@
             <Operators>
               <elem>
                 <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6969,8 +6324,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6996,7 +6351,63 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7026,63 +6437,7 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-      <elem>
-        <t_slice>0</t_slice>
-        <Irrep>
-          <creation_op>true</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Op>
-        </Irrep>
-      </elem>
-    </NPoint>
-  </elem>
-  <elem>
-    <NPoint>
-      <elem>
-        <t_slice>-2</t_slice>
-        <Irrep>
-          <creation_op>false</creation_op>
-          <smearedP>true</smearedP>
-          <flavor>
-            <twoI>2</twoI>
-            <threeY>0</threeY>
-            <twoI_z>2</twoI_z>
-          </flavor>
-          <irmom>
-            <row>1</row>
-            <mom>0 0 0</mom>
-          </irmom>
-          <Op>
-            <Operators>
-              <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7108,11 +6463,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p000_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p000_A1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7123,7 +6478,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -7151,8 +6506,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7178,11 +6533,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H0D4A1</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7193,7 +6548,7 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -7221,8 +6576,8 @@
           <Op>
             <Operators>
               <elem>
-                <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7248,11 +6603,11 @@
             <Operators>
               <elem>
                 <name>rho_proj0_p100_H1D4E2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
                 <name>pion_proj0_p100_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <mom_class>1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7263,7 +6618,525 @@
                   <slot>12</slot>
                   <F>3,1</F>
                   <irrep>T1pM,1</irrep>
-                  <mom_type>0 0 0</mom_type>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_a1xD0_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_a1xD2_J0__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_a1xD2_J2__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_a1xD2_J2__J3_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_b0xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_b1xD2_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rho_2xD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>rho_proj0_p000_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p000_A1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
                 </target>
               </elem>
             </CGs>
@@ -7292,7 +7165,147 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>rho_proj0_p100_H0D4A1</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+      <elem>
+        <t_slice>0</t_slice>
+        <Irrep>
+          <creation_op>true</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>rho_proj0_p100_H1D4E2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+              <elem>
+                <name>pion_proj0_p100_H0D4A2</name>
+                <mom_class>1 0 0</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+              <elem>
+                <left>1</left>
+                <right>2</right>
+                <target>
+                  <slot>12</slot>
+                  <F>3,1</F>
+                  <irrep>T1pM,1</irrep>
+                  <mom_class>0 0 0</mom_class>
+                </target>
+              </elem>
+            </CGs>
+          </Op>
+        </Irrep>
+      </elem>
+    </NPoint>
+  </elem>
+  <elem>
+    <NPoint>
+      <elem>
+        <t_slice>-2</t_slice>
+        <Irrep>
+          <creation_op>false</creation_op>
+          <smearedP>true</smearedP>
+          <flavor>
+            <twoI>2</twoI>
+            <threeY>0</threeY>
+            <twoI_z>2</twoI_z>
+          </flavor>
+          <irmom>
+            <row>1</row>
+            <mom>0 0 0</mom>
+          </irmom>
+          <Op>
+            <Operators>
+              <elem>
+                <name>a_rhoxD1_J1__J1_T1</name>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7318,7 +7331,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD0_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7348,7 +7361,7 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7374,7 +7387,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J0__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7404,7 +7417,7 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7430,7 +7443,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7460,7 +7473,7 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7486,7 +7499,7 @@
             <Operators>
               <elem>
                 <name>a_a1xD2_J2__J3_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7516,7 +7529,7 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7542,7 +7555,7 @@
             <Operators>
               <elem>
                 <name>a_b0xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7572,7 +7585,7 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7598,7 +7611,7 @@
             <Operators>
               <elem>
                 <name>a_b1xD2_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7628,7 +7641,7 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7654,7 +7667,7 @@
             <Operators>
               <elem>
                 <name>a_rho_2xD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7684,7 +7697,7 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7710,7 +7723,7 @@
             <Operators>
               <elem>
                 <name>a_rhoxD1_J1__J1_T1</name>
-                <mom_type>0 0 0</mom_type>
+                <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7721,7 +7734,6 @@
     </NPoint>
   </elem>
 </NPointList>
-  </Param>
 <DBFiles>
   <proj_op_xmls>
       <elem>./weights/weights.eta.proj0.xml</elem>

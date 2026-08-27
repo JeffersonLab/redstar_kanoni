@@ -3,11 +3,15 @@
 
 <RedstarNPt>
   <Param>
-    <version>12</version>
-    <diagnostic_level>0</diagnostic_level>
+    <version>14</version>
+    <diagnostic_level>20</diagnostic_level>
 
-    <autoIrrepCG>true</autoIrrepCG>
-    <rephaseIrrepCG>true</rephaseIrrepCG>    
+    <cgc_options>
+      <autoIrrepCG>true</autoIrrepCG>
+      <rephaseIrrepCG>true</rephaseIrrepCG>
+      <enableCGTargetMomRotation>true</enableCGTargetMomRotation>
+      <autoCGVersion>1</autoCGVersion>
+    </cgc_options>
     
     <Nt_corr>16</Nt_corr>
     <t_origin>3</t_origin>
@@ -17,13 +21,17 @@
     <convertUDtoS>false</convertUDtoS>
     
     <average_1pt_diagrams>true</average_1pt_diagrams>
-    <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
-
-    <ensemble></ensemble>
+    <zeroUnsmearedGraphsP>false</zeroUnsmearedGraphsP>
+    
+    <ensemble>fred</ensemble>
+    
     <Layout>
       <decayDir>3</decayDir>
       <lattSize>4 4 4 16</lattSize>
     </Layout>
+
+</Param>
+
     <NPointList>
       <elem>
         <NPoint>
@@ -45,11 +53,11 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_H1o2D4E1</name>
-                    <mom_type>1 0 0</mom_type>
+                    <mom_class>-1 0 0</mom_class>
                   </elem>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                    <mom_type>1 0 0</mom_type>
+                    <mom_class>1 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -60,7 +68,7 @@
                       <slot>12</slot>
                       <F>4</F>
                       <irrep>Hg,1</irrep>
-                      <mom_type>0 0 0</mom_type>
+                      <mom_class>0 0 0</mom_class>
                     </target>
                   </elem>
                 </CGs>
@@ -85,11 +93,11 @@
                 <Operators>
                   <elem>
                     <name>NucleonMG1g1MxD0J0S_J1o2_H1o2D4E1</name>
-                    <mom_type>1 0 0</mom_type>
+                    <mom_class>-1 0 0</mom_class>
                   </elem>
                   <elem>
                     <name>pion_pionxD0_J0__J0_H0D4A2</name>
-                    <mom_type>1 0 0</mom_type>
+                    <mom_class>1 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -100,7 +108,7 @@
                       <slot>12</slot>
                       <F>4</F>
                       <irrep>Hg,1</irrep>
-                      <mom_type>0 0 0</mom_type>
+                      <mom_class>0 0 0</mom_class>
                     </target>
                   </elem>
                 </CGs>
@@ -110,7 +118,6 @@
         </NPoint>
       </elem>
     </NPointList>
-  </Param>
   <DBFiles>
     <proj_op_xmls>
     </proj_op_xmls>

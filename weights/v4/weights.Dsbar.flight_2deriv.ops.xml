@@ -2,2013 +2,2013 @@
 
 
 <ProjectedOpWeights>
-  <version>3</version>
+  <version>4</version>
   <ProjectedOps>
     <elem>
       <Key>
-        <name>Kbarneg_proj0_p100_H0D4A2</name>
-        <mom_type>1 0 0</mom_type>
+        <name>Dsbarneg_proj0_H0D4A2</name>
+        <mom_class>0 0 1</mom_class>
       </Key>
       <Val>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD2_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_rhoxD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0215205120427001</Val>
+          <Val>-0.01725</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J0__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_a1xD1_J1__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00790361533603452</Val>
+          <Val>0.00327087</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J2__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_pionxD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00778161113200859</Val>
+          <Val>0.0193793</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_a1xD1_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_pion_2xD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0150012703628726</Val>
+          <Val>0.0975087</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD2_J2__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_b1xD2_J2__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0026706291754566</Val>
+          <Val>-0.0238289</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_rho_2xD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0100287257719413</Val>
+          <Val>0.0437789</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a0xD2_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_a1xD2_J2__J3_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0046924030263608</Val>
+          <Val>-0.00314164</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_b1xD1_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_a0xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.162139584926075</Val>
+          <Val>-0.0239444</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_a1xD2_J0__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.000830198515441939</Val>
+          <Val>0.0401598</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_a1xD1_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_pionxD0_J0__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0150941841939205</Val>
+          <Val>-0.20553</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_b1xD1_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_pion_2xD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00156345551961033</Val>
+          <Val>-0.0382644</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J2__J3_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_b0xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00062238973194615</Val>
+          <Val>-0.0462165</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD0_J0__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_b1xD0_J0__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0171645928492347</Val>
+          <Val>-0.0443179</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD2_J2__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J1__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0176481124662101</Val>
+          <Val>0.0391301</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD0_J0__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_pion_2xD0_J0__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0109242906524497</Val>
+          <Val>0.0818168</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_pion_2xD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0110370317576421</Val>
+          <Val>0.00510573</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_pionxD1_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_rho_2xD2_J1__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00179230355827354</Val>
+          <Val>-0.187057</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD2_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_pionxD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0083136099899021</Val>
+          <Val>-0.00812061</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_pion_2xD1_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_a1xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.000672253487941863</Val>
+          <Val>0.00069963</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_rho_2xD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0917028399744523</Val>
+          <Val>0.0286288</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b0xD2_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_b1xD1_J1__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0132358227201485</Val>
+          <Val>-0.0155986</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J1__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_b1xD2_J2__J3_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00913142140875121</Val>
+          <Val>-0.00146609</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J2__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J1__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.000843568490460615</Val>
+          <Val>-0.222379</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J1__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_b1xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0910265630489255</Val>
+          <Val>-0.0698564</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD0_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_b1xD1_J1__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0182681036919545</Val>
+          <Val>0.213414</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD0_J0__J0_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_rho_2xD2_J1__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.15339974511061</Val>
+          <Val>0.0211945</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_rho_2xD1_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_a1xD1_J1__J0_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0540079674188911</Val>
+          <Val>0.0346355</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J2__J2_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_pionxD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0194495377019609</Val>
+          <Val>-0.00847132</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J3_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_b1xD2_J0__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-1.7289326485436e-05</Val>
+          <Val>0.00842824</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J0__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_a1xD0_J0__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00400385072711259</Val>
+          <Val>0.00455889</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_rhoxD1_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarpos_a1xD2_J2__J1_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0159985737670581</Val>
+          <Val>0.0230206</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J1__J1_H0D4A2</name>
-                <mom_type>1 0 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0561418742631558</Val>
+          <Val>0.0488334</Val>
         </elem>
       </Val>
     </elem>
     <elem>
       <Key>
-        <name>Kbarneg_proj0_p200_H0D4A2</name>
-        <mom_type>2 0 0</mom_type>
+        <name>Dsbarneg_proj0_H0D2A2</name>
+        <mom_class>0 1 1</mom_class>
       </Key>
       <Val>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD2_J2__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J2__J3_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.050058068939183</Val>
+          <Val>0.00104623</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_rho_2xD1_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0496514825400008</Val>
+          <Val>-0.0771862</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD2_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J1__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0867229697572679</Val>
+          <Val>0.0145887</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_b1xD1_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_b1xD2_J0__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0577139140590898</Val>
+          <Val>-0.0228208</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD0_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_pionxD2_J0__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.173579158432111</Val>
+          <Val>0.071896</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_rhoxD1_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0974470926220993</Val>
+          <Val>-0.189581</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD2_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_b0xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.033325942597322</Val>
+          <Val>-0.00832473</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J0__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_a1xD0_J0__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.028734274003009</Val>
+          <Val>-0.0569629</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_a1xD1_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_rho_2xD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0870732704566677</Val>
+          <Val>-0.0466999</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J2__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_a1xD2_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0164518292137987</Val>
+          <Val>-0.0883485</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD2_J2__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00784037170552519</Val>
+          <Val>-0.0354437</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_pion_2xD1_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_a1xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0155453183203175</Val>
+          <Val>0.00251417</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_b1xD2_J2__J3_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00699863179320073</Val>
+          <Val>0.0130655</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_pionxD1_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_rhoxD1_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00262661884939555</Val>
+          <Val>0.00197738</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J3_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_a1xD1_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.013495330908844</Val>
+          <Val>0.000978999</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J2__J3_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_a0xD2_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00173955339239703</Val>
+          <Val>-0.0218758</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_a1xD1_J1__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00836343273370451</Val>
+          <Val>0.0259518</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_rhoxD1_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_pionxD2_J2__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0236716722924258</Val>
+          <Val>0.0396827</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_b1xD0_J0__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0811786869073404</Val>
+          <Val>-0.192044</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD0_J0__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_pion_2xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0519546707476816</Val>
+          <Val>-0.0255648</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_rho_2xD1_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_a0xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.154156349366479</Val>
+          <Val>0.00601993</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD0_J0__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_rho_2xD1_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0344942244211984</Val>
+          <Val>0.00523948</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_b1xD1_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.185981811374123</Val>
+          <Val>-0.0247475</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a0xD2_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_pion_2xD2_J0__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0158980231827734</Val>
+          <Val>0.149553</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_pionxD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.045704129644705</Val>
+          <Val>-0.0399368</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J2__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_pion_2xD0_J0__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0100694834068089</Val>
+          <Val>0.125816</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J0__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_a1xD2_J0__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0277822254328195</Val>
+          <Val>0.0703085</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_pion_2xD1_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0376769120433191</Val>
+          <Val>-0.131844</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_b1xD1_J1__J0_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_pionxD0_J0__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.330286749065112</Val>
+          <Val>-0.14293</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b0xD2_J1__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J1__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0288949286636946</Val>
+          <Val>-0.392401</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD0_J0__J1_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarpos_a1xD2_J2__J3_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0670185907713673</Val>
+          <Val>-0.00333119</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J2__J2_H0D4A2</name>
-                <mom_type>2 0 0</mom_type>
+                <name>Dsbarneg_rho_2xD2_J2__J3_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00273859627926425</Val>
+          <Val>0.00123419</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_b0xD2_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.104585</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_pionxD1_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.101837</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_a1xD1_J1__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.031384</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_rho_2xD2_J1__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.350159</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_b1xD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0101881</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_rho_2xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.012516</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_b1xD1_J1__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.289808</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_rho_2xD2_J1__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0211078</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_a1xD1_J1__J0_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.154552</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_a1xD2_J2__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0799591</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_rhoxD2_J2__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.120649</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_a1xD2_J1__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0223204</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_b1xD2_J2__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0321217</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_b1xD2_J2__J2_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00309877</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_b1xD2_J1__J1_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.178384</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_pion_2xD2_J2__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0590838</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_rho_2xD2_J2__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.126331</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarneg_b1xD1_J1__J2_H0D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.0326437</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_a1xD2_J2__J3_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.000107316</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>Dsbarpos_b1xD2_J2__J3_H2D2A2</name>
+                <mom_class>0 1 1</mom_class>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00106217</Val>
         </elem>
       </Val>
     </elem>
     <elem>
       <Key>
-        <name>Kbarneg_proj0_p110_H0D2A2</name>
-        <mom_type>1 1 0</mom_type>
+        <name>Dsbarneg_proj0_H0D3A2</name>
+        <mom_class>1 1 1</mom_class>
       </Key>
       <Val>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_a1xD1_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_b1xD2_J2__J3_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.116001998824503</Val>
+          <Val>0.0767429</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J2__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_b1xD1_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.121192304019769</Val>
+          <Val>0.266138</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b0xD2_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_a1xD2_J2__J3_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0600319515091755</Val>
+          <Val>0.0517827</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_rho_2xD1_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_a1xD0_J0__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0235682932810163</Val>
+          <Val>-0.0800636</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.122413618852234</Val>
+          <Val>-0.0898833</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_a1xD2_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0170754973948052</Val>
+          <Val>-0.0516808</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_pion_2xD1_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_b1xD2_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0673550321778559</Val>
+          <Val>-0.276907</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_b1xD2_J0__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0526016734524673</Val>
+          <Val>-0.029868</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_pionxD2_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.042733998321009</Val>
+          <Val>0.118174</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_b1xD1_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_pion_2xD2_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.114562470839363</Val>
+          <Val>0.252987</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.115604746234832</Val>
+          <Val>-0.0460441</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_pionxD1_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0952427579424284</Val>
+          <Val>-0.0975683</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_pion_2xD0_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0323490038684347</Val>
+          <Val>0.123041</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD0_J0__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_a1xD1_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0716956778648476</Val>
+          <Val>0.276649</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD0_J0__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_a1xD2_J2__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0527365894263177</Val>
+          <Val>-0.0855687</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_b1xD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_rho_2xD2_J2__J3_H3D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0132793239293271</Val>
+          <Val>0.0144359</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_rhoxD1_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.045035489472415</Val>
+          <Val>-0.070639</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_pion_2xD2_J2__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0344140385122118</Val>
+          <Val>0.118702</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD2_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_a0xD2_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0522659391527599</Val>
+          <Val>-0.0126031</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_pion_2xD1_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0874068834360315</Val>
+          <Val>-0.110472</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a0xD2_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_a1xD1_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0139685550510853</Val>
+          <Val>-0.0932177</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a0xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_b1xD0_J0__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0429758288401748</Val>
+          <Val>-0.173024</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD0_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_rho_2xD2_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.19872670399823</Val>
+          <Val>0.02005</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_a1xD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_rho_2xD1_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0415702419805322</Val>
+          <Val>0.0245896</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD0_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_a1xD2_J0__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0524574236691052</Val>
+          <Val>0.0572103</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_rho_2xD2_J1__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.02455852561739</Val>
+          <Val>-0.140918</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_pionxD1_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_a1xD2_J2__J3_H3D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.144717888051201</Val>
+          <Val>0.00684812</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_rho_2xD2_J2__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0601203398568238</Val>
+          <Val>0.347953</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_b0xD2_J1__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0134338691874233</Val>
+          <Val>-0.0654944</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_b1xD1_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_b1xD1_J1__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0276712096681732</Val>
+          <Val>0.0942668</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J2__J3_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J2__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0131798198630786</Val>
+          <Val>0.367385</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J2__J3_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_pionxD0_J0__J0_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0166235147402708</Val>
+          <Val>-0.192907</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J3_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_b1xD2_J2__J3_H3D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00315257901537773</Val>
+          <Val>0.00268959</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_pionxD2_J2__J2_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0929016688112759</Val>
+          <Val>0.0899003</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD2_J2__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarneg_rhoxD2_J2__J3_H3D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0292698366790797</Val>
+          <Val>0.015298</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_rho_2xD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
+                <name>Dsbarpos_b1xD2_J2__J1_H0D3A2</name>
+                <mom_class>1 1 1</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0436860468911986</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarneg_a1xD1_J1__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.20012111857073</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarneg_pionxD2_J2__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0203871612938143</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_b1xD2_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00978649927297806</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarneg_rhoxD2_J2__J3_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00612763180227076</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_a1xD2_J0__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0423981225999454</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_a1xD2_J2__J3_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0100485954724927</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_b0xD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0292452293630944</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_b1xD2_J0__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0167956245308116</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarneg_rho_2xD2_J2__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0126073462130299</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarneg_pionxD2_J2__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.00154741833781302</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarneg_pion_2xD2_J0__J0_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0144610407820461</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarneg_rhoxD2_J2__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.109477807397207</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_rhoxD1_J1__J1_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0301315170026336</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_b1xD2_J2__J3_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.0294644324652622</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarneg_rho_2xD2_J1__J2_H0D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0392786503240628</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_rhoxD1_J1__J2_H2D2A2</name>
-                <mom_type>1 1 0</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0654271762496289</Val>
+          <Val>0.0136736</Val>
         </elem>
       </Val>
     </elem>
     <elem>
       <Key>
-        <name>Kbarneg_proj0_p111_H0D3A2</name>
-        <mom_type>1 1 1</mom_type>
+        <name>Dsbarneg_proj0_H0D4A2</name>
+        <mom_class>0 0 2</mom_class>
       </Key>
       <Val>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_pion_2xD1_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_rho_2xD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0208538517693974</Val>
+          <Val>0.413033</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J2__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_b1xD2_J2__J3_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00735710664699106</Val>
+          <Val>0.047187</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_a0xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00294891812026038</Val>
+          <Val>0.0799545</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD0_J0__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_pion_2xD0_J0__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0899581247025526</Val>
+          <Val>-0.114305</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J2__J3_H3D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_b1xD0_J0__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00865234242236171</Val>
+          <Val>-0.284955</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_a1xD1_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_pionxD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00358668601048377</Val>
+          <Val>-0.147932</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_b1xD1_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_rhoxD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.209962630751284</Val>
+          <Val>0.258695</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J0__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_pion_2xD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0357204890011321</Val>
+          <Val>-0.0516221</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J3_H3D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_pion_2xD1_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00103887845449215</Val>
+          <Val>-0.172735</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b0xD2_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_a1xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0818034864591968</Val>
+          <Val>-0.167212</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_b1xD1_J1__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0206603873540648</Val>
+          <Val>0.179856</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD2_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_b1xD2_J0__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0276515520996562</Val>
+          <Val>-0.0815141</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_a1xD2_J0__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0659160698781412</Val>
+          <Val>-0.0206347</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_a1xD1_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_rho_2xD2_J1__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0344595761889203</Val>
+          <Val>-0.00787981</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_pionxD1_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_rho_2xD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0223858693215162</Val>
+          <Val>0.239541</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD2_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_a1xD1_J1__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0338449589747129</Val>
+          <Val>0.151574</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_b1xD1_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_a1xD2_J2__J3_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0272750884493525</Val>
+          <Val>0.0242037</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD2_J2__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_pion_2xD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00906134712673563</Val>
+          <Val>0.120586</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J2__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_pionxD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00221071278283725</Val>
+          <Val>-0.13807</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD2_J2__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_a1xD0_J0__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0413822929980928</Val>
+          <Val>-0.194639</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pion_2xD0_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_rhoxD2_J2__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0658952809387744</Val>
+          <Val>0.230545</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_b1xD2_J2__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.116518045353413</Val>
+          <Val>0.211361</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a0xD2_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_pionxD2_J0__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00827500195964932</Val>
+          <Val>0.135665</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD0_J0__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_b0xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0296686449036689</Val>
+          <Val>0.0410671</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rho_2xD2_J2__J3_H3D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_rho_2xD2_J1__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.00846174886056068</Val>
+          <Val>-0.11753</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_pionxD0_J0__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_b1xD1_J1__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.230873192484533</Val>
+          <Val>0.579951</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_a1xD1_J1__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.13909483350585</Val>
+          <Val>0.244639</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J1__J0_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_rhoxD2_J1__J2_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.0612220122219125</Val>
+          <Val>0.0626437</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J1__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_pionxD0_J0__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.040956331873106</Val>
+          <Val>-0.283376</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarneg_rhoxD2_J2__J2_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarneg_rhoxD2_J1__J0_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00566925690243439</Val>
+          <Val>-0.048579</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_b1xD2_J0__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_b1xD2_J1__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>-0.0109110677556415</Val>
+          <Val>-0.394671</Val>
         </elem>
         <elem>
           <Key>
             <Operators>
               <elem>
-                <name>Kbarpos_a1xD2_J2__J3_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
+                <name>Dsbarpos_a1xD2_J2__J1_H0D4A2</name>
+                <mom_class>0 0 2</mom_class>
               </elem>
             </Operators>
             <CGs>
             </CGs>
           </Key>
-          <Val>0.00517831266425657</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_rhoxD1_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.187256017793822</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_b1xD2_J2__J3_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00578857410069181</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_b1xD2_J2__J3_H3D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>0.00176285963190493</Val>
-        </elem>
-        <elem>
-          <Key>
-            <Operators>
-              <elem>
-                <name>Kbarpos_rho_2xD1_J1__J1_H0D3A2</name>
-                <mom_type>1 1 1</mom_type>
-              </elem>
-            </Operators>
-            <CGs>
-            </CGs>
-          </Key>
-          <Val>-0.0234083457271119</Val>
+          <Val>0.260057</Val>
         </elem>
       </Val>
     </elem>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+
+<ProjectedOpWeights>
+  <version>3</version>
+  <ProjectedOps>
+    <elem>
+      <Key>
+        <name>pion_proj8_p000_A1</name>
+        <mom_type>0 0 0</mom_type>
+      </Key>
+      <Val>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pionPlusxD0_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.01741</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_pionPlusxD2_J0__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>-0.0688366</Val>
+        </elem>
+        <elem>
+          <Key>
+            <Operators>
+              <elem>
+                <name>pion_rhoPlusxD2_J1__J0_A1</name>
+                <mom_type>0 0 0</mom_type>
+              </elem>
+            </Operators>
+            <CGs>
+            </CGs>
+          </Key>
+          <Val>0.00357953</Val>
+        </elem>
+      </Val>
+    </elem>
+  </ProjectedOps>
+</ProjectedOpWeights>
