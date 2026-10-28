@@ -7,6 +7,9 @@ import os
 from pathlib import Path
 import shutil
 import sys
+import subprocess
+import urllib.error
+import urllib.parse
 import tempfile
 import urllib.request
 
@@ -31,6 +34,26 @@ def link(path, target):
     if path.exists():
         raise RuntimeError('Refusing to replace existing path: ' + str(path))
     path.symlink_to(target)
+
+
+def download(url, destination):
+    try:
+        with urllib.request.urlopen(url, timeout=120) as response, destination.open('wb') as out:
+            shutil.copyfileobj(response, out)
+        return
+    except urllib.error.HTTPError as error:
+        parsed = urllib.parse.urlsplit(url)
+        parts = parsed.path.strip('/').split('/')
+        if error.code not in (403, 404) or parsed.hostname != 'github.com' or len(parts) != 6 or parts[2:4] != ['releases', 'download']:
+            raise
+    gh = shutil.which('gh')
+    if not gh:
+        raise RuntimeError('Private GitHub release downloads require GitHub CLI: install gh, run gh auth login, then retry setup-data; or use --source-dir.')
+    result = subprocess.run([gh, 'release', 'download', urllib.parse.unquote(parts[4]),
+        '--repo', '/'.join(parts[:2]), '--pattern', urllib.parse.unquote(parts[5]),
+        '--output', str(destination), '--clobber'], capture_output=True, text=True)
+    if result.returncode:
+        raise RuntimeError('Authenticated release download failed; run gh auth login and check repository access. ' + result.stderr.strip())
 
 
 def main():
@@ -84,8 +107,7 @@ def main():
                     if src.exists():
                         shutil.copyfile(str(src), str(temp))
                     else:
-                        with urllib.request.urlopen(base.rstrip('/') + '/' + entry['name'], timeout=120) as response, temp.open('wb') as out:
-                            shutil.copyfileobj(response, out)
+                        download(base.rstrip('/') + '/' + entry['name'], temp)
                     if not verified(temp, entry):
                         raise RuntimeError('Checksum mismatch: ' + entry['name'])
                     temp.replace(dst)

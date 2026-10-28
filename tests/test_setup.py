@@ -1,6 +1,7 @@
 import hashlib
 import importlib.util
 import io
+import urllib.error
 import sys
 from unittest import mock
 import json
@@ -62,6 +63,25 @@ class SetupTests(unittest.TestCase):
             module.main()
             fetch.assert_called_once_with('https://example.invalid/releases/v1/meson.sdb',timeout=120)
         self.assertEqual((self.cache/'meson.sdb').read_bytes(),contents)
+    def test_private_release_uses_authenticated_gh(self):
+        module=self.download_module()
+        target=self.home/'download'
+        url='https://github.com/JeffersonLab/redstar_kanoni/releases/download/kanoni-data-v1/meson.sdb'
+        def fake_gh(command, **kwargs):
+            Path(command[command.index('--output')+1]).write_bytes(b'authenticated data')
+            return subprocess.CompletedProcess(command,0,stdout='',stderr='')
+        error=urllib.error.HTTPError(url,404,'Not Found',{},None)
+        with mock.patch.object(module.urllib.request,'urlopen',side_effect=error), mock.patch.object(module.shutil,'which',return_value='/bin/gh'), mock.patch.object(module.subprocess,'run',side_effect=fake_gh) as gh:
+            module.download(url,target)
+        self.assertEqual(target.read_bytes(),b'authenticated data')
+        self.assertIn('JeffersonLab/redstar_kanoni',gh.call_args[0][0])
+    def test_private_release_missing_gh_has_actionable_error(self):
+        module=self.download_module()
+        url='https://github.com/JeffersonLab/redstar_kanoni/releases/download/kanoni-data-v1/meson.sdb'
+        error=urllib.error.HTTPError(url,404,'Not Found',{},None)
+        with mock.patch.object(module.urllib.request,'urlopen',side_effect=error), mock.patch.object(module.shutil,'which',return_value=None):
+            with self.assertRaisesRegex(RuntimeError,'gh auth login'):
+                module.download(url,self.home/'download')
     def test_corrupt_download_not_installed(self):
         (self.source/'meson.sdb').unlink()
         module=self.download_module()

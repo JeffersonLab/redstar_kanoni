@@ -64,6 +64,18 @@ are not modified by setup.
 
 ## Download distribution
 
+This repository is private. For release downloads, install GitHub CLI and
+authenticate once with an account that can read this repository:
+
+```sh
+brew install gh
+gh auth login
+```
+
+SSH access for `git clone` does not authenticate HTTP release downloads. Setup
+uses `gh` automatically when GitHub requires authenticated asset downloads;
+local imports and existing shared datasets do not require `gh`.
+
 The versioned [kanoni-data-v1 release](https://github.com/JeffersonLab/redstar_kanoni/releases/tag/kanoni-data-v1)
 contains all 18 SDB files, the dataset manifest, and SHA-256 checksums. A fresh
 clone downloads any missing data automatically:
