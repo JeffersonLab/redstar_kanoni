@@ -1,0 +1,96 @@
+{
+  "dataset": "kanoni-v1",
+  "base_url": "https://github.com/JeffersonLab/redstar_kanoni/releases/download/kanoni-data-v1",
+  "files": [
+    {
+      "name": "baryon.sdb",
+      "bytes": 93618176,
+      "sha256": "30ce94527cbc75df076f2963db9769c7e3334dde340e0da3070232e67a949211"
+    },
+    {
+      "name": "disco-U0.05.sdb",
+      "bytes": 1318912,
+      "sha256": "e763fc028497f781d9a7d7b7d8b119e0328262cb268ba959393d4b69c38f0a66"
+    },
+    {
+      "name": "disco-U0.1.sdb",
+      "bytes": 1318912,
+      "sha256": "c6acb1f0a8ec550e83e1fa1ddbfd9e6fb6da8be2d4a821c59e3416ca44cee132"
+    },
+    {
+      "name": "disco.sdb",
+      "bytes": 327680,
+      "sha256": "5b417a0707b92ba17faa922c3b3db730cef324b8ca31f7756a3613fc83a73a6e"
+    },
+    {
+      "name": "glue.deriv.sdb",
+      "bytes": 49741824,
+      "sha256": "268f33e48c0d5d0519ec74fe224a29cd182a4489055bb3da35bae568fcc7b79f"
+    },
+    {
+      "name": "gpdf.more.sdb",
+      "bytes": 64552960,
+      "sha256": "cb68b4e892ecc0fe505031a7b368ab3bba59bea7ce6dc6cd32bf008291b9d372"
+    },
+    {
+      "name": "gpdf.sdb",
+      "bytes": 2105344,
+      "sha256": "384a2b746d1593907f1c3ce8371b6c2a6a88b1363529cca474d55c66ffc81e91"
+    },
+    {
+      "name": "gpdf_2_0.00.sdb",
+      "bytes": 5439488,
+      "sha256": "b77de36071c90aaf33f780502376717a3f71f13d08dbb111fc5ea16fc8b3a369"
+    },
+    {
+      "name": "gpdf_2_5.00.sdb",
+      "bytes": 5439488,
+      "sha256": "f74917ee20d2be0ad6690ff750c07bc86933254c6ef296dbcec02d35b9b88baf"
+    },
+    {
+      "name": "hada_0-511_SVD_disco_cfg_cl21_32_64_b6p3_m0p2390_m0p2050_cfg_1000.ref0001.sdb",
+      "bytes": 30408704,
+      "sha256": "09897fcecdc929ee66522175084bee283a2289a3ffc8e47819c0f9e6c9a617aa"
+    },
+    {
+      "name": "meson.deriv.sdb",
+      "bytes": 117211136,
+      "sha256": "8b828220d114aac8194a9ca5d9d878c57bdd9ca170238bc81e16b5ef136b9a83"
+    },
+    {
+      "name": "meson.disp.sdb",
+      "bytes": 174317568,
+      "sha256": "8b0c33cf5605c5b4e38d3ae5e73ed85cd1a94372bbf0838296aef3151a0482e9"
+    },
+    {
+      "name": "meson.sdb",
+      "bytes": 111091712,
+      "sha256": "ae1285741cd716d38bd237d62ebdfc98d3e622dfca7ddcaf67c5c6f797a672d0"
+    },
+    {
+      "name": "peram.only0.sdb",
+      "bytes": 1130496,
+      "sha256": "10e63c6b6fe17789b71f6dd82400902a9f6989367737e088f43265d6931ec512"
+    },
+    {
+      "name": "prop.sdb",
+      "bytes": 21471232,
+      "sha256": "e1d3ab353476637d9ff5e30192b8dd3f141959923a572a8c18aa24256f0bdfc2"
+    },
+    {
+      "name": "tetra.sdb",
+      "bytes": 5431296,
+      "sha256": "f30ff57d05531b6b9a5f020219e6bbc39aa973192fbbb2b53ac49b1c1f1c40d6"
+    },
+    {
+      "name": "unsmeared_genprop4.sdb",
+      "bytes": 179298304,
+      "sha256": "39ec071182f7f3af73cf286c69d16f44de7ed802241932f4548fad039529fc25"
+    },
+    {
+      "name": "unsmeared_meson.sdb",
+      "bytes": 169680896,
+      "sha256": "f6411f15e5c8fc542604764524e8d3291d459c4b73dd370497202efd713c6f8c"
+    }
+  ]
+}

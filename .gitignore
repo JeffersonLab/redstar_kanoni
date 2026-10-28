@@ -6,3 +6,11 @@ smeared_hadron_node.xml
 unsmeared_hadron_node.xml
 eval_graph.xml
 noneval_graph.xml
+
+# Shared inputs and isolated sandbox output
+/test_inputs/data
+/runs/
+__pycache__/
+
+# Intermediate Redstar diagnostics
+interior_nodes.*.log
