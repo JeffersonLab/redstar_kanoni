@@ -64,24 +64,16 @@ are not modified by setup.
 
 ## Download distribution
 
-This repository is private. For release downloads, install GitHub CLI and
-authenticate once with an account that can read this repository:
-
-```sh
-brew install gh
-gh auth login
-```
-
-SSH access for `git clone` does not authenticate HTTP release downloads. Setup
-uses `gh` automatically when GitHub requires authenticated asset downloads;
-local imports and existing shared datasets do not require `gh`.
+This repository and its SDB release assets are public. Cloning over HTTPS and
+running `./setup-data` require no GitHub account, token, GitHub CLI, or login.
+Python 3 is required; the demo runner also needs tcsh and a Redstar build.
 
 The versioned [kanoni-data-v1 release](https://github.com/JeffersonLab/redstar_kanoni/releases/tag/kanoni-data-v1)
 contains all 18 SDB files, the dataset manifest, and SHA-256 checksums. A fresh
 clone downloads any missing data automatically:
 
 ```sh
-git clone --branch devel git@github.com:JeffersonLab/redstar_kanoni.git
+git clone --branch devel https://github.com/JeffersonLab/redstar_kanoni.git
 cd redstar_kanoni
 ./setup-data
 ./run_colorvec.csh pion.xml
@@ -90,7 +82,10 @@ cd redstar_kanoni
 Git stores the small inputs and manifest, not the large SDBs or LFS pointers.
 The default download URL is pinned in `test_inputs/data-manifest.json`, so copies
 and branches reuse the same dataset version. Existing verified shared files are
-reused without downloading them again. `--base-url` or `KANONI_DATA_URL` can select
+reused without downloading them again. Setup downloads public release assets
+directly over HTTPS. An authenticated GitHub CLI fallback remains available for
+private mirrors; it is not needed for the default public dataset.
+`--base-url` or `KANONI_DATA_URL` can select
 a mirror. `--source-dir` can import existing local data instead of downloading it.
 
 Downloads are checked against the manifest before installation; a missing file,
