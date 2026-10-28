@@ -63,6 +63,18 @@ class SetupTests(unittest.TestCase):
             module.main()
             fetch.assert_called_once_with('https://example.invalid/releases/v1/meson.sdb',timeout=120)
         self.assertEqual((self.cache/'meson.sdb').read_bytes(),contents)
+    def test_transient_download_failure_retried(self):
+        module=self.download_module()
+        failure=urllib.error.URLError('temporary interruption')
+        with mock.patch.object(module,'download_once',side_effect=[failure,None]) as fetch, mock.patch.object(module.time,'sleep'):
+            module.download('https://example.invalid/meson.sdb',self.home/'download')
+        self.assertEqual(fetch.call_count,2)
+    def test_download_retry_count_bounded(self):
+        module=self.download_module()
+        with mock.patch.object(module,'download_once',side_effect=TimeoutError('timeout')) as fetch, mock.patch.object(module.time,'sleep'):
+            with self.assertRaises(TimeoutError):
+                module.download('https://example.invalid/meson.sdb',self.home/'download')
+        self.assertEqual(fetch.call_count,3)
     def test_private_release_uses_authenticated_gh(self):
         module=self.download_module()
         target=self.home/'download'

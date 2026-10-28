@@ -90,6 +90,8 @@ a mirror. `--source-dir` can import existing local data instead of downloading i
 
 Downloads are checked against the manifest before installation; a missing file,
 LFS pointer, or mismatched checksum produces an error, not a silent replacement.
+Transient network interruptions are retried up to three times per asset. If a
+transfer still fails, rerun `./setup-data`; verified files are reused.
 Dataset versions are immutable: publish a new release and manifest/version for
 changed inputs instead of replacing existing assets.
 

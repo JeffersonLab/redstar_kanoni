@@ -2,6 +2,8 @@
 """Install a verified, shared Kanoni dataset without overwriting different data."""
 import argparse
 import hashlib
+import http.client
+import time
 import json
 import os
 from pathlib import Path
@@ -36,7 +38,7 @@ def link(path, target):
     path.symlink_to(target)
 
 
-def download(url, destination):
+def download_once(url, destination):
     try:
         with urllib.request.urlopen(url, timeout=120) as response, destination.open('wb') as out:
             shutil.copyfileobj(response, out)
@@ -54,6 +56,22 @@ def download(url, destination):
         '--output', str(destination), '--clobber'], capture_output=True, text=True)
     if result.returncode:
         raise RuntimeError('Authenticated release download failed; run gh auth login and check repository access. ' + result.stderr.strip())
+
+
+def download(url, destination):
+    # Large release assets can be interrupted in transit. Retrying starts only
+    # this temporary file again; previously verified databases are left intact.
+    for attempt in range(3):
+        try:
+            download_once(url, destination)
+            return
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.IncompleteRead, http.client.RemoteDisconnected) as error:
+            if isinstance(error, urllib.error.HTTPError) and error.code not in (408, 429, 500, 502, 503, 504):
+                raise
+            if attempt == 2:
+                raise
+            print('Download interrupted; retrying {} ({}/3)'.format(destination.name, attempt + 2), flush=True)
+            time.sleep(2 ** attempt)
 
 
 def main():
