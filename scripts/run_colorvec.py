@@ -19,7 +19,7 @@ DIAGNOSTICS = ('corr_graph_xml', 'eval_graph_xml', 'noneval_graph_xml',
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('input', type=Path)
+    parser.add_argument('input', type=Path, help='explicit XML path, e.g. test_inputs/pipi_i1.xml; relative to the current directory')
     parser.add_argument('--database-dir', type=Path, default=os.environ.get('KANONI_DATA_DIR'),
                         help='prepared SDB home (default: KANONI_DATA_DIR or test_inputs/data)')
     parser.add_argument('--threads', type=int, default=os.environ.get('OMP_NUM_THREADS', '4'))
@@ -30,9 +30,10 @@ def main():
         parser.error('--threads must be positive')
     root = Path(__file__).resolve().parents[1]
     supplied = args.input.expanduser()
-    source = next((p.resolve() for p in (supplied, root / supplied, root / 'test_inputs' / supplied) if p.is_file()), None)
-    if source is None:
-        parser.error('Redstar input does not exist: ' + str(supplied))
+    if not supplied.is_file():
+        parser.error('Redstar input does not exist: ' + str(supplied) +
+                     '; pass an explicit path such as test_inputs/pipi_i1.xml')
+    source = supplied.resolve()
     tree = ET.parse(source)
     xml = tree.getroot()
     if xml.tag != 'RedstarNPt' or xml.findtext('Param/version') != '14' or xml.find('NPointList') is None:

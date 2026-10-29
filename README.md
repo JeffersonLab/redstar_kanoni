@@ -6,8 +6,7 @@ Canonical Redstar demos and a sandbox for new tests.
 
 ```sh
 ./setup-data
-./run_colorvec.csh pion.xml
-# Equivalent: ./run_colorvec.csh test_inputs/pion.xml
+./run_colorvec.csh test_inputs/pion.xml
 ```
 
 `setup-data` reuses the shared, checksum-verified dataset at
@@ -53,7 +52,7 @@ legacy sibling checkout `../redstar.devel/build/src`.
 - `test_inputs/data-manifest.json`: dataset sizes and SHA-256 checksums.
 - `test_inputs/data`: local, Git-ignored symlink to shared SDB storage.
 - `runs/<demo>-<timestamp>-<unique>/`: isolated logs, XML output, and `.sdb1` results.
-- Root input names remain compatibility symlinks, so old demo commands still work.
+- XML demos live directly in `test_inputs/`; the top-level XML aliases have been removed.
 - Root `.sdb` links route through `test_inputs/data`; large data is outside Git.
 
 Each new run copies the small inputs and weights, links read-only SDBs through
@@ -70,6 +69,16 @@ Existing outputs and personal demo files are left in place. Cleanup belongs in
 inputs can also be passed by absolute or relative path. Put their supporting XML
 and directory trees in `test_inputs/`, keeping the paths used by the XML intact;
 local `.dat` and `.list` files beside the selected input are included automatically.
+Input paths resolve from the current directory, with no basename lookup or XML
+compatibility aliases. From the checkout root use `test_inputs/pipi_i1.xml`, for
+example:
+
+```sh
+./run_colorvec.csh test_inputs/pipi_i1.xml
+```
+
+When invoking the runner from another directory, pass the full input path, such
+as `/path/to/redstar_kanoni/test_inputs/pipi_i1.xml`.
 
 After setup, use this checkout as the stable database home for Redstar generators:
 
@@ -80,9 +89,9 @@ export KANONI_DATA_DIR="$PWD/test_inputs/data"
 The Kanoni runner uses that variable too:
 
 ```sh
-python3 scripts/run_colorvec.py pion.xml --threads 4
+python3 scripts/run_colorvec.py test_inputs/pion.xml --threads 4
 # Explicit paths win over the environment:
-python3 scripts/run_colorvec.py pion.xml --database-dir /path/to/verified-sdbs
+python3 scripts/run_colorvec.py test_inputs/pion.xml --database-dir /path/to/verified-sdbs
 ```
 
 Current Redstar input generators accept that variable; `--database-dir` overrides
@@ -95,7 +104,7 @@ remains self-contained; these raw SDBs are used for contraction regeneration.
 
 This repository and its SDB release assets are public. Cloning over HTTPS and
 running `./setup-data` require no GitHub account, token, GitHub CLI, or login.
-Python 3.9 or newer is required; the compatibility launchers also need tcsh.
+Python 3.9 or newer is required; the shell launchers also need tcsh.
 The Python runner can be invoked directly without tcsh.
 
 The versioned [kanoni-data-v1 release](https://github.com/JeffersonLab/redstar_kanoni/releases/tag/kanoni-data-v1)
@@ -106,7 +115,7 @@ clone downloads any missing data automatically:
 git clone --branch devel https://github.com/JeffersonLab/redstar_kanoni.git
 cd redstar_kanoni
 ./setup-data
-./run_colorvec.csh pion.xml
+./run_colorvec.csh test_inputs/pion.xml
 ```
 
 Git stores the small inputs and manifest, not the large SDBs or LFS pointers.

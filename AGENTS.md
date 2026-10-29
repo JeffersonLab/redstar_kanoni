@@ -16,6 +16,9 @@
   shared storage; KANONI_DATA_DIR/--data-dir select the dataset store.
 - Numerical consumers can use KANONI_DATA_DIR set to the prepared checkout's
   test_inputs/data entry point. Explicit --database-dir wins over the environment.
+- Pass canonical XML paths such as test_inputs/pipi_i1.xml. Do not recreate
+  top-level XML compatibility symlinks or add implicit basename lookup. Relative
+  input paths resolve from the caller’s working directory.
 - Do not depend on top-level ~/Downloads/*.sdb aliases. Never delete or overwrite
   the actual dataset while cleaning symlinks or run directories.
 - The public kanoni-data-v1 release and manifest have immutable sizes/SHA-256

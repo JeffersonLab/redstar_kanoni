@@ -22,7 +22,7 @@ def definition(node, tag=None):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('files', nargs='*', type=Path)
+    parser.add_argument('files', nargs='*', type=Path, help='explicit XML paths, e.g. test_inputs/pipi_i1.xml; default: all test_inputs RedstarNPt XMLs')
     parser.add_argument('--redstar-bin',type=Path,default=os.environ.get('REDSTAR_BIN'))
     parser.add_argument('--dbutil',type=Path,default=os.environ.get('DBUTIL'))
     parser.add_argument('--database-dir',type=Path,default=os.environ.get('KANONI_DATA_DIR'))

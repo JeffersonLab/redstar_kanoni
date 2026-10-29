@@ -75,7 +75,7 @@ def signature(node):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--redstar-bin', type=Path, default=os.environ.get('REDSTAR_BIN'))
-    parser.add_argument('files', nargs='*', type=Path, help='selected inputs; default: every RedstarNPt XML')
+    parser.add_argument('files', nargs='*', type=Path, help='explicit XML paths, e.g. test_inputs/pipi_i1.xml; default: every test_inputs RedstarNPt XML')
     parser.add_argument('--fsq-database', type=Path, help='select a modern FSq database for the unchanged current/smearing')
     parser.add_argument('--repair-rest-pairs', action='store_true', help='repair identical nonzero constituent vectors in explicitly zero-total two-body CGs')
     parser.add_argument('--enable-target-rotation', action='store_true', help='explicitly enable rotation to the requested physical target momentum')
@@ -100,6 +100,7 @@ def main():
         return index[key]
     for p in (args.files or sorted((root/'test_inputs').glob('*.xml'))):
         p=p.expanduser().absolute()
+        if not p.is_file():parser.error('Input does not exist: '+str(p)+'; use an explicit test_inputs/... XML path')
         tree=ET.parse(p);r=tree.getroot()
         if r.tag!='RedstarNPt':continue
         version=r.findtext('Param/version')

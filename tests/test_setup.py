@@ -20,7 +20,7 @@ class SetupTests(unittest.TestCase):
         self.home=Path(self.temp.name)
         self.repo=self.home/'repo'; self.repo.mkdir()
         shutil.copytree(str(BASE/'scripts'),str(self.repo/'scripts'))
-        for name in ('setup-data','run_colorvec.csh'): shutil.copy2(str(BASE/name),str(self.repo/name))
+        for name in ('setup-data','run_colorvec.csh','run_redstar.csh'): shutil.copy2(str(BASE/name),str(self.repo/name))
         (self.repo/'test_inputs').mkdir()
         self.source=self.home/'original'; self.source.mkdir()
         self.cache=self.home/'shared'
@@ -111,8 +111,8 @@ class SetupTests(unittest.TestCase):
             p.write_text('#!/bin/sh\n[ -f meson.sdb ] || exit 3\nprintf generated > "$2"\nprintf graph > corr_graph.bin\nprintf result > output.npt.sdb1\n')
             p.chmod(0o755)
         env=dict(self.env,REDSTAR_BIN=str(binaries))
-        for unused in range(2):
-            result=subprocess.run([str(self.repo/'run_colorvec.csh'),'pion.xml'],cwd=str(self.home),env=env,text=True,capture_output=True)
+        for cwd,source in [(self.repo,'test_inputs/pion.xml'),(self.home,str(self.repo/'test_inputs/pion.xml'))]:
+            result=subprocess.run([str(self.repo/'run_colorvec.csh'),source],cwd=str(cwd),env=env,text=True,capture_output=True)
             self.assertEqual(result.returncode,0,result.stderr)
         runs=list((self.repo/'runs').iterdir());self.assertEqual(len(runs),2)
         for run in runs:
@@ -121,6 +121,7 @@ class SetupTests(unittest.TestCase):
             self.assertTrue((run/'npt.out.xml').is_file())
             record=json.loads((run/'run.json').read_text())
             self.assertEqual(record['status'],'executables_passed')
+            self.assertEqual(record['source'],str((self.repo/'test_inputs/pion.xml').resolve()))
             self.assertFalse(record['numerical_readback_validated'])
             import xml.etree.ElementTree as ET
             prepared=ET.parse(run/'input.xml')
@@ -133,7 +134,7 @@ class SetupTests(unittest.TestCase):
 
     def test_runner_rejects_legacy_schema_before_creating_output(self):
         (self.repo/'test_inputs/old.xml').write_text('<RedstarNPt><Param><version>12</version></Param></RedstarNPt>')
-        result=subprocess.run([str(self.repo/'run_colorvec.csh'),'old.xml'],cwd=self.home,env=self.env,text=True,capture_output=True)
+        result=subprocess.run([str(self.repo/'run_colorvec.csh'),str(self.repo/'test_inputs/old.xml')],cwd=self.home,env=self.env,text=True,capture_output=True)
         self.assertNotEqual(result.returncode,0)
         self.assertIn('Expected RedstarNPt v14',result.stderr)
         self.assertFalse((self.repo/'runs').exists())
@@ -145,10 +146,25 @@ class SetupTests(unittest.TestCase):
         for name in ('redstar_corr_graph','redstar_npt'):
             p=binaries/name;p.write_text('#!/bin/sh\nprintf report > "$2"\nprintf graph > corr_graph.bin\nprintf result > output.npt.sdb1\n');p.chmod(0o755)
         env=dict(self.env,REDSTAR_BIN=str(binaries),KANONI_DATA_DIR=str(self.home/'does not exist'))
-        result=subprocess.run([str(self.repo/'run_colorvec.csh'),'pion.xml','--database-dir',str(self.cache),'--threads','2'],env=env,cwd=self.home,text=True,capture_output=True)
+        result=subprocess.run([str(self.repo/'run_redstar.csh'),str(self.repo/'test_inputs/pion.xml'),'--database-dir',str(self.cache),'--threads','2'],env=env,cwd=self.home,text=True,capture_output=True)
         self.assertEqual(result.returncode,0,result.stderr)
         record=json.loads(next((self.repo/'runs').glob('*/run.json')).read_text())
         self.assertEqual(record['data_home'],str(self.cache))
         self.assertEqual(record['threads'],2)
+
+    def test_runner_requires_explicit_input_path(self):
+        (self.repo/'test_inputs/pipi_i1.xml').write_text('<RedstarNPt/>')
+        result=subprocess.run([str(self.repo/'run_colorvec.csh'),'pipi_i1.xml'],cwd=self.repo,env=self.env,text=True,capture_output=True)
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('does not exist: pipi_i1.xml',result.stderr)
+        self.assertIn('test_inputs/pipi_i1.xml',result.stderr)
+        self.assertFalse((self.repo/'runs').exists())
+
+    def test_canonical_xml_inputs_have_no_top_level_aliases(self):
+        inputs=list((BASE/'test_inputs').glob('*.xml'))
+        self.assertTrue(inputs)
+        for source in inputs:
+            self.assertFalse(source.is_symlink(),str(source))
+            self.assertFalse((BASE/source.name).is_symlink(),source.name)
 
 if __name__=='__main__':unittest.main()
