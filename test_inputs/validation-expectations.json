@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "cases": {
+    "eta_eta_3pt.xml": {
+      "kind": "symmetry_zero",
+      "correlators": 1,
+      "reason": "Both eta endpoints have I=0; the insertion has I=1. Exact isospin forbids this transition. Preserve it as a zero-selection control, not a positive numerical channel."
+    }
+  }
+}

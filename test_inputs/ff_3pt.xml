@@ -143,7 +143,7 @@
   <num_vecs>10</num_vecs>
   <use_derivP>false</use_derivP>
   <use_genprop4>true</use_genprop4>
-  <use_FSq>false</use_FSq>
+  <use_FSq>true</use_FSq>
   <fake_data_modeP>false</fake_data_modeP>
   <ensemble>fred</ensemble>
 
@@ -174,16 +174,16 @@
 <DBFiles>
   <annotation>Need to provide "elem" entries for those elementals actually needed</annotation>
   <prop_dbs>
-    <elem>./prop.sdb</elem>
+    <elem>prop.sdb</elem>
   </prop_dbs>
   <smeared_baryon_dbs>
-    <elem>./baryon.sdb</elem>
+    <elem>baryon.sdb</elem>
   </smeared_baryon_dbs>
   <smeared_meson_dbs> 
-    <elem>./meson.deriv.sdb</elem> 
+    <elem>meson.deriv.sdb</elem>
   </smeared_meson_dbs>
-  <smeared_glue_dbs><elem>./glue.deriv.sdb</elem></smeared_glue_dbs>
-  <smeared_tetra_dbs><elem>./tetra.sdb</elem></smeared_tetra_dbs>
+  <smeared_glue_dbs><elem>glue.deriv.sdb</elem></smeared_glue_dbs>
+  <smeared_tetra_dbs><elem>tetra.sdb</elem></smeared_tetra_dbs>
   <unsmeared_meson_dbs> 
     <!-- elem>./unsmeared_meson.sdb</elem --> 
   </unsmeared_meson_dbs>
@@ -196,8 +196,7 @@
   <hadron2pt_discoblock_dbs> 
     <!-- elem>./gpdf_2_0.00.sdb</elem --> 
   </hadron2pt_discoblock_dbs>
-  <fsq_discoblock_dbs> 
-  </fsq_discoblock_dbs>
+  <fsq_discoblock_dbs><elem>gpdf.more.sdb</elem></fsq_discoblock_dbs>
 </DBFiles>	
 </ColorVec>
 

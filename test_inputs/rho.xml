@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <RedstarNPt>
 <Param> 
-  <version>12</version>
+  <version>14</version>
   <diagnostic_level>0</diagnostic_level>
 
-  <autoIrrepCG>true</autoIrrepCG>
-  <rephaseIrrepCG>true</rephaseIrrepCG>
+
+
 
   <Nt_corr>16</Nt_corr>
   <t_origin>0</t_origin>
@@ -25,7 +25,17 @@
   </Layout>
 
 
-    <NPointList>
+
+
+<cgc_options>
+      <autoIrrepCG>true</autoIrrepCG>
+      <rephaseIrrepCG>true</rephaseIrrepCG>
+      <enableCGTargetMomRotation>false</enableCGTargetMomRotation>
+      <autoCGVersion>1</autoCGVersion>
+    </cgc_options>
+  </Param>
+
+<NPointList>
       <elem>
         <NPoint>
           <elem>
@@ -46,7 +56,7 @@
                 <Operators>
                   <elem>
                     <name>rho_rhoxD0_J0__J1_T1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -72,7 +82,7 @@
                 <Operators>
                   <elem>
                     <name>rho_rhoxD0_J0__J1_T1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -102,7 +112,7 @@
                 <Operators>
                   <elem>
                     <name>rho_rhoxD0_J0__J1_T1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -128,7 +138,7 @@
                 <Operators>
                   <elem>
                     <name>rho_rhoxD0_J0__J1_T1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -158,7 +168,7 @@
                 <Operators>
                   <elem>
                     <name>rho_rhoxD0_J0__J1_T1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -184,7 +194,7 @@
                 <Operators>
                   <elem>
                     <name>rho_rhoxD0_J0__J1_T1</name>
-                    <mom_type>0 0 0</mom_type>
+                    <mom_class>0 0 0</mom_class>
                   </elem>
                 </Operators>
                 <CGs>
@@ -195,8 +205,6 @@
         </NPoint>
       </elem>
     </NPointList>
-
-</Param>
 <DBFiles>
   <proj_op_xmls></proj_op_xmls>
   <eval_graph_xml>eval_graph.xml</eval_graph_xml>
@@ -246,16 +254,16 @@
 <DBFiles>
   <annotation>Need to provide "elem" entries for those elementals actually needed</annotation>
   <prop_dbs>
-    <elem>./prop.sdb</elem>
+    <elem>prop.sdb</elem>
   </prop_dbs>
   <smeared_baryon_dbs>
-    <elem>./baryon.sdb</elem>
+    <elem>baryon.sdb</elem>
   </smeared_baryon_dbs>
   <smeared_meson_dbs> 
-    <elem>./meson.deriv.sdb</elem> 
+    <elem>meson.deriv.sdb</elem>
   </smeared_meson_dbs>
-  <smeared_glue_dbs><elem>./glue.deriv.sdb</elem></smeared_glue_dbs>
-  <smeared_tetra_dbs><elem>./tetra.sdb</elem></smeared_tetra_dbs>
+  <smeared_glue_dbs><elem>glue.deriv.sdb</elem></smeared_glue_dbs>
+  <smeared_tetra_dbs><elem>tetra.sdb</elem></smeared_tetra_dbs>
   <unsmeared_meson_dbs> 
     <!-- elem>./unsmeared_meson.sdb</elem --> 
   </unsmeared_meson_dbs>

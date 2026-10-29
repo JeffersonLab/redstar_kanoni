@@ -52,11 +52,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -92,11 +92,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -136,11 +136,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -176,12 +176,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -220,11 +220,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -260,12 +260,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -304,11 +304,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -374,11 +374,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -444,11 +444,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -514,11 +514,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -584,11 +584,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -654,11 +654,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -724,11 +724,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -794,11 +794,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -864,12 +864,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -904,11 +904,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -948,12 +948,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -988,12 +988,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1032,12 +1032,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1072,12 +1072,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1116,12 +1116,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1186,12 +1186,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1256,12 +1256,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1326,12 +1326,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1396,12 +1396,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1466,12 +1466,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1536,12 +1536,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1606,12 +1606,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1676,12 +1676,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1716,11 +1716,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -1760,12 +1760,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1800,12 +1800,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1844,12 +1844,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1884,12 +1884,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1928,12 +1928,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -1998,12 +1998,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2068,12 +2068,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2138,12 +2138,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2208,12 +2208,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2278,12 +2278,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2348,12 +2348,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2418,12 +2418,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2514,11 +2514,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -2584,12 +2584,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -2654,12 +2654,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3172,11 +3172,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -3242,12 +3242,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3312,12 +3312,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3830,11 +3830,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -3900,12 +3900,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -3970,12 +3970,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4488,11 +4488,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -4558,12 +4558,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -4628,12 +4628,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5146,11 +5146,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -5216,12 +5216,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5286,12 +5286,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5804,11 +5804,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -5874,12 +5874,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -5944,12 +5944,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6462,11 +6462,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -6532,12 +6532,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -6602,12 +6602,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7120,11 +7120,11 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p000_T1</name>
+                <name>rho_proj0_T1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p000_A1</name>
+                <name>pion_proj0_A1</name>
                 <mom_class>0 0 0</mom_class>
               </elem>
             </Operators>
@@ -7190,12 +7190,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H0D4A1</name>
+                <name>rho_proj0_H0D4A1</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7260,12 +7260,12 @@
           <Op>
             <Operators>
               <elem>
-                <name>rho_proj0_p100_H1D4E2</name>
+                <name>rho_proj0_H1D4E2</name>
                 <mom_class>1 0 0</mom_class>
               </elem>
               <elem>
-                <name>pion_proj0_p100_H0D4A2</name>
-                <mom_class>1 0 0</mom_class>
+                <name>pion_proj0_H0D4A2</name>
+                <mom_class>-1 0 0</mom_class>
               </elem>
             </Operators>
             <CGs>
@@ -7736,15 +7736,15 @@
 </NPointList>
 <DBFiles>
   <proj_op_xmls>
-      <elem>./weights/weights.eta.proj0.xml</elem>
-      <elem>./weights/weights.eta.proj1.xml</elem>
-      <elem>./weights/weights.pion.flight_2deriv.ops.xml</elem>
-      <elem>./weights/weights.pion.rest_3deriv.ops.xml</elem>
-      <elem>./weights/weights.kaon.flight_2deriv.ops.xml</elem>
-      <elem>./weights/weights.kaon.rest_3deriv.ops.xml</elem>
-      <elem>./weights/weights.Kbar.flight_2deriv.ops.xml</elem>
-      <elem>./weights/weights.Kbar.rest_3deriv.ops.xml</elem>
-      <elem>./weights/weights.rho.xml</elem>
+      <elem>weights/v4/weights.eta.proj0.xml</elem>
+      <elem>weights/v4/weights.eta.proj1.xml</elem>
+      <elem>weights/v4/weights.pion.flight_2deriv.ops.xml</elem>
+      <elem>weights/v4/weights.pion.rest_3deriv.ops.xml</elem>
+      <elem>weights/v4/weights.kaon.flight_2deriv.ops.xml</elem>
+      <elem>weights/v4/weights.kaon.rest_3deriv.ops.xml</elem>
+      <elem>weights/v4/weights.Kbar.flight_2deriv.ops.xml</elem>
+      <elem>weights/v4/weights.Kbar.rest_3deriv.ops.xml</elem>
+      <elem>weights/v4/weights.rho.xml</elem>
   </proj_op_xmls>
   <eval_graph_xml>eval_graph.xml</eval_graph_xml>
   <noneval_graph_xml>noneval_graph.xml</noneval_graph_xml>
@@ -7793,22 +7793,20 @@
 <DBFiles>
   <annotation>Need to provide "elem" entries for those elementals actually needed</annotation>
   <prop_dbs>
-    <elem>./prop.sdb</elem>
+    <elem>prop.sdb</elem>
   </prop_dbs>
   <smeared_baryon_dbs>
-    <elem>./baryon.sdb</elem>
+    <elem>baryon.sdb</elem>
   </smeared_baryon_dbs>
   <smeared_meson_dbs> 
-    <elem>./meson.deriv.sdb</elem> 
+    <elem>meson.deriv.sdb</elem>
   </smeared_meson_dbs>
 
-  <smeared_meson_boosted_dbs> 
-    <elem><First>fred</First><Second><elem>./meson.fred.deriv.sdb</elem><elem>./meson.fred3.noderiv.sdb</elem></Second></elem> 
-    <elem><First>george</First><Second>./meson.george.deriv.sdb</Second></elem> 
-  </smeared_meson_boosted_dbs>
+  <smeared_meson_boosted_dbs>
+        </smeared_meson_boosted_dbs>
 
-  <smeared_glue_dbs><elem>./glue.deriv.sdb</elem></smeared_glue_dbs>
-  <smeared_tetra_dbs><elem>./tetra.sdb</elem></smeared_tetra_dbs>
+  <smeared_glue_dbs><elem>glue.deriv.sdb</elem></smeared_glue_dbs>
+  <smeared_tetra_dbs><elem>tetra.sdb</elem></smeared_tetra_dbs>
   <unsmeared_meson_dbs> 
     <!-- elem>./unsmeared_meson.sdb</elem --> 
   </unsmeared_meson_dbs>

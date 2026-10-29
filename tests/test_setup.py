@@ -103,11 +103,12 @@ class SetupTests(unittest.TestCase):
         self.assertEqual(list(self.cache.iterdir()),[])
     def test_runner_isolates_outputs(self):
         self.assertEqual(self.setup('--adopt').returncode,0)
-        (self.repo/'test_inputs/pion.xml').write_text('<input/>')
+        input_xml = '<RedstarNPt><Param><version>14</version><diagnostic_level>20</diagnostic_level></Param><NPointList><elem/></NPointList><DBFiles/><ColorVec><DBFiles><prop_dbs><elem>meson.sdb</elem></prop_dbs></DBFiles></ColorVec></RedstarNPt>'
+        (self.repo/'test_inputs/pion.xml').write_text(input_xml)
         binaries=self.home/'binary path';binaries.mkdir()
         for name in ('redstar_corr_graph','redstar_npt'):
             p=binaries/name
-            p.write_text('#!/bin/sh\n[ -f meson.sdb ] || exit 3\nprintf generated > out.xml\nprintf result > output.sdb1\n')
+            p.write_text('#!/bin/sh\n[ -f meson.sdb ] || exit 3\nprintf generated > "$2"\nprintf graph > corr_graph.bin\nprintf result > output.npt.sdb1\n')
             p.chmod(0o755)
         env=dict(self.env,REDSTAR_BIN=str(binaries))
         for unused in range(2):
@@ -115,10 +116,39 @@ class SetupTests(unittest.TestCase):
             self.assertEqual(result.returncode,0,result.stderr)
         runs=list((self.repo/'runs').iterdir());self.assertEqual(len(runs),2)
         for run in runs:
-            self.assertEqual((run/'output.sdb1').read_text(),'result')
+            self.assertEqual((run/'output.npt.sdb1').read_text(),'result')
+            self.assertTrue((run/'graph.out.xml').is_file())
+            self.assertTrue((run/'npt.out.xml').is_file())
+            record=json.loads((run/'run.json').read_text())
+            self.assertEqual(record['status'],'executables_passed')
+            self.assertFalse(record['numerical_readback_validated'])
+            import xml.etree.ElementTree as ET
+            prepared=ET.parse(run/'input.xml')
+            self.assertEqual(prepared.findtext('ColorVec/DBFiles/prop_dbs/elem'),str(self.cache/'meson.sdb'))
+            self.assertEqual(prepared.findtext('Param/diagnostic_level'),'0')
             (run/'meson.sdb').unlink()
         self.assertTrue((self.cache/'meson.sdb').is_file())
-        self.assertEqual((self.repo/'test_inputs/pion.xml').read_text(),'<input/>')
+        self.assertEqual((self.repo/'test_inputs/pion.xml').read_text(),input_xml)
         self.assertFalse((self.repo/'out.xml').exists())
+
+    def test_runner_rejects_legacy_schema_before_creating_output(self):
+        (self.repo/'test_inputs/old.xml').write_text('<RedstarNPt><Param><version>12</version></Param></RedstarNPt>')
+        result=subprocess.run([str(self.repo/'run_colorvec.csh'),'old.xml'],cwd=self.home,env=self.env,text=True,capture_output=True)
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('Expected RedstarNPt v14',result.stderr)
+        self.assertFalse((self.repo/'runs').exists())
+
+    def test_runner_explicit_data_home_overrides_environment(self):
+        self.assertEqual(self.setup().returncode,0)
+        (self.repo/'test_inputs/pion.xml').write_text('<RedstarNPt><Param><version>14</version><diagnostic_level>0</diagnostic_level></Param><NPointList><elem/></NPointList><DBFiles/><ColorVec><DBFiles><prop_dbs><elem>meson.sdb</elem></prop_dbs></DBFiles></ColorVec></RedstarNPt>')
+        binaries=self.home/'tools';binaries.mkdir()
+        for name in ('redstar_corr_graph','redstar_npt'):
+            p=binaries/name;p.write_text('#!/bin/sh\nprintf report > "$2"\nprintf graph > corr_graph.bin\nprintf result > output.npt.sdb1\n');p.chmod(0o755)
+        env=dict(self.env,REDSTAR_BIN=str(binaries),KANONI_DATA_DIR=str(self.home/'does not exist'))
+        result=subprocess.run([str(self.repo/'run_colorvec.csh'),'pion.xml','--database-dir',str(self.cache),'--threads','2'],env=env,cwd=self.home,text=True,capture_output=True)
+        self.assertEqual(result.returncode,0,result.stderr)
+        record=json.loads(next((self.repo/'runs').glob('*/run.json')).read_text())
+        self.assertEqual(record['data_home'],str(self.cache))
+        self.assertEqual(record['threads'],2)
 
 if __name__=='__main__':unittest.main()
