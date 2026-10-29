@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<GenerateXML>
+  <runmode>default</runmode>
+  <include_all_rows>false</include_all_rows>
+  <default_row>1</default_row>
+  <moms>
+      <elem>0 0 0</elem>
+      <elem>0 0 1</elem>
+      <elem>0 1 1</elem>
+      <elem>1 1 1</elem>
+  </moms>
+  <t_sources>0</t_sources>
+  <sink_ops_list>single.ops.list</sink_ops_list>
+  <source_ops_list>single.ops.list</source_ops_list>
+  <ops_xmls>
+    <elem>single.ops.xml</elem>
+  </ops_xmls>
+</GenerateXML>

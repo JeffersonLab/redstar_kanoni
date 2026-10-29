@@ -1,0 +1,2229 @@
+<?xml version="1.0"?>
+
+
+<OpsList>
+  <elem>
+    <Key>a_a0xD2_J0__J0_A1__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J0__J0_A1</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J0__J0_H0D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J0__J0_H0D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J0__J0_H0D3A1__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J0__J0_H0D3A1</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J0__J0_H0D4A1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J0__J0_H0D4A1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J0__J0_H0D4A1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J0__J0_H0D4A1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_E__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_E</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H0D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H0D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H0D3A1__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H0D3A1</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H0D4A1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H0D4A1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H0D4A1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H0D4A1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H1D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H1D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H1D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H1D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H1D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H1D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H1D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H1D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H1D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H1D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H2D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H2D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H2D2A2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H2D2A2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H2D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H2D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H2D4B1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H2D4B1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H2D4B1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H2D4B1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H2D4B2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H2D4B2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_H2D4B2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_H2D4B2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>a_a0xD2_J2__J2_T2__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>a_a0xD2_J2__J2_T2</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_H0D2A2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_H0D2A2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_H0D3A2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_H0D3A2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_H0D4A2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_H0D4A2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_H0D4A2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_H0D4A2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_H1D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_H1D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_H1D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_H1D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_H1D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_H1D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_H1D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_H1D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_H1D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_H1D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>b_a0xD2_J1__J1_T1__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>b_a0xD2_J1__J1_T1</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J0__J0_A1__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J0__J0_A1</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J0__J0_H0D2A2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J0__J0_H0D2A2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J0__J0_H0D3A2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J0__J0_H0D3A2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J0__J0_H0D4A2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J0__J0_H0D4A2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J0__J0_H0D4A2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J0__J0_H0D4A2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_H0D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_H0D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_H0D3A1__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_H0D3A1</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_H0D4A1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_H0D4A1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_H0D4A1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_H0D4A1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_H1D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_H1D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_H1D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_H1D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_H1D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_H1D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_H1D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_H1D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_H1D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_H1D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J1__J1_T1__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J1__J1_T1</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_E__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_E</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H0D2A2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H0D2A2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H0D3A2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H0D3A2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H0D4A2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H0D4A2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H0D4A2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H0D4A2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H1D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H1D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H1D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H1D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H1D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H1D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H1D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H1D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H1D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H1D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H2D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H2D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H2D2A2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H2D2A2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H2D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H2D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H2D4B1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H2D4B1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H2D4B1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H2D4B1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H2D4B2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H2D4B2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_H2D4B2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_H2D4B2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>pion_a0xD3_J131_J2__J2_T2__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>pion_a0xD3_J131_J2__J2_T2</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_H0D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_H0D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_H0D3A1__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_H0D3A1</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_H0D4A1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_H0D4A1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_H0D4A1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_H0D4A1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_H1D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_H1D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_H1D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_H1D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_H1D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_H1D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_H1D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_H1D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_H1D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_H1D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD1_J1__J1_T1__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD1_J1__J1_T1</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_H0D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_H0D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_H0D3A1__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_H0D3A1</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_H0D4A1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_H0D4A1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_H0D4A1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_H0D4A1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_H1D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_H1D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_H1D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_H1D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_H1D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_H1D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_H1D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_H1D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_H1D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_H1D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J130_J1__J1_T1__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J130_J1__J1_T1</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_H0D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_H0D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_H0D3A1__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_H0D3A1</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_H0D4A1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_H0D4A1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_H0D4A1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_H0D4A1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_H1D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_H1D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_H1D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_H1D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_H1D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_H1D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_H1D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_H1D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_H1D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_H1D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J1__J1_T1__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J1__J1_T1</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_E__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_E</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H0D2A2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H0D2A2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H0D3A2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H0D3A2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H0D4A2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H0D4A2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H0D4A2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H0D4A2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H1D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H1D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H1D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H1D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H1D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H1D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H1D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H1D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H1D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H1D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H2D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H2D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H2D2A2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H2D2A2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H2D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H2D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H2D4B1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H2D4B1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H2D4B1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H2D4B1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H2D4B2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H2D4B2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_H2D4B2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_H2D4B2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J2__J2_T2__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J2__J2_T2</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_A2__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_A2</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H0D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H0D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H0D3A1__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H0D3A1</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H0D4A1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H0D4A1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H0D4A1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H0D4A1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H1D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H1D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H1D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H1D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H1D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H1D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H1D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H1D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H1D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H1D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H2D2A1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H2D2A1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H2D2A2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H2D2A2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H2D3E2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H2D3E2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H2D4B1__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H2D4B1</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H2D4B1__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H2D4B1</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H2D4B2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H2D4B2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H2D4B2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H2D4B2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H3D2B1__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H3D2B1</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H3D2B2__011</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H3D2B2</name>
+          <mom_class>0 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H3D3A1__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H3D3A1</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H3D3A2__111</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H3D3A2</name>
+          <mom_class>1 1 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H3D4E2__001</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H3D4E2</name>
+          <mom_class>0 0 1</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_H3D4E2__002</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_H3D4E2</name>
+          <mom_class>0 0 2</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_T1__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_T1</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+  <elem>
+    <Key>rho_a0xD3_J132_J3__J3_T2__000</Key>
+    <Val>
+      <Operators>
+        <elem>
+          <name>rho_a0xD3_J132_J3__J3_T2</name>
+          <mom_class>0 0 0</mom_class>
+          <phasings>
+            <elem>0 0 0</elem>
+          </phasings>
+        </elem>
+      </Operators>
+      <CGs>
+      </CGs>
+    </Val>
+  </elem>
+</OpsList>

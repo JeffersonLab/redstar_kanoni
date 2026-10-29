@@ -132,7 +132,7 @@ its output without touching the shared inputs. `interior_nodes.*.log` files are
 intermediate Redstar diagnostic output and are ignored by Git. Older saved outputs
 from the checkout root have been preserved locally under `runs/legacy-*`.
 
-Run the setup/runner regression tests with:
+Run the setup, runner and derivative-audit regression tests with:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
@@ -196,3 +196,17 @@ are reported explicitly. A failed or incomplete case is not a passing regression
 See AGENTS.md for source/dataset conventions and staged reference-work hygiene.
 The pre-existing derivative-vertex audit and test_vertices inventories are
 separate reference work; they are preserved independently of these migrations.
+
+## Derivative vertex audit
+
+The [derivative-only fixture](test_vertices/README.md) regenerates its operators,
+482 two-point selections and a v14 graph, then checks 220 vertices against analytic
+derivative subspaces, creation/annihilation adjoints and the saved references:
+
+```sh
+python3 test_vertices/run.py --redstar-bin /path/to/redstar/install/bin --threads 4
+```
+
+It uses only Python’s standard library and a compatible Redstar installation.
+Each attempt creates fresh outputs under `runs/`; no previous graph dump or
+numerical SDB is required. The guide records the exact checks and their limits.
