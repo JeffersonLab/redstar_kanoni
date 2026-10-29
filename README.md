@@ -74,8 +74,6 @@ OpenMP settings request four workers and disable dynamic teams; `--threads`
 overrides this. The installed Redstar build must itself have OpenMP enabled.
 Large diagnostic dumps are disabled unless `--keep-diagnostics` is supplied.
 
-`run_redstar.csh` now invokes this same precomputed-SDB workflow. The historical
-HAROM database-production launcher is archived in [legacy](legacy/README.md).
 Existing outputs and personal demo files are left in place. Cleanup belongs in
 `runs/`; deleting a run does not delete the actual files in `data/`. Personal XML
 inputs can also be passed by absolute or relative path. Put their supporting XML
@@ -155,7 +153,7 @@ its output without touching the dataset in `data/`. `interior_nodes.*.log` files
 intermediate Redstar diagnostic output and are ignored by Git. Older saved outputs
 from the checkout root have been preserved locally under `runs/legacy-*`.
 
-Run the setup, runner and derivative-audit regression tests with:
+Run the setup and runner regression tests with:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
@@ -220,24 +218,3 @@ tracked input physics settings remain intact. Fake-data runs and zero channels
 are reported explicitly. A failed or incomplete case is not a passing regression.
 
 See AGENTS.md for source/dataset conventions and reference-work hygiene.
-
-## Derivative vertex audit
-
-The standalone [audit script](audit_derivative_vertices.py) and
-[saved report](derivative_vertex_audit.json) remain at repository root. The former
-`test_vertices/` fixture, its graph-generation runner and selected-vertex XML
-have been removed.
-
-To check an existing full `dump_corr_graph` XML export against the saved
-220-vertex reference, choose a new output report:
-
-```sh
-python3 audit_derivative_vertices.py /path/to/full-graph.xml --output /path/to/new-audit.json
-```
-
-The audit uses Python’s standard library. It checks derivative subspaces,
-normalization, creation/annihilation adjoints and reference coverage. It requires
-a full graph export with matching vertex coverage. An optional
-`--selected-reference /path/to/vertices.xml` also checks four externally supplied
-reference vertices and their coefficients. This checks vertex algebra, without
-evaluating numerical SDB correlators.

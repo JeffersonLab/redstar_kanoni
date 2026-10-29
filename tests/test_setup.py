@@ -20,7 +20,7 @@ class SetupTests(unittest.TestCase):
         self.home=Path(self.temp.name)
         self.repo=self.home/'repo'; self.repo.mkdir()
         shutil.copytree(str(BASE/'scripts'),str(self.repo/'scripts'))
-        for name in ('setup-data','run_colorvec.csh','run_redstar.csh'): shutil.copy2(str(BASE/name),str(self.repo/name))
+        for name in ('setup-data','run_colorvec.csh'): shutil.copy2(str(BASE/name),str(self.repo/name))
         (self.repo/'test_inputs').mkdir()
         self.source=self.home/'original'; self.source.mkdir()
         self.data=self.repo/'data'
@@ -161,7 +161,7 @@ class SetupTests(unittest.TestCase):
         (self.repo/'test_inputs/pion.xml').write_text('<RedstarNPt><Param><version>14</version><diagnostic_level>0</diagnostic_level></Param><NPointList><elem/></NPointList><DBFiles/><ColorVec><DBFiles><prop_dbs><elem>meson.sdb</elem></prop_dbs></DBFiles></ColorVec></RedstarNPt>')
         binaries=self.binaries()
         env=dict(self.env,REDSTAR_BIN=str(binaries),KANONI_DATA_DIR=str(self.home/'does not exist'))
-        result=subprocess.run([str(self.repo/'run_redstar.csh'),str(self.repo/'test_inputs/pion.xml'),'--database-dir',str(self.data),'--threads','2'],env=env,cwd=self.home,text=True,capture_output=True)
+        result=subprocess.run([str(self.repo/'run_colorvec.csh'),str(self.repo/'test_inputs/pion.xml'),'--database-dir',str(self.data),'--threads','2'],env=env,cwd=self.home,text=True,capture_output=True)
         self.assertEqual(result.returncode,0,result.stderr)
         record=json.loads(next((self.repo/'runs').glob('*/run.json')).read_text())
         self.assertEqual(record['data_home'],str(self.data.resolve()))

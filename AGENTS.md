@@ -5,11 +5,8 @@
 - This public repository distributes Redstar example inputs and a checksum-pinned
   dataset. Read README.md and test_inputs/data-manifest.json first.
 - Inspect the branch, working tree and index before editing. Preserve deliberately
-  staged audits, operator inventories and deletions; do not reset or bulk-commit
+  staged changes, operator inventories and deletions; do not reset or bulk-commit
   unrelated work. The current working branch is devel.
-- The root derivative audit and saved audit report are separate reference work.
-  Treat them as intentional inputs/results, not scratch output. The former
-  test_vertices fixture directory and selected-vertex XML have been removed.
 
 ## Dataset and paths
 
