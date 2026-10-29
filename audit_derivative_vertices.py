@@ -204,7 +204,8 @@ def main():
     parser.add_argument('graph', type=Path, help='full dump_corr_graph XML export')
     parser.add_argument('--output', required=True, type=Path, help='new report; existing files are never replaced')
     parser.add_argument('--reference', type=Path, default=base / 'derivative_vertex_audit.json')
-    parser.add_argument('--selected-reference', type=Path, default=base / 'selected_derivative_vertices.xml')
+    parser.add_argument('--selected-reference', type=Path,
+                        help='optional XML with four selected reference vertices')
     parser.add_argument('--tolerance', type=float, default=1e-10)
     args = parser.parse_args()
     if not math.isfinite(args.tolerance) or args.tolerance <= 0:
@@ -215,16 +216,17 @@ def main():
     report['tolerance'] = args.tolerance
     try:
         check_reference(report, json.loads(args.reference.read_text()), args.tolerance)
-        subset_report, subset = audit_vertices(ET.parse(args.selected_reference).getroot(), args.tolerance)
-        if subset_report['errors'] or len(subset) != 4:
-            raise ValueError('The four selected reference vertices are invalid')
-        for key, values in subset.items():
-            if key not in vertices or values.keys() != vertices[key].keys():
-                raise ValueError('Selected reference key/path coverage differs')
-            if max(abs(z - vertices[key][p]) for p, z in values.items()) > args.tolerance:
-                raise ValueError('Selected reference coefficients differ')
         report['reference_checked'] = True
-        report['selected_reference_vertices'] = len(subset)
+        if args.selected_reference is not None:
+            subset_report, subset = audit_vertices(ET.parse(args.selected_reference).getroot(), args.tolerance)
+            if subset_report['errors'] or len(subset) != 4:
+                raise ValueError('The four selected reference vertices are invalid')
+            for key, values in subset.items():
+                if key not in vertices or values.keys() != vertices[key].keys():
+                    raise ValueError('Selected reference key/path coverage differs')
+                if max(abs(z - vertices[key][p]) for p, z in values.items()) > args.tolerance:
+                    raise ValueError('Selected reference coefficients differ')
+            report['selected_reference_vertices'] = len(subset)
     except (ValueError, KeyError) as error:
         report['errors'].append(str(error))
     with args.output.open('x') as stream:

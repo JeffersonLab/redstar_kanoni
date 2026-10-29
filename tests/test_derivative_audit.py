@@ -1,6 +1,8 @@
 """Reject corruption that a projection-only audit could otherwise miss."""
 import copy
 import importlib.util
+import json
+import math
 from pathlib import Path
 import subprocess
 import sys
@@ -16,9 +18,53 @@ SPEC.loader.exec_module(AUDIT)
 
 class DerivativeAuditTests(unittest.TestCase):
     def setUp(self):
-        self.vertices = ET.parse(ROOT / 'selected_derivative_vertices.xml').getroot()
+        # Independent analytic fixtures: Cartesian scalar D2 and symmetric traceless D3.
+        # These test the auditor, rather than regenerating coefficients with its basis().
+        self.vertices = ET.Element('SelectedVertexCoefficients')
+        examples = [('a_a0xD2_J0__J0_A1', {(1, 1): 1 / math.sqrt(3),
+                                          (2, 2): 1 / math.sqrt(3),
+                                          (3, 3): 1 / math.sqrt(3)}),
+                    ('rho_a0xD3_J132_J3__J3_H2D3E2',
+                     {(3, 3, 3): 2 / math.sqrt(10),
+                      (1, 1, 3): -1 / math.sqrt(10), (1, 3, 1): -1 / math.sqrt(10),
+                      (3, 1, 1): -1 / math.sqrt(10), (2, 2, 3): -1 / math.sqrt(10),
+                      (2, 3, 2): -1 / math.sqrt(10), (3, 2, 2): -1 / math.sqrt(10)})]
+        for name, coefficients in examples:
+            for creation in (True, False):
+                entry = ET.SubElement(self.vertices, 'elem')
+                key = ET.SubElement(entry, 'Key')
+                fields = dict(name=name, type='M', piece_num='1', Cconj='false',
+                              twoI_z='0', row='1', mom='0 0 0',
+                              creation_op=str(creation).lower(), smearedP='true')
+                for field, value in fields.items():
+                    ET.SubElement(key, field).text = value
+                ET.SubElement(ET.SubElement(key, 'phasings'), 'elem').text = '0 0 0'
+                block = ET.SubElement(ET.SubElement(entry, 'Val'), 'elem')
+                flavor = ET.SubElement(block, 'Key')
+                ET.SubElement(flavor, 'color').text = '3barx3->1'
+                quarks = ET.SubElement(flavor, 'Quarks')
+                for anti in ('true', 'false'):
+                    quark = ET.SubElement(quarks, 'elem')
+                    ET.SubElement(quark, 'anti').text = anti
+                    ET.SubElement(quark, 'flavor').text = 'q'
+                terms = ET.SubElement(block, 'Val')
+                for path, coefficient in coefficients.items():
+                    if not creation:
+                        coefficient = (-1) ** len(path) * coefficient.conjugate()
+                        path = path[::-1]
+                    term = ET.SubElement(terms, 'elem')
+                    derivs = ET.SubElement(ET.SubElement(term, 'Key'), 'derivs')
+                    ET.SubElement(ET.SubElement(derivs, 'elem'), 'deriv')
+                    ET.SubElement(ET.SubElement(derivs, 'elem'), 'deriv').text = ' '.join(map(str, path))
+                    spin = ET.SubElement(term, 'Val')
+                    for index in range(4):
+                        item = ET.SubElement(spin, 'elem')
+                        ET.SubElement(ET.SubElement(item, 'Key'), 'diracs').text = f'{index} {index}'
+                        value = ET.SubElement(item, 'Val')
+                        ET.SubElement(value, 're').text = str(coefficient.real)
+                        ET.SubElement(value, 'im').text = str(coefficient.imag)
 
-    def test_selected_vertices_have_unit_normalization_and_adjoint_pairs(self):
+    def test_analytic_vertices_have_unit_normalization_and_adjoint_pairs(self):
         report, vertices = AUDIT.audit_vertices(self.vertices)
         self.assertEqual((report['vertices'], report['pairs']), (4, 2))
         self.assertEqual(report['errors'], [])
@@ -62,11 +108,35 @@ class DerivativeAuditTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'coverage'):
             AUDIT.check_reference(actual, reference, 1e-10)
 
+    def test_cli_with_optional_selected_reference(self):
+        with tempfile.TemporaryDirectory(prefix='audit fixture ') as folder:
+            folder = Path(folder)
+            graph, reference = (folder / name for name in ('graph.xml', 'reference.json'))
+            ET.ElementTree(self.vertices).write(graph)
+            report, _ = AUDIT.audit_vertices(self.vertices)
+            reference.write_text(json.dumps(report))
+            for selected in (False, True):
+                with self.subTest(selected=selected):
+                    output = folder / f'report-{selected}.json'
+                    command = [sys.executable, str(ROOT / 'audit_derivative_vertices.py'),
+                               str(graph), '--reference', str(reference), '--output', str(output)]
+                    if selected:
+                        command.extend(['--selected-reference', str(graph)])
+                    result = subprocess.run(command, text=True, capture_output=True)
+                    self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
+                    actual = json.loads(output.read_text())
+                    self.assertTrue(actual['reference_checked'])
+                    self.assertEqual(actual['errors'], [])
+                    if selected:
+                        self.assertEqual(actual['selected_reference_vertices'], 4)
+                    else:
+                        self.assertNotIn('selected_reference_vertices', actual)
+
     def test_existing_report_is_never_overwritten(self):
         with tempfile.TemporaryDirectory(prefix='audit output ') as folder:
             output = Path(folder) / 'report.json'; output.write_text('preserve me')
             result = subprocess.run([sys.executable, str(ROOT / 'audit_derivative_vertices.py'),
-                                     str(ROOT / 'selected_derivative_vertices.xml'), '--output', str(output)],
+                                     str(Path(folder) / 'unused-graph.xml'), '--output', str(output)],
                                     text=True, capture_output=True)
             self.assertNotEqual(result.returncode, 0)
             self.assertIn('Output already exists', result.stderr)
