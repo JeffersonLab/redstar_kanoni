@@ -219,20 +219,25 @@ Diagnostic verbosity and large graph/DAG dumps are disabled in the staged copy;
 tracked input physics settings remain intact. Fake-data runs and zero channels
 are reported explicitly. A failed or incomplete case is not a passing regression.
 
-See AGENTS.md for source/dataset conventions and staged reference-work hygiene.
-The pre-existing derivative-vertex audit and test_vertices inventories are
-separate reference work; they are preserved independently of these migrations.
+See AGENTS.md for source/dataset conventions and reference-work hygiene.
 
 ## Derivative vertex audit
 
-The [derivative-only fixture](test_vertices/README.md) regenerates its operators,
-482 two-point selections and a v14 graph, then checks 220 vertices against analytic
-derivative subspaces, creation/annihilation adjoints and the saved references:
+The standalone [audit script](audit_derivative_vertices.py),
+[saved report](derivative_vertex_audit.json) and
+[four selected reference vertices](selected_derivative_vertices.xml) remain at
+repository root. The former `test_vertices/` fixture and its graph-generation
+runner have been removed.
+
+To check an existing full `dump_corr_graph` XML export against the saved
+220-vertex reference, choose a new output report:
 
 ```sh
-python3 test_vertices/run.py --redstar-bin /path/to/redstar/install/bin --threads 4
+python3 audit_derivative_vertices.py /path/to/full-graph.xml --output /path/to/new-audit.json
 ```
 
-It uses only Python’s standard library and a compatible Redstar installation.
-Each attempt creates fresh outputs under `runs/`; no previous graph dump or
-numerical SDB is required. The guide records the exact checks and their limits.
+The audit uses Python’s standard library. It checks derivative subspaces,
+normalization, creation/annihilation adjoints, reference coverage and selected
+coefficients. It requires a full graph export with matching vertex coverage;
+the four selected reference vertices alone are insufficient for this command.
+This checks vertex algebra, without evaluating numerical SDB correlators.

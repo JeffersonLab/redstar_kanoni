@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit the checked derivative-only vertex fixture without modifying references."""
+"""Audit a full graph XML export against saved derivative-vertex references."""
 import argparse
 from functools import lru_cache
 import itertools

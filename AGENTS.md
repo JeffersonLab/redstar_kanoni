@@ -7,8 +7,9 @@
 - Inspect the branch, working tree and index before editing. Preserve deliberately
   staged audits, operator inventories and deletions; do not reset or bulk-commit
   unrelated work. The current working branch is devel.
-- The derivative audit, selected vertices and test_vertices files are separate
-  reference work. Treat them as intentional inputs/results, not scratch output.
+- The root derivative audit, saved audit report and selected vertices are
+  separate reference work. Treat them as intentional inputs/results, not scratch
+  output. The former test_vertices fixture directory has been removed.
 
 ## Dataset and paths
 
