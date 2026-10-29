@@ -12,10 +12,14 @@
 
 ## Dataset and paths
 
-- Run ./setup-data to prepare test_inputs/data. It normally links to immutable
-  shared storage; KANONI_DATA_DIR/--data-dir select the dataset store.
-- Numerical consumers can use KANONI_DATA_DIR set to the prepared checkout's
-  test_inputs/data entry point. Explicit --database-dir wins over the environment.
+- Run ./setup-data to install regular, read-only SDB files in checkout data/.
+  KANONI_DATA_DIR/--data-dir may select another real directory. Setup imports copy
+  source payloads, verifies checksums and retires only verified legacy aliases;
+  never create data-directory or SDB symlinks. The former --adopt mode is removed.
+- Set KANONI_DATA_DIR to the actual Kanoni data/ directory for external consumers.
+  Explicit --database-dir wins over the environment. Numerical test templates use
+  ../data/ paths; runners rebase them relative to each fresh run directory and
+  refer directly to regular SDBs, without per-run data aliases or copies.
 - Pass canonical XML paths such as test_inputs/pipi_i1.xml. Do not recreate
   top-level XML compatibility symlinks or add implicit basename lookup. Relative
   input paths resolve from the caller’s working directory.
@@ -25,7 +29,8 @@
   values. Verify downloads/imports; publish a new version for changed data.
 - Keep SDB payloads, generated correlator databases, binaries, logs and numerical
   run directories out of Git. Small numerical inputs and operator weights belong
-  in test_inputs. Source databases are read-only.
+  in test_inputs; actual SDB payloads belong in Git-ignored data/. Source databases
+  are read-only.
 
 ## XML schemas and physics
 

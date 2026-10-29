@@ -7,7 +7,9 @@ unsmeared_hadron_node.xml
 eval_graph.xml
 noneval_graph.xml
 
-# Shared inputs and isolated sandbox output
+# Real local dataset and isolated sandbox output
+/data/
+# Ignore the retired data alias if present in an old checkout.
 /test_inputs/data
 /runs/
 __pycache__/

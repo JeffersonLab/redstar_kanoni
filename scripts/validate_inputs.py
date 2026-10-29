@@ -33,12 +33,13 @@ def main():
     args=parser.parse_args()
     if args.threads<1 or args.timeout<1:parser.error('threads and timeout must be positive')
     root=Path(__file__).resolve().parents[1]
-    data=(args.database_dir or root/'test_inputs/data').expanduser().absolute()
+    data=(args.database_dir or root/'data').expanduser().absolute()
     programs={name:(args.redstar_bin/name if args.redstar_bin else Path(shutil.which(name) or '/missing-'+name)).expanduser().absolute() for name in ('redstar_corr_graph','redstar_npt','view_corr_graph','extract_ops_util')}
     dbutil=(args.dbutil or Path(shutil.which('dbutil') or '/missing-dbutil')).expanduser().absolute()
     for p in [*programs.values(),dbutil]:
         if not p.is_file() or not os.access(p,os.X_OK):parser.error('Missing executable '+str(p))
-    if not data.is_dir():parser.error('Missing Kanoni data home; run setup-data first')
+    if data.is_symlink() or not data.is_dir():parser.error('Kanoni data home must be a real directory; run setup-data first')
+    data=data.resolve()
     files=args.files or [p for p in sorted((root/'test_inputs').glob('*.xml')) if ET.parse(p).getroot().tag=='RedstarNPt']
     files=[p.expanduser().absolute() for p in files]
     if not all(p.is_file() for p in files):parser.error('Every selected input must exist')
@@ -88,7 +89,7 @@ def main():
                 target=run/path;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,target)
             for node in x.findall('ColorVec/DBFiles/*/elem'):
                 path=data/Path((node.text or '').strip()).name
-                if not path.is_file():raise RuntimeError('Missing source database '+str(path))
+                if not path.is_file() or path.is_symlink():raise RuntimeError('Source database must be a regular file: '+str(path))
                 if path.name not in verified_data:
                     if path.name not in expected_data:raise RuntimeError('Database absent from pinned manifest: '+path.name)
                     entry=expected_data[path.name];digest=hashlib.sha256()
@@ -96,7 +97,7 @@ def main():
                         for block in iter(lambda:stream.read(4*1024*1024),b''):digest.update(block)
                     if path.stat().st_size!=entry['bytes'] or digest.hexdigest()!=entry['sha256']:raise RuntimeError('Database differs from pinned manifest: '+path.name)
                     verified_data[path.name]={'bytes':entry['bytes'],'sha256':digest.hexdigest()}
-                node.text=str(path)
+                node.text=os.path.relpath(path.resolve(),run.resolve())
             case['fake_data_mode']=x.findtext('ColorVec/Param/fake_data_modeP')
             ET.indent(tree,space='  ');tree.write(run/'input.xml',encoding='utf-8',xml_declaration=True)
             command('graph',[programs['redstar_corr_graph'],'input.xml','graph.out.xml'])

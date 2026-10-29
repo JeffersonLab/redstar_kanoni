@@ -21,7 +21,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('input', type=Path, help='explicit XML path, e.g. test_inputs/pipi_i1.xml; relative to the current directory')
     parser.add_argument('--database-dir', type=Path, default=os.environ.get('KANONI_DATA_DIR'),
-                        help='prepared SDB home (default: KANONI_DATA_DIR or test_inputs/data)')
+                        help='prepared SDB home (default: KANONI_DATA_DIR or data/)')
     parser.add_argument('--threads', type=int, default=os.environ.get('OMP_NUM_THREADS', '4'))
     parser.add_argument('--keep-diagnostics', action='store_true',
                         help='retain the input diagnostic level and graph XML/database dumps')
@@ -50,11 +50,15 @@ def main():
     if not all(p.is_file() and os.access(p, os.X_OK) for p in programs):
         parser.error('Set REDSTAR_BIN to one installed bin or build/src directory, or put the tools on PATH')
     programs = [p.resolve() for p in programs]
-    data = (args.database_dir or root / 'test_inputs/data').expanduser().absolute()
+    data = (args.database_dir or root / 'data').expanduser().absolute()
     if not data.is_dir() and args.database_dir is None:
         subprocess.run([str(root / 'setup-data')], check=True)
+    if data.is_symlink():
+        parser.error('Database directory must be a real directory: ' + str(data))
     if not data.is_dir():
         parser.error('Missing prepared database home: ' + str(data) + '; run ./setup-data first')
+    data = data.resolve()
+    database_entries = []
     # Resolve all inputs before creating a run; never derive paths from a personal Downloads alias.
     for group in xml.findall('ColorVec/DBFiles/*'):
         for item in list(group.findall('elem')):
@@ -62,9 +66,9 @@ def main():
                 group.remove(item)
                 continue
             path = data / Path(item.text.strip()).name
-            if not path.is_file():
-                parser.error('Missing source database: ' + str(path))
-            item.text = str(path)
+            if not path.is_file() or path.is_symlink():
+                parser.error('Source database must be a regular file: ' + str(path))
+            database_entries.append((item, path))
     if not args.keep_diagnostics:
         xml.find('Param/diagnostic_level').text = '0'
         for name in DIAGNOSTICS:
@@ -95,8 +99,8 @@ def main():
     for item in source.parent.iterdir():
         if not (run / item.name).exists() and item.is_file() and item.suffix in ('.list', '.dat'):
             shutil.copyfile(item, run / item.name)
-    for database in data.glob('*.sdb'):
-        (run / database.name).symlink_to(database.absolute())
+    for item, database in database_entries:
+        item.text = os.path.relpath(database.resolve(), run.resolve())
     ET.indent(tree, space='  ')
     tree.write(run / 'input.xml', encoding='utf-8', xml_declaration=True)
     env = dict(os.environ, OMP_NUM_THREADS=str(args.threads), OMP_DYNAMIC='FALSE',

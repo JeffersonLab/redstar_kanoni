@@ -9,23 +9,32 @@ Canonical Redstar demos and a sandbox for new tests.
 ./run_colorvec.csh test_inputs/pion.xml
 ```
 
-`setup-data` reuses the shared, checksum-verified dataset at
-`~/QCD/test_data/kanoni/v1`. All branches and copies on this machine can use the
-same files. Set `KANONI_DATA_DIR` or pass `--data-dir` to choose another location.
+`setup-data` installs the 18 checksum-verified SDBs as real files in this
+checkout's `data/` directory (about 1 GB). The directory and payloads are ignored
+by Git; no SDB or data-directory symlinks are needed. Repeating setup reuses
+verified files and downloads only missing ones.
 
-On a machine with the original SDBs already available:
+To import an existing dataset instead of downloading it:
 
 ```sh
 ./setup-data --source-dir /path/to/existing-sdbs
 ```
 
-`--adopt` moves the verified files into shared storage and leaves symlinks at
-the original paths. Existing demos and other Kanoni checkouts keep working.
-Without `--adopt`, import copies the source files and leaves the source untouched.
-Existing files with different checksums are never replaced. Source databases in
-the cache are made read-only. A symlink protects against ordinary `rm *.sdb` in a
-run directory; it does not protect against programs opening the target for writing
-or commands that explicitly traverse links.
+Imports copy the verified bytes without moving the source SDB files. Dataset files
+are made read-only. `--data-dir` or `KANONI_DATA_DIR` selects another real data
+directory; explicit options take precedence. Symlink destination directories and
+symlink SDB files are rejected. The old `--adopt` mode has been removed.
+
+When upgrading an older checkout, unset an obsolete `KANONI_DATA_DIR` setting or
+point it at the new `data/` directory. For a one-time local import you can use:
+
+```sh
+./setup-data --source-dir /path/to/old-dataset --data-dir data
+```
+
+After installation, setup removes verified top-level SDB compatibility links and
+the old `test_inputs/data` directory link. Links to different data are preserved
+and reported for review. The actual source files are not removed.
 
 ## Build selection
 
@@ -50,13 +59,16 @@ legacy sibling checkout `../redstar.devel/build/src`.
 
 - `test_inputs/`: tracked XML inputs, operator lists, and weights.
 - `test_inputs/data-manifest.json`: dataset sizes and SHA-256 checksums.
-- `test_inputs/data`: local, Git-ignored symlink to shared SDB storage.
+- `data/`: the actual read-only SDB files, downloaded or imported locally; Git-ignored.
 - `runs/<demo>-<timestamp>-<unique>/`: isolated logs, XML output, and `.sdb1` results.
 - XML demos live directly in `test_inputs/`; the top-level XML aliases have been removed.
-- Root `.sdb` links route through `test_inputs/data`; large data is outside Git.
 
-Each new run copies the small inputs and weights, links read-only SDBs through
-the selected home, and writes a prepared `input.xml` with concrete database paths.
+Each new run copies the small inputs and weights and writes a prepared `input.xml`
+with relative paths to the actual SDB files. A normal run under `runs/<name>/`
+uses paths such as `../../data/prop.sdb`; no per-run SDB links or copies are made.
+Tracked numerical templates use `../data/<file>.sdb`, relative to `test_inputs/`.
+The runners rebase those paths for their fresh working directories, since Redstar
+resolves XML paths from the process working directory.
 It saves `graph.log`, `npt.log`, separate XML reports and `run.json`. Default
 OpenMP settings request four workers and disable dynamic teams; `--threads`
 overrides this. The installed Redstar build must itself have OpenMP enabled.
@@ -65,7 +77,7 @@ Large diagnostic dumps are disabled unless `--keep-diagnostics` is supplied.
 `run_redstar.csh` now invokes this same precomputed-SDB workflow. The historical
 HAROM database-production launcher is archived in [legacy](legacy/README.md).
 Existing outputs and personal demo files are left in place. Cleanup belongs in
-`runs/`; deleting a run does not delete the shared input databases. Personal XML
+`runs/`; deleting a run does not delete the actual files in `data/`. Personal XML
 inputs can also be passed by absolute or relative path. Put their supporting XML
 and directory trees in `test_inputs/`, keeping the paths used by the XML intact;
 local `.dat` and `.list` files beside the selected input are included automatically.
@@ -83,7 +95,7 @@ as `/path/to/redstar_kanoni/test_inputs/pipi_i1.xml`.
 After setup, use this checkout as the stable database home for Redstar generators:
 
 ```sh
-export KANONI_DATA_DIR="$PWD/test_inputs/data"
+export KANONI_DATA_DIR="$PWD/data"
 ```
 
 The Kanoni runner uses that variable too:
@@ -94,9 +106,11 @@ python3 scripts/run_colorvec.py test_inputs/pion.xml --threads 4
 python3 scripts/run_colorvec.py test_inputs/pion.xml --database-dir /path/to/verified-sdbs
 ```
 
-Current Redstar input generators accept that variable; `--database-dir` overrides
-it. They write concrete paths into generated XML. The top-level Downloads SDB
-aliases are no longer required. Historical run records keep their original paths.
+Redstar input generators accept that variable; `--database-dir` overrides it.
+Kanoni runners generate relative database paths even for an alternate real data
+directory. External Redstar helpers expand their selected data home when preparing
+inputs. Historical run records keep their original paths; replay an old numerical
+input through the current runner into a fresh directory to use the new layout.
 The fitter's bundled 135-key `rho.single.sdb` is a derived correlator fixture and
 remains self-contained; these raw SDBs are used for contraction regeneration.
 
@@ -120,7 +134,7 @@ cd redstar_kanoni
 
 Git stores the small inputs and manifest, not the large SDBs or LFS pointers.
 The default download URL is pinned in `test_inputs/data-manifest.json`, so copies
-and branches reuse the same dataset version. Existing verified shared files are
+and branches reuse the same dataset version. Existing verified files in `data/` are
 reused without downloading them again. Setup downloads public release assets
 directly over HTTPS. An authenticated GitHub CLI fallback remains available for
 private mirrors; it is not needed for the default public dataset.
@@ -137,7 +151,7 @@ changed inputs instead of replacing existing assets.
 ## Cleanup
 
 Each new run writes under `runs/`; remove an unwanted run directory to discard
-its output without touching the shared inputs. `interior_nodes.*.log` files are
+its output without touching the dataset in `data/`. `interior_nodes.*.log` files are
 intermediate Redstar diagnostic output and are ignored by Git. Older saved outputs
 from the checkout root have been preserved locally under `runs/legacy-*`.
 
@@ -149,7 +163,8 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 
 ## Current input schemas and validation
 
-The 39 `RedstarNPt` inputs in `test_inputs` now use v14, SUNClass keys,
+The 39 `RedstarNPt` inputs in `test_inputs` use relative `../data/` database paths,
+v14 and SUNClass keys,
 root-level NPoint lists and explicit CG controls. Projected weights used at
 runtime live under `weights/v4`; historical v3 weights are retained. The six
 `GenerateXML` inputs and two `OpsList` maps have separate schemas and do not
@@ -157,7 +172,9 @@ receive a Redstar v14 tag.
 
 See [VALIDATION.md](VALIDATION.md) and
 [test_inputs/validation-reference.json](test_inputs/validation-reference.json)
-for observed coverage and the exact limitations. Two genprop cases require
+for the original observed coverage and exact limitations. The later data-layout
+migration and fresh relative-path checks are recorded in
+[test_inputs/data-layout-validation.json](test_inputs/data-layout-validation.json). Two genprop cases require
 additional data; the eta case is an exact symmetry-zero control. The full
 121-correlator a1 graph attempt was stopped after reaching about 37 GB memory
 footprint on the 32 GiB test Mac and remains unvalidated. The two inputs

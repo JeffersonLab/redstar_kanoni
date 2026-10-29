@@ -2,10 +2,21 @@
 
 The immutable public Kanoni v1 dataset and the installed macOS Apple Clang/libomp
 stack were used. The toolchain independently observed OpenMP teams of one and four;
-these input runs requested four. Source revisions, current input hashes, counts and
+these input runs requested four. Source revisions, original tested input hashes, counts and
 per-case limits are recorded in [validation-reference.json](test_inputs/validation-reference.json).
 The source-tree C++ code was unchanged. Local full logs and failed attempts remain
 under `runs/validation-*`; the compact JSON is the versioned record.
+
+## Later data-directory migration
+
+The original full-sweep record above is historical. Actual SDBs now live as regular
+files in `data/`; tracked numerical XMLs use `../data/` and runners generate relative
+paths from fresh run directories. Payload checksums and every non-database-path
+XML field were preserved. Original run inputs/reports and their tested hashes
+remain unchanged. [data-layout-validation.json](test_inputs/data-layout-validation.json)
+maps those hashes to current path-only edits and records the fresh numerical checks.
+The full-sweep pass counts below are not a claim that the resource-limited a1 case
+was rerun or that missing data became available.
 
 ## Redstar numerical inputs
 

@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "dataset": "kanoni-v1",
+  "layout": "data/<name>.sdb (regular read-only files); test_inputs XML uses ../data/ and generated runs rebase relative paths",
+  "manifest_sha256": "dea5d89571dcce34543ec78748536125b8ef279293494b1771346e8e66db7585",
+  "regular_sdb_files": [
+    {
+      "name": "baryon.sdb",
+      "bytes": 93618176,
+      "sha256": "30ce94527cbc75df076f2963db9769c7e3334dde340e0da3070232e67a949211"
+    },
+    {
+      "name": "disco-U0.05.sdb",
+      "bytes": 1318912,
+      "sha256": "e763fc028497f781d9a7d7b7d8b119e0328262cb268ba959393d4b69c38f0a66"
+    },
+    {
+      "name": "disco-U0.1.sdb",
+      "bytes": 1318912,
+      "sha256": "c6acb1f0a8ec550e83e1fa1ddbfd9e6fb6da8be2d4a821c59e3416ca44cee132"
+    },
+    {
+      "name": "disco.sdb",
+      "bytes": 327680,
+      "sha256": "5b417a0707b92ba17faa922c3b3db730cef324b8ca31f7756a3613fc83a73a6e"
+    },
+    {
+      "name": "glue.deriv.sdb",
+      "bytes": 49741824,
+      "sha256": "268f33e48c0d5d0519ec74fe224a29cd182a4489055bb3da35bae568fcc7b79f"
+    },
+    {
+      "name": "gpdf.more.sdb",
+      "bytes": 64552960,
+      "sha256": "cb68b4e892ecc0fe505031a7b368ab3bba59bea7ce6dc6cd32bf008291b9d372"
+    },
+    {
+      "name": "gpdf.sdb",
+      "bytes": 2105344,
+      "sha256": "384a2b746d1593907f1c3ce8371b6c2a6a88b1363529cca474d55c66ffc81e91"
+    },
+    {
+      "name": "gpdf_2_0.00.sdb",
+      "bytes": 5439488,
+      "sha256": "b77de36071c90aaf33f780502376717a3f71f13d08dbb111fc5ea16fc8b3a369"
+    },
+    {
+      "name": "gpdf_2_5.00.sdb",
+      "bytes": 5439488,
+      "sha256": "f74917ee20d2be0ad6690ff750c07bc86933254c6ef296dbcec02d35b9b88baf"
+    },
+    {
+      "name": "hada_0-511_SVD_disco_cfg_cl21_32_64_b6p3_m0p2390_m0p2050_cfg_1000.ref0001.sdb",
+      "bytes": 30408704,
+      "sha256": "09897fcecdc929ee66522175084bee283a2289a3ffc8e47819c0f9e6c9a617aa"
+    },
+    {
+      "name": "meson.deriv.sdb",
+      "bytes": 117211136,
+      "sha256": "8b828220d114aac8194a9ca5d9d878c57bdd9ca170238bc81e16b5ef136b9a83"
+    },
+    {
+      "name": "meson.disp.sdb",
+      "bytes": 174317568,
+      "sha256": "8b0c33cf5605c5b4e38d3ae5e73ed85cd1a94372bbf0838296aef3151a0482e9"
+    },
+    {
+      "name": "meson.sdb",
+      "bytes": 111091712,
+      "sha256": "ae1285741cd716d38bd237d62ebdfc98d3e622dfca7ddcaf67c5c6f797a672d0"
+    },
+    {
+      "name": "peram.only0.sdb",
+      "bytes": 1130496,
+      "sha256": "10e63c6b6fe17789b71f6dd82400902a9f6989367737e088f43265d6931ec512"
+    },
+    {
+      "name": "prop.sdb",
+      "bytes": 21471232,
+      "sha256": "e1d3ab353476637d9ff5e30192b8dd3f141959923a572a8c18aa24256f0bdfc2"
+    },
+    {
+      "name": "tetra.sdb",
+      "bytes": 5431296,
+      "sha256": "f30ff57d05531b6b9a5f020219e6bbc39aa973192fbbb2b53ac49b1c1f1c40d6"
+    },
+    {
+      "name": "unsmeared_genprop4.sdb",
+      "bytes": 179298304,
+      "sha256": "39ec071182f7f3af73cf286c69d16f44de7ed802241932f4548fad039529fc25"
+    },
+    {
+      "name": "unsmeared_meson.sdb",
+      "bytes": 169680896,
+      "sha256": "f6411f15e5c8fc542604764524e8d3291d459c4b73dd370497202efd713c6f8c"
+    }
+  ],
+  "input_path_updates": [
+    {
+      "file": "1pt.xml",
+      "original_validated_input_sha256": "24be9453d0960a19fe3297a392e206fe6d79d1e3d4be57502f48e6a1ab498301",
+      "current_input_sha256": "67564b2b50d4b1a5ee55048bb0128cf6e326a045aaf1d3260f3bbd99b9942fe4",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "9141bb7a169285424d2ba75438025d57239f905e9780f8ecae6b9957b9a92c34"
+    },
+    {
+      "file": "33.xml",
+      "original_validated_input_sha256": "bd7f5898b1ac7cd2220201254105ba4953501c58cfa00fcda31ff263069cf542",
+      "current_input_sha256": "f35d183dfbe52df4547727fcc3fa8859da18c1db3f63b6f17abb257841acbdb9",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "016ddc4031bf270dd0c9708cdb3f68eec90ea6c8d3100322365ab3596829e924"
+    },
+    {
+      "file": "3pi.xml",
+      "original_validated_input_sha256": "432e40bf6f6d3438562fabf6612990bcac64932e556c983eab3241150236941f",
+      "current_input_sha256": "23568ca060fba4b55a4d08e1c1087f8f18e8fdbce2ee2987684d446c0f092017",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "dd083006adaaf95699ffe907f7e32a53f0ccf24e6b1297e7b3a302da9dc256f0"
+    },
+    {
+      "file": "a0.d3.xml",
+      "original_validated_input_sha256": "95eaf40997cb9d4b0318b1687a4cf421233fe1660872a95d83f96ef3cbb9501a",
+      "current_input_sha256": "acc75a7b29cff46c184e69d164af310a91b5ce2787b60f7f3e4c06d12d0ea63c",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "d5c92f78a799494d942a8242b992c24116f37d074f55df1c846a13c2c893c67f"
+    },
+    {
+      "file": "a1.000_T1pM.xml",
+      "original_validated_input_sha256": "2aef67c28ca17a1b4ba45f812b8cf22e079b87f405bdc6ad425a7efbf3a71b64",
+      "current_input_sha256": "a6cdae6e85e7b7b8ae9d821af90a1ee8db2b306d158969e7f5899b17b2963c9b",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "a790f3eb72bc2ae4e8a9fb331c6cfb13f986cc66abb0cf9eb50b0a2facd6b5c9"
+    },
+    {
+      "file": "a1_rhopi.xml",
+      "original_validated_input_sha256": "7149d5e096d20f3c03c9a062b9f6f875968e7a0e715c6e2806646006168f1745",
+      "current_input_sha256": "640741ce95da65ba91ad440b2df9af047182e51fe05ec726bf913a3773cfecc5",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "7df212a90b033e1b89536f6cc68b345c57fe49bcefb6557618c7b28e61dfa39b"
+    },
+    {
+      "file": "d.xml",
+      "original_validated_input_sha256": "84ad057b17fda88c3907463c2c83c1522c1baf144ba68f9743fdfe2dec9a62ef",
+      "current_input_sha256": "0b6f48c3e368a28ac7496830568c52720842072ad863f470159e0cb68dd69191",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "4d10508bbf2c2dbc8a5cf422617b417e9d84303ace97a11c25e73cb582ee70bc"
+    },
+    {
+      "file": "da_3pt.xml",
+      "original_validated_input_sha256": "cafb2fe0d0442d4b4645fc49dbdae2d869cce6d8400f9a1bf46ce8f930bfb052",
+      "current_input_sha256": "39b90f29715d99e444f58a59adf296972ac7f82d93b25379ead2357f61845241",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "002707c09bf375c4fe16838a40104160a6516b3c5d51efdb78919236a5e5cae2"
+    },
+    {
+      "file": "delta_J1o2m.xml",
+      "original_validated_input_sha256": "31f98e04a58c5606f2d9cc33fc596fe41effd33f926346596715c32518b2decc",
+      "current_input_sha256": "a69f3cf6e6c9bd8462e8c650db8f9798f7118a4e9c49ca49232f2cef8315b08b",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "b57e80fea44dcb7269fb64f9865fc99debba88c018408b6fad4612792f2d0ec6"
+    },
+    {
+      "file": "eta8eta8_F8.xml",
+      "original_validated_input_sha256": "1749e5f7ed3bb1038c78c9748fa822f2950a36e0f5f68781b396603d1bb2a5f0",
+      "current_input_sha256": "e6f25d1f829d96a71c6971637ec01ffd3c78fa5c95dcc004a6f2271ecbe2c32d",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "692d430e8c2ef3466d51f75a0cd4d024e73dceff7d421b86685c7556eead68ea"
+    },
+    {
+      "file": "eta_eta_3pt.xml",
+      "original_validated_input_sha256": "10e8b05264fbf0815aa14b4ef6338b733ecaed62b6a63986b40c2777b287bdd6",
+      "current_input_sha256": "74758d47a5295af37ecdec46b0f6d62a1d49d1c584f37f503eaba0946757ef6b",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "1fa11c66848fd04cbbba905c160ace1fa4800f1b70236a88459202e6ab832d49"
+    },
+    {
+      "file": "ff_3pt.xml",
+      "original_validated_input_sha256": "749760bfe3b42d013eda6f6bab181cddb71fda453a0dea2ecfb8145427e72bdb",
+      "current_input_sha256": "c67deb14ec45c14de0b6a88f0228f06471e23633782fc6d3864426f3a34c98d2",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "2cdf106301ce8284882834d116594ed31404c280da3897ca46b0f274eb1d2fef"
+    },
+    {
+      "file": "fsq_3pt.xml",
+      "original_validated_input_sha256": "0c6a21146ca50ac277c3c7e2a9265b6126709ff64cc02b2d6bf0b5548594c7dd",
+      "current_input_sha256": "5827e730954e9d0523d1e736b8edc11870e6155e6df9a9b733951a7039703bb6",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "0cc1b88757ebac5f0fa826d5d15cfbfdcbc3d108996124c1ab51f60aa1e5d8b0"
+    },
+    {
+      "file": "glue.xml",
+      "original_validated_input_sha256": "3eeaeb9f6606637e1cdd743fda72ccfccd7db052970b19bb2963c5917d8791c3",
+      "current_input_sha256": "a3b063f453f73ce2be9a7eef260a59af2ec282bb48adb4cb614002bb3cb31604",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "1d90654ba3d6242393af2bc7e21028a81b93171a5134c4ba3bc00af525391c63"
+    },
+    {
+      "file": "h8.xml",
+      "original_validated_input_sha256": "5ed6b18a40bdd283f1e27effbf238094eaf805bc2194ab54cef3911dd21218ff",
+      "current_input_sha256": "b86f952b267a3d34efdf2d8933530371cb0d52145c12652668c92c7322bde893",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "e449ab11dfa8b43ea2ecfbda7bcc60ce1681b3b30349df82df0a26d1f16a7f5f"
+    },
+    {
+      "file": "hard.1_tslice.ini.xml",
+      "original_validated_input_sha256": "0de3f58e32f3daec49f24b2d5efa50f021c2057dc079535662ea4a3b5a19acbe",
+      "current_input_sha256": "332cfe646b7cc591e41c2b090f039c2cfe5276d168e6be895de0344a28f2ab46",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "e4e9d695cca53300793eba841002c4825278e0509f8f2d4d12e8f89e45123dd8"
+    },
+    {
+      "file": "kpi_3pt.xml",
+      "original_validated_input_sha256": "a95ea148ffefe0f41cafdfdf911a9e14490ac600d74567e3ab9777ae22c036fa",
+      "current_input_sha256": "131c12badbe82250cd705bcf2d6959f263def07b0749dbe40e7a2671c2145ed6",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "397941cf189c3e23a24c8e60936bb6a7b47b37537e0779d55fc6a623e2d528b6"
+    },
+    {
+      "file": "nuc.p100.xml",
+      "original_validated_input_sha256": "e5054758aad26bcfc2554c2df3f1d7e46d8e5160e3e5f772407b43366a60e315",
+      "current_input_sha256": "7020cc98cd8dbde4edc7698059321b9b2060dd4918b68e990e803bc6d17ef992",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "d7482f49059b9865a2a3b6c90c6352bdec6fc81df877781355e288ecd4c76fa6"
+    },
+    {
+      "file": "nuc.xml",
+      "original_validated_input_sha256": "01b40050f59a3738c1101b1d263a1bfa8f4ad1071bc074bfc96316decf2726cd",
+      "current_input_sha256": "36fa13d0019416b4e573c49b6cbe82ae1b9b688d220560707110d0ec8588d58f",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "a760ab00b7a25d8300caecc5336a416d9bc2f4fd5ece883b2fd2e8cf669bdc14"
+    },
+    {
+      "file": "nuc_gA.xml",
+      "original_validated_input_sha256": "9578a477838af788ab3ef68d327a6e8045f729bc51acebf5f46341d063101d0a",
+      "current_input_sha256": "757189938b88e7bdf34aa97aa4c216421231b1f670a7d1e9fc1b9120cf93f3b8",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "12fa04351543678ae2b24b56080438d149f9aa51a2444cbbb8aecb5a6679661e"
+    },
+    {
+      "file": "nuc_nuc_3pt.xml",
+      "original_validated_input_sha256": "de034bcf78d9e099e6ad10b02541a981b1fbdfe211eff4f0254e18e02696e976",
+      "current_input_sha256": "ea6e2eec2dfec41178cf4dc2391ddaf0f307b952e22c5b924099dff49bde86b6",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "4320107921d7fdc1ff2a9ebfd545a40d534a1185b005faeec79931618f804695"
+    },
+    {
+      "file": "nuc_nuc_ax_3pt.xml",
+      "original_validated_input_sha256": "836df8cd867756a3ce9d3b60ea75459b3380aa98453ec4007b0c4a259e2f55ed",
+      "current_input_sha256": "d94f57e543b1985df8e1f62c83871408baff6eee83398f1435c240cec3e2be1c",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "55f83694fcb89539d20966a87e40f0b3bb5e0bdf6b7f7fa81e8772f6164ff00a"
+    },
+    {
+      "file": "nuc_nuc_proj_3pt.xml",
+      "original_validated_input_sha256": "94f26074a0575e0da588eea53cb1346dd659a659c1f7160004a62d8e92fd4eb9",
+      "current_input_sha256": "bc959c6ec7fd6b0f7077ce8aad2a2313a4dd3e1d90b7438bb88792c33e34465b",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "58f3df35f2e7b50bfb3a53a5833093049b15493366b5fff9bae3949285f8abf9"
+    },
+    {
+      "file": "nucnuc_small.xml",
+      "original_validated_input_sha256": "ef5e7749f683bcf1a26689191a50624472f0cb0e797d4d3795286f900e8b1e08",
+      "current_input_sha256": "38a1f5d0302d7e9d96bc1e0f4e5f2ba7f44358fc164c8fe0fd37686661a81671",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "63f5faefae293f6633d2c9cec72ea377be7243d1afde4c5e3f65aebb55ed3ea8"
+    },
+    {
+      "file": "nucpi.xml",
+      "original_validated_input_sha256": "d16ae5c0d1c569afb6540f2ab4589fd2b8f79cceea68d446a1e50214e3496192",
+      "current_input_sha256": "6da00356288304a83f63bc1de379f21d6884c7e4e4e9bd4a8d4548402b256a01",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "f2eaaa2feb5d7bea77b10710c5c5102ab0fa795497da96590f01d71a30b99fcc"
+    },
+    {
+      "file": "nucpi_I3o2.xml",
+      "original_validated_input_sha256": "46f53304a0f770dc31d9f1ff9cedf858b02c0d644124821dfeb5800db1da6c21",
+      "current_input_sha256": "d544320e591b9aedfed6fb6542d9a6e061f456b3988d54d8d41a03fa2d3e3c5d",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "1ae41ee68e242b01390b095191ef28a5b54f73335e903561d78964c20eb6fc2c"
+    },
+    {
+      "file": "nucpi_J1o2m.xml",
+      "original_validated_input_sha256": "68e08b1b67c6f04567e0e07b3e50f735cd8381aecf8c881169690b5d83f85b22",
+      "current_input_sha256": "cfb40a69efbb42bef37befd00b5306fe9eee37325a8a067951a043621d0833ac",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "a66bb0e2c08311c8fee484d8dd32c7c69026d7ef0abe0900ab969e2a4aecd948"
+    },
+    {
+      "file": "nucpi_nucpi_J1o2m.xml",
+      "original_validated_input_sha256": "4c506b8206276bc778fcb8a2d235e6f7a5f325f90688fe21c6d73358cbefe4e6",
+      "current_input_sha256": "c0d631b138d632401ac28a87add35a91a03c69216a19a1e8efdfdbb3c090417b",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "837748e2ca22195e84e43bb4d57192cab1d7cb0950a043d09c892ea0a298e613"
+    },
+    {
+      "file": "pi.xml",
+      "original_validated_input_sha256": "e939fd70d6821248061d41e1b75f8b99375e108b4556a86c1c69507163206dcc",
+      "current_input_sha256": "d3fba7d99b87dbf70d4869029d6481b734227bedf19de8bc263c5c97ee96c673",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "5797456246f995328b17064955019f96f8e825e4ea385481e1396146230a95ff"
+    },
+    {
+      "file": "pi_pi_3pt.xml",
+      "original_validated_input_sha256": "5de7e70d385808ecc74ed6792ce7cba8e9564e310503e9fe141f36423cc3ed0d",
+      "current_input_sha256": "7527bb9fa5b2f05207ee4b77000b17c9f95f6ad186c8d48aeb54626fa0e6d51b",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "cd8d86076273958620277d5a21fc196c70c0a3a32209d017a1040ec168ed377c"
+    },
+    {
+      "file": "pion.xml",
+      "original_validated_input_sha256": "f84b6c7e098309ca4087e2eb255a92ccd50319f01140679fcd350ee2f9b43314",
+      "current_input_sha256": "5481eedbc7b659657c68bb2e9efc17b41348dc6b8ee2b73393a97cc489f2fcb6",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "c53d7b052bb6b00b9b6b938f8c4c3dc63b681eeb1f2f5eaa89ec8b9c31268948"
+    },
+    {
+      "file": "pion_3pt.xml",
+      "original_validated_input_sha256": "3770e551c6ce56c63fcb51be4fd421fe65fcbdcb5ea9a290a20cec4b42d028cf",
+      "current_input_sha256": "8bef4b9099cc1086ffd81f1fc514a26303699949378443ef2033b957a56f57e3",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "4ed5a1b88ebb260eb3a6a972ad09957d5d6ef15b5ba52123f3534e73ea9d0c6a"
+    },
+    {
+      "file": "pion_DA.xml",
+      "original_validated_input_sha256": "664693876ff0bb2fd59be3144f0b476df77a2fe0b4da8a7c40a48a0ee53ada20",
+      "current_input_sha256": "38a3d87ad5dc734e459b65d411125613fdf82b09d342bcb3d031e0d4ffa0b859",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "8e7d5a4355e630719a24099a9eab1430580105a905fae081bbd53464dce77992"
+    },
+    {
+      "file": "pion_pdf_3pt.xml",
+      "original_validated_input_sha256": "6afb430fb9423702aa6d4c1eb3b6201c8a0b7b843c4aabb1a1837184f2599846",
+      "current_input_sha256": "f60cbfbca306b15893e6447c728f3aab2a7faafcbab2598465d66994ace04008",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "325f51ad0906a3102d6739e748883fc6ff5c07a760b54a85d6e562c966984ac7"
+    },
+    {
+      "file": "pipi_i1.xml",
+      "original_validated_input_sha256": "d7eb9b1332b1fb09361c355024842c9a12252ba93c5a7cc526d1251cd018cdfb",
+      "current_input_sha256": "822e99a2b13efe8d8070eafe458ad54a20730a7241f0c5e12dbd7cc8cbee5e8e",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "5a800854480ce5bfd2621dfcae2e66175a8c886e26651d2f3c4bec42314eaa8e"
+    },
+    {
+      "file": "psi.xml",
+      "original_validated_input_sha256": "878d1bb99b0190619a151abdf671327148d3f3e6e5b26cdd8c0b66322c562ca0",
+      "current_input_sha256": "3872cf6c4301f9ebc537bb7bf2d09de60c0174f4a39ffc79f9e6fbec4e04cfbe",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "8521a8938d324db64abf46b25214c3d98d2041088f58a8056e31a9a855b2896a"
+    },
+    {
+      "file": "rho.xml",
+      "original_validated_input_sha256": "c294a87645d08f450cb3b832977328a0e23e471f14d7613e473b718f0d75a4ae",
+      "current_input_sha256": "d588f51bf8fc26858c5ec7a1e76834b5d98be06024a2fe0d05370105275f628e",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "266ea3eef5febbda2e6a00250ca6f5c37552a3c87070c3a4f2cc614fb03f7651"
+    },
+    {
+      "file": "rho_rho_3pt.xml",
+      "original_validated_input_sha256": "93642655d4fed569fd47a20c1fab67765dc70ecc8fedcafbb06c42cae463a0d5",
+      "current_input_sha256": "84fc8c60dec48b7f1044fa481e52c0a8c3000eb3fdbea5089db99c21cbe5e4f0",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "98724702d8b0dfd49b1deb6a627b9a6f3e86f71e806b9dbddecaadca31ffd3b7"
+    },
+    {
+      "file": "tetra_F27_S2.xml",
+      "original_validated_input_sha256": "8c7becd7395c1b3ab7bf8ba3b00879e65412cb6129aa1aef4ee3bea2631d1609",
+      "current_input_sha256": "dc6cd216f02c6bf07a34e886064800a870325ca44fea102b834b532a33c6fa1e",
+      "database_paths_only": true,
+      "non_database_path_fields_sha256": "26f7e6151151669cadbb298fedfcc30fe3a204c968aab766be72af9959959e5f"
+    }
+  ],
+  "source_payloads_unchanged": true,
+  "no_sdb_symlinks_in_checkout": true,
+  "removed_sdb_symlinks": 72,
+  "unit_tests_passed": 28,
+  "fresh_numerical_checks": [
+    {
+      "file": "pipi_i1.xml",
+      "status": "passed",
+      "keys": 1,
+      "configurations": 1,
+      "time_samples": 16,
+      "finite_complex_values": 16,
+      "relative_regular_database_paths": true,
+      "no_run_sdb_links": true,
+      "historical_value_comparison": {
+        "exported_keys": 1,
+        "compared_scalar_values": 48,
+        "max_absolute_difference": 0.0
+      },
+      "local_evidence": "runs/validation-20261028-220709-5vllj6cg/results.json"
+    },
+    {
+      "file": "pion_3pt.xml",
+      "status": "passed",
+      "keys": 1,
+      "configurations": 1,
+      "time_samples": 7,
+      "finite_complex_values": 7,
+      "relative_regular_database_paths": true,
+      "no_run_sdb_links": true,
+      "historical_value_comparison": {
+        "exported_keys": 1,
+        "compared_scalar_values": 21,
+        "max_absolute_difference": 0.0
+      },
+      "local_evidence": "runs/validation-20261028-220709-5vllj6cg/results.json"
+    }
+  ],
+  "redstar_compact_checks": {
+    "rho_rho": {
+      "status": "passed",
+      "results": {
+        "correlators": 83,
+        "assembled": 83,
+        "database_bytes": 34084,
+        "database_sha256": "0ca615a7247a28cabaf6d4195e54d8cf6f4640f45c94eb5cedb6c6007bd758c5",
+        "graphs": 166,
+        "unevaluatable_graphs": 0,
+        "configuration_count": 1,
+        "time_samples": 7,
+        "extracted_operators": 5
+      },
+      "readback": {
+        "keys": 83,
+        "finite_complex_values": 581,
+        "configurations": 1,
+        "time_samples": 7
+      },
+      "relative_regular_database_paths": true,
+      "comparison_with_previous_absolute_path_run": {
+        "exported_keys": 83,
+        "compared_scalar_values": 1743,
+        "max_absolute_difference": 0.0
+      },
+      "local_run": "runs/rho_rho-relative-data-zs0t1xzt"
+    },
+    "a0_omega": {
+      "status": "passed",
+      "results": {
+        "correlators": 16,
+        "assembled": 16,
+        "database_bytes": 10812,
+        "database_sha256": "8f069d2110cba5f0502cb4846dc3458db153ded09df80594e8476c22d6faa48a",
+        "graphs": 50,
+        "unevaluatable_graphs": 0,
+        "configuration_count": 1,
+        "time_samples": 7,
+        "extracted_operators": 12
+      },
+      "readback": {
+        "keys": 16,
+        "finite_complex_values": 112,
+        "configurations": 1,
+        "time_samples": 7
+      },
+      "relative_regular_database_paths": true,
+      "comparison_with_previous_absolute_path_run": {
+        "exported_keys": 16,
+        "compared_scalar_values": 336,
+        "max_absolute_difference": 0.0
+      },
+      "local_run": "runs/a0_omega-relative-data-6ju0oqwf"
+    }
+  },
+  "generic_helper": {
+    "status": "passed",
+    "run": "/var/folders/c_/np8922095jlbl6gqqzr2g9kw0000gq/T/kanoni prepared p4895r6q",
+    "keys": 1,
+    "relative_database_paths": true,
+    "existing_output_protected": true
+  },
+  "historical_validation_note": "validation-reference.json retains original tested hashes and full-sweep outcomes. This record proves path-only edits and reports fresh selected checks; a1 and missing-data cases were not rerun."
+}

@@ -204,7 +204,8 @@ def main():
                     group.remove(entry);changes.append('remove empty database-list placeholder '+group.tag)
         for entry in r.findall('ColorVec/DBFiles/*/elem'):
             old=(entry.text or '').strip()
-            if old and '/' in old:entry.text=Path(old).name;changes.append('portable database filename '+old)
+            new='../data/'+Path(old).name if old else ''
+            if new and old!=new:entry.text=new;changes.append('relative database filename '+old+' -> '+new)
         if r.findtext('Param/version')!='14' or r.find('NPointList') is None:raise RuntimeError('Invalid v14 structure: '+str(path))
         if r.findall('.//mom_type'):raise RuntimeError('Unconverted legacy momentum field: '+str(path))
         # Diagnostics are a run-time choice; preserve the tracked value here.

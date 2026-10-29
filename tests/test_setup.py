@@ -23,29 +23,32 @@ class SetupTests(unittest.TestCase):
         for name in ('setup-data','run_colorvec.csh','run_redstar.csh'): shutil.copy2(str(BASE/name),str(self.repo/name))
         (self.repo/'test_inputs').mkdir()
         self.source=self.home/'original'; self.source.mkdir()
-        self.cache=self.home/'shared'
+        self.data=self.repo/'data'
         contents=b'real database contents\x00\xff'
         (self.source/'meson.sdb').write_bytes(contents)
         entry=dict(name='meson.sdb',bytes=len(contents),sha256=hashlib.sha256(contents).hexdigest())
         (self.repo/'test_inputs/data-manifest.json').write_text(json.dumps(dict(files=[entry])))
-        self.env=dict(os.environ,KANONI_DATA_DIR=str(self.cache))
+        self.env=dict(os.environ);self.env.pop('KANONI_DATA_DIR',None)
     def setup(self,*args):
         return subprocess.run([str(self.repo/'setup-data'),'--source-dir',str(self.source),*args],env=self.env,text=True,capture_output=True)
-    def test_adopt_and_repeat(self):
-        result=self.setup('--adopt'); self.assertEqual(result.returncode,0,result.stderr)
-        self.assertTrue((self.source/'meson.sdb').is_symlink())
-        self.assertEqual((self.source/'meson.sdb').resolve(),(self.cache/'meson.sdb').resolve())
-        self.assertEqual(self.setup('--adopt').returncode,0)
-        self.assertEqual((self.cache/'meson.sdb').stat().st_mode & 0o222,0)
+    def test_copy_regular_files_and_repeat(self):
+        result=self.setup();self.assertEqual(result.returncode,0,result.stderr)
+        self.assertFalse(self.source.joinpath('meson.sdb').is_symlink())
+        self.assertFalse(self.data.is_symlink())
+        self.assertFalse(self.data.joinpath('meson.sdb').is_symlink())
+        self.assertEqual((self.source/'meson.sdb').read_bytes(),(self.data/'meson.sdb').read_bytes())
+        self.assertFalse((self.repo/'test_inputs/data').exists())
+        self.assertEqual(self.setup().returncode,0)
+        self.assertEqual((self.data/'meson.sdb').stat().st_mode & 0o222,0)
     def test_corrupt_source_preserved(self):
         (self.source/'meson.sdb').write_bytes(b'wrong')
-        self.assertNotEqual(self.setup('--adopt').returncode,0)
+        self.assertNotEqual(self.setup().returncode,0)
         self.assertEqual((self.source/'meson.sdb').read_bytes(),b'wrong')
-        self.assertFalse(self.cache.exists())
-    def test_corrupt_cache_preserved(self):
-        self.cache.mkdir();(self.cache/'meson.sdb').write_bytes(b'wrong')
-        self.assertNotEqual(self.setup('--adopt').returncode,0)
-        self.assertEqual((self.cache/'meson.sdb').read_bytes(),b'wrong')
+        self.assertFalse(self.data.exists())
+    def test_corrupt_destination_preserved(self):
+        self.data.mkdir();(self.data/'meson.sdb').write_bytes(b'wrong')
+        self.assertNotEqual(self.setup().returncode,0)
+        self.assertEqual((self.data/'meson.sdb').read_bytes(),b'wrong')
         self.assertFalse((self.source/'meson.sdb').is_symlink())
     def download_module(self):
         spec=importlib.util.spec_from_file_location('setup_data_under_test', self.repo/'scripts/setup_data.py')
@@ -62,7 +65,7 @@ class SetupTests(unittest.TestCase):
         with mock.patch.dict(os.environ,self.env), mock.patch.object(sys,'argv',['setup-data','--source-dir',str(self.source)]), mock.patch.object(module.urllib.request,'urlopen',return_value=io.BytesIO(contents)) as fetch:
             module.main()
             fetch.assert_called_once_with('https://example.invalid/releases/v1/meson.sdb',timeout=120)
-        self.assertEqual((self.cache/'meson.sdb').read_bytes(),contents)
+        self.assertEqual((self.data/'meson.sdb').read_bytes(),contents)
     def test_transient_download_failure_retried(self):
         module=self.download_module()
         failure=urllib.error.URLError('temporary interruption')
@@ -99,17 +102,29 @@ class SetupTests(unittest.TestCase):
         module=self.download_module()
         with mock.patch.dict(os.environ,self.env), mock.patch.object(sys,'argv',['setup-data','--source-dir',str(self.source),'--base-url','https://example.invalid/v1']), mock.patch.object(module.urllib.request,'urlopen',return_value=io.BytesIO(b'wrong')):
             with self.assertRaises(RuntimeError):module.main()
-        self.assertFalse((self.cache/'meson.sdb').exists())
-        self.assertEqual(list(self.cache.iterdir()),[])
+        self.assertFalse((self.data/'meson.sdb').exists())
+        self.assertEqual(list(self.data.iterdir()),[])
+    def binaries(self):
+        folder=self.home/'binary path';folder.mkdir()
+        script=('#!'+sys.executable+'\n'
+                'import pathlib,sys,xml.etree.ElementTree as E\n'
+                'root=E.parse(sys.argv[1])\n'
+                'for e in root.findall("ColorVec/DBFiles/*/elem"):\n'
+                ' p=pathlib.Path(e.text);assert not p.is_absolute()\n'
+                ' assert p.is_file() and not p.is_symlink()\n'
+                'assert not list(pathlib.Path.cwd().glob("*.sdb"))\n'
+                'pathlib.Path(sys.argv[2]).write_text("generated")\n'
+                'pathlib.Path("corr_graph.bin").write_text("graph")\n'
+                'pathlib.Path("output.npt.sdb1").write_text("result")\n')
+        for name in ('redstar_corr_graph','redstar_npt'):
+            p=folder/name;p.write_text(script);p.chmod(0o755)
+        return folder
+
     def test_runner_isolates_outputs(self):
-        self.assertEqual(self.setup('--adopt').returncode,0)
+        self.assertEqual(self.setup().returncode,0)
         input_xml = '<RedstarNPt><Param><version>14</version><diagnostic_level>20</diagnostic_level></Param><NPointList><elem/></NPointList><DBFiles/><ColorVec><DBFiles><prop_dbs><elem>meson.sdb</elem></prop_dbs></DBFiles></ColorVec></RedstarNPt>'
         (self.repo/'test_inputs/pion.xml').write_text(input_xml)
-        binaries=self.home/'binary path';binaries.mkdir()
-        for name in ('redstar_corr_graph','redstar_npt'):
-            p=binaries/name
-            p.write_text('#!/bin/sh\n[ -f meson.sdb ] || exit 3\nprintf generated > "$2"\nprintf graph > corr_graph.bin\nprintf result > output.npt.sdb1\n')
-            p.chmod(0o755)
+        binaries=self.binaries()
         env=dict(self.env,REDSTAR_BIN=str(binaries))
         for cwd,source in [(self.repo,'test_inputs/pion.xml'),(self.home,str(self.repo/'test_inputs/pion.xml'))]:
             result=subprocess.run([str(self.repo/'run_colorvec.csh'),source],cwd=str(cwd),env=env,text=True,capture_output=True)
@@ -125,10 +140,12 @@ class SetupTests(unittest.TestCase):
             self.assertFalse(record['numerical_readback_validated'])
             import xml.etree.ElementTree as ET
             prepared=ET.parse(run/'input.xml')
-            self.assertEqual(prepared.findtext('ColorVec/DBFiles/prop_dbs/elem'),str(self.cache/'meson.sdb'))
+            relative=prepared.findtext('ColorVec/DBFiles/prop_dbs/elem')
+            self.assertFalse(Path(relative).is_absolute())
+            self.assertEqual((run/relative).resolve(),(self.data/'meson.sdb').resolve())
             self.assertEqual(prepared.findtext('Param/diagnostic_level'),'0')
-            (run/'meson.sdb').unlink()
-        self.assertTrue((self.cache/'meson.sdb').is_file())
+            self.assertFalse(list(run.glob('*.sdb')))
+        self.assertTrue((self.data/'meson.sdb').is_file())
         self.assertEqual((self.repo/'test_inputs/pion.xml').read_text(),input_xml)
         self.assertFalse((self.repo/'out.xml').exists())
 
@@ -142,14 +159,12 @@ class SetupTests(unittest.TestCase):
     def test_runner_explicit_data_home_overrides_environment(self):
         self.assertEqual(self.setup().returncode,0)
         (self.repo/'test_inputs/pion.xml').write_text('<RedstarNPt><Param><version>14</version><diagnostic_level>0</diagnostic_level></Param><NPointList><elem/></NPointList><DBFiles/><ColorVec><DBFiles><prop_dbs><elem>meson.sdb</elem></prop_dbs></DBFiles></ColorVec></RedstarNPt>')
-        binaries=self.home/'tools';binaries.mkdir()
-        for name in ('redstar_corr_graph','redstar_npt'):
-            p=binaries/name;p.write_text('#!/bin/sh\nprintf report > "$2"\nprintf graph > corr_graph.bin\nprintf result > output.npt.sdb1\n');p.chmod(0o755)
+        binaries=self.binaries()
         env=dict(self.env,REDSTAR_BIN=str(binaries),KANONI_DATA_DIR=str(self.home/'does not exist'))
-        result=subprocess.run([str(self.repo/'run_redstar.csh'),str(self.repo/'test_inputs/pion.xml'),'--database-dir',str(self.cache),'--threads','2'],env=env,cwd=self.home,text=True,capture_output=True)
+        result=subprocess.run([str(self.repo/'run_redstar.csh'),str(self.repo/'test_inputs/pion.xml'),'--database-dir',str(self.data),'--threads','2'],env=env,cwd=self.home,text=True,capture_output=True)
         self.assertEqual(result.returncode,0,result.stderr)
         record=json.loads(next((self.repo/'runs').glob('*/run.json')).read_text())
-        self.assertEqual(record['data_home'],str(self.cache))
+        self.assertEqual(record['data_home'],str(self.data.resolve()))
         self.assertEqual(record['threads'],2)
 
     def test_runner_requires_explicit_input_path(self):
@@ -166,5 +181,48 @@ class SetupTests(unittest.TestCase):
         for source in inputs:
             self.assertFalse(source.is_symlink(),str(source))
             self.assertFalse((BASE/source.name).is_symlink(),source.name)
+
+    def test_setup_rejects_symlink_destination_directory(self):
+        actual=self.home/'actual';actual.mkdir();self.data.symlink_to(actual,target_is_directory=True)
+        result=self.setup();self.assertNotEqual(result.returncode,0)
+        self.assertIn('real directory',result.stderr)
+        self.assertFalse(list(actual.iterdir()))
+
+    def test_setup_rejects_symlink_database(self):
+        self.data.mkdir();(self.data/'meson.sdb').symlink_to(self.source/'meson.sdb')
+        result=self.setup();self.assertNotEqual(result.returncode,0)
+        self.assertIn('symlink',result.stderr)
+        self.assertTrue((self.source/'meson.sdb').is_file())
+
+    def test_setup_explicit_destination_creates_no_alias(self):
+        alternate=self.home/'alternate data'
+        result=self.setup('--data-dir',str(alternate));self.assertEqual(result.returncode,0,result.stderr)
+        self.assertTrue((alternate/'meson.sdb').is_file());self.assertFalse((alternate/'meson.sdb').is_symlink())
+        self.assertFalse(self.data.exists());self.assertFalse((self.repo/'test_inputs/data').exists())
+
+    def test_runner_rejects_symlink_database(self):
+        self.data.mkdir();(self.data/'meson.sdb').symlink_to(self.source/'meson.sdb')
+        (self.repo/'test_inputs/pion.xml').write_text('<RedstarNPt><Param><version>14</version></Param><NPointList><elem/></NPointList><DBFiles/><ColorVec><DBFiles><prop_dbs><elem>../data/meson.sdb</elem></prop_dbs></DBFiles></ColorVec></RedstarNPt>')
+        env=dict(self.env,REDSTAR_BIN=str(self.binaries()))
+        result=subprocess.run([str(self.repo/'run_colorvec.csh'),'test_inputs/pion.xml'],cwd=self.repo,env=env,text=True,capture_output=True)
+        self.assertNotEqual(result.returncode,0);self.assertIn('regular file',result.stderr)
+        self.assertFalse((self.repo/'runs').exists())
+
+    def test_setup_retires_verified_legacy_aliases(self):
+        (self.repo/'test_inputs/data').symlink_to(self.source,target_is_directory=True)
+        (self.repo/'meson.sdb').symlink_to(self.source/'meson.sdb')
+        result=self.setup();self.assertEqual(result.returncode,0,result.stderr)
+        self.assertFalse((self.repo/'test_inputs/data').is_symlink())
+        self.assertFalse((self.repo/'meson.sdb').is_symlink())
+        self.assertTrue((self.source/'meson.sdb').is_file())
+        self.assertTrue((self.data/'meson.sdb').is_file())
+
+    def test_setup_preserves_different_legacy_alias(self):
+        other=self.home/'other.sdb';other.write_bytes(b'other private data')
+        (self.repo/'meson.sdb').symlink_to(other)
+        result=self.setup();self.assertNotEqual(result.returncode,0)
+        self.assertIn('different data',result.stderr)
+        self.assertTrue((self.repo/'meson.sdb').is_symlink())
+        self.assertEqual(other.read_bytes(),b'other private data')
 
 if __name__=='__main__':unittest.main()
