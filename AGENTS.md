@@ -3,10 +3,25 @@
 ## Scope and repository state
 
 - This public repository distributes Redstar example inputs and a checksum-pinned
-  dataset. Read README.md and test_inputs/data-manifest.json first.
+  dataset. Read README.md, docs/redstar-primer.md, docs/regressions.md and
+  test_inputs/data-manifest.json first.
 - Inspect the branch, working tree and index before editing. Preserve deliberately
   staged changes, operator inventories and deletions; do not reset or bulk-commit
   unrelated work. The current working branch is devel.
+
+## Baseline, documentation and experimental work
+
+- Devel is the regression baseline. Keep no_1pt explicitly experimental, with
+  separate matching graph generators, evaluators and output directories. The
+  validated chains use binary formats 3 and 4 respectively; XML version 14 is a
+  separate input-schema version. Never exchange incompatible graph binaries.
+- docs/ is the canonical shared Redstar/Chroma documentation home. Start with
+  docs/redstar-primer.md for continuum operators through corr_graph, NPT and
+  CORR_SUPERB; docs/development-summary.md records cross-repository changes.
+  Keep docs/README.md and the root README linked when adding or moving guides.
+- Use docs/regressions.md and docs/regression-policy.json for current coverage
+  and explicit deferrals. Keep historical failures and superseded results labelled
+  as such; do not leave resolved work described as pending in current guidance.
 
 ## Dataset and paths
 
@@ -29,6 +44,26 @@
   run directories out of Git. Small numerical inputs and operator weights belong
   in test_inputs; actual SDB payloads belong in Git-ignored data/. Source databases
   are read-only.
+
+## Native-double dataset and paired comparisons
+
+- The RsdCG=1e-14 native-double candidate and its manifest are separate from the
+  immutable public kanoni-v1 release. setup-data does not distribute this as a new
+  public release. Preserve the original dataset and archived generation inputs.
+- Native recipes live in chroma_inputs/superb-double/. Use MOD64 color vectors,
+  one propagator/GenProp tensor file per mass, and the recorded gauge/RNG and
+  smearing conventions. The meson recipe has mom2_min=0, mom2_max=4 and an empty
+  mom_list. Consult chroma_inputs/README.md before regenerating data.
+- scripts/compare_regression_chains.py compares matched stored tensors, recording
+  manifest/tool hashes, exact key/time coverage and complete finite readback.
+  Copy the NPT case's vector count, time origin and physics flags to Chroma;
+  pion_3pt intentionally uses two vectors, not the usual ten.
+- The cached-tensor suite performs zero CG solves. It does not validate the full
+  on-demand GenProp path. Retain the corrected pre-YLM numerical-build
+  qualification; do not claim clean latest-YLM, MPI or GPU validation from it.
+- Retain user-directed deferrals for glue/tetra CORR, gluonic-insertion CORR,
+  ff_3pt and nuc_nuc_3pt disconnected-loop work. Their exact NPT/CORR scopes are
+  in the policy; separate NPT-only passes do not establish CORR support.
 
 ## XML schemas and physics
 
@@ -66,6 +101,9 @@
   Report zero-valued channels, unevaluatable graphs and fake-data mode explicitly.
   The eta_eta input is a separately declared isospin-zero control; require exactly
   zero graphs/values and its expected key count. It is not a positive channel.
+- Keep the matched per-value numerical gate unchanged: relative tolerance 1e-9
+  plus 1e-12 times max(reference_global_max,1e-30). The relative-only dbutil
+  diagnostic is retained separately; it is not a replacement acceptance gate.
 - Do not weaken checks, invent missing weights/data, or discard failing channels.
   Explain exact missing input/schema/physics issues and keep failed-run evidence.
 - Single-configuration runs are software validation, not fitted physical masses

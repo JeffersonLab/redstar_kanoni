@@ -72,7 +72,7 @@ The original 12³×16 Nπ run also passed both chains with ten vectors and seven
 
 `scripts/compare_regression_chains.py --help` lists explicit executable, dataset and output paths. It verifies the dataset manifest, records executable hashes and the supplied build qualification, preserves user deferrals, copies each NPT case's vector count to Chroma, and runs stored-tensor comparisons. Use `--cases` for a targeted check and `--npt-only` for separate NPT coverage; omitted case selection runs the full inventory. A fresh real-tool pion smoke test passed both chains in runs/portable-chain-smoke-20261101-001.
 
-Generated tensors, logs, binaries and run directories stay outside Git. Historical exclusions remain in ../regressions/tests.toml. Source and workflow commits record this validation; generated payloads remain separate from source publication. A Redstar primer is planned after the code and workflows are settled.
+Generated tensors, logs, binaries and run directories stay outside Git. Historical exclusions remain in ../regressions/tests.toml. Source and workflow commits record this validation; generated payloads remain separate from source publication. The [Redstar primer](redstar-primer.md) introduces the complete validated workflow.
 
 ## Validated source commits
 
