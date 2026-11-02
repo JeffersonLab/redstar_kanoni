@@ -72,4 +72,13 @@ The original 12³×16 Nπ run also passed both chains with ten vectors and seven
 
 `scripts/compare_regression_chains.py --help` lists explicit executable, dataset and output paths. It verifies the dataset manifest, records executable hashes and the supplied build qualification, preserves user deferrals, copies each NPT case's vector count to Chroma, and runs stored-tensor comparisons. Use `--cases` for a targeted check and `--npt-only` for separate NPT coverage; omitted case selection runs the full inventory. A fresh real-tool pion smoke test passed both chains in runs/portable-chain-smoke-20261101-001.
 
-Generated tensors, logs, binaries and run directories stay outside Git. Historical exclusions remain in ../regressions/tests.toml. Relevant source commits and publication follow final source review; this document does not claim publication has occurred. A Redstar primer is planned after the code and workflows are settled.
+Generated tensors, logs, binaries and run directories stay outside Git. Historical exclusions remain in ../regressions/tests.toml. Source and workflow commits record this validation; generated payloads remain separate from source publication. A Redstar primer is planned after the code and workflows are settled.
+
+## Validated source commits
+
+- ADAT native readers: [devel](https://github.com/JeffersonLab/adat/commit/41ad4df8806484bf745944f48f9c76a1b9251db5), [experimental no_1pt](https://github.com/JeffersonLab/adat/commit/96aec2b1ec681e0e15d1e8c98b1d525154e2f11d).
+- ColorVec native consumers: [devel](https://github.com/JeffersonLab/colorvec/commit/8ee8bd31c11f053c77e80275aeb6505d6db38c46).
+- Chroma native MOD readers and storage producers: [devel](https://github.com/JeffersonLab/chroma/commit/8da1a2b7682f7b7bf3e370ddea2ce1deef521d35), [experimental readers](https://github.com/JeffersonLab/chroma/commit/acf5dc0680084bac9e6abe38008e01ec35df7400).
+- Redstar experimental one-point output extent: [no_1pt](https://github.com/JeffersonLab/redstar/commit/45898bd24ab7585d4507df66415326d18b424ec3).
+
+The native-data payloads are not a new public data release. no_1pt stays experimental; the corrected pre-YLM numerical build qualification above still applies.

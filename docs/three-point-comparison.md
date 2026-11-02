@@ -1,5 +1,7 @@
 # Three-point NPT / CORR_SUPERB comparison investigation
 
+The mismatches documented below are resolved; see the final full-sweep section. Earlier failed attempts remain historical evidence.
+
 The baseline remains **devel**; **no_1pt is experimental**. No numerical tolerance was relaxed. Historical failed runs and the original dataset are retained.
 
 ## Confirmed causes
@@ -29,12 +31,12 @@ The numerical executable is an incremental corrected pre-YLM Chroma snapshot, no
 
 Both chains pass pi_pi_3pt (max 2.9326576526939265e-16), matching-rank pion_3pt (3.0184188481996443e-16), and eta8eta8_F8 (1.4202500883305642e-15). The full rho_rho_3pt case still fails all 189 strict per-value checks: devel max 8.424917742158808e-9; experimental max 1.1006625952225617e-5. Tighter solves therefore do not resolve the rho residual.
 
-The first decomposition did not produce a nontrivial fully smeared control: all 84,882 diagrams contain the insertion, and the fully smeared subset has zero diagrams. Its zero outputs are not a positive regression result. Rewriting the equivalent insertion graph leaves NPT values unchanged to 5.56e-17 but changes CORR_SUPERB values by up to 1.7934133330524974e-5. This points to an ordering-dependent CORR_SUPERB issue; the precise cause is not yet established. Fresh one-diagram and one-correlator diagnostics are tracked under runs/rho-threepoint-selected-probe-20261101-001.
+The first decomposition did not produce a nontrivial fully smeared control: all 84,882 diagrams contain the insertion, and the fully smeared subset has zero diagrams. Its zero outputs are not a positive regression result. Rewriting the equivalent insertion graph leaves NPT values unchanged to 5.56e-17 but changes CORR_SUPERB values by up to 1.7934133330524974e-5. This points to an ordering-dependent CORR_SUPERB issue; the cause was not yet established at that stage; subsequent bisection located the diagonal-GenProp bug described below. Fresh one-diagram and one-correlator diagnostics are tracked under runs/rho-threepoint-selected-probe-20261101-001.
 
 ## Diagonal GenProp correction validated
 
-The remaining rho discrepancy was localized to a product containing an insertion with equal GenProp source and sink times. These diagonal tensors retain every insertion time; treating them as a zero-length interval discarded valid values. Both callbacks now exempt equal endpoints from interval clipping. Full rho_rho_3pt comparisons on the RsdCG=1e-14 dataset pass all 189 values on both chains: devel maximum difference 6.084010900123129e-16; experimental no_1pt 6.271086192402129e-16. Earlier failures remain saved. The full matched sweep with these v11 executables is tracked in runs/native-comparison-matrix-20261101-004/results.json; commits await that sweep and remaining source checks.
+The remaining rho discrepancy was localized to a product containing an insertion with equal GenProp source and sink times. These diagonal tensors retain every insertion time; treating them as a zero-length interval discarded valid values. Both callbacks now exempt equal endpoints from interval clipping. Full rho_rho_3pt comparisons on the RsdCG=1e-14 dataset pass all 189 values on both chains: devel maximum difference 6.084010900123129e-16; experimental no_1pt 6.271086192402129e-16. Earlier failures remain saved. The full matched sweep with these v11 executables is tracked in runs/native-comparison-matrix-20261101-004/results.json; that sweep subsequently passed and source checks completed.
 
 ## Final full sweep
 
-Matrix 004 passed all 58 active case/chain pairs (29 cases on each chain), with 10 explicit case/chain deferrals. Independent audit verified expected key/time coverage, 8,380 finite compared values, zero strict failures, executable hashes, and zero CG solves. Timing details are in [regression-timings.md](regression-timings.md). Final source review and commit preparation follow; no claim of publication is made here.
+Matrix 004 passed all 58 active case/chain pairs (29 cases on each chain), with 10 explicit case/chain deferrals. Independent audit verified expected key/time coverage, 8,380 finite compared values, zero strict failures, executable hashes, and zero CG solves. Timing details are in [regression-timings.md](regression-timings.md). The changes are committed, and all 55 workflow tests passed with no skips.

@@ -2,7 +2,7 @@
 
 Updated 1 November 2026 from repository documentation, saved validation records and current local runs.
 
-Canonical home: redstar_kanoni `devel`, `docs/development-summary.md`. Local changes and current candidate results are not yet published.
+Canonical home: redstar_kanoni `devel`, `docs/development-summary.md`. Devel is the regression baseline; no_1pt remains experimental.
 
 The main achievement is a documented, reproducible route from continuum operators through contraction graphs and numerical correlator databases to matrix-element fits. The regression baseline is the **devel chain**, with the fitting repositories on their established main/master branches. The experimental `no_1pt` work and the proposed all-YLM vertex migration are separate from that baseline.
 
@@ -26,7 +26,7 @@ Five CORR cases per chain are explicitly deferred, including the user-deferred
 nuc_nuc_3pt loop work; these remain visible in [coverage](regressions.md).
 The original 12³×16 Nπ comparison also passed all 81+729 keys and 5,670 values,
 with maximum experimental/devel difference 1.11e-16. No tolerances were weakened.
-Source review and publication follow; local validated changes are not yet pushed.
+The validated changes are committed; [regression coverage](regressions.md) records their scope and build qualification.
 
 ## New native-double 4³×16 dataset and storage work
 
@@ -72,7 +72,7 @@ Branch names alone do not remove that validation qualification.
 See the [input recipes and dataset rebuild notes](../chroma_inputs/README.md),
 [glue schema](https://github.com/JeffersonLab/chroma/blob/devel/docs/glue-superb.md)
 and [tetraquark schema](https://github.com/JeffersonLab/chroma/blob/devel/docs/tetraquark-superb.md).
-The new schema documents are currently local changes awaiting publication.
+The schema guides describe the validated native formats; glue/tetraquark CORR_SUPERB implementation remains deferred.
 
 ## 2. Planned YLM integration: a separate forthcoming breaking change
 
