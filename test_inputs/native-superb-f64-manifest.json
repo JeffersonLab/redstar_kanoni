@@ -1,0 +1,111 @@
+{
+  "dataset": "kanoni-superb-f64-rsd14-sphere4-validated-local",
+  "precision_bits": 64,
+  "RsdCG": 1e-14,
+  "public_release": false,
+  "source_manifest_sha256": "01f7b0f2f9ff8d2863a97e82aa80046110963af5fff595a64bb6a1030098cc19",
+  "validation": {
+    "matched_cases_per_chain": 29,
+    "finite_compared_values": 8380,
+    "experimental_no_1pt": true,
+    "build_qualification": "incremental corrected pre-YLM executables; not clean latest-YLM builds"
+  },
+  "legacy_exceptions": [
+    "gpdf_2_0.00.sdb"
+  ],
+  "files": [
+    {
+      "name": "colorvec.mod",
+      "bytes": 500347,
+      "sha256": "5aadbfe5573a70a0abaad4ba868085e8246dc7ff3c3080820970fd426e43b2ce"
+    },
+    {
+      "name": "colorvec.lime",
+      "bytes": 505816,
+      "sha256": "c823948ed0bd68b2c9ddc2cb39dcafe6f88140b29e6538e74210bd2b4add9923"
+    },
+    {
+      "name": "prop-U0.05.sbt",
+      "bytes": 6564816,
+      "sha256": "312493548ae5c93bb954f2b580cb6c5ff39f377d390e602f1a7dc87c27898c6c",
+      "producer_precision_bits": 64,
+      "id": "propElemOp",
+      "storage": "SUPERB"
+    },
+    {
+      "name": "prop-U0.1.sbt",
+      "bytes": 6564816,
+      "sha256": "cd241ee7740816ae74d6e397c4798973db17ff597f3d58ae5c6f8759d5c8957d",
+      "producer_precision_bits": 64,
+      "id": "propElemOp",
+      "storage": "SUPERB"
+    },
+    {
+      "name": "prop-U0.2.sbt",
+      "bytes": 6564816,
+      "sha256": "ed2db91bf252a6f420001389eefa4cb9224b288f8cc56e610a09bf52020dee93",
+      "producer_precision_bits": 64,
+      "id": "propElemOp",
+      "storage": "SUPERB"
+    },
+    {
+      "name": "meson.sbt",
+      "bytes": 110407056,
+      "sha256": "96a546300769e06eb15d0d7bfab95855ef9eacde4755ba56038699ac689eacb6",
+      "producer_precision_bits": 64,
+      "id": "mesonElemOp",
+      "storage": "SUPERB",
+      "generation_report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/expand-native-momenta-20261101-001/run.json"
+    },
+    {
+      "name": "baryon.sbt",
+      "bytes": 153288368,
+      "sha256": "a9e3c0f390fa000911f8aa5ba6d6ed12a28d3e133e29963e6524ad0ac7d74b26",
+      "producer_precision_bits": 64,
+      "id": "baryonElemOpSuperb",
+      "storage": "SUPERB",
+      "generation_report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/expand-native-momenta-20261101-001/run.json"
+    },
+    {
+      "name": "tetra.sbt",
+      "bytes": 5125232,
+      "sha256": "542b6be0d70e9de8c0c1e4c415e5a4e384169f810e52b2a14d68d7f0a60e243d",
+      "producer_precision_bits": 64,
+      "id": "tetraQuarkElemOp",
+      "storage": "SUPERB"
+    },
+    {
+      "name": "genprop-U0.05.sbt",
+      "bytes": 157288704,
+      "sha256": "ba6ac2f77f8ff1bea76079e52f94c435b4c9f248449a99a6ce5c15bc4f0a3eca",
+      "producer_precision_bits": 64,
+      "id": "genprop5ElemOp",
+      "storage": "SUPERB"
+    },
+    {
+      "name": "genprop-U0.1.sbt",
+      "bytes": 157288704,
+      "sha256": "40774ca534ecdd5f9b0fe02f4ca0a2c47881effcc31b72f2e020e8f5e9100f15",
+      "producer_precision_bits": 64,
+      "id": "genprop5ElemOp",
+      "storage": "SUPERB"
+    },
+    {
+      "name": "glue.sbt",
+      "bytes": 20266656,
+      "sha256": "cb6d2b9bbc78746b061dbfe238aa3cfc7497e55db20975215ad68e8e504a87cc",
+      "producer_precision_bits": 64,
+      "id": "glueElemOp",
+      "storage": "SUPERB",
+      "generation_report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/glue-superb-f64-20261101-001/run.json"
+    },
+    {
+      "name": "gpdf_2_0.00.sdb",
+      "bytes": 5439488,
+      "sha256": "b77de36071c90aaf33f780502376717a3f71f13d08dbb111fc5ea16fc8b3a369",
+      "storage": "legacy-SDB",
+      "freshly_generated": false,
+      "reason": "User explicitly retained legacy gpdf; generator unavailable"
+    }
+  ]
+}

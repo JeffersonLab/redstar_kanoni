@@ -218,3 +218,101 @@ tracked input physics settings remain intact. Fake-data runs and zero channels
 are reported explicitly. A failed or incomplete case is not a passing regression.
 
 See AGENTS.md for source/dataset conventions and reference-work hygiene.
+
+## Numerical regressions
+
+`regressions/tools.toml` selects executable paths independently of the test list.
+Copy `regressions/tools.example.toml` to that local, Git-ignored file and edit the
+paths to your matching Redstar/ADAT build. Both `build/src` and installed tools
+are supported; `executables.redstar_bin` switches all four Redstar tools at once,
+and individual executable paths can override it. CLI/environment overrides in
+the underlying validator remain available. Use Python 3.11+ for TOML, or install
+`tomli` for Python 3.9/3.10. Ordinary runs without TOML still support Python 3.9.
+
+```sh
+# Run every established test in the default regressions/tests.toml:
+python3 scripts/run_regressions.py
+# Run a different list or just one explicit XML path:
+python3 scripts/run_regressions.py --list /path/to/tests.toml --tools /path/to/tools.toml
+python3 scripts/run_regressions.py test_inputs/pipi_i1.xml
+# The ordinary development runner uses the same executable configuration:
+./run_colorvec.csh --tools regressions/tools.toml test_inputs/pipi_i1.xml
+```
+
+List filenames resolve inside this checkout's `test_inputs`; command-line XML
+paths resolve from the caller's working directory. Custom test lists can be as
+simple as:
+
+```toml
+schema_version = 1
+tests = ["pion.xml", "fred.george.xml"]
+```
+
+The established list uses `[[tests]]` entries with `xml`, baseline `sha256`, and
+`kind` (`passed`, `passed_fake_data` or `passed_symmetry_zero`). Explicit
+`[[excluded]]` entries record failures without adding them to the active list. Only the final
+`.xml` suffix is stripped: `fred.george.xml` maps to
+`regressions/fred.george/output.sdb1`. Every candidate also writes `output.sdb1`
+in a fresh `runs/validation-*/fred.george/` directory. The ordinary runner and
+validator share output preparation and executable command construction.
+
+To establish **new** baselines explicitly:
+
+```sh
+python3 scripts/run_regressions.py --establish --all
+# Or establish one additional input and append it to the chosen test list:
+python3 scripts/run_regressions.py --establish test_inputs/fred.george.xml
+```
+
+`--all` selects only XMLs rooted at `RedstarNPt`; generator and operator-map XMLs
+use different executables/schemas. Each attempt checks pinned raw data, graph and
+assembly coverage, keys, extracted operators, finite complex values and expected
+one-configuration/time shapes. Only successful cases are copied into
+`regressions/<stem>/output.sdb1` and added to the TOML list. No existing baseline
+is overwritten. Fake-data cases and the exact symmetry-zero control are labelled
+separately. Unseeded/time-seeded fake data cannot establish an active numerical
+baseline; its finite-value run evidence is retained, and the case fails promotion. Failure of any requested case produces a nonzero suite exit status;
+the failure remains in the suite report and is excluded from the passing list.
+
+Regression comparison independently exports **both** databases with the existing
+small C++ numbered exporter, checks full keys against `dbutil keysxml`, rejects
+duplicate/missing/extra keys and nonfinite values, and requires equal shapes.
+Then `dbutil compare` applies relative Frobenius tolerance `1e-12` by default,
+with ignore tolerance zero; `--tolerance` changes the relative tolerance.
+Phasing and smearing participate in key equality. Listed baseline hashes are
+checked too. Missing baselines fail; normal regression runs never update them.
+
+The default per-executable timeout is 120 seconds (`--timeout`); an 8192 MiB
+per-process RSS cap (`--memory-limit-mb`, zero disables) bounds large graph
+attempts. Process monitoring uses `ps` and requires permission to inspect child
+processes. Reports and failed evidence remain under `runs/validation-*`:
+`results.json` records validation, `regressions.json` records baseline creation or
+comparison, and per-case comparison reports retain commands, logs and hashes.
+Saved baselines are read-only, Git-ignored SDBs. Adjacent `baseline.json` records
+provenance; keep the referenced successful run directory and its support inputs.
+
+### Combined development XML convention
+
+The `test_inputs` regression XMLs deliberately combine inputs for two programs.
+`redstar_corr_graph` consumes `NPointList` and ignores the ColorVec numerical
+settings; `redstar_npt` consumes ColorVec/database settings and ignores
+`NPointList`. Passing the same XML to both is convenient for development.
+Production should use separate, purpose-specific graph and numerical XMLs,
+sharing the generated graph binary through their configured paths. This combined
+fixture convention is not a production input template.
+
+Single-configuration numerical agreement validates software/data interfaces; it
+does not establish ensemble statistics or fitted physical masses. See
+[regressions/README.md](regressions/README.md) for the latest establishment results.
+
+## Separate graph and numerical inputs
+
+The [4³×16 split contraction workflows](regressions/CONTRACTIONS.md) provide three entry
+points: graph only, graph then Redstar npt, and graph then vanilla Chroma
+CORR_SUPERB. Cases live separately under `regressions/redstar/` and
+`regressions/corr_superb/`, preserving the existing combined-input inventory.
+
+## Development documentation
+
+See the [Development documentation](docs/README.md) for the current summary,
+regression coverage, experimental no_1pt checks and dataset migration.

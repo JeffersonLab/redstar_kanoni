@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "kind": "corr_superb",
+  "correlators": 81,
+  "basis": 9,
+  "time_samples": 7,
+  "num_vecs": 10,
+  "reference": "../../../data/regressions/corr_superb/000_G1g.corr.sdb",
+  "reference_sha256": "4d223ca71acec1f34d121cd746310f36cbd6febc84fabcef853be7990d72f8b9",
+  "relative_tolerance": 1e-09,
+  "symmetry_zero": false,
+  "provenance": {
+    "operator_selection_L": 12,
+    "contraction_lattice": [
+      4,
+      4,
+      4,
+      16
+    ],
+    "source": "corrected devel compact N\u03c0 baseline, 31 October 2026",
+    "source_manifest": {
+      "source": "corrected devel version-3 compact run, 31 October 2026",
+      "operator_selection_L": 12,
+      "contraction_lattice": [
+        4,
+        4,
+        4,
+        16
+      ],
+      "num_vecs": 10,
+      "t_origin": 0,
+      "time_samples": 7,
+      "files": {
+        "000_G1g.corr.sdb": {
+          "keys": 81,
+          "basis": 9,
+          "configurations": 1,
+          "time_samples": 7,
+          "finite_complex_values": 567,
+          "bytes": 20900,
+          "sha256": "4d223ca71acec1f34d121cd746310f36cbd6febc84fabcef853be7990d72f8b9",
+          "zero_channels": 0,
+          "dbutil_keys_agree": true,
+          "full_source_sink_matrix": true,
+          "experimental_comparison": {
+            "max_abs_error": 6.5970829041967e-17,
+            "reference_max_abs": 0.5281968529109053,
+            "relative_tolerance": 1e-09,
+            "absolute_floor": 5.281968529109053e-13
+          }
+        },
+        "001_E1.corr.sdb": {
+          "keys": 729,
+          "basis": 27,
+          "configurations": 1,
+          "time_samples": 7,
+          "finite_complex_values": 5103,
+          "bytes": 135612,
+          "sha256": "70a2c083d6338f1d7dd8a82d4c93250923cd873db4c2a6fc2f0ddb49286de7af",
+          "zero_channels": 0,
+          "dbutil_keys_agree": true,
+          "full_source_sink_matrix": true,
+          "experimental_comparison": {
+            "max_abs_error": 2.2301825219878386e-16,
+            "reference_max_abs": 1.1569825163471963,
+            "relative_tolerance": 1e-09,
+            "absolute_floor": 1.1569825163471962e-12
+          }
+        }
+      }
+    }
+  },
+  "t_origin": 0,
+  "chroma_template": "../chroma.generated.xml",
+  "field_source": "legacy generated SUPERB eigenvectors; reference unchanged"
+}

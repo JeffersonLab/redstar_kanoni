@@ -115,7 +115,7 @@ class SetupTests(unittest.TestCase):
                 'assert not list(pathlib.Path.cwd().glob("*.sdb"))\n'
                 'pathlib.Path(sys.argv[2]).write_text("generated")\n'
                 'pathlib.Path("corr_graph.bin").write_text("graph")\n'
-                'pathlib.Path("output.npt.sdb1").write_text("result")\n')
+                'pathlib.Path("output.sdb1").write_text("result")\n')
         for name in ('redstar_corr_graph','redstar_npt'):
             p=folder/name;p.write_text(script);p.chmod(0o755)
         return folder
@@ -131,7 +131,7 @@ class SetupTests(unittest.TestCase):
             self.assertEqual(result.returncode,0,result.stderr)
         runs=list((self.repo/'runs').iterdir());self.assertEqual(len(runs),2)
         for run in runs:
-            self.assertEqual((run/'output.npt.sdb1').read_text(),'result')
+            self.assertEqual((run/'output.sdb1').read_text(),'result')
             self.assertTrue((run/'graph.out.xml').is_file())
             self.assertTrue((run/'npt.out.xml').is_file())
             record=json.loads((run/'run.json').read_text())

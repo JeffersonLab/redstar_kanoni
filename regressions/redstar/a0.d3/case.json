@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 324,
+  "time_samples": 4,
+  "num_vecs": 10,
+  "reference": "../../a0.d3/output.sdb1",
+  "reference_sha256": "9d17cadef23325c7d9871d71881173692b9f5ec76522b64506c921593c9579ac",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/a0.d3.xml",
+    "source_xml_sha256": "acc75a7b29cff46c184e69d164af310a91b5ce2787b60f7f3e4c06d12d0ea63c",
+    "baseline_metadata": "../../a0.d3/baseline.json"
+  }
+}

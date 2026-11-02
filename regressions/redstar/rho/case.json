@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 3,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "reference": "../../rho/output.sdb1",
+  "reference_sha256": "d747244d37fe545039c8b7c88497833b1ec75282cee0a97c980630486ec045bf",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/rho.xml",
+    "source_xml_sha256": "d588f51bf8fc26858c5ec7a1e76834b5d98be06024a2fe0d05370105275f628e",
+    "baseline_metadata": "../../rho/baseline.json"
+  }
+}

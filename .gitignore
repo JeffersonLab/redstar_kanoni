@@ -16,3 +16,19 @@ __pycache__/
 
 # Intermediate Redstar diagnostics
 interior_nodes.*.log
+
+# Machine-specific executable paths and preserved baseline support payloads
+/regressions/tools.toml
+/regressions/*/input.xml
+/regressions/*/weights/
+
+# Local tool selections for the split contraction workflows
+/regressions/*.local.toml
+
+# Native tensor payloads and preserved intermediate migration artifacts
+*.sbt
+*.lime
+/regressions/native-superb-v2/
+/regressions/native-superb-v3/baselines/
+/regressions/native-superb-v3/launch.json
+/regressions/native-superb-v3/tools.toml

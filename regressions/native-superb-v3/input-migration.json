@@ -1,0 +1,2152 @@
+{
+  "note": "Only database/storage selection changed; physics flags, operators, times, phasings and masses preserved. Old cached disconnected blocks omitted so they cannot contaminate fresh data. Legacy gpdf explicitly retained. Older unsmeared-reader cases remain visible pending native adapter.",
+  "changes": [
+    {
+      "case": "1pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "1pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "1pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "1pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "1pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "33.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "33.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "33.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "33.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "33.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "3pi.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "3pi.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "3pi.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "3pi.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "3pi.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "a0.d3.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "a0.d3.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "a0.d3.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "a0.d3.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "a0.d3.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "a1_rhopi.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "a1_rhopi.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "a1_rhopi.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "a1_rhopi.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "a1_rhopi.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "d.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "d.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "d.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "d.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "d.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "delta_J1o2m.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "delta_J1o2m.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "delta_J1o2m.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "delta_J1o2m.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "delta_J1o2m.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "eta8eta8_F8.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "eta8eta8_F8.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "eta8eta8_F8.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "eta8eta8_F8.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "eta8eta8_F8.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "eta_eta_3pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "eta_eta_3pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "eta_eta_3pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "eta_eta_3pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "eta_eta_3pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "ff_3pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "ff_3pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "ff_3pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "ff_3pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "ff_3pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "ff_3pt.xml",
+      "group": "fsq_discoblock_dbs",
+      "old": [
+        "../data/gpdf.more.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "fsq_3pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "fsq_3pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "fsq_3pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "fsq_3pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "fsq_3pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "fsq_3pt.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "fsq_3pt.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "fsq_3pt.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "fsq_3pt.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "glue.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "glue.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "glue.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "glue.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "glue.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "h8.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "h8.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "h8.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "h8.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "h8.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "hard.1_tslice.ini.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "hard.1_tslice.ini.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "hard.1_tslice.ini.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "hard.1_tslice.ini.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "hard.1_tslice.ini.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "hard.1_tslice.ini.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "hard.1_tslice.ini.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "hard.1_tslice.ini.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "hard.1_tslice.ini.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "nuc.p100.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nuc.p100.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nuc.p100.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nuc.p100.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nuc.p100.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nuc.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nuc.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nuc.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nuc.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nuc.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nuc_gA.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nuc_gA.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nuc_gA.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nuc_gA.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nuc_gA.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nuc_gA.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nuc_gA.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "nuc_gA.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nuc_gA.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "nuc_nuc_3pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_3pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_3pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_3pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_3pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_3pt.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nuc_nuc_3pt.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_3pt.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco-U0.05.sdb",
+        "../data/disco-U0.1.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nuc_nuc_3pt.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "nuc_nuc_ax_3pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_ax_3pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_ax_3pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_ax_3pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_ax_3pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_ax_3pt.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nuc_nuc_ax_3pt.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_ax_3pt.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nuc_nuc_ax_3pt.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "nuc_nuc_proj_3pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_proj_3pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_proj_3pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_proj_3pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_proj_3pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_proj_3pt.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nuc_nuc_proj_3pt.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "nuc_nuc_proj_3pt.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nuc_nuc_proj_3pt.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "nucnuc_small.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nucnuc_small.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nucnuc_small.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nucnuc_small.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nucnuc_small.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nucnuc_small.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nucnuc_small.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "nucnuc_small.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "nucnuc_small.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "nucpi.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nucpi.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nucpi.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nucpi.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nucpi.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_I3o2.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_I3o2.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_I3o2.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_I3o2.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_I3o2.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_J1o2m.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_J1o2m.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_J1o2m.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_J1o2m.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_J1o2m.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_nucpi_J1o2m.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_nucpi_J1o2m.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_nucpi_J1o2m.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_nucpi_J1o2m.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "nucpi_nucpi_J1o2m.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "pi.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "pi.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "pi.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "pi.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "pi.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "pi_pi_3pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "pi_pi_3pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "pi_pi_3pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "pi_pi_3pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "pi_pi_3pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "pi_pi_3pt.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "pi_pi_3pt.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "pi_pi_3pt.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "pi_pi_3pt.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "pion.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "pion.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "pion.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "pion.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "pion.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "pion_3pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "pion_3pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "pion_3pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "pion_3pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "pion_3pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "pion_3pt.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "pion_3pt.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "pion_3pt.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "pion_3pt.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "pipi_i1.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "pipi_i1.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "pipi_i1.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "pipi_i1.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "pipi_i1.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "psi.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "psi.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "psi.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "psi.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "psi.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "rho.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "rho.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "rho.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "rho.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "rho.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "rho_rho_3pt.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "rho_rho_3pt.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "rho_rho_3pt.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "rho_rho_3pt.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "rho_rho_3pt.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    },
+    {
+      "case": "rho_rho_3pt.xml",
+      "group": "unsmeared_meson_dbs",
+      "old": [
+        "../data/unsmeared_meson.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "rho_rho_3pt.xml",
+      "group": "unsmeared_genprop4_dbs",
+      "old": [
+        "../data/unsmeared_genprop4.sdb"
+      ],
+      "new": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ]
+    },
+    {
+      "case": "rho_rho_3pt.xml",
+      "group": "twoquark_discoblock_dbs",
+      "old": [
+        "../data/disco.sdb"
+      ],
+      "new": []
+    },
+    {
+      "case": "rho_rho_3pt.xml",
+      "group": "hadron2pt_discoblock_dbs",
+      "old": [
+        "../data/gpdf_2_0.00.sdb"
+      ],
+      "new": [
+        "gpdf_2_0.00.sdb"
+      ]
+    },
+    {
+      "case": "tetra_F27_S2.xml",
+      "group": "prop_dbs",
+      "old": [
+        "../data/prop.sdb"
+      ],
+      "new": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ]
+    },
+    {
+      "case": "tetra_F27_S2.xml",
+      "group": "smeared_baryon_dbs",
+      "old": [
+        "../data/baryon.sdb"
+      ],
+      "new": [
+        "baryon.sbt"
+      ]
+    },
+    {
+      "case": "tetra_F27_S2.xml",
+      "group": "smeared_meson_dbs",
+      "old": [
+        "../data/meson.deriv.sdb"
+      ],
+      "new": [
+        "meson.sbt"
+      ]
+    },
+    {
+      "case": "tetra_F27_S2.xml",
+      "group": "smeared_glue_dbs",
+      "old": [
+        "../data/glue.deriv.sdb"
+      ],
+      "new": [
+        "glue.sbt"
+      ]
+    },
+    {
+      "case": "tetra_F27_S2.xml",
+      "group": "smeared_tetra_dbs",
+      "old": [
+        "../data/tetra.sdb"
+      ],
+      "new": [
+        "tetra.sbt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Copy to contraction-tools.local.toml; set paths for a compatible devel stack.
+# Paths may be absolute or relative to this file. Never mix graph format versions.
+[executables]
+redstar_bin = "/path/to/redstar/install/bin"
+dbutil = "/path/to/adat/install/bin/dbutil"
+adat_config = "/path/to/adat/install/bin/adat-config"
+chroma = "/path/to/chroma"
+# Optional: prebuilt safe numbered exporter; otherwise built using adat_config.
+# exporter = "/path/to/export-correlators"

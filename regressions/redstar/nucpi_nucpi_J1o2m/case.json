@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 2,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "reference": "../../nucpi_nucpi_J1o2m/output.sdb1",
+  "reference_sha256": "f11277c0e3736f19f211cd6ca31172f670c8a783366f735acfe34e51444bc52d",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/nucpi_nucpi_J1o2m.xml",
+    "source_xml_sha256": "c0d631b138d632401ac28a87add35a91a03c69216a19a1e8efdfdbb3c090417b",
+    "baseline_metadata": "../../nucpi_nucpi_J1o2m/baseline.json"
+  }
+}

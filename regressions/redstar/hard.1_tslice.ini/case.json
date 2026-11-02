@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 529,
+  "time_samples": 4,
+  "num_vecs": 10,
+  "reference": "../../hard.1_tslice.ini/output.sdb1",
+  "reference_sha256": "bfbe7fc44eb50dd4a87ecf30b5857decbc02777539b6f78e96ee2e2adeaa902b",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/hard.1_tslice.ini.xml",
+    "source_xml_sha256": "332cfe646b7cc591e41c2b090f039c2cfe5276d168e6be895de0344a28f2ab46",
+    "baseline_metadata": "../../hard.1_tslice.ini/baseline.json"
+  }
+}

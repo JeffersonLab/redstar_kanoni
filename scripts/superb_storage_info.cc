@@ -1,0 +1,3 @@
+#include "util/ferm/superb_contractions.h"
+#include <iostream>
+int main(int argc,char**argv){try{if(argc!=2)throw std::runtime_error("usage: superb_storage_info FILE");std::vector<char> metadata;std::vector<superbblas::IndexType> dims;superbblas::values_datatype dtype;superbblas::read_storage_header(argv[1],superbblas::FastToSlow,dtype,metadata,dims);if(dtype!=superbblas::detail::get_values_datatype<std::complex<double>>())throw std::runtime_error("expected complex<double> payload");std::cerr<<"SUPERB complex<double> rank="<<dims.size()<<" dimensions=";for(auto d:dims)std::cerr<<d<<" ";std::cerr<<"\n";std::cout.write(metadata.data(),metadata.size());return 0;}catch(std::exception&e){std::cerr<<e.what()<<"\n";return 1;}}

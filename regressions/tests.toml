@@ -1,0 +1,194 @@
+# Reproducible baselines; explicit exclusions and reasons follow the active list.
+schema_version = 1
+
+[[tests]]
+xml = "1pt.xml"
+kind = "passed"
+sha256 = "70c7980e57bd498d4c1021bb9c08959849ed23a11e2e7041b9148965752690c2"
+
+[[tests]]
+xml = "33.xml"
+kind = "passed"
+sha256 = "c3e4df491920b9804f1fd5ee06bbbf39bac2b2548dc23f51b7d59deca94beb05"
+
+[[tests]]
+xml = "3pi.xml"
+kind = "passed"
+sha256 = "79d2be6ca6c4db66e634ccfb0333b8eefac383695cdfd4131b6a2e447b16e4e6"
+
+[[tests]]
+xml = "a0.d3.xml"
+kind = "passed"
+sha256 = "9d17cadef23325c7d9871d71881173692b9f5ec76522b64506c921593c9579ac"
+
+[[tests]]
+xml = "a1_rhopi.xml"
+kind = "passed"
+sha256 = "9e195ce92e98dbc37c28d3bae72c8ec6072c5aacb41ea1e6570cee7036b3f0f4"
+
+[[tests]]
+xml = "d.xml"
+kind = "passed"
+sha256 = "04cc2e4a2da4df2c5c6d6611cbdb885f19b7a3f5441957993b514a28c1222a27"
+
+[[tests]]
+xml = "delta_J1o2m.xml"
+kind = "passed"
+sha256 = "be1ded61862f38a89314464b361bfeb4df599baad39048aa3d2204599a7b1a5e"
+
+[[tests]]
+xml = "eta8eta8_F8.xml"
+kind = "passed"
+sha256 = "fdec7393b9dee2f406580a27cc0dfd1aa2d1c7ffe6c84af9b618a0c3c5678a2b"
+
+[[tests]]
+xml = "eta_eta_3pt.xml"
+kind = "passed_symmetry_zero"
+sha256 = "e18e32266dc5d6616a7b5ef00426c42f033e3abc99f7ce73278df0ce4d688ecc"
+
+[[tests]]
+xml = "ff_3pt.xml"
+kind = "passed"
+sha256 = "b46d11c6d0852d6cf2235fab4e0f1f21c6496c6fa5d1e0eba81049ef5e53b205"
+
+[[tests]]
+xml = "fsq_3pt.xml"
+kind = "passed"
+sha256 = "faaf14e91b7722e09cb81ca200fd8e1722fdca743c2f844c005742d88a7d93c3"
+
+[[tests]]
+xml = "glue.xml"
+kind = "passed"
+sha256 = "b26cbc1eea0e0e2c5d4f5931b57248d3dfa1294b9cac27adcc72a64f0849e163"
+
+[[tests]]
+xml = "h8.xml"
+kind = "passed"
+sha256 = "af396b9488e00d47f1ce9cb80a4a2541cddafc56288da200b344575aaf3aac61"
+
+[[tests]]
+xml = "hard.1_tslice.ini.xml"
+kind = "passed"
+sha256 = "bfbe7fc44eb50dd4a87ecf30b5857decbc02777539b6f78e96ee2e2adeaa902b"
+
+[[tests]]
+xml = "nuc.p100.xml"
+kind = "passed"
+sha256 = "bc8ce8dcec1c7ebe168c6cee19acc3b87c6ec58834144daf379c3f1fb8e5f00b"
+
+[[tests]]
+xml = "nuc.xml"
+kind = "passed"
+sha256 = "2498000d1a8a9e2c12643efdfbf3f765f8c94cae80df855e63167e32d2b79be5"
+
+[[tests]]
+xml = "nuc_gA.xml"
+kind = "passed"
+sha256 = "d7ad7efcf3f1b71b2bfdee826cd829cb3b66baee15b72e19a163fa94bd6a2af8"
+
+[[tests]]
+xml = "nuc_nuc_3pt.xml"
+kind = "passed"
+sha256 = "71c0cd6cbc7dc8a9625c9492002fcf4474471983eb811511b6e7e2cd4a6e58d2"
+
+[[tests]]
+xml = "nuc_nuc_ax_3pt.xml"
+kind = "passed"
+sha256 = "2cb44ca669fa543f3cc72857f4ab56cde2261cc696db614bde0b6cfaadb7dbe3"
+
+[[tests]]
+xml = "nuc_nuc_proj_3pt.xml"
+kind = "passed"
+sha256 = "a76531f2908943e475b71b67b44e4e390bca4e51e2dc4eed811f72867b5ad54a"
+
+[[tests]]
+xml = "nucnuc_small.xml"
+kind = "passed"
+sha256 = "e92076ffadb4fcd72a5d2b02ff969679975b17b681eb82439d17c2f3e6ed466c"
+
+[[tests]]
+xml = "nucpi.xml"
+kind = "passed"
+sha256 = "551bf5eea01bcaf6f64bd5915ab2d7906807cb799a3a33e3fbd868cb9e5d3069"
+
+[[tests]]
+xml = "nucpi_I3o2.xml"
+kind = "passed"
+sha256 = "fee6addeacd5f38a6b447ceed1e4ab82d77b96e2b0ac2ea11dd864b3afc3e376"
+
+[[tests]]
+xml = "nucpi_J1o2m.xml"
+kind = "passed"
+sha256 = "83c66db22d3491361c79bf14e68c42d29673ce19368224e628ae728484d099b5"
+
+[[tests]]
+xml = "nucpi_nucpi_J1o2m.xml"
+kind = "passed"
+sha256 = "f11277c0e3736f19f211cd6ca31172f670c8a783366f735acfe34e51444bc52d"
+
+[[tests]]
+xml = "pi.xml"
+kind = "passed"
+sha256 = "cc61734fd6a6b6d0377b2a1b6ed3d1db25227566a0357360d2a72f34e07eba53"
+
+[[tests]]
+xml = "pi_pi_3pt.xml"
+kind = "passed"
+sha256 = "72441cc5784cee6183e6e28cc005a738492c868b3a49ad36106dcdcf383618ba"
+
+[[tests]]
+xml = "pion.xml"
+kind = "passed"
+sha256 = "73cbe8613d4414b8dc33e9c6b5c1caca939cbaea8a4c2c07d10a54493974f757"
+
+[[tests]]
+xml = "pion_3pt.xml"
+kind = "passed"
+sha256 = "f3887ea530eb9a6f46ba1ce989a468e34b682390bbeb4934c846688d80966a5c"
+
+[[tests]]
+xml = "pipi_i1.xml"
+kind = "passed"
+sha256 = "99595e8e3d4d981256bac230ce0b531c31e513d8df8a172dac6f9f97ec4aaba1"
+
+[[tests]]
+xml = "psi.xml"
+kind = "passed"
+sha256 = "235823404eb7562ee647e78343bb0750369c9dac05db479d8137812a4620f385"
+
+[[tests]]
+xml = "rho.xml"
+kind = "passed"
+sha256 = "d747244d37fe545039c8b7c88497833b1ec75282cee0a97c980630486ec045bf"
+
+[[tests]]
+xml = "rho_rho_3pt.xml"
+kind = "passed"
+sha256 = "346064168b0a081e2696ef0c72b0b32db98597375a024597756f9ea40b5b3482"
+
+[[tests]]
+xml = "tetra_F27_S2.xml"
+kind = "passed"
+sha256 = "1da6489fd0494ff8caf888ada40443f8098d6792450cef290dcff601fe3a0982"
+
+[[excluded]]
+xml = "a1.000_T1pM.xml"
+reason = "Graph exceeded the 8192 MiB RSS cap; no validated baseline."
+
+[[excluded]]
+xml = "da_3pt.xml"
+reason = "Missing forward/backward GenProp4 keys in immutable Kanoni data; no validated baseline."
+
+[[excluded]]
+xml = "kpi_3pt.xml"
+reason = "Missing forward/backward GenProp4 keys in immutable Kanoni data; no validated baseline."
+
+[[excluded]]
+xml = "pion_DA.xml"
+reason = "Fake-data input omits fake_data_seed and uses a time-based seed; fresh numerical comparison failed. Snapshot retained, not an active baseline."
+snapshot_sha256 = "2a4ed16fbc722909b412cb40026508ad0ec9a739af93b86020a3c1e1fdf3d57c"
+
+[[excluded]]
+xml = "pion_pdf_3pt.xml"
+reason = "Fake-data input omits fake_data_seed and uses a time-based seed; fresh numerical comparison failed. Snapshot retained, not an active baseline."
+snapshot_sha256 = "9a2d991a0834b4ab67a2aaf76e0c33bc3895320d53a2ef0bed400b985b058c3d"

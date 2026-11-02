@@ -1,0 +1,77 @@
+{
+  "dataset": "kanoni-superb-f64-v2-candidate",
+  "precision_bits": 64,
+  "RsdCG": 1e-14,
+  "stages": [
+    {
+      "input": "colorvec.ini.xml",
+      "outputs": [
+        "colorvec.mod",
+        "colorvec.lime"
+      ],
+      "storage": "MOD/QIO"
+    },
+    {
+      "input": "prop_and_peram.ini.xml",
+      "outputs": [
+        "prop-U0.05.sbt",
+        "prop-U0.1.sbt",
+        "prop-U0.2.sbt"
+      ],
+      "storage": "SUPERB",
+      "mass_labels": {
+        "prop-U0.05.sbt": "U0.05",
+        "prop-U0.1.sbt": "U0.1",
+        "prop-U0.2.sbt": "U0.2"
+      }
+    },
+    {
+      "input": "meson.deriv.ini.xml",
+      "outputs": [
+        "meson.sbt"
+      ],
+      "storage": "SUPERB"
+    },
+    {
+      "input": "baryon.deriv.ini.xml",
+      "outputs": [
+        "baryon.sbt"
+      ],
+      "storage": "SUPERB"
+    },
+    {
+      "input": "tetra.ini.xml",
+      "outputs": [
+        "tetra.sbt"
+      ],
+      "storage": "SUPERB"
+    },
+    {
+      "input": "glue.deriv.ini.xml",
+      "outputs": [
+        "glue.sbt"
+      ],
+      "storage": "SUPERB"
+    },
+    {
+      "input": "genprop5.ini.xml",
+      "outputs": [
+        "genprop-U0.05.sbt",
+        "genprop-U0.1.sbt"
+      ],
+      "storage": "SUPERB",
+      "mass_labels": {
+        "genprop-U0.05.sbt": "U0.05",
+        "genprop-U0.1.sbt": "U0.1"
+      }
+    }
+  ],
+  "remaining_migration": [],
+  "retained_legacy_exception": "gpdf_2_0.00.sdb is explicitly retained by user; not new double data",
+  "notes": [
+    "SUPERB tensor elementals throughout supported producer chain; incomplete until remaining migrations validate",
+    "Historical SDB candidates and baselines remain separate",
+    "Colorvec source stays native double MOD as explicitly requested; colorvec.lime is temporary glue bridge",
+    "One native tensor file per mass; schema metadata mass_label is checked for every expected output"
+  ]
+}

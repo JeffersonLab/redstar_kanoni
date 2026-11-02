@@ -1,0 +1,10 @@
+#include "io/tetraquark_superb.h"
+#include <iostream>
+#include <cmath>
+int main(int argc,char**argv){try{if(argc!=3 && argc!=4)throw std::runtime_error("usage: test_tetra_storage LEGACY SUPERB");using K=Hadron::KeyTetraQuarkElementalOperator_t;using V=Hadron::ValTetraQuarkElementalOperator_t;using namespace ADATIO;
+ FILEDB::ConfDataStoreMultipleDB<SerialDBKey<K>,SerialDBData<V>> old;if(old.open({argv[1]}))throw std::runtime_error("Legacy open failed");std::vector<SerialDBKey<K>> keys;old.keys(keys);if(keys.size()!=32)throw std::runtime_error("Expected 16 times by two colors at zero momentum");StorageTetraQuark tensor;tensor.open({argv[2]});size_t values=0;double maximum=0;
+ for(const auto&key:keys){SerialDBData<V>a,b;if(old.get(key,a)||tensor.get(key,b))throw std::runtime_error("Missing tetraquark key");int n=a.data().op.size1();if(n!=10||b.data().op.size1()!=n)throw std::runtime_error("Wrong vector rank");for(int i=0;i<n;++i)for(int j=0;j<n;++j)for(int k=0;k<n;++k)for(int l=0;l<n;++l){auto z=a.data().op(i,j,k,l),w=b.data().op(i,j,k,l);if(!std::isfinite(z.real())||!std::isfinite(z.imag())||!std::isfinite(w.real())||!std::isfinite(w.imag()))throw std::runtime_error("Nonfinite tetraquark value");maximum=std::max(maximum,std::abs(z-w));++values;}}
+ K bad=keys.front().key();V v;bad.color="unknown-color";if(tensor.get(bad,v)==0)throw std::runtime_error("Accepted missing color");bad=keys.front().key();bad.t_slice=16;if(tensor.get(bad,v)==0)throw std::runtime_error("Accepted out-of-range time");bad=keys.front().key();bad.mom[0]=123;if(tensor.get(bad,v)==0)throw std::runtime_error("Accepted missing momentum");
+ if(argc==4){StorageTetraQuark partial;partial.open({argv[3]});K missing=keys.front().key();missing.t_slice=0;missing.color="3barx3->1,1";missing.mom[0]=missing.mom[1]=missing.mom[2]=0;if(partial.get(missing,v)==0)throw std::runtime_error("Accepted incomplete vector block");std::cout<<"incomplete_block_check=passed\n";}
+ std::cout<<"keys="<<keys.size()<<" finite_complex_values="<<values<<" max_abs_difference="<<maximum<<" missing_key_checks=passed\n";return maximum==0?0:1;
+ }catch(std::exception&e){std::cerr<<e.what()<<"\n";return 1;}}

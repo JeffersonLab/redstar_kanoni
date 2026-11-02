@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 3,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "reference": "../../tetra_F27_S2/output.sdb1",
+  "reference_sha256": "1da6489fd0494ff8caf888ada40443f8098d6792450cef290dcff601fe3a0982",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/tetra_F27_S2.xml",
+    "source_xml_sha256": "dc6cd216f02c6bf07a34e886064800a870325ca44fea102b834b532a33c6fa1e",
+    "baseline_metadata": "../../tetra_F27_S2/baseline.json"
+  }
+}

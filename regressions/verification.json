@@ -1,0 +1,251 @@
+{
+  "date": "2026-10-31",
+  "fresh_suite_status": "attention_required",
+  "fresh_suite_summary": {
+    "passed": 33,
+    "passed_fake_data": 0,
+    "passed_symmetry_zero": 1,
+    "failed": 2
+  },
+  "fresh_suite_report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-152328-5ava3owl/results.json",
+  "regression_report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-152328-5ava3owl/regressions.json",
+  "active_list_status": "passed",
+  "active_cases": 34,
+  "excluded_cases": [
+    {
+      "xml": "a1.000_T1pM.xml",
+      "reason": "Graph exceeded the 8192 MiB RSS cap; no validated baseline."
+    },
+    {
+      "xml": "da_3pt.xml",
+      "reason": "Missing forward/backward GenProp4 keys in immutable Kanoni data; no validated baseline."
+    },
+    {
+      "xml": "kpi_3pt.xml",
+      "reason": "Missing forward/backward GenProp4 keys in immutable Kanoni data; no validated baseline."
+    },
+    {
+      "xml": "pion_DA.xml",
+      "reason": "Fake-data input omits fake_data_seed and uses a time-based seed; fresh numerical comparison failed. Snapshot retained, not an active baseline.",
+      "snapshot_sha256": "2a4ed16fbc722909b412cb40026508ad0ec9a739af93b86020a3c1e1fdf3d57c"
+    },
+    {
+      "xml": "pion_pdf_3pt.xml",
+      "reason": "Fake-data input omits fake_data_seed and uses a time-based seed; fresh numerical comparison failed. Snapshot retained, not an active baseline.",
+      "snapshot_sha256": "9a2d991a0834b4ab67a2aaf76e0c33bc3895320d53a2ef0bed400b985b058c3d"
+    }
+  ],
+  "relative_tolerance": 1e-12,
+  "max_reported_relative_error_active": 0.0,
+  "cases": [
+    {
+      "xml": "1pt.xml",
+      "status": "passed",
+      "keys": 3,
+      "finite_complex_values_per_database": 48
+    },
+    {
+      "xml": "33.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "3pi.xml",
+      "status": "passed",
+      "keys": 3,
+      "finite_complex_values_per_database": 48
+    },
+    {
+      "xml": "a0.d3.xml",
+      "status": "passed",
+      "keys": 324,
+      "finite_complex_values_per_database": 1296
+    },
+    {
+      "xml": "a1_rhopi.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "d.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "delta_J1o2m.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "eta8eta8_F8.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "eta_eta_3pt.xml",
+      "status": "passed_symmetry_zero",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "ff_3pt.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "fsq_3pt.xml",
+      "status": "passed",
+      "keys": 2,
+      "finite_complex_values_per_database": 32
+    },
+    {
+      "xml": "glue.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "h8.xml",
+      "status": "passed",
+      "keys": 4,
+      "finite_complex_values_per_database": 64
+    },
+    {
+      "xml": "hard.1_tslice.ini.xml",
+      "status": "passed",
+      "keys": 529,
+      "finite_complex_values_per_database": 2116
+    },
+    {
+      "xml": "nuc.p100.xml",
+      "status": "passed",
+      "keys": 2,
+      "finite_complex_values_per_database": 14
+    },
+    {
+      "xml": "nuc.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "nuc_gA.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 7
+    },
+    {
+      "xml": "nuc_nuc_3pt.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 7
+    },
+    {
+      "xml": "nuc_nuc_ax_3pt.xml",
+      "status": "passed",
+      "keys": 4,
+      "finite_complex_values_per_database": 28
+    },
+    {
+      "xml": "nuc_nuc_proj_3pt.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 7
+    },
+    {
+      "xml": "nucnuc_small.xml",
+      "status": "passed",
+      "keys": 2,
+      "finite_complex_values_per_database": 8
+    },
+    {
+      "xml": "nucpi.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "nucpi_I3o2.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "nucpi_J1o2m.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "nucpi_nucpi_J1o2m.xml",
+      "status": "passed",
+      "keys": 2,
+      "finite_complex_values_per_database": 32
+    },
+    {
+      "xml": "pi.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "pi_pi_3pt.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 6
+    },
+    {
+      "xml": "pion.xml",
+      "status": "passed",
+      "keys": 3,
+      "finite_complex_values_per_database": 48
+    },
+    {
+      "xml": "pion_3pt.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 7
+    },
+    {
+      "xml": "pipi_i1.xml",
+      "status": "passed",
+      "keys": 1,
+      "finite_complex_values_per_database": 16
+    },
+    {
+      "xml": "psi.xml",
+      "status": "passed",
+      "keys": 2,
+      "finite_complex_values_per_database": 32
+    },
+    {
+      "xml": "rho.xml",
+      "status": "passed",
+      "keys": 3,
+      "finite_complex_values_per_database": 48
+    },
+    {
+      "xml": "rho_rho_3pt.xml",
+      "status": "passed",
+      "keys": 27,
+      "finite_complex_values_per_database": 189
+    },
+    {
+      "xml": "tetra_F27_S2.xml",
+      "status": "passed",
+      "keys": 3,
+      "finite_complex_values_per_database": 48
+    }
+  ],
+  "custom_toml_selection_smoke": {
+    "status": "passed",
+    "xml": "nuc.p100.xml",
+    "report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-153155-_206f5ta/regressions.json"
+  }
+}

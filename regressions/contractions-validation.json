@@ -1,0 +1,435 @@
+{
+  "date": "2026-11-01",
+  "unit_tests": 48,
+  "redstar": {
+    "status": "passed",
+    "lattice": [
+      4,
+      4,
+      4,
+      16
+    ],
+    "threads": 2,
+    "cases": [
+      {
+        "name": "1pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/1pt/run.json",
+        "readback": {
+          "keys": 3,
+          "finite_complex_values": 48,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "33",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/33/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "3pi",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/3pi/run.json",
+        "readback": {
+          "keys": 3,
+          "finite_complex_values": 48,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "a0.d3",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/a0.d3/run.json",
+        "readback": {
+          "keys": 324,
+          "finite_complex_values": 1296,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "a1_rhopi",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/a1_rhopi/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "d",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/d/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "delta_J1o2m",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/delta_J1o2m/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "eta8eta8_F8",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/eta8eta8_F8/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "eta_eta_3pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/eta_eta_3pt/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 1
+        }
+      },
+      {
+        "name": "ff_3pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/ff_3pt/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "fsq_3pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/fsq_3pt/run.json",
+        "readback": {
+          "keys": 2,
+          "finite_complex_values": 32,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "glue",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/glue/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "h8",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/h8/run.json",
+        "readback": {
+          "keys": 4,
+          "finite_complex_values": 64,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "hard.1_tslice.ini",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/hard.1_tslice.ini/run.json",
+        "readback": {
+          "keys": 529,
+          "finite_complex_values": 2116,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nuc",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nuc/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nuc.p100",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nuc.p100/run.json",
+        "readback": {
+          "keys": 2,
+          "finite_complex_values": 14,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nuc_gA",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nuc_gA/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 7,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nuc_nuc_3pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nuc_nuc_3pt/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 7,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nuc_nuc_ax_3pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nuc_nuc_ax_3pt/run.json",
+        "readback": {
+          "keys": 4,
+          "finite_complex_values": 28,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nuc_nuc_proj_3pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nuc_nuc_proj_3pt/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 7,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nucnuc_small",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nucnuc_small/run.json",
+        "readback": {
+          "keys": 2,
+          "finite_complex_values": 8,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nucpi",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nucpi/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nucpi_I3o2",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nucpi_I3o2/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nucpi_J1o2m",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nucpi_J1o2m/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "nucpi_nucpi_J1o2m",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/nucpi_nucpi_J1o2m/run.json",
+        "readback": {
+          "keys": 2,
+          "finite_complex_values": 32,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "pi",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/pi/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "pi_pi_3pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/pi_pi_3pt/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 6,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "pion",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-pion-20261101-001/run.json",
+        "readback": {
+          "keys": 3,
+          "finite_complex_values": 48,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "pion_3pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/pion_3pt/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 7,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "pipi_i1",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/pipi_i1/run.json",
+        "readback": {
+          "keys": 1,
+          "finite_complex_values": 16,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "psi",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/psi/run.json",
+        "readback": {
+          "keys": 2,
+          "finite_complex_values": 32,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "rho",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/rho/run.json",
+        "readback": {
+          "keys": 3,
+          "finite_complex_values": 48,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "rho_rho_3pt",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/rho_rho_3pt/run.json",
+        "readback": {
+          "keys": 27,
+          "finite_complex_values": 189,
+          "zero_channels": 0
+        }
+      },
+      {
+        "name": "tetra_F27_S2",
+        "status": "passed",
+        "returncode": 0,
+        "report": "runs/split-redstar-20261101-001/tetra_F27_S2/run.json",
+        "readback": {
+          "keys": 3,
+          "finite_complex_values": 48,
+          "zero_channels": 0
+        }
+      }
+    ],
+    "finished_utc": "2026-11-01T17:08:33.276541+00:00"
+  },
+  "corr_superb": {
+    "case": "npi_001_E1",
+    "report": "runs/split-corr-superb-20261101-001/run.json",
+    "graph": {
+      "version": 3,
+      "correlators": 729,
+      "graphs": 3384,
+      "time_samples": 7
+    },
+    "readback": {
+      "keys": 729,
+      "finite_complex_values": 5103,
+      "zero_channels": 0,
+      "per_value_comparison": {
+        "max_abs_error": 0.0,
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.1569825163471962e-12
+      }
+    },
+    "output_sha256": "70a2c083d6338f1d7dd8a82d4c93250923cd873db4c2a6fc2f0ddb49286de7af",
+    "tools": {
+      "redstar_corr_graph": {
+        "path": "/Users/admin/Downloads/redstar.devel/build/src/redstar_corr_graph",
+        "sha256": "6dd7d6d956810e275da3412a58657ced30545c6f9bf7f47123d39340c8ceb7e7"
+      },
+      "view_corr_graph": {
+        "path": "/Users/admin/Downloads/redstar.devel/build/src/view_corr_graph",
+        "sha256": "14ff8b68534b79ace1c0f044e69d4f436f2b0321d56e08616c9eec105178f4be"
+      },
+      "chroma": {
+        "path": "/Users/admin/Downloads/roper-test-data/npi-fix-20261031-v2/bin/chroma-devel-fixed-v2",
+        "sha256": "56035fcb7b6b133b49629c43b19e32ee25fc47526ba6adbfb711d6b5f7a096a8"
+      },
+      "dbutil": {
+        "path": "/Users/admin/Documents/Codex/2026-10-27/referenced-chatgpt-conversation-this-is-an/work/corr-superb-datalib-install/bin/dbutil",
+        "sha256": "ac0aec6a05b787e4fee46290ebf9accf5d9159fcc3c505b05a8d1c5e5be887e8"
+      },
+      "exporter": {
+        "path": "/private/tmp/kanoni-gcc-exporter",
+        "sha256": "74d7456c615e0bd6a0cb137dbb02a6db2e3898af55a25694806adba03280210e"
+      }
+    }
+  },
+  "scope": "4^3 x 16; devel-format-3 references; no_1pt remains experimental; separate from the original-volume test"
+}

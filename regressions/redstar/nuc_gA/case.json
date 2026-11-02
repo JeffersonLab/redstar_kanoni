@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 1,
+  "time_samples": 7,
+  "num_vecs": 10,
+  "reference": "../../nuc_gA/output.sdb1",
+  "reference_sha256": "d7ad7efcf3f1b71b2bfdee826cd829cb3b66baee15b72e19a163fa94bd6a2af8",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/nuc_gA.xml",
+    "source_xml_sha256": "757189938b88e7bdf34aa97aa4c216421231b1f670a7d1e9fc1b9120cf93f3b8",
+    "baseline_metadata": "../../nuc_gA/baseline.json"
+  }
+}

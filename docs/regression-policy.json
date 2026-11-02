@@ -1,0 +1,41 @@
+{
+  "baseline": "devel",
+  "experimental": "no_1pt",
+  "deferred_by_user": {
+    "ff_3pt": {
+      "npt": true,
+      "corr_superb": true,
+      "reason": "User deferred regression; legacy gpdf.more.sdb generator unavailable; do not add file to new dataset"
+    },
+    "glue": {
+      "npt": false,
+      "corr_superb": true,
+      "reason": "User deferred glue implementation in CORR_SUPERB"
+    },
+    "tetra_F27_S2": {
+      "npt": false,
+      "corr_superb": true,
+      "reason": "User deferred tetraquark implementation in CORR_SUPERB"
+    },
+    "fsq_3pt": {
+      "npt": false,
+      "corr_superb": true,
+      "reason": "Gluonic insertion is included in the user-directed deferral of glue implementation in CORR_SUPERB; retained legacy gpdf input remains covered by the NPT test"
+    },
+    "nuc_nuc_3pt": {
+      "npt": true,
+      "corr_superb": true,
+      "reason": "User selected defer disconnected-loop generation and CORR_SUPERB callback support"
+    }
+  },
+  "commit_gate": "Commit relevant tested changes after the remaining regression checks pass; preserve unrelated work and exclude generated artifacts",
+  "meson_input": {
+    "mom2_min": 0,
+    "mom2_max": 4,
+    "mom_list": []
+  },
+  "solver_accuracy": {
+    "RsdCG": 1e-14,
+    "reason": "User selected tighter accuracy after eta8 diagnostic; retain original 1e-12 candidate separately"
+  }
+}

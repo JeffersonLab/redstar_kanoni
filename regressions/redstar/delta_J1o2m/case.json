@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 1,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "reference": "../../delta_J1o2m/output.sdb1",
+  "reference_sha256": "be1ded61862f38a89314464b361bfeb4df599baad39048aa3d2204599a7b1a5e",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/delta_J1o2m.xml",
+    "source_xml_sha256": "a69f3cf6e6c9bd8462e8c650db8f9798f7118a4e9c49ca49232f2cef8315b08b",
+    "baseline_metadata": "../../delta_J1o2m/baseline.json"
+  }
+}

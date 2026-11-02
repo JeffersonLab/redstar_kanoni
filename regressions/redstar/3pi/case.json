@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 3,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "reference": "../../3pi/output.sdb1",
+  "reference_sha256": "79d2be6ca6c4db66e634ccfb0333b8eefac383695cdfd4131b6a2e447b16e4e6",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/3pi.xml",
+    "source_xml_sha256": "23568ca060fba4b55a4d08e1c1087f8f18e8fdbce2ee2987684d446c0f092017",
+    "baseline_metadata": "../../3pi/baseline.json"
+  }
+}

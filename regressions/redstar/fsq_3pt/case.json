@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 2,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "reference": "../../fsq_3pt/output.sdb1",
+  "reference_sha256": "faaf14e91b7722e09cb81ca200fd8e1722fdca743c2f844c005742d88a7d93c3",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/fsq_3pt.xml",
+    "source_xml_sha256": "5827e730954e9d0523d1e736b8edc11870e6155e6df9a9b733951a7039703bb6",
+    "baseline_metadata": "../../fsq_3pt/baseline.json"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 3,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "reference": "../../pion/output.sdb1",
+  "reference_sha256": "73cbe8613d4414b8dc33e9c6b5c1caca939cbaea8a4c2c07d10a54493974f757",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/pion.xml",
+    "source_xml_sha256": "5481eedbc7b659657c68bb2e9efc17b41348dc6b8ee2b73393a97cc489f2fcb6",
+    "baseline_metadata": "../../pion/baseline.json"
+  }
+}

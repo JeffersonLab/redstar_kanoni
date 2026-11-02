@@ -1,0 +1,78 @@
+{
+  "platform": {
+    "os": "macOS-26.7.1-arm64-arm-64bit",
+    "architecture": "arm64",
+    "cxx": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "fortran": "GNU Fortran (Homebrew GCC 14.2.0_1) 14.2.0",
+    "python": "3.9.6"
+  },
+  "sources": {
+    "contractions": {
+      "url": "https://github.com/jiechenajlab/jlab_contraction_bench2026.git",
+      "branch": "main",
+      "commit": "5e9b10ececacd93411b7764e74ed01ed5d50b1db"
+    },
+    "adat": {
+      "url": "https://github.com/JeffersonLab/adat.git",
+      "branch": "devel",
+      "commit": "91251ccb8df68cfd7dd790df7433cc5f3c2e7037"
+    },
+    "hadron": {
+      "url": "https://github.com/JeffersonLab/hadron.git",
+      "branch": "devel",
+      "commit": "ba19a7d8ee784ed06283f218ce4b5be0829bc85e"
+    },
+    "colorvec": {
+      "url": "https://github.com/JeffersonLab/colorvec.git",
+      "branch": "devel",
+      "commit": "51a46b6f3999deeb51cd211693450f5aed625f59"
+    },
+    "redstar": {
+      "url": "https://github.com/JeffersonLab/redstar.git",
+      "branch": "devel",
+      "commit": "f0aebfe7874a64530db322a68091567b532e7dc4"
+    }
+  },
+  "adat_submodules": [
+    "db2a795aaf6cc57b6eefe2ef634fdc91ee7b3693 other_libs/filedb (remotes/origin/eloy/add-more-binary-key-functions-11-gdb2a795)",
+    " c46a061e821f92447ad01d90a4f0e59f11106d79 other_libs/minuit (adat2-10-2-11-gc46a061)",
+    " 05cbc2d6e03cfe32e88433d3a3df77c6fd69f244 other_libs/xpath_reader (heads/master)"
+  ],
+  "runtime": "LLVM libomp",
+  "blas": "Apple Accelerate",
+  "openmp_settings": {
+    "OMP_NUM_THREADS": "4",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_MAX_ACTIVE_LEVELS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "compiler_openmp_teams": [
+    1,
+    4
+  ],
+  "installed_redstar_config_openmp_teams": [
+    1,
+    4
+  ],
+  "runtime_inspection_passed": true,
+  "manual_source_patches": [],
+  "build_record": {
+    "path": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/clean-build-record.json",
+    "sha256": "55eebe5ce0039ed3f131442538a3f7e639cbd075660232809fc2f17d3b54ea61"
+  },
+  "tested_programs": {
+    "redstar_corr_graph": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/redstar_corr_graph",
+    "redstar_npt": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/redstar_npt",
+    "view_corr_graph": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/view_corr_graph",
+    "extract_ops_util": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/extract_ops_util"
+  },
+  "tested_dbutil": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/adat/bin/dbutil",
+  "program_sha256": {
+    "redstar_corr_graph": "07b97a3ec0d22367430da3658aaeefac8757ba8483da0f0b23d7098d95a58255",
+    "redstar_npt": "fe36b18256df0ac2bd73282d5e4d6cacba2765c931d7a9d5438f92c39a32741a",
+    "view_corr_graph": "8fffae97ff774c9e24b7df654a0b5733f8c749ff10bb3c230f6129e3c79894f5",
+    "extract_ops_util": "9880188e4297f3cd09328d57ba57dd79f563f51add339de42be328eaaada5ef5",
+    "dbutil": "8743d066089a53b4b6a859be8a5e4e2fa6c38735c9e618c71c9b4d5b6e97c03a"
+  }
+}

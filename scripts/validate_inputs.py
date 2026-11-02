@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Run Kanoni v14 graph/numerical tests with independent database readback."""
 import argparse
-import copy
+from compare_correlators import compare
+from redstar_runtime import OUTPUT_DATABASE, configured_tools, prepare_outputs, stage_command, run_limited
 from datetime import datetime
 import hashlib
 import json
@@ -10,7 +11,6 @@ import os
 from pathlib import Path
 import re
 import shutil
-import subprocess
 import tempfile
 import time
 import xml.etree.ElementTree as ET
@@ -20,22 +20,32 @@ def definition(node, tag=None):
     return (tag or node.tag, ' '.join((node.text or '').split()), tuple(definition(x) for x in node))
 
 
-def main():
+def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('files', nargs='*', type=Path, help='explicit XML paths, e.g. test_inputs/pipi_i1.xml; default: all test_inputs RedstarNPt XMLs')
     parser.add_argument('--redstar-bin',type=Path,default=os.environ.get('REDSTAR_BIN'))
     parser.add_argument('--dbutil',type=Path,default=os.environ.get('DBUTIL'))
     parser.add_argument('--database-dir',type=Path,default=os.environ.get('KANONI_DATA_DIR'))
+    parser.add_argument('--data-manifest',type=Path,help='explicit checksum manifest for a separate regenerated dataset')
     parser.add_argument('--threads',type=int,default=4)
     parser.add_argument('--timeout',type=int,default=600,help='seconds allowed per executable')
     parser.add_argument('--exporter',type=Path,help='safe numbered exporter for oversized/colliding names')
     parser.add_argument('--adat-config',type=Path,default=os.environ.get('ADAT_CONFIG'))
-    args=parser.parse_args()
+    parser.add_argument('--reference-dir',type=Path,help='saved validated runs: <dir>/<input-stem>/output.sdb1; every selected case requires a reference')
+    parser.add_argument('--relative-tolerance',type=float,default=1e-12)
+    parser.add_argument('--tools',type=Path,help='TOML executable paths; explicit options/environment override it')
+    parser.add_argument('--memory-limit-mb',type=int,default=8192,help='per-process RSS limit; 0 disables (default 8192 MiB)')
+    args=parser.parse_args(argv)
+    if args.memory_limit_mb<0:parser.error('memory limit must be nonnegative')
+    if not math.isfinite(args.relative_tolerance) or args.relative_tolerance<0:parser.error('relative tolerance must be finite and nonnegative')
     if args.threads<1 or args.timeout<1:parser.error('threads and timeout must be positive')
     root=Path(__file__).resolve().parents[1]
     data=(args.database_dir or root/'data').expanduser().absolute()
-    programs={name:(args.redstar_bin/name if args.redstar_bin else Path(shutil.which(name) or '/missing-'+name)).expanduser().absolute() for name in ('redstar_corr_graph','redstar_npt','view_corr_graph','extract_ops_util')}
-    dbutil=(args.dbutil or Path(shutil.which('dbutil') or '/missing-dbutil')).expanduser().absolute()
+    configured=configured_tools(args.tools) if args.tools else {}
+    programs={name:(args.redstar_bin/name if args.redstar_bin else configured.get(name) or Path(shutil.which(name) or '/missing-'+name)).expanduser().absolute() for name in ('redstar_corr_graph','redstar_npt','view_corr_graph','extract_ops_util')}
+    dbutil=(args.dbutil or configured.get('dbutil') or Path(shutil.which('dbutil') or '/missing-dbutil')).expanduser().absolute()
+    if args.adat_config is None:args.adat_config=configured.get('adat_config')
+    if args.exporter is None:args.exporter=configured.get('exporter')
     for p in [*programs.values(),dbutil]:
         if not p.is_file() or not os.access(p,os.X_OK):parser.error('Missing executable '+str(p))
     if data.is_symlink() or not data.is_dir():parser.error('Kanoni data home must be a real directory; run setup-data first')
@@ -46,10 +56,10 @@ def main():
     if len({p.stem for p in files})!=len(files):parser.error('Selected inputs need unique output names')
     (root/'runs').mkdir(exist_ok=True)
     expectations=json.loads((root/'test_inputs/validation-expectations.json').read_text())['cases']
-    manifest=json.loads((root/'test_inputs/data-manifest.json').read_text())
+    manifest=json.loads((args.data_manifest or root/'test_inputs/data-manifest.json').read_text())
     expected_data={e['name']:e for e in manifest['files']};verified_data={}
     output=Path(tempfile.mkdtemp(prefix='validation-'+datetime.now().strftime('%Y%m%d-%H%M%S')+'-',dir=root/'runs'))
-    record={'status':'running','data_home':str(data),'resolved_data_home':str(data.resolve()),'threads':args.threads,'timeout':args.timeout,'cases':[],'current':None,'programs':{k:str(v) for k,v in programs.items()},'dbutil':str(dbutil),'program_sha256':{k:hashlib.sha256(p.read_bytes()).hexdigest() for k,p in {**programs,'dbutil':dbutil}.items()},'verified_data':verified_data,'dataset':manifest['dataset']}
+    record={'status':'running','data_home':str(data),'resolved_data_home':str(data.resolve()),'threads':args.threads,'timeout':args.timeout,'memory_limit_mb':args.memory_limit_mb,'cases':[],'current':None,'programs':{k:str(v) for k,v in programs.items()},'dbutil':str(dbutil),'program_sha256':{k:hashlib.sha256(p.read_bytes()).hexdigest() for k,p in {**programs,'dbutil':dbutil}.items()},'verified_data':verified_data,'dataset':manifest['dataset'],'adat_config':str(args.adat_config or dbutil.parent/'adat-config')}
     report=output/'results.json'
     def save():
         temp=report.with_suffix('.tmp');temp.write_text(json.dumps(record,indent=2)+'\n');temp.replace(report)
@@ -62,11 +72,11 @@ def main():
             record['current']={'file':source.name,'phase':name};save();log=run/(name+'.log');start=time.monotonic()
             step={'phase':name,'argv':list(map(str,argv)),'log':str(log),'started_at':datetime.now().astimezone().isoformat()};case['commands'].append(step);save()
             with log.open('w') as stream:
-                try:p=subprocess.run(step['argv'],cwd=cwd,env=env,stdout=stream,stderr=subprocess.STDOUT,timeout=args.timeout)
-                except subprocess.TimeoutExpired:
-                    step.update(status='timeout',seconds=time.monotonic()-start);save();raise RuntimeError(name+' timed out')
-            step.update(returncode=p.returncode,seconds=time.monotonic()-start,status='passed' if p.returncode==0 else 'failed');save()
-            if p.returncode:raise RuntimeError(name+' failed: '+'\n'.join(log.read_text(errors='replace').splitlines()[-7:]))
+                try:code=run_limited(step['argv'],cwd=cwd,env=env,stdout=stream,timeout=args.timeout,memory_limit_mb=args.memory_limit_mb)
+                except Exception as error:
+                    step.update(status='limited' if isinstance(error,RuntimeError) else 'error',error=str(error),seconds=time.monotonic()-start);save();raise RuntimeError(name+' '+str(error))
+            step.update(returncode=code,seconds=time.monotonic()-start,status='passed' if code==0 else 'failed');save()
+            if code:raise RuntimeError(name+' failed: '+'\n'.join(log.read_text(errors='replace').splitlines()[-7:]))
             return log.read_text(errors='replace')
         try:
             tree=ET.parse(source);x=tree.getroot()
@@ -75,10 +85,7 @@ def main():
             if not points or x.findall('.//mom_type'):raise RuntimeError('Empty selection or legacy momentum schema')
             param=x.find('Param');param.find('diagnostic_level').text='0';nt=int(param.findtext('Nt_corr'));case['time_samples']=nt
             db=x.find('DBFiles')
-            for name,value in [('corr_graph_bin','corr_graph.bin'),('output_db','output.npt.sdb1')]:
-                node=db.find(name)
-                if node is None:node=ET.SubElement(db,name)
-                node.text=value
+            prepare_outputs(x)
             for name in ('corr_graph_xml','eval_graph_xml','noneval_graph_xml','vertex_coeff_xml','export_dag_xml','contraction_info_db','final_eval_graph_db','final_noneval_graph_db'):
                 for node in db.findall(name):db.remove(node)
             for node in db.findall('proj_op_xmls/elem'):
@@ -100,20 +107,20 @@ def main():
                 node.text=os.path.relpath(path.resolve(),run.resolve())
             case['fake_data_mode']=x.findtext('ColorVec/Param/fake_data_modeP')
             ET.indent(tree,space='  ');tree.write(run/'input.xml',encoding='utf-8',xml_declaration=True)
-            command('graph',[programs['redstar_corr_graph'],'input.xml','graph.out.xml'])
+            command('graph',stage_command(programs,'graph'))
             summary=command('view',[programs['view_corr_graph'],'corr_graph.bin'])
             count=int(re.search(r'Number of corrs = (\d+)',summary)[1]);graphs=int(re.search(r'Number of graphs = (\d+)',summary)[1]);case.update(correlators=count,graphs=graphs)
             if count!=len(points):raise RuntimeError('Graph count differs from declared correlator coverage')
-            command('numerical',[programs['redstar_npt'],'input.xml','npt.out.xml'])
+            command('numerical',stage_command(programs,'numerical'))
             log=(run/'numerical.log').read_text(errors='replace');assembled=len(re.findall(r'^Assemble corr= ',log,re.M))
             if assembled!=count or 'Closed correlator db' not in log:raise RuntimeError('Assembly/closure differs from graph coverage')
-            command('keys',[dbutil,'output.npt.sdb1','keysxml','keys.xml'])
+            command('keys',[dbutil,OUTPUT_DATABASE,'keysxml','keys.xml'])
             keys=ET.parse(run/'keys.xml').getroot()
             if len(keys)!=count:raise RuntimeError('Stored key count differs from graph coverage')
-            command('extract',[programs['extract_ops_util'],'operators.list','operators.xml','output.npt.sdb1'])
+            command('extract',[programs['extract_ops_util'],'operators.list','operators.xml',OUTPUT_DATABASE])
             extracted=ET.parse(run/'operators.xml').getroot();expected={definition(op,'Val') for k in keys for op in k.findall('NPoint/elem/Irrep/Op')};actual={definition(e.find('Val')) for e in extracted.findall('elem')}
             if not expected or expected!=actual or extracted.findall('.//mom_type'):raise RuntimeError('Extracted operators differ from independent database key definitions')
-            readback=run/'readback';readback.mkdir();command('readback',[dbutil,str(run/'output.npt.sdb1'),'get',str(run/'keys.xml')],readback)
+            readback=run/'readback';readback.mkdir();command('readback',[dbutil,str(run/OUTPUT_DATABASE),'get',str(run/'keys.xml')],readback)
             exports=list(readback.glob('*.dat'));case['extracted_operators']=len(actual)
             if len(exports)!=count:
                 exporter=args.exporter
@@ -124,7 +131,7 @@ def main():
                     exporter=root/'runs/tools'/fingerprint/'export_correlators'
                     if not exporter.is_file():command('build-exporter',['python3',root/'scripts/build_exporter.py','--adat-config',config,'--output',exporter])
                 short=run/'readback-numbered'
-                command('readback-numbered',[exporter,run/'output.npt.sdb1',short])
+                command('readback-numbered',[exporter,run/OUTPUT_DATABASE,short])
                 entries=ET.parse(short/'index.xml').getroot().findall('elem')
                 indexed={definition(e.find('Key'),'elem') for e in entries}
                 if indexed!={definition(k) for k in keys} or len(entries)!=count:raise RuntimeError('Numbered exporter keys differ from independent dbutil key XML')
@@ -143,6 +150,14 @@ def main():
                     amplitude=max(amplitude,abs(complex(v[1],v[2])))
                 zeros+=amplitude==0.
             case.update(configurations=1,finite_complex_values=count*nt,zero_correlator_keys=zeros,operator_definitions_match_keys=True)
+            if args.reference_dir:
+                exporter=args.exporter
+                if exporter is None:
+                    config=args.adat_config or dbutil.parent/'adat-config'
+                    exporter=output/'reference-exporter'
+                    if not exporter.is_file():command('build-reference-exporter',['python3',root/'scripts/build_exporter.py','--adat-config',config,'--output',exporter])
+                reference=args.reference_dir.expanduser().absolute()/source.stem/OUTPUT_DATABASE
+                case['regression']=compare(reference,run/OUTPUT_DATABASE,dbutil,exporter.expanduser().absolute(),run/'regression',args.relative_tolerance,args.timeout)
             expected=expectations.get(source.name,{})
             if expected.get('kind')=='symmetry_zero':
                 if graphs!=0 or zeros!=count or count!=expected['correlators'] or case['fake_data_mode']=='true':raise RuntimeError('Symmetry-zero control differs from its exact expected coverage')
@@ -156,7 +171,9 @@ def main():
     record['summary']={status:sum(c['status']==status for c in record['cases']) for status in ('passed','passed_fake_data','passed_symmetry_zero','failed')}
     record['status']='attention_required' if record['summary']['failed'] else ('passed' if all(c['status']=='passed' for c in record['cases']) else 'passed_with_limits')
     save();print('Report:',report,flush=True)
-    if record['summary']['failed']:raise SystemExit(1)
+    return output,record
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    _,record=main()
+    raise SystemExit(bool(record['summary']['failed']))

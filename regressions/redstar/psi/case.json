@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 2,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "reference": "../../psi/output.sdb1",
+  "reference_sha256": "235823404eb7562ee647e78343bb0750369c9dac05db479d8137812a4620f385",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/psi.xml",
+    "source_xml_sha256": "3872cf6c4301f9ebc537bb7bf2d09de60c0174f4a39ffc79f9e6fbec4e04cfbe",
+    "baseline_metadata": "../../psi/baseline.json"
+  }
+}

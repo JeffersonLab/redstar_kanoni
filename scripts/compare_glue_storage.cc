@@ -1,0 +1,10 @@
+#include "io/glueball_superb.h"
+#include <iostream>
+#include <cmath>
+int main(int argc,char**argv){try{if(argc!=3&&argc!=4)throw std::runtime_error("usage: compare_glue_storage LEGACY SUPERB [INCOMPLETE]");using K=Hadron::KeyGlueElementalOperator_t;using V=Hadron::ValGlueElementalOperator_t;using namespace ADATIO;
+ FILEDB::ConfDataStoreMultipleDB<SerialDBKey<K>,SerialDBData<V>>old;if(old.open({argv[1]}))throw std::runtime_error("Legacy open failed");std::vector<SerialDBKey<K>>keys;old.keys(keys);if(keys.size()!=16*1093*7)throw std::runtime_error("Wrong glue key count");StorageGlue tensor;tensor.open({argv[2]});size_t values=0;double maximum=0;
+ for(auto&key:keys){SerialDBData<V>a,b;if(old.get(key,a)||tensor.get(key,b))throw std::runtime_error("Missing glue key");if(a.data().op.size()!=10||b.data().op.size()!=10)throw std::runtime_error("Wrong glue vector count");for(int n=0;n<10;++n){auto z=a.data().op[n],w=b.data().op[n];if(!std::isfinite(z.real())||!std::isfinite(z.imag())||!std::isfinite(w.real())||!std::isfinite(w.imag()))throw std::runtime_error("Nonfinite glue value");maximum=std::max(maximum,std::abs(z-w));++values;}}
+ K k=keys.front().key();V v;k.left=1;if(tensor.get(k,v)==0)throw std::runtime_error("Accepted invalid left index");k=keys.front().key();k.t_slice=16;if(tensor.get(k,v)==0)throw std::runtime_error("Accepted out-of-range time");k=keys.front().key();k.mom[0]=123;if(tensor.get(k,v)==0)throw std::runtime_error("Accepted missing momentum");k=keys.front().key();k.displacement={999};if(tensor.get(k,v)==0)throw std::runtime_error("Accepted missing displacement");
+ if(argc==4){StorageGlue partial;partial.open({argv[3]});k=keys.front().key();k.t_slice=0;k.left=k.right=0;k.mom[0]=k.mom[1]=k.mom[2]=0;k.displacement.clear();if(partial.get(k,v)==0)throw std::runtime_error("Accepted incomplete vector block");std::cout<<"incomplete_block_check=passed\n";}
+ std::cout<<"keys="<<keys.size()<<" finite_complex_values="<<values<<" max_abs_difference="<<maximum<<" missing_key_checks=passed\n";return maximum==0?0:1;
+ }catch(std::exception&e){std::cerr<<e.what()<<"\n";return 1;}}

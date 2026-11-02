@@ -1,0 +1,27 @@
+{
+  "source": "chroma.devel/tests/chroma/hadron/distillation",
+  "source_files": {
+    "baryon.deriv.ini.xml": "c1f38a07471c1424daf0b966bd3b047324eb886d568991ec7a5ff196fd0f93d0",
+    "baryon.ini.xml": "9d635e72e63a321a77d9f5af958b6d7fc196d635727cbf43b62601a664ce890b",
+    "baryon.ylm.ini.xml": "57461a9a90f018c063675592b17a666d3d581304c017b47cb06771ca6d97a67f",
+    "baryon.ylm.single.ini.xml": "827277b5d66a6393ccba5f2d160e5b9aa1bb6a71b966f8206f4ee13b8189399a",
+    "colorvec.ini.xml": "a39b20f0971cbcb515c7d8422436f9db22b3efb9b02917e58a8ce41141ee70d8",
+    "glue.deriv.ini.xml": "1de03d754393622866cf25a07087c147b413862d2b6a6b0ae57ddd8edb5b9bc2",
+    "glue.z3.ini.xml": "9a5ff74661a11e440124f3e9a637d7f2d03f8d3fed2637af79ff18cb410726d6",
+    "make_source.ini.xml": "eb051902cd41bda922d17df8050a5eb2f6e7aec409f45b43c412fff1e3f3f8fc",
+    "make_source_noise.ini.xml": "795a1c523410c9c34b1906aec2fc373e7e853d3456f67af773eb944def4015c2",
+    "meson.deriv.ini.xml": "f51af4ea14fd1d3827f23e4b1a99ac9c3e66a1ec1a9303835c6d1a105dafa5c9",
+    "meson.disp.ini.xml": "62061aff5e03b67b256886fecf8bb2ad1d8000a0803a37ad131db5180da97fe5",
+    "meson.ini.xml": "5ca100b705279d79ee91ca234b24a0e213464a33d62de20fdba6abc509e7e743",
+    "meson.ylm.ini.xml": "0a27247ebe2718cfa3ef0eda06bbb5d90988556fb60a6f9295d20746abf890e0",
+    "meson.ylm.reduced.ini.xml": "30d3213bd787e68bf23aa30b4f74021f226685fb15ccedce6b8376356747c080",
+    "meson.ylm.reduced.single.ini.xml": "328a88ed83c0b8b8b3faa98c60cdd4f02af5e6c2fd18fc6204286715257c5e0b",
+    "meson.ylm.single.ini.xml": "3c00a3de6ae426c761e135bc5e32b926101815edbab5590f5ca0dfd37add7461",
+    "peram.ini.xml": "c2c8791c71243a8e8a62e64c3f6d8e9fb989c0cc10b47c7e495b566332ea585a",
+    "prop.ini.xml": "a6891c59892610f509cbbf60e467126e66b7c6e69a189da9c3e67237e7288a91",
+    "prop_and_peram.ini.xml": "4263b10420a6cd2bd4dd214d8059a7b81cce83848b4bdf9539e159130e5b2d73",
+    "tetra.ini.xml": "becac406b9d637e2a071fd2d6ee387a80c5525e01ce51dc0a194bb4df8a37bfc",
+    "unsmeared.disp.ini.xml": "7c4bfebaa4266c9d29cd5c02e76a664302cfcf52ebf8957f76cc702975d3292b",
+    "unsmeared.harom.ini.xml": "b33f7fc7dacabf29fdf4af6c2a38022941531ed78bb2d61485f2528b29055142"
+  }
+}

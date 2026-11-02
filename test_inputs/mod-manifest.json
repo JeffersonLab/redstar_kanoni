@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "dataset": "kanoni-matched-mod-v1",
+  "files": [
+    {
+      "name": "gauge.mod",
+      "bytes": 297682,
+      "sha256": "7673022cabd823abd9e1ca684ebabaeef4b647c6129a2d854a6efda4986aea15",
+      "metadata": {
+        "id": "gaugeFieldTimeSlice",
+        "lattSize": "4 4 4 16",
+        "decay_dir": "3",
+        "producer_precision_bits": 32,
+        "producer_date": "26 Sep 26 15:06:29 EDT"
+      }
+    },
+    {
+      "name": "colorvec.mod",
+      "bytes": 253305,
+      "sha256": "30d6e03d4b995177faf8127206886a8e59f8bd7a84919e69c0d8c1a7da41cdb0",
+      "metadata": {
+        "id": "eigenVecsTimeSlice",
+        "lattSize": "4 4 4 16",
+        "decay_dir": "3",
+        "num_vecs": "10",
+        "producer_precision_bits": 32,
+        "producer_date": "26 Sep 26 15:06:29 EDT"
+      }
+    }
+  ]
+}

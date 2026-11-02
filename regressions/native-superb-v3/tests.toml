@@ -1,0 +1,152 @@
+# Reproducible baselines; explicit exclusions and reasons follow the active list.
+schema_version = 1
+
+[[tests]]
+xml = "1pt.xml"
+kind = "passed"
+sha256 = "4c28cca9fc8775a85d024da99778704c305c423713bcc7dcf719066f0e1c82d1"
+
+[[tests]]
+xml = "33.xml"
+kind = "passed"
+sha256 = "9d0a43d8279ad161dbceb648f696c61de6220e312982a749dcf41d01d4e4113f"
+
+[[tests]]
+xml = "3pi.xml"
+kind = "passed"
+sha256 = "6b81881178f22c7d6650d6b02f2f8aebacd9dabf15176b91e757e2379dbd1c32"
+
+[[tests]]
+xml = "a1_rhopi.xml"
+kind = "passed"
+sha256 = "8721c810a9d477bba2b76a91213c858b6ae114296fb513140b30aaa0cf4f892d"
+
+[[tests]]
+xml = "d.xml"
+kind = "passed"
+sha256 = "ffd6cd14992b974a293df8ff22f43c6c116b31be8a0d0f3a0a6af824ccf4bb0c"
+
+[[tests]]
+xml = "delta_J1o2m.xml"
+kind = "passed"
+sha256 = "7eab1c8475cd81c82a3a824fcc0ff17309a2bd690a39f57a0eec808dd26fcd76"
+
+[[tests]]
+xml = "eta8eta8_F8.xml"
+kind = "passed"
+sha256 = "e32120cb5eb19de8857e7802f9e005e3b2cf01617857ef2fd6d9f7cdf1ca49a5"
+
+[[tests]]
+xml = "eta_eta_3pt.xml"
+kind = "passed_symmetry_zero"
+sha256 = "e18e32266dc5d6616a7b5ef00426c42f033e3abc99f7ce73278df0ce4d688ecc"
+
+[[tests]]
+xml = "fsq_3pt.xml"
+kind = "passed"
+sha256 = "7308e3b75ae6f285a29a7d233b9b5452c82f589db06563f187a35a38e63614ee"
+
+[[tests]]
+xml = "glue.xml"
+kind = "passed"
+sha256 = "5b43eb4d82fcbb099da89588dd7e8c384a518df7a06bb3d2017be42ca77f8dcb"
+
+[[tests]]
+xml = "h8.xml"
+kind = "passed"
+sha256 = "7ff924d29b3ef34c61aafe5de9846dcd1f793984af2418e3296bac1c3a9c0d36"
+
+[[tests]]
+xml = "hard.1_tslice.ini.xml"
+kind = "passed"
+sha256 = "471d1497049b118b599159aec119a39c5bba7e324c3ca369eb946dc1a5f14cfe"
+
+[[tests]]
+xml = "nuc.p100.xml"
+kind = "passed"
+sha256 = "d68616e43ca497a8d07cc4f3bae87703f50bc13013125e266bad06bfedcc0b49"
+
+[[tests]]
+xml = "nuc.xml"
+kind = "passed"
+sha256 = "bf26d69c2cf312f475c38681a07a52ff4a808f70c6b70c3889a5a7dc244cc549"
+
+[[tests]]
+xml = "nuc_gA.xml"
+kind = "passed"
+sha256 = "c7ee8a236bcd983474be35b5a8ac2d75b1ba77871de5d010280d7b1eda8a0026"
+
+[[tests]]
+xml = "nuc_nuc_ax_3pt.xml"
+kind = "passed"
+sha256 = "65487d35933b54e209ec99d4a419748e4ec2eb85265433fd2f5bfc5f4f73eb7b"
+
+[[tests]]
+xml = "nuc_nuc_proj_3pt.xml"
+kind = "passed"
+sha256 = "0e8a67c1b9ea9055548194107385483248ba01ba4ff762f3798c483c90235da9"
+
+[[tests]]
+xml = "nucnuc_small.xml"
+kind = "passed"
+sha256 = "9d26de53eaca7de57b770e3d9888fa72d03125afd63975d5ac58cf1ec0da79b3"
+
+[[tests]]
+xml = "nucpi.xml"
+kind = "passed"
+sha256 = "ece17efa08a4e288ee174d346e380b83381907deb703eefce5e87a7cd18be6e6"
+
+[[tests]]
+xml = "nucpi_I3o2.xml"
+kind = "passed"
+sha256 = "d393a9cdd1dbcf2f4a7fc314db0f09ea96917acfe57e0ad95e4208ed88838194"
+
+[[tests]]
+xml = "nucpi_J1o2m.xml"
+kind = "passed"
+sha256 = "6f978e8972b9fbda147ff07b515e83a7e4e207f7e1bfe3a9a2178e8fee5b2d0e"
+
+[[tests]]
+xml = "nucpi_nucpi_J1o2m.xml"
+kind = "passed"
+sha256 = "51b3f0d514b49aac1f8db3789c8944185a6043c8a769bd915732dfc07b736fe3"
+
+[[tests]]
+xml = "pi.xml"
+kind = "passed"
+sha256 = "5f9d5f07c109b5b9601ec45681a4434b007efe6a3902c8d9d77dc22455050dc8"
+
+[[tests]]
+xml = "pi_pi_3pt.xml"
+kind = "passed"
+sha256 = "3663338fbc638708c1f98fab67a12b17dda9c19c5d2e47f0d584d47b24838467"
+
+[[tests]]
+xml = "pion.xml"
+kind = "passed"
+sha256 = "5ebc43463a804aa5776dbb8dbd8812d5beeab437a9eba8522e590738b39028f5"
+
+[[tests]]
+xml = "pion_3pt.xml"
+kind = "passed"
+sha256 = "9a6f1c2c07861d2ee910c4f42bb8aa55a6d6dfad7f76f7f3757f436f9f0c404d"
+
+[[tests]]
+xml = "pipi_i1.xml"
+kind = "passed"
+sha256 = "7a8abc4bd99ab6a44e5bc319d99ec1bb5b8d7a30a6c5f426b55172d22cbfb379"
+
+[[tests]]
+xml = "psi.xml"
+kind = "passed"
+sha256 = "0691114aa80d2f3f34d834b0293ed9972b8f6c42c958a6eb1ee39b6a5dff3b32"
+
+[[tests]]
+xml = "rho.xml"
+kind = "passed"
+sha256 = "8758122ee5cba7d84e5305ecbea2379bbc90e15aa00f4de82daa1963573554b0"
+
+[[tests]]
+xml = "tetra_F27_S2.xml"
+kind = "passed"
+sha256 = "4e5f7fdfb412eb55f5bf00118ca9e785f989fc0f96639e4abcd68a4998f75f9a"

@@ -1,0 +1,65 @@
+{
+  "dataset": "kanoni-f64-v2-candidate",
+  "precision_bits": 64,
+  "RsdCG": 1e-14,
+  "stages": [
+    {
+      "input": "colorvec.ini.xml",
+      "outputs": [
+        "colorvec.mod",
+        "colorvec.lime"
+      ]
+    },
+    {
+      "input": "prop_and_peram.ini.xml",
+      "outputs": [
+        "prop.sdb"
+      ]
+    },
+    {
+      "input": "meson.deriv.ini.xml",
+      "outputs": [
+        "meson.sdb"
+      ]
+    },
+    {
+      "input": "baryon.deriv.ini.xml",
+      "outputs": [
+        "baryon.sdb"
+      ]
+    },
+    {
+      "input": "tetra.ini.xml",
+      "outputs": [
+        "tetra.sdb"
+      ]
+    },
+    {
+      "input": "glue.deriv.ini.xml",
+      "outputs": [
+        "glue.sdb"
+      ]
+    },
+    {
+      "input": "unsmeared.disp.ini.xml",
+      "outputs": [
+        "unsmeared_meson.sdb"
+      ]
+    },
+    {
+      "input": "genprop4.ini.xml",
+      "outputs": [
+        "unsmeared_genprop4.sdb"
+      ]
+    }
+  ],
+  "notes": [
+    "Old dataset remains untouched until validation",
+    "QIO colorvec.lime is an exact temporary bridge for the existing glue named-object reader; no gauge.mod is needed",
+    "PROP_AND_MATELEM_DISTILLATION_SUPERB writes prop.sdb directly",
+    "U0.2 included for the declared c/e mass mapping",
+    "Extra wrapped axial-current pairs retained explicitly",
+    "User explicitly retained legacy gpdf_2_0.00.sdb; it is not regenerated or claimed to have double-precision provenance",
+    "User explicitly retained legacy gpdf_2_0.00.sdb; it is not regenerated or claimed to have double-precision provenance"
+  ]
+}

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RedstarNPt>
+  <Param>
+    <version>14</version>
+    <diagnostic_level>0</diagnostic_level>
+    <average_1pt_diagrams>true</average_1pt_diagrams>
+    <zeroUnsmearedGraphsP>true</zeroUnsmearedGraphsP>
+    <t_origin>0</t_origin>
+  </Param>
+  <DBFiles>
+    <corr_graph_bin>corr_graph.bin</corr_graph_bin>
+    <output_db>output.sdb1</output_db>
+  </DBFiles>
+  <ColorVec>
+    <Param>
+      <version>1</version>
+      <num_vecs>10</num_vecs>
+      <use_derivP>false</use_derivP>
+      <use_genprop4>true</use_genprop4>
+      <use_FSq>false</use_FSq>
+      <fake_data_modeP>false</fake_data_modeP>
+      <ensemble>fred</ensemble>
+      <FlavorToMass>
+        <elem>
+          <flavor>l</flavor>
+          <mass>U0.05</mass>
+        </elem>
+        <elem>
+          <flavor>s</flavor>
+          <mass>U0.1</mass>
+        </elem>
+        <elem>
+          <flavor>c</flavor>
+          <mass>U0.2</mass>
+        </elem>
+        <elem>
+          <flavor>e</flavor>
+          <mass>U0.2</mass>
+        </elem>
+        <elem>
+          <flavor>g</flavor>
+          <mass>U0.05</mass>
+        </elem>
+      </FlavorToMass>
+    </Param>
+    <DBFiles>
+      <annotation>Need to provide "elem" entries for those elementals actually needed</annotation>
+      <prop_dbs>
+        <elem>prop.sdb</elem>
+      </prop_dbs>
+      <smeared_baryon_dbs>
+        <elem>baryon.sdb</elem>
+      </smeared_baryon_dbs>
+      <smeared_meson_dbs>
+        <elem>meson.deriv.sdb</elem>
+      </smeared_meson_dbs>
+      <smeared_meson_boosted_dbs>
+        </smeared_meson_boosted_dbs>
+      <smeared_glue_dbs>
+        <elem>glue.deriv.sdb</elem>
+      </smeared_glue_dbs>
+      <smeared_tetra_dbs>
+        <elem>tetra.sdb</elem>
+      </smeared_tetra_dbs>
+      <unsmeared_meson_dbs> 
+     
+  </unsmeared_meson_dbs>
+      <unsmeared_genprop4_dbs> 
+     
+  </unsmeared_genprop4_dbs>
+      <twoquark_discoblock_dbs> 
+     
+  </twoquark_discoblock_dbs>
+      <hadron2pt_discoblock_dbs> 
+     
+  </hadron2pt_discoblock_dbs>
+      <fsq_discoblock_dbs> 
+  </fsq_discoblock_dbs>
+    </DBFiles>
+  </ColorVec>
+</RedstarNPt>

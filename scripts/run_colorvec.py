@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Run one current Redstar input in a fresh Kanoni output directory."""
+"""Run one combined development XML in a fresh Kanoni output directory.
+
+These test XMLs combine corr_graph NPointList and npt ColorVec inputs.
+Production normally uses separate, purpose-specific XMLs.
+"""
+from redstar_runtime import OUTPUT_DATABASE, configured_tools, prepare_outputs, stage_command
 import argparse
 from datetime import datetime
 import hashlib
@@ -25,6 +30,7 @@ def main():
     parser.add_argument('--threads', type=int, default=os.environ.get('OMP_NUM_THREADS', '4'))
     parser.add_argument('--keep-diagnostics', action='store_true',
                         help='retain the input diagnostic level and graph XML/database dumps')
+    parser.add_argument('--tools', type=Path, help='TOML executable paths (Python 3.11+ or tomli)')
     args = parser.parse_args()
     if args.threads < 1:
         parser.error('--threads must be positive')
@@ -42,8 +48,11 @@ def main():
         parser.error('Legacy mom_type keys require typed SUNClass conversion')
     names = ('redstar_corr_graph', 'redstar_npt')
     bindir = os.environ.get('REDSTAR_BIN')
+    configured = configured_tools(args.tools) if args.tools else {}
     if bindir:
         programs = [Path(bindir).expanduser() / name for name in names]
+    elif configured:
+        programs = [configured[name] for name in names]
     else:
         located = [shutil.which(name) for name in names]
         programs = [Path(p) for p in located] if all(located) else [root.parent / 'redstar.devel/build/src' / name for name in names]
@@ -80,11 +89,7 @@ def main():
             item = xml.find('DBFiles/' + name)
             if item is not None:
                 item.text = name + ('.xml' if name.endswith('_xml') else '.sdb1')
-    for name, value in [('corr_graph_bin', 'corr_graph.bin'), ('output_db', 'output.npt.sdb1')]:
-        item = xml.find('DBFiles/' + name)
-        if item is None:
-            item = ET.SubElement(xml.find('DBFiles'), name)
-        item.text = value
+    prepare_outputs(xml)
     runs = root / 'runs'
     runs.mkdir(exist_ok=True)
     run = Path(tempfile.mkdtemp(prefix=source.stem + '-' + datetime.now().strftime('%Y%m%d-%H%M%S') + '-', dir=runs))
@@ -113,16 +118,16 @@ def main():
     save()
     print('Run directory: ' + str(run), flush=True)
     try:
-        for program, phase in zip(programs, ('graph', 'npt')):
-            log = run / (phase + '.log')
-            command = [str(program), 'input.xml', phase + '.out.xml']
+        for program, phase in zip(programs, ('graph', 'numerical')):
+            log = run / (('npt' if phase == 'numerical' else phase) + '.log')
+            command = list(map(str, stage_command(dict(zip(names, programs)), phase)))
             step = dict(argv=command, log=str(log)); record['commands'].append(step); save()
             with log.open('wb') as stream:
                 result = subprocess.run(command, cwd=run, env=env, stdout=stream, stderr=subprocess.STDOUT)
             step['returncode'] = result.returncode; save()
             if result.returncode:
                 raise RuntimeError('{} failed ({}); see {}'.format(program.name, result.returncode, log))
-        if not (run / 'corr_graph.bin').is_file() or not (run / 'output.npt.sdb1').is_file():
+        if not (run / 'corr_graph.bin').is_file() or not (run / OUTPUT_DATABASE).is_file():
             raise RuntimeError('Executables returned success without the expected graph/correlator output')
         record['status'] = 'executables_passed'; save()
     except Exception as error:

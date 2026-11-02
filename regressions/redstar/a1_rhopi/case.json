@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "correlators": 1,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "reference": "../../a1_rhopi/output.sdb1",
+  "reference_sha256": "9e195ce92e98dbc37c28d3bae72c8ec6072c5aacb41ea1e6570cee7036b3f0f4",
+  "relative_tolerance": 1e-12,
+  "symmetry_zero": false,
+  "provenance": {
+    "source_xml": "test_inputs/a1_rhopi.xml",
+    "source_xml_sha256": "640741ce95da65ba91ad440b2df9af047182e51fe05ec726bf913a3773cfecc5",
+    "baseline_metadata": "../../a1_rhopi/baseline.json"
+  }
+}

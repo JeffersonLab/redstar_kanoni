@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "kind": "redstar",
+  "purpose": "direct_backend_comparison",
+  "correlators": 3,
+  "time_samples": 16,
+  "num_vecs": 10,
+  "t_origin": 0,
+  "symmetry_zero": false,
+  "note": "New direct test uses source/output origin zero for both backends; original pion regression output origin three is preserved.",
+  "chroma_template": "../../corr_superb/chroma.xml",
+  "field_source": "checksum-pinned gauge.mod and colorvec.mod"
+}

@@ -1,0 +1,168 @@
+{
+  "created_at": "2026-10-31T15:23:02.121113-04:00",
+  "xml": "nuc.p100.xml",
+  "sha256": "bc8ce8dcec1c7ebe168c6cee19acc3b87c6ec58834144daf379c3f1fb8e5f00b",
+  "validation_report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/results.json",
+  "case": {
+    "file": "nuc.p100.xml",
+    "status": "passed",
+    "commands": [
+      {
+        "phase": "graph",
+        "argv": [
+          "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/redstar_corr_graph",
+          "input.xml",
+          "graph.out.xml"
+        ],
+        "log": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/nuc.p100/graph.log",
+        "started_at": "2026-10-31T15:18:42.040860-04:00",
+        "returncode": 0,
+        "seconds": 1.5213073331397027,
+        "status": "passed"
+      },
+      {
+        "phase": "view",
+        "argv": [
+          "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/view_corr_graph",
+          "corr_graph.bin"
+        ],
+        "log": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/nuc.p100/view.log",
+        "started_at": "2026-10-31T15:18:43.564459-04:00",
+        "returncode": 0,
+        "seconds": 0.22496775002218783,
+        "status": "passed"
+      },
+      {
+        "phase": "numerical",
+        "argv": [
+          "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/redstar_npt",
+          "input.xml",
+          "npt.out.xml"
+        ],
+        "log": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/nuc.p100/numerical.log",
+        "started_at": "2026-10-31T15:18:43.793533-04:00",
+        "returncode": 0,
+        "seconds": 0.22372162505052984,
+        "status": "passed"
+      },
+      {
+        "phase": "keys",
+        "argv": [
+          "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/adat/bin/dbutil",
+          "output.sdb1",
+          "keysxml",
+          "keys.xml"
+        ],
+        "log": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/nuc.p100/keys.log",
+        "started_at": "2026-10-31T15:18:44.019275-04:00",
+        "returncode": 0,
+        "seconds": 0.22290591592900455,
+        "status": "passed"
+      },
+      {
+        "phase": "extract",
+        "argv": [
+          "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/extract_ops_util",
+          "operators.list",
+          "operators.xml",
+          "output.sdb1"
+        ],
+        "log": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/nuc.p100/extract.log",
+        "started_at": "2026-10-31T15:18:44.256312-04:00",
+        "returncode": 0,
+        "seconds": 1.5260792919434607,
+        "status": "passed"
+      },
+      {
+        "phase": "readback",
+        "argv": [
+          "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/adat/bin/dbutil",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/nuc.p100/output.sdb1",
+          "get",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/nuc.p100/keys.xml"
+        ],
+        "log": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/nuc.p100/readback.log",
+        "started_at": "2026-10-31T15:18:45.785053-04:00",
+        "returncode": 0,
+        "seconds": 0.23099750000983477,
+        "status": "passed"
+      }
+    ],
+    "input_sha256": "7020cc98cd8dbde4edc7698059321b9b2060dd4918b68e990e803bc6d17ef992",
+    "declared_correlators": 2,
+    "time_samples": 7,
+    "fake_data_mode": "false",
+    "correlators": 2,
+    "graphs": 4,
+    "extracted_operators": 2,
+    "configurations": 1,
+    "finite_complex_values": 14,
+    "zero_correlator_keys": 0,
+    "operator_definitions_match_keys": true
+  },
+  "programs": {
+    "redstar_corr_graph": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/redstar_corr_graph",
+    "redstar_npt": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/redstar_npt",
+    "view_corr_graph": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/view_corr_graph",
+    "extract_ops_util": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/redstar/bin/extract_ops_util"
+  },
+  "program_sha256": {
+    "redstar_corr_graph": "07b97a3ec0d22367430da3658aaeefac8757ba8483da0f0b23d7098d95a58255",
+    "redstar_npt": "fe36b18256df0ac2bd73282d5e4d6cacba2765c931d7a9d5438f92c39a32741a",
+    "view_corr_graph": "8fffae97ff774c9e24b7df654a0b5733f8c749ff10bb3c230f6129e3c79894f5",
+    "extract_ops_util": "9880188e4297f3cd09328d57ba57dd79f563f51add339de42be328eaaada5ef5",
+    "dbutil": "8743d066089a53b4b6a859be8a5e4e2fa6c38735c9e618c71c9b4d5b6e97c03a"
+  },
+  "dataset": "kanoni-v1",
+  "verified_data": {
+    "prop.sdb": {
+      "bytes": 21471232,
+      "sha256": "e1d3ab353476637d9ff5e30192b8dd3f141959923a572a8c18aa24256f0bdfc2"
+    },
+    "baryon.sdb": {
+      "bytes": 93618176,
+      "sha256": "30ce94527cbc75df076f2963db9769c7e3334dde340e0da3070232e67a949211"
+    },
+    "meson.deriv.sdb": {
+      "bytes": 117211136,
+      "sha256": "8b828220d114aac8194a9ca5d9d878c57bdd9ca170238bc81e16b5ef136b9a83"
+    },
+    "glue.deriv.sdb": {
+      "bytes": 49741824,
+      "sha256": "268f33e48c0d5d0519ec74fe224a29cd182a4489055bb3da35bae568fcc7b79f"
+    },
+    "tetra.sdb": {
+      "bytes": 5431296,
+      "sha256": "f30ff57d05531b6b9a5f020219e6bbc39aa973192fbbb2b53ac49b1c1f1c40d6"
+    },
+    "unsmeared_meson.sdb": {
+      "bytes": 169680896,
+      "sha256": "f6411f15e5c8fc542604764524e8d3291d459c4b73dd370497202efd713c6f8c"
+    },
+    "unsmeared_genprop4.sdb": {
+      "bytes": 179298304,
+      "sha256": "39ec071182f7f3af73cf286c69d16f44de7ed802241932f4548fad039529fc25"
+    },
+    "disco.sdb": {
+      "bytes": 327680,
+      "sha256": "5b417a0707b92ba17faa922c3b3db730cef324b8ca31f7756a3613fc83a73a6e"
+    },
+    "gpdf_2_0.00.sdb": {
+      "bytes": 5439488,
+      "sha256": "b77de36071c90aaf33f780502376717a3f71f13d08dbb111fc5ea16fc8b3a369"
+    },
+    "gpdf.more.sdb": {
+      "bytes": 64552960,
+      "sha256": "cb68b4e892ecc0fe505031a7b368ab3bba59bea7ce6dc6cd32bf008291b9d372"
+    },
+    "disco-U0.05.sdb": {
+      "bytes": 1318912,
+      "sha256": "e763fc028497f781d9a7d7b7d8b119e0328262cb268ba959393d4b69c38f0a66"
+    },
+    "disco-U0.1.sdb": {
+      "bytes": 1318912,
+      "sha256": "c6acb1f0a8ec550e83e1fa1ddbfd9e6fb6da8be2d4a821c59e3416ca44cee132"
+    }
+  },
+  "readback_report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261031-151322-ma_m7fjx/nuc.p100/baseline-check/comparison.json"
+}

@@ -18,7 +18,7 @@ def main():
     if output.exists():parser.error('Output exists; choose a new path')
     flags=lambda option:shlex.split(subprocess.check_output([config,option],text=True))
     source=Path(__file__).resolve().parent/'export_correlators.cc';output.parent.mkdir(parents=True,exist_ok=True)
-    command=flags('--cxx')+flags('--cxxflags')+[str(source),'-o',str(output)]+flags('--ldflags')+['-ldbutil']+flags('--libs')
+    command=flags('--cxx')+flags('--cxxflags')+[str(source),'-o',str(output)]+flags('--ldflags')+flags('--libs')
     print(shlex.join(command),flush=True);subprocess.run(command,check=True)
 
 

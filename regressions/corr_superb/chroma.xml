@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chroma>
+  <annotation>
+;
+; Test input file for chroma main program
+;
+</annotation>
+  <Param>
+    <InlineMeasurements>
+      <elem>
+        <Name>CORR_SUPERB</Name>
+        <Frequency>1</Frequency>
+        <Param>
+          <num_vecs>10</num_vecs>
+          <max_rhs>10</max_rhs>
+          <t_origin>0</t_origin>
+          <Nt_forward>16</Nt_forward>
+          <ensemble>fred</ensemble>
+          <flavor_to_mass>
+            <elem>
+              <flavor>l</flavor>
+              <mass>U0.05</mass>
+            </elem>
+          </flavor_to_mass>
+          <flavor_to_prop>
+            <elem>
+              <flavor>l</flavor>
+              <Propagator>
+                <version>10</version>
+                <quarkSpinType>FULL</quarkSpinType>
+                <obsvP>false</obsvP>
+                <numRetries>1</numRetries>
+                <FermionAction>
+                  <FermAct>CLOVER</FermAct>
+                  <Mass>0.05</Mass>
+                  <clovCoeff>1.0</clovCoeff>
+                  <AnisoParam>
+                    <anisoP>false</anisoP>
+                  </AnisoParam>
+                  <FermionBC>
+                    <FermBC>SIMPLE_FERMBC</FermBC>
+                    <boundary>1 1 1 -1</boundary>
+                  </FermionBC>
+                </FermionAction>
+                <InvertParam>
+                  <invType>CG_INVERTER</invType>
+                  <RsdCG>1.0e-8</RsdCG>
+                  <MaxCG>1000</MaxCG>
+                </InvertParam>
+              </Propagator>
+            </elem>
+          </flavor_to_prop>
+          <props />
+          <genprops />
+          <mesons />
+          <baryons />
+          <LinkSmearing>
+            <LinkSmearingType>STOUT_SMEAR</LinkSmearingType>
+            <link_smear_fact>0.1625</link_smear_fact>
+            <link_smear_num>4</link_smear_num>
+            <no_smear_dir>3</no_smear_dir>
+          </LinkSmearing>
+        </Param>
+        <NamedObject>
+          <gauge_id>default_gauge_field</gauge_id>
+          <colorvec_files>
+            <elem>../../data/colorvec.mod</elem>
+          </colorvec_files>
+          <corr_graph_file>corr_graph.bin</corr_graph_file>
+          <corr_file>output.sdb1</corr_file>
+        </NamedObject>
+      </elem>
+    </InlineMeasurements>
+    <nrow>4 4 4 16</nrow>
+  </Param>
+  <RNG>
+    <Seed>
+      <elem>11</elem>
+      <elem>11</elem>
+      <elem>11</elem>
+      <elem>0</elem>
+    </Seed>
+  </RNG>
+  <Cfg><cfg_type>SZINQIO</cfg_type><cfg_file>gauge.lime</cfg_file><reunit>false</reunit></Cfg></chroma>
