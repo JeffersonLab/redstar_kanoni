@@ -4,6 +4,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+import xml.etree.ElementTree as E
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from disco_dataset import load_disco_collection
 
@@ -62,3 +63,20 @@ class DiscoCollectionTest(unittest.TestCase):
     def test_reject_partial_gamma_readback(self):
         self.report['files'][0]['validation']['finite_complex_values'] = 8
         with self.assertRaisesRegex(ValueError, 'readback coverage'): self.load()
+
+
+class DirectDiscoRecipeTest(unittest.TestCase):
+    def test_one_output_complete_mass_time_dictionary(self):
+        recipe = Path(__file__).resolve().parents[1] / 'chroma_inputs/superb-double/disco.probing.ini.xml'
+        root = E.parse(recipe).getroot()
+        entries = root.findall('Param/InlineMeasurements/elem')
+        self.assertEqual(len(entries),32)
+        self.assertEqual({e.findtext('NamedObject/sdb_file') for e in entries},{'disco.sdb'})
+        coverage = set()
+        for e in entries:
+            p = e.find('Param')
+            self.assertEqual([n.text for n in p.findall('mass_labels/elem')],['U0.05','U0.1'])
+            self.assertEqual(p.findtext('max_path_length'),'3')
+            self.assertEqual(p.findtext('Propagator/InvertParam/RsdCG'),'1e-14')
+            coverage.add((p.findtext('mass_label'),int(p.findtext('t_sources'))))
+        self.assertEqual(coverage,{(mass,t) for mass in ['U0.05','U0.1'] for t in range(16)})

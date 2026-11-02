@@ -64,6 +64,20 @@
         "genprop-U0.05.sbt": "U0.05",
         "genprop-U0.1.sbt": "U0.1"
       }
+    },
+    {
+      "input": "disco.probing.ini.xml",
+      "outputs": [
+        "disco.sdb"
+      ],
+      "storage": "SUPERB",
+      "expected_id": "DiscoBlocks",
+      "mass_labels": {
+        "disco.sdb": [
+          "U0.05",
+          "U0.1"
+        ]
+      }
     }
   ],
   "remaining_migration": [],
@@ -72,6 +86,6 @@
     "SUPERB tensor elementals throughout supported producer chain; incomplete until remaining migrations validate",
     "Historical SDB candidates and baselines remain separate",
     "Colorvec source stays native double MOD as explicitly requested; colorvec.lime is temporary glue bridge",
-    "One native tensor file per mass; schema metadata mass_label is checked for every expected output"
+    "Propagator/GenProp native tensors are per mass; DISCO writes all masses/times/z paths directly into one disco.sdb with a mass_labels dictionary"
   ]
 }

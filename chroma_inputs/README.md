@@ -24,15 +24,19 @@ Use the native recipes to generate a separate dataset and verify every tensor wi
 
 ## Disconnected-loop recipe
 
-The final collection contains one native `disco.sdb` with both masses, all
-16 times and z paths 0, ±1, ±2, ±3. The current Chroma input produces temporary
-mass/time shards; `scripts/pack_disco.cc` consolidates them and verifies exact
-source equality. See `scripts/build_disco_packer.py --help` for a matching-ABI
-build. Do not use one shared producer filename: it overwrites prior measurements.
+`disco.probing.ini.xml` writes all masses, all 16 times and straight z paths
+0, ±1, ±2, ±3 **directly into one `disco.sdb`**. Every measurement declares the
+same `mass_labels` dictionary and the same output filename. No shard files or
+packing step are part of this workflow. Run in a fresh directory: existing
+files, duplicate mass/time entries and incompatible settings are rejected.
 
-The packed rank-5 `itdmf` tensor retains an explicit mass dictionary; readers
-also accept the older rank-4 and legacy FILEDB formats. The validated collection
-is `data/disco-native-z3-packed-20261101-003/`, separate from immutable v1 data.
-Full readback and nuc_nuc_3pt NPT/CORR comparisons pass on both chains. The
-initial Z4-noise diagnostic and validation-tool failures remain preserved.
-See [DISCO generation and acceptance results](../docs/disconnected-loops.md).
+The native rank-5 `itdmf` tensor has an explicit mass dictionary. Readers also
+accept older rank-4 native files and legacy FILEDB databases. `recipe.json`
+includes the direct DISCO stage; the generator chooses native inspection from
+`storage: SUPERB` even though its suffix is `.sdb`, and checks the mass dictionary.
+The old packer is retained only for migrating historical shard outputs.
+
+The direct collection `data/disco-native-direct-20261101-001/` passed full
+readback and paired nuc_nuc_3pt/pion checks on both chains. Earlier packed data
+and failed diagnostics remain separate. See
+[direct DISCO generation and results](../docs/disconnected-loops.md).

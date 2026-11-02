@@ -64,7 +64,11 @@
 - Retain user-directed deferrals for glue/tetra CORR, gluonic-insertion CORR,
   and ff_3pt. The user reopened nuc_nuc_3pt disconnected-loop work; use the
   gauge-transported DISCO_PROBING_3D_DEFLATION_SUPERB recipe, not plain-shift DISCO.
-  Its fresh native collection passed full readback and paired NPT/CORR checks.
+  Canonical DISCO inputs use a complete mass_labels dictionary and one shared
+  disco.sdb filename: the producer appends directly, without shards or packing.
+  Use a fresh directory; existing output, duplicate mass/time and incompatible
+  packets are rejected. The direct collection passed full readback and paired
+  NPT/CORR checks. Keep the historical packer only as a migration tool.
   Keep --disco-dataset explicit and validate its input/payload hashes and gauge/RNG
   against the baseline. See docs/disconnected-loops.md for scope and limitations.
   The remaining deferred NPT/CORR scopes are

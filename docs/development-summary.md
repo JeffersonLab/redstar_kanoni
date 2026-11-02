@@ -6,6 +6,30 @@ Canonical home: redstar_kanoni `devel`, `docs/development-summary.md`. Devel is 
 
 The main achievement is a documented, reproducible route from continuum operators through contraction graphs and numerical correlator databases to matrix-element fits. The regression baseline is the **devel chain**, with the fitting repositories on their established main/master branches. The experimental `no_1pt` work and the proposed all-YLM vertex migration are separate from that baseline.
 
+## Requested next work: publication and production integration
+
+Recorded 1 November 2026 at the user's request. These are planned tasks, not
+completed migrations; the current baseline and experimental qualifications below
+remain in force until the implementation and validation are complete.
+
+- [ ] Prepare a paper and a coordinated public code release before merging the
+  branch families. Establish the ADAT/datalib publication and dependency layout
+  explicitly; pushing a branch to an access-controlled repository is not a public
+  release.
+- [ ] Bring the `no_1pt` work in Redstar, ColorVec and ADAT into the supported
+  development baseline so it no longer needs the experimental designation.
+  Coordinate the matching Chroma consumer, graph-format compatibility and
+  regression evidence as part of that promotion.
+- [ ] Integrate the `devel-rge-ylm` work into `devel` where it has not already
+  been merged; check each repository's actual merge state first.
+- [ ] Change the graph vertex representation to reuse the `deriv` tag for the
+  specification of the derivative-part Y_lm present in that vertex. Elementals
+  retain the full specification described by the `devel-rge-ylm` work.
+- [ ] Obtain the user's remaining design details before implementing the vertex
+  encoding. Define the precise tag contents, reader/writer changes, compatibility
+  and migration procedure, and validate matched graph generators and consumers
+  without weakening the numerical gate.
+
 ## 1. Experimental `no_1pt`: changed one-point behavior and graph compatibility
 
 **Experimental; not the regression baseline.** On the `devel-rge-no_1pt` feature branches, `average_1pt_diagrams=false` disables full-lattice one-point averaging. Disconnected one-point pieces are still computed: fixed-source pieces once, and varying pieces within the parent correlator's requested time window. This avoids requiring annihilation data outside that window. Setting the flag true in Redstar expands one-point evaluation over the lattice and averages products for diagrams composed entirely of one-point pieces. Mixed diagrams retain their requested-time products.
@@ -27,6 +51,15 @@ now completed the reopened nuc_nuc_3pt check with native DISCO data: both chains
 The original 12³×16 Nπ comparison also passed all 81+729 keys and 5,670 values,
 with maximum experimental/devel difference 1.11e-16. No tolerances were weakened.
 The validated changes are committed; [regression coverage](regressions.md) records their scope and build qualification.
+
+## Direct one-file DISCO generation
+
+DISCO now writes all declared masses, times and z displacements directly to one
+native database, with checked appends rather than temporary shards or a packing
+step. The full weak-field run passed readback and agreed with the previous values
+under the unchanged numerical gate; fresh nuc_nuc_3pt and pion comparisons pass on devel and experimental
+no_1pt. [Direct DISCO details](disconnected-loops.md) record the guarded writer,
+inputs, tests and build qualification. Historical packed data remain separate.
 
 ## New native-double 4³×16 dataset and storage work
 

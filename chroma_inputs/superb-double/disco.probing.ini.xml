@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chroma>
-  <annotation>Temporary mass/time shards for DISCO_PROBING_3D_DEFLATION_SUPERB. Run in a fresh working directory, then pack_disco disco.sdb disco-U*.sbt to obtain ONE native database containing both masses and all times/z paths. Distinct intermediate names prevent producer overwrites.</annotation>
+  <annotation>All measurements append directly to ONE native disco.sdb. mass_labels declares the full dictionary. Run in a fresh directory; existing files and duplicate mass/time entries are rejected. No temporary shards or packing step.</annotation>
   <Param>
     <InlineMeasurements>
       <elem>
@@ -47,10 +47,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t00.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -97,10 +101,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t01.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -147,10 +155,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t02.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -197,10 +209,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t03.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -247,10 +263,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t04.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -297,10 +317,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t05.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -347,10 +371,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t06.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -397,10 +425,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t07.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -447,10 +479,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t08.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -497,10 +533,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t09.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -547,10 +587,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t10.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -597,10 +641,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t11.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -647,10 +695,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t12.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -697,10 +749,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t13.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -747,10 +803,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t14.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -797,10 +857,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.05-t15.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -847,10 +911,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t00.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -897,10 +965,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t01.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -947,10 +1019,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t02.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -997,10 +1073,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t03.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1047,10 +1127,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t04.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1097,10 +1181,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t05.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1147,10 +1235,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t06.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1197,10 +1289,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t07.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1247,10 +1343,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t08.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1297,10 +1397,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t09.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1347,10 +1451,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t10.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1397,10 +1505,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t11.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1447,10 +1559,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t12.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1497,10 +1613,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t13.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1547,10 +1667,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t14.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
       <elem>
@@ -1597,10 +1721,14 @@
           <Projector>
             <projectorType>NULL_PROJECTOR</projectorType>
           </Projector>
+          <mass_labels>
+            <elem>U0.05</elem>
+            <elem>U0.1</elem>
+          </mass_labels>
         </Param>
         <NamedObject>
           <gauge_id>default_gauge_field</gauge_id>
-          <sdb_file>disco-U0.1-t15.sbt</sdb_file>
+          <sdb_file>disco.sdb</sdb_file>
         </NamedObject>
       </elem>
     </InlineMeasurements>

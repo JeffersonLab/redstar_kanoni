@@ -92,3 +92,12 @@ DiscoBlocks storage. Generation/readback and matched comparisons are separate
 gates. Supply a validated supplemental collection explicitly with
 `--disco-dataset`; the runner hashes it and passes the same files to NPT and
 CORR_SUPERB. The new report independently checks all seven values per chain, missing-data rejection and zero comparison CG solves. Together with the historical matrix, this covers 30 active cases per chain; it is not a newly repeated full 30-case sweep. Devel is the baseline and no_1pt is experimental. See [DISCO details](disconnected-loops.md).
+
+## Direct DISCO generation acceptance
+
+The canonical DISCO stage now appends every mass/time packet directly to one
+`disco.sdb`, with no temporary shards or packing step. The full generated output
+passed all 224 keys/3,584 values and agreed with the previous baseline. A fresh
+paired nuc_nuc_3pt/pion check passed on both chains (four checks, 110 values, zero
+comparison CG solves). See [direct DISCO results](disconnected-loops.md). This
+validates the direct writer without claiming a repeated full 30-case sweep.

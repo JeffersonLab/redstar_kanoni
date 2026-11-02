@@ -42,8 +42,10 @@ try:
    f=root/output
    if not f.is_file() or f.stat().st_size==0:raise RuntimeError('Missing output: '+output)
    if f.suffix in ('.sdb','.sbt'):
-    if f.suffix=='.sbt':
-     if spec.get('storage')!='SUPERB' or a.storage_info is None:raise RuntimeError('Explicit SUPERB inspector required')
+    native=spec.get('storage')=='SUPERB'
+    if f.suffix=='.sbt' and not native:raise RuntimeError('Explicit SUPERB storage declaration required')
+    if native:
+     if a.storage_info is None:raise RuntimeError('Explicit SUPERB inspector required')
      inspect=[str(a.storage_info.resolve()),str(f)]
     else:inspect=[str(a.dbutil.resolve()),str(f),'meta']
     with (root/(output+'.meta.log')).open('w') as stream:subprocess.run(inspect,stdout=stream,stderr=subprocess.STDOUT,check=True)
@@ -51,9 +53,15 @@ try:
     if not m:raise RuntimeError('Missing SDB metadata: '+output)
     xml=E.fromstring(m[0]);bits=xml.findtext('ProgramInfo/code_version/basePrecision')
     expected_mass=spec.get('mass_labels',{}).get(output)
-    if expected_mass and xml.findtext('mass_label')!=expected_mass:raise RuntimeError('Native tensor mass coverage mismatch: '+output)
+    if isinstance(expected_mass,list):
+     if [n.text for n in xml.findall('mass_labels/elem')]!=expected_mass:raise RuntimeError('Native tensor mass coverage mismatch: '+output)
+    elif expected_mass and xml.findtext('mass_label')!=expected_mass:raise RuntimeError('Native tensor mass coverage mismatch: '+output)
+    if spec.get('expected_id') and xml.findtext('id')!=spec['expected_id']:raise RuntimeError('Native tensor type mismatch: '+output)
+    if native:
+     if 'SUPERB complex<double>' not in metadata:raise RuntimeError('Native tensor is not complex<double>: '+output)
+     bits='64'
     if bits!='64':raise RuntimeError('SDB producer precision mismatch: '+output)
-    item={'name':output,'bytes':f.stat().st_size,'sha256':sha(f),'producer_precision_bits':64,'id':xml.findtext('id'),'storage':'SUPERB' if f.suffix=='.sbt' else 'legacy-SDB'}
+    item={'name':output,'bytes':f.stat().st_size,'sha256':sha(f),'producer_precision_bits':64,'id':xml.findtext('id'),'storage':'SUPERB' if native else 'legacy-SDB'}
     state['files'].append(item)
    else:state['files'].append({'name':output,'bytes':f.stat().st_size,'sha256':sha(f)})
   entry['status']='passed';save();print('PASS',name,entry['seconds'],flush=True)

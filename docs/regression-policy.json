@@ -42,5 +42,15 @@
       "reference": "disconnected-loops.md",
       "scope": "Fresh native DISCO supplement, separate paired targeted comparison; no new full-sweep claim"
     }
+  },
+  "disco_generation": {
+    "mode": "direct one-file native mass-axis output",
+    "output": "disco.sdb",
+    "temporary_shards": false,
+    "packing_step": false,
+    "baseline": "devel",
+    "experimental": "no_1pt",
+    "status": "passed",
+    "report": "disconnected-loops.md"
   }
 }

@@ -38,26 +38,34 @@ The final collection contains **one `disco.sdb`**, with both mass labels, all
 order is `itdmf` (gamma, time, displacement, momentum, mass), with an explicit
 `mass_labels` dictionary. This is 224 keys and 3,584 complex<double> values.
 
-The current Chroma producer writes a native file per mass/time measurement.
-Those 32 files are temporary shards, not the final collection. A shared native
-filename in that producer would overwrite earlier measurements. The
-[`pack_disco` helper](../scripts/pack_disco.cc) collects the shards into the
-single database and checks every packed value against its source exactly.
-Complete original metadata is retained losslessly in `source_metadata_hex`;
-the executed input and manifest provide readable generation provenance.
+The canonical input now declares the complete `<mass_labels>` dictionary in
+each measurement and uses the same `<sdb_file>disco.sdb</sdb_file>` throughout.
+The producer creates the native mass-axis database on its first measurement,
+then appends each complete mass/time packet directly, including every requested
+z path and gamma component. **No temporary shards or packing step are used.**
 
-To regenerate in a fresh working directory, build the helper with the matching
-ADAT compiler/ABI using `scripts/build_disco_packer.py --help`, run the canonical
-Chroma input, then run:
+Run the canonical input in a fresh working directory:
 
 ```sh
-/path/to/pack_disco /path/to/new/disco.sdb disco-U*.sbt
+/path/to/chroma -i /path/to/chroma_inputs/superb-double/disco.probing.ini.xml -o disco.out.xml
 ```
 
-The helper refuses an existing output. Keep shards in the generation working
-directory; the final data collection contains only the consolidated database,
-its manifest and the executed input. Do not point a producer at the immutable
-public dataset or overwrite an old reference.
+The first write reserves the filename exclusively. A new process refuses an
+existing output; appends are limited to the collection created by that run.
+Checks reject duplicate mass/time packets, changed lattice/mass/path/momentum
+coverage, changed collection settings, changed actions within a mass label,
+and incomplete or nonfinite gamma vectors. Every packet closes the database
+and flushes its block checksums before the next measurement.
+
+The collection contract records the declared gauge object/update and gauge
+metadata plus mass/time-independent settings. Original input XML remains the
+complete specification of all mass/time measurements. The historical packed
+collection and its provenance remain available as earlier evidence.
+`scripts/pack_disco.cc` is retained only as a migration utility for older shard
+outputs; it is not part of the canonical generation workflow.
+
+The direct 4³×16 run is validated. Historical packed data and earlier reports
+remain separate; the results below describe direct producer output.
 
 `ADATIO::StorageDisco` reads multi-mass rank-5 tensors, older single-mass rank-4 tensors, and legacy FILEDB DISCO databases.
 ColorVec's NPT disconnected operator now uses that dual-format reader. Missing
@@ -89,38 +97,47 @@ is retained separately.
 
 ## Validation results
 
-The full collection passed block checksums and independent native-reader
-readback: **one database, 224 unique keys, 3,584 finite complex values**.
-The saved local collection is `data/disco-native-z3-packed-20261101-003/`; its
-[checked manifest](../test_inputs/native-disco-z3-manifest.json) is a local
-candidate record, not a public dataset release.
+The canonical Chroma input produced exactly **one `disco.sdb`**, without shards
+or a packing operation. All 32 mass/time measurements and 6,144 CG solves
+completed. Independent checks passed for all 224 unique keys, 3,584 finite
+complex<double> values and every block checksum.
 
-`nuc_nuc_3pt` passed NPT versus CORR_SUPERB on both chains: one correlator,
-all seven time samples each, zero failed per-value gates and zero CG solves
-in the comparison jobs. Maximum absolute differences were:
+The direct output agrees with the previously validated collection under the
+unchanged strict per-value gate: maximum absolute difference
+0, with
+0 nonidentical values.
+Its local collection is `data/disco-native-direct-20261101-001/`; the
+[checked manifest](../test_inputs/native-disco-z3-manifest.json) records the
+executed input and payload hashes. This is not a new public payload release.
+
+`nuc_nuc_3pt` passed NPT versus CORR_SUPERB on both chains: one key, all seven
+time samples per chain, zero failed numerical gates and zero comparison CG
+solves. Maximum absolute differences:
 
 | Chain | Maximum absolute difference |
 |---|---:|
 | devel baseline | 4.1777673608052095e-17 |
 | experimental no_1pt | 3.8321294114307615e-17 |
 
-Both chains also passed pion, axial-nucleon and rho three-point controls
-(six case/chain comparisons, 530 finite values). Reader tests cover sparse
-multi-file lookup and missing/out-of-range keys; callback tests cover fixed
-and moving times, wraparound, flavor/momentum conventions, missing callbacks,
-and incomplete/nonfinite gamma vectors. Both Chroma chains reject a missing
-DISCO input explicitly. All 64 Kanoni workflow tests pass.
+Pion also passed on both chains (three keys, 48 values per chain), making four
+fresh case/chain checks and 110 finite compared values. Missing-DISCO inputs
+were rejected explicitly on both chains. Earlier pion/axial-nucleon/rho controls
+remain separate passing evidence, not a new full-suite claim.
+
+Direct-writer tests cover earlier-block preservation, separate mass/time keys,
+duplicate packets, incompatible settings/actions/path coverage, incomplete data
+and refusal to overwrite a pre-existing file. A cached-data I/O test also wrote
+all 32 packets through the actual append API and reproduced all values exactly.
+All 67 Kanoni workflow tests pass, including direct recipe coverage and native
+`.sdb` inspector/mass-dictionary routing.
 
 The nucleon regression uses a local current. Nonzero z paths are generated,
-checksum-checked and read back, but are not claimed as separate displaced-current
-correlator comparisons. Detailed numerical evidence is saved under
-`runs/disco-nuc-checks-20261101-002/`; control evidence is under
-`runs/disco-callback-controls-20261101-001/`.
+checksum-checked and read back; separate displaced-current correlator
+comparisons are not claimed here. Full evidence is saved under
+`runs/disco-native-direct-20261101-001/` and
+`runs/disco-direct-checks-20261101-001/`.
 
-Payloads and numerical reports remain in Git-ignored collection/run directories.
-The immutable public kanoni-v1 dataset and older native candidates are unchanged.
-The numerical builds are incremental corrected pre-YLM serial CPU snapshots;
+The direct database is 84,424 bytes. Payloads and numerical
+runs stay Git-ignored; immutable kanoni-v1 and previous candidates are preserved.
+Numerical builds remain incremental corrected pre-YLM serial CPU snapshots;
 these checks do not establish clean latest-YLM, MPI or GPU validation.
-
-The saved single database is approximately 186 KiB (190,216 bytes). Packing copies
-existing values exactly and does not repeat the Chroma solves.

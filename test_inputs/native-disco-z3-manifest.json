@@ -1,11 +1,14 @@
 {
   "status": "generated_and_readback_validated",
   "format": "native DiscoBlocks itdmf",
+  "generation_mode": "direct Chroma one-file output",
+  "temporary_shards": false,
+  "packing_step": false,
   "files": [
     {
       "name": "disco.sdb",
-      "bytes": 190216,
-      "sha256": "3560ac48dd6ee793af4e8e1724f04eb7127416d1126c097b78f4aa474ff82c6b",
+      "bytes": 84424,
+      "sha256": "87a867c876e94f6e67b37097c0744c4b2d184f3f2e5e5a236e1c526e623a03be",
       "validation": {
         "status": "passed",
         "rank": 5,
@@ -85,176 +88,22 @@
   ],
   "RsdCG": 1e-14,
   "gauge": "WEAK_FIELD",
-  "input_sha256": "b380cfcd1f64e65840c9180b39ff6e0d77fde35beef52920c07ca40444d0390f",
-  "packer_sha256": "77d6f05ce551bf8ce6daba28b666b96ee89fc3ff39e59113c88727354050552b",
-  "source_shards": [
-    {
-      "name": "disco-U0.05-t00.sbt",
-      "bytes": 4160,
-      "sha256": "f0e7f48b2acb38a3b844d2e2110ccfb1275a8f3a431a8c5463898f943108cc26"
-    },
-    {
-      "name": "disco-U0.05-t01.sbt",
-      "bytes": 4160,
-      "sha256": "5dcd4cf6decfb5ce5af44e94da40bf5a512afb20f21a25083c909dab35d56b41"
-    },
-    {
-      "name": "disco-U0.05-t02.sbt",
-      "bytes": 4160,
-      "sha256": "f3c66a33391c538ace46e88c9162717b69a29070a7d17caf24f12d4cd8f63d27"
-    },
-    {
-      "name": "disco-U0.05-t03.sbt",
-      "bytes": 4160,
-      "sha256": "1064817b2cf9cfc40f278302c655aa48ba2ab44bd6109678fdf5fdea2bedcdef"
-    },
-    {
-      "name": "disco-U0.05-t04.sbt",
-      "bytes": 4160,
-      "sha256": "ab93db56733ad71555f7e0945f2ecbfba0affa7a710102851072678609692f52"
-    },
-    {
-      "name": "disco-U0.05-t05.sbt",
-      "bytes": 4160,
-      "sha256": "d483525bda4442bd19e1a9e9bcd791cace04d002b45b340beb59048829587946"
-    },
-    {
-      "name": "disco-U0.05-t06.sbt",
-      "bytes": 4160,
-      "sha256": "2a5270833c8978d1b6a0b25af7e51f4b93dc82952596fbb223564a2039b262d1"
-    },
-    {
-      "name": "disco-U0.05-t07.sbt",
-      "bytes": 4160,
-      "sha256": "3186dbced88749729b19bf2742468362c29af375bd83bf23e00f764dd7207616"
-    },
-    {
-      "name": "disco-U0.05-t08.sbt",
-      "bytes": 4160,
-      "sha256": "5b769668d186a3e9861503b24926fef9df7572099fce8d370f5b28eddaa7202a"
-    },
-    {
-      "name": "disco-U0.05-t09.sbt",
-      "bytes": 4160,
-      "sha256": "c4f6810db0bea68f4a1b344c28efe023519ca1ec0fca217d11676bd408f3a933"
-    },
-    {
-      "name": "disco-U0.05-t10.sbt",
-      "bytes": 4160,
-      "sha256": "add70fd67f5c4ce0852771a5ef58bb30926c92d6cee8dbcb47e81292e13d3c8d"
-    },
-    {
-      "name": "disco-U0.05-t11.sbt",
-      "bytes": 4160,
-      "sha256": "9a3ea452988e43f19c09f620dcb883968d660f09f3942ad49437f25b97c610e5"
-    },
-    {
-      "name": "disco-U0.05-t12.sbt",
-      "bytes": 4160,
-      "sha256": "afce1e3f57ff71b84eaace32beb29550c6b500b415a28505d3c5f3bca57da8ad"
-    },
-    {
-      "name": "disco-U0.05-t13.sbt",
-      "bytes": 4160,
-      "sha256": "2b6537f09517a4aac55ed9faa29d02f1af3f2157b53a60dbd6aee0ed3cf4b38d"
-    },
-    {
-      "name": "disco-U0.05-t14.sbt",
-      "bytes": 4160,
-      "sha256": "1fce92358797acfd2efa6ebbde9b2f6797447df45c4ec0434bedfb2167a409fb"
-    },
-    {
-      "name": "disco-U0.05-t15.sbt",
-      "bytes": 4160,
-      "sha256": "5d032cd909e73afd6b5772ef7b7cb3622f68d4a7aa32a53a8e6e21129f934d58"
-    },
-    {
-      "name": "disco-U0.1-t00.sbt",
-      "bytes": 4152,
-      "sha256": "6b5deff9c35df9dd4df2d7399c14ee44131223e3f7a1525d35d67220c84144d5"
-    },
-    {
-      "name": "disco-U0.1-t01.sbt",
-      "bytes": 4152,
-      "sha256": "c256dd91cd3efc59f7e3d618d2c9e2b9acbd992a537ef8ed53555a08f87f1e6f"
-    },
-    {
-      "name": "disco-U0.1-t02.sbt",
-      "bytes": 4152,
-      "sha256": "ca2c6f20b900fd15485055f7ecadb4f3437d103e1405eab8a36d2a37f40aea82"
-    },
-    {
-      "name": "disco-U0.1-t03.sbt",
-      "bytes": 4152,
-      "sha256": "0a6bdeb127ed7d08430df16fc42ef1bc8471593e728ac13c2d7f4b64a7fd187c"
-    },
-    {
-      "name": "disco-U0.1-t04.sbt",
-      "bytes": 4152,
-      "sha256": "d793cf623da00f94d2ba66c2acb30527f4fe568117f160af43115b8dc722c8d4"
-    },
-    {
-      "name": "disco-U0.1-t05.sbt",
-      "bytes": 4152,
-      "sha256": "f6d3132cbecadcd23c56b60852ffdf70666b5d369b1e78e0470056e1f2b51f26"
-    },
-    {
-      "name": "disco-U0.1-t06.sbt",
-      "bytes": 4152,
-      "sha256": "1015511bf918115972c2ba7085705b8061799ed3394a5ffb9bcadfc4c248d67c"
-    },
-    {
-      "name": "disco-U0.1-t07.sbt",
-      "bytes": 4152,
-      "sha256": "c29f2fc648637059f011481a33bb8ea3fc9a6ef69e0e02d126a66d1a74283e9f"
-    },
-    {
-      "name": "disco-U0.1-t08.sbt",
-      "bytes": 4152,
-      "sha256": "eaac5ee7e7f6a89163982818d726d2715fba9937b7378802ecbe5660d01cb622"
-    },
-    {
-      "name": "disco-U0.1-t09.sbt",
-      "bytes": 4152,
-      "sha256": "d5802b1a408154c2bfc8ccf843aeaa0e885594735eac2676207c6ee5475edd60"
-    },
-    {
-      "name": "disco-U0.1-t10.sbt",
-      "bytes": 4152,
-      "sha256": "6194849304cbec73da57912a0f14aa22a3c3e0cbde0e7f27890f26d77b6709af"
-    },
-    {
-      "name": "disco-U0.1-t11.sbt",
-      "bytes": 4152,
-      "sha256": "4947df8fa5455923372264edbf453aee941275816e2926b33c66876c3290079a"
-    },
-    {
-      "name": "disco-U0.1-t12.sbt",
-      "bytes": 4152,
-      "sha256": "652ca7135a8f4fceef92164d3e1f8cb337469ce9c19c3ad3e32f0d920d1cfebe"
-    },
-    {
-      "name": "disco-U0.1-t13.sbt",
-      "bytes": 4152,
-      "sha256": "7fdf81b2ae2b7321118b124bdec5d46f85679dd1147212148b913af5ad810cc2"
-    },
-    {
-      "name": "disco-U0.1-t14.sbt",
-      "bytes": 4152,
-      "sha256": "a94e06d0e777f7ca8cdf7e96f31c24c5beab01d185fc6e0b4741156a5911db7c"
-    },
-    {
-      "name": "disco-U0.1-t15.sbt",
-      "bytes": 4152,
-      "sha256": "cee751ddd75c252aaf876233ca103734b87295c5a86c990d3e6e34efd8bca27b"
-    }
-  ],
+  "input_sha256": "f360ab52572a40c976261d05d2b1b9c9e36048801116df9bfb1e83360308585a",
+  "binary_sha256": "acf0871e9e9f55350dd847d1773306c26b37b88bfb68c220e74c5bac942dd043",
+  "source_run": "runs/disco-native-direct-20261101-001",
+  "CG_solves": 6144,
   "public_release": false,
   "baseline": "devel",
   "experimental": "no_1pt",
-  "comparison_status": "passed in both chains; see docs/disconnected-loops.md",
-  "dataset": "kanoni-native-disco-z3-rsd14-local-candidate",
-  "source_run": "runs/disco-native-z3-20261101-001",
-  "packing_run": "runs/disco-native-z3-packed-20261101-003",
-  "generation_manifest_sha256": "920377603e75712d3c7a5e015e8a5ea772ccf65526d624040561a55efaa84b5f"
+  "baseline_comparison": {
+    "status": "passed",
+    "keys": 224,
+    "finite_values": 3584,
+    "max_abs_error": 0,
+    "nonidentical_values": 0,
+    "per_value_failures": 0
+  },
+  "dataset": "kanoni-native-disco-direct-rsd14-local-candidate",
+  "comparison_status": "passed NPT versus CORR_SUPERB on devel and experimental no_1pt",
+  "generation_manifest_sha256": "dad89112a2c92f29503703b7167543dfedc390c901fd1a91241539ae87f5b968"
 }
