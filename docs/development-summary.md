@@ -170,11 +170,12 @@ historical evidence with their original data and toolchain qualifications.
 [View this summary on GitHub](https://github.com/JeffersonLab/redstar_kanoni/blob/devel/docs/development-summary.md)
 once the local documentation changes are published.
 
-## Later: a Redstar primer
+## Redstar primer
 
-Write the primer after the code changes and full devel/no_1pt regression workflows
-are settled. It should introduce the actual validated pipeline and link these
-reproducible checks rather than duplicate unfinished implementation notes.
+The [Redstar primer](redstar-primer.md) introduces continuum operator selection,
+subduction/coupling, NPointList construction, corr_graph, NPT and CORR_SUPERB.
+It includes a checked continuum-pion/NPT example and links the matched native
+tensor workflows. Devel remains the baseline; no_1pt stays experimental.
 
 ### Latest regression scope
 

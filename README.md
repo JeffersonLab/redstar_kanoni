@@ -314,5 +314,7 @@ CORR_SUPERB. Cases live separately under `regressions/redstar/` and
 
 ## Development documentation
 
+Start with the [Redstar primer](docs/redstar-primer.md) for continuum operators through corr_graph, NPT, and CORR_SUPERB. Devel is the baseline; no_1pt remains experimental.
+
 See the [Development documentation](docs/README.md) for the current summary,
 regression coverage, experimental no_1pt checks and dataset migration.
