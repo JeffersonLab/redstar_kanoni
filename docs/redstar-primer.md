@@ -261,7 +261,7 @@ abs(NPT - CORR) <= 1e-9 * max(abs(NPT), abs(CORR))
 
 `dbutil keysxml` and the numbered exporter provide independent coverage/readback. The runner retains the additional relative-only `dbutil compare` diagnostic; it does not replace the per-value test. Historical fixed-baseline runners have their own pinned tolerances and should not be silently reconfigured.
 
-The recorded suite has 29 active matched cases per chain, plus explicit deferrals. Glue/tetra CORR support and gluonic-insertion comparisons are deferred; their native storage and NPT checks are separate. `nuc_nuc_3pt` needs disconnected-loop data and callback support and is deferred, as is `ff_3pt`. These are not passing CORR cases. Read [coverage and scope](regressions.md) and [regression-policy.json](regression-policy.json) before extending the inventory.
+The recorded suite has 29 active matched cases per chain, plus explicit deferrals. Glue/tetra CORR support and gluonic-insertion comparisons are deferred; their native storage and NPT checks are separate. `ff_3pt` remains deferred. The reopened `nuc_nuc_3pt` now passes NPT versus CORR_SUPERB on both chains using fresh native DISCO data; see [disconnected loops](disconnected-loops.md). The original 29-case matrix and the new targeted validation are separate reports. Read [coverage and scope](regressions.md) and [regression-policy.json](regression-policy.json) before extending the inventory.
 
 Recorded numerical executables are incremental corrected **pre-YLM** builds, not clean latest-YLM builds. MPI/GPU validation is not implied. A single weak-field configuration checks software behavior, not ensemble uncertainties or physical masses.
 

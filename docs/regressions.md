@@ -1,6 +1,6 @@
 # Regression status and coverage
 
-Updated 1 November 2026. The full native-double matrix passed **29 active cases on each chain** (58 case/chain comparisons, 8,380 finite compared values). Five historical cases per chain have explicit CORR deferrals; they remain visible below. This does not claim those implementations pass.
+Updated 1 November 2026. The full native-double matrix passed **29 active cases on each chain** (58 case/chain comparisons, 8,380 finite compared values). Five historical cases per chain were deferred in that matrix; nuc_nuc_3pt has since passed its separate fresh-DISCO check, leaving four explicit CORR deferrals. This does not claim those implementations pass.
 
 The dataset uses the original WEAK_FIELD/RNG, ten MOD64 vectors, RsdCG=1e-14, native SUPERB tensors with separate files per mass, and the full meson momentum sphere through mom2=4. Old datasets, reference SDBs and failed attempts are retained separately. Devel is the regression baseline (graph format 3); no_1pt remains experimental (format 4). Numerical executables are incremental corrected pre-YLM builds, not clean latest-YLM builds.
 
@@ -23,7 +23,7 @@ The dataset uses the original WEAK_FIELD/RNG, ten MOD64 vectors, RsdCG=1e-14, na
 | `nuc` | Passed | Passed |
 | `nuc.p100` | Passed | Passed |
 | `nuc_gA` | Passed | Passed |
-| `nuc_nuc_3pt` | Explicitly deferred | Explicitly deferred |
+| `nuc_nuc_3pt` | Passed (fresh DISCO; targeted check) | Passed (fresh DISCO; targeted check) |
 | `nuc_nuc_ax_3pt` | Passed | Passed |
 | `nuc_nuc_proj_3pt` | Passed | Passed |
 | `nucnuc_small` | Passed | Passed |
@@ -44,7 +44,7 @@ The dataset uses the original WEAK_FIELD/RNG, ten MOD64 vectors, RsdCG=1e-14, na
 ## Explicit deferrals and separate NPT coverage
 
 - ff_3pt: entire regression deferred; missing legacy gpdf.more.sdb generator. Historical reference retained; file not added to new dataset.
-- nuc_nuc_3pt: entire regression deferred by user choice. Needs disconnected quark-loop generation and a CORR callback; missing KeyTwoQuarkDiscoOperator_t is not a numerical mismatch.
+- nuc_nuc_3pt was deferred in the historical matrix. It is now covered by a separate passing native-DISCO comparison on both chains; see [DISCO validation](disconnected-loops.md).
 - glue and tetra_F27_S2: CORR implementation deferred. Native storage equivalence and NPT consumer tests passed separately. The final portable runner supports NPT-only checks against the RsdCG=1e-14 candidate.
 - fsq_3pt: gluonic-insertion CORR implementation deferred. NPT retains the explicitly authorized legacy gpdf_2_0.00.sdb; this file is not claimed as regenerated native-double data.
 
@@ -82,3 +82,13 @@ Generated tensors, logs, binaries and run directories stay outside Git. Historic
 - Redstar experimental one-point output extent: [no_1pt](https://github.com/JeffersonLab/redstar/commit/45898bd24ab7585d4507df66415326d18b424ec3).
 
 The native-data payloads are not a new public data release. no_1pt stays experimental; the corrected pre-YLM numerical build qualification above still applies.
+
+## Reopened disconnected-loop case
+
+The user reopened `nuc_nuc_3pt` after the historical 29-case matrix; the new targeted comparison now passes on both chains. The recipe
+`chroma_inputs/superb-double/disco.probing.ini.xml` uses gauge-transported
+straight z paths through ±3 on the same WEAK_FIELD, RsdCG=1e-14 and native
+DiscoBlocks storage. Generation/readback and matched comparisons are separate
+gates. Supply a validated supplemental collection explicitly with
+`--disco-dataset`; the runner hashes it and passes the same files to NPT and
+CORR_SUPERB. The new report independently checks all seven values per chain, missing-data rejection and zero comparison CG solves. Together with the historical matrix, this covers 30 active cases per chain; it is not a newly repeated full 30-case sweep. Devel is the baseline and no_1pt is experimental. See [DISCO details](disconnected-loops.md).

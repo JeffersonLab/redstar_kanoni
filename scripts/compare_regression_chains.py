@@ -8,6 +8,7 @@ parser=argparse.ArgumentParser(description="Compare devel and experimental no_1p
 for flag in ['dataset','output','baseline-graph-bin','feature-graph-bin','baseline-npt','feature-npt','baseline-chroma','feature-chroma','dbutil','exporter']:
  parser.add_argument('--'+flag,type=Path,required=True)
 parser.add_argument('--inputs',type=Path,default=r/'regressions/native-superb-v3/inputs')
+parser.add_argument('--disco-dataset',type=Path,help='Validated supplemental native DISCO collection; pinned and read by both chains')
 parser.add_argument('--qualification',required=True,help='Actual source/build qualification recorded verbatim in results')
 parser.add_argument('--chain',choices=['both','devel','no_1pt'],default='both')
 parser.add_argument('--npt-only',action='store_true',help='Validate NPT key/shape/finite coverage without a CORR comparison; honors separate NPT deferrals')
@@ -30,6 +31,11 @@ for item in manifest['files']:
  path=base/item['name']
  if not path.is_file() or path.stat().st_size!=item['bytes'] or hashlib.sha256(path.read_bytes()).hexdigest()!=item['sha256']:
   raise RuntimeError('Dataset checksum/size mismatch: '+str(path))
+disco_files=[]
+disco_manifest=None
+if args.disco_dataset:
+ from disco_dataset import load_disco_collection
+ disco_manifest,disco_files=load_disco_collection(args.disco_dataset,base,manifest)
 root=args.output;root.mkdir()
 policy=json.loads((r/'docs/regression-policy.json').read_text())
 inventory=sorted(p.name for p in (r/'regressions/redstar').iterdir() if (p/'case.json').exists())
@@ -42,6 +48,7 @@ inventory=([name for name in inventory if name=='pion']+[name for name in invent
 state={'status':'running','mode':'stored native tensors; full finite readback and strict per-value comparison','scope':'explicit user deferrals retained','requested_cases':inventory,'requested_chain':args.chain,'npt_only':args.npt_only,'experimental_no_1pt':True,'cases':[]}
 state['build_qualification']=args.qualification
 state['data_provenance']={str(path):hashlib.sha256(path.read_bytes()).hexdigest() for path in [base/'dataset-manifest.json',base/'colorvec.mod',sphere,*sorted(base.glob('prop-*.sbt')),*sorted(base.glob('genprop-*.sbt')),base/'baryon.sbt']}
+state['disco_provenance']={str(path):hashlib.sha256(path.read_bytes()).hexdigest() for path in ([disco_manifest]+disco_files if disco_manifest else [])}
 state['program_sha256']={str(path):hashlib.sha256(path.read_bytes()).hexdigest() for path in [args.baseline_chroma,args.feature_chroma,args.baseline_npt,args.feature_npt,args.dbutil,args.exporter,*[directory/name for directory in [args.baseline_graph_bin,args.feature_graph_bin] for name in ['redstar_corr_graph','view_corr_graph']]]}
 def save():
  tmp=root/'results.tmp';tmp.write_text(json.dumps(state,indent=2)+'\n');tmp.replace(root/'results.json')
@@ -60,6 +67,11 @@ def numerical(case,d,chain):
  if chain=='no_1pt':node(x.find('Param'),'average_1pt_diagrams','false')
  for group in x.findall('ColorVec/DBFiles/*'):
   for n in group.findall('elem'):n.text=str(sphere if group.tag=='smeared_meson_dbs' else base/Path(n.text).name)
+ if disco_files:
+  group=x.find('ColorVec/DBFiles/twoquark_discoblock_dbs')
+  if group is None:group=E.SubElement(x.find('ColorVec/DBFiles'),'twoquark_discoblock_dbs')
+  group.clear()
+  for path in disco_files:E.SubElement(group,'elem').text=str(path.resolve())
  node(x.find('DBFiles'),'corr_graph_bin','corr_graph.bin');node(x.find('DBFiles'),'output_db','output.sdb1');t.write(d/'npt.xml',encoding='utf-8',xml_declaration=True);return t
 for name in inventory:
  deferred=policy['deferred_by_user'].get(name,{}).get('npt' if args.npt_only else 'corr_superb',False)
@@ -102,8 +114,10 @@ for name in inventory:
     m=E.SubElement(fmap,'elem');E.SubElement(m,'flavor').text=flavor;E.SubElement(m,'mass').text=mass
     v=E.SubElement(fprop,'elem');E.SubElement(v,'flavor').text=flavor;v.append(copy.deepcopy(prop_template));v.find('Propagator/FermionAction/Mass').text=mass.removeprefix('U')
    for n in p.findall('.//RsdCG'):n.text=str(manifest['RsdCG'])
-   for tag,paths in [('props',sorted(base.glob('prop-*.sbt'))),('mesons',[sphere]),('baryons',[base/'baryon.sbt']),('genprops',sorted(base.glob('genprop-*.sbt')))]:
-    group=p.find(tag);group.clear()
+   for tag,paths in [('props',sorted(base.glob('prop-*.sbt'))),('mesons',[sphere]),('baryons',[base/'baryon.sbt']),('genprops',sorted(base.glob('genprop-*.sbt'))),('discos',disco_files)]:
+    group=p.find(tag)
+    if group is None:group=E.SubElement(p,tag)
+    group.clear()
     for path in paths:E.SubElement(group,'elem').text=str(path)
    corr.find('NamedObject/colorvec_files/elem').text=str(base/'colorvec.mod');corr.find('NamedObject/corr_file').text='superb.sdb1';template.write(d/'chroma.xml',encoding='utf-8',xml_declaration=True)
    chroma=args.baseline_chroma if chain=='devel' else args.feature_chroma

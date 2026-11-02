@@ -62,7 +62,12 @@
   on-demand GenProp path. Retain the corrected pre-YLM numerical-build
   qualification; do not claim clean latest-YLM, MPI or GPU validation from it.
 - Retain user-directed deferrals for glue/tetra CORR, gluonic-insertion CORR,
-  ff_3pt and nuc_nuc_3pt disconnected-loop work. Their exact NPT/CORR scopes are
+  and ff_3pt. The user reopened nuc_nuc_3pt disconnected-loop work; use the
+  gauge-transported DISCO_PROBING_3D_DEFLATION_SUPERB recipe, not plain-shift DISCO.
+  Its fresh native collection passed full readback and paired NPT/CORR checks.
+  Keep --disco-dataset explicit and validate its input/payload hashes and gauge/RNG
+  against the baseline. See docs/disconnected-loops.md for scope and limitations.
+  The remaining deferred NPT/CORR scopes are
   in the policy; separate NPT-only passes do not establish CORR support.
 
 ## XML schemas and physics

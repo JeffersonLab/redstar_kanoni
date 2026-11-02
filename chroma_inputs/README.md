@@ -14,10 +14,25 @@ The checked numerical executables were incremental corrected pre-YLM snapshots (
 
 ## Explicit legacy exception and retained failures
 
-The user authorized retaining **gpdf_2_0.00.sdb** because its generator is unavailable. It remains pinned to kanoni-v1 and is not claimed as freshly generated native-double data. ff_3pt and its missing gpdf.more.sdb are deferred; that file is not added to the candidate. nuc_nuc_3pt disconnected-loop generation/callback work is also deferred.
+The user authorized retaining **gpdf_2_0.00.sdb** because its generator is unavailable. It remains pinned to kanoni-v1 and is not claimed as freshly generated native-double data. ff_3pt and its missing gpdf.more.sdb are deferred; that file is not added to the candidate. nuc_nuc_3pt has since passed its separate fresh-DISCO comparison on both chains; the previous matrix retains its historical deferral. See [DISCO details](../docs/disconnected-loops.md).
 
 All old candidates and failed evidence remain separate, including early MOD ingestion/ABI failures, native-format/legacy-inspector mismatch, shared-filename overwrite, incomplete momentum coverage, and corrected three-point failures. Do not relabel historical failed reports or overwrite their inputs/outputs.
 
 ## Reproduce comparisons
 
-Use the native recipes to generate a separate dataset and verify every tensor with the supplied storage/readback helpers. `scripts/compare_regression_chains.py --help` documents explicit executable and dataset paths; `--cases pion` selects a quick paired check. Omit case selection for the complete inventory and use `--npt-only --cases glue tetra_F27_S2 fsq_3pt` for the separate NPT lanes. Supply the actual build qualification with `--qualification`; no personal executable path is embedded in the runner.
+Use the native recipes to generate a separate dataset and verify every tensor with the supplied storage/readback helpers. `scripts/compare_regression_chains.py --help` documents explicit executable and dataset paths; `--cases pion` selects a quick paired check. Include `--disco-dataset /path/to/validated-disco-collection` and omit case selection for the complete active inventory and use `--npt-only --cases glue tetra_F27_S2 fsq_3pt` for the separate NPT lanes. Supply the actual build qualification with `--qualification`; no personal executable path is embedded in the runner.
+
+## Disconnected-loop recipe
+
+The final collection contains one native `disco.sdb` with both masses, all
+16 times and z paths 0, ±1, ±2, ±3. The current Chroma input produces temporary
+mass/time shards; `scripts/pack_disco.cc` consolidates them and verifies exact
+source equality. See `scripts/build_disco_packer.py --help` for a matching-ABI
+build. Do not use one shared producer filename: it overwrites prior measurements.
+
+The packed rank-5 `itdmf` tensor retains an explicit mass dictionary; readers
+also accept the older rank-4 and legacy FILEDB formats. The validated collection
+is `data/disco-native-z3-packed-20261101-003/`, separate from immutable v1 data.
+Full readback and nuc_nuc_3pt NPT/CORR comparisons pass on both chains. The
+initial Z4-noise diagnostic and validation-tool failures remain preserved.
+See [DISCO generation and acceptance results](../docs/disconnected-loops.md).

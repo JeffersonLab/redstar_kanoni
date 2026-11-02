@@ -22,8 +22,8 @@ References: [Redstar one-point behavior](https://github.com/JeffersonLab/redstar
 
 All 29 active native-double regression cases pass against CORR_SUPERB on both
 devel and experimental no_1pt: 58 case/chain comparisons and 8,380 finite values.
-Five CORR cases per chain are explicitly deferred, including the user-deferred
-nuc_nuc_3pt loop work; these remain visible in [coverage](regressions.md).
+Five CORR cases per chain were deferred in that historical matrix. The user has
+now completed the reopened nuc_nuc_3pt check with native DISCO data: both chains pass all seven values. This targeted addition brings recorded coverage to 30 active cases per chain; it is separate from the historical full sweep. The other four deferrals remain. See [DISCO validation](disconnected-loops.md) and [coverage](regressions.md).
 The original 12³×16 Nπ comparison also passed all 81+729 keys and 5,670 values,
 with maximum experimental/devel difference 1.11e-16. No tolerances were weakened.
 The validated changes are committed; [regression coverage](regressions.md) records their scope and build qualification.

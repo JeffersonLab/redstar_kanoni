@@ -3,6 +3,7 @@
 - [Redstar primer: continuum operators to numerical correlators](redstar-primer.md)
 - [Summary of redstar/chroma code devel](development-summary.md)
 - [Regression status and coverage](regressions.md)
+- [Disconnected DISCO loops and nuc_nuc_3pt validation](disconnected-loops.md)
 - [Regression timings and stored-propagator usage](regression-timings.md)
 - [Three-point comparison investigation](three-point-comparison.md)
 - [Native-double generation inputs and dataset notes](../chroma_inputs/README.md)
