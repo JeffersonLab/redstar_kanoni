@@ -1,5 +1,25 @@
 # Regression status and coverage
 
+## Full merged devel sweep: 3 November 2026
+
+Redstar merge `b194fdf` passed **all 30 active native-double NPT/CORR cases**,
+including `nuc_nuc_3pt` with the explicit validated direct-DISCO supplement:
+925 keys, 4,197 finite complex values, zero strict per-value failures and zero
+comparison CG solves. The maximum absolute difference was
+1.2193405344946423e-13. All 29 NPT outputs available in the historical matrix
+are byte-identical to the merged build. Only the declared eta control contains
+an exactly zero-valued channel.
+
+The four CORR deferrals are unchanged: ff_3pt, fsq_3pt, glue and tetra_F27_S2.
+Separate NPT-only fsq/glue/tetra checks passed six keys and 96 values; they do
+not establish CORR support. ff_3pt remains deferred in NPT too. This is a fresh
+merged Redstar build with retained native-reader dependencies and corrected
+pre-YLM Chroma, using the existing RsdCG=1e-14 data. It is not a clean latest-YLM,
+MPI or GPU validation, and no_1pt was not rerun. See the [full report and
+provenance](arb-native-regressions.md).
+
+## Historical matrix and targeted checks
+
 The [3 November ARB merge check](arb-merge-validation.md) separately validates
 Redstar merge `b194fdf`: eight legacy-SDB baseline comparisons passed with
 byte-identical databases (39 keys, 354 finite complex values), plus targeted

@@ -4,6 +4,7 @@
 - [Summary of redstar/chroma code devel](development-summary.md)
 - [Regression status and coverage](regressions.md)
 - [ARB merge build and targeted regression validation](arb-merge-validation.md)
+- [Merged devel full native-double NPT/CORR regression](arb-native-regressions.md)
 - [Disconnected DISCO loops and nuc_nuc_3pt validation](disconnected-loops.md)
 - [Regression timings and stored-propagator usage](regression-timings.md)
 - [Three-point comparison investigation](three-point-comparison.md)

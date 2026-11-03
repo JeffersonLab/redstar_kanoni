@@ -317,6 +317,8 @@ CORR_SUPERB. Cases live separately under `regressions/redstar/` and
 The [ARB merge validation](docs/arb-merge-validation.md) records the 3 November
 2026 local Redstar devel integration, memory-audit and three-hadron checks,
 and eight passing numerical baseline comparisons.
+The subsequent [full native-double devel sweep](docs/arb-native-regressions.md)
+passed all 30 active NPT/CORR comparisons while preserving the four CORR deferrals.
 
 Start with the [Redstar primer](docs/redstar-primer.md) for continuum operators through corr_graph, NPT, and CORR_SUPERB. Devel is the baseline; no_1pt remains experimental.
 

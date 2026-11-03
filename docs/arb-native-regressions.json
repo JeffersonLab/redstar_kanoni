@@ -1,0 +1,1122 @@
+{
+  "schema_version": 1,
+  "validated_on": "2026-11-03",
+  "redstar_merge": "b194fdfcfe93742ba6887e4374fd5a32a002415f",
+  "chain": "devel",
+  "status": "passed",
+  "audit": {
+    "status": "passed",
+    "independent_full_readback": true,
+    "cases": [
+      {
+        "case": "pion",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 9.041133121840199e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "1pt",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 1.0225648924419849e-18,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "33",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 1.141838436963285e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "3pi",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 1.2193405344946423e-13,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "a0.d3",
+        "keys": 324,
+        "values": 1296,
+        "max_abs_error": 5.792468422856824e-20,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "a1_rhopi",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 3.3733892529293737e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "d",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 3.0436364816617974e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "delta_J1o2m",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 1.1150912609939193e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "eta8eta8_F8",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 1.4202500883305642e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "eta_eta_3pt",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 1,
+        "zero_channels_corr": 1
+      },
+      {
+        "case": "h8",
+        "keys": 4,
+        "values": 64,
+        "max_abs_error": 4.4563518034731014e-14,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "hard.1_tslice.ini",
+        "keys": 529,
+        "values": 2116,
+        "max_abs_error": 2.7805283954948824e-19,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 2.220446049250313e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc.p100",
+        "keys": 2,
+        "values": 14,
+        "max_abs_error": 2.120695015012297e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc_gA",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 1.4770638155225948e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc_nuc_3pt",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 4.1777673608052095e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc_nuc_ax_3pt",
+        "keys": 4,
+        "values": 28,
+        "max_abs_error": 8.553523741428393e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc_nuc_proj_3pt",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 2.571411231867701e-19,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucnuc_small",
+        "keys": 2,
+        "values": 8,
+        "max_abs_error": 1.1102230246251565e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucpi",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 3.547461520893959e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucpi_I3o2",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 2.6454533008646308e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucpi_J1o2m",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 2.5101048003301457e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucpi_nucpi_J1o2m",
+        "keys": 2,
+        "values": 32,
+        "max_abs_error": 4.518280359883027e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "pi",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 1.2600130452682744e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "pi_pi_3pt",
+        "keys": 1,
+        "values": 6,
+        "max_abs_error": 2.9326576526939265e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "pion_3pt",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 3.0184188481996443e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "pipi_i1",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 2.673343958607272e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "psi",
+        "keys": 2,
+        "values": 32,
+        "max_abs_error": 4.012085879858621e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "rho",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 1.2440853988058506e-14,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "rho_rho_3pt",
+        "keys": 27,
+        "values": 189,
+        "max_abs_error": 6.084010900123129e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      }
+    ],
+    "passed": 30,
+    "deferred": [
+      "ff_3pt",
+      "fsq_3pt",
+      "glue",
+      "tetra_F27_S2"
+    ],
+    "keys": 925,
+    "finite_complex_values": 4197,
+    "strict_failures": 0,
+    "CG_solves": 0,
+    "max_abs_error": 1.2193405344946423e-13,
+    "binary_and_data_hashes_rechecked": true
+  },
+  "npt_only": {
+    "cases": [
+      {
+        "case": "fsq_3pt",
+        "chain": "devel",
+        "status": "passed",
+        "commands": [
+          {
+            "stage": "graph",
+            "argv": [
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_corr_graph",
+              "graph.xml",
+              "graph.out.xml"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "view",
+            "argv": [
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/view_corr_graph",
+              "corr_graph.bin"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "npt",
+            "argv": [
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_npt",
+              "npt.xml",
+              "npt.out.xml"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "keys",
+            "argv": [
+              "/opt/homebrew/Cellar/adat/devel/bin/dbutil",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/fsq_3pt/output.sdb1",
+              "keysxml",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/fsq_3pt/npt-keys.xml"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "export",
+            "argv": [
+              "/private/tmp/kanoni-clang-exporter",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/fsq_3pt/output.sdb1",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/fsq_3pt/npt-export"
+            ],
+            "returncode": 0
+          }
+        ],
+        "npt_only": true,
+        "keys": 2,
+        "finite_complex_values": 32,
+        "zero_channels": 0
+      },
+      {
+        "case": "glue",
+        "chain": "devel",
+        "status": "passed",
+        "commands": [
+          {
+            "stage": "graph",
+            "argv": [
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_corr_graph",
+              "graph.xml",
+              "graph.out.xml"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "view",
+            "argv": [
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/view_corr_graph",
+              "corr_graph.bin"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "npt",
+            "argv": [
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_npt",
+              "npt.xml",
+              "npt.out.xml"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "keys",
+            "argv": [
+              "/opt/homebrew/Cellar/adat/devel/bin/dbutil",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/glue/output.sdb1",
+              "keysxml",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/glue/npt-keys.xml"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "export",
+            "argv": [
+              "/private/tmp/kanoni-clang-exporter",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/glue/output.sdb1",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/glue/npt-export"
+            ],
+            "returncode": 0
+          }
+        ],
+        "npt_only": true,
+        "keys": 1,
+        "finite_complex_values": 16,
+        "zero_channels": 0
+      },
+      {
+        "case": "tetra_F27_S2",
+        "chain": "devel",
+        "status": "passed",
+        "commands": [
+          {
+            "stage": "graph",
+            "argv": [
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_corr_graph",
+              "graph.xml",
+              "graph.out.xml"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "view",
+            "argv": [
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/view_corr_graph",
+              "corr_graph.bin"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "npt",
+            "argv": [
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_npt",
+              "npt.xml",
+              "npt.out.xml"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "keys",
+            "argv": [
+              "/opt/homebrew/Cellar/adat/devel/bin/dbutil",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/tetra_F27_S2/output.sdb1",
+              "keysxml",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/tetra_F27_S2/npt-keys.xml"
+            ],
+            "returncode": 0
+          },
+          {
+            "stage": "export",
+            "argv": [
+              "/private/tmp/kanoni-clang-exporter",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/tetra_F27_S2/output.sdb1",
+              "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/devel/tetra_F27_S2/npt-export"
+            ],
+            "returncode": 0
+          }
+        ],
+        "npt_only": true,
+        "keys": 3,
+        "finite_complex_values": 48,
+        "zero_channels": 0
+      }
+    ],
+    "audit": {
+      "status": "passed",
+      "keys": 6,
+      "finite_complex_values": 96,
+      "shapes_keys_finite_readback_and_hashes_rechecked": true,
+      "corr_support_claimed": false
+    }
+  },
+  "historical_npt_outputs": [
+    {
+      "case": "pion",
+      "byte_identical": true
+    },
+    {
+      "case": "1pt",
+      "byte_identical": true
+    },
+    {
+      "case": "33",
+      "byte_identical": true
+    },
+    {
+      "case": "3pi",
+      "byte_identical": true
+    },
+    {
+      "case": "a0.d3",
+      "byte_identical": true
+    },
+    {
+      "case": "a1_rhopi",
+      "byte_identical": true
+    },
+    {
+      "case": "d",
+      "byte_identical": true
+    },
+    {
+      "case": "delta_J1o2m",
+      "byte_identical": true
+    },
+    {
+      "case": "eta8eta8_F8",
+      "byte_identical": true
+    },
+    {
+      "case": "eta_eta_3pt",
+      "byte_identical": true
+    },
+    {
+      "case": "h8",
+      "byte_identical": true
+    },
+    {
+      "case": "hard.1_tslice.ini",
+      "byte_identical": true
+    },
+    {
+      "case": "nuc",
+      "byte_identical": true
+    },
+    {
+      "case": "nuc.p100",
+      "byte_identical": true
+    },
+    {
+      "case": "nuc_gA",
+      "byte_identical": true
+    },
+    {
+      "case": "nuc_nuc_ax_3pt",
+      "byte_identical": true
+    },
+    {
+      "case": "nuc_nuc_proj_3pt",
+      "byte_identical": true
+    },
+    {
+      "case": "nucnuc_small",
+      "byte_identical": true
+    },
+    {
+      "case": "nucpi",
+      "byte_identical": true
+    },
+    {
+      "case": "nucpi_I3o2",
+      "byte_identical": true
+    },
+    {
+      "case": "nucpi_J1o2m",
+      "byte_identical": true
+    },
+    {
+      "case": "nucpi_nucpi_J1o2m",
+      "byte_identical": true
+    },
+    {
+      "case": "pi",
+      "byte_identical": true
+    },
+    {
+      "case": "pi_pi_3pt",
+      "byte_identical": true
+    },
+    {
+      "case": "pion_3pt",
+      "byte_identical": true
+    },
+    {
+      "case": "pipi_i1",
+      "byte_identical": true
+    },
+    {
+      "case": "psi",
+      "byte_identical": true
+    },
+    {
+      "case": "rho",
+      "byte_identical": true
+    },
+    {
+      "case": "rho_rho_3pt",
+      "byte_identical": true
+    }
+  ],
+  "build": {
+    "source_merge": "b194fdfcfe93742ba6887e4374fd5a32a002415f",
+    "source_directory": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/source",
+    "configure": [
+      "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/source/configure",
+      "--prefix=/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/install",
+      "--with-colorvec=/opt/homebrew/Cellar/colorvec/devel"
+    ],
+    "environment": {
+      "CC": "/usr/bin/clang",
+      "CXX": "/usr/bin/clang++",
+      "CXXFLAGS": "-O1 -std=c++20 -fsanitize=undefined",
+      "LDFLAGS": "-L/private/tmp/kanoni-f64/colorvec-build/src -L/Users/admin/Downloads/superbblas/build/lib -lsuperbblas"
+    },
+    "qualification": "Fresh merged Redstar source build using retained corrected pre-YLM native ColorVec/ADAT/Hadron stack; serial Apple Clang CPU; no latest-YLM/MPI/GPU claim",
+    "installed_native_binaries": {
+      "runs/arb-native-build-20261103-001/build/src/redstar_corr_graph": "fcd15e43f9e05fd621c676c5b1eed75bd85dd5a94ffec91d275c7098980251af",
+      "runs/arb-native-build-20261103-001/build/src/view_corr_graph": "c6ecc2f5480d88cb5d3601fcbd3130115b0b32109753dc3213474481772f5229",
+      "runs/arb-native-build-20261103-001/build/src/redstar_npt": "f63b3c31f548d543266bc66cdee1de516cca6c69b5ab864b80514907861cbbd3"
+    },
+    "actual_compiler": "Apple clang 21.0.0 via /usr/bin/c++ (ColorVec config selects c++); serial, no OpenMP runtime linked",
+    "make_check": "passed; check programs built, no Automake TESTS suite declared"
+  },
+  "archived_source_verification": {
+    "status": "passed",
+    "merge": "b194fdf",
+    "tracked_files_verified": 867,
+    "method": "Git blob hashes of every archived tracked file compared to merged HEAD"
+  },
+  "reused_tools_and_libraries": {
+    "/private/tmp/kanoni-f64/colorvec-build/src/libcolorvec.a": {
+      "bytes": 37578024,
+      "sha256": "cd09ebd4e0d6f55333ed9ba6ebe831fad1d9b617938bdbfcb7d57b49e59a3ab4"
+    },
+    "/opt/homebrew/Cellar/adat/devel/lib/libadat.a": {
+      "bytes": 53485960,
+      "sha256": "bba30a1f93f784751fdf02af4044ad76af1acbff1de70aba1df5d8c5722ff4e6"
+    },
+    "/opt/homebrew/Cellar/hadron/devel/lib/libhadron.a": {
+      "bytes": 589920,
+      "sha256": "47280a11b1f5df340be8eb0aee2452fbb0096e153f8b5347f4642ad8bba21bfa"
+    },
+    "/opt/homebrew/Cellar/tensor/lib/libtensor.a": {
+      "bytes": 1002760,
+      "sha256": "58cf8bcc0174f4a28137399ce377a33a8c48687a3cfcf98f58d289aef08c321b"
+    },
+    "/private/tmp/kanoni-f64/chroma-regenerate-f64-v15-direct-disco": {
+      "bytes": 69069912,
+      "sha256": "acf0871e9e9f55350dd847d1773306c26b37b88bfb68c220e74c5bac942dd043"
+    },
+    "/private/tmp/kanoni-clang-exporter": {
+      "bytes": 1081384,
+      "sha256": "9d2d0d4b712686c671c4455747ab32b220a3ea99b36a777ae6ca3e17f0c0fbc2"
+    }
+  },
+  "program_sha256": {
+    "/private/tmp/kanoni-f64/chroma-regenerate-f64-v15-direct-disco": "acf0871e9e9f55350dd847d1773306c26b37b88bfb68c220e74c5bac942dd043",
+    "/private/tmp/kanoni-no1pt-f64/chroma-no1pt-f64-direct-disco": "04e59e0b19f54f68670910eb6c0d50505aaa28198fda146135395e6e9e556715",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_npt": "f63b3c31f548d543266bc66cdee1de516cca6c69b5ab864b80514907861cbbd3",
+    "/private/tmp/kanoni-no1pt-f64/redstar_npt-no1pt-disco-mass": "e0beb09524f8963ff9ba2d278f1232e1423f502a6a2c122480b10806c27d9420",
+    "/opt/homebrew/Cellar/adat/devel/bin/dbutil": "67b3315cf29e8f6d4eaabe9c2aea963264f72c509977aec0a7b995d357064020",
+    "/private/tmp/kanoni-clang-exporter": "9d2d0d4b712686c671c4455747ab32b220a3ea99b36a777ae6ca3e17f0c0fbc2",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_corr_graph": "fcd15e43f9e05fd621c676c5b1eed75bd85dd5a94ffec91d275c7098980251af",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/view_corr_graph": "c6ecc2f5480d88cb5d3601fcbd3130115b0b32109753dc3213474481772f5229",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/onept-development/build/src/redstar_corr_graph": "3fa2490ee2cab8ae36ffb65ac7ec05fb5ad7c4f52960158f8854478209a1b608",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/onept-development/build/src/view_corr_graph": "bf531725c62deee7b2895e314cfc4b430dbca01a9ba49d2287124568ec20e973"
+  },
+  "data_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/dataset-manifest.json": "01f7b0f2f9ff8d2863a97e82aa80046110963af5fff595a64bb6a1030098cc19",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod": "5aadbfe5573a70a0abaad4ba868085e8246dc7ff3c3080820970fd426e43b2ce",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/meson.sbt": "96a546300769e06eb15d0d7bfab95855ef9eacde4755ba56038699ac689eacb6",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.05.sbt": "312493548ae5c93bb954f2b580cb6c5ff39f377d390e602f1a7dc87c27898c6c",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.1.sbt": "cd241ee7740816ae74d6e397c4798973db17ff597f3d58ae5c6f8759d5c8957d",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.2.sbt": "ed2db91bf252a6f420001389eefa4cb9224b288f8cc56e610a09bf52020dee93",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.05.sbt": "ba6ac2f77f8ff1bea76079e52f94c435b4c9f248449a99a6ce5c15bc4f0a3eca",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.1.sbt": "40774ca534ecdd5f9b0fe02f4ca0a2c47881effcc31b72f2e020e8f5e9100f15",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/baryon.sbt": "a9e3c0f390fa000911f8aa5ba6d6ed12a28d3e133e29963e6524ad0ac7d74b26"
+  },
+  "disco_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/dataset-manifest.json": "dad89112a2c92f29503703b7167543dfedc390c901fd1a91241539ae87f5b968",
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/disco.sdb": "87a867c876e94f6e67b37097c0744c4b2d184f3f2e5e5a236e1c526e623a03be"
+  },
+  "artifact_sha256": {
+    "pion": {
+      "graph.xml": "a01ad9e7bbbaa0f159506d71f0d1408dbeb97651dff331018ac55f72887f389d",
+      "npt.xml": "c62bef88c873b4edfe102679b012bea119b99c7a066aa49b04d2445e164a09e4",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "452e8cfd9861d59c033d47b4869e63ff18911e51172b5fb58c6d653ab1fb4137",
+      "output.sdb1": "7ae0c5a849e07eee4e6ee130323e7f102a8122c11e2e1f3cb6926094bb99be35",
+      "superb.sdb1": "79d46f2182a46186e43ed5ffc00be7580d4a0894e377c058cd74ad8c7ba46a1e"
+    },
+    "1pt": {
+      "graph.xml": "1fff306a7561bfdf45625abaf5f884cc7efab4141cdc6911718d9cb69854e200",
+      "npt.xml": "9727445bf1fe1c5dede0cbecd51d03bad4b14b723497f64813afbd45e0fbb6ef",
+      "chroma.xml": "d02e90d5e05e9eaea1153aaea997a445dc042f4401363552e93262fa506d34b3",
+      "corr_graph.bin": "5dc30e3536de5c22f75c52abd444104e7533d6ccc7a27c6df53639db2db55299",
+      "output.sdb1": "bf22d15fb573edb2ea8f1e23774026c2e2806c01ca9c637f364c58b27bffc28a",
+      "superb.sdb1": "2f0c196843148075da2908251809f5d08cd2a6824b70096b6b5c5a8987e21ca3"
+    },
+    "33": {
+      "graph.xml": "2fc668fbfe4104e8283b1e60fdf1fc788812799c59b7232eeca5116fa85ad8e4",
+      "npt.xml": "e024c2e76bd7abecc7f5ecd168f6d326fb2b60f1e2cd48f43b9901022287e9d3",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "f3818c59bf0ce8453a164153f91530cd7ca0e21528ac72466913a9e82f955ebe",
+      "output.sdb1": "20b2e066bba9107fb8a4ec82186c999bb5673e67195527a702ef8bc12149141b",
+      "superb.sdb1": "95b92512741eecf9172de62788dd3e7eb7b03a67bfd6d51ab7403c7c4e61f655"
+    },
+    "3pi": {
+      "graph.xml": "37d8819f3912175aab9bb5b1a9b8c7dcfa5d5b4087e798f88ae4bcf771b4478c",
+      "npt.xml": "80f388e4a8c96a2495a1b5b82b2585fb5bbb79e5666abfebdf8b91de78c4d872",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "e7d246273d779cce89d71550110004b9e7e27c61095b3d08ccf389dcfe4ac45d",
+      "output.sdb1": "d745d06a0252f7a43de16b1375cb410297a53cd765c6cb4ab0d0f1637b52fb49",
+      "superb.sdb1": "59858346b4b0c8c4f91ef8a52bed5e05e793b98b1720fd353d1afd9747a96829"
+    },
+    "a0.d3": {
+      "graph.xml": "cfee4911ba761c9d25f8f5b2fe0f0c9a86597697a76e2653df10adc2d086b5c8",
+      "npt.xml": "e8df8a905c85d5a94c0af42ed783336331ae41363e50d20ec4aa8dc733e59206",
+      "chroma.xml": "3f9591832749d016d9041afe4e5c12c6486c0afecf297f0dffd919f224a81b9b",
+      "corr_graph.bin": "ffe1374b67705eb12c1639d9b2b079c79f3ebe765cfd4745243e001e6ca61f17",
+      "output.sdb1": "8115da47852b754145bae0aa60296560a9d3b682a4b49f902269aae0f975155a",
+      "superb.sdb1": "08a3d1c15f1071af77962db2f4fd25586756895bf1e1f1a1de38f6902ef814c1"
+    },
+    "a1_rhopi": {
+      "graph.xml": "573fea14353cfed044e5490b563dc7169d7496ed4d87fe1cd0e308cdd219b9c1",
+      "npt.xml": "25805edb74936b430689643fe7bf66f3d48d3a7717fcd6eee2ceb0619e1105ab",
+      "chroma.xml": "3619cacd30e10ffa37eb49fcaacc139dbe11f58e7bbc983c0277de6bd7b4bb94",
+      "corr_graph.bin": "3d9c705d6c17eb2c4bcafbd51f75e3c2d5ed68161aa3ece219d986c303f32ca8",
+      "output.sdb1": "bfad7318131ff78579996c01a9b1bcf44d909bd4a728e6e2aa9c5eb58ff40a97",
+      "superb.sdb1": "7220c0ec28c54a8bf292da52037873f7bdad19bf05ab10cf655113b3008d3b96"
+    },
+    "d": {
+      "graph.xml": "127ea720dd23c948dd600d0d6ee5b57492916c00de9cee1c976d8d0214c11af1",
+      "npt.xml": "e9de985aeb5a8afe354906caee9225d214e42c325295f7e9dfdac5b70b8a8d53",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "6a20809f3e84ee67ff929a566c9e5401feaf6392eb9308ae01b03f0cb25f3509",
+      "output.sdb1": "04ac4d68ab805cd3a529eb6f020c27b5f1242dde8f52645b617048bb18158ba3",
+      "superb.sdb1": "6afc0f367efdaad1a93209f32f93b105b4b38c1df9bdf7bd36fb08c0a0e62297"
+    },
+    "delta_J1o2m": {
+      "graph.xml": "a9e2570a00702504d6a986c763fecfe1613071480164d735f5e6e92e08fa8386",
+      "npt.xml": "487bb2fc7192a4f864fdbc67267936311a725e5c3e55115b39e976e426b60b18",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "b6080b8cd33cf30a720c9982cfab2d61007ddac0cc52c8540773e46193446134",
+      "output.sdb1": "cd9e4eca4316f213def291a7164aefca317b3d205868c492c537d1534870baff",
+      "superb.sdb1": "739c12e98cbce52521ffe3f73802909bebc6ffd70ee3672fd1c4123bf2c9c22b"
+    },
+    "eta8eta8_F8": {
+      "graph.xml": "4648f6fbe4889c884de0eb64d735072e6c0f0b52169138c260e1a0b78cf6850a",
+      "npt.xml": "915c479c28c45a63c5322b2f4aefc9d855b4428042b15b21ce7e880263b76d9e",
+      "chroma.xml": "d02e90d5e05e9eaea1153aaea997a445dc042f4401363552e93262fa506d34b3",
+      "corr_graph.bin": "10fbbd1a063554282c2349501083cb4514e826fd7817be97c692a66f109e7109",
+      "output.sdb1": "8cf5e0a84db42d3b6f3b6113796016bef1154c942dd0f063d9419b1a65e74895",
+      "superb.sdb1": "e92d57bd9146769a6ed8917cd95babe9129de84c6d169c1593b60fe0d3c6c3a4"
+    },
+    "eta_eta_3pt": {
+      "graph.xml": "c6ddeed85d3f5f84df67ea8f2f68867a4cae8a2ecd171fcf9ed8ce17a66896fb",
+      "npt.xml": "a22a6fbfc7a831d33fbb4773649c7d1e4d9ae8871ff1426653246d3aa2cbab3e",
+      "chroma.xml": "cb1e30ac3564cb86faae311f21f50c66c5bee2fc2b196b556f51f6df6c667c20",
+      "corr_graph.bin": "971c7cce5f297a6e41032de95d577f313b09742392b91176dbac18da2298715e",
+      "output.sdb1": "e18e32266dc5d6616a7b5ef00426c42f033e3abc99f7ce73278df0ce4d688ecc",
+      "superb.sdb1": "ddc7f5f09607e90b743c955136b759adfbe057f61fdffc49fc36514e56ee646e"
+    },
+    "h8": {
+      "graph.xml": "c99b5bf57e5a535b73a82301431d0211f1cf3449740e841b4cb1e963fb5c68ae",
+      "npt.xml": "b5f2f3ba9c6a18a4316bda3d719c587ebca61c19b247e56cbe53fde145f17c4c",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "b7ca0e1a0e424b77596b2f0420a753bc0206690d1ab02288bf075f3810b4b47c",
+      "output.sdb1": "5d9043e995c5632c606fba3c4852cd5826c9aa6a48633611c2425bb710013e07",
+      "superb.sdb1": "715286ce6c85d0c720b7214e007f41465fd9d632d0b7c220dc131fabcb9e04ed"
+    },
+    "hard.1_tslice.ini": {
+      "graph.xml": "8c304a771a53020afde9d560dcc6723b8c4b20040ba24e60039f0e9501888fb1",
+      "npt.xml": "8897b8fd08e36679725b8591bd0c60716b613e80956e13720687d9dee80cd622",
+      "chroma.xml": "3f9591832749d016d9041afe4e5c12c6486c0afecf297f0dffd919f224a81b9b",
+      "corr_graph.bin": "b49dffd282aee9e44e9df88d34e2d63a5a629c60a3cf4b96b0415ec93f8bc445",
+      "output.sdb1": "56bd815f785fbe86ecf0d01d96a9973cc5c9638f8d2739cc3a9081d42a4cdace",
+      "superb.sdb1": "6e06a542d525034d79546c0cc74ef29f5964d0b64525c527e61b4ba64c47a1a8"
+    },
+    "nuc": {
+      "graph.xml": "836fe5098dd2b3717c4f4b6c6ed04f7d600dbf2372137c6e8b61a66948e6aa94",
+      "npt.xml": "bae756ddeb421fd7193d93f9354cc1d6b301aac7d35954ff46c03bb8486fbccd",
+      "chroma.xml": "3619cacd30e10ffa37eb49fcaacc139dbe11f58e7bbc983c0277de6bd7b4bb94",
+      "corr_graph.bin": "bfe5be3bfedd6c4d0387fc8be8370f6816df0530d9556b94f85791d21601f372",
+      "output.sdb1": "a8068bca9fa0a73bbdac64d1d7de0b56c96058a859854afc1b46ea8100aaba24",
+      "superb.sdb1": "7c93b0b2bdef3a56a198aff708927a5ebfe31751add394c27ff68d21195e8703"
+    },
+    "nuc.p100": {
+      "graph.xml": "bdd4269830f352b4f33cb2cf26ae2f66ad3c46ece9bd6256ff23ce0caff57111",
+      "npt.xml": "06aa38ea966eb69c43d4289e3e3280c1533d14832de27b43e302fd2c89c37d4b",
+      "chroma.xml": "233e8062456a429da0b015b532e76fa2468e1e74b408efbda74c033a92db8e0f",
+      "corr_graph.bin": "b42a30b8ec49be0675cad629b0f810132d3bf2fde5a7af830d9044634a9c1656",
+      "output.sdb1": "03d3aa27ce6347a0546ccf881822cf1ea8e565894206744d8d964478ae8d7189",
+      "superb.sdb1": "5ec1ffce75ba463ad6614748a52e9e9cedaa63f192c4525418ed4c9e15bae789"
+    },
+    "nuc_gA": {
+      "graph.xml": "15d839b95d3a302bf3eb6e6edb8989c807f5a18c576e66237cc449c88a18687d",
+      "npt.xml": "ab5a0c1eb78d9a780f9ff74621e5c85bdb2fbecf78397a6491365a9b8d50c378",
+      "chroma.xml": "233e8062456a429da0b015b532e76fa2468e1e74b408efbda74c033a92db8e0f",
+      "corr_graph.bin": "6272a3c95f745f4f39876d03473a8c40a5b9d220b178097a6a384154379b7e1d",
+      "output.sdb1": "a9d541a0b60348f19452c60ef8131a5188dd773ebedf7d25d0ce47c47d183195",
+      "superb.sdb1": "ba8168f59baa4bea7ec50233214d3ba9370b6268b345559b50267c630fced2ff"
+    },
+    "nuc_nuc_3pt": {
+      "graph.xml": "5b3d789a53b8b6d45a516624e2f1d1bef7120b6ccd5230446c5f576d06aa7b39",
+      "npt.xml": "fd37bc13a0572924bcb3e8b788b0bbe76a965dc7476e700615beef3b5825a86b",
+      "chroma.xml": "83affba76429bceb4adf21c303c2ebd0d8a844109091d491ea679540817ae32f",
+      "corr_graph.bin": "7513f9dd323508bfa8264507bf62c58b89b69bd3a68f596744a8c67616932810",
+      "output.sdb1": "d55f4e9b6e87994d2fc1fc8ff87f9dc61f4cac9a3e057059ec64c1dc79f44b4c",
+      "superb.sdb1": "174a65c93e3983d908e9dac3c5523b98a813c991c67f969bd3ce4b46fdf83ad9"
+    },
+    "nuc_nuc_ax_3pt": {
+      "graph.xml": "aeaaacb2f023c081d532d6c3af179390621b2f9e9bb86b51146a09ec88e60203",
+      "npt.xml": "4017a787d46730e25572ad9309cb02cdf006fba0874d29d218faafbcd0c6b052",
+      "chroma.xml": "233e8062456a429da0b015b532e76fa2468e1e74b408efbda74c033a92db8e0f",
+      "corr_graph.bin": "c4678d22f6d27c317c09e2c49857cd86dade41d0b2c6087245e46c35ad0fb5bb",
+      "output.sdb1": "814bbb62d3701cd1955e262d6e75f4210914c8c03a2f6352b5461ed6066e27af",
+      "superb.sdb1": "80f8b061a334956c2ce4114442407f21f5e449326577e3a5fb34a689eb1e7838"
+    },
+    "nuc_nuc_proj_3pt": {
+      "graph.xml": "9be172b91f9d68605b05ed9875a44ee0a0e763cbb7852154a23b361948577d00",
+      "npt.xml": "8355100715b320340ce20968c3a0c367d445a6f035d34cdb312216851aa8618b",
+      "chroma.xml": "9157f511f2703ae8bf47e73009082e643caa6aac60cc102af85644052e4b0910",
+      "corr_graph.bin": "d6d0a59d007921f4161af88b7e875e64b79cd5c7363de46001c4074e896789e7",
+      "output.sdb1": "0ffc4d9dc89994464d33cae11f389464fd5142b46c18ef0c6ec1d0204639cefb",
+      "superb.sdb1": "c8e09a1a1316e1debaaef767d907c840cbfc8a99fcf67bd3d249d9dab86368d4"
+    },
+    "nucnuc_small": {
+      "graph.xml": "8fe161d4f076f877e01624deadd448e6162703828bcfed437e31dc13213fd36d",
+      "npt.xml": "b5598ad75acbf17b2d0b81f48b9cc83480d2dfeafd8dce0e3b23c10e54f15b2e",
+      "chroma.xml": "462d4dfd6d40a638ff880383b0c977276f97633afea990c1cec82d46a79b5b0f",
+      "corr_graph.bin": "b7c5a550c2e4400b24da42a932df18cdb23bcadfb4bd49f4c2030a555bf4ae18",
+      "output.sdb1": "9b6976c27f5154d80003fd2425502808b9e02819d2cf3043be4bfd4f87741168",
+      "superb.sdb1": "5d89d22358fb9d3aa9d9f1accb453fcb25be1a412ed1e2dfc961d96b7848f55d"
+    },
+    "nucpi": {
+      "graph.xml": "cac9d48552a00f383058252e3ef0525c4374b59363cd7ddcc53084538b2a5d07",
+      "npt.xml": "49d9ec77e3de3aff07db86632c93e27ecc8bde4f4cb0f72d519d09f00a36cd53",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "23c2d93f12fde28c2f62cd1b28f60982c2d5d98967c8b1d546289ae706147335",
+      "output.sdb1": "6e1dc3ec101cf6ae88da2ef097809d8619b070bb584fb901d709ac5d43441879",
+      "superb.sdb1": "aa94f2e4ff253cbd67842510a2896425aa4efd4a9781b3550d3d26f335df9aea"
+    },
+    "nucpi_I3o2": {
+      "graph.xml": "74dcc80eb4221351278af19a45da51688aa5127cdb71c9fbb172a88a38c6ee2b",
+      "npt.xml": "fc4eb83fb74de0879b9c2fcf2bf09af02482cfac149e1e603664623fd9c39686",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "c6a9e1b0a5cb92eb369dccbbbe2faa0901f3bb556f8883d07dca4f4d30bf763c",
+      "output.sdb1": "42c2d941a31cf3a2127d1d438d5934d0a127771016b144b81fa91510b1bff80e",
+      "superb.sdb1": "4bfb783e7904133eb108fa8ce465179266b3a6e2992b57d06c3ca8f2745f5b13"
+    },
+    "nucpi_J1o2m": {
+      "graph.xml": "5ed9d2090143466c0c5fc18739cb264f54af8e336909935577c6745ebfca4cb2",
+      "npt.xml": "d840e27fd72e294e6f4c8c43d45b18552a0cb6dcf685bcfeb87e4483214a8ea9",
+      "chroma.xml": "d02e90d5e05e9eaea1153aaea997a445dc042f4401363552e93262fa506d34b3",
+      "corr_graph.bin": "b0b111b1eddf4d46d517617a1073eefc30b353864d4a170d0f0be43ad6e99693",
+      "output.sdb1": "0b2dd869ad2f43ee2857fddcbab746ff14b080aefcb1568c6dc1faf60157ab2f",
+      "superb.sdb1": "170161bc6ec9ccfc79db0743c60246daed70bd6bebcc740daa0118febe0222ae"
+    },
+    "nucpi_nucpi_J1o2m": {
+      "graph.xml": "aa5863056f18c7411b1d86a445931ad0113e4822bcf5c6e92e06bbb354b6d96f",
+      "npt.xml": "2dafa1c774b41d859d315a980a35577fc413321d17e20aaaee8a86680127d81b",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "26c48e2003a7963984aae7c724a73f85e20b18f74e7617b93dedd0d20de0dcd9",
+      "output.sdb1": "7b2197dea7ed3c3b2fe8e3309c99e155109cc06ea0bb3b4a5c8bd1a554e798dd",
+      "superb.sdb1": "821751a7f8e8f43f19e5a9a3a9d0eca332cd53f62cf2f0f4b64cd281ea5a3bb1"
+    },
+    "pi": {
+      "graph.xml": "df4e3214ddf274365d770bfdfcb59858702fd9dbae0e060b50a824312d0ce043",
+      "npt.xml": "d245c561e3fc215b29cf20b4286c07a09d6e88e59ca6fb6ba10358a425991b52",
+      "chroma.xml": "6d0288e76bf60acf445599ffe680af5bee49ebf204c34c7bc9736cc8329a042a",
+      "corr_graph.bin": "0356813ce105f145ad65428d778f29cc256e9dde90edb614071c14917dc93f11",
+      "output.sdb1": "4fcc7589065e4390000da34172b2d726ef9f0480d7a9e2168176c95d6268525b",
+      "superb.sdb1": "5a1ddf94f5be23ea2ae0a87b4822ce07419d0a4458cb24e96ae7148fd3a713c7"
+    },
+    "pi_pi_3pt": {
+      "graph.xml": "55c8c3c82683d3b3e03beb479e570b1d64e3726b29a14acb9bd720fff67e30f2",
+      "npt.xml": "b79da891d0962e067a2b365a7af7bd3038c79f0961d02ecb2576c06fdf4f098f",
+      "chroma.xml": "c2694465497d600b5e80266f240a07d6d37b70e4c73f241644c92c463f244051",
+      "corr_graph.bin": "2e8c8dd074d60598b531c99e17c0c8de311349477d2553bc2f35b7861c4df75e",
+      "output.sdb1": "cf9e7c6388cd14d3d0b26a2e79756f584f63602dda0e7c8794a4a7ddeed9efe3",
+      "superb.sdb1": "e686f60c9836f124aacfbe0ea9a0541aba3ab00ada402ed9036b8b56fa658d4b"
+    },
+    "pion_3pt": {
+      "graph.xml": "b31fa0f659a9e46094ac5b1dedfe9f74579beb51d1d836040869c71a71640d84",
+      "npt.xml": "3dc01c2c0f4e69bf9f334ec16fa6149a4b4ef0eb122719094254f69514272db2",
+      "chroma.xml": "2c1c6ed5a43394f56e257cc0c6458aea0ac303b203d3709d9e0d75ffe50cf9ed",
+      "corr_graph.bin": "06a75fbe410214fc3a89ac41d3304513b76739d13ad235fe4ac52612aa715c25",
+      "output.sdb1": "32c4cea3d406ac1283324fd45a27e6942e3e0ee5250cbe38e75e7c3fe55de969",
+      "superb.sdb1": "926e0bb16437c4d0906431b486060609284cc82dccfd8f2fea45419a6138136c"
+    },
+    "pipi_i1": {
+      "graph.xml": "d961954b12f0266e80498211738c8751579662705deac8bf4548e65f8f4c40a9",
+      "npt.xml": "c6b2414cfa8d386fded0a56d7bb3c19e814b086e741c3d22799f634b089ca3c0",
+      "chroma.xml": "d02e90d5e05e9eaea1153aaea997a445dc042f4401363552e93262fa506d34b3",
+      "corr_graph.bin": "8ed15ffcf0283b607aaf31c2c8f49aa46f074916fd29f95b9ef354fa95e5aa4b",
+      "output.sdb1": "8bbf01f53ac4bc3a396ccaef17d248fe35e52605e3c19ef613ad9f026488a4d4",
+      "superb.sdb1": "60c1728209b41da78bb5e08b9bb208b2cf4b7d7cc1a2a4d3875633bbc2695f63"
+    },
+    "psi": {
+      "graph.xml": "7b6b3527d36da288aebaa945e27eb81522d36050d3f01492d5d7441125f6f5a9",
+      "npt.xml": "e4ef3977d020a109d6bfd63536148d25b846dd3228f6de1b4432f30b384662ce",
+      "chroma.xml": "cb1e30ac3564cb86faae311f21f50c66c5bee2fc2b196b556f51f6df6c667c20",
+      "corr_graph.bin": "418b85d109c1be8ab1ec47db3490894e855f271df5b1d39283bef0551004854c",
+      "output.sdb1": "343fd74dcff8742ad431f623b1c5b85941f18dc14ace7db93111b59901fc819c",
+      "superb.sdb1": "2a7e370396650b4c52f000ee4f15ea9d3806aee7316f9cbef0f75cf87ac9db19"
+    },
+    "rho": {
+      "graph.xml": "c96b6f51ad5aaacea5a418f83ad46e589e091e8828e490d6821ab6fddbfcd200",
+      "npt.xml": "0d0a9c76cc3ebe953581b1a929fc01c8756c30c5b07d5837301cb08477d672e8",
+      "chroma.xml": "3619cacd30e10ffa37eb49fcaacc139dbe11f58e7bbc983c0277de6bd7b4bb94",
+      "corr_graph.bin": "12e3e965852dda9e7e9a1a7a60b176665c7cebe52632f6a61d471de0342e645f",
+      "output.sdb1": "b6ab4fe309cdef0a949c67b4e39eef865d05a91e70fffebe283815ae936f2b94",
+      "superb.sdb1": "2d6e7434e920cf1b8c1b024b11f82cc1c018861dee22964338b6a55c253bddd2"
+    },
+    "rho_rho_3pt": {
+      "graph.xml": "8e1460cd6a20296c911ef096ca7dc56d48e69d66f44e25e9c21e71d7b1ce445e",
+      "npt.xml": "7a916348e62695cb252ca4412d9ed9c762c2e11996d481c77fb623437be09cb5",
+      "chroma.xml": "233e8062456a429da0b015b532e76fa2468e1e74b408efbda74c033a92db8e0f",
+      "corr_graph.bin": "a925a4ff0b142ec06ed103a69332e3ac2b360544d009057d69ee1a722d8ce0b6",
+      "output.sdb1": "218c7fecafe9baffa5022266137bff57a810a4397d6529e3d6d2b4b33d989136",
+      "superb.sdb1": "f48312e4063c34524661d907270c5484052778ba58159bff5455b09f2973dfb3"
+    }
+  },
+  "full_suite_command": [
+    "/opt/homebrew/bin/python3",
+    "/Users/admin/Downloads/redstar_kanoni.devel/scripts/compare_regression_chains.py",
+    "--dataset",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001",
+    "--output",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-full-20261103-001",
+    "--baseline-graph-bin",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src",
+    "--baseline-npt",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_npt",
+    "--baseline-chroma",
+    "/private/tmp/kanoni-f64/chroma-regenerate-f64-v15-direct-disco",
+    "--feature-graph-bin",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/onept-development/build/src",
+    "--feature-npt",
+    "/private/tmp/kanoni-no1pt-f64/redstar_npt-no1pt-disco-mass",
+    "--feature-chroma",
+    "/private/tmp/kanoni-no1pt-f64/chroma-no1pt-f64-direct-disco",
+    "--dbutil",
+    "/opt/homebrew/Cellar/adat/devel/bin/dbutil",
+    "--exporter",
+    "/private/tmp/kanoni-clang-exporter",
+    "--disco-dataset",
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001",
+    "--chain",
+    "devel",
+    "--qualification",
+    "Merged Redstar devel b194fdf fresh serial Apple Clang native-stack build; retained native ColorVec/ADAT/Hadron and corrected pre-YLM Chroma v15 direct-DISCO snapshot; not a clean latest-YLM dependency build, MPI or GPU validation",
+    "--timeout",
+    "900"
+  ],
+  "npt_only_command": [
+    "/opt/homebrew/bin/python3",
+    "/Users/admin/Downloads/redstar_kanoni.devel/scripts/compare_regression_chains.py",
+    "--dataset",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001",
+    "--output",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001",
+    "--baseline-graph-bin",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src",
+    "--baseline-npt",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-build-20261103-001/build/src/redstar_npt",
+    "--baseline-chroma",
+    "/private/tmp/kanoni-f64/chroma-regenerate-f64-v15-direct-disco",
+    "--feature-graph-bin",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/onept-development/build/src",
+    "--feature-npt",
+    "/private/tmp/kanoni-no1pt-f64/redstar_npt-no1pt-disco-mass",
+    "--feature-chroma",
+    "/private/tmp/kanoni-no1pt-f64/chroma-no1pt-f64-direct-disco",
+    "--dbutil",
+    "/opt/homebrew/Cellar/adat/devel/bin/dbutil",
+    "--exporter",
+    "/private/tmp/kanoni-clang-exporter",
+    "--disco-dataset",
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001",
+    "--chain",
+    "devel",
+    "--qualification",
+    "Merged Redstar devel b194fdf fresh serial Apple Clang native-stack build; retained native ColorVec/ADAT/Hadron and corrected pre-YLM Chroma v15 direct-DISCO snapshot; not a clean latest-YLM dependency build, MPI or GPU validation",
+    "--timeout",
+    "900",
+    "--npt-only",
+    "--cases",
+    "glue",
+    "tetra_F27_S2",
+    "fsq_3pt"
+  ],
+  "policy": {
+    "baseline": "devel",
+    "experimental": "no_1pt",
+    "deferred_by_user": {
+      "ff_3pt": {
+        "npt": true,
+        "corr_superb": true,
+        "reason": "User deferred regression; legacy gpdf.more.sdb generator unavailable; do not add file to new dataset"
+      },
+      "glue": {
+        "npt": false,
+        "corr_superb": true,
+        "reason": "User deferred glue implementation in CORR_SUPERB"
+      },
+      "tetra_F27_S2": {
+        "npt": false,
+        "corr_superb": true,
+        "reason": "User deferred tetraquark implementation in CORR_SUPERB"
+      },
+      "fsq_3pt": {
+        "npt": false,
+        "corr_superb": true,
+        "reason": "Gluonic insertion is included in the user-directed deferral of glue implementation in CORR_SUPERB; retained legacy gpdf input remains covered by the NPT test"
+      }
+    },
+    "commit_gate": "Commit relevant tested changes after the remaining regression checks pass; preserve unrelated work and exclude generated artifacts",
+    "meson_input": {
+      "mom2_min": 0,
+      "mom2_max": 4,
+      "mom_list": []
+    },
+    "solver_accuracy": {
+      "RsdCG": 1e-14,
+      "reason": "User selected tighter accuracy after eta8 diagnostic; retain original 1e-12 candidate separately"
+    },
+    "additional_validated_cases": {
+      "nuc_nuc_3pt": {
+        "baseline": "devel",
+        "experimental": "no_1pt",
+        "status": "passed",
+        "time_samples_per_chain": 7,
+        "reference": "disconnected-loops.md",
+        "scope": "Fresh native DISCO supplement, separate paired targeted comparison; no new full-sweep claim"
+      }
+    },
+    "disco_generation": {
+      "mode": "direct one-file native mass-axis output",
+      "output": "disco.sdb",
+      "temporary_shards": false,
+      "packing_step": false,
+      "baseline": "devel",
+      "experimental": "no_1pt",
+      "status": "passed",
+      "report": "disconnected-loops.md"
+    }
+  },
+  "relative_only_diagnostics": {
+    "pion": null,
+    "1pt": null,
+    "33": null,
+    "3pi": null,
+    "a0.d3": null,
+    "a1_rhopi": null,
+    "d": null,
+    "delta_J1o2m": null,
+    "eta8eta8_F8": null,
+    "eta_eta_3pt": null,
+    "h8": null,
+    "hard.1_tslice.ini": null,
+    "nuc": null,
+    "nuc.p100": null,
+    "nuc_gA": null,
+    "nuc_nuc_3pt": null,
+    "nuc_nuc_ax_3pt": null,
+    "nuc_nuc_proj_3pt": null,
+    "nucnuc_small": null,
+    "nucpi": null,
+    "nucpi_I3o2": null,
+    "nucpi_J1o2m": null,
+    "nucpi_nucpi_J1o2m": null,
+    "pi": null,
+    "pi_pi_3pt": null,
+    "pion_3pt": null,
+    "pipi_i1": null,
+    "psi": null,
+    "rho": null,
+    "rho_rho_3pt": null
+  },
+  "report_paths": {
+    "paired": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-full-20261103-001/results.json",
+    "npt_only": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-native-npt-only-20261103-001/results.json"
+  },
+  "evidence_sha256": {
+    "runs/arb-native-full-20261103-001/results.json": "63d77e6da6ad3ce9d761535edeb6383e414dd3633cd0e409ef02fe4d8165d4c0",
+    "runs/arb-native-full-20261103-001/independent-audit.json": "798f82bbee368c07096c51f08017f4b4409d3b959c1e61ddc0340ea01fdfa1c8",
+    "runs/arb-native-npt-only-20261103-001/results.json": "884eb56b2692226d231d9f24510f46b6b61d2a546bd7924f1f5d8a2367112e2b",
+    "runs/arb-native-npt-only-20261103-001/independent-audit.json": "6de57285a60ebd8e90d987090e8c923f8a999accf2c5acc7b07ac3b8ae2d4ffe",
+    "runs/arb-native-build-20261103-001/configuration.json": "9dc025f702089a88be87c0074346af575f74d06f927bc20efbd54fe2eb33ba29",
+    "runs/arb-native-build-20261103-001/build.log": "67344d334c5831d3ab153025e6df4d5396715d9503026e8fc6cdfc949fd64e1f",
+    "runs/arb-native-build-20261103-001/check.log": "e953f780b1bf428cc2e59df767a572d837f1a85dc496468ab4bbdf01c85c2cc3"
+  },
+  "numerical_gate": {
+    "relative_tolerance": 1e-09,
+    "global_absolute_scale": 1e-12,
+    "minimum_reference_global_max": 1e-30
+  }
+}

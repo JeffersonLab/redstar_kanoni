@@ -20,6 +20,17 @@ jemalloc dumps and MPI/GPU remain untested. See the [build and validation
 record](arb-merge-validation.md) for source/tool hashes, operator-basis changes
 and retained evidence. no_1pt remains experimental.
 
+The subsequent [full merged-devel native-double sweep](arb-native-regressions.md)
+passed all 30 active NPT/CORR comparisons: 925 keys, 4,197 finite complex values,
+zero strict per-value failures and zero comparison CG solves. The maximum absolute
+difference was 1.2193405344946423e-13. All 29 NPT outputs available from the
+historical matrix are byte-identical. This full devel run includes the native
+DISCO nucleon case; no_1pt was not rerun. The four CORR deferrals remain intact,
+and separate NPT-only glue/tetra/fsq checks passed six keys and 96 values.
+The exact merged Redstar was freshly built against retained native-reader
+dependencies and corrected pre-YLM Chroma; clean latest-YLM/MPI/GPU validation
+is not implied.
+
 ## Requested next work: publication and production integration
 
 Recorded 1 November 2026 at the user's request. These are planned tasks, not

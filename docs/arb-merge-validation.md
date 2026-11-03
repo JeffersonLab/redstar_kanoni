@@ -1,5 +1,9 @@
 # ARB merge into Redstar devel
 
+The later [full native-double devel sweep](arb-native-regressions.md) passed all
+30 active paired cases. The record below preserves the initial targeted build
+and legacy-baseline validation with its original scope and qualification.
+
 Validated and integrated locally on 3 November 2026. `redstar.devel/devel`
 fast-forwarded from `d17e6a8e5adfcd5230ab9fd970d00619cbeb37b4` to the tested
 merge `b194fdfcfe93742ba6887e4374fd5a32a002415f`. Its second parent is

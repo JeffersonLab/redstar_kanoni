@@ -97,6 +97,11 @@ is retained separately.
 
 ## Validation results
 
+The subsequent [full merged-devel native-double suite](arb-native-regressions.md)
+includes a passing `nuc_nuc_3pt` comparison using this same direct collection,
+as part of a new 30-case devel sweep. The targeted two-chain evidence below
+remains separate; experimental no_1pt was not rerun in that full sweep.
+
 The canonical Chroma input produced exactly **one `disco.sdb`**, without shards
 or a packing operation. All 32 mass/time measurements and 6,144 CG solves
 completed. Independent checks passed for all 224 unique keys, 3,584 finite
