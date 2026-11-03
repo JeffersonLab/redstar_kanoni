@@ -1,5 +1,24 @@
 # Regression status and coverage
 
+## Full experimental no_1pt sweep: 3 November 2026
+
+A separate full experimental sweep passed **all 30 active native-double
+NPT/CORR cases**: 925 keys, 4,197 finite complex values, zero strict per-value
+failures and zero comparison CG solves. Maximum absolute difference:
+7.60540982951457e-14. All 29 experimental NPT outputs available in the historical
+matrix are byte-identical. Only the declared eta control has an exactly
+zero-valued channel. Format-4 graphs and explicit `average_1pt_diagrams=false`
+were checked independently, along with matching NPT/CORR settings and hashes.
+
+The data and direct-DISCO supplement exactly match the merged devel sweep below.
+The four CORR deferrals are unchanged; separate experimental NPT-only fsq/glue/
+tetra checks passed six keys and 96 values. The numerical tools are retained
+corrected pre-YLM CPU snapshots, not a new clean source build. no_1pt remains
+experimental, with devel as the baseline. The two separate new full sweeps now
+cover 30 active cases per chain (60 comparisons, 8,394 finite compared values).
+This does not claim a new full per-value experimental/devel cross-chain test.
+See [experimental results and provenance](no1pt-native-regressions.md).
+
 ## Full merged devel sweep: 3 November 2026
 
 Redstar merge `b194fdf` passed **all 30 active native-double NPT/CORR cases**,
@@ -15,7 +34,8 @@ Separate NPT-only fsq/glue/tetra checks passed six keys and 96 values; they do
 not establish CORR support. ff_3pt remains deferred in NPT too. This is a fresh
 merged Redstar build with retained native-reader dependencies and corrected
 pre-YLM Chroma, using the existing RsdCG=1e-14 data. It is not a clean latest-YLM,
-MPI or GPU validation, and no_1pt was not rerun. See the [full report and
+MPI or GPU validation. no_1pt was not part of that run; its subsequent full
+sweep is recorded above. See the [full report and
 provenance](arb-native-regressions.md).
 
 ## Historical matrix and targeted checks

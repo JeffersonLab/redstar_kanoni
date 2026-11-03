@@ -7,6 +7,9 @@ and zero comparison CG solves. The four existing CORR deferrals remain intact.
 This is a new full devel sweep including native-DISCO `nuc_nuc_3pt`; experimental
 no_1pt was not rerun. The historical 29-case/two-chain matrix remains separate.
 
+The subsequent [separate experimental full sweep](no1pt-native-regressions.md)
+also passed all 30 active cases using the same data. no_1pt remains experimental.
+
 ## Build and data qualification
 
 The exact merged Redstar source was freshly built in

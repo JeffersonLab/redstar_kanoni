@@ -101,6 +101,9 @@ The subsequent [full merged-devel native-double suite](arb-native-regressions.md
 includes a passing `nuc_nuc_3pt` comparison using this same direct collection,
 as part of a new 30-case devel sweep. The targeted two-chain evidence below
 remains separate; experimental no_1pt was not rerun in that full sweep.
+The later [experimental full sweep](no1pt-native-regressions.md) also includes
+this direct-DISCO case among 30 passing active no_1pt comparisons, using the
+same validated collection. no_1pt remains experimental.
 
 The canonical Chroma input produced exactly **one `disco.sdb`**, without shards
 or a packing operation. All 32 mass/time measurements and 6,144 CG solves

@@ -31,6 +31,17 @@ The exact merged Redstar was freshly built against retained native-reader
 dependencies and corrected pre-YLM Chroma; clean latest-YLM/MPI/GPU validation
 is not implied.
 
+The subsequent [experimental no_1pt full sweep](no1pt-native-regressions.md)
+also passed all 30 active cases using the same primary data and direct-DISCO
+supplement: 925 keys, 4,197 finite complex values, zero strict failures and zero
+comparison CG solves. The maximum absolute difference was
+7.60540982951457e-14. All 29 historical experimental NPT outputs are byte-identical.
+Separate experimental NPT-only fsq/glue/tetra checks passed six keys and 96
+values. The four CORR deferrals and the experimental designation are unchanged.
+The two new full sweeps are separate reports; retained corrected pre-YLM tools
+were used for no_1pt, with no new clean experimental build or cross-chain
+per-value equivalence claim.
+
 ## Requested next work: publication and production integration
 
 Recorded 1 November 2026 at the user's request. These are planned tasks, not
@@ -67,12 +78,17 @@ The matching experimental CORR_SUPERB interface requires an explicit averaging f
 
 References: [Redstar one-point behavior](https://github.com/JeffersonLab/redstar/blob/devel-rge-no_1pt/docs/onept-time-windows.md), [multiparticle feature tests](https://github.com/JeffersonLab/redstar/blob/devel-rge-no_1pt/docs/multiparticle-onept-times.md), [shared ADAT format-4 codec](https://github.com/JeffersonLab/adat/blob/eloy/devel-rge-no_1pt/docs/corr-graph-v4.md), [experimental CORR_SUPERB flag](https://github.com/JeffersonLab/chroma/blob/devel-rge-no_1pt/docs/corr-superb-onept.md).
 
-## Regression coverage: completed numerical comparison
+## Regression coverage: historical matrix and later full sweeps
 
-All 29 active native-double regression cases pass against CORR_SUPERB on both
+The historical 1 November matrix passed all 29 active native-double cases on both
 devel and experimental no_1pt: 58 case/chain comparisons and 8,380 finite values.
-Five CORR cases per chain were deferred in that historical matrix. The user has
-now completed the reopened nuc_nuc_3pt check with native DISCO data: both chains pass all seven values. This targeted addition brings recorded coverage to 30 active cases per chain; it is separate from the historical full sweep. The other four deferrals remain. See [DISCO validation](disconnected-loops.md) and [coverage](regressions.md).
+Five CORR cases per chain were deferred in that matrix. The reopened
+nuc_nuc_3pt then passed its separate seven-value native-DISCO check on both chains.
+The 3 November [devel](arb-native-regressions.md) and
+[experimental](no1pt-native-regressions.md) full sweeps subsequently passed all
+30 active cases per chain, with four CORR deferrals retained. These newer sweeps
+are separate from the historical matrix and targeted evidence. See
+[DISCO validation](disconnected-loops.md) and [coverage](regressions.md).
 The original 12³×16 Nπ comparison also passed all 81+729 keys and 5,670 values,
 with maximum experimental/devel difference 1.11e-16. No tolerances were weakened.
 The validated changes are committed; [regression coverage](regressions.md) records their scope and build qualification.
