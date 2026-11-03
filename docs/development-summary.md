@@ -1,10 +1,24 @@
 # Summary of redstar/chroma code devel
 
-Updated 1 November 2026 from repository documentation, saved validation records and current local runs.
+Updated 3 November 2026 from repository documentation, saved validation records and current local runs.
 
 Canonical home: redstar_kanoni `devel`, `docs/development-summary.md`. Devel is the regression baseline; no_1pt remains experimental.
 
 The main achievement is a documented, reproducible route from continuum operators through contraction graphs and numerical correlator databases to matrix-element fits. The regression baseline is the **devel chain**, with the fitting repositories on their established main/master branches. The experimental `no_1pt` work and the proposed all-YLM vertex migration are separate from that baseline.
+
+## ARB merged into Redstar devel
+
+On 3 November 2026, the clean local `redstar.devel` checkout fast-forwarded to
+validated merge `b194fdf`. It combines ARB memory auditing and the three-hadron
+momentum-class independence fix with devel's data workflows and baryon metadata.
+A fresh Redstar build using existing Apple Clang/libomp dependencies passed
+targeted checks and eight legacy-SDB regressions: 39 keys and 354 finite complex
+values, with every database byte-identical to its saved devel baseline.
+The exact-zero control is included separately. This is local integration,
+not a push or a repeated full native-double matrix; Linux memory measurements,
+jemalloc dumps and MPI/GPU remain untested. See the [build and validation
+record](arb-merge-validation.md) for source/tool hashes, operator-basis changes
+and retained evidence. no_1pt remains experimental.
 
 ## Requested next work: publication and production integration
 

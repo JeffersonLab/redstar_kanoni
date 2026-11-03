@@ -1,5 +1,11 @@
 # Regression status and coverage
 
+The [3 November ARB merge check](arb-merge-validation.md) separately validates
+Redstar merge `b194fdf`: eight legacy-SDB baseline comparisons passed with
+byte-identical databases (39 keys, 354 finite complex values), plus targeted
+memory-audit and three-hadron checks. It does not repeat or supersede the
+native-double matrix below.
+
 Updated 1 November 2026. The full native-double matrix passed **29 active cases on each chain** (58 case/chain comparisons, 8,380 finite compared values). Five historical cases per chain were deferred in that matrix; nuc_nuc_3pt has since passed its separate fresh-DISCO check, leaving four explicit CORR deferrals. This does not claim those implementations pass.
 
 The dataset uses the original WEAK_FIELD/RNG, ten MOD64 vectors, RsdCG=1e-14, native SUPERB tensors with separate files per mass, and the full meson momentum sphere through mom2=4. Old datasets, reference SDBs and failed attempts are retained separately. Devel is the regression baseline (graph format 3); no_1pt remains experimental (format 4). Numerical executables are incremental corrected pre-YLM builds, not clean latest-YLM builds.

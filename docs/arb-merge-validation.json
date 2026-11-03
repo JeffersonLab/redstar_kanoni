@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "validated_on": "2026-11-03",
+  "integration": {
+    "checkout": "redstar.devel",
+    "branch": "devel",
+    "method": "fast-forward",
+    "previous_commit": "d17e6a8e5adfcd5230ab9fd970d00619cbeb37b4",
+    "merge_commit": "b194fdfcfe93742ba6887e4374fd5a32a002415f",
+    "arb_parent": "f65c45fbd77a80960c8f4471c9c5acd2adb73946"
+  },
+  "summary": {
+    "status": "passed",
+    "merge": "b194fdfcfe93742ba6887e4374fd5a32a002415f",
+    "build": "fresh archived merged Redstar, existing matching Apple Clang/libomp lower stack",
+    "make_check": "passed (check programs built; no Automake TESTS suite declared)",
+    "openmp_teams": [
+      1,
+      4
+    ],
+    "numerical_report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/results.json",
+    "regression_report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/regressions.json",
+    "numerical_cases": [
+      {
+        "case": "1pt",
+        "status": "passed",
+        "keys": 3,
+        "finite_complex_values": 48,
+        "byte_identical": true
+      },
+      {
+        "case": "eta_eta_3pt",
+        "status": "passed",
+        "keys": 1,
+        "finite_complex_values": 16,
+        "byte_identical": true
+      },
+      {
+        "case": "nuc",
+        "status": "passed",
+        "keys": 1,
+        "finite_complex_values": 16,
+        "byte_identical": true
+      },
+      {
+        "case": "nuc.p100",
+        "status": "passed",
+        "keys": 2,
+        "finite_complex_values": 14,
+        "byte_identical": true
+      },
+      {
+        "case": "pion",
+        "status": "passed",
+        "keys": 3,
+        "finite_complex_values": 48,
+        "byte_identical": true
+      },
+      {
+        "case": "pion_3pt",
+        "status": "passed",
+        "keys": 1,
+        "finite_complex_values": 7,
+        "byte_identical": true
+      },
+      {
+        "case": "pipi_i1",
+        "status": "passed",
+        "keys": 1,
+        "finite_complex_values": 16,
+        "byte_identical": true
+      },
+      {
+        "case": "rho_rho_3pt",
+        "status": "passed",
+        "keys": 27,
+        "finite_complex_values": 189,
+        "byte_identical": true
+      }
+    ],
+    "total_keys": 39,
+    "total_finite_complex_values": 354,
+    "fake_data_cases": 0,
+    "relative_regression_tolerance": 1e-12,
+    "ignore_tolerance": 0,
+    "memory_audit": {
+      "audit_on_off_comparison": "passed",
+      "structured_records": "8 cases passed sequence and lifecycle assertions",
+      "optional_heap_without_jemalloc": "warning and success",
+      "required_heap_without_jemalloc": "expected failure"
+    },
+    "threehadron": {
+      "status": "passed",
+      "default_maps_identical": true,
+      "cross_momentum_raw_each": 294,
+      "merged_selected": 74,
+      "devel_selected": 71,
+      "shared_definitions_identical": true,
+      "removed": [],
+      "added": [
+        "XXpion_proj0_H0D4A2__002xxpion_proj0_H0D4A2__00-2__F3,1_T1mP,1__000XXpion_proj0_A1__000__F5,1_T1pM,1__000",
+        "XXpion_proj0_H0D4A2__002xxpion_proj0_H0D4A2__00-2__F5,1_A1pP,1__000XXpion_proj0_A1__000__F5,1_A1mM,1__000",
+        "XXpion_proj0_H0D4A2__002xxpion_proj0_H0D4A2__00-2__F5,1_EpP,1__000XXpion_proj0_A1__000__F5,1_EmM,1__000"
+      ]
+    },
+    "limitations": [
+      "No Linux /proc or mallinfo2 measurements on macOS",
+      "No jemalloc installation: real heap dump creation untested",
+      "Existing lower dependencies reused, not rebuilt; their source lock recorded",
+      "Targeted 8-case legacy-SDB suite, not full native-double NPT/CORR matrix",
+      "No MPI/GPU validation"
+    ],
+    "initial_blocked_attempt": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143656-t9i9_8ea/results.json",
+    "source_checkout_modified": false,
+    "source_checkout_modified_note": "At validation time; later integration fast-forwarded redstar.devel to the same source commit."
+  },
+  "provenance": {
+    "source_repo": "/Users/admin/Downloads/redstar.arb_devel",
+    "commit": "b194fdfcfe93742ba6887e4374fd5a32a002415f",
+    "dependencies": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install",
+    "qualification": "fresh merged Redstar build; reused Apple Clang/libomp dependencies",
+    "installed_binary_sha256": {
+      "generate_nonint_spectrum_3ops": "e7ae882530e9bcda3471669b676b553b9dde4e45aa019dc64f8359f7730b9324",
+      "redstar_corr_graph": "5fb88aad28331167067a214be70023dd8b6baf5ce169e78db534ea9fe849031a",
+      "redstar_npt": "d74454d5b888a7a8e10a7f443719bec3bdaa07bce1f11645cdafd4e36f95443f"
+    },
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+    "dependencies_source_lock": {
+      "contractions": {
+        "url": "https://github.com/jiechenajlab/jlab_contraction_bench2026.git",
+        "branch": "main",
+        "commit": "5e9b10ececacd93411b7764e74ed01ed5d50b1db"
+      },
+      "adat": {
+        "url": "https://github.com/JeffersonLab/adat.git",
+        "branch": "devel",
+        "commit": "91251ccb8df68cfd7dd790df7433cc5f3c2e7037"
+      },
+      "hadron": {
+        "url": "https://github.com/JeffersonLab/hadron.git",
+        "branch": "devel",
+        "commit": "ba19a7d8ee784ed06283f218ce4b5be0829bc85e"
+      },
+      "colorvec": {
+        "url": "https://github.com/JeffersonLab/colorvec.git",
+        "branch": "devel",
+        "commit": "51a46b6f3999deeb51cd211693450f5aed625f59"
+      }
+    },
+    "dependency_build_record": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/build.json"
+  },
+  "audit": [
+    {
+      "case": "nuc.p100",
+      "records": 218,
+      "sequence_contiguous": true,
+      "lifecycle_stages_present": true,
+      "platform": "nonlinux",
+      "linux_allocator_measurements": "unavailable"
+    },
+    {
+      "case": "nuc",
+      "records": 416,
+      "sequence_contiguous": true,
+      "lifecycle_stages_present": true,
+      "platform": "nonlinux",
+      "linux_allocator_measurements": "unavailable"
+    },
+    {
+      "case": "1pt",
+      "records": 783,
+      "sequence_contiguous": true,
+      "lifecycle_stages_present": true,
+      "platform": "nonlinux",
+      "linux_allocator_measurements": "unavailable"
+    },
+    {
+      "case": "pipi_i1",
+      "records": 416,
+      "sequence_contiguous": true,
+      "lifecycle_stages_present": true,
+      "platform": "nonlinux",
+      "linux_allocator_measurements": "unavailable"
+    },
+    {
+      "case": "eta_eta_3pt",
+      "records": 49,
+      "sequence_contiguous": true,
+      "lifecycle_stages_present": true,
+      "platform": "nonlinux",
+      "linux_allocator_measurements": "unavailable"
+    },
+    {
+      "case": "pion_3pt",
+      "records": 222,
+      "sequence_contiguous": true,
+      "lifecycle_stages_present": true,
+      "platform": "nonlinux",
+      "linux_allocator_measurements": "unavailable"
+    },
+    {
+      "case": "rho_rho_3pt",
+      "records": 597,
+      "sequence_contiguous": true,
+      "lifecycle_stages_present": true,
+      "platform": "nonlinux",
+      "linux_allocator_measurements": "unavailable"
+    },
+    {
+      "case": "pion",
+      "records": 416,
+      "sequence_contiguous": true,
+      "lifecycle_stages_present": true,
+      "platform": "nonlinux",
+      "linux_allocator_measurements": "unavailable"
+    }
+  ],
+  "heap_fallback": [
+    {
+      "case": "heap-optional",
+      "returncode": 0,
+      "expected_behavior": true
+    },
+    {
+      "case": "heap-required",
+      "returncode": 1,
+      "expected_behavior": true
+    }
+  ],
+  "comparison_databases": {
+    "1pt": {
+      "reference": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/regressions/1pt/output.sdb1",
+        "sha256": "70c7980e57bd498d4c1021bb9c08959849ed23a11e2e7041b9148965752690c2"
+      },
+      "candidate": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/1pt/output.sdb1",
+        "sha256": "70c7980e57bd498d4c1021bb9c08959849ed23a11e2e7041b9148965752690c2"
+      }
+    },
+    "eta_eta_3pt": {
+      "reference": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/regressions/eta_eta_3pt/output.sdb1",
+        "sha256": "e18e32266dc5d6616a7b5ef00426c42f033e3abc99f7ce73278df0ce4d688ecc"
+      },
+      "candidate": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/eta_eta_3pt/output.sdb1",
+        "sha256": "e18e32266dc5d6616a7b5ef00426c42f033e3abc99f7ce73278df0ce4d688ecc"
+      }
+    },
+    "nuc": {
+      "reference": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/regressions/nuc/output.sdb1",
+        "sha256": "2498000d1a8a9e2c12643efdfbf3f765f8c94cae80df855e63167e32d2b79be5"
+      },
+      "candidate": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/nuc/output.sdb1",
+        "sha256": "2498000d1a8a9e2c12643efdfbf3f765f8c94cae80df855e63167e32d2b79be5"
+      }
+    },
+    "nuc.p100": {
+      "reference": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/regressions/nuc.p100/output.sdb1",
+        "sha256": "bc8ce8dcec1c7ebe168c6cee19acc3b87c6ec58834144daf379c3f1fb8e5f00b"
+      },
+      "candidate": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/nuc.p100/output.sdb1",
+        "sha256": "bc8ce8dcec1c7ebe168c6cee19acc3b87c6ec58834144daf379c3f1fb8e5f00b"
+      }
+    },
+    "pion": {
+      "reference": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/regressions/pion/output.sdb1",
+        "sha256": "73cbe8613d4414b8dc33e9c6b5c1caca939cbaea8a4c2c07d10a54493974f757"
+      },
+      "candidate": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/pion/output.sdb1",
+        "sha256": "73cbe8613d4414b8dc33e9c6b5c1caca939cbaea8a4c2c07d10a54493974f757"
+      }
+    },
+    "pion_3pt": {
+      "reference": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/regressions/pion_3pt/output.sdb1",
+        "sha256": "f3887ea530eb9a6f46ba1ce989a468e34b682390bbeb4934c846688d80966a5c"
+      },
+      "candidate": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/pion_3pt/output.sdb1",
+        "sha256": "f3887ea530eb9a6f46ba1ce989a468e34b682390bbeb4934c846688d80966a5c"
+      }
+    },
+    "pipi_i1": {
+      "reference": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/regressions/pipi_i1/output.sdb1",
+        "sha256": "99595e8e3d4d981256bac230ce0b531c31e513d8df8a172dac6f9f97ec4aaba1"
+      },
+      "candidate": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/pipi_i1/output.sdb1",
+        "sha256": "99595e8e3d4d981256bac230ce0b531c31e513d8df8a172dac6f9f97ec4aaba1"
+      }
+    },
+    "rho_rho_3pt": {
+      "reference": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/regressions/rho_rho_3pt/output.sdb1",
+        "sha256": "346064168b0a081e2696ef0c72b0b32db98597375a024597756f9ea40b5b3482"
+      },
+      "candidate": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261103-143727-k99zpk4v/rho_rho_3pt/output.sdb1",
+        "sha256": "346064168b0a081e2696ef0c72b0b32db98597375a024597756f9ea40b5b3482"
+      }
+    }
+  },
+  "evidence_sha256": {
+    "runs/arb-merge-build-20261103-001/summary.json": "14ab18dd3c7c4d1409f2fe1d5b1170b29f773c9a37cd7d1968967640e53a8f62",
+    "runs/arb-merge-build-20261103-001/provenance.json": "1983d5331cd44a787a3c0a6c3cdf61f5920f42ac52ca3337c69264d8f0c7c654",
+    "runs/arb-merge-build-20261103-001/audit-results.json": "114b29b32b0a9991cc1a3baa2113f682b4d461ffb3ddc4df3fd667b8e372d32b",
+    "runs/arb-merge-build-20261103-001/threehadron/verification.json": "65c87e7268ea7de7dceb856ee8b59e2bfcb81e96f9193e370c58124a995ac02a",
+    "runs/validation-20261103-143727-k99zpk4v/results.json": "c3ca8488c4acb3a656b3082c3eff03961d0502ead6b4b62219d3a5f6c4e007e1",
+    "runs/validation-20261103-143727-k99zpk4v/regressions.json": "eee69b1a754bc2180897ecdf848f21d6496272dc96f18dce5894aef5fd292c76",
+    "runs/arb-merge-build-20261103-001/configure.log": "2ab3d685ff1a7b92b4635507c7e4a04c46378d7747a7118d7ead00cb40d4cbc7",
+    "runs/arb-merge-build-20261103-001/build.log": "ac4be29627d5657132c503c9fb55a8d3adf84c3f67baabb3710a6d097c4acabf",
+    "runs/arb-merge-build-20261103-001/check.log": "17d17e159a0ecda538aae27e3be2ed7276bf4cd1b3e457d685fa9437a00785d8",
+    "runs/arb-merge-build-20261103-001/install.log": "a0b8942930ddfca412ff51553c9d6453566e119e95deb7900529c60c3f2f1a60"
+  }
+}
