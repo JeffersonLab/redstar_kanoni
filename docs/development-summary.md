@@ -6,6 +6,23 @@ Canonical home: redstar_kanoni `devel`, `docs/development-summary.md`. Devel is 
 
 The main achievement is a documented, reproducible route from continuum operators through contraction graphs and numerical correlator databases to matrix-element fits. The regression baseline is the **devel chain**, with the fitting repositories on their established main/master branches. The experimental `no_1pt` work and the proposed all-YLM vertex migration are separate from that baseline.
 
+## Clean experimental no_1pt source validation: 3 November 2026
+
+A new clean source build passed all 30 active native-double NPT/CORR cases:
+925 keys, 4,197 finite complex values, zero strict failures and zero CG solves.
+Maximum absolute difference: 1.2195766457225513e-13. The full readback audit
+and comparison against all 30 prior experimental NPT outputs passed. The four
+CORR deferrals and separate six-key/96-value NPT-only lane are unchanged.
+
+The matching no_1pt branches required three documented ADAT devel source
+backports; this is not an unchanged-tip build. Both executables and all project
+libraries were freshly compiled, without old binary/header overlays. Chroma
+uses fresh MPI ADAT and was checked at one rank; NPT uses fresh CPU ADAT from
+the same source. Multi-rank MPI, GPU, on-demand GenProp and ensemble physics
+remain outside this cached-tensor validation. Devel remains the baseline and
+no_1pt remains experimental. See the [clean build, source fixes and results](no1pt-clean-build.md).
+The retained-binary sweeps below remain historical records of their own tools.
+
 ## ARB merged into Redstar devel
 
 On 3 November 2026, the clean local `redstar.devel` checkout fast-forwarded to

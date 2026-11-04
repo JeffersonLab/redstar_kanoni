@@ -1,0 +1,799 @@
+{
+  "date": "2026-11-03",
+  "status": "passed",
+  "chain": "experimental no_1pt; devel remains baseline",
+  "sources": {
+    "adat": {
+      "repository": "/Users/admin/Downloads/adat.devel-rge-no_1pt",
+      "branch": "devel-rge-no_1pt",
+      "fetch_branch_tip": true,
+      "local_commit": "161c8edcd7059b95539f1f4a6a6d7c73770363da",
+      "remote": "git@github.com:JeffersonLab/adat.git",
+      "original_status": "",
+      "commit": "817f7e200aa29fa4474c7ac4eeda0658af08869d",
+      "published_branch": "eloy/devel-rge-no_1pt",
+      "branch_note": "Local devel-rge-no_1pt tracks origin/eloy/devel-rge-no_1pt; unprefixed origin branch differs",
+      "submodules": [
+        " 8430f70e2c1caebd275c34b76e8ac4e9b81eb416 other_libs/filedb (remotes/origin/eloy/add-more-binary-key-functions-9-g8430f70)",
+        " c46a061e821f92447ad01d90a4f0e59f11106d79 other_libs/minuit (adat2-10-2-11-gc46a061)",
+        " 05cbc2d6e03cfe32e88433d3a3df77c6fd69f244 other_libs/xpath_reader (heads/master)"
+      ],
+      "base_commit": "161c8edcd7059b95539f1f4a6a6d7c73770363da",
+      "source_backports": [
+        "4daaf97dd3bfb3c30c3cb75c1c7ea572c3f6d70d",
+        "fd9fefc2f447c3284136a8283072091641384691",
+        "4f94cf558ae1410c791c7efb54f9ea7ca9d90124"
+      ]
+    },
+    "redstar": {
+      "repository": "/Users/admin/Downloads/redstar.devel",
+      "branch": "devel-rge-no_1pt",
+      "fetch_branch_tip": true,
+      "local_commit": "b194fdfcfe93742ba6887e4374fd5a32a002415f",
+      "remote": "git@github.com:JeffersonLab/redstar.git",
+      "original_status": "",
+      "commit": "45898bd24ab7585d4507df66415326d18b424ec3"
+    },
+    "chroma": {
+      "repository": "/Users/admin/Downloads/chroma.devel",
+      "branch": "devel-rge-no_1pt",
+      "fetch_branch_tip": true,
+      "local_commit": "e1ac530e0bd50dbeac75a1e94d62a981308fe251",
+      "remote": "git@github.com:JeffersonLab/chroma.git",
+      "original_status": "",
+      "commit": "1628765976513d8b71ba210ecf116c420a589b09",
+      "submodules": [
+        " 5a14dd16ba57aeed0166a22158116be5e499a5aa other_libs/cpp_wilson_dslash (chroma3-36-1-37-g5a14dd1)",
+        " 2b0b713efecf3d02aa172c2d01d3320775e80fb0 other_libs/qdp-lapack (chroma3-36-1-41-g2b0b713)",
+        " 0f9e5ed76589ce5f4bdd314990999b818a7a6c22 other_libs/sse_wilson_dslash (chroma3-36-1-11-g0f9e5ed)",
+        " cad7edd92e5b6a6871856e9dbff9cf269e32440c other_libs/wilsonmg (heads/master)"
+      ]
+    },
+    "colorvec": {
+      "repository": "/Users/admin/Downloads/colorvec.devel",
+      "branch": "devel",
+      "fetch_branch_tip": true,
+      "local_commit": "bab4ff2f050f3b91cf10d2fc394c74aa42faa7c0",
+      "remote": "git@github.com:JeffersonLab/colorvec.git",
+      "original_status": "?? build/\n?? configure~\n?? do_config.sh\n",
+      "commit": "bab4ff2f050f3b91cf10d2fc394c74aa42faa7c0"
+    },
+    "hadron": {
+      "repository": "/Users/admin/Downloads/hadron.devel",
+      "branch": "devel",
+      "fetch_branch_tip": true,
+      "local_commit": "8776c5d47503bc70feb829064ca75cf1e55d1ec8",
+      "remote": "git@github.com:JeffersonLab/hadron.git",
+      "original_status": "?? build/\n?? configure~\n?? do_config.sh\n?? gputt/configure~\n",
+      "commit": "34477b440f0099a6b7633d0df97f6ea4e949f35a"
+    },
+    "contractions": {
+      "repository": "/Users/admin/Downloads/jlab_contraction_bench2026",
+      "branch": "main",
+      "fetch_branch_tip": false,
+      "local_commit": "dfe59fb37c5a4d291642c9b1656646e5ef9ff081",
+      "remote": "git@github.com:jiechenajlab/jlab_contraction_bench2026.git",
+      "original_status": " M contraction/tensor/include/tensor/tensor_blas.h\n",
+      "commit": "dfe59fb37c5a4d291642c9b1656646e5ef9ff081"
+    },
+    "superbblas": {
+      "repository": "/Users/admin/Downloads/superbblas",
+      "branch": "master",
+      "fetch_branch_tip": false,
+      "local_commit": "6714302c08d82e22dd5a7bb018ff40e3926bd3a2",
+      "remote": "git@github.com:eromero-vlc/superbblas.git",
+      "original_status": " M make.inc\n M src/Makefile\n?? .venv-docs/\n?? build/\n?? do_config.sh\n?? docs/doxygen/.DS_Store\n?? docs/doxygen/gen_docs/\n?? docs/doxygen/html/\n?? docs/doxygen/latex/\n?? docs/sphinx/build/\n?? docs/sphinx/source/api/\n?? make.local.inc\n?? src/libsuperbblas.a\n?? src/tools/split_source.py\n",
+      "commit": "6714302c08d82e22dd5a7bb018ff40e3926bd3a2"
+    },
+    "qmp": {
+      "repository": "/Users/admin/Downloads/qmp",
+      "branch": "master",
+      "fetch_branch_tip": false,
+      "local_commit": "3010fef5b5784b3e6eeec9fff38cb9954a28ad42",
+      "remote": "git@github.com:usqcd-software/qmp.git",
+      "original_status": " M Makefile.in\n M aclocal.m4\n M bin/Makefile.in\n M configure\n M doc/Makefile.in\n M examples/Makefile.in\n M include/Makefile.in\n M lib/Makefile.in\n?? autom4te.cache/\n?? configure~\n?? single/\n",
+      "commit": "3010fef5b5784b3e6eeec9fff38cb9954a28ad42"
+    },
+    "qdpxx": {
+      "repository": "/Users/admin/Downloads/qdpxx.devel",
+      "branch": "devel",
+      "fetch_branch_tip": false,
+      "local_commit": "c1e9b5209f89d232af064a60004f8ac7c9a5c734",
+      "remote": "git@github.com:usqcd-software/qdpxx.git",
+      "original_status": " m other_libs/xpath_reader\n?? configure~\n?? do_config.sh\n?? scalar-Nd4/\n",
+      "commit": "c1e9b5209f89d232af064a60004f8ac7c9a5c734",
+      "submodules": [
+        " db2a795aaf6cc57b6eefe2ef634fdc91ee7b3693 other_libs/filedb (remotes/origin/eloy/add-more-binary-key-functions-11-gdb2a795)",
+        " 5ccadf57834a99926aa014a4934dd3b1c861eb04 other_libs/libintrin (heads/master)",
+        " 273841537392f9465d229c957228755e923408eb other_libs/qio (qio3-0-0)",
+        " 924aa0fce27a6cd73d94c9adc4b995f00e13232b other_libs/qio/other_libs/c-lime (qio2-3-9-38-g924aa0f)",
+        " 858a999b31f55848a7477da05b706d08ebab41d5 other_libs/xpath_reader (858a999)"
+      ]
+    },
+    "primme": {
+      "repository": "/Users/admin/Downloads/macos-chroma/src/primme",
+      "branch": "eloy/primme-3.3",
+      "fetch_branch_tip": false,
+      "local_commit": "76165246baa83152ceda3ae6adeb210f11782ded",
+      "remote": "https://github.com/primme/primme.git",
+      "original_status": "",
+      "commit": "76165246baa83152ceda3ae6adeb210f11782ded"
+    }
+  },
+  "adat_source_backports": {
+    "base": "161c8edcd7059b95539f1f4a6a6d7c73770363da",
+    "head": "817f7e200aa29fa4474c7ac4eeda0658af08869d",
+    "tree": "0d8e8ec50d25ba1c30c67abdcfe0019c71ac0024",
+    "patch_sha256": "bbead5161b47c013ee91e98f4958a3610b2ff3c7376960a5474f5e14dddd22a9",
+    "upstream_commits": [
+      "4daaf97dd3bfb3c30c3cb75c1c7ea572c3f6d70d",
+      "fd9fefc2f447c3284136a8283072091641384691",
+      "4f94cf558ae1410c791c7efb54f9ea7ca9d90124"
+    ]
+  },
+  "build_status": "all fresh project components, complete MPI Chroma make passed with explicit fresh ADAT auxiliary link flags",
+  "qualification": "Fresh CPU NPT, one-rank MPI Chroma; cached native-double tensors; no multi-rank MPI/GPU/on-demand GenProp claim",
+  "paired_audit": {
+    "status": "passed",
+    "independent_full_readback": true,
+    "cases": [
+      {
+        "case": "pion",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 9.041133121840199e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "1pt",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 8.61689244180633e-18,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "33",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 7.236496387882353e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "3pi",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 1.2195766457225513e-13,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "a0.d3",
+        "keys": 324,
+        "values": 1296,
+        "max_abs_error": 4.647936526787833e-20,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "a1_rhopi",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 3.433114405811818e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "d",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 3.6638411145107034e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "delta_J1o2m",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 1.1150912609939193e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "eta8eta8_F8",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 1.4202500883305642e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "eta_eta_3pt",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 1,
+        "zero_channels_corr": 1
+      },
+      {
+        "case": "h8",
+        "keys": 4,
+        "values": 64,
+        "max_abs_error": 6.492617718943368e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "hard.1_tslice.ini",
+        "keys": 529,
+        "values": 2116,
+        "max_abs_error": 2.581623557302228e-19,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 2.220446049250313e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc.p100",
+        "keys": 2,
+        "values": 14,
+        "max_abs_error": 2.120695015012297e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc_gA",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 1.4267046007789674e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc_nuc_3pt",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 4.1777673608052095e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc_nuc_ax_3pt",
+        "keys": 4,
+        "values": 28,
+        "max_abs_error": 8.725934980155604e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nuc_nuc_proj_3pt",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 2.6196744905295746e-19,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucnuc_small",
+        "keys": 2,
+        "values": 8,
+        "max_abs_error": 7.983969392533412e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucpi",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 3.53916334140154e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucpi_I3o2",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 3.332294980281256e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucpi_J1o2m",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 2.5086874334455788e-17,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "nucpi_nucpi_J1o2m",
+        "keys": 2,
+        "values": 32,
+        "max_abs_error": 2.7755575615628914e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "pi",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 1.2600130452682744e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "pi_pi_3pt",
+        "keys": 1,
+        "values": 6,
+        "max_abs_error": 2.9326576526939265e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "pion_3pt",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 3.0184188481996443e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "pipi_i1",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 3.0201331455116262e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "psi",
+        "keys": 2,
+        "values": 32,
+        "max_abs_error": 4.012085879858621e-15,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "rho",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 1.2440853988058506e-14,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      },
+      {
+        "case": "rho_rho_3pt",
+        "keys": 27,
+        "values": 189,
+        "max_abs_error": 6.073553092204933e-16,
+        "strict_failures": 0,
+        "CG_solves": 0,
+        "zero_channels_npt": 0,
+        "zero_channels_corr": 0
+      }
+    ],
+    "passed": 30,
+    "deferred": [
+      "ff_3pt",
+      "fsq_3pt",
+      "glue",
+      "tetra_F27_S2"
+    ],
+    "keys": 925,
+    "finite_complex_values": 4197,
+    "strict_failures": 0,
+    "CG_solves": 0,
+    "max_abs_error": 1.2195766457225513e-13,
+    "binary_and_data_hashes_rechecked": true
+  },
+  "prior_retained_npt_comparison": {
+    "status": "passed",
+    "reference": "prior retained experimental NPT outputs, no prior executable invoked",
+    "cases": [
+      {
+        "case": "pion",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "1pt",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "33",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "3pi",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "a0.d3",
+        "keys": 324,
+        "values": 1296,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "a1_rhopi",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "d",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "delta_J1o2m",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "eta8eta8_F8",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "eta_eta_3pt",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "h8",
+        "keys": 4,
+        "values": 64,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "hard.1_tslice.ini",
+        "keys": 529,
+        "values": 2116,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nuc",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nuc.p100",
+        "keys": 2,
+        "values": 14,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nuc_gA",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nuc_nuc_3pt",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nuc_nuc_ax_3pt",
+        "keys": 4,
+        "values": 28,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nuc_nuc_proj_3pt",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nucnuc_small",
+        "keys": 2,
+        "values": 8,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nucpi",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nucpi_I3o2",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nucpi_J1o2m",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "nucpi_nucpi_J1o2m",
+        "keys": 2,
+        "values": 32,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "pi",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "pi_pi_3pt",
+        "keys": 1,
+        "values": 6,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "pion_3pt",
+        "keys": 1,
+        "values": 7,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "pipi_i1",
+        "keys": 1,
+        "values": 16,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "psi",
+        "keys": 2,
+        "values": 32,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "rho",
+        "keys": 3,
+        "values": 48,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      },
+      {
+        "case": "rho_rho_3pt",
+        "keys": 27,
+        "values": 189,
+        "max_abs_error": 0,
+        "byte_identical_database": true
+      }
+    ],
+    "keys": 925,
+    "values": 4197,
+    "strict_failures": 0,
+    "max_abs_error": 0,
+    "byte_identical_databases": 30
+  },
+  "npt_only_audit": {
+    "status": "passed",
+    "cases": [
+      {
+        "case": "fsq_3pt",
+        "keys": 2,
+        "values": 32,
+        "zero_channels": 0
+      },
+      {
+        "case": "glue",
+        "keys": 1,
+        "values": 16,
+        "zero_channels": 0
+      },
+      {
+        "case": "tetra_F27_S2",
+        "keys": 3,
+        "values": 48,
+        "zero_channels": 0
+      }
+    ],
+    "keys": 6,
+    "values": 96,
+    "scope": "NPT only, no CORR support claim"
+  },
+  "program_sha256": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/chroma/bin/chroma": "ed9e64d94e32e71dd835d1cb8447c50e1be33b18cf2b8e8d6dee32588fcdf10f",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/redstar/bin/redstar_npt": "582bb1ab658b45f930ad25706d73f04b27ca26418340e813e26f5ba16607f1bc",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat/bin/dbutil": "bba3b22793475b0535d0006f273aa488034b1d8df94834e524935a1b063eca1d",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/safe-export-correlators": "8427cb54ccee4b5073953a726868a768ddb349d1099f0ee3751fe56f4322c5a8",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/redstar/bin/redstar_corr_graph": "98168211b3ecfda30ba917d73cc642d682f91cce3465134b284389fb010a26b7",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/redstar/bin/view_corr_graph": "f6f9442784fe181feb1786f70686481ee3e6c027f345aee5355bc5d8f9c8ce2c"
+  },
+  "data_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/dataset-manifest.json": "01f7b0f2f9ff8d2863a97e82aa80046110963af5fff595a64bb6a1030098cc19",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod": "5aadbfe5573a70a0abaad4ba868085e8246dc7ff3c3080820970fd426e43b2ce",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/meson.sbt": "96a546300769e06eb15d0d7bfab95855ef9eacde4755ba56038699ac689eacb6",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.05.sbt": "312493548ae5c93bb954f2b580cb6c5ff39f377d390e602f1a7dc87c27898c6c",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.1.sbt": "cd241ee7740816ae74d6e397c4798973db17ff597f3d58ae5c6f8759d5c8957d",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.2.sbt": "ed2db91bf252a6f420001389eefa4cb9224b288f8cc56e610a09bf52020dee93",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.05.sbt": "ba6ac2f77f8ff1bea76079e52f94c435b4c9f248449a99a6ce5c15bc4f0a3eca",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.1.sbt": "40774ca534ecdd5f9b0fe02f4ca0a2c47881effcc31b72f2e020e8f5e9100f15",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/baryon.sbt": "a9e3c0f390fa000911f8aa5ba6d6ed12a28d3e133e29963e6524ad0ac7d74b26"
+  },
+  "disco_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/dataset-manifest.json": "dad89112a2c92f29503703b7167543dfedc390c901fd1a91241539ae87f5b968",
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/disco.sdb": "87a867c876e94f6e67b37097c0744c4b2d184f3f2e5e5a236e1c526e623a03be"
+  },
+  "archive_sha256": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx/lib/libfiledb.a": "3ad5f35cd93388dcfe5978f65a9f8503be9749d8af27d3c314970807b1ad64a1",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx/lib/libqio.a": "fe688df51667cdbeda3f3c7e6aeefc5881d31979ed274b983cf4fe465400121c",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx/lib/libxmlWriter.a": "1b4882b92fa52af4a218aa94c19e642acd5f488c6d25b4f7670b6ba8f86456a8",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx/lib/liblime.a": "ba8b1877947e73a068c5e6ea127fa27825467188ce70b23b73ea9ab976d0c098",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx/lib/libXPathReader.a": "a988bd1375b08dc54aa65739213aedc993c96b4d7afb111f46d3b032459fbd37",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx/lib/libfilehash.a": "f72c771c9219bd370a61b17ca39581b59a8a079ab04ed958ba954e14b763be95",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx/lib/libqdp.a": "e036555ac0b1ab104536d33ef14baa39a75a33b3eb0b7ada8957f45e84c66ad5",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi-before-global-defines/lib/libsuperbblas.a": "db61a7de0994ccf69fea0e101e240caa0d1bf12d98a0da95bba655a2547ffa82",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/colorvec-before-header-export-fix/lib/libcolorvec.a": "e343b1e7f7bb4a3a578634d9b7a8210be88d15772ee5a3e62249f7fd2c40bbc8",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libfiledb.a": "6cee4bc2bc753dd59aa06116da0d1eae41e8d1e070795c3b6e96988d443eec50",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libqio.a": "ee3e43fd228f6999e51741f5a2e9cbf8d935f1a7241ce32236454824abc8c919",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libxmlWriter.a": "793150e67104f73f5f5dcab10b1cca99af82a1c11dea5d65ab3754b2db044075",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/liblime.a": "3a228f6a6461c7f45e5d45caa3728799af4da910bd501aab3acd7c424abeabce",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libXPathReader.a": "13f8da0030e73ca61bb8c184ee1aed26892575321a6d5fd54b728c3a2fcd5573",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libfilehash.a": "5a05e68e67fb5dbe717a63356cc0598ff305e2ce58e78d5a934cf612dea10ea6",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libqdp.a": "1b0409ae0e22a24178faff6a389ccd5d03d7e770f79d1f8ca5cdbbb1930402b8",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/redstar/lib/libredstar.a": "03b03d3a1f6133ead823dc56e3478acd8a0374dc5468a620c23ca1d36293ba0a",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qmp/lib/libqmp.a": "5e2e300ecb4c14803825dd975878129fe3abfdff36770e2b9821aa7ccd544402",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat/lib/libdbutil.a": "848742fee5590ca55d1c17130182389e373bee81915771ea4bb8f6b51f117e4a",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat/lib/libfiledb.a": "722e4e613d2ce04b8f7b3a5fe0cddf42a5d5aa996fcbf4646d46c963e4495bc8",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat/lib/libMinuit2Base.a": "943696ae568225a553137218dfa3f59f5834cefce1814d0cefc6e929ae2e4e5e",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat/lib/libxmlWriter.a": "03f42521d6b0381bee2e90923a1bc9ecc53fcac20af8a8d947a4f79d8d532dfd",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat/lib/libadat.a": "ba90aa05cd6cc1dd3f64cc625d30675b99ebcdaa64c3aeddd50f532df3feb070",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat/lib/libXPathReader.a": "6dd6cd8e9a424df999e3dba6152b3e193e1640d8ca41f8faa2f753db9d9b3fcb",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat/lib/libfilehash.a": "c40e4313879a6a02844b7dd54a4894bd8b8d96598edbd57e85674b4d9dc48a3b",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas/lib/libsuperbblas.a": "32abf693d0fc079e2601e44dfc68ff037349411bc84e7136460243b9cd9d689f",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi/lib/libdbutil.a": "ea7b20d9d022d9ebd712598c26dbc642c639d1063c861d3b3a6d7a87aa4dfe99",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi/lib/libfiledb.a": "fe43b300d64ae30d4cb71e03292af9639528046925b2e878fcefe2987b4c34eb",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi/lib/libMinuit2Base.a": "6a9d046453472af41a74530ecd17c50205024ad96c9b530d2dac1bdae57de12e",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi/lib/libxmlWriter.a": "3f042090656e71b857ffc1fe28bf116de4f8093d1085b4024813f30ad1fa4677",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi/lib/libadat.a": "388ba5a7a94d659598be27f52987eda1a1dda7558ec85011a4bb63b61a969a1e",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi/lib/libXPathReader.a": "d3514fb6af069191bd1254c02667efbdaa426733988f0dd5dbfd63f48a00568f",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi/lib/libfilehash.a": "b324686b8e1262b3a8e2860a92e4fe2c4b7d6b3853a35374c6a2a00f5ca53a7e",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qmp-mpi/lib/libqmp.a": "f7350b7ef9d2b4f76118ca0bc0a52754ac83b88737bf470178599abe2a09e1b5",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron/lib/libhadron.a": "23bd1d871aa9c0f5daf61893e758e17aac46e578ed5a13c6f7c0c43b2d9effdc",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi/lib/libsuperbblas.a": "65a8272e6adc22fd4990b8b7d7c13f5689fb2e9987d4617e28df62c04fccec97",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/tensor/lib/libtensor.a": "9f4f505d86c7b251dc4f6cf45a289388f5c0f9127c4228472d033a213b2d6fad",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi-before-global-defines/lib/libdbutil.a": "66d8dd9ec08ce86a0c25ebca5654e4608b90d081a22832e64f800f265ad9f537",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi-before-global-defines/lib/libfiledb.a": "de948d20e9934a781bd4f3c699fc23f3dea5dcc269b21dcb8495d1f2ccec8d9e",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi-before-global-defines/lib/libMinuit2Base.a": "bfa068ea148dcac0cf2948037e2456540f2d2439ee96307477ad1ea124ceb47a",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi-before-global-defines/lib/libxmlWriter.a": "e6c04008a1a06895da02d8558c8d97fc86059e6e1c9e64a700246df3af6f3ab5",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi-before-global-defines/lib/libadat.a": "12371d43609d9ca3161fe3ef11710c198085b0742dd332b64e3c787b16485dbc",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi-before-global-defines/lib/libXPathReader.a": "8d114ea71e31be644e418e037b8e301a50bbd236c99d118b77db35f9d508e134",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-mpi-before-global-defines/lib/libfilehash.a": "ea8463a7235aa829d48670675bbf0e88be745f99c760b90386f08d5564dc3ab2",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/colorvec/lib/libcolorvec.a": "2359b7768d93817b7786f3699f15cb18e28fb8da11f702d032640c6cc763eb55",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-before-header-export-fix/lib/libdbutil.a": "df6a26b7dcde3f467e00bdbe94c1c0e80ab4955e87a0fee74e73679f24ce16ca",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-before-header-export-fix/lib/libfiledb.a": "d71ce3bfe3d7aa67ecd1e8dee894044885d3120666e09613b917d707153b3fc5",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-before-header-export-fix/lib/libMinuit2Base.a": "2f1ccc0c20b60d777b6eef0b72dc20e6359bf09cde0b1249cfdfcc28657588f3",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-before-header-export-fix/lib/libxmlWriter.a": "709ee73f94c7b4e127c722b886ebf5cd6219c30d4e25700cf46b34beb7a6f9ed",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-before-header-export-fix/lib/libadat.a": "fece57596809096c816e6f4027192851cdf0a65f2388f8930ff7c2dd0e7074f1",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-before-header-export-fix/lib/libXPathReader.a": "efc32bc847a6fd9806b6614a0e01b74a770e11fcfbae3f306ba0db76ce815899",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/adat-before-header-export-fix/lib/libfilehash.a": "0e93f0a3c544018c21785aa5753799df539ec91be7a30bf9dd9a8957854ea620",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme/lib/libprimme.a": "d4176be65ed846266c8bafcda0277ba7cf45fb924334c8851229dc87d752de67"
+  },
+  "evidence_sha256": {
+    "runs/no1pt-clean-20261103-002/sources.json": "f39e998b7116f661e5b9d21c9959d7ad20d786721e8523da9fd44fe6825e01a5",
+    "runs/no1pt-clean-20261103-002/adat-source-backports.json": "e67170a8ddbd75fccb0a1f9afcb861cd7ce223c6c087d72c440f7e8fd98ce3f3",
+    "runs/no1pt-clean-20261103-002/adat-source-backports.patch": "bbead5161b47c013ee91e98f4958a3610b2ff3c7376960a5474f5e14dddd22a9",
+    "runs/no1pt-clean-20261103-002/source-integrity.json": "378cc58130591d357ee47702762634183905574edca6e3c1bcf2b1fe6b53bcc4",
+    "runs/no1pt-clean-20261103-002/stack-build.json": "70180ddc98b944220a27ee4a032b6ec1a5b3a08b1b5597ed1e9155a382a5fc08",
+    "runs/no1pt-clean-20261103-002/build_clean.py": "85a7f0939e7f3123c996ab4e6f59257a3b8fdb4abbb77f4ee4c871f82398efd8",
+    "runs/no1pt-clean-20261103-002/build_chroma_mpi.py": "ce5f54bb7ae840bf2d8b3551a5119b47548d78e1f4eae526f712923793f85b89",
+    "runs/no1pt-clean-20261103-002/auxiliary-link-command.json": "33428bd18bd5bbea3828de16030b95ce4cdc18139326ba662ca7640658affd1c",
+    "runs/no1pt-clean-20261103-002/verify_stack.py": "5c2060e16b9d96b5a6d2f52c437d50d5d71f2c74609f4efe39be5eb98ca8ff46",
+    "runs/no1pt-clean-20261103-002/run_suite.py": "f97ab45f461a0fbfe61fe2e60fff0b420c374115157fc0d7a19e663f3e00a835",
+    "runs/no1pt-clean-20261103-002/full-suite-command.json": "dc4d7827319a03585516ca08bbb66d54f601ca3dc6684a9fc7989c9c0d34df7f",
+    "runs/no1pt-clean-20261103-002/npt-only-suite-command.json": "7766f2b0a32d3e56566132d8cd99b32f9fb071b8744996ee63db07fca6ee935c",
+    "runs/no1pt-clean-20261103-002/runs/native-full/results.json": "37e4aca44c1e7bea7c227bb4352889c4a714becd0d0b196a5ae932ac7e81bbbd",
+    "runs/no1pt-clean-20261103-002/runs/native-full/independent-audit.json": "aca610f98deb955b5575aa46845e4a6ae949320cc2f336516a284772d51b9964",
+    "runs/no1pt-clean-20261103-002/prior-npt-comparison.json": "3d426c08ab32b1951298032dc248f6e64ae0f26e42e88a98ff8eef2bb643cc78",
+    "runs/no1pt-clean-20261103-002/npt-only-audit.json": "c65cd8ae7a65aab9690534018077c50b213d8e73520f834e42ed0e5b878af6dd"
+  },
+  "regression_policy_sha256": "d9fbaf27fcec9af356976e23a00d2b5cb9f785fd433b1a07926f6c18f72b50df"
+}

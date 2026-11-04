@@ -263,7 +263,7 @@ abs(NPT - CORR) <= 1e-9 * max(abs(NPT), abs(CORR))
 
 On 3 November 2026, separate full native-double sweeps passed 30 active matched cases per chain, including `nuc_nuc_3pt` with the validated direct-DISCO supplement: see the [merged devel report](arb-native-regressions.md) and [experimental no_1pt report](no1pt-native-regressions.md). Devel remains the baseline and no_1pt remains experimental. The historical 29-case matrix and earlier targeted DISCO checks remain separate evidence. Glue/tetra CORR support and gluonic-insertion comparisons are deferred; their native storage and NPT checks are separate. `ff_3pt` remains deferred. See [disconnected loops](disconnected-loops.md), [coverage and scope](regressions.md) and [regression-policy.json](regression-policy.json) before extending the inventory.
 
-Recorded numerical executables are incremental corrected **pre-YLM** builds, not clean latest-YLM builds. MPI/GPU validation is not implied. A single weak-field configuration checks software behavior, not ensemble uncertainties or physical masses.
+The earlier full sweeps use incremental corrected **pre-YLM** binaries. The subsequent [clean experimental build](no1pt-clean-build.md) freshly compiled matching no_1pt branches with three documented ADAT source backports and passed all 30 active cases. Its Chroma uses fresh MPI ADAT at one rank; NPT uses fresh CPU ADAT from the same source. This does not validate multi-rank MPI, GPU, on-demand GenProp or a general all-YLM migration. Devel remains the baseline and retains its recorded build qualification. A single weak-field configuration checks software behavior, not ensemble uncertainties or physical masses.
 
 ## 9. Keep no_1pt experimental
 

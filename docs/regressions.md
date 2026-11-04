@@ -1,5 +1,22 @@
 # Regression status and coverage
 
+## Clean experimental no_1pt source validation: 3 November 2026
+
+A new clean source build passed all 30 active native-double NPT/CORR cases:
+925 keys, 4,197 finite complex values, zero strict failures and zero CG solves.
+Maximum absolute difference: 1.2195766457225513e-13. The full readback audit
+and comparison against all 30 prior experimental NPT outputs passed. The four
+CORR deferrals and separate six-key/96-value NPT-only lane are unchanged.
+
+The matching no_1pt branches required three documented ADAT devel source
+backports; this is not an unchanged-tip build. Both executables and all project
+libraries were freshly compiled, without old binary/header overlays. Chroma
+uses fresh MPI ADAT and was checked at one rank; NPT uses fresh CPU ADAT from
+the same source. Multi-rank MPI, GPU, on-demand GenProp and ensemble physics
+remain outside this cached-tensor validation. Devel remains the baseline and
+no_1pt remains experimental. See the [clean build, source fixes and results](no1pt-clean-build.md).
+The retained-binary sweeps below remain historical records of their own tools.
+
 ## Full experimental no_1pt sweep: 3 November 2026
 
 A separate full experimental sweep passed **all 30 active native-double

@@ -1,5 +1,8 @@
 # Experimental no_1pt: full native-double NPT/CORR regression
 
+This is the earlier retained-binary run. See the subsequent [clean source build
+and validation](no1pt-clean-build.md) for the new source qualification.
+
 Validated on 3 November 2026. **All 30 active experimental no_1pt
 comparisons passed**: 925 keys, 4,197 finite complex
 values, zero strict per-value failures and zero comparison CG solves. The four
