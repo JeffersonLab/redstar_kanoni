@@ -1,0 +1,3551 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "status": "design inventory only; no extraction, build or merge performed",
+  "method": "Static includes from committed blobs; all preprocessor branches included; resolves sibling, lib-relative, then unique lib basename. Not a compiler/link dependency closure. No runtime dependency inferred solely from an include.",
+  "sources": {
+    "adat": {
+      "commit": "817f7e200aa29fa4474c7ac4eeda0658af08869d",
+      "tree": "0d8e8ec50d25ba1c30c67abdcfe0019c71ac0024",
+      "remote": "git@github.com:JeffersonLab/adat.git",
+      "branch": "historical Eloy-based compatibility branch, not canonical ADAT"
+    },
+    "chroma": {
+      "commit": "1628765976513d8b71ba210ecf116c420a589b09",
+      "tree": "33dda6f2ac0f5ac651e8cfadaa3b5e05428db89c",
+      "remote": "git@github.com:JeffersonLab/chroma.git"
+    },
+    "qdpxx": {
+      "commit": "c1e9b5209f89d232af064a60004f8ac7c9a5c734",
+      "tree": "0f2c791d3fb5c7a84d4df40655d107df21040c7f",
+      "remote": "git@github.com:usqcd-software/qdpxx.git"
+    },
+    "qmp": {
+      "commit": "3010fef5b5784b3e6eeec9fff38cb9954a28ad42",
+      "tree": "19a283c176b83209842aeff516ee34845e6a04a2",
+      "remote": "git@github.com:usqcd-software/qmp.git"
+    },
+    "superbblas": {
+      "commit": "6714302c08d82e22dd5a7bb018ff40e3926bd3a2",
+      "tree": "0c89b80afe0f7452c08fa447b8b20a3b2c965249",
+      "remote": "git@github.com:eromero-vlc/superbblas.git"
+    },
+    "canonical_adat": {
+      "commit": "161bc77dac89c1f7474a370ecbef5b8846b0b0b5",
+      "remote": "git@github.com:JeffersonLab/adat.git",
+      "branch": "origin/devel-rge-no_1pt"
+    }
+  },
+  "groups": {
+    "graph_model_codec": [
+      "lib/hadron/corr_graph.h",
+      "lib/hadron/corr_graph.cc"
+    ],
+    "correlator_output": [
+      "lib/hadron/process_corrs.h",
+      "lib/hadron/process_corrs.cc",
+      "lib/io/corr_storage.h",
+      "lib/io/superb_kv.h"
+    ],
+    "elemental_storage": [
+      "lib/io/baryon_superb.h",
+      "lib/io/meson_superb.h",
+      "lib/io/prop_superb.h",
+      "lib/io/genprop4.h",
+      "lib/io/disco_superb.h",
+      "lib/io/glueball_superb.h",
+      "lib/io/tetraquark_superb.h",
+      "lib/io/superb_aux.h"
+    ],
+    "evaluator": [
+      "lib/algs/superb_contractions.h",
+      "lib/algs/superb_tensor.h",
+      "lib/io/superb_options.h",
+      "lib/hadron/layout.h",
+      "lib/hadron/layout.cc",
+      "lib/hadron/twoquark_gamma_util.h",
+      "lib/hadron/twoquark_gamma_util.cc",
+      "lib/hadron/twoquark_operators_util.h",
+      "lib/hadron/twoquark_operators_util.cc"
+    ],
+    "serial_io": [
+      "lib/io/adat_xmlio.h",
+      "lib/io/adat_xmlio.cc",
+      "lib/io/adat_io.h",
+      "lib/io/adat_io.cc",
+      "lib/io/adat_byteorder.h"
+    ]
+  },
+  "adat_header_source_closure": {
+    "file_count": 95,
+    "nodes": {
+      "lib/hadron/corr_graph.h": {
+        "sha256": "90ea6e54795f530843d7752037a61710e9e7777b05cec080760d5e545819924f",
+        "lines": 54
+      },
+      "lib/hadron/corr_graph.cc": {
+        "sha256": "0b6a28e3214a46ceed2d76f88e3dc47183266406e609ed35eb664a273ab69e8d",
+        "lines": 146
+      },
+      "lib/hadron/process_corrs.h": {
+        "sha256": "74d6dc7385e6a17f820c91b449fa000d19fd8ca6a3bd02780334cc026c81cb7b",
+        "lines": 31
+      },
+      "lib/hadron/process_corrs.cc": {
+        "sha256": "1ac3c5caf70a0eb94239dab262d7fd32de6f5d5af699a5cd658711990842fc06",
+        "lines": 71
+      },
+      "lib/io/corr_storage.h": {
+        "sha256": "3f2e16071b06e0999ef6fec8a9007340bfca54afe27e0d6739b6b33e2bf1eb7d",
+        "lines": 876
+      },
+      "lib/io/superb_kv.h": {
+        "sha256": "ab34fce328f5ef94f40f669ded4d5199e0508f5fd769b1555ebc855f3149e13f",
+        "lines": 901
+      },
+      "lib/io/baryon_superb.h": {
+        "sha256": "f128bb54359aa21a4c38660f46d4435d39cde4b887cf288f68842cd3b9a9e1e8",
+        "lines": 707
+      },
+      "lib/io/meson_superb.h": {
+        "sha256": "3061406508a7228ba6ab0f92070ec6024997f1c859bf55d20eb3457c0b54566a",
+        "lines": 625
+      },
+      "lib/io/prop_superb.h": {
+        "sha256": "1ae0bd837c144d74e593bbf1f01326b91e85ec50be7f84a90f4182c248360457",
+        "lines": 691
+      },
+      "lib/io/genprop4.h": {
+        "sha256": "9d8cea0b2d68c7d8fcbe3164124c26b43d558f1010636993951aa5c8a7c27fe2",
+        "lines": 1030
+      },
+      "lib/io/disco_superb.h": {
+        "sha256": "841b62f4c42c4209ed7647f288f3dbf2645863441cf95454e0bdc4ce5be12cab",
+        "lines": 672
+      },
+      "lib/io/glueball_superb.h": {
+        "sha256": "5a30e0515f6400286307dbc9714e37349aa45291c01346035063bb3b1574bc70",
+        "lines": 79
+      },
+      "lib/io/tetraquark_superb.h": {
+        "sha256": "788f068aef8769128ea10a9adc97688a90eedf7d02e35832ea2d83365d3c427b",
+        "lines": 92
+      },
+      "lib/io/superb_aux.h": {
+        "sha256": "8d46061229dd0616d17262585a34135278284f05fca4f9b5c32900b70a4a9eb5",
+        "lines": 271
+      },
+      "lib/algs/superb_contractions.h": {
+        "sha256": "ce2ae7c2a6b9541fcece51ccc8705411c7d55e14e542fc79e046dee354efd066",
+        "lines": 5803
+      },
+      "lib/algs/superb_tensor.h": {
+        "sha256": "963b169699fa6a121ede6b3b35096a39bd8118319b76e3035787c7a4e0700020",
+        "lines": 5774
+      },
+      "lib/io/superb_options.h": {
+        "sha256": "b28f7339e3e4d890dfc180d1a12fdff85e890c027faaf7954479ee5cb08dd967",
+        "lines": 1911
+      },
+      "lib/hadron/layout.h": {
+        "sha256": "c517e9ee8650a322cd443dd90463e323ed6432f04d38a169d71d0693fbbd92eb",
+        "lines": 40
+      },
+      "lib/hadron/layout.cc": {
+        "sha256": "be8985d663c5dc2a4e969531cbe6bdd75b921cd3ae4c4a6467f435a15cce49d6",
+        "lines": 70
+      },
+      "lib/hadron/twoquark_gamma_util.h": {
+        "sha256": "32efd0a728f0eb6a266305a52ba79844edd0453af4e72404fb3da227d3dbcf29",
+        "lines": 96
+      },
+      "lib/hadron/twoquark_gamma_util.cc": {
+        "sha256": "06dada4a647783a7ace4fea4c53f297b7783ffeab2c42334ae357fe16b62d425",
+        "lines": 237
+      },
+      "lib/hadron/twoquark_operators_util.h": {
+        "sha256": "96f6ce43110d92ff5b174ef1ea9d9d4bf5c96082f53ab0ea2433e171bd61d477",
+        "lines": 31
+      },
+      "lib/hadron/twoquark_operators_util.cc": {
+        "sha256": "f193a8f5cc753713bec296b47c33032fa7582c00869769ea5f61e2ba17603ed6",
+        "lines": 107
+      },
+      "lib/io/adat_xmlio.h": {
+        "sha256": "5c88038e1039f89c11976c80258c5de8534dcbc3e1feea5973b26b030fa51b32",
+        "lines": 962
+      },
+      "lib/io/adat_xmlio.cc": {
+        "sha256": "44d54e905b75eeb80479d6b64e1142a51a85b4cb529a57714211a7b9c43fd2ea",
+        "lines": 1198
+      },
+      "lib/io/adat_io.h": {
+        "sha256": "d8944c652491457e714ee3cfeffb18a3ed146b8bbc2c8f2988b408452c2fa6fc",
+        "lines": 994
+      },
+      "lib/io/adat_io.cc": {
+        "sha256": "f2dc28fc00aafac652ecf37168467f6e60a056d04328e2002a8603c9f655fd57",
+        "lines": 662
+      },
+      "lib/io/adat_byteorder.h": {
+        "sha256": "ef8ae9754dcc6928806b0f7a5928c690a6e0f4b0d447797318cf1c8312bef938",
+        "lines": 44
+      },
+      "lib/adat/map_obj.h": {
+        "sha256": "58b9ba13ce0495db91a5ca4ade0adac62a47af7abe3c02442a71bd15ae9ae09b",
+        "lines": 307
+      },
+      "lib/hadron/hadron_class_npart_npt_conn_graph.h": {
+        "sha256": "f5bb16ebc69f0e16d95a28469176e43677b427d647e9c207d08c770030df0499",
+        "lines": 66
+      },
+      "lib/hadron/hadron_sun_class_npart_npt_corr.h": {
+        "sha256": "73b2f7f49dd17191a3e468ad1b9d54c755ea7691ad241c609efc9cdbf1266867",
+        "lines": 138
+      },
+      "lib/hadron/hadron_timeslice.h": {
+        "sha256": "1d178e497829b6ad6e11f55dffecac2838bcf222c3a49bb3ebca5c8e02f42bc0",
+        "lines": 49
+      },
+      "lib/hadron/single_hadron_coeffs.h": {
+        "sha256": "c483557fc289b00ac6ad7f681d0226b0ed72f0ad766fb84d07be515507f1923f",
+        "lines": 318
+      },
+      "lib/hadron/ensem_filenames.h": {
+        "sha256": "78e6cddabb6eb3d2458776ae7cfc795a39bede983acc38931a5211aa6d513eea",
+        "lines": 56
+      },
+      "lib/ensem/ensem.h": {
+        "sha256": "3db7711d06ebadcc71a19f39e951d32318467954cc48b051768313c05c53c963",
+        "lines": 111
+      },
+      "lib/io/key_val_db.h": {
+        "sha256": "dcca63586385a5dbbd66d1ab95267d449cc4132d621c6927bb5a337c75b0e6b5",
+        "lines": 141
+      },
+      "lib/io/colorvec_matelem_type.h": {
+        "sha256": "b64da13036e8c2b7e04040d41edb719d2ed82f24213798cbbee6bb23f8aa8cce",
+        "lines": 15
+      },
+      "lib/hadron/baryon_elem_type.h": {
+        "sha256": "f7e86171d60c350b3ec73140afcfdd1bb7957ff21d5b22739c29afad00a522a6",
+        "lines": 82
+      },
+      "lib/hadron/meson_elem_type.h": {
+        "sha256": "079b3b02e4e9f3f1d380981e8c03e40f1ad36c1010ff7e8e68b8c78318b65753",
+        "lines": 82
+      },
+      "lib/hadron/prop_elem_type.h": {
+        "sha256": "618069c4e8d8c5064a0e6545e4603fc638f6d0cd7d90563aeb36c947636ccd46",
+        "lines": 103
+      },
+      "lib/hadron/unsmeared_genprop4_elem.h": {
+        "sha256": "583f934548ad1cd3b7601de228d615770a62ba720ef74a8eeb434b11b50a995e",
+        "lines": 89
+      },
+      "lib/hadron/unsmeared_meson_elem.h": {
+        "sha256": "379cae3760ccbd6d7e50326247bf158c620ffb9dd49a96afb6954fa16f8208e9",
+        "lines": 71
+      },
+      "lib/hadron/unsmeared_twoquark_disco.h": {
+        "sha256": "3930883b21636de55aca4faae67685cd0a79dd8b1e24a31f1116a7e57e701ab1",
+        "lines": 77
+      },
+      "lib/hadron/glueball_elem_type.h": {
+        "sha256": "5990c16f8f84572a5e51cffaba02ceeb02521cf1cbf8e908952714e42013c012",
+        "lines": 69
+      },
+      "lib/hadron/tetraquark_elem_type.h": {
+        "sha256": "ed40fb59df6a976f20d65628b6f54d34b360c626b7380f59e4ba87b850295709",
+        "lines": 67
+      },
+      "lib/hadron/hadron_adj_map.h": {
+        "sha256": "2e98ef2e8b81d365c9337a2a0bcadb486fa7ab7263f75d75911f85a4579ca4af",
+        "lines": 73
+      },
+      "lib/hadron/hadron_diagram_time.h": {
+        "sha256": "50ad98073c191b035187a410c440c9f566cecf70f8e37725190ea71802958e51",
+        "lines": 67
+      },
+      "lib/hadron/spin_rep.h": {
+        "sha256": "ad05ecd946d22d52c7d0d1693d8586de1672ce054c2734373a89ebc926606ed1",
+        "lines": 126
+      },
+      "lib/adat/adat_arrays.h": {
+        "sha256": "9a96d9c559d5dbbc59ac3617f4ebcae780d95ba456a308c91bc5af62f240b65a",
+        "lines": 358
+      },
+      "lib/adat/adat_arraynd.h": {
+        "sha256": "37dad97200afbbfa200be52a820c5a9ada035c00d5844e0db3f526b6d827ec23",
+        "lines": 338
+      },
+      "lib/hadron/hadron_disp_vertex.h": {
+        "sha256": "ea1b65b96b3f7ba544cf5bf234dbe098cc305236acea8b9fb5f38cd9deb4db55",
+        "lines": 89
+      },
+      "lib/hadron/hadron_sun_class_npart_irrep.h": {
+        "sha256": "f149b49f79a822367ca49aaff346a2b86a8c2fd6227cbcc8813122383e83b176",
+        "lines": 170
+      },
+      "lib/formfac/hadron_1pt_corr.h": {
+        "sha256": "0d451a332e00dc758ea22a46d90867cc74bc7ce37d980f78649880993d76ee1b",
+        "lines": 65
+      },
+      "lib/formfac/hadron_2pt_corr.h": {
+        "sha256": "2472a7e772d3e28333e44286de2c4ad0a284c402d702073b6d99f543e2a90f0f",
+        "lines": 74
+      },
+      "lib/formfac/hadron_3pt_corr.h": {
+        "sha256": "03e3b364fd3e015fa44da31b950e53e0fc3c637739b597aa5299c5144875e45e",
+        "lines": 104
+      },
+      "lib/hadron/su2_corr/hadron_npart_npt_corr.h": {
+        "sha256": "b9da2c83a4b9f5bf58d661328ccbabaec4800a66a53a019c23c3e3ac84eabfd7",
+        "lines": 60
+      },
+      "lib/ensem/ensem_precision.h": {
+        "sha256": "e60dfb4f36aa472fceaef840a7f36b78ddafa59dcecdba61ec943142ab2b2b24",
+        "lines": 21
+      },
+      "lib/ensem/ensem_type_computations.h": {
+        "sha256": "346b1e55141a8d47195d66c29b823ed26be4711e9c7ed0203afa9361831fb284",
+        "lines": 410
+      },
+      "lib/ensem/ensem_operator_tags.h": {
+        "sha256": "0a1a7c6dce383ab9df71dd8344cea935a625892b012cf145f06dd1808224bab1",
+        "lines": 785
+      },
+      "lib/ensem/ensem_forward.h": {
+        "sha256": "b83e288ff63f22a7c32ad0b29330bbcc0e68400f852f5ca0689462a182e41411",
+        "lines": 48
+      },
+      "lib/ensem/ensem_params.h": {
+        "sha256": "05475343a7801ea7d03da527e8c915b59e815f189acaa6f63df86da89a095272",
+        "lines": 30
+      },
+      "lib/ensem/ensem_io.h": {
+        "sha256": "961189c5ce868f20ea3a7d3b04dd596fde0661f824f27fe1f570c447bbd4d224",
+        "lines": 212
+      },
+      "lib/ensem/ensem_traits.h": {
+        "sha256": "d22b0533812a42ecd624db8fef2250de1d48ac09d5ef936c84e9d7873dfae4e7",
+        "lines": 121
+      },
+      "lib/ensem/ensem_newops.h": {
+        "sha256": "200f4d8042881d7063b2136408608d33479624b1fc53cdc5cd119033bf706811",
+        "lines": 406
+      },
+      "lib/ensem/ensem_simpleword.h": {
+        "sha256": "6eee176f1dcd6b2bd7dd94937e1de15dc227a1928ed5fd836fcf02f88dbb6af5",
+        "lines": 710
+      },
+      "lib/ensem/ensem_reality.h": {
+        "sha256": "f2b183d6514f9e4ae5a3cefd29cdd8c7889553544d9a24fbd80bd53b6ef6dc46",
+        "lines": 2350
+      },
+      "lib/ensem/ensem_primitive.h": {
+        "sha256": "1dc2e30fdb800dd20d01eba5f9a97788f44802a2c7ab50c139ccb92b72c9cc9b",
+        "lines": 31
+      },
+      "lib/ensem/ensem_observable.h": {
+        "sha256": "9ed7f601831298e0fb065228672e015b425e000a8fe4438d3b787277c5e9c33f",
+        "lines": 26
+      },
+      "lib/ensem/ensem_ensem.h": {
+        "sha256": "ae0b286a35a845e873324a890ade786cfa290b2beea1be8105f9e3b62d744cd9",
+        "lines": 5043
+      },
+      "lib/ensem/ensem_scalarsite_defs.h": {
+        "sha256": "2019d338c7685a8fdf82ffe5556f0a3ea28252ca9022bdeff657050f3cfcf54e",
+        "lines": 146
+      },
+      "lib/ensem/ensem_specializations.h": {
+        "sha256": "a8efe10c56dedd91daed0b5ec446a953481e9c9008a9dcc0d22799e23ca21e18",
+        "lines": 194
+      },
+      "lib/ensem/ensem_random.h": {
+        "sha256": "f4de3eaf0af11815b211997956d95321ae2e24dfa080b9430f6ebbdcda5d4c82",
+        "lines": 62
+      },
+      "lib/ensem/ensem_scalar_specific.h": {
+        "sha256": "70c817a25847d159cc52706dc73af46ee2c3a0f70ccc44faaacb1b3bc0564a11",
+        "lines": 1094
+      },
+      "lib/hadron/hadron_sun_class_npart_irrep_op.h": {
+        "sha256": "7aceb0b2454c881a494e16efca638c4197d4a67435798de59c55898bc542033b",
+        "lines": 140
+      },
+      "lib/hadron/cgc_su3.h": {
+        "sha256": "f6b5aa724015f71decb4745c15473d0e4c40b083c8de4447bee71617c95193cc",
+        "lines": 75
+      },
+      "lib/hadron/cgc_irrep_mom.h": {
+        "sha256": "d00ca4606fbfa859a735c88dcc375f1f4f3f4fa1751f63459a54c4b772c06ca5",
+        "lines": 64
+      },
+      "lib/hadron/su2_corr/hadron_npart_irrep.h": {
+        "sha256": "b5a374153ef64d35994dd311a92b89e4aaafad41f9d78c5f9746f79217b90e8d",
+        "lines": 58
+      },
+      "lib/ensem/ensem_primscalar.h": {
+        "sha256": "47f611bac3a394deb393468418226350c9ea8d187dc451919f1bc7378d2b18e4",
+        "lines": 1268
+      },
+      "lib/ensem/ensem_primmatrix.h": {
+        "sha256": "44465f84675539690b1f986b410f6e442dc100e2ab8ef1a56e3147d601b01179",
+        "lines": 1630
+      },
+      "lib/ensem/ensem_primvector.h": {
+        "sha256": "de34b31ca0226a429b904f4d6e54b645bd5e96df4348ca7ddb47fcf2afed44d7",
+        "lines": 853
+      },
+      "lib/ensem/ensem_primseed.h": {
+        "sha256": "322535fb7e265015f285ca87ca6820c93ee742c767324f417c147c3874db828b",
+        "lines": 492
+      },
+      "lib/ensem/ensem_primcolormat.h": {
+        "sha256": "2e6195428d25f44db56ae127558f172a0206f4b741dfba0d1066a1cd53179756",
+        "lines": 771
+      },
+      "lib/ensem/ensem_primcolorvec.h": {
+        "sha256": "36225a44978086ee0f6592e5b3ee52bf78408e0ee90422ed06c53146980634db",
+        "lines": 319
+      },
+      "lib/ensem/ensem_primgamma.h": {
+        "sha256": "ed9e7739e4b2c050ecdd8963da6cfa4bd3dbc734a5a9106ed2f68382e0f6c300",
+        "lines": 165
+      },
+      "lib/ensem/ensem_primspinmat.h": {
+        "sha256": "84ef84a3c736ca909c99c126764156dbf4f5337ea30d39e0b5c83e05af2b6acd",
+        "lines": 1646
+      },
+      "lib/ensem/ensem_primspinvec.h": {
+        "sha256": "3916cf5c1fa92ef8c2076a9f1443aadb7960df580ee834906b4c89836d816b79",
+        "lines": 767
+      },
+      "lib/ensem/ensem_obsscalar.h": {
+        "sha256": "4ad114f4c7862493f99fed52be42477b4be441fc4523b5e788008629f11b9082",
+        "lines": 1334
+      },
+      "lib/ensem/ensem_obsvector.h": {
+        "sha256": "2dc1796720dcf95fec633a892e1953a4201b46f6620cdd2e3c8fc1b4663a09db",
+        "lines": 1585
+      },
+      "lib/ensem/ensem_obstensor.h": {
+        "sha256": "8cdec51e8472432c223ca7f947c58d798449aac09cc7a8d333adba5edabcaffc",
+        "lines": 1614
+      },
+      "lib/hadron/particle_class_op.h": {
+        "sha256": "6bbe2791a5bd71ad0ec281b88b8911cfba19cf8c81db6d5a0da496a1201dce3b",
+        "lines": 137
+      },
+      "lib/hadron/cgcs.h": {
+        "sha256": "454516cb2c7dc82e55ebd3ae75818d8ef6020984aab3e3152adc48fcc81991fd",
+        "lines": 100
+      },
+      "lib/hadron/su2_corr/hadron_npart_irrep_op.h": {
+        "sha256": "32cd9abe07a8a9448a174ec256592bbb6bfe7e6b1ace05bfafff78a11bcfa9b7",
+        "lines": 92
+      },
+      "lib/hadron/hadron_sun_class_npart_version.h": {
+        "sha256": "e25c67ce77685df8b934c23593bfe61e3504427ba07dcf24933588d7471f9112",
+        "lines": 33
+      },
+      "lib/hadron/irrep_util.h": {
+        "sha256": "c22acf588d8dfee96341d71c7ce957cd9afbbe08239bd2079fc5fb258cd47864",
+        "lines": 218
+      },
+      "lib/hadron/particle_op.h": {
+        "sha256": "d0a04a9623c62e4a3c21f29a0044f04bdea08bfa4a1ce498d818add73515399e",
+        "lines": 71
+      }
+    },
+    "resolved_include_edges": [
+      {
+        "from": "lib/hadron/corr_graph.h",
+        "line": 4,
+        "include": "adat/map_obj.h",
+        "delimiter": "\"",
+        "to": "lib/adat/map_obj.h"
+      },
+      {
+        "from": "lib/hadron/corr_graph.h",
+        "line": 5,
+        "include": "hadron/hadron_class_npart_npt_conn_graph.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_class_npart_npt_conn_graph.h"
+      },
+      {
+        "from": "lib/hadron/corr_graph.h",
+        "line": 6,
+        "include": "hadron/hadron_sun_class_npart_npt_corr.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_sun_class_npart_npt_corr.h"
+      },
+      {
+        "from": "lib/hadron/corr_graph.h",
+        "line": 7,
+        "include": "hadron/hadron_timeslice.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_timeslice.h"
+      },
+      {
+        "from": "lib/hadron/corr_graph.h",
+        "line": 8,
+        "include": "hadron/single_hadron_coeffs.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/single_hadron_coeffs.h"
+      },
+      {
+        "from": "lib/hadron/corr_graph.cc",
+        "line": 2,
+        "include": "hadron/corr_graph.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/corr_graph.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.h",
+        "line": 9,
+        "include": "adat/map_obj.h",
+        "delimiter": "\"",
+        "to": "lib/adat/map_obj.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.h",
+        "line": 10,
+        "include": "hadron/hadron_class_npart_npt_conn_graph.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_class_npart_npt_conn_graph.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.h",
+        "line": 11,
+        "include": "hadron/hadron_timeslice.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_timeslice.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.h",
+        "line": 12,
+        "include": "hadron/single_hadron_coeffs.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/single_hadron_coeffs.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.h",
+        "line": 13,
+        "include": "hadron/corr_graph.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/corr_graph.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.h",
+        "line": 14,
+        "include": "hadron/layout.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/layout.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.cc",
+        "line": 5,
+        "include": "hadron/process_corrs.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/process_corrs.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.cc",
+        "line": 6,
+        "include": "hadron/ensem_filenames.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/ensem_filenames.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.cc",
+        "line": 7,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/hadron/process_corrs.cc",
+        "line": 8,
+        "include": "io/superb_kv.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_kv.h"
+      },
+      {
+        "from": "lib/io/superb_kv.h",
+        "line": 10,
+        "include": "corr_storage.h",
+        "delimiter": "\"",
+        "to": "lib/io/corr_storage.h"
+      },
+      {
+        "from": "lib/io/superb_kv.h",
+        "line": 11,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/io/superb_kv.h",
+        "line": 12,
+        "include": "key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/io/superb_kv.h",
+        "line": 13,
+        "include": "superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/io/superb_kv.h",
+        "line": 14,
+        "include": "superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/io/superb_kv.h",
+        "line": 16,
+        "include": "hadron/hadron_sun_class_npart_npt_corr.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_sun_class_npart_npt_corr.h"
+      },
+      {
+        "from": "lib/io/baryon_superb.h",
+        "line": 10,
+        "include": "colorvec_matelem_type.h",
+        "delimiter": "\"",
+        "to": "lib/io/colorvec_matelem_type.h"
+      },
+      {
+        "from": "lib/io/baryon_superb.h",
+        "line": 11,
+        "include": "hadron/baryon_elem_type.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/baryon_elem_type.h"
+      },
+      {
+        "from": "lib/io/baryon_superb.h",
+        "line": 12,
+        "include": "key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/io/baryon_superb.h",
+        "line": 13,
+        "include": "superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/io/meson_superb.h",
+        "line": 10,
+        "include": "colorvec_matelem_type.h",
+        "delimiter": "\"",
+        "to": "lib/io/colorvec_matelem_type.h"
+      },
+      {
+        "from": "lib/io/meson_superb.h",
+        "line": 11,
+        "include": "hadron/meson_elem_type.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/meson_elem_type.h"
+      },
+      {
+        "from": "lib/io/meson_superb.h",
+        "line": 12,
+        "include": "key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/io/meson_superb.h",
+        "line": 13,
+        "include": "superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/io/prop_superb.h",
+        "line": 10,
+        "include": "hadron/prop_elem_type.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/prop_elem_type.h"
+      },
+      {
+        "from": "lib/io/prop_superb.h",
+        "line": 11,
+        "include": "key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/io/prop_superb.h",
+        "line": 12,
+        "include": "superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 10,
+        "include": "hadron/unsmeared_genprop4_elem.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/unsmeared_genprop4_elem.h"
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 11,
+        "include": "hadron/unsmeared_meson_elem.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/unsmeared_meson_elem.h"
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 12,
+        "include": "key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 13,
+        "include": "superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/io/disco_superb.h",
+        "line": 10,
+        "include": "hadron/unsmeared_twoquark_disco.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/unsmeared_twoquark_disco.h"
+      },
+      {
+        "from": "lib/io/disco_superb.h",
+        "line": 11,
+        "include": "io/key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/io/disco_superb.h",
+        "line": 12,
+        "include": "io/superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/io/glueball_superb.h",
+        "line": 3,
+        "include": "hadron/glueball_elem_type.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/glueball_elem_type.h"
+      },
+      {
+        "from": "lib/io/glueball_superb.h",
+        "line": 4,
+        "include": "io/key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/io/glueball_superb.h",
+        "line": 6,
+        "include": "io/superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/io/tetraquark_superb.h",
+        "line": 3,
+        "include": "hadron/tetraquark_elem_type.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/tetraquark_elem_type.h"
+      },
+      {
+        "from": "lib/io/tetraquark_superb.h",
+        "line": 4,
+        "include": "io/key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/io/tetraquark_superb.h",
+        "line": 6,
+        "include": "io/superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/io/superb_aux.h",
+        "line": 23,
+        "include": "superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 239,
+        "include": "superb_tensor.h",
+        "delimiter": "\"",
+        "to": "lib/algs/superb_tensor.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 242,
+        "include": "hadron/hadron_adj_map.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_adj_map.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 243,
+        "include": "hadron/hadron_diagram_time.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_diagram_time.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 244,
+        "include": "hadron/layout.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/layout.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 245,
+        "include": "hadron/process_corrs.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/process_corrs.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 246,
+        "include": "hadron/single_hadron_coeffs.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/single_hadron_coeffs.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 247,
+        "include": "hadron/twoquark_gamma_util.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/twoquark_gamma_util.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 248,
+        "include": "hadron/twoquark_operators_util.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/twoquark_operators_util.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 249,
+        "include": "io/baryon_superb.h",
+        "delimiter": "\"",
+        "to": "lib/io/baryon_superb.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 250,
+        "include": "io/genprop4.h",
+        "delimiter": "\"",
+        "to": "lib/io/genprop4.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 251,
+        "include": "io/meson_superb.h",
+        "delimiter": "\"",
+        "to": "lib/io/meson_superb.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 252,
+        "include": "io/prop_superb.h",
+        "delimiter": "\"",
+        "to": "lib/io/prop_superb.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 253,
+        "include": "io/superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 254,
+        "include": "io/superb_kv.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_kv.h"
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 260,
+        "include": "hadron/unsmeared_twoquark_disco.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/unsmeared_twoquark_disco.h"
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 18,
+        "include": "io/superb_aux.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_aux.h"
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 19,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/layout.h",
+        "line": 9,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/hadron/layout.h",
+        "line": 10,
+        "include": "io/adat_xmlio.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_xmlio.h"
+      },
+      {
+        "from": "lib/hadron/layout.cc",
+        "line": 6,
+        "include": "hadron/layout.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/layout.h"
+      },
+      {
+        "from": "lib/hadron/twoquark_gamma_util.h",
+        "line": 9,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/twoquark_gamma_util.h",
+        "line": 10,
+        "include": "hadron/spin_rep.h",
+        "delimiter": "<",
+        "to": "lib/hadron/spin_rep.h"
+      },
+      {
+        "from": "lib/hadron/twoquark_gamma_util.h",
+        "line": 11,
+        "include": "hadron/single_hadron_coeffs.h",
+        "delimiter": "<",
+        "to": "lib/hadron/single_hadron_coeffs.h"
+      },
+      {
+        "from": "lib/hadron/twoquark_gamma_util.cc",
+        "line": 6,
+        "include": "twoquark_gamma_util.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/twoquark_gamma_util.h"
+      },
+      {
+        "from": "lib/hadron/twoquark_operators_util.h",
+        "line": 9,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/twoquark_operators_util.h",
+        "line": 10,
+        "include": "hadron/single_hadron_coeffs.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/single_hadron_coeffs.h"
+      },
+      {
+        "from": "lib/hadron/twoquark_operators_util.h",
+        "line": 11,
+        "include": "hadron/spin_rep.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/spin_rep.h"
+      },
+      {
+        "from": "lib/hadron/twoquark_operators_util.cc",
+        "line": 6,
+        "include": "twoquark_operators_util.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/twoquark_operators_util.h"
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 20,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/io/adat_xmlio.cc",
+        "line": 6,
+        "include": "io/adat_xmlio.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_xmlio.h"
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 16,
+        "include": "adat/adat_arraynd.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arraynd.h"
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 17,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 18,
+        "include": "adat_byteorder.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_byteorder.h"
+      },
+      {
+        "from": "lib/io/adat_io.cc",
+        "line": 6,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/io/adat_io.cc",
+        "line": 7,
+        "include": "io/adat_byteorder.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_byteorder.h"
+      },
+      {
+        "from": "lib/adat/map_obj.h",
+        "line": 15,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/adat/map_obj.h",
+        "line": 16,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/adat/map_obj.h",
+        "line": 17,
+        "include": "io/adat_xmlio.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_xmlio.h"
+      },
+      {
+        "from": "lib/hadron/hadron_class_npart_npt_conn_graph.h",
+        "line": 9,
+        "include": "hadron_adj_map.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_adj_map.h"
+      },
+      {
+        "from": "lib/hadron/hadron_class_npart_npt_conn_graph.h",
+        "line": 10,
+        "include": "hadron_diagram_time.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_diagram_time.h"
+      },
+      {
+        "from": "lib/hadron/hadron_class_npart_npt_conn_graph.h",
+        "line": 11,
+        "include": "hadron_disp_vertex.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_disp_vertex.h"
+      },
+      {
+        "from": "lib/hadron/hadron_class_npart_npt_conn_graph.h",
+        "line": 12,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_npt_corr.h",
+        "line": 9,
+        "include": "hadron_sun_class_npart_irrep.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_sun_class_npart_irrep.h"
+      },
+      {
+        "from": "lib/hadron/hadron_timeslice.h",
+        "line": 9,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/single_hadron_coeffs.h",
+        "line": 9,
+        "include": "adat/map_obj.h",
+        "delimiter": "\"",
+        "to": "lib/adat/map_obj.h"
+      },
+      {
+        "from": "lib/hadron/single_hadron_coeffs.h",
+        "line": 10,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/single_hadron_coeffs.h",
+        "line": 11,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/ensem_filenames.h",
+        "line": 12,
+        "include": "formfac/hadron_1pt_corr.h",
+        "delimiter": "\"",
+        "to": "lib/formfac/hadron_1pt_corr.h"
+      },
+      {
+        "from": "lib/hadron/ensem_filenames.h",
+        "line": 13,
+        "include": "formfac/hadron_2pt_corr.h",
+        "delimiter": "\"",
+        "to": "lib/formfac/hadron_2pt_corr.h"
+      },
+      {
+        "from": "lib/hadron/ensem_filenames.h",
+        "line": 14,
+        "include": "formfac/hadron_3pt_corr.h",
+        "delimiter": "\"",
+        "to": "lib/formfac/hadron_3pt_corr.h"
+      },
+      {
+        "from": "lib/hadron/ensem_filenames.h",
+        "line": 16,
+        "include": "hadron/su2_corr/hadron_npart_npt_corr.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/su2_corr/hadron_npart_npt_corr.h"
+      },
+      {
+        "from": "lib/hadron/ensem_filenames.h",
+        "line": 17,
+        "include": "hadron_sun_class_npart_npt_corr.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_sun_class_npart_npt_corr.h"
+      },
+      {
+        "from": "lib/hadron/ensem_filenames.h",
+        "line": 19,
+        "include": "hadron_class_npart_npt_conn_graph.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_class_npart_npt_conn_graph.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 19,
+        "include": "io/adat_xmlio.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_xmlio.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 20,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 33,
+        "include": "ensem_precision.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_precision.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 85,
+        "include": "ensem_type_computations.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_type_computations.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 86,
+        "include": "ensem_operator_tags.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_operator_tags.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 90,
+        "include": "ensem_forward.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_forward.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 92,
+        "include": "ensem_params.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_params.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 93,
+        "include": "ensem_io.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_io.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 95,
+        "include": "ensem_traits.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_traits.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 97,
+        "include": "ensem_newops.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_newops.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 98,
+        "include": "ensem_simpleword.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_simpleword.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 99,
+        "include": "ensem_reality.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_reality.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 100,
+        "include": "ensem_primitive.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primitive.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 101,
+        "include": "ensem_observable.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_observable.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 102,
+        "include": "ensem_ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_ensem.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 104,
+        "include": "ensem_scalarsite_defs.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_scalarsite_defs.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 105,
+        "include": "ensem_specializations.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_specializations.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 107,
+        "include": "ensem_random.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_random.h"
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 109,
+        "include": "ensem_scalar_specific.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_scalar_specific.h"
+      },
+      {
+        "from": "lib/io/key_val_db.h",
+        "line": 10,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/io/key_val_db.h",
+        "line": 12,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/hadron/baryon_elem_type.h",
+        "line": 11,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/baryon_elem_type.h",
+        "line": 12,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/meson_elem_type.h",
+        "line": 11,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/meson_elem_type.h",
+        "line": 12,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/prop_elem_type.h",
+        "line": 9,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/prop_elem_type.h",
+        "line": 10,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_genprop4_elem.h",
+        "line": 9,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_genprop4_elem.h",
+        "line": 10,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_genprop4_elem.h",
+        "line": 12,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_genprop4_elem.h",
+        "line": 13,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_meson_elem.h",
+        "line": 9,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_meson_elem.h",
+        "line": 10,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_meson_elem.h",
+        "line": 11,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_twoquark_disco.h",
+        "line": 9,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_twoquark_disco.h",
+        "line": 10,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/unsmeared_twoquark_disco.h",
+        "line": 12,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/glueball_elem_type.h",
+        "line": 11,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/tetraquark_elem_type.h",
+        "line": 11,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/hadron_adj_map.h",
+        "line": 9,
+        "include": "hadron_diagram_time.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_diagram_time.h"
+      },
+      {
+        "from": "lib/hadron/hadron_diagram_time.h",
+        "line": 9,
+        "include": "io/adat_xmlio.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_xmlio.h"
+      },
+      {
+        "from": "lib/hadron/hadron_diagram_time.h",
+        "line": 10,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/hadron/hadron_diagram_time.h",
+        "line": 11,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/hadron_diagram_time.h",
+        "line": 12,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/spin_rep.h",
+        "line": 9,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/spin_rep.h",
+        "line": 10,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/hadron_disp_vertex.h",
+        "line": 9,
+        "include": "io/adat_xmlio.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_xmlio.h"
+      },
+      {
+        "from": "lib/hadron/hadron_disp_vertex.h",
+        "line": 10,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/hadron/hadron_disp_vertex.h",
+        "line": 11,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep.h",
+        "line": 9,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep.h",
+        "line": 10,
+        "include": "hadron/hadron_sun_class_npart_irrep_op.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_sun_class_npart_irrep_op.h"
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep.h",
+        "line": 11,
+        "include": "hadron/cgc_su3.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/cgc_su3.h"
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep.h",
+        "line": 12,
+        "include": "hadron/cgc_irrep_mom.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/cgc_irrep_mom.h"
+      },
+      {
+        "from": "lib/formfac/hadron_1pt_corr.h",
+        "line": 9,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/formfac/hadron_1pt_corr.h",
+        "line": 10,
+        "include": "adat/map_obj.h",
+        "delimiter": "\"",
+        "to": "lib/adat/map_obj.h"
+      },
+      {
+        "from": "lib/formfac/hadron_1pt_corr.h",
+        "line": 11,
+        "include": "io/key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/formfac/hadron_2pt_corr.h",
+        "line": 10,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/formfac/hadron_2pt_corr.h",
+        "line": 11,
+        "include": "adat/map_obj.h",
+        "delimiter": "\"",
+        "to": "lib/adat/map_obj.h"
+      },
+      {
+        "from": "lib/formfac/hadron_2pt_corr.h",
+        "line": 12,
+        "include": "io/key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/formfac/hadron_3pt_corr.h",
+        "line": 10,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/formfac/hadron_3pt_corr.h",
+        "line": 11,
+        "include": "adat/map_obj.h",
+        "delimiter": "\"",
+        "to": "lib/adat/map_obj.h"
+      },
+      {
+        "from": "lib/formfac/hadron_3pt_corr.h",
+        "line": 12,
+        "include": "io/key_val_db.h",
+        "delimiter": "\"",
+        "to": "lib/io/key_val_db.h"
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_npt_corr.h",
+        "line": 9,
+        "include": "hadron/su2_corr/hadron_npart_irrep.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/su2_corr/hadron_npart_irrep.h"
+      },
+      {
+        "from": "lib/ensem/ensem_primitive.h",
+        "line": 22,
+        "include": "ensem_primscalar.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primscalar.h"
+      },
+      {
+        "from": "lib/ensem/ensem_primitive.h",
+        "line": 23,
+        "include": "ensem_primmatrix.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primmatrix.h"
+      },
+      {
+        "from": "lib/ensem/ensem_primitive.h",
+        "line": 24,
+        "include": "ensem_primvector.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primvector.h"
+      },
+      {
+        "from": "lib/ensem/ensem_primitive.h",
+        "line": 25,
+        "include": "ensem_primseed.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primseed.h"
+      },
+      {
+        "from": "lib/ensem/ensem_primitive.h",
+        "line": 26,
+        "include": "ensem_primcolormat.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primcolormat.h"
+      },
+      {
+        "from": "lib/ensem/ensem_primitive.h",
+        "line": 27,
+        "include": "ensem_primcolorvec.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primcolorvec.h"
+      },
+      {
+        "from": "lib/ensem/ensem_primitive.h",
+        "line": 28,
+        "include": "ensem_primgamma.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primgamma.h"
+      },
+      {
+        "from": "lib/ensem/ensem_primitive.h",
+        "line": 29,
+        "include": "ensem_primspinmat.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primspinmat.h"
+      },
+      {
+        "from": "lib/ensem/ensem_primitive.h",
+        "line": 30,
+        "include": "ensem_primspinvec.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_primspinvec.h"
+      },
+      {
+        "from": "lib/ensem/ensem_observable.h",
+        "line": 22,
+        "include": "ensem_obsscalar.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_obsscalar.h"
+      },
+      {
+        "from": "lib/ensem/ensem_observable.h",
+        "line": 24,
+        "include": "ensem_obsvector.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_obsvector.h"
+      },
+      {
+        "from": "lib/ensem/ensem_observable.h",
+        "line": 25,
+        "include": "ensem_obstensor.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_obstensor.h"
+      },
+      {
+        "from": "lib/ensem/ensem_scalarsite_defs.h",
+        "line": 19,
+        "include": "ensem_precision.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem_precision.h"
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep_op.h",
+        "line": 9,
+        "include": "particle_class_op.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/particle_class_op.h"
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep_op.h",
+        "line": 10,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep_op.h",
+        "line": 11,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/cgc_su3.h",
+        "line": 9,
+        "include": "hadron/cgcs.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/cgcs.h"
+      },
+      {
+        "from": "lib/hadron/cgc_su3.h",
+        "line": 10,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/cgc_su3.h",
+        "line": 13,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/cgc_irrep_mom.h",
+        "line": 12,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/cgc_irrep_mom.h",
+        "line": 13,
+        "include": "hadron/cgcs.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/cgcs.h"
+      },
+      {
+        "from": "lib/hadron/cgc_irrep_mom.h",
+        "line": 14,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_irrep.h",
+        "line": 9,
+        "include": "hadron_npart_irrep_op.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/su2_corr/hadron_npart_irrep_op.h"
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_irrep.h",
+        "line": 10,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/particle_class_op.h",
+        "line": 9,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/particle_class_op.h",
+        "line": 10,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/particle_class_op.h",
+        "line": 11,
+        "include": "hadron/hadron_disp_vertex.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_disp_vertex.h"
+      },
+      {
+        "from": "lib/hadron/particle_class_op.h",
+        "line": 12,
+        "include": "hadron_sun_class_npart_version.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_sun_class_npart_version.h"
+      },
+      {
+        "from": "lib/hadron/particle_class_op.h",
+        "line": 13,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/particle_class_op.h",
+        "line": 14,
+        "include": "irrep_util.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/irrep_util.h"
+      },
+      {
+        "from": "lib/hadron/cgcs.h",
+        "line": 9,
+        "include": "io/adat_io.h",
+        "delimiter": "\"",
+        "to": "lib/io/adat_io.h"
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_irrep_op.h",
+        "line": 9,
+        "include": "hadron/particle_op.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/particle_op.h"
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_irrep_op.h",
+        "line": 10,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/irrep_util.h",
+        "line": 14,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/particle_op.h",
+        "line": 9,
+        "include": "ensem/ensem.h",
+        "delimiter": "\"",
+        "to": "lib/ensem/ensem.h"
+      },
+      {
+        "from": "lib/hadron/particle_op.h",
+        "line": 10,
+        "include": "adat/adat_arrays.h",
+        "delimiter": "\"",
+        "to": "lib/adat/adat_arrays.h"
+      },
+      {
+        "from": "lib/hadron/particle_op.h",
+        "line": 11,
+        "include": "io/superb_options.h",
+        "delimiter": "\"",
+        "to": "lib/io/superb_options.h"
+      },
+      {
+        "from": "lib/hadron/particle_op.h",
+        "line": 12,
+        "include": "hadron/hadron_disp_vertex.h",
+        "delimiter": "\"",
+        "to": "lib/hadron/hadron_disp_vertex.h"
+      }
+    ],
+    "unresolved_or_external_includes": [
+      {
+        "from": "lib/hadron/corr_graph.cc",
+        "line": 3,
+        "include": "stdexcept",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/process_corrs.cc",
+        "line": 9,
+        "include": "iomanip",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 29,
+        "include": "algorithm",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 30,
+        "include": "cstdint",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 31,
+        "include": "cstdio",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 32,
+        "include": "cstdlib",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 33,
+        "include": "limits",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 34,
+        "include": "stdexcept",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 35,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 36,
+        "include": "unistd.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 37,
+        "include": "unordered_map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/corr_storage.h",
+        "line": 38,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_kv.h",
+        "line": 9,
+        "include": "AllConfStoreDB.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_kv.h",
+        "line": 18,
+        "include": "memory",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_kv.h",
+        "line": 19,
+        "include": "unordered_set",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/baryon_superb.h",
+        "line": 9,
+        "include": "ConfDataStoreDBSimple.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/baryon_superb.h",
+        "line": 14,
+        "include": "memory",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/baryon_superb.h",
+        "line": 15,
+        "include": "map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/baryon_superb.h",
+        "line": 16,
+        "include": "xml_array.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/baryon_superb.h",
+        "line": 17,
+        "include": "xml_array4d.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/meson_superb.h",
+        "line": 9,
+        "include": "ConfDataStoreDBSimple.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/meson_superb.h",
+        "line": 14,
+        "include": "memory",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/prop_superb.h",
+        "line": 9,
+        "include": "ConfDataStoreDBSimple.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/prop_superb.h",
+        "line": 13,
+        "include": "xml_array.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/prop_superb.h",
+        "line": 14,
+        "include": "xml_array4d.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 9,
+        "include": "ConfDataStoreDBSimple.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 14,
+        "include": "array",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 15,
+        "include": "memory",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 16,
+        "include": "set",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 17,
+        "include": "xml_array.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/genprop4.h",
+        "line": 18,
+        "include": "xml_array4d.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/disco_superb.h",
+        "line": 9,
+        "include": "ConfDataStoreDBSimple.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/disco_superb.h",
+        "line": 13,
+        "include": "mutex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/disco_superb.h",
+        "line": 14,
+        "include": "set",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/disco_superb.h",
+        "line": 15,
+        "include": "fcntl.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/disco_superb.h",
+        "line": 16,
+        "include": "unistd.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/glueball_superb.h",
+        "line": 5,
+        "include": "ConfDataStoreMultipleDB.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/glueball_superb.h",
+        "line": 7,
+        "include": "limits",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/glueball_superb.h",
+        "line": 8,
+        "include": "set",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/glueball_superb.h",
+        "line": 9,
+        "include": "cmath",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/tetraquark_superb.h",
+        "line": 5,
+        "include": "ConfDataStoreMultipleDB.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/tetraquark_superb.h",
+        "line": 7,
+        "include": "limits",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/tetraquark_superb.h",
+        "line": 8,
+        "include": "set",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/tetraquark_superb.h",
+        "line": 9,
+        "include": "cmath",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_aux.h",
+        "line": 20,
+        "include": "superbblas.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_aux.h",
+        "line": 24,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_aux.h",
+        "line": 25,
+        "include": "algorithm",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_aux.h",
+        "line": 26,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 255,
+        "include": "array",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 256,
+        "include": "functional",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 257,
+        "include": "limits",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 258,
+        "include": "map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 259,
+        "include": "numeric",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 261,
+        "include": "set",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 262,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 263,
+        "include": "unordered_map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 264,
+        "include": "unordered_set",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 265,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_contractions.h",
+        "line": 268,
+        "include": "omp.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 8,
+        "include": "algorithm",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 9,
+        "include": "chrono",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 10,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 11,
+        "include": "map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 12,
+        "include": "memory",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 13,
+        "include": "set",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 14,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 15,
+        "include": "type_traits",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 16,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 20,
+        "include": "xml_array2d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 21,
+        "include": "xml_array3d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/algs/superb_tensor.h",
+        "line": 22,
+        "include": "xml_array4d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 9,
+        "include": "algorithm",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 10,
+        "include": "array",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 11,
+        "include": "cmath",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 12,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 13,
+        "include": "map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 14,
+        "include": "memory",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 15,
+        "include": "set",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 16,
+        "include": "stdexcept",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 17,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 18,
+        "include": "tuple",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 19,
+        "include": "type_traits",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 20,
+        "include": "unordered_map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/superb_options.h",
+        "line": 21,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/layout.h",
+        "line": 11,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/layout.h",
+        "line": 12,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/twoquark_gamma_util.h",
+        "line": 12,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/twoquark_operators_util.h",
+        "line": 12,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 9,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 10,
+        "include": "sstream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 11,
+        "include": "fstream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 12,
+        "include": "stack",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 13,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 14,
+        "include": "map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 15,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 17,
+        "include": "xml_simplewriter.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 18,
+        "include": "xpath_reader.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_xmlio.h",
+        "line": 19,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 9,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 10,
+        "include": "fstream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 11,
+        "include": "sstream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 12,
+        "include": "xml_array.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 13,
+        "include": "xml_array2d.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 14,
+        "include": "xml_array3d.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 15,
+        "include": "xml_array4d.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 19,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 20,
+        "include": "map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 21,
+        "include": "list",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 22,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.h",
+        "line": 23,
+        "include": "exception",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_io.cc",
+        "line": 5,
+        "include": "string.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/adat_byteorder.h",
+        "line": 11,
+        "include": "cstdio",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/map_obj.h",
+        "line": 9,
+        "include": "unordered_map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/map_obj.h",
+        "line": 10,
+        "include": "iterator",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/map_obj.h",
+        "line": 11,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/map_obj.h",
+        "line": 12,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/map_obj.h",
+        "line": 13,
+        "include": "type_traits",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_class_npart_npt_conn_graph.h",
+        "line": 13,
+        "include": "map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_class_npart_npt_conn_graph.h",
+        "line": 14,
+        "include": "list",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_class_npart_npt_conn_graph.h",
+        "line": 15,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_npt_corr.h",
+        "line": 10,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_timeslice.h",
+        "line": 11,
+        "include": "map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_timeslice.h",
+        "line": 12,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_timeslice.h",
+        "line": 13,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/single_hadron_coeffs.h",
+        "line": 12,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/single_hadron_coeffs.h",
+        "line": 13,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/ensem_filenames.h",
+        "line": 9,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/ensem_filenames.h",
+        "line": 10,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 17,
+        "include": "xml_array.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/ensem/ensem.h",
+        "line": 18,
+        "include": "xml_array2d.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/key_val_db.h",
+        "line": 13,
+        "include": "DBKey.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/io/key_val_db.h",
+        "line": 14,
+        "include": "DBData.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/baryon_elem_type.h",
+        "line": 9,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/baryon_elem_type.h",
+        "line": 10,
+        "include": "xml_array2d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/baryon_elem_type.h",
+        "line": 14,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/baryon_elem_type.h",
+        "line": 15,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/meson_elem_type.h",
+        "line": 9,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/meson_elem_type.h",
+        "line": 10,
+        "include": "xml_array2d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/meson_elem_type.h",
+        "line": 14,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/meson_elem_type.h",
+        "line": 15,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/prop_elem_type.h",
+        "line": 11,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/prop_elem_type.h",
+        "line": 12,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/prop_elem_type.h",
+        "line": 13,
+        "include": "xml_array4d.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_genprop4_elem.h",
+        "line": 11,
+        "include": "xml_array4d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_genprop4_elem.h",
+        "line": 15,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_genprop4_elem.h",
+        "line": 16,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_genprop4_elem.h",
+        "line": 17,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_genprop4_elem.h",
+        "line": 18,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_meson_elem.h",
+        "line": 13,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_meson_elem.h",
+        "line": 14,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_meson_elem.h",
+        "line": 15,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_meson_elem.h",
+        "line": 16,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_twoquark_disco.h",
+        "line": 11,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_twoquark_disco.h",
+        "line": 14,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_twoquark_disco.h",
+        "line": 15,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/unsmeared_twoquark_disco.h",
+        "line": 16,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/glueball_elem_type.h",
+        "line": 9,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/glueball_elem_type.h",
+        "line": 10,
+        "include": "xml_array2d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/glueball_elem_type.h",
+        "line": 13,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/glueball_elem_type.h",
+        "line": 14,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/tetraquark_elem_type.h",
+        "line": 9,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/tetraquark_elem_type.h",
+        "line": 10,
+        "include": "xml_array4d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/tetraquark_elem_type.h",
+        "line": 13,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/tetraquark_elem_type.h",
+        "line": 14,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_adj_map.h",
+        "line": 10,
+        "include": "map",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_adj_map.h",
+        "line": 11,
+        "include": "list",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_adj_map.h",
+        "line": 12,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/spin_rep.h",
+        "line": 11,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/spin_rep.h",
+        "line": 12,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/adat_arrays.h",
+        "line": 9,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/adat_arrays.h",
+        "line": 10,
+        "include": "xml_array2d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/adat_arrays.h",
+        "line": 11,
+        "include": "xml_array3d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/adat_arrays.h",
+        "line": 12,
+        "include": "xml_array4d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/adat_arrays.h",
+        "line": 13,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/adat_arraynd.h",
+        "line": 11,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/adat_arraynd.h",
+        "line": 12,
+        "include": "xml_array.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/adat_arraynd.h",
+        "line": 13,
+        "include": "xml_array2d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/adat/adat_arraynd.h",
+        "line": 14,
+        "include": "xml_array3d.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep.h",
+        "line": 14,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep.h",
+        "line": 15,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep.h",
+        "line": 16,
+        "include": "type_traits",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/formfac/hadron_1pt_corr.h",
+        "line": 12,
+        "include": "ConfDataStoreDB.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/formfac/hadron_1pt_corr.h",
+        "line": 14,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/formfac/hadron_2pt_corr.h",
+        "line": 13,
+        "include": "ConfDataStoreDB.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/formfac/hadron_2pt_corr.h",
+        "line": 15,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/formfac/hadron_3pt_corr.h",
+        "line": 13,
+        "include": "ConfDataStoreDB.h",
+        "delimiter": "\"",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/formfac/hadron_3pt_corr.h",
+        "line": 15,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_npt_corr.h",
+        "line": 10,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/ensem/ensem_io.h",
+        "line": 8,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/ensem/ensem_io.h",
+        "line": 9,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/ensem/ensem_io.h",
+        "line": 10,
+        "include": "fstream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/ensem/ensem_io.h",
+        "line": 11,
+        "include": "sstream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/ensem/ensem_simpleword.h",
+        "line": 8,
+        "include": "cmath",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/ensem/ensem_simpleword.h",
+        "line": 9,
+        "include": "math.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/ensem/ensem_reality.h",
+        "line": 9,
+        "include": "sstream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep_op.h",
+        "line": 13,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_irrep_op.h",
+        "line": 14,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/cgc_su3.h",
+        "line": 11,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/cgc_su3.h",
+        "line": 12,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/cgc_irrep_mom.h",
+        "line": 11,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_irrep.h",
+        "line": 12,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_irrep.h",
+        "line": 13,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/particle_class_op.h",
+        "line": 16,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/particle_class_op.h",
+        "line": 17,
+        "include": "type_traits",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/cgcs.h",
+        "line": 10,
+        "include": "list",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_irrep_op.h",
+        "line": 12,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/su2_corr/hadron_npart_irrep_op.h",
+        "line": 13,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/hadron_sun_class_npart_version.h",
+        "line": 9,
+        "include": "cstddef",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/irrep_util.h",
+        "line": 9,
+        "include": "xml_array.h",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/irrep_util.h",
+        "line": 10,
+        "include": "string",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/irrep_util.h",
+        "line": 11,
+        "include": "list",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/irrep_util.h",
+        "line": 12,
+        "include": "complex",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/irrep_util.h",
+        "line": 13,
+        "include": "vector",
+        "delimiter": "<",
+        "candidate_paths": []
+      },
+      {
+        "from": "lib/hadron/particle_op.h",
+        "line": 14,
+        "include": "iostream",
+        "delimiter": "<",
+        "candidate_paths": []
+      }
+    ]
+  },
+  "source_evidence": [
+    {
+      "repository": "adat",
+      "path": "lib/hadron/corr_graph.cc",
+      "sha256": "0b6a28e3214a46ceed2d76f88e3dc47183266406e609ed35eb664a273ab69e8d"
+    },
+    {
+      "repository": "adat",
+      "path": "lib/io/adat_xmlio.cc",
+      "sha256": "44d54e905b75eeb80479d6b64e1142a51a85b4cb529a57714211a7b9c43fd2ea"
+    },
+    {
+      "repository": "adat",
+      "path": "lib/io/adat_io.cc",
+      "sha256": "f2dc28fc00aafac652ecf37168467f6e60a056d04328e2002a8603c9f655fd57"
+    },
+    {
+      "repository": "adat",
+      "path": "lib/algs/superb_tensor.h",
+      "sha256": "963b169699fa6a121ede6b3b35096a39bd8118319b76e3035787c7a4e0700020"
+    },
+    {
+      "repository": "chroma",
+      "path": "configure.ac",
+      "sha256": "809bf2e731d6d54713a7c40c3ea4e6cabb56cfa16624e4412581486ef7a12640"
+    },
+    {
+      "repository": "chroma",
+      "path": "lib/Makefile.am",
+      "sha256": "c9fd171a43e78ea4723e9765fd240628720a9af2f7b64a84adc51dc444c83896"
+    },
+    {
+      "repository": "chroma",
+      "path": "mainprogs/main/Makefile.am",
+      "sha256": "dfac1195855de66d0684aa7abf0a9cf7189e6452610d23e6e1c9885e5b892e4e"
+    },
+    {
+      "repository": "chroma",
+      "path": "lib/meas/inline/hadron/inline_corr_superb_w.cc",
+      "sha256": "bdfc2aa6a6163c09fa646f0a61069e1a8f904dda6a3521eb55983bfd28173895"
+    },
+    {
+      "repository": "chroma",
+      "path": "lib/meas/inline/hadron/inline_disco_prob_3d_defl_superb_w.cc",
+      "sha256": "033caa7e47428ddc7357c82f9c822a6b9c9ff2a75ca99d810d14236627d3debd"
+    },
+    {
+      "repository": "chroma",
+      "path": "lib/util/ferm/superb_contractions.h",
+      "sha256": "b98d957dd4a5a1888ef7ec09a5e47b67f4030d100b941a54eb86dd5efaad4fcb"
+    },
+    {
+      "repository": "qdpxx",
+      "path": "lib/qdp_xmlio.cc",
+      "sha256": "210e2f61be4e555fadc6271ad04a90d21854c90b1c27ed192fc1591b93d15cdd"
+    },
+    {
+      "repository": "qdpxx",
+      "path": "lib/qdp_hdf5.cc",
+      "sha256": "f39256865ad945bc600a154f2c7a66f1a92f06c3eaa5a5036a020a034c70b146"
+    },
+    {
+      "repository": "qmp",
+      "path": "include/qmp.h",
+      "sha256": "f30f78ef0a518cc75628814ec364af7937a04c70718762f1a3a1ee843eeb8026"
+    },
+    {
+      "repository": "qmp",
+      "path": "include/QMP_P_MPI.h",
+      "sha256": "f9ee4a9b31d0fae7db421ab470af5e7021f8d666a38ebcdfbee3ab28db1a6059"
+    }
+  ],
+  "submodule_pins": [
+    " 8430f70e2c1caebd275c34b76e8ac4e9b81eb416 other_libs/filedb (remotes/origin/eloy/add-more-binary-key-functions-9-g8430f70)",
+    " c46a061e821f92447ad01d90a4f0e59f11106d79 other_libs/minuit (adat2-10-2-11-gc46a061)",
+    " 05cbc2d6e03cfe32e88433d3a3df77c6fd69f244 other_libs/xpath_reader (heads/master)"
+  ],
+  "canonical_preservation_checks": {
+    "lib/hadron/corr_graph.h": "90ea6e54795f530843d7752037a61710e9e7777b05cec080760d5e545819924f",
+    "lib/hadron/corr_graph.cc": "0b6a28e3214a46ceed2d76f88e3dc47183266406e609ed35eb664a273ab69e8d",
+    "main/dbutil/mod_reader.h": "55e19b8c71455e3bacfabd737b4c71efc3b7aeedac5e364847ce585f12064ded",
+    "main/dbutil/dbreplicate.cc": "10a404c25993b1e5cb141467e44009f49d001c4a7acff70b9b50f577d794275e",
+    "lib/io/baryon_superb.h": "94fd8ac449393ba4ad1ec4d9112206e1f4a50af5c6a6e96ecb0fa12929c5d8a4"
+  },
+  "header_implementation_candidates": [
+    "lib/hadron/corr_graph.cc",
+    "lib/hadron/process_corrs.cc",
+    "lib/hadron/layout.cc",
+    "lib/hadron/twoquark_gamma_util.cc",
+    "lib/hadron/twoquark_operators_util.cc",
+    "lib/io/adat_xmlio.cc",
+    "lib/io/adat_io.cc",
+    "lib/io/adat_byteorder.cc",
+    "lib/hadron/hadron_class_npart_npt_conn_graph.cc",
+    "lib/hadron/hadron_sun_class_npart_npt_corr.cc",
+    "lib/hadron/hadron_timeslice.cc",
+    "lib/hadron/single_hadron_coeffs.cc",
+    "lib/hadron/ensem_filenames.cc",
+    "lib/hadron/baryon_elem_type.cc",
+    "lib/hadron/meson_elem_type.cc",
+    "lib/hadron/prop_elem_type.cc",
+    "lib/hadron/unsmeared_genprop4_elem.cc",
+    "lib/hadron/unsmeared_meson_elem.cc",
+    "lib/hadron/unsmeared_twoquark_disco.cc",
+    "lib/hadron/glueball_elem_type.cc",
+    "lib/hadron/tetraquark_elem_type.cc",
+    "lib/hadron/hadron_adj_map.cc",
+    "lib/hadron/hadron_diagram_time.cc",
+    "lib/hadron/spin_rep.cc",
+    "lib/hadron/hadron_disp_vertex.cc",
+    "lib/hadron/hadron_sun_class_npart_irrep.cc",
+    "lib/formfac/hadron_1pt_corr.cc",
+    "lib/formfac/hadron_2pt_corr.cc",
+    "lib/formfac/hadron_3pt_corr.cc",
+    "lib/hadron/su2_corr/hadron_npart_npt_corr.cc",
+    "lib/ensem/ensem_io.cc",
+    "lib/ensem/ensem_random.cc",
+    "lib/hadron/hadron_sun_class_npart_irrep_op.cc",
+    "lib/hadron/cgc_su3.cc",
+    "lib/hadron/cgc_irrep_mom.cc",
+    "lib/hadron/su2_corr/hadron_npart_irrep.cc",
+    "lib/hadron/particle_class_op.cc",
+    "lib/hadron/su2_corr/hadron_npart_irrep_op.cc",
+    "lib/hadron/irrep_util.cc",
+    "lib/hadron/particle_op.cc"
+  ],
+  "external_dependency_groups": {
+    "xpath_reader": {
+      "source": "ADAT other_libs/xpath_reader",
+      "commit": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244",
+      "headers": [
+        "xpath_reader.h",
+        "xml_simplewriter.h",
+        "xml_array.h",
+        "xml_array2d.h",
+        "xml_array3d.h",
+        "xml_array4d.h"
+      ],
+      "proposed_action": "extract/pin standalone parser and compatibility containers; use QDP reader implementation in QDP adapter, never serial reader behind QDP API"
+    },
+    "filedb": {
+      "source": "ADAT other_libs/filedb",
+      "commit": "8430f70e2c1caebd275c34b76e8ac4e9b81eb416",
+      "headers": [
+        "ConfDataStoreDBSimple.h",
+        "ConfDataStoreMultipleDB.h",
+        "ConfDataStoreDB.h",
+        "AllConfStoreDB.h",
+        "DBKey.h",
+        "DBData.h"
+      ],
+      "proposed_action": "separate pinned external dependency for legacy storage support; preserve database/key encoding; no full ADAT dependency"
+    },
+    "superbblas": {
+      "source": "standalone SuperbBLAS",
+      "commit": "6714302c08d82e22dd5a7bb018ff40e3926bd3a2",
+      "proposed_action": "optional storage and evaluator features with separate serial/MPI builds"
+    },
+    "libxml2": {
+      "proposed_action": "serial parser backend and transitive QDP XML dependency; no version claim from static inventory"
+    },
+    "qdp_qmp": {
+      "proposed_action": "QDP adapter only; import installed QDP build configuration; discover QMP communication backend rather than assume MPI"
+    }
+  },
+  "limitations": [
+    "Conditional includes counted without evaluating feature macros.",
+    "Header/source implementation candidates are not recursively compiled or link-verified.",
+    "External XML/FILEDB includes are grouped and pinned but their complete transitive build closure is not enumerated.",
+    "No source files extracted or modified; no new runtime tests executed.",
+    "GMP, compiler/OpenMP/BLAS and other transitive link requirements need a later compiler/link dependency audit; they are not assumed mandatory for core."
+  ],
+  "artifact_generator": "runs/datalib-design-20261104-001/inventory.py (initial include inventory); external grouping and companion list added during design review preparation",
+  "historical_record": {
+    "qualification": "Historical 4 November 2026 source inventory; not the current dependency or build closure. Original pins and findings are preserved.",
+    "superseded_by": "https://github.com/JeffersonLab/datalib/tree/rge/devel-datalib-reorg/docs/reorg",
+    "current_boundary": "Standalone datalib has no ADAT or QDP dependency; Chroma owns QDP/QMP/MPI integration."
+  }
+}

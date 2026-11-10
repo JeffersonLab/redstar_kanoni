@@ -3,6 +3,8 @@
 - [Redstar primer: continuum operators to numerical correlators](redstar-primer.md)
 - [Summary of redstar/chroma code devel](development-summary.md)
 - [Regression status and coverage](regressions.md)
+- [Historical datalib extraction design and phase gates](datalib-extraction-plan.md)
+- [Historical datalib dependency inventory](datalib-dependency-inventory.json)
 - [ARB merge build and targeted regression validation](arb-merge-validation.md)
 - [Merged devel full native-double NPT/CORR regression](arb-native-regressions.md)
 - [Historical Eloy-based no_1pt clean build and validation](no1pt-clean-build.md)

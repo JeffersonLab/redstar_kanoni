@@ -314,6 +314,12 @@ CORR_SUPERB. Cases live separately under `regressions/redstar/` and
 
 ## Development documentation
 
+The [historical datalib extraction design](docs/datalib-extraction-plan.md) and
+[dependency inventory](docs/datalib-dependency-inventory.json) preserve the
+original proposal and source pins. They are superseded by
+[datalib's reorg documentation](https://github.com/JeffersonLab/datalib/tree/rge/devel-datalib-reorg/docs/reorg).
+They do not describe pending integration work or current configure options.
+
 The [ARB merge validation](docs/arb-merge-validation.md) records the 3 November
 2026 local Redstar devel integration, memory-audit and three-hadron checks,
 and eight passing numerical baseline comparisons.
