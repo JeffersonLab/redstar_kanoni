@@ -795,5 +795,12 @@
     "runs/no1pt-clean-20261103-002/prior-npt-comparison.json": "3d426c08ab32b1951298032dc248f6e64ae0f26e42e88a98ff8eef2bb643cc78",
     "runs/no1pt-clean-20261103-002/npt-only-audit.json": "c65cd8ae7a65aab9690534018077c50b213d8e73520f834e42ed0e5b878af6dd"
   },
-  "regression_policy_sha256": "d9fbaf27fcec9af356976e23a00d2b5cb9f785fd433b1a07926f6c18f72b50df"
+  "regression_policy_sha256": "d9fbaf27fcec9af356976e23a00d2b5cb9f785fd433b1a07926f6c18f72b50df",
+  "branch_correction": {
+    "date": "2026-11-04",
+    "validated_branch": "origin/eloy/devel-rge-no_1pt plus three backports",
+    "intended_branch": "origin/devel-rge-no_1pt",
+    "canonical_branch_validated_by_this_record": false,
+    "compatibility_backports_already_in_canonical_branch": true
+  }
 }

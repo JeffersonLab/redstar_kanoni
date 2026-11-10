@@ -5,7 +5,7 @@
 - [Regression status and coverage](regressions.md)
 - [ARB merge build and targeted regression validation](arb-merge-validation.md)
 - [Merged devel full native-double NPT/CORR regression](arb-native-regressions.md)
-- [Experimental no_1pt clean source build and native-double validation](no1pt-clean-build.md)
+- [Historical Eloy-based no_1pt clean build and validation](no1pt-clean-build.md)
 - [Earlier retained-binary no_1pt full native-double regression](no1pt-native-regressions.md)
 - [Disconnected DISCO loops and nuc_nuc_3pt validation](disconnected-loops.md)
 - [Regression timings and stored-propagator usage](regression-timings.md)

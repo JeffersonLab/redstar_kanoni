@@ -1,4 +1,12 @@
-# Experimental no_1pt: clean source build and native-double validation
+# Historical Eloy-based no_1pt: clean source build and validation
+
+**Branch correction, 4 November 2026:** this run used ADAT
+`origin/eloy/devel-rge-no_1pt` plus backports, not the intended canonical
+`origin/devel-rge-no_1pt`. The canonical branch already contained those three
+compatibility fixes. The numerical results below remain valid only for the
+recorded Eloy-based stack; they do not validate the canonical ADAT branch.
+The previous decision to treat the local tracking branch as authoritative was
+incorrect. The subsequent push updated only the Eloy branch.
 
 3 November 2026. no_1pt remains experimental; devel is the regression baseline.
 This record replaces the retained-binary qualification for this new run only.

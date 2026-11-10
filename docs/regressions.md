@@ -1,6 +1,11 @@
 # Regression status and coverage
 
-## Clean experimental no_1pt source validation: 3 November 2026
+## Historical Eloy-based no_1pt source validation: 3 November 2026
+
+**Correction, 4 November:** this validation used the Eloy ADAT branch, not the
+intended canonical `origin/devel-rge-no_1pt`. The three compatibility backports
+were already present in the canonical branch. The results below apply only to
+the recorded Eloy-based stack.
 
 A new clean source build passed all 30 active native-double NPT/CORR cases:
 925 keys, 4,197 finite complex values, zero strict failures and zero CG solves.

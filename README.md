@@ -321,8 +321,9 @@ The subsequent [full native-double devel sweep](docs/arb-native-regressions.md)
 passed all 30 active NPT/CORR comparisons while preserving the four CORR deferrals.
 The separate [experimental no_1pt full sweep](docs/no1pt-native-regressions.md)
 also passed all 30 active comparisons; devel remains the baseline.
-The subsequent [clean experimental build](docs/no1pt-clean-build.md) records
-matching source branches, required ADAT source backports and fresh validation.
+The subsequent [Eloy-based clean build](docs/no1pt-clean-build.md) records
+its source pins, backports and validation. It did not validate canonical ADAT
+`origin/devel-rge-no_1pt`; see the branch correction in that report.
 
 Start with the [Redstar primer](docs/redstar-primer.md) for continuum operators through corr_graph, NPT, and CORR_SUPERB. Devel is the baseline; no_1pt remains experimental.
 
