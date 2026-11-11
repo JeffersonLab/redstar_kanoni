@@ -140,6 +140,11 @@ stay separately in `run_inputs/`; only generated outputs enter the run directory
 See [run_chroma usage](docs/run-chroma.md) for data checks, converter selection,
 resource limits and the distinction between execution and numerical validation.
 
+For a matching devel QDP-parscalar/MPI-QMP installation, set an absolute
+`MPIEXEC` and add `--mpi-ranks 2 --threads 2` to launch a single distributed job.
+The driver guards each rank and keeps the same outputs-only directory layout;
+see [MPI usage and qualification](docs/run-chroma.md#mpi-with-qdp-parscalar-and-mpi-backed-qmp).
+
 
 The historical saved-field CORR_SUPERB template reads `data/colorvec.mod`.
 Keep it and its matching `data/gauge.mod` as regular read-only files in `data/`;

@@ -136,9 +136,70 @@ a 6 GiB contraction planner budget. Change them with `--threads`, `--timeout`,
 `--memory-limit-mb` (zero disables the RSS cap) and `--contraction-memory-gb`.
 Failed logs, partial outputs and failure metadata are retained.
 
-Invoke the driver once from the shell. It launches one Chroma process; a
-multi-rank launcher mode is not implemented. Do not run independent driver
-copies under `mpirun` to obtain one distributed job.
+## MPI with QDP parscalar and MPI-backed QMP
 
-See [devel validation and evidence](run-chroma-validation.md) for actual
-readback, reference comparisons, preservation checks and qualification limits.
+Invoke the driver **once**, and let it launch Chroma's ranks:
+
+```sh
+export REDSTAR_BIN=/absolute/path/to/devel/redstar/bin
+export CHROMA_BIN=/absolute/path/to/devel/mpi-chroma/bin
+export MPIEXEC=/absolute/path/to/the/matching/mpiexec
+
+./run_chroma.csh regressions/corr_superb/chroma.xml \
+  --graph-input regressions/direct/pion/graph.xml \
+  --mpi-ranks 2 --threads 2
+```
+
+`--mpiexec` overrides `MPIEXEC`. An absolute launcher path is required; there is
+no launcher PATH search. Use the MPI implementation matching the selected
+Chroma/QDP/QMP libraries. `CHROMA_BIN/chroma-config`, its matching installed
+headers/libraries, QDP **parscalar**, MPI-backed QMP and OpenMP are required.
+The same devel graph-format-3 requirement applies to MPI runs.
+
+For Open MPI, binding can be controlled explicitly:
+
+```sh
+./run_chroma.csh regressions/corr_superb/chroma.xml \
+  --graph-input regressions/direct/pion/graph.xml \
+  --mpi-ranks 2 --threads 2 \
+  --mpi-arg=--bind-to --mpi-arg=none
+```
+
+Repeat `--mpi-arg` for each launcher argument; set the rank count only through
+`--mpi-ranks`. `--mpi-ranks 1` exercises the same MPI path for a one-rank
+numerical baseline. Omitting it preserves the existing single-process mode.
+Do not wrap the driver itself in `mpirun`/`mpiexec`; nested rank launches are
+rejected before creating a run.
+
+The driver generates/inspects the graph once. It then compiles a small runtime
+probe through the selected `chroma-config` and verifies MPI/QMP world ranks,
+QDP lattice distribution and an actual OpenMP team on every rank. A separate
+zero-measurement Chroma invocation checks that the **selected binary itself**
+reports the requested distributed geometry; for multi-rank launches, a stale
+SINGLE binary cannot pass merely because its config script describes an MPI
+build. These probes do not
+alter the science job's gauge, RNG, XML settings or graph.
+
+Gauge conversion runs with one guarded rank. The final CORR_SUPERB invocation
+runs with the requested rank count. Its output XML must again report that
+geometry. Every rank receives the same absolute prepared input and real data
+paths. Only the selected graph/Chroma/layout XML and referenced weights are
+saved under `run_inputs/`; the run directory contains generated probe binaries,
+build records, runtime JSON, XML reports, logs, gauge, correlators and resource
+records. The scientific outputs retain their usual filenames.
+
+`--threads` is explicitly applied inside every rank, rather than inferred from
+the outer launcher environment. `--memory-limit-mb` applies independently to
+each actual rank child, not just to `mpiexec`. Each guard records its rank,
+child PID, worker setting, RSS samples/peak, exit status and timeout in
+`resource-<stage>-rank-<rank>.json`. The rank timeout is `--timeout`; the
+launcher receives a 30-second cleanup margin. On interruption the launcher gets
+SIGTERM and a five-second grace period so guards can kill their children and
+retain failure records. The serial graph/build commands retain their existing
+command-process limits. A failed rank cannot be hidden by a primary-rank
+correlator file or a launcher exit without the required rank records.
+
+See [MPI validation and evidence](run-chroma-mpi-validation.md) for the actual
+one-/two-rank devel comparisons and source/build qualification. The older
+[serial validation](run-chroma-validation.md) remains a historical record of
+its original SINGLE-QMP run.

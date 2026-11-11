@@ -5,6 +5,7 @@
 - [Regression status and coverage](regressions.md)
 - [Standalone run_chroma saved-field workflow](run-chroma.md)
 - [run_chroma devel validation and evidence](run-chroma-validation.md)
+- [run_chroma MPI parscalar validation](run-chroma-mpi-validation.md)
 - [Kanoni bin-directory, output-layout and data cleanup validation](kanoni-cleanup-validation.md)
 - [Historical datalib extraction design and phase gates](datalib-extraction-plan.md)
 - [Historical datalib dependency inventory](datalib-dependency-inventory.json)

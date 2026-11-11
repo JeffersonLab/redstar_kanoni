@@ -75,7 +75,7 @@ def stage_command(programs, phase, input_path='input.xml'):
     return [programs[executable], input_path, report]
 
 
-def run_limited(argv, *, cwd, env, stdout, timeout, memory_limit_mb=0):
+def run_limited(argv, *, cwd, env, stdout, timeout, memory_limit_mb=0, terminate_grace_seconds=0):
     """Bound real-tool attempts; terminate the process group on failure/timeout."""
     start = time.monotonic()
     with subprocess.Popen(argv, cwd=cwd, env=env, stdout=stdout,
@@ -91,10 +91,19 @@ def run_limited(argv, *, cwd, env, stdout, timeout, memory_limit_mb=0):
                         raise RuntimeError('memory limit exceeded ({} MiB; observed {} KiB RSS)'.format(memory_limit_mb, rss))
                 time.sleep(0.2)
         except BaseException:
-            try:
-                os.killpg(process.pid, signal.SIGKILL)
-            except ProcessLookupError:
-                pass
+            if terminate_grace_seconds:
+                try:
+                    os.killpg(process.pid, signal.SIGTERM)
+                    # Give MPI rank guards time to stop their children and
+                    # flush records, even if the launcher exits first.
+                    time.sleep(terminate_grace_seconds)
+                except ProcessLookupError:
+                    pass
+            if not terminate_grace_seconds or process.poll() is None:
+                try:
+                    os.killpg(process.pid, signal.SIGKILL)
+                except ProcessLookupError:
+                    pass
             process.wait()
             raise
         return process.returncode

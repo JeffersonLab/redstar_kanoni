@@ -1,10 +1,26 @@
 # Summary of redstar/chroma code devel
 
-Updated 3 November 2026 from repository documentation, saved validation records and current local runs.
+Updated 11 November 2026 for standalone Chroma MPI support. Earlier sections
+retain their recorded validation dates and scope.
 
 Canonical home: redstar_kanoni `devel`, `docs/development-summary.md`. Devel is the regression baseline; no_1pt remains experimental.
 
 The main achievement is a documented, reproducible route from continuum operators through contraction graphs and numerical correlator databases to matrix-element fits. The regression baseline is the **devel chain**, with the fitting repositories on their established main/master branches. The experimental `no_1pt` work and the proposed all-YLM vertex migration are separate from that baseline.
+
+## Standalone Chroma MPI runner: 11 November 2026
+
+`run_chroma.csh` now accepts `--mpi-ranks`, an explicit `MPIEXEC`/`--mpiexec`,
+and launcher arguments. It checks QDP parscalar/MPI-QMP at runtime, verifies
+the selected Chroma geometry, and guards each actual rank's resources and exit.
+Source/prepared XML remains outside the outputs-only runtime directories.
+
+The saved-field pion case passed on one and two local ranks with two OpenMP
+workers per rank: 3 keys, 48 finite complex values and zero strict failures.
+Maximum one-/two-rank difference was `1.954399679134266e-14`. The source build
+uses current Chroma devel and a pinned legacy format-3 backend with two isolated
+DISCO compatibility backports; no original source branch was modified.
+The full native matrix and historical NPT mismatch retain their original scope.
+See the [qualified MPI validation report](run-chroma-mpi-validation.md).
 
 ## Historical Eloy-based no_1pt source validation: 3 November 2026
 

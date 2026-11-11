@@ -1,0 +1,983 @@
+{
+  "date": "2026-11-11T14:10:04.784524-05:00",
+  "branch": "devel",
+  "parent_commit": "3b12e09e2ebf83c73387eb2af464279c5d44eb95",
+  "status": "passed",
+  "scope": "Local one-/two-rank QDP-parscalar/MPI-QMP saved-field format-3 pion CORR_SUPERB with two OpenMP workers per rank; no full native suite or NPT execution.",
+  "qualification": "Initially empty Chroma devel and legacy graph-3 ADAT builds, continued with normal source dependency rebuilds, reusing recorded MPI QMP/QDP/SuperbBLAS installations. Legacy backend source includes the exact existing canonical ADAT devel DISCO storage header and the existing callback backport adapted to retain Stich time handling. No original branch changes or binary/object overlays.",
+  "provenance": {
+    "sources": {
+      "adat": {
+        "repository": "/Users/admin/Downloads/adat.devel",
+        "commit": "7b1d36f574bce5d77f1c5d0ed985d06d97f5be1f",
+        "branch": "devel",
+        "status_before": "?? build/\n",
+        "submodules": [
+          {
+            "path": "other_libs/filedb",
+            "commit": "db2a795aaf6cc57b6eefe2ef634fdc91ee7b3693"
+          },
+          {
+            "path": "other_libs/minuit",
+            "commit": "c46a061e821f92447ad01d90a4f0e59f11106d79"
+          },
+          {
+            "path": "other_libs/xpath_reader",
+            "commit": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244"
+          }
+        ]
+      },
+      "chroma": {
+        "repository": "/Users/admin/Downloads/chroma.devel",
+        "commit": "e1ac530e0bd50dbeac75a1e94d62a981308fe251",
+        "branch": "devel",
+        "status_before": "",
+        "submodules": [
+          {
+            "path": "other_libs/cpp_wilson_dslash",
+            "commit": "5a14dd16ba57aeed0166a22158116be5e499a5aa"
+          },
+          {
+            "path": "other_libs/qdp-lapack",
+            "commit": "89976ee41f54689ae8aec218864f0234109ea7a0"
+          },
+          {
+            "path": "other_libs/sse_wilson_dslash",
+            "commit": "0f9e5ed76589ce5f4bdd314990999b818a7a6c22"
+          },
+          {
+            "path": "other_libs/wilsonmg",
+            "commit": "cad7edd92e5b6a6871856e9dbff9cf269e32440c"
+          }
+        ]
+      },
+      "adat_datalib_v3": {
+        "repository": "/Users/admin/Downloads/adat.devel-rge-no_1pt",
+        "branch": "origin/eloy/redstar-datalib",
+        "commit": "be218b0c506acd0062959f19258a5c8c37ffd58e",
+        "submodules": [
+          {
+            "path": "other_libs/filedb",
+            "commit": "8430f70e2c1caebd275c34b76e8ac4e9b81eb416"
+          },
+          {
+            "path": "other_libs/minuit",
+            "commit": "c46a061e821f92447ad01d90a4f0e59f11106d79"
+          },
+          {
+            "path": "other_libs/xpath_reader",
+            "commit": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244"
+          }
+        ],
+        "qualification": "Required legacy format-3 contraction backend; not ordinary ADAT devel, not experimental no_1pt."
+      }
+    },
+    "compatibility": {
+      "base": "be218b0c506acd0062959f19258a5c8c37ffd58e",
+      "header_source": "ADAT devel 7b1d36f5; exact archived header",
+      "header_sha256": "029fd94b042f5c948d0d82bf37f8fea272b5065d9d89361ef4fc08757ca38443",
+      "patch_sha256": "f24e8fe457ddd40d9a97978bbee8830607cfd9f7b526f81816a80fa77ddbf612",
+      "scope": "isolated validation source only; complete existing DISCO header, no original checkout modifications"
+    },
+    "reused_dependencies": {
+      "qmp": {
+        "prefix": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qmp-mpi",
+        "source_commit_from_original_record": "3010fef5b5784b3e6eeec9fff38cb9954a28ad42",
+        "installed_files": {
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qmp-mpi/lib/libqmp.a": "f7350b7ef9d2b4f76118ca0bc0a52754ac83b88737bf470178599abe2a09e1b5",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qmp-mpi/bin/qmp-config": "e349a5e9aea4ff5f24abb2f0b6d320f38a7877ded334bd3c124c38f89aa4d84b"
+        }
+      },
+      "qdpxx": {
+        "prefix": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi",
+        "source_commit_from_original_record": "c1e9b5209f89d232af064a60004f8ac7c9a5c734",
+        "installed_files": {
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libfiledb.a": "6cee4bc2bc753dd59aa06116da0d1eae41e8d1e070795c3b6e96988d443eec50",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libqio.a": "ee3e43fd228f6999e51741f5a2e9cbf8d935f1a7241ce32236454824abc8c919",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libxmlWriter.a": "793150e67104f73f5f5dcab10b1cca99af82a1c11dea5d65ab3754b2db044075",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/liblime.a": "3a228f6a6461c7f45e5d45caa3728799af4da910bd501aab3acd7c424abeabce",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libXPathReader.a": "13f8da0030e73ca61bb8c184ee1aed26892575321a6d5fd54b728c3a2fcd5573",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libfilehash.a": "5a05e68e67fb5dbe717a63356cc0598ff305e2ce58e78d5a934cf612dea10ea6",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib/libqdp.a": "1b0409ae0e22a24178faff6a389ccd5d03d7e770f79d1f8ca5cdbbb1930402b8",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/bin/qio-config": "fbd3f86258d1a45c700595a8c9103615dff6f672c365fc7f498509bec1a70cfd",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/bin/qdp++-config": "ff5ba392159a3e0bb06646d3c96c08b3e7660f0924f0440cbaec4d85206d3a2e"
+        }
+      },
+      "superbblas": {
+        "prefix": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+        "source_commit_from_original_record": "6714302c08d82e22dd5a7bb018ff40e3926bd3a2",
+        "installed_files": {
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi/lib/libsuperbblas.a": "65a8272e6adc22fd4990b8b7d7c13f5689fb2e9987d4617e28df62c04fccec97"
+        }
+      }
+    },
+    "previous_build_record": {
+      "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/mpi-build.json",
+      "sha256": "fe4e634129bed06b2b18959218d7d8d470e9d95e9dfffc892d58cb147d9d497e"
+    },
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "mpi": "mpiexec (Open MPI) 5.0.7",
+    "primme": {
+      "repository": "/Users/admin/Downloads/macos-chroma/src/primme",
+      "source_commit_from_original_record": "76165246baa83152ceda3ae6adeb210f11782ded"
+    },
+    "kanoni_parent_commit": "3b12e09e2ebf83c73387eb2af464279c5d44eb95",
+    "disco_callback_backport": {
+      "source_commit": "6022296b3ad2a5cc6e5bc8ffeb5cf640adfeac31",
+      "scope": "Existing DISCO callback backport in isolated graph-3 backend; retains format-3 Stich fixed-one-point time handling. No graph model/codec changes. Normal make dependency rebuild; no object/binary overlays.",
+      "header_sha256": "0e9a4de5a4c47896726b8f8eb1b154914985f4476a306f602d0c3c9b2ec443c3",
+      "patch_sha256": "2f6d48947ec90d542a69722d9a395aa712631a961fd6930c6ad25256065ad6a6"
+    }
+  },
+  "build_record": "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/v5-build.json",
+  "tests": {
+    "python_3_13": {
+      "run": 89,
+      "skipped": 0,
+      "status": "passed"
+    },
+    "python_3_9": {
+      "run": 89,
+      "skipped": 7,
+      "status": "passed"
+    },
+    "final_mpi_targeted": {
+      "run": 7,
+      "skipped": 0,
+      "status": "passed"
+    }
+  },
+  "runs": {
+    "1": {
+      "record": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/run.json",
+      "status": "executables_passed",
+      "CG_solves": 680,
+      "graph": {
+        "version": 3,
+        "correlators": 3,
+        "graphs": 1,
+        "time_samples": 16
+      },
+      "graph_sha256": "452e8cfd9861d59c033d47b4869e63ff18911e51172b5fb58c6d653ab1fb4137",
+      "output_sha256": "27751b2d3f20b4c6715d29e13ccd78da0923e4ea4c1b7623eba4c32095076c4e",
+      "tools": {
+        "redstar_corr_graph": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/redstar_corr_graph",
+          "sha256": "5fb88aad28331167067a214be70023dd8b6baf5ce169e78db534ea9fe849031a"
+        },
+        "view_corr_graph": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/view_corr_graph",
+          "sha256": "ef2317316a2c8ee4deccf3a3bec1b23b4714d911e1af789d7e7e30fd27e9ac58"
+        },
+        "chroma": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma",
+          "sha256": "a46d7b5b99e0dc9c0fd670af5f75d7c070a14dcd84d6f1eea88af36782911494"
+        },
+        "gauge_importer": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/mod_gauge_to_qio",
+          "sha256": "7aebaa9b3a867fd171877ea33275f4fa0e1d8729dbfa4ed90a3cd35a4216fd2b"
+        }
+      },
+      "verified_inputs": {
+        "/Users/admin/Downloads/redstar_kanoni.devel/data/colorvec.mod": {
+          "bytes": 253305,
+          "sha256": "30d6e03d4b995177faf8127206886a8e59f8bd7a84919e69c0d8c1a7da41cdb0"
+        },
+        "/Users/admin/Downloads/redstar_kanoni.devel/data/gauge.mod": {
+          "bytes": 297682,
+          "sha256": "7673022cabd823abd9e1ca684ebabaeef4b647c6129a2d854a6efda4986aea15"
+        }
+      },
+      "mpi": {
+        "ranks": 1,
+        "launcher": "/opt/homebrew/bin/mpiexec",
+        "launcher_args": [
+          "--bind-to",
+          "none"
+        ],
+        "launcher_sha256": "886fd4cd3fd5b5efd09fd8396e7777bf24b227421f5515a6cbd9b2781101c90d",
+        "parallel_arch": "parscalar",
+        "config": "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma-config",
+        "config_sha256": "45336be14a11b2f798bef30e8bdb2bfc422ab41981991998181730ac96f5b58a",
+        "rank_resources": {
+          "mpi-runtime": [
+            {
+              "rank": 0,
+              "ranks": 1,
+              "stage": "mpi-runtime",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/chroma_mpi_probe",
+                "1",
+                "2"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 2,
+              "peak_rss_kib": 944,
+              "status": "passed",
+              "child_pid": 54356,
+              "returncode": 0,
+              "seconds": 0.43319675
+            }
+          ],
+          "mpi-layout": [
+            {
+              "rank": 0,
+              "ranks": 1,
+              "stage": "mpi-layout",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma",
+                "-i",
+                "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/chroma-mpi-devel-1rank-20261111-001/mpi-layout.xml",
+                "-o",
+                "mpi-layout.out.xml"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 6,
+              "peak_rss_kib": 448,
+              "status": "passed",
+              "child_pid": 54361,
+              "returncode": 0,
+              "seconds": 1.456989667
+            }
+          ],
+          "gauge-import": [
+            {
+              "rank": 0,
+              "ranks": 1,
+              "stage": "gauge-import",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/mod_gauge_to_qio",
+                "/Users/admin/Downloads/redstar_kanoni.devel/data/gauge.mod",
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/gauge.lime"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 3,
+              "peak_rss_kib": 15664,
+              "status": "passed",
+              "child_pid": 54391,
+              "returncode": 0,
+              "seconds": 0.655542917
+            }
+          ],
+          "chroma": [
+            {
+              "rank": 0,
+              "ranks": 1,
+              "stage": "chroma",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma",
+                "-i",
+                "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/chroma-mpi-devel-1rank-20261111-001/chroma.xml",
+                "-o",
+                "chroma.out.xml"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 320,
+              "peak_rss_kib": 93488,
+              "status": "passed",
+              "child_pid": 54397,
+              "returncode": 0,
+              "seconds": 70.528513042
+            }
+          ]
+        },
+        "runtime_probe": [
+          {
+            "rank": 0,
+            "mpi_ranks": 1,
+            "qmp_nodes": 1,
+            "qmp_rank": 0,
+            "global_sum": 1024,
+            "local_volume": 1024,
+            "openmp_threads": 2,
+            "mpi_thread_level": 3
+          }
+        ],
+        "layout_probe": {
+          "logical_size": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            16
+          ],
+          "ranks": 1
+        },
+        "chroma_geometry": {
+          "logical_size": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            16
+          ],
+          "ranks": 1
+        }
+      },
+      "outputs": [
+        "build-importer.log",
+        "build-mpi-probe.log",
+        "chroma.log",
+        "chroma.out.xml",
+        "chroma_mpi_probe",
+        "chroma_mpi_probe.build-command.json",
+        "corr_graph.bin",
+        "gauge-import.log",
+        "gauge.lime",
+        "graph.log",
+        "graph.out.xml",
+        "mod_gauge_to_qio",
+        "mod_gauge_to_qio.build-command.json",
+        "mpi-layout.log",
+        "mpi-layout.out.xml",
+        "mpi-runtime-rank-0.json",
+        "mpi-runtime.log",
+        "output.sdb1",
+        "resource-chroma-rank-0.json",
+        "resource-gauge-import-rank-0.json",
+        "resource-mpi-layout-rank-0.json",
+        "resource-mpi-runtime-rank-0.json",
+        "run.json",
+        "view.log"
+      ],
+      "outputs_only": true
+    },
+    "2": {
+      "record": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001/run.json",
+      "status": "executables_passed",
+      "CG_solves": 680,
+      "graph": {
+        "version": 3,
+        "correlators": 3,
+        "graphs": 1,
+        "time_samples": 16
+      },
+      "graph_sha256": "452e8cfd9861d59c033d47b4869e63ff18911e51172b5fb58c6d653ab1fb4137",
+      "output_sha256": "f537b087115a2f451a36ffe1f118e2676b641c5998edf8c300cd36cc13374f30",
+      "tools": {
+        "redstar_corr_graph": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/redstar_corr_graph",
+          "sha256": "5fb88aad28331167067a214be70023dd8b6baf5ce169e78db534ea9fe849031a"
+        },
+        "view_corr_graph": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/view_corr_graph",
+          "sha256": "ef2317316a2c8ee4deccf3a3bec1b23b4714d911e1af789d7e7e30fd27e9ac58"
+        },
+        "chroma": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma",
+          "sha256": "a46d7b5b99e0dc9c0fd670af5f75d7c070a14dcd84d6f1eea88af36782911494"
+        },
+        "gauge_importer": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001/mod_gauge_to_qio",
+          "sha256": "7aebaa9b3a867fd171877ea33275f4fa0e1d8729dbfa4ed90a3cd35a4216fd2b"
+        }
+      },
+      "verified_inputs": {
+        "/Users/admin/Downloads/redstar_kanoni.devel/data/colorvec.mod": {
+          "bytes": 253305,
+          "sha256": "30d6e03d4b995177faf8127206886a8e59f8bd7a84919e69c0d8c1a7da41cdb0"
+        },
+        "/Users/admin/Downloads/redstar_kanoni.devel/data/gauge.mod": {
+          "bytes": 297682,
+          "sha256": "7673022cabd823abd9e1ca684ebabaeef4b647c6129a2d854a6efda4986aea15"
+        }
+      },
+      "mpi": {
+        "ranks": 2,
+        "launcher": "/opt/homebrew/bin/mpiexec",
+        "launcher_args": [
+          "--bind-to",
+          "none"
+        ],
+        "launcher_sha256": "886fd4cd3fd5b5efd09fd8396e7777bf24b227421f5515a6cbd9b2781101c90d",
+        "parallel_arch": "parscalar",
+        "config": "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma-config",
+        "config_sha256": "45336be14a11b2f798bef30e8bdb2bfc422ab41981991998181730ac96f5b58a",
+        "rank_resources": {
+          "mpi-runtime": [
+            {
+              "rank": 0,
+              "ranks": 2,
+              "stage": "mpi-runtime",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001/chroma_mpi_probe",
+                "2",
+                "2"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 2,
+              "peak_rss_kib": 816,
+              "status": "passed",
+              "child_pid": 54861,
+              "returncode": 0,
+              "seconds": 0.4324385
+            },
+            {
+              "rank": 1,
+              "ranks": 2,
+              "stage": "mpi-runtime",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001/chroma_mpi_probe",
+                "2",
+                "2"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 2,
+              "peak_rss_kib": 848,
+              "status": "passed",
+              "child_pid": 54863,
+              "returncode": 0,
+              "seconds": 0.434944667
+            }
+          ],
+          "mpi-layout": [
+            {
+              "rank": 0,
+              "ranks": 2,
+              "stage": "mpi-layout",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma",
+                "-i",
+                "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/chroma-mpi-devel-2rank-20261111-001/mpi-layout.xml",
+                "-o",
+                "mpi-layout.out.xml"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 1,
+              "peak_rss_kib": 928,
+              "status": "passed",
+              "child_pid": 54871,
+              "returncode": 0,
+              "seconds": 0.215119958
+            },
+            {
+              "rank": 1,
+              "ranks": 2,
+              "stage": "mpi-layout",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma",
+                "-i",
+                "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/chroma-mpi-devel-2rank-20261111-001/mpi-layout.xml",
+                "-o",
+                "mpi-layout.out.xml"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 1,
+              "peak_rss_kib": 928,
+              "status": "passed",
+              "child_pid": 54873,
+              "returncode": 0,
+              "seconds": 0.214786791
+            }
+          ],
+          "gauge-import": [
+            {
+              "rank": 0,
+              "ranks": 1,
+              "stage": "gauge-import",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001/mod_gauge_to_qio",
+                "/Users/admin/Downloads/redstar_kanoni.devel/data/gauge.mod",
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001/gauge.lime"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 2,
+              "peak_rss_kib": 1168,
+              "status": "passed",
+              "child_pid": 54898,
+              "returncode": 0,
+              "seconds": 0.438458542
+            }
+          ],
+          "chroma": [
+            {
+              "rank": 0,
+              "ranks": 2,
+              "stage": "chroma",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma",
+                "-i",
+                "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/chroma-mpi-devel-2rank-20261111-001/chroma.xml",
+                "-o",
+                "chroma.out.xml"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 315,
+              "peak_rss_kib": 68928,
+              "status": "passed",
+              "child_pid": 54908,
+              "returncode": 0,
+              "seconds": 70.084525125
+            },
+            {
+              "rank": 1,
+              "ranks": 2,
+              "stage": "chroma",
+              "command": [
+                "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma",
+                "-i",
+                "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/chroma-mpi-devel-2rank-20261111-001/chroma.xml",
+                "-o",
+                "chroma.out.xml"
+              ],
+              "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001",
+              "omp_num_threads": 2,
+              "memory_limit_mb": 8192,
+              "timeout": 1800.0,
+              "rss_samples": 315,
+              "peak_rss_kib": 64688,
+              "status": "passed",
+              "child_pid": 54910,
+              "returncode": 0,
+              "seconds": 70.088487584
+            }
+          ]
+        },
+        "runtime_probe": [
+          {
+            "rank": 0,
+            "mpi_ranks": 2,
+            "qmp_nodes": 2,
+            "qmp_rank": 0,
+            "global_sum": 1024,
+            "local_volume": 512,
+            "openmp_threads": 2,
+            "mpi_thread_level": 3
+          },
+          {
+            "rank": 1,
+            "mpi_ranks": 2,
+            "qmp_nodes": 2,
+            "qmp_rank": 1,
+            "global_sum": 1024,
+            "local_volume": 512,
+            "openmp_threads": 2,
+            "mpi_thread_level": 3
+          }
+        ],
+        "layout_probe": {
+          "logical_size": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            8
+          ],
+          "ranks": 2
+        },
+        "chroma_geometry": {
+          "logical_size": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            8
+          ],
+          "ranks": 2
+        }
+      },
+      "outputs": [
+        "build-importer.log",
+        "build-mpi-probe.log",
+        "chroma.log",
+        "chroma.out.xml",
+        "chroma_mpi_probe",
+        "chroma_mpi_probe.build-command.json",
+        "corr_graph.bin",
+        "gauge-import.log",
+        "gauge.lime",
+        "graph.log",
+        "graph.out.xml",
+        "mod_gauge_to_qio",
+        "mod_gauge_to_qio.build-command.json",
+        "mpi-layout.log",
+        "mpi-layout.out.xml",
+        "mpi-runtime-rank-0.json",
+        "mpi-runtime-rank-1.json",
+        "mpi-runtime.log",
+        "output.sdb1",
+        "resource-chroma-rank-0.json",
+        "resource-chroma-rank-1.json",
+        "resource-gauge-import-rank-0.json",
+        "resource-mpi-layout-rank-0.json",
+        "resource-mpi-layout-rank-1.json",
+        "resource-mpi-runtime-rank-0.json",
+        "resource-mpi-runtime-rank-1.json",
+        "run.json",
+        "view.log"
+      ],
+      "outputs_only": true
+    }
+  },
+  "comparisons": {
+    "one-vs-two-ranks": {
+      "strict_status": "passed",
+      "keys": 3,
+      "finite_complex_values_per_database": 48,
+      "strict_failures": 0,
+      "max_abs_error": 1.954399679134266e-14,
+      "absolute_floor": 1.1260898054701504e-11,
+      "reference_global_max": 11.260898054701505,
+      "zero_channels": 0,
+      "shapes": [
+        [
+          1,
+          16
+        ]
+      ],
+      "databases": {
+        "reference": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/output.sdb1",
+          "sha256": "27751b2d3f20b4c6715d29e13ccd78da0923e4ea4c1b7623eba4c32095076c4e"
+        },
+        "candidate": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-2rank-20261111-001/output.sdb1",
+          "sha256": "f537b087115a2f451a36ffe1f118e2676b641c5998edf8c300cd36cc13374f30"
+        }
+      }
+    },
+    "historical-vs-one-rank": {
+      "strict_status": "passed",
+      "keys": 3,
+      "finite_complex_values_per_database": 48,
+      "strict_failures": 0,
+      "max_abs_error": 3.562313668246184e-15,
+      "absolute_floor": 1.1260898054701509e-11,
+      "reference_global_max": 11.260898054701508,
+      "zero_channels": 0,
+      "shapes": [
+        [
+          1,
+          16
+        ]
+      ],
+      "databases": {
+        "reference": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/direct-pion-mod-20261101-001/superb.sdb1",
+          "sha256": "583d427f6081d762f7c098dfa582b81b6a430f46b51403dbea7c4ac4c525f5b4"
+        },
+        "candidate": {
+          "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/output.sdb1",
+          "sha256": "27751b2d3f20b4c6715d29e13ccd78da0923e4ea4c1b7623eba4c32095076c4e"
+        }
+      }
+    }
+  },
+  "historical_evidence_preservation": {
+    "runs/run-chroma-validation-20261110-001/numerical-audit.json": true,
+    "runs/run-chroma-validation-20261110-001/unittest-py39.log": true,
+    "runs/run-chroma-validation-20261110-001/unittest-py313.log": true,
+    "runs/run-chroma-validation-20261110-001/initial-unit-attempt.log": true,
+    "runs/direct-pion-mod-20261101-001/run.json": true,
+    "runs/run-chroma-validation-20261110-001/auto-build/run.json": true,
+    "runs/run-chroma-validation-20261110-001/auto-build-comparison/comparison.json": true,
+    "runs/run-chroma-validation-20261110-001/auto-build/gauge-import.log": true,
+    "runs/run-chroma-validation-20261110-001/auto-build/chroma.log": true,
+    "runs/run-chroma-validation-20261110-001/auto-build/graph.out.xml": true,
+    "runs/run-chroma-validation-20261110-001/auto-build/chroma.out.xml": true,
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/run.json": true,
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer-comparison/comparison.json": true,
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/gauge-import.log": true,
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/chroma.log": true,
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/graph.out.xml": true,
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/chroma.out.xml": true,
+    "runs/run-chroma-validation-20261110-001/unittest-py39-final.log": true,
+    "runs/run-chroma-validation-20261110-001/unittest-py313-final.log": true,
+    "policy": true,
+    "release_manifest": true
+  },
+  "limits": [
+    "Two local MPI ranks only; no multi-node, GPU or full native NPT/CORR suite qualification.",
+    "Saved 4^3 x 16 MOD pair; three pion correlators, 16 times, ten vectors.",
+    "Historical serial Chroma result is a reproducibility reference. Its original comparison with a separate legacy NPT dataset remains numerical_mismatch.",
+    "DISCO compatibility API was compiled but its producer/collection path is not exercised by this pion check.",
+    "Existing policy deferrals and immutable release manifest unchanged."
+  ],
+  "source_sha256": {
+    "scripts/run_chroma.py": "893860aefc9feaeacc4afafe89a2597d515e4c54d16c95e08bd74f19de0ccad0",
+    "scripts/run_mpi_rank.py": "affb64140428597a02c62a97c6c216e354274ec85312a6357fa1931ddadb3479",
+    "scripts/chroma_mpi_probe.cc": "22e1c8a267d3303977c60d8acf3bb6cf4e28f45dd995db634f47340bd98cb224",
+    "scripts/build_chroma_mpi_probe.py": "dcfc8e7258bf9d4cf2e3d82bfb1b5215ed21f0043a0b82d0aba5b743fd096fed",
+    "scripts/redstar_runtime.py": "a6710995dd1b97d5a1a3f7d7ab4997aa1eb91aab9503fda8438fb2a359667341",
+    "tests/test_run_chroma_mpi.py": "5274b09af654cf79f3fe7aa9c537f45d7a12e6b5cd10d3bae840d127aacc25c1"
+  },
+  "evidence_sha256": {
+    "runs/run-chroma-mpi-validation-20261111-001/unit-mpi-post-finally.log": "ed9a8e557fb4e7241c9ad35bc98be3aca1b171f95f37ddd0a465c18de633c0b4",
+    "runs/run-chroma-mpi-validation-20261111-001/chroma-openmp-report.json": "6c120ddb469542183f2f2fd441141bfa6c3aeb0937021451a64a8342880defa8",
+    "runs/run-chroma-mpi-validation-20261111-001/validation-retry-launch.log": "518ea1120a5f763173bea5acea28f00bcf86124a8fa1bc8c3c4aca36cfcdd4af",
+    "runs/run-chroma-mpi-validation-20261111-001/dependency-probe-build.log": "b3cb078192ff2c0704460cdaf8d74c710dd27fd548a117bac1952941c0c9fc4a",
+    "runs/run-chroma-mpi-validation-20261111-001/dependency-mpi-probe.build-command.json": "debf38851c7a9406a17e3043a09d001cbec41853f1682ef37b4e73509bc3d7f6",
+    "runs/run-chroma-mpi-validation-20261111-001/unittest-py313.log": "8e34695a6485563eb93ee50c38d697d1207297d19e2d26fab448a4cfa974ae6b",
+    "runs/run-chroma-mpi-validation-20261111-001/linkage.json": "f2095f0ded76c2ab4758351e11333b47c551853dab54e675bd809d744b112aa3",
+    "runs/run-chroma-mpi-validation-20261111-001/numerical-audit.json": "bc857ea6b4642341a97b79a01a99f3215c32fda98fe385b3bf27d4f88a6b1af9",
+    "runs/run-chroma-mpi-validation-20261111-001/dependency-probe-build-corrected.log": "18c1cb435302d06f71a2386523c1bb4a5eda402c5a0c8f63839fac826b3f1b81",
+    "runs/run-chroma-mpi-validation-20261111-001/unit-mpi-initial.log": "10f046df1d62ecb7d65862b5a681b1832a04b829810409b3686e033dbc71c506",
+    "runs/run-chroma-mpi-validation-20261111-001/unittest-py313-final.log": "19ee7365c0247a2a699aa8123caeea15096e100eb08afef0cf5c6d6afc0f1818",
+    "runs/run-chroma-mpi-validation-20261111-001/unittest-py39-final.log": "8822d1351952f1fec28a339b5441b56e55fad648258fac4834f738b81526dcd7",
+    "runs/run-chroma-mpi-validation-20261111-001/source-preservation.json": "f3f916203dd0ae0d9dd23c0dbbc972da8bc1d5799ce4c9c4b05791ec3cc7200f",
+    "runs/run-chroma-mpi-validation-20261111-001/launch-1.log": "bc3f6d6495328c326a625fbca55f12e5bef4acd2204bda987c98f6e1e105b85d",
+    "runs/run-chroma-mpi-validation-20261111-001/unit-mpi-final-rerun.log": "f5bbc158829dc08c534ad6dc600a289364fd81f299c0ab44b9c24b39f666b8a2",
+    "runs/run-chroma-mpi-validation-20261111-001/launch-2.log": "853fa9d3cba58f2a6a34ddd40494b52ebefbcd2fe05d60f3739c81f19bfbfba3",
+    "runs/run-chroma-mpi-validation-20261111-001/mpi-interruption-launch.log": "12a692f4d8eddcbf83fb27f3e5a4c412236dc34655d12bce7e1e0a846a40cef9",
+    "runs/run-chroma-mpi-validation-20261111-001/unit-mpi-final.log": "a8023cb27873cd30097d0a1669f068f1d43bc0d2aa5927cb27e721e23c3c6a44",
+    "runs/run-chroma-mpi-validation-20261111-001/validation-launch.log": "68318236256680033a1163986eae44edd994d105b23be39a31dcefbb0b37dfb1",
+    "runs/run-chroma-mpi-validation-20261111-001/unittest-py313-completion.log": "bd13e569fee8e8af69c287bc042db4f8e669c79f1d4d87d4bb0c628f1b7c0402",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/candidate-keys.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/compare.log": "f0a979c6d78e52312cf5252758f6fa6905de6e384038ee659410980974f14205",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/candidate-export.log": "ceab863dee3fca4c22a6962d48fcc54beb15b7a8d8009b80b1c13db7d09eae96",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/reference-keys.xml": "0f593bd1f8b6f49a81147e8f19c861110ceb182d9749946f302f56259ff1a45a",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/comparison.json": "76f21da88f65682acafa49b01aab7b530b0cb127ca9c6101ee8895004f476131",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/reference-export.log": "ceab863dee3fca4c22a6962d48fcc54beb15b7a8d8009b80b1c13db7d09eae96",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/reference-keys.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/candidate-keys.xml": "0f593bd1f8b6f49a81147e8f19c861110ceb182d9749946f302f56259ff1a45a",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/candidate/key-000001.dat": "5b558699eb16a4135256e11ca016474c6d9697bae3a89e718a879aa40d3c1b29",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/candidate/index.xml": "055c707b2b921179c86025087f9052fa5f112c626ecd925a13909d55db7b3b6e",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/candidate/key-000000.dat": "53f8a8e55615683bdb22f18475a46d1bada11ff266a2898cc22e5e2e92b79bf0",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/candidate/key-000002.dat": "53f8a8e55615683bdb22f18475a46d1bada11ff266a2898cc22e5e2e92b79bf0",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/reference/key-000001.dat": "d49435248568edc3b97c56b564b2566e1a4e542c32f671bf54628acab970feed",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/reference/index.xml": "055c707b2b921179c86025087f9052fa5f112c626ecd925a13909d55db7b3b6e",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/reference/key-000000.dat": "c20eb066df2371a10e6d7c339d831d88d5fb74286f86dabafbfbcb8e25a301cb",
+    "runs/run-chroma-mpi-validation-20261111-001/one-vs-two-ranks/reference/key-000002.dat": "c20eb066df2371a10e6d7c339d831d88d5fb74286f86dabafbfbcb8e25a301cb",
+    "runs/run-chroma-mpi-validation-20261111-001/early-qdp-runtime/mpi-runtime-rank-0.json": "ca7498c06d7f3104e655bb77362e22801084a750b528aa546cdf6803ee047230",
+    "runs/run-chroma-mpi-validation-20261111-001/early-qdp-runtime/resource-early-runtime-rank-1.json": "b4f2638a05734469abcc7dda11ceb12bea63baf2ad3c7dadb17f40f9c6aee02a",
+    "runs/run-chroma-mpi-validation-20261111-001/early-qdp-runtime/resource-early-runtime-rank-0.json": "50f8c10156dc0b01d411dfb8c50f627bcf859adc635ea8035002e9f15e0610d7",
+    "runs/run-chroma-mpi-validation-20261111-001/early-qdp-runtime/mpi-runtime-rank-1.json": "ccc031a4292f08d919614e6cc04c0ca0812cfffaa9d415ad1876845c6be52375",
+    "runs/run-chroma-mpi-validation-20261111-001/early-qdp-runtime/runtime.log": "238bd6b8b94177f234f81588fda0c73583831fe6bbf96c667577b430692af508",
+    "runs/run-chroma-mpi-validation-20261111-001/early-qdp-runtime/probe.build-command.json": "3d47cd7315f91d25aac4cc8a87299ec44ded3de9fbcc00d8d574532a808ca9a9",
+    "runs/run-chroma-mpi-validation-20261111-001/early-qdp-runtime/probe": "1704c9065679158f7db4c0ca813634755f4363e38582b19a1f0b577633ff9cb0",
+    "runs/run-chroma-mpi-validation-20261111-001/early-qdp-runtime/build.log": "09b670161cdbdfa5404daac0e7eaa5e952798dad626a3aff5903b8f5f414c959",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/candidate-keys.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/compare.log": "aac3e326ff878ad4c0683568c04cc5505392a16352915831f84011f433b1e28b",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/candidate-export.log": "ceab863dee3fca4c22a6962d48fcc54beb15b7a8d8009b80b1c13db7d09eae96",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/reference-keys.xml": "0f593bd1f8b6f49a81147e8f19c861110ceb182d9749946f302f56259ff1a45a",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/comparison.json": "69b20af813af97a8db3740d6bdb1528a5ae7bbb162c7182a8c5b5179faf7ebb7",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/reference-export.log": "ceab863dee3fca4c22a6962d48fcc54beb15b7a8d8009b80b1c13db7d09eae96",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/reference-keys.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/candidate-keys.xml": "0f593bd1f8b6f49a81147e8f19c861110ceb182d9749946f302f56259ff1a45a",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/candidate/key-000001.dat": "d49435248568edc3b97c56b564b2566e1a4e542c32f671bf54628acab970feed",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/candidate/index.xml": "055c707b2b921179c86025087f9052fa5f112c626ecd925a13909d55db7b3b6e",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/candidate/key-000000.dat": "c20eb066df2371a10e6d7c339d831d88d5fb74286f86dabafbfbcb8e25a301cb",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/candidate/key-000002.dat": "c20eb066df2371a10e6d7c339d831d88d5fb74286f86dabafbfbcb8e25a301cb",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/reference/key-000001.dat": "0bc197107a55e94a7e5f760778535665a4f686aae22976366fad8b11650f8724",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/reference/index.xml": "055c707b2b921179c86025087f9052fa5f112c626ecd925a13909d55db7b3b6e",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/reference/key-000000.dat": "0ada6e1d7504f9ea5043a4d8ee0041f85fcfca873439d6289cf0123115851e82",
+    "runs/run-chroma-mpi-validation-20261111-001/historical-vs-one-rank/reference/key-000002.dat": "0ada6e1d7504f9ea5043a4d8ee0041f85fcfca873439d6289cf0123115851e82",
+    "runs/run-chroma-mpi-validation-20261111-001/mpi-interruption/audit.json": "d5bd81cb68ca03168ffcb31ed87e1b1f5da3f6efa9e920ede097ccd29531f645",
+    "runs/run-chroma-mpi-validation-20261111-001/mpi-interruption/resource-interruption-rank-0.json": "8d06f8345880d96cdd174fa1f42fba39812f038b8675af92982d3c1a00c42428",
+    "runs/run-chroma-mpi-validation-20261111-001/mpi-interruption/resource-interruption-rank-1.json": "453b31078303b022e52d42b5b934cdc2ee936ec2c8a8c6ea6695602fda85f70b",
+    "runs/run-chroma-mpi-validation-20261111-001/mpi-interruption/launcher.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/mpi-devel-build-20261111-001/logs/v3-adat-install.log": "64c44f10cfc0f97bd17762fa082e1a7265a0dfea831fc9e75ef338e1bd58b78a",
+    "runs/mpi-devel-build-20261111-001/logs/adat-install.log": "f2362c53800c33beab143a4ecb1d2c61c69a1ec2fd03edd20b3373fdce612141",
+    "runs/mpi-devel-build-20261111-001/logs/v4-chroma-configure.log": "d54327c35bdafcd29a2c7df68bb807c0cf263c1a7ea7a5f1e185998f2cd56ff2",
+    "runs/mpi-devel-build-20261111-001/logs/chroma-build.log": "4e7002e34cbad20134ba1c0b8063672989503a2797fcf787a942af66bbb52e09",
+    "runs/mpi-devel-build-20261111-001/logs/chroma-bootstrap.log": "45c4b076aeabbce353f6f7c7efb62f15380633ed309e680dbd93fc34a10e89ae",
+    "runs/mpi-devel-build-20261111-001/logs/v3-chroma-build.log": "14221815ac13523b75794463a73b1f897d256422d3e92752d01da4304f532f92",
+    "runs/mpi-devel-build-20261111-001/logs/v3-adat-bootstrap.log": "50b384fdafb054d81cdfff4fcffc06002cbd984c3b90d1d9bbcbcf03c5768f36",
+    "runs/mpi-devel-build-20261111-001/logs/adat-build.log": "bd020da5128c6ef49050ea372980c1e7a3c4b0db371bea969496cff34c958952",
+    "runs/mpi-devel-build-20261111-001/logs/v5-adat-rebuild.log": "44ec9100fbba77f2b30eae822e0e799505a4011b168efa7ac78fa57556d55971",
+    "runs/mpi-devel-build-20261111-001/logs/v5-chroma-rebuild.log": "b2caa7a67e7af0952d40480d33531da1990c74267b47b33ff3304610f53a3a3d",
+    "runs/mpi-devel-build-20261111-001/logs/adat-configure.log": "61c207eeb28a966c5845f4a905c12bb94a2ad9ffc3bdcddb862bacc0b052c189",
+    "runs/mpi-devel-build-20261111-001/logs/v4-adat-configure.log": "a8e6cad8af08dfd80dca44230706d500ca4be6bade17e40501101dc094b5deba",
+    "runs/mpi-devel-build-20261111-001/logs/callback-syntax-check.log": "a48227cc3d02203d27676e5b89375e361059405e114c77b6fb167257ace5821f",
+    "runs/mpi-devel-build-20261111-001/logs/v5-adat-install.log": "faacc3f54089611b13ad99cbe0ff2745402217c322cde719c4d8d7844697b2c8",
+    "runs/mpi-devel-build-20261111-001/logs/adat-bootstrap.log": "b55b46124d9ed28a5aca3d986e0d5f39335f46018d935f7f2aef6fc7de12a733",
+    "runs/mpi-devel-build-20261111-001/logs/v4-adat-bootstrap.log": "b55b46124d9ed28a5aca3d986e0d5f39335f46018d935f7f2aef6fc7de12a733",
+    "runs/mpi-devel-build-20261111-001/logs/v3-chroma-configure.log": "26068fd4fc844def6840cdf553807c50a352e939d6fe944f44b01c37e71bedb1",
+    "runs/mpi-devel-build-20261111-001/logs/v4-chroma-build.log": "f8ace38b05f34030857cbde70fdc639dcf46cade10dba1dea6b4a08bcf288722",
+    "runs/mpi-devel-build-20261111-001/logs/v3-adat-configure.log": "9c1888baba9f7b63d2d55fcd858c4652d44e4f8eba937e9bb3b5fe2d932c56a3",
+    "runs/mpi-devel-build-20261111-001/logs/v3-adat-build.log": "0a41e11d3215499ceb7bee17242105555f6ca418c77ecbb88f9a9f17515b40c2",
+    "runs/mpi-devel-build-20261111-001/logs/chroma-configure.log": "27d20cf6f89bbcb9488585ec35aba90fc92d43efbfff1ec2d4cf27949c846b48",
+    "runs/mpi-devel-build-20261111-001/logs/v4-adat-build.log": "61be892a480d60f6fae7f4f30f9c44865666e76df97d41e75c5ab4bc4850073b",
+    "runs/mpi-devel-build-20261111-001/logs/v5-chroma-install.log": "683586effca4ed2c565c87024934257f1d69516904c8a54ccb2d776d92b030f7",
+    "runs/mpi-devel-build-20261111-001/logs/v4-adat-install.log": "faacc3f54089611b13ad99cbe0ff2745402217c322cde719c4d8d7844697b2c8",
+    "run_inputs/mpi-devel-build-20261111-001/check_mpi_interruption.py": "f1fc06a72b77f82e961b43f600fab9c1017bade12b64402f2595a4974f6950b9",
+    "run_inputs/mpi-devel-build-20261111-001/validate_mpi.py": "2e43f53553057dbe97031888720039b498a171886cbca210127cafc5b63fab09",
+    "run_inputs/mpi-devel-build-20261111-001/build_v3.py": "93565c5908c16ff28952245bf1455a1ac01dd291a9bbd3ec1cdae45f906a0c25",
+    "run_inputs/mpi-devel-build-20261111-001/syntax_check.py": "6bc6ebc19f55f90ddcf3811a5d42ab32d1cabc684a55f01e7b69e7bcd35ae563",
+    "run_inputs/mpi-devel-build-20261111-001/build_stack.py": "e7e3458447a855d3984cfb7184add084b471e2af325fec3f0196239db646c7b8",
+    "run_inputs/mpi-devel-build-20261111-001/build_v5.py": "b2ce96a0bc9122b08d76dfe66d6075ecb138028141805c46715e1525e9e6b3e9",
+    "run_inputs/mpi-devel-build-20261111-001/build_v4.py": "84af2b41d79037b7b79baffae427d6cbd91059ec40e4ea810439aa4df795f82d",
+    "run_inputs/mpi-devel-build-20261111-001/write_report.py": "cc5cec1b21493bc82a1891c633b574a1baba47265d6ac73ef2ec005c91800425",
+    "runs/mpi-devel-build-20261111-001/v4-build.json": "c939232852e3c7664b60253d5686b68bbfd382fefef5d66423432094219433e8",
+    "runs/mpi-devel-build-20261111-001/provenance.json": "946b139330b3d14f54c9a9ad4569e18cfb8d0a2810d02f6db7946191c2d18d2b",
+    "runs/mpi-devel-build-20261111-001/sources.json": "14736c46cc1c99395a0a430be877b7c3802b6000f1e2e64781c7bc7918ec990c",
+    "runs/mpi-devel-build-20261111-001/build.json": "20ff1df8d75e6aa8961414ba9b2e20ad850d62f3823692c205f2561d60f08c51",
+    "runs/mpi-devel-build-20261111-001/v3-build.json": "5e657f4d15d2f90bff3d642ff3d3254907e6924c7f39090ef95a49122dee4fcb",
+    "runs/mpi-devel-build-20261111-001/v5-build.json": "eb64d637cdda21d7c5c41cb343d486d24d6daa0209fc949d720a172af8d9f9ce",
+    "runs/mpi-devel-build-20261111-001/disco-compatibility.json": "8f217fb0a2c2371f76e99b1d39e99e5302b2ee6091fae87e3f682f01ba0e2f77",
+    "runs/mpi-devel-build-20261111-001/disco-callback-compatibility.json": "770fe04392bc207d0f6916e08daff6a36fd73e88c1ced0c3978f34d8695a044d",
+    "run_inputs/mpi-devel-build-20261111-001/disco-callback-compatibility.patch": "2f6d48947ec90d542a69722d9a395aa712631a961fd6930c6ad25256065ad6a6",
+    "run_inputs/mpi-devel-build-20261111-001/disco-compatibility.patch": "f24e8fe457ddd40d9a97978bbee8830607cfd9f7b526f81816a80fa77ddbf612"
+  },
+  "additional_checks": {
+    "source_preservation": {
+      "adat": {
+        "branch": "devel",
+        "commit": "7b1d36f574bce5d77f1c5d0ed985d06d97f5be1f",
+        "status": "?? build/\n",
+        "matches_before": true
+      },
+      "chroma": {
+        "branch": "devel",
+        "commit": "e1ac530e0bd50dbeac75a1e94d62a981308fe251",
+        "status": "",
+        "matches_before": true
+      }
+    },
+    "linkage": {
+      "chroma": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma",
+        "sha256": "a46d7b5b99e0dc9c0fd670af5f75d7c070a14dcd84d6f1eea88af36782911494",
+        "otool": "/Users/admin/Downloads/redstar_kanoni.devel/runs/mpi-devel-build-20261111-001/install/chroma-v3-compatible/bin/chroma:\n\t/opt/homebrew/opt/libomp/lib/libomp.dylib (compatibility version 5.0.0, current version 5.0.0)\n\t/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate (compatibility version 1.0.0, current version 4.0.0)\n\t/opt/homebrew/opt/libxml2/lib/libxml2.2.dylib (compatibility version 16.0.0, current version 16.5.0)\n\t/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)\n\t/opt/homebrew/opt/icu4c@76/lib/libicuuc.76.dylib (compatibility version 76.0.0, current version 76.1.0)\n\t/usr/lib/libiconv.2.dylib (compatibility version 7.0.0, current version 7.0.0)\n\t/opt/homebrew/opt/gmp/lib/libgmpxx.4.dylib (compatibility version 12.0.0, current version 12.0.0)\n\t/opt/homebrew/opt/gmp/lib/libgmp.10.dylib (compatibility version 16.0.0, current version 16.0.0)\n\t/opt/homebrew/opt/open-mpi/lib/libmpi.40.dylib (compatibility version 81.0.0, current version 81.7.0)\n\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+        "libomp": true,
+        "libgomp": false
+      },
+      "probe": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/chroma_mpi_probe",
+        "sha256": "c3903351f0d68e12ea45573547dbc3f4df6789ffc4f66865f591f974e0d3860b",
+        "otool": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/chroma_mpi_probe:\n\t/opt/homebrew/opt/libomp/lib/libomp.dylib (compatibility version 5.0.0, current version 5.0.0)\n\t/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate (compatibility version 1.0.0, current version 4.0.0)\n\t/opt/homebrew/opt/libxml2/lib/libxml2.2.dylib (compatibility version 16.0.0, current version 16.5.0)\n\t/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)\n\t/opt/homebrew/opt/icu4c@76/lib/libicuuc.76.dylib (compatibility version 76.0.0, current version 76.1.0)\n\t/usr/lib/libiconv.2.dylib (compatibility version 7.0.0, current version 7.0.0)\n\t/opt/homebrew/opt/gmp/lib/libgmpxx.4.dylib (compatibility version 12.0.0, current version 12.0.0)\n\t/opt/homebrew/opt/gmp/lib/libgmp.10.dylib (compatibility version 16.0.0, current version 16.0.0)\n\t/opt/homebrew/opt/open-mpi/lib/libmpi.40.dylib (compatibility version 81.0.0, current version 81.7.0)\n\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+        "libomp": true,
+        "libgomp": false
+      },
+      "converter": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/mod_gauge_to_qio",
+        "sha256": "7aebaa9b3a867fd171877ea33275f4fa0e1d8729dbfa4ed90a3cd35a4216fd2b",
+        "otool": "/Users/admin/Downloads/redstar_kanoni.devel/runs/chroma-mpi-devel-1rank-20261111-001/mod_gauge_to_qio:\n\t/opt/homebrew/opt/libomp/lib/libomp.dylib (compatibility version 5.0.0, current version 5.0.0)\n\t/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate (compatibility version 1.0.0, current version 4.0.0)\n\t/opt/homebrew/opt/libxml2/lib/libxml2.2.dylib (compatibility version 16.0.0, current version 16.5.0)\n\t/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)\n\t/opt/homebrew/opt/icu4c@76/lib/libicuuc.76.dylib (compatibility version 76.0.0, current version 76.1.0)\n\t/usr/lib/libiconv.2.dylib (compatibility version 7.0.0, current version 7.0.0)\n\t/opt/homebrew/opt/gmp/lib/libgmpxx.4.dylib (compatibility version 12.0.0, current version 12.0.0)\n\t/opt/homebrew/opt/gmp/lib/libgmp.10.dylib (compatibility version 16.0.0, current version 16.0.0)\n\t/opt/homebrew/opt/open-mpi/lib/libmpi.40.dylib (compatibility version 81.0.0, current version 81.7.0)\n\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+        "libomp": true,
+        "libgomp": false
+      }
+    },
+    "chroma_openmp_reports": {
+      "1": [
+        2
+      ],
+      "2": [
+        2
+      ]
+    },
+    "actual_mpi_launcher_interruption": {
+      "command": [
+        "/opt/homebrew/bin/mpiexec",
+        "--bind-to",
+        "none",
+        "-n",
+        "2",
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/admin/Downloads/redstar_kanoni.devel/scripts/run_mpi_rank.py",
+        "--stage",
+        "interruption",
+        "--ranks",
+        "2",
+        "--threads",
+        "2",
+        "--timeout",
+        "30",
+        "--memory-limit-mb",
+        "8192",
+        "--contraction-memory-gb",
+        "6",
+        "--",
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-c",
+        "import time;time.sleep(30)"
+      ],
+      "expected": "Outer timeout terminates both guards and their actual rank children",
+      "status": "passed",
+      "outer_error": "timed out after 2 seconds",
+      "ranks": [
+        {
+          "rank": 0,
+          "ranks": 2,
+          "stage": "interruption",
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-c",
+            "import time;time.sleep(30)"
+          ],
+          "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/run-chroma-mpi-validation-20261111-001/mpi-interruption",
+          "omp_num_threads": 2,
+          "memory_limit_mb": 8192,
+          "timeout": 30.0,
+          "rss_samples": 10,
+          "peak_rss_kib": 14688,
+          "status": "failed",
+          "child_pid": 52159,
+          "returncode": 125,
+          "error": "MPI rank interrupted by signal 15",
+          "seconds": 2.127481458010152
+        },
+        {
+          "rank": 1,
+          "ranks": 2,
+          "stage": "interruption",
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-c",
+            "import time;time.sleep(30)"
+          ],
+          "cwd": "/Users/admin/Downloads/redstar_kanoni.devel/runs/run-chroma-mpi-validation-20261111-001/mpi-interruption",
+          "omp_num_threads": 2,
+          "memory_limit_mb": 8192,
+          "timeout": 30.0,
+          "rss_samples": 10,
+          "peak_rss_kib": 14816,
+          "status": "failed",
+          "child_pid": 52158,
+          "returncode": 125,
+          "error": "MPI rank interrupted by signal 15",
+          "seconds": 2.1275483749923296
+        }
+      ]
+    }
+  }
+}

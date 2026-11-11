@@ -1,5 +1,19 @@
 # Regression status and coverage
 
+## Standalone Chroma MPI check: 11 November 2026
+
+The saved-field devel pion case passed on one and two local MPI ranks with
+QDP parscalar, MPI-backed QMP and two OpenMP workers per rank: 3 keys,
+48 finite complex values, zero strict failures, and maximum one-/two-rank
+difference `1.954399679134266e-14`. The one-rank result also passed against
+the archived serial Chroma output. This targeted on-demand-propagator check
+does not extend the full native-double NPT/CORR matrix to MPI.
+
+The current Chroma devel source required a pinned legacy format-3 backend
+with two isolated DISCO compatibility backports. Original ADAT/Chroma
+branches, historical results and policy deferrals remain unchanged.
+See the [build qualification, commands and evidence](run-chroma-mpi-validation.md).
+
 ## Historical Eloy-based no_1pt source validation: 3 November 2026
 
 **Correction, 4 November:** this validation used the Eloy ADAT branch, not the
