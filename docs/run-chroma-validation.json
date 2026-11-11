@@ -1,0 +1,204 @@
+{
+  "date": "2026-11-10T20:00:00.346096-05:00",
+  "branch": "devel",
+  "parent_commit": "78cb23bed89398a8368d5dd24a68c119d4e4a326",
+  "status": "passed",
+  "scope": "Standalone saved-field format-3 Chroma orchestration; outputs-only run directories; no NPT execution.",
+  "tests": {
+    "python_3_9": {
+      "run": 82,
+      "skipped": 7,
+      "result": "passed"
+    },
+    "python_3_13": {
+      "run": 82,
+      "skipped": 0,
+      "result": "passed"
+    }
+  },
+  "numerical_checks": {
+    "auto-build": {
+      "record": "/Users/admin/Downloads/redstar_kanoni.devel/runs/run-chroma-validation-20261110-001/auto-build/run.json",
+      "keys": 3,
+      "finite_complex_values": 48,
+      "shapes": [
+        [
+          1,
+          16
+        ]
+      ],
+      "zero_channels": 0,
+      "CG_solves": 680,
+      "strict_failures": 0,
+      "max_abs_error": 0.0,
+      "reference_sha256": "583d427f6081d762f7c098dfa582b81b6a430f46b51403dbea7c4ac4c525f5b4",
+      "output_sha256": "583d427f6081d762f7c098dfa582b81b6a430f46b51403dbea7c4ac4c525f5b4",
+      "outputs": [
+        "build-importer.log",
+        "chroma.log",
+        "chroma.out.xml",
+        "corr_graph.bin",
+        "gauge-import.log",
+        "gauge.lime",
+        "graph.log",
+        "graph.out.xml",
+        "mod_gauge_to_qio",
+        "mod_gauge_to_qio.build-command.json",
+        "output.sdb1",
+        "run.json",
+        "view.log"
+      ]
+    },
+    "prebuilt-importer": {
+      "record": "/Users/admin/Downloads/redstar_kanoni.devel/runs/run-chroma-validation-20261110-001/prebuilt-importer/run.json",
+      "keys": 3,
+      "finite_complex_values": 48,
+      "shapes": [
+        [
+          1,
+          16
+        ]
+      ],
+      "zero_channels": 0,
+      "CG_solves": 680,
+      "strict_failures": 0,
+      "max_abs_error": 0.0,
+      "reference_sha256": "583d427f6081d762f7c098dfa582b81b6a430f46b51403dbea7c4ac4c525f5b4",
+      "output_sha256": "583d427f6081d762f7c098dfa582b81b6a430f46b51403dbea7c4ac4c525f5b4",
+      "outputs": [
+        "chroma.log",
+        "chroma.out.xml",
+        "corr_graph.bin",
+        "gauge-import.log",
+        "gauge.lime",
+        "graph.log",
+        "graph.out.xml",
+        "output.sdb1",
+        "run.json",
+        "view.log"
+      ]
+    }
+  },
+  "reference": {
+    "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/direct-pion-mod-20261101-001/superb.sdb1",
+    "sha256": "583d427f6081d762f7c098dfa582b81b6a430f46b51403dbea7c4ac4c525f5b4",
+    "origin_record": "/Users/admin/Downloads/redstar_kanoni.devel/runs/direct-pion-mod-20261101-001/run.json",
+    "origin_record_status": "numerical_mismatch",
+    "qualification": "The archived Chroma result is reproduced exactly. Its historical comparison to the separate legacy NPT dataset remains a numerical mismatch; this is not a new matched NPT/CORR regression or baseline promotion."
+  },
+  "qualification": "Existing merged devel Redstar graph tools and corrected historical devel GCC Chroma; one process, one requested OpenMP worker, SINGLE QMP profile. Only the small converter is rebuilt. Chroma and converter use GCC/libgomp; Redstar and independent exporter use Clang/libomp in separate processes.",
+  "limits": [
+    "Graph format 3 only; canonical saved MOD pair on 4^3 x 16; one CORR_SUPERB measurement with SZINQIO/gauge.lime.",
+    "Generated-vector Npi inputs remain with run_corr_superb.py.",
+    "No new clean stack build, full native matrix, multi-rank MPI, GPU, or on-demand GenProp qualification.",
+    "Run status executables_passed is distinct from this independent numerical audit."
+  ],
+  "preservation": {
+    "prior_cleanup_source_and_evidence_hashes_unchanged": true,
+    "DS_Store_unchanged_and_ignored": true,
+    "MOD_pair_and_original_inputs_unchanged": true,
+    "historical_NPT_mismatch_record_unchanged": true,
+    "regression_policy_sha256": "d9fbaf27fcec9af356976e23a00d2b5cb9f785fd433b1a07926f6c18f72b50df",
+    "release_manifest_sha256": "dea5d89571dcce34543ec78748536125b8ef279293494b1771346e8e66db7585"
+  },
+  "tools": {
+    "auto-build": {
+      "redstar_corr_graph": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/redstar_corr_graph",
+        "sha256": "5fb88aad28331167067a214be70023dd8b6baf5ce169e78db534ea9fe849031a"
+      },
+      "view_corr_graph": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/view_corr_graph",
+        "sha256": "ef2317316a2c8ee4deccf3a3bec1b23b4714d911e1af789d7e7e30fd27e9ac58"
+      },
+      "chroma": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/run-chroma-devel-bin-20261110-001/chroma",
+        "sha256": "56035fcb7b6b133b49629c43b19e32ee25fc47526ba6adbfb711d6b5f7a096a8"
+      },
+      "gauge_importer": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/run-chroma-validation-20261110-001/auto-build/mod_gauge_to_qio",
+        "sha256": "8005750b324761deeed32fb35048c9626e948b56abf2e59fa1fafac908380238"
+      }
+    },
+    "prebuilt-importer": {
+      "redstar_corr_graph": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/redstar_corr_graph",
+        "sha256": "5fb88aad28331167067a214be70023dd8b6baf5ce169e78db534ea9fe849031a"
+      },
+      "view_corr_graph": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/view_corr_graph",
+        "sha256": "ef2317316a2c8ee4deccf3a3bec1b23b4714d911e1af789d7e7e30fd27e9ac58"
+      },
+      "chroma": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/run-chroma-devel-bin-20261110-001/chroma",
+        "sha256": "56035fcb7b6b133b49629c43b19e32ee25fc47526ba6adbfb711d6b5f7a096a8"
+      },
+      "gauge_importer": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/run-chroma-validation-20261110-001/auto-build/mod_gauge_to_qio",
+        "sha256": "8005750b324761deeed32fb35048c9626e948b56abf2e59fa1fafac908380238"
+      }
+    }
+  },
+  "converter_config": {
+    "path": "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/run-chroma-devel-bin-20261110-001/chroma-config",
+    "sha256": "5b5ca1a96164f21a4778725ec8a338b525748dc514b3eba01400c30291251999"
+  },
+  "source_sha256": {
+    "run_chroma.csh": "074b177eb348cf755eed786a6c8f396142f9bc67005968aaa49b6e684f2ea543",
+    "scripts/run_chroma.py": "82136aac6634a075c8aa76f5cb2e0eaebd34ec8de6629aa963690ff254235cfe",
+    "tests/test_run_chroma.py": "5d7a61d61c0d49ba6e3fa2c9c83424bd94c7af393ed083550edc4280f4e1b9a3",
+    "scripts/build_gauge_importer.py": "f88080f3dc294a722fc8dd2221b0f8a3caf0609c195c370365c9736f63dcb137",
+    "scripts/mod_gauge_to_qio.cc": "c823abdf85eee95615dcae4b43d7b46badc184c48c61395c5a5de454d6011478",
+    "scripts/redstar_runtime.py": "fee420d248799464c14e0d37593f445ec999efdfd169f1f0021088e6bb5d4c0c",
+    "scripts/contraction_workflow.py": "0937c2176ca1afdb905d770c2671d382b8000778a0b2dded1c9c3b428715de4a"
+  },
+  "retained_initial_unit_attempt": {
+    "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/run-chroma-validation-20261110-001/initial-unit-attempt.log",
+    "result": "Initial fixture path assertion compared /var with /private/var. Canonicalized the temporary fixture path; all final tests pass. No production validation gate was weakened."
+  },
+  "evidence_sha256": {
+    "runs/run-chroma-validation-20261110-001/numerical-audit.json": "6e54b0914a729e06bf5bf8307118f6ecd61f1a5488e2266f84a507f217ad22f1",
+    "runs/run-chroma-validation-20261110-001/unittest-py39.log": "b5906308d069c76c425780626246d249a63f6b028b4cd69a05d891eff871d9bf",
+    "runs/run-chroma-validation-20261110-001/unittest-py313.log": "54b0e03480a75118137652d719ee3da2d9a234ce61faf753400fbf0dc1d0877a",
+    "runs/run-chroma-validation-20261110-001/initial-unit-attempt.log": "d2b4621a0af483cd32c889079280dcad21c7880bcf71f8af3ba538aa8a49c232",
+    "runs/direct-pion-mod-20261101-001/run.json": "2ff7d620c6f06220a358130b446f2e29cef24021f6218f7122aae627b37306e1",
+    "runs/run-chroma-validation-20261110-001/auto-build/run.json": "857b8678c58eeae816d9a694d364c47d593803c7984e8e31ab130965f6055521",
+    "runs/run-chroma-validation-20261110-001/auto-build-comparison/comparison.json": "3b997d13eb4821f683ac2a978052d477a0e60b9ab08cba77f8856f0c0e65bd6f",
+    "runs/run-chroma-validation-20261110-001/auto-build/gauge-import.log": "a30d3423325f7cd39a157efd6cf21741c49b7bbbcd09fb435570c11fbed54d4e",
+    "runs/run-chroma-validation-20261110-001/auto-build/chroma.log": "a13af78502caabef0ce2fbe7010dfdf904071817c8d65f83aab7ea2fde6b79cc",
+    "runs/run-chroma-validation-20261110-001/auto-build/graph.out.xml": "2425d9fae0e59eda85192b950c05f48c998849e7902490b3b0966494ad533a51",
+    "runs/run-chroma-validation-20261110-001/auto-build/chroma.out.xml": "15d2090c12f8a0bd948f49d2af17e1712149ef8946cc9b707f109b3d03206a51",
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/run.json": "8bcf9ee063f84475f763eb24de55c7969d263fad8b86c138ae82635aad2e9c5e",
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer-comparison/comparison.json": "775607e4028412041331558465b473a95e44ecf0d2b182984e97fb4d9f29e73a",
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/gauge-import.log": "a30d3423325f7cd39a157efd6cf21741c49b7bbbcd09fb435570c11fbed54d4e",
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/chroma.log": "b8f47b5d5395441d6e608bf2f6987279ae64f26bc553f47b5873fd9dabaff20a",
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/graph.out.xml": "2425d9fae0e59eda85192b950c05f48c998849e7902490b3b0966494ad533a51",
+    "runs/run-chroma-validation-20261110-001/prebuilt-importer/chroma.out.xml": "f564829128f915731e1384ca2f11dc1685a80e1319c482f2d24d44e7c1401c9c",
+    "runs/run-chroma-validation-20261110-001/unittest-py39-final.log": "3d23f9e447c77cdcaf1d62f3dcad497da1a9c13149c1ae80e1c14aa7a2179cf7",
+    "runs/run-chroma-validation-20261110-001/unittest-py313-final.log": "c4ec2dafed6ee67f4c0fc72209289825f94e8978686b0fd48962e88b6bbd28d8"
+  },
+  "runtime_linkage": {
+    "devel_chroma": {
+      "path": "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/run-chroma-devel-bin-20261110-001/chroma",
+      "libomp": false,
+      "libgomp": true
+    },
+    "converter": {
+      "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/run-chroma-validation-20261110-001/auto-build/mod_gauge_to_qio",
+      "libomp": false,
+      "libgomp": true
+    },
+    "graph_generator": {
+      "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/redstar_corr_graph",
+      "libomp": true,
+      "libgomp": false
+    }
+  },
+  "publication_cleanup": {
+    "date": "2026-11-11",
+    "path": ".DS_Store",
+    "bytes": 8196,
+    "sha256": "1339e0fd7d50776b94bc9458dd6b9259d6b00adbf2f0d57be66311ae5b62faeb",
+    "action": "Removed the ignored working-copy Finder metadata at the user request; retained the .gitignore rule and all historical evidence. Validation-time preservation statements remain historical."
+  }
+}

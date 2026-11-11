@@ -177,7 +177,7 @@ The central fields in the measurement's input are:
 | `NamedObject/colorvec_files` | The matching color-vector MOD file(s). |
 | `NamedObject/corr_graph_file`, `corr_file` | Graph input and correlator database output. |
 
-These are fields within a complete Chroma job, not a standalone executable XML fragment. The supplied [shared Chroma template](../regressions/corr_superb/chroma.xml) demonstrates the job structure. Its historical Nπ mode generates fresh eigenvectors and computes missing objects on demand. It is not interchangeable with a saved-field direct comparison.
+These are fields within a complete Chroma job, not a standalone executable XML fragment. The [saved-field Chroma template](../regressions/corr_superb/chroma.xml) reads existing MOD color vectors and a converted gauge, with 16 time samples. The separate [generated-vector Nπ template](../regressions/corr_superb/chroma.generated.xml) creates fresh eigenvectors and computes missing objects on demand for seven samples. These jobs require their own matching graphs and data.
 
 Set `CHROMA_BIN` to the absolute directory containing the matching Chroma
 executable. Once a complete input is staged, run from its fresh output directory:
@@ -187,6 +187,19 @@ executable. Once a complete input is staged, run from its fresh output directory
 ```
 
 A job can share its structure across graph cases, but vector count, time window, flavors and available data must still match the selected case. The `pion_3pt` regression, for example, requests **two** vectors; supplying ten changes the calculation.
+
+For the saved-field pion example, [run_chroma](run-chroma.md) automates graph
+generation, gauge conversion and the Chroma invocation while keeping selected
+inputs outside the output directory:
+
+```sh
+./run_chroma.csh regressions/corr_superb/chroma.xml \
+  --graph-input regressions/direct/pion/graph.xml --threads 1
+```
+
+Set absolute `REDSTAR_BIN` and `CHROMA_BIN` directories first. This uses the
+16-sample saved-field pion job; the generated-vector Nπ job uses a different
+seven-sample template and graph.
 
 ### Stored tensors for direct NPT/CORR comparison
 

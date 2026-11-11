@@ -125,6 +125,22 @@ remains self-contained; these raw SDBs are used for contraction regeneration.
 
 ## Saved Chroma fields
 
+Run the saved-field pion example with the new standalone driver:
+
+```sh
+export REDSTAR_BIN=/absolute/path/to/redstar/install/bin
+export CHROMA_BIN=/absolute/path/to/chroma/install/bin
+./run_chroma.csh regressions/corr_superb/chroma.xml \
+  --graph-input regressions/direct/pion/graph.xml --threads 1
+```
+
+It generates the graph, converts the matching saved gauge and runs ordinary
+Chroma in a fresh output directory. Selected original/prepared XMLs and weights
+stay separately in `run_inputs/`; only generated outputs enter the run directory.
+See [run_chroma usage](docs/run-chroma.md) for data checks, converter selection,
+resource limits and the distinction between execution and numerical validation.
+
+
 The historical saved-field CORR_SUPERB template reads `data/colorvec.mod`.
 Keep it and its matching `data/gauge.mod` as regular read-only files in `data/`;
 their separate checksums are recorded in `test_inputs/mod-manifest.json`.

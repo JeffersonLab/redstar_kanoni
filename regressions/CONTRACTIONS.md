@@ -4,7 +4,7 @@ The three entry points share one graph-generation implementation:
 
 1. `scripts/run_corr_graph.py`: graph XML → `redstar_corr_graph` → `corr_graph.bin`; inspect the result with the matching `view_corr_graph`.
 2. `scripts/run_redstar_npt.py`: the same graph stage, then a separate npt XML → `redstar_npt` → `output.sdb1` → independent numerical readback and comparison.
-3. `scripts/run_corr_superb.py`: the same graph stage, then one ordinary Chroma invocation with the shared `chroma.xml` → `output.sdb1` → independent numerical readback and comparison.
+3. `scripts/run_corr_superb.py`: the same graph stage, then one ordinary Chroma invocation with its selected Chroma template → `output.sdb1` → independent numerical readback and comparison.
 
 Each invocation creates a fresh run directory. Graph-only runs need neither the
 raw SDB dataset nor a saved numerical reference. The two numerical workflows
@@ -21,7 +21,8 @@ regressions/
     <case>/npt.xml         # numerical controls + ColorVec/database settings
     <case>/weights/...     # only the projected weights used by this case
   corr_superb/
-    chroma.xml            # shared 4³×16 Chroma input
+    chroma.xml            # saved MOD fields, 16-sample direct pion template
+    chroma.generated.xml  # generated-vector 4³×16 Nπ job, seven samples
     npi_000_G1g/           # graph.xml + case.json; full 9×9 matrix
     npi_001_E1/            # graph.xml + case.json; full 27×27 matrix
 ```
@@ -79,7 +80,7 @@ is copied into Chroma. Operator and contraction information arrives through
 `corr_graph.bin`.
 
 A runnable Chroma job still needs the gauge setup and color vectors in addition
-to the propagator/solver configuration. The shared input therefore runs
+to the propagator/solver configuration. The Nπ cases select `chroma.generated.xml`, which runs
 `CREATE_COLORVECS_SUPERB` followed by `CORR_SUPERB` in the same vanilla Chroma job.
 It uses the existing weak field, RNG 11/11/11/0, isotropic clover mass 0.05,
 coefficient 1, temporal antiperiodicity, stout settings and CG 1e-8/1000.
@@ -92,6 +93,12 @@ source origin, vector count or time extent requires an explicitly different
 Chroma setup; the runner rejects an inconsistent case/template combination.
 These established regression inputs require graph **format 3**. `no_1pt`
 remains experimental and is not the source of saved regression references.
+
+For the separate saved-field pion job, use [run_chroma](../docs/run-chroma.md)
+with `chroma.xml` and `regressions/direct/pion/graph.xml`. It generates a graph
+and runs Chroma without NPT or a pinned-reference comparison, verifies the
+saved MOD pair, and keeps its original/prepared inputs outside the output
+directory. Its 16-sample graph is separate from the seven-sample Nπ cases.
 
 ## Data, references and checks
 
