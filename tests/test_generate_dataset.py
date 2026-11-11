@@ -16,11 +16,11 @@ class GenerationProvenanceTests(unittest.TestCase):
         inputs.mkdir()
         (inputs / 'recipe.json').write_text(json.dumps({'dataset':'unit-provenance', 'RsdCG':recipe_rsd, 'stages':[{'input':'input.xml','outputs':[]}]}))
         (inputs / 'input.xml').write_text('<chroma><RsdCG>' + str(input_rsd) + '</RsdCG></chroma>')
-        fake = root / 'stage'
+        fake = root / 'chroma'
         fake.write_text('#!' + sys.executable + '\nimport pathlib,sys\npathlib.Path(sys.argv[-1]).write_text("<chroma><basePrecision>64</basePrecision></chroma>")\nprint("CHROMA: ran successfully")\n')
         fake.chmod(0o755)
         output = root / 'candidate'
-        result = subprocess.run([sys.executable,str(SCRIPT),'--chroma',str(fake),'--inputs',str(inputs),'--output',str(output),'--dbutil',str(fake)],capture_output=True,text=True)
+        result = subprocess.run([sys.executable,str(SCRIPT),'--chroma-bin',str(root),'--inputs',str(inputs),'--output',str(output),'--dbutil',str(fake)],capture_output=True,text=True)
         return output,result
 
     def test_actual_recipe_precision_is_preserved_in_both_reports(self):
@@ -46,7 +46,7 @@ class GenerationProvenanceTests(unittest.TestCase):
         metadata='<DBMetaData><id>DiscoBlocks</id><mass_labels>'+''.join('<elem>'+m+'</elem>'for m in masses)+'</mass_labels></DBMetaData>'
         inspector=root/'inspect';inspector.write_text('#!'+sys.executable+'\nprint('+repr('SUPERB complex<double> rank=5 dimensions=16 16 7 1 2\n'+metadata)+')\n');inspector.chmod(0o755)
         dbutil=root/'dbutil';dbutil.write_text('#!'+sys.executable+'\nraise SystemExit("legacy dbutil must not read native disco.sdb")\n');dbutil.chmod(0o755)
-        output=root/'candidate';result=subprocess.run([sys.executable,str(SCRIPT),'--chroma',str(fake),'--inputs',str(inputs),'--output',str(output),'--dbutil',str(dbutil),'--storage-info',str(inspector)],capture_output=True,text=True)
+        output=root/'candidate';result=subprocess.run([sys.executable,str(SCRIPT),'--chroma-bin',str(root),'--inputs',str(inputs),'--output',str(output),'--dbutil',str(dbutil),'--storage-info',str(inspector)],capture_output=True,text=True)
         return output,result
 
     def test_native_disco_sdb_uses_tensor_inspector_and_mass_dictionary(self):

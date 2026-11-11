@@ -83,8 +83,11 @@ def main():
     parser.add_argument('--enable-auto-cg', action='store_true', help='replace unsupported fixed-CG mode while retaining phase/rotation settings')
     args=parser.parse_args()
     root=Path(__file__).resolve().parents[1]
-    executable=(args.redstar_bin/'convert_proj_weights_util' if args.redstar_bin else Path(shutil.which('convert_proj_weights_util') or '/missing-converter')).expanduser().absolute()
-    if not executable.is_file():parser.error('Set REDSTAR_BIN/--redstar-bin or put convert_proj_weights_util on PATH')
+    from redstar_runtime import required_tools
+    try:
+        executable=required_tools('redstar', ('convert_proj_weights_util',), args.redstar_bin)['convert_proj_weights_util']
+    except ValueError as error:
+        parser.error(str(error))
     (root/'runs').mkdir(exist_ok=True)
     work=Path(tempfile.mkdtemp(prefix='input-migration-'+datetime.now().strftime('%Y%m%d-%H%M%S')+'-',dir=root/'runs'))
     inputs={};ops={};requests={};index={}

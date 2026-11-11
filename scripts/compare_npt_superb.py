@@ -13,7 +13,7 @@ import xml.etree.ElementTree as E
 
 from contraction_workflow import ROOT, digest, read_case, prepare_graph, prepare_npt, graph_summary
 from compare_correlators import compare, definition, inspect_export
-from redstar_runtime import configured_tools, run_limited
+from redstar_runtime import configured_tools, run_limited, required_tools
 
 
 def exported_values(directory):
@@ -41,7 +41,8 @@ def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('case',type=Path)
     p.add_argument('--tools',type=Path,required=True,help='Redstar/ADAT executables TOML')
-    p.add_argument('--chroma',type=Path,required=True)
+    p.add_argument('--redstar-bin',type=Path,help='absolute Redstar bin directory (or REDSTAR_BIN)')
+    p.add_argument('--chroma-bin',type=Path,help='absolute Chroma bin directory (or CHROMA_BIN)')
     p.add_argument('--gauge-importer',type=Path,help='Required for historical saved-gauge mode')
     p.add_argument('--storage-info',type=Path,help='Native SUPERB metadata inspector')
     p.add_argument('--dataset-manifest',type=Path,help='Explicit new candidate manifest; uses its WEAK_FIELD input and canonical meson.sdb')
@@ -54,7 +55,12 @@ def main(argv=None):
     a=p.parse_args(argv)
     if a.threads<1 or a.timeout<1:p.error('threads and timeout must be positive')
     case,meta,graph=read_case(a.case)
-    tools=configured_tools(a.tools)
+    try:
+        tools=configured_tools(a.tools)
+        tools.update(required_tools('redstar', ('redstar_corr_graph','view_corr_graph','redstar_npt'), a.redstar_bin, tools))
+        a.chroma=required_tools('chroma', ('chroma',), a.chroma_bin, tools)['chroma']
+    except ValueError as error:
+        p.error(str(error))
     for key in ('redstar_corr_graph','view_corr_graph','redstar_npt','dbutil'):
         if not tools.get(key,Path('/missing')).is_file():p.error('Missing tool: '+key)
     data=a.database_dir.expanduser().absolute()

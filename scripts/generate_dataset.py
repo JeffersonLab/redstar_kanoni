@@ -3,7 +3,10 @@
 from pathlib import Path
 import argparse,datetime,hashlib,json,math,os,re,shutil,subprocess,time
 import xml.etree.ElementTree as E
-p=argparse.ArgumentParser(description=__doc__);p.add_argument('--chroma',type=Path,required=True);p.add_argument('--inputs',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--dbutil',type=Path,required=True);p.add_argument('--threads',type=int,default=1);p.add_argument('--reuse-validated',type=Path,help='Copy only checksum-verified completed stages with identical inputs and executable');p.add_argument('--storage-info',type=Path,help='Native SUPERB complex-double header/metadata inspector');a=p.parse_args()
+from redstar_runtime import required_tools
+p=argparse.ArgumentParser(description=__doc__);p.add_argument('--chroma-bin',type=Path,help='absolute Chroma bin directory (or CHROMA_BIN)');p.add_argument('--inputs',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--dbutil',type=Path,required=True);p.add_argument('--threads',type=int,default=1);p.add_argument('--reuse-validated',type=Path,help='Copy only checksum-verified completed stages with identical inputs and executable');p.add_argument('--storage-info',type=Path,help='Native SUPERB complex-double header/metadata inspector');a=p.parse_args()
+try:a.chroma=required_tools('chroma', ('chroma',), a.chroma_bin)['chroma']
+except ValueError as error:p.error(str(error))
 root=a.output.resolve();root.mkdir(parents=True,exist_ok=False);inputs=root/'inputs';shutil.copytree(a.inputs,inputs)
 plan=json.loads((inputs/'recipe.json').read_text());env=dict(os.environ,OMP_NUM_THREADS=str(a.threads),OMP_DYNAMIC='FALSE',VECLIB_MAXIMUM_THREADS='1',OPENBLAS_NUM_THREADS='1')
 requested_rsd=float(plan['RsdCG'])

@@ -199,9 +199,9 @@ def main(mode, argv=None):
     parser = argparse.ArgumentParser(description=__doc__+' Mode: '+mode)
     parser.add_argument('case',type=Path,help='case directory containing case.json and graph.xml')
     parser.add_argument('--output',type=Path,help='fresh output directory; default: unique runs/ directory')
-    parser.add_argument('--tools',type=Path,help='optional TOML [executables], paths relative to TOML')
+    parser.add_argument('--tools',type=Path,help='optional TOML [executables], all paths absolute')
     parser.add_argument('--redstar-bin',type=Path,default=os.environ.get('REDSTAR_BIN'))
-    parser.add_argument('--chroma',type=Path,default=os.environ.get('CHROMA'))
+    parser.add_argument('--chroma-bin',type=Path,help='absolute Chroma bin directory (or CHROMA_BIN)')
     parser.add_argument('--gauge-importer',type=Path,help='MOD-to-QIO importer for saved-field CORR_SUPERB cases')
     parser.add_argument('--dbutil',type=Path)
     parser.add_argument('--exporter',type=Path)
@@ -222,23 +222,30 @@ def main(mode, argv=None):
         if mode != 'graph' and mode != meta['kind']:
             raise ValueError('Selected case is for '+meta['kind']+', not '+mode)
         tools = configured_tools(args.tools) if args.tools else {}
-        bindir = args.redstar_bin or tools.get('redstar_corr_graph',ROOT.parent/'redstar.devel/build/src/redstar_corr_graph').parent
+        from redstar_runtime import required_tools
+        names = ('redstar_corr_graph', 'view_corr_graph') + (('redstar_npt',) if mode == 'redstar' else ())
+        selected = required_tools('redstar', names, args.redstar_bin, tools)
+        if mode == 'corr_superb':
+            selected.update(required_tools('chroma', ('chroma',), args.chroma_bin, tools))
         def tool(name, override=None):
-            p = override or tools.get(name) or (bindir/name if name in ('redstar_corr_graph','view_corr_graph','redstar_npt') else Path(shutil.which(name) or '/missing-'+name))
+            if name in ('redstar_corr_graph', 'view_corr_graph', 'redstar_npt', 'chroma'):
+                p = selected[name]
+            else:
+                p = override or tools.get(name) or Path(shutil.which(name) or '/missing-'+name)
             p = p.expanduser().resolve()
             if not p.is_file() or not os.access(p,os.X_OK):
                 raise ValueError('Missing executable '+str(p)+'; use --tools or explicit tool options')
             record['tools'][name]={'path':str(p),'sha256':digest(p)}
             return p
-        generator=tool('redstar_corr_graph',args.redstar_bin/'redstar_corr_graph' if args.redstar_bin else None)
-        viewer=tool('view_corr_graph',args.redstar_bin/'view_corr_graph' if args.redstar_bin else None)
+        generator=tool('redstar_corr_graph')
+        viewer=tool('view_corr_graph')
         if mode!='graph':
             reference=case/meta['reference']
             if reference.is_symlink():raise ValueError('Reference database must be a regular file, not a symlink')
             reference=reference.resolve(strict=True)
             if digest(reference)!=meta['reference_sha256']:
                 raise ValueError('Missing/mismatched trusted reference; restore the pinned baseline, never overwrite it')
-            numerical=tool('redstar_npt',args.redstar_bin/'redstar_npt' if args.redstar_bin else None) if mode=='redstar' else tool('chroma',args.chroma)
+            numerical=tool('redstar_npt') if mode=='redstar' else tool('chroma')
             dbutil=tool('dbutil',args.dbutil)
         if args.output:
             target=args.output.expanduser().absolute();target.mkdir(parents=True,exist_ok=False);run=target

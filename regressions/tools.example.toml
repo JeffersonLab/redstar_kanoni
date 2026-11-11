@@ -1,8 +1,7 @@
-# Paths relative to this TOML file, or absolute paths. Use one consistent stack.
-# Copy to tools.toml and edit it when switching development builds.
+# Use absolute paths to one consistent installed stack.
+# Copy to tools.toml and edit it when switching builds.
 [executables]
-# One edit switches all four Redstar tools. Individual paths can override it:
-redstar_bin = "../../redstar.devel/build/src"
-# redstar_npt = "/another/build/src/redstar_npt"
-dbutil = "../../adat.devel/build/main/dbutil/dbutil"
-adat_config = "../../adat.devel/build/adat-config"
+redstar_bin = "/path/to/redstar/install/bin"
+chroma_bin = "/path/to/chroma/install/bin"
+dbutil = "/path/to/adat/install/bin/dbutil"
+adat_config = "/path/to/adat/install/bin/adat-config"

@@ -1,0 +1,326 @@
+{
+  "date": "2026-11-10T18:04:05.289379-05:00",
+  "branch": "devel",
+  "documentation_commits": [
+    "bf113b2",
+    "ffa33dc",
+    "d6d9028"
+  ],
+  "cleanup_committed_at_validation": false,
+  "scope": "Explicit absolute Redstar/Chroma bin directories; outputs-only run_colorvec directories; local data retirement; Finder ignore rule.",
+  "unit_tests": {
+    "python_3_9": {
+      "ran": 71,
+      "skipped": 7,
+      "result": "passed; optional TOML dependency unavailable"
+    },
+    "python_3_13": {
+      "ran": 71,
+      "skipped": 0,
+      "result": "passed"
+    }
+  },
+  "data_retirement": {
+    "date": "2026-11-10T17:43:13.261446-05:00",
+    "removed": [
+      {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/data/hada_0-511_SVD_disco_cfg_cl21_32_64_b6p3_m0p2390_m0p2050_cfg_1000.ref0001.sdb",
+        "bytes": 30408704,
+        "sha256": "09897fcecdc929ee66522175084bee283a2289a3ffc8e47819c0f9e6c9a617aa"
+      },
+      {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/data/peram.only0.sdb",
+        "bytes": 1130496,
+        "sha256": "10e63c6b6fe17789b71f6dd82400902a9f6989367737e088f43265d6931ec512"
+      }
+    ],
+    "release_manifest_sha256": "dea5d89571dcce34543ec78748536125b8ef279293494b1771346e8e66db7585",
+    "finder_sha256": "1339e0fd7d50776b94bc9458dd6b9259d6b00adbf2f0d57be66311ae5b62faeb",
+    "colorvec_sha256": "30d6e03d4b995177faf8127206886a8e59f8bd7a84919e69c0d8c1a7da41cdb0"
+  },
+  "preservation": {
+    "release_manifest_unchanged": true,
+    "regression_policy_sha256": "d9fbaf27fcec9af356976e23a00d2b5cb9f785fd433b1a07926f6c18f72b50df",
+    "DS_Store_unchanged_and_ignored": true,
+    "matching_MOD_pair_unchanged": true,
+    "existing_runs_and_baselines_unchanged": true
+  },
+  "run_colorvec": [
+    {
+      "case": "pion",
+      "run": "/Users/admin/Downloads/redstar_kanoni.devel/runs/pion-20261110-174318-5la1w_nc",
+      "files": [
+        "corr_graph.bin",
+        "graph.log",
+        "graph.out.xml",
+        "interior_nodes.-1.0.t_0.log",
+        "interior_nodes.-1.0.t_1.log",
+        "interior_nodes.-1.0.t_10.log",
+        "interior_nodes.-1.0.t_11.log",
+        "interior_nodes.-1.0.t_12.log",
+        "interior_nodes.-1.0.t_13.log",
+        "interior_nodes.-1.0.t_14.log",
+        "interior_nodes.-1.0.t_15.log",
+        "interior_nodes.-1.0.t_2.log",
+        "interior_nodes.-1.0.t_3.log",
+        "interior_nodes.-1.0.t_4.log",
+        "interior_nodes.-1.0.t_5.log",
+        "interior_nodes.-1.0.t_6.log",
+        "interior_nodes.-1.0.t_7.log",
+        "interior_nodes.-1.0.t_8.log",
+        "interior_nodes.-1.0.t_9.log",
+        "npt.log",
+        "npt.out.xml",
+        "output.sdb1",
+        "run.json"
+      ],
+      "prepared_input": "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/pion-20261110-174318-5la1w_nc/input.xml",
+      "support_count": 0,
+      "keys": 3,
+      "finite_complex_values": 48,
+      "reference_sha256": "73cbe8613d4414b8dc33e9c6b5c1caca939cbaea8a4c2c07d10a54493974f757",
+      "candidate_sha256": "73cbe8613d4414b8dc33e9c6b5c1caca939cbaea8a4c2c07d10a54493974f757"
+    },
+    {
+      "case": "pipi_i1",
+      "run": "/Users/admin/Downloads/redstar_kanoni.devel/runs/pipi_i1-20261110-174321-_fhziwjs",
+      "files": [
+        "corr_graph.bin",
+        "graph.log",
+        "graph.out.xml",
+        "interior_nodes.-1.0.t_0.log",
+        "interior_nodes.-1.0.t_1.log",
+        "interior_nodes.-1.0.t_10.log",
+        "interior_nodes.-1.0.t_11.log",
+        "interior_nodes.-1.0.t_12.log",
+        "interior_nodes.-1.0.t_13.log",
+        "interior_nodes.-1.0.t_14.log",
+        "interior_nodes.-1.0.t_15.log",
+        "interior_nodes.-1.0.t_2.log",
+        "interior_nodes.-1.0.t_3.log",
+        "interior_nodes.-1.0.t_4.log",
+        "interior_nodes.-1.0.t_5.log",
+        "interior_nodes.-1.0.t_6.log",
+        "interior_nodes.-1.0.t_7.log",
+        "interior_nodes.-1.0.t_8.log",
+        "interior_nodes.-1.0.t_9.log",
+        "npt.log",
+        "npt.out.xml",
+        "output.sdb1",
+        "run.json"
+      ],
+      "prepared_input": "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/pipi_i1-20261110-174321-_fhziwjs/input.xml",
+      "support_count": 0,
+      "keys": 1,
+      "finite_complex_values": 16,
+      "reference_sha256": "99595e8e3d4d981256bac230ce0b531c31e513d8df8a172dac6f9f97ec4aaba1",
+      "candidate_sha256": "99595e8e3d4d981256bac230ce0b531c31e513d8df8a172dac6f9f97ec4aaba1"
+    }
+  ],
+  "devel_independent_validation": {
+    "report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261110-174414-mdu9ebke/results.json",
+    "summary": {
+      "passed": 2,
+      "passed_fake_data": 0,
+      "passed_symmetry_zero": 1,
+      "failed": 0
+    },
+    "cases": [
+      {
+        "file": "pion.xml",
+        "status": "passed",
+        "correlators": 3,
+        "graphs": 1,
+        "finite_complex_values": 48,
+        "zero_correlator_keys": 0
+      },
+      {
+        "file": "pipi_i1.xml",
+        "status": "passed",
+        "correlators": 1,
+        "graphs": 4,
+        "finite_complex_values": 16,
+        "zero_correlator_keys": 0
+      },
+      {
+        "file": "eta_eta_3pt.xml",
+        "status": "passed_symmetry_zero",
+        "correlators": 1,
+        "graphs": 0,
+        "finite_complex_values": 16,
+        "zero_correlator_keys": 1
+      }
+    ],
+    "program_sha256": {
+      "redstar_corr_graph": "5fb88aad28331167067a214be70023dd8b6baf5ce169e78db534ea9fe849031a",
+      "redstar_npt": "d74454d5b888a7a8e10a7f443719bec3bdaa07bce1f11645cdafd4e36f95443f",
+      "view_corr_graph": "ef2317316a2c8ee4deccf3a3bec1b23b4714d911e1af789d7e7e30fd27e9ac58",
+      "extract_ops_util": "b1b07e4a0c350d100b3ee5a394db2183ca0ce20a241985d5dec22c26f4800868",
+      "dbutil": "8743d066089a53b4b6a859be8a5e4e2fa6c38735c9e618c71c9b4d5b6e97c03a"
+    }
+  },
+  "devel_CORR_SUPERB": {
+    "report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/kanoni-cleanup-20261110-001/corr-npi-default-budget/run.json",
+    "case": "npi_000_G1g",
+    "graph": {
+      "version": 3,
+      "correlators": 81,
+      "graphs": 5924,
+      "time_samples": 7
+    },
+    "readback": {
+      "keys": 81,
+      "finite_complex_values": 567,
+      "zero_channels": 0,
+      "per_value_comparison": {
+        "max_abs_error": 0.0,
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 5.281968529109053e-13
+      }
+    },
+    "tools": {
+      "redstar_corr_graph": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/redstar_corr_graph",
+        "sha256": "5fb88aad28331167067a214be70023dd8b6baf5ce169e78db534ea9fe849031a"
+      },
+      "view_corr_graph": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/view_corr_graph",
+        "sha256": "ef2317316a2c8ee4deccf3a3bec1b23b4714d911e1af789d7e7e30fd27e9ac58"
+      },
+      "chroma": {
+        "path": "/Users/admin/Downloads/roper-test-data/npi-fix-20261031-v2/bin/chroma-devel-fixed-v2",
+        "sha256": "56035fcb7b6b133b49629c43b19e32ee25fc47526ba6adbfb711d6b5f7a096a8"
+      },
+      "dbutil": {
+        "path": "/Users/admin/Downloads/macos_matelem_fitter/redstar-clean-macos-20261028/install/adat/bin/dbutil",
+        "sha256": "8743d066089a53b4b6a859be8a5e4e2fa6c38735c9e618c71c9b4d5b6e97c03a"
+      },
+      "exporter": {
+        "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/kanoni-cleanup-20261110-001/export-correlators",
+        "sha256": "d32b0cf4437fbb01c03a0f0c0b009f4061e8c2d7ad250a5f2e22e21b56d22555"
+      }
+    },
+    "threads_requested": 1,
+    "qualification": "Historical format-3 generated-vector Npi regression with on-demand propagators, GCC/libgomp Chroma in a separate process from Clang/libomp Redstar/exporter. No generalized-propagator qualification.",
+    "contraction_memory_gb": 6,
+    "timeout_seconds": 1800
+  },
+  "native_paired_smoke": {
+    "report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/kanoni-cleanup-20261110-001/native-paired/results.json",
+    "qualification": "Runner directory-selection validation with the previously built rge/devel-datalib-reorg format-4 Redstar and fresh MPI/parscalar Chroma stack; one MPI rank; cached native-double tensors; NPT and Chroma request one OpenMP worker. No source rebuild or full-suite claim.",
+    "cases": [
+      {
+        "case": "pion",
+        "chain": "no_1pt",
+        "status": "passed",
+        "keys": 3,
+        "finite_complex_values": 48,
+        "CG_solves": 0,
+        "strict_comparison": {
+          "relative_tolerance": 1e-09,
+          "absolute_floor": 1.1286535561155875e-11,
+          "per_value_failures": 0,
+          "max_abs_error": 9.041133121840199e-15,
+          "finite_complex_values": 48
+        }
+      },
+      {
+        "case": "pion_3pt",
+        "chain": "no_1pt",
+        "status": "passed",
+        "keys": 1,
+        "finite_complex_values": 7,
+        "CG_solves": 0,
+        "strict_comparison": {
+          "relative_tolerance": 1e-09,
+          "absolute_floor": 1.7902118503664077e-13,
+          "per_value_failures": 0,
+          "max_abs_error": 3.0184188481996443e-16,
+          "finite_complex_values": 7
+        }
+      }
+    ],
+    "program_sha256": {
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/datalib/bin/dbutil": "d65c8ceda4298eb36a9c22585293e2b9b85d3c84c4672801f9fd9717e402f8e8",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/export-correlators": "37cb00808c2aac42c59b4f1c6324df46a97535cbaf51ad776f3c9e57c857b835",
+      "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/cleanup-redstar-reorg-bin/redstar_npt": "2f228d93c14eb87349ae2cd90f0dec4746cef88cb007ceca5495fc3ca5573060",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma": "741f7347ceb75ad7c7e3cc8e186efb91e0b3c176bdc79a47d59a41fa66f6c5c4",
+      "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/cleanup-redstar-reorg-bin/redstar_corr_graph": "c28d61fea77eced57ca49efaca93d876a43e848069fd4a97ba29adc638b3b4fb",
+      "/Users/admin/Downloads/redstar_kanoni.devel/run_inputs/cleanup-redstar-reorg-bin/view_corr_graph": "1bad8dc283ea751a5f5fa556c16eb42dff04972811c26f3f30593bba2ff6a844"
+    }
+  },
+  "retained_Npi_budget_attempt": {
+    "report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/kanoni-cleanup-20261110-001/corr-npi/run.json",
+    "contraction_memory_gb": 2,
+    "timeout_seconds": 600,
+    "status": "failed",
+    "cause": "Timed out during on-demand propagator computation. Retried with the established 6 GiB planner budget and 1800-second timeout in a fresh directory; XML inputs and numerical acceptance gates unchanged."
+  },
+  "retained_failed_attempt": {
+    "report": "/Users/admin/Downloads/redstar_kanoni.devel/runs/validation-20261110-174354-e62aus0z/results.json",
+    "cause": "Sandbox denied ps; RSS monitoring failed before numerical execution. Fresh rerun with process-monitoring permission passed; limits were not weakened."
+  },
+  "limits": [
+    "Targeted runner/interface regressions, not a new full 30-case native sweep.",
+    "Reused the recorded validated executables; no library source rebuild or merge.",
+    "Cached native cases used one MPI rank and one requested OpenMP worker; no new multi-rank, GPU, scaling or general on-demand GenProp claim.",
+    "Accepted baselines, dataset payloads other than the two explicitly retired local files, physics settings, strict gates and deferrals are unchanged.",
+    "Existing machine-local TOML files and historical build evidence are preserved; obsolete executable overrides in such local files must be migrated before reuse."
+  ],
+  "evidence_sha256": {
+    "runs/kanoni-cleanup-20261110-001/data-retirement.json": "7cb06405c89ca343666da3e1117cf3975151a2e03afd5e8e4209e7d612e47747",
+    "runs/kanoni-cleanup-20261110-001/setup.log": "8c07c7a2a913b461db463db48c84da8a2930a5d75ffe9796a0e881cb0b245c76",
+    "runs/kanoni-cleanup-20261110-001/setup-repeat.log": "8c07c7a2a913b461db463db48c84da8a2930a5d75ffe9796a0e881cb0b245c76",
+    "runs/kanoni-cleanup-20261110-001/unittest-py39.log": "64b9c78a8c22e30ede19855d835fd414a43bf6f1cfcd587d3366cbabaeb00b9a",
+    "runs/kanoni-cleanup-20261110-001/unittest-py313-final.log": "316430882ce778f44809e736cf4b8d9656ca0a7478218d26dbf1d98051fb57d0",
+    "runs/kanoni-cleanup-20261110-001/runner-comparisons.json": "b88a8fb73cdca0f274392d2ef7b7876c92b73775bfa06360db6638c7e22d823e",
+    "runs/kanoni-cleanup-20261110-001/corr-npi-default-budget/run.json": "7a10ed372cd4f4918832bba6a8d0cf01a45424e47379b4effcbbbbeba8aa536d",
+    "runs/kanoni-cleanup-20261110-001/corr-npi-default-budget/comparison/comparison.json": "c758262fe6f7fda34ef636dafd3791f8a019ebdf385d4e0935d87be4444984eb",
+    "runs/kanoni-cleanup-20261110-001/native-paired/results.json": "99fe88a69aaad6ed42642465003ca8a2ae52ccd79c5ddcc723b916ddac2688c1",
+    "runs/kanoni-cleanup-20261110-001/corr-npi/run.json": "5fe3eeeb09d843724891345d7df8b29e3e62c9c9e5add350478bc285999395d9",
+    "runs/validation-20261110-174414-mdu9ebke/results.json": "2ed29790fab506d1c2356ddb40191a74d9007cd390a1dfdc3a32bfb17501e012",
+    "runs/validation-20261110-174354-e62aus0z/results.json": "0fb30741d933765a9e2a4ffc9a28192e927542a92552d70012a2e5d444b80d58"
+  },
+  "source_sha256": {
+    ".gitignore": "c9d55c09b2acda80d28418334eecc50dc5165d0e8263945e25c0ef9f36cd9015",
+    "AGENTS.md": "688237028a9c3afdc5805cb08f28fcdd75042ed7c29c6c36b377cb75690eaad0",
+    "run_colorvec.csh": "eac0584e03821f3af5c904a40fc057d4acf1646b94466f2cc628588ddba4888f",
+    "scripts/compare_npt_superb.py": "b52cc28c0d3bbb7331ec903deb8ac8af3472dc19803dbbd506ed3ceb9e311565",
+    "scripts/compare_regression_chains.py": "0a2d25d59a6e4792deea69adb19c2b37300c25ecf6e07c1533f48ffec03c05de",
+    "scripts/contraction_workflow.py": "0937c2176ca1afdb905d770c2671d382b8000778a0b2dded1c9c3b428715de4a",
+    "scripts/generate_dataset.py": "fc1060914982b0b7064416c89e4ef00603a6e53187b5f2873876a667a00c1413",
+    "scripts/migrate_inputs.py": "1c5ff6d370447fb5452a8a008ab61591767f0552d3589e3e672a67e8acbeb381",
+    "scripts/redstar_runtime.py": "fee420d248799464c14e0d37593f445ec999efdfd169f1f0021088e6bb5d4c0c",
+    "scripts/run_colorvec.py": "688297e7e28f5fe32d320b18cbf52ed483591d8e332ff41b265695c34228f813",
+    "scripts/run_regressions.py": "6794a9f05833db36767e85fab357238e7f42d3b476ac649e29bfd5ade0698d17",
+    "scripts/setup_data.py": "1988bc44f8fad116c5a2f49c032b78b0c81da7c9fa454ba9fb2c5057e616c766",
+    "scripts/validate_inputs.py": "ce65af67e7f978c65258b2601aa15a9100e7bb6b4548054bc828cbf43bee67f1",
+    "tests/test_contraction_workflow.py": "af4bb1cad48aaf2c0dcf3b41619e99e0f670ba2f602edc353dc7e5acae572435",
+    "tests/test_generate_dataset.py": "68cc4ad0cc59025ce903716ad8f85455f35d1f8379e45552d7a0b8459a5cc8b4",
+    "tests/test_regression_runner.py": "cdd06cbccc8b5f52d8061cc081bbed9c2d99d6f5ccb76b390e7d91227ff4a6ea",
+    "tests/test_setup.py": "e8df0bcc69c1230d4c982e0df9c0539048e140b00bbfcf4b5d230cc9221ccec1",
+    "test_inputs/data-policy.json": "c754d4022ee094edf4fe42993804348ad3177626e7e82850d180eab22820b055"
+  },
+  "retry_input_sha256": {
+    "graph.xml": "0e86e54838d1cd691e035b9e3b10019c3a4a5ed9a12f1a8c2937e6c1de1ce1d0",
+    "corr_graph.bin": "2322c9f56fcc4ad41e7bba744766e9d7057e5a64c631f446200b16f1664fdbc3",
+    "chroma.xml": "0c2668734a058795d6fc4a2747ec72a3b383282e8ebe557923ef849814ee91c6"
+  },
+  "runtime_linkage_audit": {
+    "devel_chroma": {
+      "path": "/Users/admin/Downloads/roper-test-data/npi-fix-20261031-v2/bin/chroma-devel-fixed-v2",
+      "libomp": false,
+      "libgomp": true
+    },
+    "devel_npt": {
+      "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/arb-merge-build-20261103-001/install/bin/redstar_npt",
+      "libomp": true,
+      "libgomp": false
+    },
+    "exporter": {
+      "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/kanoni-cleanup-20261110-001/export-correlators",
+      "libomp": true,
+      "libgomp": false
+    }
+  }
+}

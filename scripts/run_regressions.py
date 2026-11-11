@@ -82,7 +82,10 @@ def main(argv=None):
     if args.xml and args.all:
         parser.error('Choose a single XML or --all')
     tests = read_tests(args.list)
-    tools = configured_tools(args.tools)
+    try:
+        tools = configured_tools(args.tools)
+    except (OSError, ValueError, RuntimeError) as error:
+        parser.error(str(error))
     if args.xml:
         files = [args.xml.expanduser().absolute()]
     elif args.all:

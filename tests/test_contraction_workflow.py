@@ -65,9 +65,10 @@ class SplitCases(unittest.TestCase):
     def test_existing_output_is_never_modified(self):
         with tempfile.TemporaryDirectory() as tmp:
             run=Path(tmp)/'existing';run.mkdir();(run/'run.json').write_text('preserve me')
-            tools={'redstar_corr_graph':Path(sys.executable),'view_corr_graph':Path(sys.executable)}
-            with patch.object(workflow,'configured_tools',return_value=tools):
-                code=workflow.main('graph',[str(ROOT/'regressions/redstar/pion'),'--tools','unused.toml','--output',str(run)])
+            binaries=Path(tmp)/'bin';binaries.mkdir()
+            for name in ('redstar_corr_graph','view_corr_graph'):
+                (binaries/name).symlink_to(sys.executable)
+            code=workflow.main('graph',[str(ROOT/'regressions/redstar/pion'),'--redstar-bin',str(binaries),'--output',str(run)])
             self.assertEqual(code,1)
             self.assertEqual((run/'run.json').read_text(),'preserve me')
 

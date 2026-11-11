@@ -2,7 +2,7 @@
 """Run Kanoni v14 graph/numerical tests with independent database readback."""
 import argparse
 from compare_correlators import compare
-from redstar_runtime import OUTPUT_DATABASE, configured_tools, prepare_outputs, stage_command, run_limited
+from redstar_runtime import OUTPUT_DATABASE, configured_tools, prepare_outputs, stage_command, run_limited, required_tools
 from datetime import datetime
 import hashlib
 import json
@@ -41,8 +41,11 @@ def main(argv=None):
     if args.threads<1 or args.timeout<1:parser.error('threads and timeout must be positive')
     root=Path(__file__).resolve().parents[1]
     data=(args.database_dir or root/'data').expanduser().absolute()
-    configured=configured_tools(args.tools) if args.tools else {}
-    programs={name:(args.redstar_bin/name if args.redstar_bin else configured.get(name) or Path(shutil.which(name) or '/missing-'+name)).expanduser().absolute() for name in ('redstar_corr_graph','redstar_npt','view_corr_graph','extract_ops_util')}
+    try:
+        configured=configured_tools(args.tools) if args.tools else {}
+        programs=required_tools('redstar', ('redstar_corr_graph','redstar_npt','view_corr_graph','extract_ops_util'), args.redstar_bin, configured)
+    except ValueError as error:
+        parser.error(str(error))
     dbutil=(args.dbutil or configured.get('dbutil') or Path(shutil.which('dbutil') or '/missing-dbutil')).expanduser().absolute()
     if args.adat_config is None:args.adat_config=configured.get('adat_config')
     if args.exporter is None:args.exporter=configured.get('exporter')

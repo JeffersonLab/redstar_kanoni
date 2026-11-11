@@ -28,7 +28,9 @@ class SetupTests(unittest.TestCase):
         (self.source/'meson.sdb').write_bytes(contents)
         entry=dict(name='meson.sdb',bytes=len(contents),sha256=hashlib.sha256(contents).hexdigest())
         (self.repo/'test_inputs/data-manifest.json').write_text(json.dumps(dict(files=[entry])))
-        self.env=dict(os.environ);self.env.pop('KANONI_DATA_DIR',None)
+        self.env=dict(os.environ)
+        for name in ('KANONI_DATA_DIR','REDSTAR_BIN','CHROMA_BIN'):
+            self.env.pop(name,None)
     def setup(self,*args):
         return subprocess.run([str(self.repo/'setup-data'),'--source-dir',str(self.source),*args],env=self.env,text=True,capture_output=True)
     def test_copy_regular_files_and_repeat(self):
@@ -112,6 +114,8 @@ class SetupTests(unittest.TestCase):
                 'for e in root.findall("ColorVec/DBFiles/*/elem"):\n'
                 ' p=pathlib.Path(e.text);assert not p.is_absolute()\n'
                 ' assert p.is_file() and not p.is_symlink()\n'
+                'for e in root.findall("DBFiles/proj_op_xmls/elem"):\n'
+                ' assert pathlib.Path(e.text).read_text()=="<Weights/>"\n'
                 'assert not list(pathlib.Path.cwd().glob("*.sdb"))\n'
                 'pathlib.Path(sys.argv[2]).write_text("generated")\n'
                 'pathlib.Path("corr_graph.bin").write_text("graph")\n'
@@ -122,8 +126,11 @@ class SetupTests(unittest.TestCase):
 
     def test_runner_isolates_outputs(self):
         self.assertEqual(self.setup().returncode,0)
-        input_xml = '<RedstarNPt><Param><version>14</version><diagnostic_level>20</diagnostic_level></Param><NPointList><elem/></NPointList><DBFiles/><ColorVec><DBFiles><prop_dbs><elem>meson.sdb</elem></prop_dbs></DBFiles></ColorVec></RedstarNPt>'
+        input_xml = '<RedstarNPt><Param><version>14</version><diagnostic_level>20</diagnostic_level></Param><NPointList><elem/></NPointList><DBFiles><proj_op_xmls><elem>weights.xml</elem></proj_op_xmls></DBFiles><ColorVec><DBFiles><prop_dbs><elem>meson.sdb</elem></prop_dbs></DBFiles></ColorVec></RedstarNPt>'
         (self.repo/'test_inputs/pion.xml').write_text(input_xml)
+        (self.repo/'test_inputs/weights.xml').write_text('<Weights/>')
+        (self.repo/'test_inputs/unrelated.xml').write_text('<unused/>')
+        (self.repo/'test_inputs/unrelated.list').write_text('unused')
         binaries=self.binaries()
         env=dict(self.env,REDSTAR_BIN=str(binaries))
         for cwd,source in [(self.repo,'test_inputs/pion.xml'),(self.home,str(self.repo/'test_inputs/pion.xml'))]:
@@ -139,7 +146,11 @@ class SetupTests(unittest.TestCase):
             self.assertEqual(record['source'],str((self.repo/'test_inputs/pion.xml').resolve()))
             self.assertFalse(record['numerical_readback_validated'])
             import xml.etree.ElementTree as ET
-            prepared=ET.parse(run/'input.xml')
+            prepared_path=Path(record['prepared_input'])
+            self.assertEqual(prepared_path.parent.parent,(self.repo/'run_inputs').resolve())
+            self.assertFalse((run/'input.xml').exists())
+            self.assertEqual({p.name for p in run.iterdir()}, {'output.sdb1','corr_graph.bin','graph.out.xml','npt.out.xml','graph.log','npt.log','run.json'})
+            prepared=ET.parse(prepared_path)
             relative=prepared.findtext('ColorVec/DBFiles/prop_dbs/elem')
             self.assertFalse(Path(relative).is_absolute())
             self.assertEqual((run/relative).resolve(),(self.data/'meson.sdb').resolve())
@@ -148,6 +159,29 @@ class SetupTests(unittest.TestCase):
         self.assertTrue((self.data/'meson.sdb').is_file())
         self.assertEqual((self.repo/'test_inputs/pion.xml').read_text(),input_xml)
         self.assertFalse((self.repo/'out.xml').exists())
+
+
+    def test_retired_payload_is_not_downloaded_or_required(self):
+        manifest_path=self.repo/'test_inputs/data-manifest.json'
+        manifest=json.loads(manifest_path.read_text())
+        retired=dict(name='retired.sdb',bytes=3,sha256=hashlib.sha256(b'old').hexdigest())
+        manifest['files'].append(retired)
+        manifest_path.write_text(json.dumps(manifest))
+        (self.repo/'test_inputs/data-policy.json').write_text(json.dumps({'retired_files':['retired.sdb']}))
+        before=manifest_path.read_bytes()
+        self.assertEqual(self.setup().returncode,0)
+        self.assertFalse((self.data/'retired.sdb').exists())
+        self.assertEqual(manifest_path.read_bytes(),before)
+        self.assertEqual(self.setup().returncode,0)
+
+    def test_runner_does_not_search_path_for_redstar(self):
+        self.assertEqual(self.setup().returncode,0)
+        (self.repo/'test_inputs/pion.xml').write_text('<RedstarNPt><Param><version>14</version></Param><NPointList/><DBFiles/></RedstarNPt>')
+        env=dict(self.env,PATH=str(self.binaries())+os.pathsep+self.env['PATH'])
+        result=subprocess.run([sys.executable,str(self.repo/'scripts/run_colorvec.py'),'test_inputs/pion.xml'],cwd=self.repo,env=env,text=True,capture_output=True)
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('REDSTAR_BIN',result.stderr)
+        self.assertFalse((self.repo/'runs').exists())
 
     def test_runner_rejects_legacy_schema_before_creating_output(self):
         (self.repo/'test_inputs/old.xml').write_text('<RedstarNPt><Param><version>12</version></Param></RedstarNPt>')

@@ -5,13 +5,16 @@ Canonical Redstar demos and a sandbox for new tests.
 ## Quick start
 
 ```sh
+export REDSTAR_BIN=/path/to/redstar/install/bin
 ./setup-data
 ./run_colorvec.csh test_inputs/pion.xml
 ```
 
-`setup-data` installs the 18 checksum-verified SDBs as real files in this
-checkout's `data/` directory (about 1 GB). The directory and payloads are ignored
-by Git; no SDB or data-directory symlinks are needed. Repeating setup reuses
+`setup-data` installs the 16 active checksum-verified SDBs as real files in this
+checkout's `data/` directory (about 1 GB). The immutable release manifest retains
+all 18 historical entries; `test_inputs/data-policy.json` excludes the retired
+`hada_0-511_…ref0001.sdb` and `peram.only0.sdb` from installation.
+The directory and payloads are ignored by Git; no SDB or data-directory symlinks are needed. Repeating setup reuses
 verified files and downloads only missing ones.
 
 To import an existing dataset instead of downloading it:
@@ -38,22 +41,28 @@ and reported for review. The actual source files are not removed.
 
 ## Build selection
 
-Put `redstar_corr_graph` and `redstar_npt` on `PATH`, or set their directory once:
+Select an absolute bin directory for each stack you use:
 
 ```sh
 # sh, bash, zsh
 export REDSTAR_BIN=/path/to/redstar/install/bin
+export CHROMA_BIN=/path/to/chroma/install/bin
 # tcsh
-setenv REDSTAR_BIN /path/to/redstar/build/src
+setenv REDSTAR_BIN /path/to/redstar/install/bin
+setenv CHROMA_BIN /path/to/chroma/install/bin
 ```
+
+`REDSTAR_BIN` supplies `redstar_corr_graph`, `redstar_npt`, and the matching
+inspection tools. Chroma workflows require `CHROMA_BIN/chroma`. Equivalent
+`--redstar-bin` / `--chroma-bin` options or absolute `redstar_bin` / `chroma_bin`
+entries in an explicit tool TOML are accepted. Command-line directories override
+the environment, which overrides TOML. There is no PATH search, sibling-checkout
+fallback, legacy `CHROMA` variable, or individual Redstar/Chroma executable override.
 
 Build Redstar with OpenMP using its
 [clean-build guide](https://github.com/JeffersonLab/redstar/blob/devel/docs/build.md)
 and one-command script. Linux uses GCC/libgomp and chromaform/OpenBLAS; macOS uses
 Apple Clang/libomp and Accelerate. Use matching Redstar and ADAT installations.
-
-No script editing is needed. With no override, the runner also recognizes the
-legacy sibling checkout `../redstar.devel/build/src`.
 
 ## Layout and outputs
 
@@ -61,24 +70,26 @@ legacy sibling checkout `../redstar.devel/build/src`.
 - `test_inputs/data-manifest.json`: dataset sizes and SHA-256 checksums.
 - `data/`: the actual read-only SDB files, downloaded or imported locally; Git-ignored.
 - `runs/<demo>-<timestamp>-<unique>/`: isolated logs, XML output, and `.sdb1` results.
+- `run_inputs/<same-name>/`: only the selected original/prepared XML and required weight snapshots.
 - XML demos live directly in `test_inputs/`; the top-level XML aliases have been removed.
 
-Each new run copies the small inputs and weights and writes a prepared `input.xml`
-with relative paths to the actual SDB files. A normal run under `runs/<name>/`
-uses paths such as `../../data/prop.sdb`; no per-run SDB links or copies are made.
-Tracked numerical templates use `../data/<file>.sdb`, relative to `test_inputs/`.
-The runners rebase those paths for their fresh working directories, since Redstar
-resolves XML paths from the process working directory.
-It saves `graph.log`, `npt.log`, separate XML reports and `run.json`. Default
-OpenMP settings request four workers and disable dynamic teams; `--threads`
-overrides this. The installed Redstar build must itself have OpenMP enabled.
-Large diagnostic dumps are disabled unless `--keep-diagnostics` is supplied.
+`run_colorvec` writes only outputs in `runs/<name>/`: the graph binary,
+correlator database, logs, XML reports and `run.json`. It does not copy the
+`test_inputs` tree there. The prepared `input.xml`, original selected XML and
+only its declared projected-weight files are frozen separately under
+`run_inputs/<name>/` (Git-ignored), with paths and hashes recorded in `run.json`.
+Relative database paths refer directly to regular files in `data/`; no per-run
+SDB aliases or copies are made. Source XMLs and weights remain unchanged.
 
-Existing outputs and personal demo files are left in place. Cleanup belongs in
-`runs/`; deleting a run does not delete the actual files in `data/`. Personal XML
-inputs can also be passed by absolute or relative path. Put their supporting XML
-and directory trees in `test_inputs/`, keeping the paths used by the XML intact;
-local `.dat` and `.list` files beside the selected input are included automatically.
+The runner saves `graph.log`, `npt.log`, separate XML reports and `run.json`.
+Default OpenMP settings request four workers and disable dynamic teams;
+`--threads` overrides this. The installed Redstar build must itself have OpenMP
+enabled. Large diagnostic dumps are disabled unless `--keep-diagnostics` is
+supplied. Personal inputs use their own declared projected-weight paths, relative
+to the input's directory or absolute.
+
+Existing outputs and personal demo files are left in place. Removing an unwanted
+run does not delete `data/` or its separate `run_inputs/` provenance snapshot.
 Input paths resolve from the current directory, with no basename lookup or XML
 compatibility aliases. From the checkout root use `test_inputs/pipi_i1.xml`, for
 example:
@@ -112,6 +123,26 @@ input through the current runner into a fresh directory to use the new layout.
 The fitter's bundled 135-key `rho.single.sdb` is a derived correlator fixture and
 remains self-contained; these raw SDBs are used for contraction regeneration.
 
+## Saved Chroma fields
+
+The historical saved-field CORR_SUPERB template reads `data/colorvec.mod`.
+Keep it and its matching `data/gauge.mod` as regular read-only files in `data/`;
+their separate checksums are recorded in `test_inputs/mod-manifest.json`.
+To import the matching pair from an existing collection:
+
+```sh
+python3 scripts/import_mod_data.py --source-dir /path/to/matched-mod-files
+```
+
+`setup-data` installs the SDB release, not these separate MOD files. The
+CORR_SUPERB runner rebases the color-vector path to the actual data home and
+imports the matching gauge into its fresh run. When invoking Chroma manually,
+relative paths resolve from its working directory, not the XML's directory.
+The tracked `../../data/colorvec.mod` path assumes a run immediately under
+`runs/`. Supply a matching graph and `gauge.lime` in that directory, and use
+`"$CHROMA_BIN/chroma" -i chroma.xml -o chroma.out.xml`. Preserve graph format,
+vector count, gauge, source origin and time-window consistency.
+
 ## Download distribution
 
 This repository and its SDB release assets are public. Cloning over HTTPS and
@@ -126,6 +157,7 @@ clone downloads any missing data automatically:
 ```sh
 git clone --branch devel https://github.com/JeffersonLab/redstar_kanoni.git
 cd redstar_kanoni
+export REDSTAR_BIN=/path/to/redstar/install/bin
 ./setup-data
 ./run_colorvec.csh test_inputs/pion.xml
 ```
@@ -223,9 +255,11 @@ See AGENTS.md for source/dataset conventions and reference-work hygiene.
 
 `regressions/tools.toml` selects executable paths independently of the test list.
 Copy `regressions/tools.example.toml` to that local, Git-ignored file and edit the
-paths to your matching Redstar/ADAT build. Both `build/src` and installed tools
-are supported; `executables.redstar_bin` switches all four Redstar tools at once,
-and individual executable paths can override it. CLI/environment overrides in
+absolute paths to your matching Redstar/ADAT stack.
+`executables.redstar_bin` switches all four Redstar tools at once;
+`executables.chroma_bin` selects Chroma. Individual Redstar/Chroma executable
+overrides and relative build paths are rejected. Existing local TOML files must
+be updated to this directory-based selection before reuse. CLI/environment overrides in
 the underlying validator remain available. Use Python 3.11+ for TOML, or install
 `tomli` for Python 3.9/3.10. Ordinary runs without TOML still support Python 3.9.
 
@@ -313,6 +347,10 @@ CORR_SUPERB. Cases live separately under `regressions/redstar/` and
 `regressions/corr_superb/`, preserving the existing combined-input inventory.
 
 ## Development documentation
+
+The [runner and data cleanup validation](docs/kanoni-cleanup-validation.md) records
+explicit bin-directory selection, output-only runs, the two retired local SDBs,
+and targeted real-tool numerical checks.
 
 The [historical datalib extraction design](docs/datalib-extraction-plan.md) and
 [dependency inventory](docs/datalib-dependency-inventory.json) preserve the

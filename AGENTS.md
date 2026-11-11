@@ -38,6 +38,8 @@
   input paths resolve from the caller’s working directory.
 - Do not depend on top-level ~/Downloads/*.sdb aliases. Never delete or overwrite
   the actual dataset while cleaning symlinks or run directories.
+- test_inputs/data-policy.json retires two unused payloads from local setup;
+  keep their immutable release entries while omitting them from installation.
 - The public kanoni-data-v1 release and manifest have immutable sizes/SHA-256
   values. Verify downloads/imports; publish a new version for changed data.
 - Keep SDB payloads, generated correlator databases, binaries, logs and numerical
@@ -96,8 +98,13 @@
 
 ## Running and validation
 
+- Select absolute REDSTAR_BIN and, for Chroma workflows, CHROMA_BIN directories.
+  CLI bin-directory options and absolute TOML bin entries may override them;
+  never search PATH or sibling builds for Redstar/Chroma executables.
 - Set REDSTAR_BIN to one consistent installed Redstar stack; use its matching
   ADAT dbutil. Never mix GCC/libgomp and Clang/libomp libraries in one process.
+- run_colorvec stores only outputs under runs/; preserve its selected original,
+  prepared XML and required weights separately under ignored run_inputs/.
 - Run each attempt in a fresh runs/ directory. Relative XML paths resolve from
   the process working directory. Never overwrite an old successful run to pass.
 - scripts/validate_inputs.py stages portable inputs and real database paths,

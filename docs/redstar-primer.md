@@ -179,10 +179,11 @@ The central fields in the measurement's input are:
 
 These are fields within a complete Chroma job, not a standalone executable XML fragment. The supplied [shared Chroma template](../regressions/corr_superb/chroma.xml) demonstrates the job structure. Its historical Nπ mode generates fresh eigenvectors and computes missing objects on demand. It is not interchangeable with a saved-field direct comparison.
 
-Once a complete input is staged, the invocation is simply:
+Set `CHROMA_BIN` to the absolute directory containing the matching Chroma
+executable. Once a complete input is staged, run from its fresh output directory:
 
 ```sh
-/path/to/chroma -i chroma.xml -o chroma.out.xml > chroma.log 2>&1
+"$CHROMA_BIN/chroma" -i chroma.xml -o chroma.out.xml > chroma.log 2>&1
 ```
 
 A job can share its structure across graph cases, but vector count, time window, flavors and available data must still match the selected case. The `pion_3pt` regression, for example, requests **two** vectors; supplying ten changes the calculation.
@@ -226,19 +227,17 @@ For a **direct matched native-tensor** comparison, use `compare_regression_chain
 python3 scripts/compare_regression_chains.py \
   --dataset /path/to/native-double-data \
   --output runs/my-new-pion-comparison \
-  --baseline-graph-bin /path/to/devel/bin \
-  --baseline-npt /path/to/devel/bin/redstar_npt \
-  --baseline-chroma /path/to/devel/chroma \
-  --feature-graph-bin /path/to/no_1pt/bin \
-  --feature-npt /path/to/no_1pt/bin/redstar_npt \
-  --feature-chroma /path/to/no_1pt/chroma \
+  --baseline-redstar-bin /path/to/devel/redstar/bin \
+  --baseline-chroma-bin /path/to/devel/chroma/bin \
+  --feature-redstar-bin /path/to/no_1pt/redstar/bin \
+  --feature-chroma-bin /path/to/no_1pt/chroma/bin \
   --dbutil /path/to/adat/bin/dbutil \
   --exporter /path/to/safe-export-correlators \
   --qualification 'record the actual source revisions, compiler and build' \
   --cases pion
 ```
 
-This runs both chains; no_1pt output is labelled experimental. Add `--chain devel` to evaluate only the baseline; the current CLI still requires both sets of tool paths. Omit `--cases` for the complete inventory. Use `--npt-only --cases glue tetra_F27_S2 fsq_3pt` for the separate NPT lanes whose CORR implementations are deferred. Run `--help` for resource limits and options. Build the numbered exporter with `scripts/build_exporter.py --adat-config /path/to/adat-config --output /path/to/new-exporter`.
+This runs both chains; no_1pt output is labelled experimental. Add `--chain devel` to evaluate only the baseline; only the selected chain requires bin directories. Omit `--cases` for the complete inventory. Use `--npt-only --cases glue tetra_F27_S2 fsq_3pt` for the separate NPT lanes whose CORR implementations are deferred. Run `--help` for resource limits and options. Build the numbered exporter with `scripts/build_exporter.py --adat-config /path/to/adat-config --output /path/to/new-exporter`.
 
 ## 7. Add three-point functions and larger bases
 

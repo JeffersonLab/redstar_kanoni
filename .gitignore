@@ -32,3 +32,7 @@ interior_nodes.*.log
 /regressions/native-superb-v3/baselines/
 /regressions/native-superb-v3/launch.json
 /regressions/native-superb-v3/tools.toml
+
+# Finder metadata and per-run prepared input snapshots
+.DS_Store
+/run_inputs/

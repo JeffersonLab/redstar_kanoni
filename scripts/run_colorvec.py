@@ -4,7 +4,7 @@
 These test XMLs combine corr_graph NPointList and npt ColorVec inputs.
 Production normally uses separate, purpose-specific XMLs.
 """
-from redstar_runtime import OUTPUT_DATABASE, configured_tools, prepare_outputs, stage_command
+from redstar_runtime import OUTPUT_DATABASE, configured_tools, prepare_outputs, stage_command, required_tools
 import argparse
 from datetime import datetime
 import hashlib
@@ -31,6 +31,7 @@ def main():
     parser.add_argument('--keep-diagnostics', action='store_true',
                         help='retain the input diagnostic level and graph XML/database dumps')
     parser.add_argument('--tools', type=Path, help='TOML executable paths (Python 3.11+ or tomli)')
+    parser.add_argument('--redstar-bin', type=Path, help='absolute Redstar bin directory (or REDSTAR_BIN)')
     args = parser.parse_args()
     if args.threads < 1:
         parser.error('--threads must be positive')
@@ -47,18 +48,12 @@ def main():
     if xml.findall('.//mom_type'):
         parser.error('Legacy mom_type keys require typed SUNClass conversion')
     names = ('redstar_corr_graph', 'redstar_npt')
-    bindir = os.environ.get('REDSTAR_BIN')
     configured = configured_tools(args.tools) if args.tools else {}
-    if bindir:
-        programs = [Path(bindir).expanduser() / name for name in names]
-    elif configured:
-        programs = [configured[name] for name in names]
-    else:
-        located = [shutil.which(name) for name in names]
-        programs = [Path(p) for p in located] if all(located) else [root.parent / 'redstar.devel/build/src' / name for name in names]
-    if not all(p.is_file() and os.access(p, os.X_OK) for p in programs):
-        parser.error('Set REDSTAR_BIN to one installed bin or build/src directory, or put the tools on PATH')
-    programs = [p.resolve() for p in programs]
+    try:
+        selected = required_tools('redstar', names, args.redstar_bin, configured)
+    except ValueError as error:
+        parser.error(str(error))
+    programs = [selected[name] for name in names]
     data = (args.database_dir or root / 'data').expanduser().absolute()
     if not data.is_dir() and args.database_dir is None:
         subprocess.run([str(root / 'setup-data')], check=True)
@@ -90,29 +85,37 @@ def main():
             if item is not None:
                 item.text = name + ('.xml' if name.endswith('_xml') else '.sdb1')
     prepare_outputs(xml)
+    support_entries = []
+    for node in xml.findall('DBFiles/proj_op_xmls/elem'):
+        path = (source.parent / Path((node.text or '').strip())).resolve()
+        if not path.is_file():
+            parser.error('Missing projected weights: ' + str(path))
+        support_entries.append((node, path))
     runs = root / 'runs'
     runs.mkdir(exist_ok=True)
     run = Path(tempfile.mkdtemp(prefix=source.stem + '-' + datetime.now().strftime('%Y%m%d-%H%M%S') + '-', dir=runs))
-    # Copy portable support inputs, keeping all output away from the checkout originals.
-    for item in (root / 'test_inputs').iterdir():
-        if item.name in ('data', 'data-manifest.json'):
-            continue
-        if item.is_dir():
-            shutil.copytree(item, run / item.name)
-        elif item.is_file():
-            shutil.copyfile(item, run / item.name)
-    for item in source.parent.iterdir():
-        if not (run / item.name).exists() and item.is_file() and item.suffix in ('.list', '.dat'):
-            shutil.copyfile(item, run / item.name)
+    # Freeze only this run's inputs separately; runs/ contains tool outputs only.
+    prepared = root / 'run_inputs' / run.name
+    prepared.mkdir(parents=True)
+    shutil.copyfile(source, prepared / 'source.xml')
+    support_hashes = {}
+    for index, (node, path) in enumerate(support_entries):
+        snapshot = prepared / ('weights-{:03d}.xml'.format(index))
+        shutil.copyfile(path, snapshot)
+        node.text = os.path.relpath(snapshot, run)
+        support_hashes[str(path)] = hashlib.sha256(snapshot.read_bytes()).hexdigest()
     for item, database in database_entries:
         item.text = os.path.relpath(database.resolve(), run.resolve())
     ET.indent(tree, space='  ')
-    tree.write(run / 'input.xml', encoding='utf-8', xml_declaration=True)
+    input_path = prepared / 'input.xml'
+    tree.write(input_path, encoding='utf-8', xml_declaration=True)
     env = dict(os.environ, OMP_NUM_THREADS=str(args.threads), OMP_DYNAMIC='FALSE',
                OMP_MAX_ACTIVE_LEVELS='1', VECLIB_MAXIMUM_THREADS='1', OPENBLAS_NUM_THREADS='1')
     record = dict(status='running', source=str(source), input_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
                   data_home=str(data), resolved_data_home=str(data.resolve()), threads=args.threads,
-                  keep_diagnostics=args.keep_diagnostics, commands=[], numerical_readback_validated=False)
+                  keep_diagnostics=args.keep_diagnostics, prepared_input=str(input_path),
+                  prepared_input_sha256=hashlib.sha256(input_path.read_bytes()).hexdigest(),
+                  support_sha256=support_hashes, commands=[], numerical_readback_validated=False)
     def save():
         (run / 'run.json').write_text(json.dumps(record, indent=2) + '\n')
     save()
@@ -120,7 +123,7 @@ def main():
     try:
         for program, phase in zip(programs, ('graph', 'numerical')):
             log = run / (('npt' if phase == 'numerical' else phase) + '.log')
-            command = list(map(str, stage_command(dict(zip(names, programs)), phase)))
+            command = list(map(str, stage_command(dict(zip(names, programs)), phase, input_path)))
             step = dict(argv=command, log=str(log)); record['commands'].append(step); save()
             with log.open('wb') as stream:
                 result = subprocess.run(command, cwd=run, env=env, stdout=stream, stderr=subprocess.STDOUT)
@@ -139,5 +142,5 @@ def main():
 if __name__ == '__main__':
     try:
         main()
-    except (OSError, RuntimeError, subprocess.CalledProcessError, ET.ParseError) as error:
+    except (OSError, ValueError, RuntimeError, subprocess.CalledProcessError, ET.ParseError) as error:
         sys.exit('run_colorvec: ' + str(error))

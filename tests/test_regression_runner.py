@@ -2,6 +2,8 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+import os
+from unittest.mock import patch
 
 SCRIPTS = Path(__file__).resolve().parents[1]/'scripts'
 sys.path.insert(0, str(SCRIPTS))
@@ -33,19 +35,22 @@ class NamingTests(unittest.TestCase):
 
 @unittest.skipUnless(HAS_TOML, 'TOML tests require Python 3.11+ or tomli')
 class ConfigTests(unittest.TestCase):
-    def test_tools_relative_to_config_not_cwd(self):
+    def test_absolute_bin_directories_expand_to_fixed_executables(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp)/'tools.toml'
-            path.write_text('[executables]\nredstar_npt = "build path/src/redstar_npt"\n')
-            self.assertEqual(runtime.configured_tools(path)['redstar_npt'], Path(tmp)/'build path/src/redstar_npt')
-
-    def test_build_directory_with_individual_override(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            path = Path(tmp)/'tools.toml'
-            path.write_text('[executables]\nredstar_bin = "build/src"\nredstar_npt = "other/npt"\n')
+            path.write_text('[executables]\nredstar_bin = "/installed/redstar/bin"\nchroma_bin = "/installed/chroma/bin"\n')
             tools = runtime.configured_tools(path)
-            self.assertEqual(tools['redstar_corr_graph'], Path(tmp)/'build/src/redstar_corr_graph')
-            self.assertEqual(tools['redstar_npt'], Path(tmp)/'other/npt')
+            self.assertEqual(tools['redstar_npt'], Path('/installed/redstar/bin/redstar_npt'))
+            self.assertEqual(tools['chroma'], Path('/installed/chroma/bin/chroma'))
+
+    def test_relative_build_paths_and_individual_overrides_are_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)/'tools.toml'
+            for entry in ['redstar_bin = "../old/build/src"', 'chroma_bin = "local/bin"',
+                          'redstar_npt = "/other/npt"', 'chroma = "/other/chroma"']:
+                path.write_text('[executables]\n'+entry+'\n')
+                with self.assertRaises(ValueError):
+                    runtime.configured_tools(path)
 
     def test_test_list_round_trip(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -79,6 +84,25 @@ class ConfigTests(unittest.TestCase):
                     runner.read_tests(path)
 
 
+class ToolDirectoryTests(unittest.TestCase):
+    def test_path_and_legacy_chroma_environment_are_not_fallbacks(self):
+        with patch.dict(os.environ, {'PATH':str(Path(sys.executable).parent), 'CHROMA':sys.executable}, clear=True):
+            for family, names in [('redstar', ('redstar_npt',)), ('chroma', ('chroma',))]:
+                with self.assertRaisesRegex(ValueError, family.upper()+'_BIN'):
+                    runtime.required_tools(family, names)
+
+    def test_explicit_directory_wins_and_incomplete_directory_fails(self):
+        with tempfile.TemporaryDirectory(prefix='bin path ') as tmp:
+            folder=Path(tmp)
+            (folder/'chroma').symlink_to(sys.executable)
+            with patch.dict(os.environ, {'CHROMA_BIN':'/missing'}):
+                self.assertEqual(runtime.required_tools('chroma', ('chroma',), folder)['chroma'],folder/'chroma')
+            with self.assertRaisesRegex(ValueError, 'Missing executable'):
+                runtime.required_tools('redstar', ('redstar_npt',), folder)
+            with self.assertRaisesRegex(ValueError, 'absolute'):
+                runtime.required_tools('chroma', ('chroma',), Path('.'))
+
+
 class LimitsTests(unittest.TestCase):
     def test_timeout_reaps_child(self):
         import subprocess
@@ -102,7 +126,7 @@ class EstablishmentTests(unittest.TestCase):
             regressions = root/'regressions'
             regressions.mkdir()
             tools = regressions/'tools.toml'
-            tools.write_text('[executables]\ndbutil = "dbutil"\nexporter = "exporter"\n')
+            tools.write_text('[executables]\ndbutil = '+repr(str(root/'dbutil'))+'\nexporter = '+repr(str(root/'exporter'))+'\n')
             tests = regressions/'tests.toml'
             tests.write_text('schema_version = 1\ntests = []\n')
             output = root/'runs'/'attempt'

@@ -89,6 +89,14 @@ def main():
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     manifest = json.loads((root / 'test_inputs/data-manifest.json').read_text())
+    # Keep the published release manifest immutable. Local installation policy
+    # can retire unused payloads without changing their historical hash records.
+    policy_path = root / 'test_inputs/data-policy.json'
+    policy = json.loads(policy_path.read_text()) if policy_path.exists() else {}
+    retired = set(policy.get('retired_files', []))
+    if retired - {entry['name'] for entry in manifest['files']}:
+        raise RuntimeError('Data policy names a file absent from the release manifest')
+    entries = [entry for entry in manifest['files'] if entry['name'] not in retired]
     data = (args.data_dir or Path(os.environ.get('KANONI_DATA_DIR', str(root / 'data')))).expanduser().absolute()
     source = args.source_dir.expanduser().absolute() if args.source_dir else None
     base = args.base_url or os.environ.get('KANONI_DATA_URL') or manifest.get('base_url')
@@ -98,7 +106,7 @@ def main():
         raise RuntimeError('Data directory must be a real directory, not a symlink: ' + str(data))
     # Validate all available inputs before installing anything. Imports are copies;
     # never move source files or manufacture compatibility links.
-    for entry in manifest['files']:
+    for entry in entries:
         name = entry['name']
         if Path(name).name != name or not name.endswith('.sdb'):
             raise RuntimeError('Invalid manifest filename: ' + name)
@@ -113,7 +121,7 @@ def main():
         elif not base:
             raise RuntimeError('Missing ' + name + '; supply --source-dir or --base-url.')
     data.mkdir(parents=True, exist_ok=True)
-    for entry in manifest['files']:
+    for entry in entries:
         dst = data / entry['name']
         src = source / entry['name'] if source else None
         if not dst.exists():
@@ -132,8 +140,10 @@ def main():
                 if temp.exists():
                     temp.unlink()
         dst.chmod(0o444)
-    retire_legacy_aliases(root, manifest['files'])
-    print('Verified {} regular SDB files in {}'.format(len(manifest['files']), data))
+    retire_legacy_aliases(root, entries)
+    print('Verified {} regular SDB files in {}'.format(len(entries), data))
+    if retired:
+        print('Retired payloads excluded from installation: ' + ', '.join(sorted(retired)))
     print('Ready: ' + str(data))
 
 

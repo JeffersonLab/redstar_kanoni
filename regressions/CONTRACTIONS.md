@@ -42,15 +42,18 @@ compact outputs, not experimental outputs or the running 12³ test.
 
 Copy [contraction-tools.example.toml](contraction-tools.example.toml) to an
 ignored `contraction-tools.local.toml` and set the executable paths. You can use
-separate local files for Redstar and CORR_SUPERB stacks. TOML paths resolve from
-the configuration file's directory. Python 3.11+ supports TOML directly;
+separate local files for Redstar and CORR_SUPERB stacks. TOML paths must be absolute. Python 3.11+ supports TOML directly;
 Python 3.9/3.10 needs `tomli` only when `--tools` is used.
 
-`--redstar-bin` (or `REDSTAR_BIN`) selects a matching graph generator and viewer;
-it also selects `redstar_npt` for the Redstar workflow. `--chroma` (or `CHROMA`)
-selects Chroma. Explicit options override the tool file. Use compatible installed
-libraries within each executable. The runners invoke tools as separate processes.
-The default graph-tool fallback is the sibling `redstar.devel/build/src`.
+`--redstar-bin` (or `REDSTAR_BIN`) selects an absolute directory containing the
+matching graph generator and viewer; it also selects `redstar_npt` for the
+Redstar workflow. `--chroma-bin` (or `CHROMA_BIN`) selects an absolute directory
+containing `chroma`. Explicit directory options override environment variables,
+which override the tool file. All TOML executable paths must be absolute;
+Redstar and Chroma must be selected through their bin-directory entries.
+There is no executable PATH search or sibling-build fallback for either stack.
+Use compatible installed libraries within each executable. The runners invoke
+tools as separate processes.
 
 ```sh
 python3 scripts/run_corr_graph.py regressions/redstar/pion \

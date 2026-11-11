@@ -5,8 +5,11 @@ import sys,json,subprocess,shutil,os,time,copy,hashlib,xml.etree.ElementTree as 
 import argparse
 r=Path(__file__).resolve().parent.parent
 parser=argparse.ArgumentParser(description="Compare devel and experimental no_1pt NPT/CORR_SUPERB on stored native tensors; retain explicit deferrals and strict per-value gates.")
-for flag in ['dataset','output','baseline-graph-bin','feature-graph-bin','baseline-npt','feature-npt','baseline-chroma','feature-chroma','dbutil','exporter']:
+for flag in ['dataset','output','dbutil','exporter']:
  parser.add_argument('--'+flag,type=Path,required=True)
+for label in ('baseline','feature'):
+ for family in ('redstar','chroma'):
+  parser.add_argument('--'+label+'-'+family+'-bin',type=Path,help='absolute '+family+' bin directory for this chain; defaults to '+family.upper()+'_BIN')
 parser.add_argument('--inputs',type=Path,default=r/'regressions/native-superb-v3/inputs')
 parser.add_argument('--disco-dataset',type=Path,help='Validated supplemental native DISCO collection; pinned and read by both chains')
 parser.add_argument('--qualification',required=True,help='Actual source/build qualification recorded verbatim in results')
@@ -17,14 +20,28 @@ parser.add_argument('--timeout',type=int,default=900)
 parser.add_argument('--max-rss-mb',type=int,default=8192)
 parser.add_argument('--tensor-gb',type=float,default=2)
 args=parser.parse_args()
+selected_chains=('devel','no_1pt') if args.chain=='both' else (args.chain,)
+for chain in selected_chains:
+ label='baseline' if chain=='devel' else 'feature'
+ for family in ('redstar','chroma'):
+  directory=getattr(args,label+'_'+family+'_bin')
+  if directory is not None and not directory.expanduser().is_absolute():parser.error(label+'_'+family+'_bin must be an absolute bin directory')
 for name,value in vars(args).items():
- if isinstance(value,Path):setattr(args,name,value.resolve())
+ if isinstance(value,Path):setattr(args,name,value.expanduser().resolve())
 if args.timeout<=0 or args.max_rss_mb<=0 or args.tensor_gb<=0:parser.error('Resource limits must be positive')
 sys.path.insert(0,str(r/'scripts'))
 from contraction_workflow import read_case,prepare_graph
 from compare_correlators import compare,inspect_export
 from compare_npt_superb import exported_values
-from redstar_runtime import run_limited
+from redstar_runtime import run_limited, required_tools
+try:
+ for chain in selected_chains:
+  label='baseline' if chain=='devel' else 'feature'
+  redstar=required_tools('redstar', ('redstar_corr_graph','view_corr_graph','redstar_npt'), getattr(args,label+'_redstar_bin'))
+  setattr(args,label+'_graph_bin',redstar['redstar_corr_graph'].parent)
+  setattr(args,label+'_npt',redstar['redstar_npt'])
+  setattr(args,label+'_chroma',required_tools('chroma',('chroma',),getattr(args,label+'_chroma_bin'))['chroma'])
+except ValueError as error:parser.error(str(error))
 base=args.dataset;sphere=base/'meson.sbt'
 manifest=json.loads((base/'dataset-manifest.json').read_text())
 for item in manifest['files']:
@@ -49,7 +66,11 @@ state={'status':'running','mode':'stored native tensors; full finite readback an
 state['build_qualification']=args.qualification
 state['data_provenance']={str(path):hashlib.sha256(path.read_bytes()).hexdigest() for path in [base/'dataset-manifest.json',base/'colorvec.mod',sphere,*sorted(base.glob('prop-*.sbt')),*sorted(base.glob('genprop-*.sbt')),base/'baryon.sbt']}
 state['disco_provenance']={str(path):hashlib.sha256(path.read_bytes()).hexdigest() for path in ([disco_manifest]+disco_files if disco_manifest else [])}
-state['program_sha256']={str(path):hashlib.sha256(path.read_bytes()).hexdigest() for path in [args.baseline_chroma,args.feature_chroma,args.baseline_npt,args.feature_npt,args.dbutil,args.exporter,*[directory/name for directory in [args.baseline_graph_bin,args.feature_graph_bin] for name in ['redstar_corr_graph','view_corr_graph']]]}
+selected_programs=[args.dbutil,args.exporter]
+for chain in selected_chains:
+ label='baseline' if chain=='devel' else 'feature'
+ selected_programs += [getattr(args,label+'_npt'),getattr(args,label+'_chroma'),*[getattr(args,label+'_graph_bin')/name for name in ('redstar_corr_graph','view_corr_graph')]]
+state['program_sha256']={str(path):hashlib.sha256(path.read_bytes()).hexdigest() for path in selected_programs}
 def save():
  tmp=root/'results.tmp';tmp.write_text(json.dumps(state,indent=2)+'\n');tmp.replace(root/'results.json')
 def execute(d,label,cmd,entry):
@@ -75,7 +96,7 @@ def numerical(case,d,chain):
  node(x.find('DBFiles'),'corr_graph_bin','corr_graph.bin');node(x.find('DBFiles'),'output_db','output.sdb1');t.write(d/'npt.xml',encoding='utf-8',xml_declaration=True);return t
 for name in inventory:
  deferred=policy['deferred_by_user'].get(name,{}).get('npt' if args.npt_only else 'corr_superb',False)
- for chain in (('devel','no_1pt') if args.chain=='both' else (args.chain,)):
+ for chain in selected_chains:
   entry={'case':name,'chain':chain,'status':'deferred_by_user' if deferred else 'running','commands':[]};state['cases'].append(entry);save()
   if deferred:continue
   d=root/chain/name;d.mkdir(parents=True)

@@ -3,6 +3,7 @@
 - [Redstar primer: continuum operators to numerical correlators](redstar-primer.md)
 - [Summary of redstar/chroma code devel](development-summary.md)
 - [Regression status and coverage](regressions.md)
+- [Kanoni bin-directory, output-layout and data cleanup validation](kanoni-cleanup-validation.md)
 - [Historical datalib extraction design and phase gates](datalib-extraction-plan.md)
 - [Historical datalib dependency inventory](datalib-dependency-inventory.json)
 - [Historical serial, graph and storage checkpoints](datalib-serial-checkpoint.md)
